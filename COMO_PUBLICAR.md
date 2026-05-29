@@ -4,7 +4,7 @@
 
 | Arquivo | Função |
 |---|---|
-| `posts.js` | Array POSTS com 18 artigos |
+| `posts.js` | Array POSTS com 25 artigos |
 | `index.html` | Protótipo local (dark navy) |
 | `SCRIPTS_AUTOMAÇÃO/publicar_agostinho.py` | Template base para publicação |
 

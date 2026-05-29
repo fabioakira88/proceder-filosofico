@@ -3,6 +3,260 @@
 
 const POSTS = [
   {
+    id:       "escala-6x1-trabalho-tempo-vida",
+    tag:      "FILOSOFIA POLÍTICA",
+    title:    "O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica",
+    excerpt:  "A aprovação da PEC do fim da escala 6x1 recoloca uma pergunta antiga no centro da vida brasileira: o trabalho existe para sustentar a vida ou a vida existe para sustentar o trabalho?",
+    date:     "30 de Maio de 2026",
+    thumb:    "",
+    featured: false,
+    content: `
+<p>Em 27 de maio de 2026, a Câmara dos Deputados aprovou em primeiro turno a PEC que propõe o fim da escala 6x1 e a redução gradual da jornada semanal para 40 horas. O texto ainda precisa ser aprovado em segundo turno na Câmara e depois seguir para o Senado, mas o gesto político já abriu uma discussão que ultrapassa a legislação trabalhista: <strong>o que uma sociedade faz com o tempo das pessoas?</strong></p>
+
+<p>A escala 6x1 organiza a semana em seis dias de trabalho e um de descanso. Para milhões de trabalhadores, isso significa viver numa estrutura em que o repouso chega quase sempre como recuperação física, não como tempo livre real. A folga deixa de ser espaço de vida e vira apenas manutenção do corpo para voltar ao trabalho.</p>
+
+<hr>
+
+<h2>Trabalho, dignidade e desgaste</h2>
+<p>Desde Aristóteles, a filosofia distingue entre sobreviver e viver bem. Trabalhar é necessário, mas a vida humana não pode ser reduzida à necessidade. Uma sociedade justa não se mede apenas pela quantidade de riqueza que produz, mas pela forma como distribui o tempo, o descanso e a possibilidade de cultivar vínculos, pensamento e presença.</p>
+
+<p>Quando o trabalho ocupa quase toda a semana, ele deixa de ser apenas atividade econômica e se torna forma de organização da subjetividade. A pessoa passa a existir em função da escala, do turno, do cansaço e da próxima obrigação.</p>
+
+<hr>
+
+<h2>A pergunta filosófica por trás da lei</h2>
+<p>A discussão sobre a escala 6x1 não é apenas sobre produtividade. É sobre antropologia. Que ideia de ser humano está por trás de um modelo social? O ser humano como força de trabalho disponível? Ou como alguém que precisa de descanso, comunidade, estudo, lazer, cuidado e silêncio?</p>
+
+<p>Marx chamaria isso de disputa sobre o tempo social. Hannah Arendt lembraria que a vida ativa não pode ser reduzida ao labor repetitivo. E os antigos talvez dissessem de modo ainda mais direto: sem ócio digno, não há pensamento livre.</p>
+
+<hr>
+
+<h2>O descanso como direito de existir</h2>
+<p>O descanso não é preguiça. É condição de humanidade. Uma vida sem pausa se torna incapaz de reflexão; e uma sociedade incapaz de pausa começa a confundir movimento com progresso.</p>
+
+<p>Por isso, o debate sobre a escala 6x1 importa filosoficamente. Ele obriga o país a perguntar se o crescimento econômico deve ser medido apenas pelo que se produz ou também pelo tempo que as pessoas recuperam para viver.</p>
+
+<p><small>Contexto factual consultado: Agência Câmara e Agência Brasil, em 30 de Maio de 2026.</small></p>
+`
+  },
+
+  {
+    id:       "sao-tomas-fe-razao-explicacao",
+    tag:      "FILOSOFIA MEDIEVAL",
+    title:    "São Tomás de Aquino: fé, razão e o limite das explicações",
+    excerpt:  "\"Para aquele que tem fé, nenhuma explicação é necessária.\" A frase atribuída a São Tomás revela uma tensão decisiva da filosofia medieval: até onde a razão pode conduzir a fé?",
+    date:     "30 de Maio de 2026",
+    thumb:    "./index_files/wPdrfjjEMXEymTcc.jpg",
+    featured: false,
+    content: `
+<p>São Tomás de Aquino (1225–1274) é uma das figuras centrais da filosofia medieval. Sua grandeza está em ter recusado duas soluções fáceis: a fé sem razão e a razão sem abertura ao transcendente. Para ele, pensar e crer não eram inimigos. Eram caminhos distintos que podiam se encontrar quando bem compreendidos.</p>
+
+<p>A frase atribuída a Tomás — <em>"Para aquele que tem fé, nenhuma explicação é necessária; para aquele sem fé, nenhuma explicação é possível"</em> — não deve ser lida como desprezo pela razão. Tomás jamais defenderia uma fé irracional. Ao contrário: construiu uma das arquiteturas intelectuais mais rigorosas do cristianismo.</p>
+
+<hr>
+
+<h2>A razão não destrói a fé</h2>
+<p>Tomás acreditava que a razão humana é capaz de conhecer verdades reais sobre o mundo. Podemos investigar a natureza, formular argumentos, reconhecer causas, distinguir essência e existência, pensar o ser. A inteligência não é uma ameaça a Deus; é parte da própria ordem criada.</p>
+
+<p>Por isso, sua filosofia dialoga intensamente com Aristóteles. Tomás não abandona a tradição cristã para seguir o filósofo grego. Ele faz algo mais ousado: mostra que a razão filosófica pode servir à teologia sem perder sua dignidade própria.</p>
+
+<hr>
+
+<h2>O que a explicação não alcança</h2>
+<p>Mas Tomás também sabia que nem tudo se resolve por demonstração. A razão pode preparar o caminho, remover contradições, esclarecer conceitos e mostrar que a fé não é absurda. Ainda assim, o ato de fé envolve uma adesão que não se reduz ao cálculo.</p>
+
+<p>Há experiências humanas que nenhuma explicação substitui: confiança, amor, esperança, entrega. Podemos explicar as condições dessas experiências, mas não podemos vivê-las no lugar de alguém.</p>
+
+<hr>
+
+<h2>A inteligência diante do mistério</h2>
+<p>O ponto mais profundo de Tomás talvez seja este: mistério não é o contrário de conhecimento. Mistério é aquilo que pode ser conhecido sem ser esgotado. Quanto mais a razão avança, mais percebe a profundidade do real.</p>
+
+<p>Assim, fé e razão não são dois exércitos em guerra. São duas formas de responder ao mesmo espanto: por que existe algo em vez de nada, e o que devemos fazer diante disso?</p>
+`
+  },
+
+  {
+    id:       "epicuro-pouco-suficiencia-desejo",
+    tag:      "FILOSOFIA HELENÍSTICA",
+    title:    "Epicuro: quem não se contenta com pouco não se contentará com nada",
+    excerpt:  "Epicuro não ensinava luxo nem fuga do mundo. Sua filosofia começa com uma pergunta simples e difícil: quanto realmente basta para viver bem?",
+    date:     "30 de Maio de 2026",
+    thumb:    "Canva%20-%20Proceder/frases/frase-epicuro.png",
+    featured: false,
+    content: `
+<p>Epicuro (341–270 a.C.) é frequentemente mal compreendido. Seu nome virou sinônimo de busca por prazeres refinados, mas sua filosofia real era quase o oposto disso. Epicuro defendia uma vida simples, sóbria, livre de medos desnecessários e desejos fabricados.</p>
+
+<p>A frase <em>"Aquele que não se contenta com pouco, não se contentará com nada"</em> resume uma intuição central do epicurismo: o problema humano não é a falta infinita de coisas, mas o desejo infinito por coisas que nunca bastam.</p>
+
+<hr>
+
+<h2>Prazer não é excesso</h2>
+<p>Para Epicuro, o prazer verdadeiro não é agitação, acumulação ou espetáculo. É ausência de perturbação na alma e ausência de dor no corpo. A felicidade não depende de multiplicar estímulos, mas de reduzir dependências.</p>
+
+<p>Quem precisa sempre de mais para estar bem nunca está realmente bem. A cada conquista, nasce uma nova carência. O desejo sem medida transforma a vida inteira numa perseguição.</p>
+
+<hr>
+
+<h2>O pouco como liberdade</h2>
+<p>Contentar-se com pouco não significa aceitar miséria, injustiça ou privação imposta. Significa distinguir necessidade real de desejo artificial. Comida simples, amizade, pensamento, segurança e tranquilidade valem mais do que prestígio e consumo sem fim.</p>
+
+<p>O pouco, em Epicuro, é uma forma de independência. Quanto menos uma pessoa precisa para viver bem, menos ela pode ser governada pelo medo de perder.</p>
+
+<hr>
+
+<h2>Uma filosofia contra a ansiedade moderna</h2>
+<p>A atualidade de Epicuro é evidente. Vivemos cercados por máquinas de produzir desejo: anúncios, métricas, comparações, vitrines e algoritmos. Tudo parece dizer que ainda falta algo para sermos completos.</p>
+
+<p>Epicuro responderia com serenidade: talvez a vida boa não esteja em obter tudo o que desejamos, mas em aprender a desejar apenas aquilo que realmente nos torna livres.</p>
+`
+  },
+
+  {
+    id:       "protagoras-medida-todas-coisas",
+    tag:      "SOFISTAS",
+    title:    "Protágoras: o homem é a medida de todas as coisas",
+    excerpt:  "\"O homem é a medida de todas as coisas.\" A frase de Protágoras inaugura uma das perguntas mais perigosas da filosofia: existe verdade fora da perspectiva humana?",
+    date:     "30 de Maio de 2026",
+    thumb:    "Canva%20-%20Proceder/frases/frase-protagoras.png",
+    featured: false,
+    content: `
+<p>Protágoras (490–420 a.C.) foi um dos grandes sofistas da Grécia antiga. Sua frase mais famosa — <em>"O homem é a medida de todas as coisas"</em> — atravessou os séculos porque toca uma ferida permanente da filosofia: a relação entre verdade, percepção e poder.</p>
+
+<p>Para alguns, a frase significa relativismo absoluto. Para outros, é uma descoberta decisiva: o mundo humano nunca aparece fora de alguma perspectiva. Toda experiência é experiência de alguém, em uma linguagem, em uma cultura, em uma situação.</p>
+
+<hr>
+
+<h2>O nascimento da perspectiva</h2>
+<p>Antes dos sofistas, muitos filósofos buscavam o princípio objetivo da natureza: água, ar, fogo, átomos, ser. Protágoras desloca o foco. A questão deixa de ser apenas o que o mundo é em si mesmo e passa a ser como o mundo aparece ao ser humano.</p>
+
+<p>Isso muda tudo. Política, moral, educação e linguagem passam a ocupar o centro da reflexão. A verdade deixa de ser apenas contemplação da natureza e se torna também disputa pública de interpretações.</p>
+
+<hr>
+
+<h2>O risco do relativismo</h2>
+<p>Platão desconfiava profundamente dos sofistas. Se cada pessoa é medida da verdade, como distinguir sabedoria de manipulação? Como impedir que a retórica vença a justiça? Como proteger a cidade de discursos convincentes, mas falsos?</p>
+
+<p>Essa crítica continua atual. Em tempos de redes sociais, bolhas informacionais e guerra de narrativas, a pergunta platônica retorna com força: se tudo vira opinião, o que acontece com a verdade?</p>
+
+<hr>
+
+<h2>Por que Protágoras ainda importa</h2>
+<p>Mesmo com seus perigos, Protágoras percebeu algo essencial: não existe vida humana sem interpretação. A linguagem molda o mundo social. A educação forma cidadãos. A política depende da capacidade de argumentar.</p>
+
+<p>O desafio não é fingir que não temos perspectiva. É formar perspectivas mais lúcidas, mais responsáveis e mais abertas ao exame racional. Talvez o homem seja a medida das coisas; mas a filosofia existe para perguntar que tipo de medida estamos nos tornando.</p>
+`
+  },
+
+  {
+    id:       "heraclito-duas-vezes-mesmo-rio",
+    tag:      "FILOSOFIA CLÁSSICA",
+    title:    "Heráclito: por que não entramos duas vezes no mesmo rio",
+    excerpt:  "Heráclito viu no fluxo a estrutura mais profunda da realidade. Tudo muda, inclusive aquele que observa a mudança.",
+    date:     "30 de Maio de 2026",
+    thumb:    "Canva%20-%20Proceder/Fil%C3%B3sofos%20/heraclito.png",
+    featured: false,
+    content: `
+<p>Heráclito de Éfeso (c. 540–480 a.C.) é o filósofo do devir. Sua imagem mais famosa diz que ninguém entra duas vezes no mesmo rio. A água já mudou. A margem já mudou. E, principalmente, quem entra também já não é o mesmo.</p>
+
+<p>Essa frase não é apenas uma observação poética sobre a natureza. É uma tese radical sobre a realidade: tudo existe em transformação. O ser não é uma coisa parada. É tensão, passagem, conflito, movimento.</p>
+
+<hr>
+
+<h2>O mundo como fluxo</h2>
+<p>Para Heráclito, a estabilidade que percebemos é provisória. Uma chama parece a mesma, mas só continua existindo porque consome matéria nova a cada instante. Um rio parece uma unidade, mas é feito de águas que passam. Uma pessoa parece a mesma, mas é atravessada por tempo, memória, perda e desejo.</p>
+
+<p>A realidade não é um bloco imóvel. É processo.</p>
+
+<hr>
+
+<h2>O conflito como ordem</h2>
+<p>Heráclito também afirmava que a guerra é pai de todas as coisas. A frase não celebra violência; aponta para uma estrutura de tensão. Dia e noite, vida e morte, juventude e velhice, fome e saciedade, presença e ausência: os opostos não são acidentes. Eles compõem a ordem do mundo.</p>
+
+<p>Sem tensão não há forma. Sem diferença não há movimento. Sem mudança não há vida.</p>
+
+<hr>
+
+<h2>A lição existencial de Heráclito</h2>
+<p>O pensamento de Heráclito incomoda porque desfaz nossa fantasia de controle. Queremos fixar pessoas, identidades, relações e certezas. Mas o real escapa. Tudo aquilo que tentamos congelar continua se movendo.</p>
+
+<p>Talvez a sabedoria não esteja em impedir o rio de correr, mas em aprender a entrar nele com lucidez. Aceitar a mudança não é desistir da vida. É finalmente entender a matéria de que a vida é feita.</p>
+`
+  },
+
+  {
+    id:       "formigas-diante-do-universo",
+    tag:      "COSMOLOGIA FILOSÓFICA",
+    title:    "E se fôssemos apenas formigas diante do universo?",
+    excerpt:  "A imagem de um formigueiro observando café cair do céu é uma metáfora poderosa para a consciência humana diante do cosmos: vemos efeitos imensos, mas quase nunca enxergamos a mão que os produz.",
+    date:     "30 de Maio de 2026",
+    thumb:    "",
+    featured: false,
+    content: `
+<p>Imagine um formigueiro. De repente, uma xícara de café derrama sobre ele. Para as formigas, aquilo não é café. É catástrofe cósmica. Um líquido escuro atravessa túneis, destrói caminhos, muda o ambiente inteiro. Elas observam o efeito, mas não compreendem a escala da causa.</p>
+
+<p>A metáfora é desconfortável porque talvez descreva nossa própria posição diante do universo. Também observamos efeitos imensos: colisões cósmicas, extinções, pandemias, mudanças climáticas, explosões solares, nascimento e morte de estrelas. Criamos teorias, modelos e nomes. Mas será que compreendemos a totalidade daquilo que nos atravessa?</p>
+
+<hr>
+
+<h2>A humildade cósmica</h2>
+<p>A filosofia sempre oscilou entre grandeza e humildade. Somos pequenos diante do cosmos, mas capazes de saber que somos pequenos. Essa consciência nos diferencia. Uma pedra não se espanta com a galáxia. O ser humano sim.</p>
+
+<p>Pascal dizia que o homem é um caniço pensante: frágil como matéria, imenso como consciência. O universo pode nos esmagar fisicamente, mas não sabe que nos esmaga. Nós sabemos.</p>
+
+<hr>
+
+<h2>O limite da nossa escala</h2>
+<p>Talvez muito do que chamamos de mistério seja apenas diferença de escala. Uma formiga não entende a cozinha. Nós talvez não entendamos o cosmos porque nossa percepção nasceu para sobreviver em uma faixa estreita: corpos médios, tempos curtos, distâncias próximas.</p>
+
+<p>A ciência amplia essa escala com telescópios, microscópios, equações e sondas. Mas a filosofia lembra que todo instrumento ainda é usado por uma consciência situada. Mesmo quando olhamos longe, olhamos a partir de algum lugar.</p>
+
+<hr>
+
+<h2>O espanto como início</h2>
+<p>Se somos pequenos, isso não nos diminui. Pelo contrário. O espanto diante da própria pequenez é uma das fontes mais antigas da filosofia. Saber que não somos o centro pode ser humilhante, mas também libertador.</p>
+
+<p>Talvez a pergunta correta não seja se somos importantes para o universo. Talvez seja outra: o que fazemos com a rara capacidade de perceber que estamos dentro dele?</p>
+`
+  },
+
+  {
+    id:       "arte-controle-humano",
+    tag:      "ESTÉTICA",
+    title:    "Quando a arte parou de entender o ser humano e começou a tentar controlá-lo",
+    excerpt:  "A arte pode revelar a condição humana, mas também pode ser transformada em instrumento de controle. A pergunta estética se torna política quando imagens passam a fabricar desejos.",
+    date:     "30 de Maio de 2026",
+    thumb:    "Canva%20-%20Proceder/Fil%C3%B3sofos%20/Bernini%20-%20The%20Rape%20of%20Proserpina.jpeg",
+    featured: false,
+    content: `
+<p>A arte nasceu, em grande parte, como tentativa de compreender o ser humano. Pinturas, mitos, esculturas, tragédias e músicas davam forma ao medo, ao desejo, à morte, ao amor, à culpa e ao sagrado. A arte tornava visível aquilo que a vida comum muitas vezes não conseguia dizer.</p>
+
+<p>Mas a modernidade produziu uma inversão inquietante: imagens deixaram de apenas expressar a experiência humana e passaram também a organizá-la. A arte, quando capturada pela propaganda, pela indústria cultural ou pelo algoritmo, pode deixar de perguntar quem somos e começar a nos dizer o que devemos desejar.</p>
+
+<hr>
+
+<h2>Da revelação à persuasão</h2>
+<p>Uma tragédia grega não controlava o espectador. Ela o confrontava. Um quadro religioso não vendia uma identidade de consumo. Ele abria uma experiência simbólica. Mesmo quando ligada ao poder, a arte preservava uma ambiguidade: podia servir ao rei, mas também revelar sua vaidade.</p>
+
+<p>A propaganda moderna reduz essa ambiguidade. A imagem passa a ter uma função precisa: direcionar comportamento. Comprar, votar, desejar, temer, admirar, odiar. A estética deixa de ser abertura e vira técnica.</p>
+
+<hr>
+
+<h2>A indústria cultural</h2>
+<p>Adorno e Horkheimer chamaram esse processo de indústria cultural. O problema não é a cultura ser popular. O problema é quando ela se torna padronizada, previsível e administrada para produzir conformidade.</p>
+
+<p>Nesse cenário, até a rebeldia pode ser vendida como estilo. Até a autenticidade pode virar produto. Até a crítica pode ser absorvida como tendência.</p>
+
+<hr>
+
+<h2>A arte ainda pode resistir?</h2>
+<p>Sim, mas apenas quando recupera sua força de inquietação. A arte verdadeira não nos entrega apenas aquilo que já queremos sentir. Ela nos desloca. Interrompe a repetição. Faz aparecer uma verdade incômoda.</p>
+
+<p>Quando a arte tenta nos controlar, ela nos torna previsíveis. Quando tenta nos compreender, ela nos devolve complexidade. Talvez essa seja a diferença decisiva entre uma imagem que consome nossa atenção e uma obra que amplia nossa consciência.</p>
+`
+  },
+
+  {
     id:       "laplace-sonho-razao-absoluta",
     tag:      "FILOSOFIA DA CIÊNCIA",
     title:    "Laplace e o Sonho da Razão Absoluta",
