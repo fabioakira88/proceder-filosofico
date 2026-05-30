@@ -8,8 +8,26 @@ import requests
 from wp_auth import get_auth
 
 
-BASE = "https://procederfilosofico.com.br/wp-json/wp/v2"
+SITE = "https://procederfilosofico.com.br"
 HOME_PAGE_ID = 68
+
+
+def wp_url(path):
+    # /wp-json/ is blocked on Hostinger; use ?rest_route= fallback
+    return f"{SITE}/?rest_route=/wp/v2{path}"
+
+
+def require_json(response, label):
+    content_type = response.headers.get("content-type", "")
+    if "json" not in content_type.lower():
+        preview = response.text[:220].replace("\n", " ")
+        raise RuntimeError(
+            f"{label} nao retornou JSON. Status {response.status_code}, "
+            f"content-type {content_type!r}. Preview: {preview}"
+        )
+    return response.json()
+
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 POSTS_JS = PROJECT_ROOT / "SITE" / "posts.js"
 
@@ -55,7 +73,7 @@ def upload_image(path, auth):
 
     with path.open("rb") as handle:
         response = requests.post(
-            f"{BASE}/media",
+            wp_url("/media"),
             auth=auth,
             headers={
                 "Content-Disposition": f'attachment; filename="{filename}"',
@@ -68,7 +86,7 @@ def upload_image(path, auth):
     if response.status_code not in (200, 201):
         raise RuntimeError(f"Falha ao subir {filename}: {response.status_code} {response.text[:300]}")
 
-    data = response.json()
+    data = require_json(response, f"Upload de {filename}")
     return data["source_url"]
 
 
@@ -203,32 +221,35 @@ def main():
     auth = get_auth()
     posts = load_posts()
     print(f"Posts locais: {len(posts)}")
-    posts = prepare_posts(posts, auth)
 
     page = requests.get(
-        f"{BASE}/pages/{HOME_PAGE_ID}",
+        wp_url(f"/pages/{HOME_PAGE_ID}"),
         auth=auth,
         params={"context": "edit"},
         timeout=30,
     )
     page.raise_for_status()
-    raw = page.json().get("content", {}).get("raw", "")
+    page_data = require_json(page, "Leitura da home")
+    raw = page_data.get("content", {}).get("raw", "")
     print(f"Home atual: {len(raw)} chars")
+
+    posts = prepare_posts(posts, auth)
 
     patch = build_patch(posts)
     updated = replace_patch(raw, patch)
 
     response = requests.post(
-        f"{BASE}/pages/{HOME_PAGE_ID}",
+        wp_url(f"/pages/{HOME_PAGE_ID}"),
         auth=auth,
         json={"content": updated, "status": "publish"},
         timeout=60,
     )
     if response.status_code not in (200, 201):
         raise RuntimeError(f"Falha ao publicar home: {response.status_code} {response.text[:500]}")
+    require_json(response, "Publicacao da home")
 
     print("Publicado: patch de cards aplicado na home.")
-    print(page.json().get("link", "https://procederfilosofico.com.br/"))
+    print(page_data.get("link", "https://procederfilosofico.com.br/"))
 
 
 if __name__ == "__main__":
