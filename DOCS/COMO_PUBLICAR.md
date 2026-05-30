@@ -4,9 +4,10 @@
 
 | Arquivo | Função |
 |---|---|
-| `posts.js` | Array POSTS com 25 artigos |
-| `index.html` | Protótipo local (dark navy) |
-| `SCRIPTS_AUTOMAÇÃO/publicar_agostinho.py` | Template base para publicação |
+| `SITE/posts.js` | Array POSTS com 25 artigos |
+| `SITE/index.html` | Homepage local |
+| `SITE/biblioteca.html` | Página de biblioteca |
+| `AUTOMATION/publicar_agostinho.py` | Template base para publicação |
 
 ## Configurar credenciais
 
@@ -26,16 +27,17 @@ Nunca salve a senha real em arquivos do projeto. Use `.env.example` apenas como 
 
 **Passo 1** — Copie o script template:
 ```bash
-cp SCRIPTS_AUTOMAÇÃO/publicar_agostinho.py SCRIPTS_AUTOMAÇÃO/publicar_[filosofo].py
+cp AUTOMATION/publicar_agostinho.py AUTOMATION/publicar_[filosofo].py
 ```
 
 **Passo 2** — Edite os campos no novo script:
 - `slug`, `title`, `tag`, `date`, `excerpt`, `content`
-- Coloque a imagem em `Canva - Proceder/Filósofos/`
+- Coloque a imagem editorial em `CONTENT/posts/` ou uma arte de marca em `BRANDING/assets/`
+- Referencie a imagem em `SITE/posts.js` com caminho relativo a partir da pasta `SITE/`, por exemplo: `../CONTENT/posts/nome-da-imagem.jpeg`
 
 **Passo 3** — Publique:
 ```bash
-python3 SCRIPTS_AUTOMAÇÃO/publicar_[filosofo].py
+python3 AUTOMATION/publicar_[filosofo].py
 ```
 
 O script verifica duplicatas automaticamente.

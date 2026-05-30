@@ -1,9 +1,11 @@
 import requests, mimetypes
+from pathlib import Path
 
 from wp_auth import get_auth
 
 AUTH = get_auth()
 BASE = 'https://procederfilosofico.com.br/wp-json/wp/v2'
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 SLUG    = 'peter-pan-sindrome-amadurecimento'
 TITLE   = "J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais"
@@ -70,12 +72,12 @@ CONTENT = """
 """
 
 # ── 1. Upload da imagem ──────────────────────────────────────
-IMG_PATH = "Canva - Proceder/peter-pan.png"
+IMG_PATH = PROJECT_ROOT / "BRANDING" / "assets" / "peter-pan.png"
 print("[1] Subindo imagem...")
 with open(IMG_PATH, 'rb') as f:
     img_data = f.read()
 
-mime = mimetypes.guess_type(IMG_PATH)[0] or 'image/png'
+mime = mimetypes.guess_type(str(IMG_PATH))[0] or 'image/png'
 r_img = requests.post(
     f'{BASE}/media',
     auth=AUTH,

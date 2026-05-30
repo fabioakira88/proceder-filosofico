@@ -7,7 +7,7 @@ from wp_auth import get_auth
 DOMINIO      = "https://procederfilosofico.com.br"
 
 HTML_FILE    = Path(__file__).parent / "proceder.html"
-IMAGEM_FILE  = Path(__file__).parent / "imagens filosofia " / "santo_agostinho.jpeg"
+IMAGEM_FILE  = Path(__file__).resolve().parents[1] / "CONTENT" / "posts" / "santo_agostinho.jpeg"
 TITULO       = "As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental"
 STATUS       = "draft"   # mude para "publish" quando quiser publicar
 # ─────────────────────────────────────────────────────────────

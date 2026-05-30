@@ -9,18 +9,20 @@ Executa via REST API. Se a API estiver bloqueada (403/404),
 o script imprime instruções manuais exatas.
 """
 import re, sys, mimetypes, requests
+from pathlib import Path
 
 from wp_auth import get_auth
 
 AUTH = get_auth()
 BASE = 'https://procederfilosofico.com.br/wp-json/wp/v2'
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 # ── Imagem local para A Montanha (Nietzsche) ────────────────────
-NIETZSCHE_IMG = "../Canva - Proceder/Filósofos /FRIEDRICH NIETZSCHE.jpeg"
+NIETZSCHE_IMG = PROJECT_ROOT / "BRANDING" / "assets" / "Filósofos " / "FRIEDRICH NIETZSCHE.jpeg"
 
 # ── Imagem para Peter Pan (fornecer manualmente se necessário) ──
 # Coloque o caminho local da imagem aqui:
-PETER_PAN_IMG = ""  # ex: "../Canva - Proceder/peter-pan.png"
+PETER_PAN_IMG = ""  # ex: str(PROJECT_ROOT / "BRANDING" / "assets" / "peter-pan.png")
 # OU cole a URL já existente no WP Media Library:
 PETER_PAN_URL = ""  # ex: "https://procederfilosofico.com.br/wp-content/uploads/..."
 
@@ -30,7 +32,7 @@ def upload_image(path, filename):
     print(f"  Subindo {filename}...")
     with open(path, 'rb') as f:
         data = f.read()
-    mime = mimetypes.guess_type(path)[0] or 'image/jpeg'
+    mime = mimetypes.guess_type(str(path))[0] or 'image/jpeg'
     r = requests.post(
         f'{BASE}/media', auth=AUTH,
         headers={'Content-Disposition': f'attachment; filename="{filename}"', 'Content-Type': mime},
@@ -102,7 +104,7 @@ if not test.ok:
     print("3. Encontre o bloco:")
     print('     slug: "a-montanha-contra-a-caverna",')
     print("4. Adicione APÓS a linha `date: \"05/05/2026\",`:")
-    print('     thumb: "./index_files/FLaneKfrfyGYOgJd.jpg",')
+    print('     thumb: "assets/FLaneKfrfyGYOgJd.jpg",')
     print()
     print("NOTA: Também adicione thumbs para os outros artigos base")
     print("que estão sem imagem (somos-livres, ser-so-religioso, etc.)")
@@ -133,7 +135,7 @@ nietzsche_url = None
 print("\n[3] Upload imagem Nietzsche (A Montanha)...")
 nietzsche_url = upload_image(NIETZSCHE_IMG, "nietzsche.jpeg")
 if not nietzsche_url:
-    nietzsche_url = "./index_files/FLaneKfrfyGYOgJd.jpg"
+    nietzsche_url = "assets/FLaneKfrfyGYOgJd.jpg"
     print(f"  Usando fallback: {nietzsche_url}")
 
 # ── 5. Upload imagem Peter Pan ───────────────────────────────────
@@ -165,10 +167,10 @@ print("\n[6] Injetando patch de thumbs para artigos base...")
 # Mapeamento: slug → (thumb_url, descrição)
 BASE_THUMBS = {
     "a-montanha-contra-a-caverna":         (nietzsche_url, "Nietzsche"),
-    "somos-livres-por-completo":           ("./index_files/zBmXzIGbgLLlbNyh.jpg", "index_files"),
-    "ser-so-religioso-pode-te-tornar-ignorante": ("./index_files/AJPBTuUJaFhjwjvx.jpg", "index_files"),
-    "a-etica-da-virtude-segundo-aristoteles": ("./index_files/wPdrfjjEMXEymTcc.jpg", "index_files"),
-    "critica-da-razao-pura":               ("./index_files/yPCECtiDBKjEdTjP.jpg", "index_files"),
+    "somos-livres-por-completo":           ("assets/zBmXzIGbgLLlbNyh.jpg", "assets"),
+    "ser-so-religioso-pode-te-tornar-ignorante": ("assets/AJPBTuUJaFhjwjvx.jpg", "assets"),
+    "a-etica-da-virtude-segundo-aristoteles": ("assets/wPdrfjjEMXEymTcc.jpg", "assets"),
+    "critica-da-razao-pura":               ("assets/yPCECtiDBKjEdTjP.jpg", "assets"),
 }
 
 patch_lines = "\n".join([
