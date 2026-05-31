@@ -100,6 +100,12 @@ def upload(ftp, local_path, remote_path):
     with open(local_path, "rb") as f:
         ftp.storbinary(f"STOR {remote_path}", f)
 
+def connect():
+    ftp = ftplib.FTP(HOST, timeout=FTP_TIMEOUT)
+    ftp.login(USER, PASS)
+    ftp.set_pasv(True)
+    return ftp
+
 def main():
     check_env()
 
@@ -110,9 +116,7 @@ def main():
 
     print(f"Conectando em {HOST} …", flush=True)
     try:
-        ftp = ftplib.FTP(HOST, timeout=FTP_TIMEOUT)
-        ftp.login(USER, PASS)
-        ftp.set_pasv(True)
+        ftp = connect()
     except Exception as e:
         print(f"[ERRO] Falha na conexão FTP: {e}", flush=True)
         sys.exit(1)
@@ -127,14 +131,29 @@ def main():
         remote   = REMOTE_DIR.rstrip("/") + "/" + str(relative).replace("\\", "/")
         try:
             print(f"  →  {relative}", flush=True)
-            upload(ftp, local, remote)
+            for attempt in range(1, 4):
+                try:
+                    upload(ftp, local, remote)
+                    break
+                except (ftplib.error_temp, OSError, EOFError, BrokenPipeError) as e:
+                    if attempt == 3:
+                        raise
+                    print(f"      reconectando ({attempt}/3): {e}", flush=True)
+                    try:
+                        ftp.quit()
+                    except Exception:
+                        pass
+                    ftp = connect()
             print(f"  ✓  {relative}", flush=True)
             ok += 1
         except Exception as e:
             print(f"  ✗  {relative}  [{e}]", flush=True)
             errors.append((str(relative), str(e)))
 
-    ftp.quit()
+    try:
+        ftp.quit()
+    except Exception:
+        pass
 
     print(f"\n{ok}/{len(files)} arquivos enviados com sucesso.", flush=True)
     if errors:
