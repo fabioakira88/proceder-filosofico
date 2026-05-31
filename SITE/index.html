@@ -1347,27 +1347,28 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.75rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .news-card {
       background: linear-gradient(145deg, rgba(11, 61, 145, 0.35), rgba(6, 30, 71, 0.65));
-      border: 2px solid var(--borda-dourada);
+      border: 1px solid rgba(201, 168, 76, 0.24);
+      border-radius: 8px;
       padding: 0;
       cursor: pointer;
-      transition: all 0.4s ease;
+      transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      min-height: 500px;
       text-decoration: none;
       color: inherit;
       opacity: 1 !important;
       visibility: visible !important;
-      transform: translateY(0) !important;
     }
 
     .news-card::before {
@@ -1391,24 +1392,47 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     .news-card:hover::before { opacity: 1; }
 
+    .news-card-img-wrap {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      flex-shrink: 0;
+    }
+
     .news-card-thumb {
       width: 100%;
-      height: 200px;
-      aspect-ratio: 16 / 9;
+      height: 100%;
       object-fit: cover;
       object-position: center center;
       display: block;
-      overflow: hidden;
-      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
     }
 
-    .news-grid .news-card:nth-child(-n+3) .news-card-thumb {
-      height: 260px;
-      aspect-ratio: auto;
+    .news-card-cover {
+      height: 220px;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(201, 168, 76, 0.22), transparent 26%),
+        linear-gradient(135deg, rgba(11, 61, 145, 0.85), rgba(6, 13, 30, 0.98));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .news-card-cover span {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.6rem;
+      font-weight: 700;
+      color: rgba(201, 168, 76, 0.24);
+      line-height: 1;
     }
 
     .news-card-body {
-      padding: 1.75rem;
+      padding: 1.35rem;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -1418,10 +1442,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       font-family: 'Cinzel', serif;
       font-size: 0.65rem;
       font-weight: 600;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--dourado);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -1436,12 +1460,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     .news-card-title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
+      font-size: 1.08rem;
       font-weight: 700;
       color: var(--branco);
       line-height: 1.35;
       margin-bottom: 0.85rem;
-      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .news-card-excerpt {
@@ -1460,6 +1487,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
       padding-top: 1rem;
       border-top: 1px solid var(--borda-dourada);
       margin-top: auto;
@@ -1470,6 +1498,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       font-size: 0.72rem;
       color: var(--cinza-medio);
       letter-spacing: 0.08em;
+      white-space: nowrap;
     }
 
     .news-card-read {
@@ -1483,11 +1512,36 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       align-items: center;
       gap: 0.4rem;
       transition: gap 0.3s ease;
+      white-space: nowrap;
     }
 
     .news-card:hover .news-card-read { gap: 0.7rem; }
 
     .news-card-read svg { width: 14px; height: 14px; }
+
+    .news-card.featured-card {
+      min-height: 560px;
+      background: linear-gradient(150deg, rgba(11, 61, 145, 0.42), rgba(6, 13, 30, 0.86));
+      border-color: rgba(201, 168, 76, 0.36);
+    }
+
+    .news-card.featured-card .news-card-img-wrap,
+    .news-card.featured-card .news-card-cover {
+      height: 270px;
+    }
+
+    .news-card.featured-card .news-card-body {
+      padding: 1.55rem;
+    }
+
+    .news-card.featured-card .news-card-title {
+      font-size: 1.28rem;
+      -webkit-line-clamp: 3;
+    }
+
+    .news-card.featured-card .news-card-excerpt {
+      -webkit-line-clamp: 4;
+    }
 
     /* --- Leitor de Post (overlay) --- */
     .post-reader-overlay {
@@ -1887,7 +1941,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   </div>
 
   <span id="filosofos" style="display:block;height:0;visibility:hidden;margin-top:-80px"></span>
-  <div id="ms-modal"><div id="ms-modal-inner"><button id="ms-modal-back">← Voltar</button><div id="ms-modal-content"></div></div></div><section id="mestres-section"><div class="ms-header"><span class="ms-label">Galeria Filosófica</span><h2 class="ms-title">Mestres do Pensamento</h2><p class="ms-subtitle">Conheça os filósofos que transformaram a história do pensamento humano.</p></div><div id="ms-grid"><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/epicteto.png" alt="Epicteto" loading="lazy"></div><div class="ms-nome">Epicteto</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="../BRANDING/assets/Fil%C3%B3sofos%20/marco-aurelio.JPG" alt="Marco Aurélio" loading="lazy"></div><div class="ms-nome">Marco Aurélio</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/seneca.png" alt="Sêneca" loading="lazy"></div><div class="ms-nome">Sêneca</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/platao-mestre.jpeg" alt="Platão" loading="lazy"></div><div class="ms-nome">Platão</div><div class="ms-corrente">Filosofia Clássica</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/aristoteles-mestre.jpeg" alt="Aristóteles" loading="lazy"></div><div class="ms-nome">Aristóteles</div><div class="ms-corrente">Filosofia Clássica</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/nietzsche-mestre.jpg" alt="Nietzsche" loading="lazy"></div><div class="ms-nome">Nietzsche</div><div class="ms-corrente">Filosofia Moderna</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="../BRANDING/assets/Fil%C3%B3sofos%20/hannah-arendt.jpg" alt="Hannah Arendt" loading="lazy"></div><div class="ms-nome">Hannah Arendt</div><div class="ms-corrente">Filosofia Contemporânea</div></div></div></section>
+  <div id="ms-modal"><div id="ms-modal-inner"><button id="ms-modal-back">← Voltar</button><div id="ms-modal-content"></div></div></div><section id="mestres-section"><div class="ms-header"><span class="ms-label">Galeria Filosófica</span><h2 class="ms-title">Mestres do Pensamento</h2><p class="ms-subtitle">Conheça os filósofos que transformaram a história do pensamento humano.</p></div><div id="ms-grid"><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/epicteto.png" alt="Epicteto" loading="lazy"></div><div class="ms-nome">Epicteto</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/marco-aurelio.JPG" alt="Marco Aurélio" loading="lazy"></div><div class="ms-nome">Marco Aurélio</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/seneca.png" alt="Sêneca" loading="lazy"></div><div class="ms-nome">Sêneca</div><div class="ms-corrente">Estoicismo</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/platao-mestre.jpeg" alt="Platão" loading="lazy"></div><div class="ms-nome">Platão</div><div class="ms-corrente">Filosofia Clássica</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/aristoteles-mestre.jpeg" alt="Aristóteles" loading="lazy"></div><div class="ms-nome">Aristóteles</div><div class="ms-corrente">Filosofia Clássica</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/nietzsche-mestre.jpg" alt="Nietzsche" loading="lazy"></div><div class="ms-nome">Nietzsche</div><div class="ms-corrente">Filosofia Moderna</div></div><div class="ms-card"><div class="ms-circle-wrap"><img decoding="async" class="ms-circle-img" src="assets/hannah-arendt.jpg" alt="Hannah Arendt" loading="lazy"></div><div class="ms-nome">Hannah Arendt</div><div class="ms-corrente">Filosofia Contemporânea</div></div></div></section>
 
   <div class="section-divider">
     <div class="line"></div>
@@ -1974,7 +2028,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       </div>
       <div class="news-grid" id="newsGrid">
         <!-- Cards gerados pelo JavaScript -->
-      <article class="news-card" data-slug="peter-pan-sindrome-amadurecimento" role="button" tabindex="0" aria-label="Ler artigo: J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais"><div class="news-card-body"><span class="news-card-tag">FILOSOFIA E PSICOLOGIA</span><h3 class="news-card-title">J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais</h3><p class="news-card-excerpt">Peter Pan não é uma história infantil. É um diagnóstico. Existe uma pergunta que a maioria das pessoas evita fazer em voz alta: eu realmente cresci, ou apenas aprendi a fingir que cresci?</p><div class="news-card-meta"><span class="news-card-date">09 de Maio de 2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="confissoes-santo-agostinho" role="button" tabindex="0" aria-label="Ler artigo: As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental"><div class="news-card-body"><span class="news-card-tag">FILOSOFIA MEDIEVAL</span><h3 class="news-card-title">As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental</h3><p class="news-card-excerpt">Escrito entre 397 e 400 d.C., As Confissões não é uma autobiografia. É um longo diálogo com Deus — seis momentos que atravessam séculos e ainda falam ao coração de quem os lê.</p><div class="news-card-meta"><span class="news-card-date">09 de Maio de 2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="a-montanha-contra-a-caverna" role="button" tabindex="0" aria-label="Ler artigo: A Montanha Contra a Caverna"><div class="news-card-body"><span class="news-card-tag">FILOSOFIA COMPARADA</span><h3 class="news-card-title">A Montanha Contra a Caverna</h3><p class="news-card-excerpt">Nietzsche não refuta Platão — ele o inverte. E nessa inversão, muda tudo o que entendemos por verdade, mundo e existência. Zaratustra não sai da caverna de Platão para buscar um mundo verdadeiro; ele sobe e desce a sua própria montanha para afirmar este mundo.</p><div class="news-card-meta"><span class="news-card-date">05/05/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="somos-livres-por-completo" role="button" tabindex="0" aria-label="Ler artigo: Somos livres por completo… ou já nascemos com um sentido?"><div class="news-card-body"><span class="news-card-tag">EXISTENCIALISMO</span><h3 class="news-card-title">Somos livres por completo… ou já nascemos com um sentido?</h3><p class="news-card-excerpt">O existencialismo afirma que o ser humano nasce sem essência e se constrói a si mesmo por meio das suas escolhas. Seus opositores de Platão a Kant sustentam o oposto: há uma ordem, um sentido ou uma razão anterior à escolha individual.</p><div class="news-card-meta"><span class="news-card-date">15/01/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="ser-so-religioso-pode-te-tornar-ignorante" role="button" tabindex="0" aria-label="Ler artigo: Ser só religioso pode te tornar ignorante"><div class="news-card-body"><span class="news-card-tag">FILOSOFIA</span><h3 class="news-card-title">Ser só religioso pode te tornar ignorante</h3><p class="news-card-excerpt">Mas quando ela substitui o pensamento, vira dogma, não sabedoria. A filosofia nunca foi inimiga da fé — ela é inimiga da fé que proibe perguntas. Pensar não destrói crença. Pensar amadurece.</p><div class="news-card-meta"><span class="news-card-date">12/01/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="a-etica-da-virtude-segundo-aristoteles" role="button" tabindex="0" aria-label="Ler artigo: A Ética da Virtude Segundo Aristóteles"><div class="news-card-body"><span class="news-card-tag">ÉTICA</span><h3 class="news-card-title">A Ética da Virtude Segundo Aristóteles</h3><p class="news-card-excerpt">A ética não nasce de intenções isoladas, mas da repetição consciente dos atos. Aristóteles argumenta que a verdadeira virtude não é fruto de um conhecimento teórico isolado, mas sim das ações repetidas e conscientes que moldam nossas disposições morais.</p><div class="news-card-meta"><span class="news-card-date">08/01/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="critica-da-razao-pura" role="button" tabindex="0" aria-label="Ler artigo: Até onde nós podemos conhecer?"><div class="news-card-body"><span class="news-card-tag">EPISTEMOLOGIA</span><h3 class="news-card-title">Até onde nós podemos conhecer?</h3><p class="news-card-excerpt">Na Crítica da Razão Pura (1781), Immanuel Kant investiga até onde a razão humana pode ir no conhecimento da realidade. Em vez de perguntar apenas o que conhecemos, Kant pergunta como é possível conhecer.</p><div class="news-card-meta"><span class="news-card-date">05/01/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article><article class="news-card" data-slug="licoes-de-siegfried" role="button" tabindex="0" aria-label="Ler artigo: A Fragilidade Oculta: Lições de Siegfried e a Condição Humana"><div class="news-card-body"><span class="news-card-tag">MITOLOGIA</span><h3 class="news-card-title">A Fragilidade Oculta: Lições de Siegfried e a Condição Humana</h3><p class="news-card-excerpt">No mito germânico, Siegfried mata o dragão Fafnir e banha-se em seu sangue, tornando-se invulnerável. O sangue simboliza a assimilação da força bruta, da coragem extrema e da vitória sobre o caos primordial.</p><div class="news-card-meta"><span class="news-card-date">02/01/2026</span><span class="news-card-read">Ler materia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></span></div></div></article></div>
+      </div>
     </div>
   </section>
 
@@ -2144,23 +2198,23 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <div class="sf-carousel" id="sfCarousel">
       <div class="sf-slides" id="sfSlides">
         <div class="sf-slide active">
-          <img src="../BRANDING/assets/frases/frase-S%C3%B3cratespost.png" alt="Sócrates" loading="lazy">
+          <img src="assets/frase-socrates-post.png" alt="Sócrates" loading="lazy">
           <p class="sf-autor">— Sócrates</p>
         </div>
         <div class="sf-slide">
-          <img src="../BRANDING/assets/frases/frase-seneca.png" alt="Sêneca" loading="lazy">
+          <img src="assets/frase-seneca.png" alt="Sêneca" loading="lazy">
           <p class="sf-autor">— Sêneca</p>
         </div>
         <div class="sf-slide">
-          <img src="../BRANDING/assets/frases/frase-platao.png" alt="Platão" loading="lazy">
+          <img src="assets/frase-platao.png" alt="Platão" loading="lazy">
           <p class="sf-autor">— Platão</p>
         </div>
         <div class="sf-slide">
-          <img src="../BRANDING/assets/frases/frase-marco-aurelio.png" alt="Marco Aurélio" loading="lazy">
+          <img src="assets/frase-marco-aurelio.png" alt="Marco Aurélio" loading="lazy">
           <p class="sf-autor">— Marco Aurélio</p>
         </div>
         <div class="sf-slide">
-          <img src="../BRANDING/assets/frases/frase-jean-paul-sartrepost.png" alt="Sartre" loading="lazy">
+          <img src="assets/frase-jean-paul-sartrepost.png" alt="Sartre" loading="lazy">
           <p class="sf-autor">— Jean-Paul Sartre</p>
         </div>
       </div>
@@ -2567,72 +2621,19 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     });
   </script>
 
+  <script src="posts.js?v=20260530-cards"></script>
+
   <!-- ============================================
        ARTIGOS — JSON + LOGICA DE CARDS E LEITOR
-       Para adicionar/editar artigos: edite o array POSTS abaixo
-       Cada post tem: slug, title, tag, date, excerpt, content
+       Para adicionar/editar artigos: edite SITE/posts.js
+       Cada post tem: id/slug, title, tag, date, excerpt, content
        ============================================ -->
   <script>
   /* ============================================
-     BANCO DE DADOS DOS ARTIGOS (JSON embutido)
-     Os 5 ultimos artigos do Proceder Filosofico
+     BANCO DE DADOS DOS ARTIGOS
      ============================================ */
-  var POSTS = [
-    {
-      slug: "a-montanha-contra-a-caverna",
-      title: "A Montanha Contra a Caverna",
-      tag: "FILOSOFIA COMPARADA",
-      date: "05/05/2026",
-      thumb: "assets/nietzsche-mestre.jpg",
-      excerpt: "Nietzsche não refuta Platão — ele o inverte. E nessa inversão, muda tudo o que entendemos por verdade, mundo e existência. Zaratustra não sai da caverna de Platão para buscar um mundo verdadeiro; ele sobe e desce a sua própria montanha para afirmar este mundo.",
-      content: "<h2>O que Platão realmente disse — e o que Nietzsche ouviu</h2><p>O mito da caverna, no livro VII de <em>A República</em>, não é apenas uma metáfora pedagógica. É a declaração fundadora de toda a metafísica ocidental: existe um mundo de aparências (o que vemos, sentimos, vivemos) e um mundo de essências (o que é verdadeiramente real, imutável, perfeito). O filósofo é aquele que consegue sair da caverna — da ilusão sensível — e olhar diretamente para o Sol, símbolo da Ideia do Bem.</p><p>O movimento platônico é, portanto, sempre <em>para cima e para fora</em>: sair do corpo, sair do tempo, sair do mundo. A verdade não está aqui. Está em outro lugar. E quem a alcança tem o dever de retornar para guiar os outros — ainda que não queira, ainda que os outros não acreditem nele.</p><p>Nietzsche leu isso com atenção e com raiva. Para ele, o mito da caverna não era uma descrição da condição humana — era um sintoma. O sintoma de uma civilização que aprendeu a detestar a vida que tem e a venerar uma vida que inventou.</p><blockquote>\"O que me indigna não é que vocês tenham mentido para mim, mas que de agora em diante eu não possa mais acreditar em vocês.\"<br><em>— Nietzsche, Assim Falou Zaratustra</em></blockquote><h2>A Inversão Crítica: a montanha de Zaratustra</h2><p><em>Assim Falou Zaratustra</em> começa com um gesto que é, ao mesmo tempo, resposta e provocação ao mito platônico. Zaratustra, aos trinta anos, abandona sua casa e sobe para as montanhas. Vive em solidão durante dez anos. Depois — e aqui está o coração da inversão — desce.</p><p>Em Platão, o sábio que conheceu a verdade deve <em>retornar</em> à caverna como um dever político. Ele desce porque deve, não porque quer. E ao descer, arrisca ser morto pelos que vivem na escuridão (a alusão à morte de Sócrates é explícita). Em Nietzsche, Zaratustra desce porque transborda. Não por dever — por generosidade. Ele está cheio demais de si para não compartilhar.</p><p>Mas o mais significativo não é o motivo da descida — é o que Zaratustra traz consigo. Platão traz a verdade de outro mundo. Zaratustra traz uma nova relação com <em>este</em> mundo. Ele não vem anunciar essências imutáveis ou um Sol transcendente. Ele vem proclamar que não há sol nenhum além do que aquece agora.</p><h2>Conceito-Chave: Transvaloração</h2><p>Nietzsche chama de <strong>transvaloração de todos os valores</strong> o projeto de substituir os valores que negam a vida (humildade, resignação, esperança no além) por valores que a afirmam (vontade de potência, criação, amor fati — amor ao destino).</p><p>Zaratustra não é um filósofo que descobriu a verdade. É um criador que anuncia que a verdade precisa ser criada — porque não existe pronta em nenhum mundo superior.</p><h2>A Lógica Filosófica da Inversão</h2><h3>O problema do \"mundo verdadeiro\"</h3><p>Em <em>O Crepúsculo dos Ídolos</em>, Nietzsche dedica um capítulo inteiro a reconstruir a história do \"mundo verdadeiro\" na filosofia ocidental. Começa em Platão, passa pelo Cristianismo, pela filosofia kantiana e termina com a abolição da própria distinção. O argumento central é cirúrgico: se o \"mundo verdadeiro\" é inacessível, indemonstrado e inacessível, então ele não nos serve de nada — e podemos abolir tanto ele quanto o \"mundo aparente\" que lhe correspondia.</p><p>Com essa abolição, não sobra o niilismo — sobra o mundo. <em>Este</em> mundo, com toda a sua dor, sua contingência, sua beleza brutal e sua impermanência. E é diante desse mundo que Zaratustra propõe o <em>amor fati</em>: não tolerar a existência, não resignar-se a ela — mas amá-la, inclusive em tudo que ela tem de duro e de trágico.</p><h3>O Eterno Retorno como teste</h3><p>A doutrina do eterno retorno, ensinada por Zaratustra, funciona como o teste filosófico supremo contra o platonismo. Se tudo retorna eternamente — cada momento, cada dor, cada alegria — então não há salvação em nenhum além, não há segunda chance numa vida melhor, não há mundo verdadeiro esperando no fim. Existe apenas este instante, repetindo-se infinitamente.</p><p>Quem consegue dizer \"sim\" a essa ideia — quem deseja que sua vida se repita exatamente como é, sem alteração — é o <em>Übermensch</em>, o além-do-homem. Não um super-herói, mas alguém que abandonou a necessidade de um sentido transcendente e encontrou em si mesmo a fonte de valores.</p><blockquote>\"O que não me destrói me fortalece.\" — mas a montanha de Zaratustra não é o lugar de escapar da destruição. É o lugar de transformá-la em afirmação.<br><em>— Nietzsche, Crepúsculo dos Ídolos</em></blockquote><h2>Por que Nietzsche precisava de Platão para existir</h2><p>Há uma ironia filosófica fundamental aqui: Nietzsche não teria nada a dizer sem Platão. A inversão só é possível porque o original existe. Zaratustra só faz sentido em contraste com a caverna platônica. Nietzsche era, como ele mesmo sabia, um filho pródigo do platonismo — alguém que amou o pai o suficiente para destruí-lo.</p><p>Isso não é uma fraqueza da filosofia nietzschiana. É, ao contrário, o que a torna dialeticamente honesta. Nietzsche não ignora Platão — ele o lê com profundidade suficiente para ver o que está em jogo. E o que está em jogo é nada menos que a direção de toda a cultura ocidental: ou continuamos a venerar um mundo que não existe, ou aprendemos a criar valor dentro do único mundo que temos.</p><h2>O que fica depois do confronto</h2><p>A tensão entre Platão e Nietzsche não foi resolvida pela história da filosofia — ela foi reencenada em formas cada vez mais sutis. O existencialismo de Heidegger e Sartre herdou muito de Nietzsche (a facticidade, o projeto, a ausência de essências predefinidas). O neoplatonismo e certas correntes da filosofia analítica continuaram a buscar fundamentos objetivos para os valores e para a verdade.</p><p>O que permanece como contribuição insubstituível de Nietzsche não é a destruição de Platão — mas a pergunta que ele forçou a filosofia a formular com nova urgência: se não há mundo verdadeiro além deste, quem somos nós e como devemos viver?</p><p>Zaratustra desce de sua montanha com uma resposta incompleta e exigente: <em>tornem-se quem vocês são</em>. Sem guia transcendente, sem caverna platônica, sem sombra redentora. Apenas a montanha, o sol que já existe, e a vontade de afirmar.</p><blockquote>\"Devir o que se é — eis o que exige coragem de quem não pode mais acreditar em ser salvo de fora.\"<br><em>— Nietzsche, Ecce Homo</em></blockquote>"
-    },
-    {
-      slug: "somos-livres-por-completo",
-      title: "Somos livres por completo\u2026 ou j\u00e1 nascemos com um sentido?",
-      tag: "EXISTENCIALISMO",
-      date: "15/01/2026",
-      thumb: "assets/platao-mestre.jpeg",
-      excerpt: "O existencialismo afirma que o ser humano nasce sem ess\u00eancia e se constr\u00f3i a si mesmo por meio das suas escolhas. Seus opositores de Plat\u00e3o a Kant sustentam o oposto: h\u00e1 uma ordem, um sentido ou uma raz\u00e3o anterior \u00e0 escolha individual.",
-      content: "<h2>A Liberdade Radical de Sartre</h2><p>Jean-Paul Sartre, um dos maiores expoentes do existencialismo, afirmou que <strong>\u201ca exist\u00eancia precede a ess\u00eancia\u201d</strong>. Isso significa que o ser humano primeiro existe \u2014 surge no mundo sem um prop\u00f3sito predefinido \u2014 e s\u00f3 depois, por meio de suas escolhas e a\u00e7\u00f5es, constr\u00f3i quem \u00e9. N\u00e3o h\u00e1 natureza humana fixa, nenhum destino gravado antes do nascimento.</p><p>Essa vis\u00e3o coloca sobre os ombros de cada indiv\u00edduo uma responsabilidade absoluta. Somos, segundo Sartre, <em>condenados a ser livres</em>: n\u00e3o podemos escapar da liberdade, pois at\u00e9 a recusa de escolher \u00e9 uma escolha. A ang\u00fastia que sentimos diante das decis\u00f5es importantes da vida seria, portanto, a pr\u00f3pria marca da nossa condi\u00e7\u00e3o.</p><h2>O Essencialismo e a Ordem Anterior</h2><p>Do lado oposto, o essencialismo \u2014 presente em Plat\u00e3o, Arist\u00f3teles, Tom\u00e1s de Aquino e at\u00e9 em Kant \u2014 defende que existe uma ess\u00eancia, uma natureza ou uma raz\u00e3o que precede a exist\u00eancia individual. Para Plat\u00e3o, as Formas ou Ideias s\u00e3o realidades eternas e perfeitas das quais os seres do mundo sens\u00edvel s\u00e3o meras c\u00f3pias imperfeitas. O ser humano teria, assim, uma forma ideal que o define antes mesmo de nascer.</p><p>Arist\u00f3teles, por sua vez, fala em <strong>telos</strong>: cada coisa tem uma finalidade interna, uma fun\u00e7\u00e3o que lhe \u00e9 pr\u00f3pria. O telos do ser humano seria a <em>eudaimonia</em>, a felicidade ou florescimento, alcan\u00e7ada pela vida virtuosa e racional. H\u00e1, portanto, uma dire\u00e7\u00e3o inscrita na pr\u00f3pria natureza humana.</p><h2>A Tens\u00e3o que nos Define</h2><p>A tens\u00e3o entre existencialismo e essencialismo n\u00e3o \u00e9 meramente acad\u00eamica. Ela toca quest\u00f5es que vivemos todos os dias: somos respons\u00e1veis inteiramente pelo que somos? Existe alguma voca\u00e7\u00e3o ou prop\u00f3sito que nos antecede? A resposta que cada um d\u00e1 a essas perguntas molda a forma como enfrenta as escolhas, as crises e o sentido da pr\u00f3pria vida.</p><p>Talvez a sabedoria esteja em reconhecer que somos, ao mesmo tempo, seres lançados num mundo que n\u00e3o escolhemos \u2014 com uma biologia, uma cultura, uma hist\u00f3ria \u2014 e agentes capazes de ressignificar esse lan\u00e7amento por meio da reflex\u00e3o e da a\u00e7\u00e3o consciente. A liberdade n\u00e3o \u00e9 absoluta, mas tampouco \u00e9 ilusoria.</p>"
-    },
-    {
-      slug: "ser-so-religioso-pode-te-tornar-ignorante",
-      title: "Ser s\u00f3 religioso pode te tornar ignorante",
-      tag: "FILOSOFIA",
-      date: "12/01/2026",
-      thumb: "assets/epicteto.png",
-      excerpt: "Mas quando ela substitui o pensamento, vira dogma, n\u00e3o sabedoria. A filosofia nunca foi inimiga da f\u00e9 \u2014 ela \u00e9 inimiga da f\u00e9 que proibe perguntas. Pensar n\u00e3o destr\u00f3i cren\u00e7a. Pensar amadurece.",
-      content: "<h2>F\u00e9 e Raz\u00e3o: Uma Tens\u00e3o Antiga</h2><p>Desde os prim\u00f3rdios da filosofia ocidental, a rela\u00e7\u00e3o entre f\u00e9 e raz\u00e3o foi marcada por uma tens\u00e3o produtiva. Tom\u00e1s de Aquino, um dos maiores te\u00f3logos da hist\u00f3ria, n\u00e3o via contradi\u00e7\u00e3o entre crer e pensar \u2014 ao contr\u00e1rio, para ele a raz\u00e3o era o instrumento pelo qual a f\u00e9 se aprofundava e se tornava mais robusta. A f\u00e9 que teme a pergunta, dizia ele, \u00e9 uma f\u00e9 fr\u00e1gil.</p><p>O problema n\u00e3o \u00e9 a religi\u00e3o em si. O problema \u00e9 quando a pr\u00e1tica religiosa se torna o <em>\u00fanico</em> filtro pelo qual se interpreta o mundo, bloqueando o exerc\u00edcio cr\u00edtico do pensamento. Quando a resposta \u201c\u00e9 a vontade de Deus\u201d encerra toda investiga\u00e7\u00e3o, a curiosidade intelectual morre \u2014 e com ela, a capacidade de crescer.</p><h2>O Dogma como Armadilha</h2><p>O dogma \u00e9 qualquer cren\u00e7a aceita sem exame. Ele pode ser religioso, pol\u00edtico ou cient\u00edfico. O que o torna perigoso n\u00e3o \u00e9 o conte\u00fado, mas a <strong>recusa em question\u00e1-lo</strong>. Uma pessoa que nunca questiona o que acredita \u00e9, por defini\u00e7\u00e3o, uma pessoa que parou de pensar.</p><p>S\u00f3crates foi condenado \u00e0 morte por questionar as cren\u00e7as de sua \u00e9poca. Galileu foi perseguido por afirmar que a Terra girava em torno do Sol. Em ambos os casos, o dogma \u2014 religioso ou cultural \u2014 tentou silenciar a investiga\u00e7\u00e3o honesta da realidade. A hist\u00f3ria mostra que o pensamento livre sempre pagou um pre\u00e7o alto.</p><h2>Pensar Amadurece a F\u00e9</h2><p>A boa not\u00edcia \u00e9 que pensar n\u00e3o destr\u00f3i a f\u00e9 genuina \u2014 ela a purifica. Uma f\u00e9 que sobreviveu ao escrutinio racional \u00e9 mais s\u00f3lida do que uma f\u00e9 que nunca foi testada. Os maiores m\u00edsticos e te\u00f3logos da hist\u00f3ria \u2014 Agostinho, Aquino, Mestre Eckhart, Simone Weil \u2014 foram tamb\u00e9m pensadores rigorosos.</p><p>O convite do Proceder Filos\u00f3fico n\u00e3o \u00e9 abandonar a f\u00e9, mas exercit\u00e1-la junto com a raz\u00e3o. Questionar n\u00e3o \u00e9 blasf\u00eamar. \u00c9 respeitar a intelig\u00eancia que, segundo as pr\u00f3prias tradi\u00e7\u00f5es religiosas, nos foi dada para ser usada.</p>"
-    },
-    {
-      slug: "a-etica-da-virtude-segundo-aristoteles",
-      title: "A \u00c9tica da Virtude Segundo Arist\u00f3teles",
-      tag: "\u00c9TICA",
-      date: "08/01/2026",
-      thumb: "assets/aristoteles-mestre.jpeg",
-      excerpt: "A \u00e9tica n\u00e3o nasce de inten\u00e7\u00f5es isoladas, mas da repeti\u00e7\u00e3o consciente dos atos. Arist\u00f3teles argumenta que a verdadeira virtude n\u00e3o \u00e9 fruto de um conhecimento te\u00f3rico isolado, mas sim das a\u00e7\u00f5es repetidas e conscientes que moldam nossas disposi\u00e7\u00f5es morais.",
-      content: "<h2>Introdu\u00e7\u00e3o \u00e0 \u00c9tica da Virtude</h2><p>A \u00e9tica da virtude, proposta por Arist\u00f3teles, \u00e9 uma abordagem que enfatiza o desenvolvimento do car\u00e1ter ao longo do tempo por meio da pr\u00e1tica constante de a\u00e7\u00f5es virtuosas. Arist\u00f3teles argumenta que a verdadeira virtude n\u00e3o \u00e9 fruto de um conhecimento te\u00f3rico isolado, mas sim das a\u00e7\u00f5es repetidas e conscientes que moldam nossas disposi\u00e7\u00f5es morais. Essa perspectiva nos ensina que n\u00e3o basta saber o que \u00e9 o bem; \u00e9 preciso pratic\u00e1-lo para que possamos nos tornar pessoas justas e virtuosas.</p><h3>O Papel do H\u00e1bito na Forma\u00e7\u00e3o do Car\u00e1ter</h3><p>De acordo com Arist\u00f3teles, o h\u00e1bito desempenha um papel crucial na forma\u00e7\u00e3o do nosso car\u00e1ter. Atrav\u00e9s da repeti\u00e7\u00e3o consciente de atos virtuosos, desenvolvemos um padr\u00e3o de comportamento que se torna parte integrante de quem somos. Para ele, agir de maneira justa e \u00e9tica deve ser uma pr\u00e1tica cont\u00ednua, e n\u00e3o um resultado de um conhecimento intelectual. Assim, ao nos dedicarmos a realizar a\u00e7\u00f5es que refletem virtudes como a justi\u00e7a, a coragem e a temperan\u00e7a, estamos moldando nosso car\u00e1ter e nos aproximando da vida virtuosa.</p><h3>Virtude como Forma de Vida</h3><p>Para Arist\u00f3teles, a virtude n\u00e3o se limita a um discurso ou a uma teoria moral; ela representa uma forma de vida. A \u00e9tica da virtude ensina que viver eticamente deve ser um reflexo das nossas a\u00e7\u00f5es di\u00e1rias. Portanto, a verdadeira virtude est\u00e1 enraizada na pr\u00e1tica constante de comportamentos que promovem o bem. Esse tipo de vida requer uma reflex\u00e3o cont\u00ednua sobre nossas a\u00e7\u00f5es e uma disposi\u00e7\u00e3o para melhorar, sempre buscando agir com excel\u00eancia moral. A pr\u00e1tica da virtude se torna, ent\u00e3o, um caminho para a felicidade verdadeira e a realiza\u00e7\u00e3o pessoal.</p><p>Em suma, a \u00e9tica da virtude de Arist\u00f3teles nos convida a olhar para o nosso cotidiano, percebendo que a \u00e9tica n\u00e3o reside em teorias distantes, mas em nosso comportamento habitual. Ao nos comprometermos com a pr\u00e1tica da virtude, cultivamos um car\u00e1ter que n\u00e3o apenas conhece o que \u00e9 o bem, mas que \u00e9, de fato, o bem em a\u00e7\u00e3o.</p>"
-    },
-    {
-      slug: "critica-da-razao-pura",
-      title: "At\u00e9 onde n\u00f3s podemos conhecer?",
-      tag: "EPISTEMOLOGIA",
-      date: "05/01/2026",
-      thumb: "assets/seneca.png",
-      excerpt: "Na Cr\u00edtica da Raz\u00e3o Pura (1781), Immanuel Kant investiga at\u00e9 onde a raz\u00e3o humana pode ir no conhecimento da realidade. Em vez de perguntar apenas o que conhecemos, Kant pergunta como \u00e9 poss\u00edvel conhecer.",
-      content: "<h2>A Introdu\u00e7\u00e3o \u00e0 Cr\u00edtica da Raz\u00e3o Pura</h2><p>Na seminal obra <em>\u201cA Cr\u00edtica da Raz\u00e3o Pura\u201d</em> (1781), o fil\u00f3sofo Immanuel Kant prop\u00f5e um questionamento profundo acerca da capacidade da raz\u00e3o humana em alcan\u00e7ar o conhecimento da realidade. Kant n\u00e3o se limita a explorar o que sabemos, mas busca entender as condi\u00e7\u00f5es que tornam o conhecimento poss\u00edvel. Esse enfoque revolucionou a filosofia e abriu novos caminhos na reflex\u00e3o sobre a epistemologia, estabelecendo um importante marco no pensamento ocidental.</p><h2>O Papel dos Sentidos e das Estruturas a Priori</h2><p>Kant argumenta que o conhecimento n\u00e3o \u00e9 resultado exclusivo da experi\u00eancia sensorial nem puramente da raz\u00e3o. Em vez disso, \u00e9 fruto da intera\u00e7\u00e3o entre as informa\u00e7\u00f5es que recebemos pelos sentidos e as estruturas <em>a priori</em> da mente humana. Tais estruturas incluem conceitos fundamentais como espa\u00e7o, tempo e as categorias do entendimento, que organizam a experi\u00eancia sensorial.</p><p>De acordo com Kant, essas categorias formam a base sobre a qual constru\u00edmos nosso conhecimento. Isso significa que, enquanto podemos compreender como as coisas nos aparecem \u2014 o que ele chama de <strong>\u201cfen\u00f4menos\u201d</strong> \u2014, a verdadeira \u201ccoisa em si\u201d, ou <em>noumeno</em>, permanece al\u00e9m de nosso alcan\u00e7o. Portanto, esta obra n\u00e3o s\u00f3 investiga a natureza do conhecimento, mas tamb\u00e9m delimita os contornos da raz\u00e3o, definindo o que podemos conhecer e o que deve permanecer como um mist\u00e9rio.</p><h2>Os Limites da Raz\u00e3o: Dogmatismo e Ceticismo</h2><p>Outro aspecto crucial da obra de Kant \u00e9 sua cr\u00edtica tanto ao dogmatismo metaf\u00edsico quanto ao ceticismo radical. O dogmatismo, que afirma que \u00e9 poss\u00edvel conhecer a totalidade da realidade, \u00e9 refutado ao mostrar que existem limites intranspon\u00edveis para o entendimento humano. Por outro lado, o ceticismo radical, que nega a possibilidade de conhecimento, \u00e9 igualmente contestado. Kant nos apresenta um meio-termo: podemos conhecer, mas somente dentro de certos limites.</p><p>Atrav\u00e9s dessa an\u00e1lise rigorosa, Kant estabelece que, embora a raz\u00e3o humana tenha suas limita\u00e7\u00f5es, ainda \u00e9 poss\u00edvel alcan\u00e7ar um conhecimento significativo quando reconhecemos as condi\u00e7\u00f5es e as estruturas que moldam nossas experi\u00eancias. Assim, <em>\u201cA Cr\u00edtica da Raz\u00e3o Pura\u201d</em> n\u00e3o s\u00f3 ilumina os processos cognitivos, mas tamb\u00e9m estabelece as bases para o pensamento cr\u00edtico que perdura at\u00e9 os dias atuais.</p>"
-    },
-    {
-      slug: "licoes-de-siegfried",
-      title: "A Fragilidade Oculta: Li\u00e7\u00f5es de Siegfried e a Condi\u00e7\u00e3o Humana",
-      tag: "MITOLOGIA",
-      date: "02/01/2026",
-      thumb: "assets/FLaneKfrfyGYOgJd.jpg",
-      excerpt: "No mito germ\u00e2nico, Siegfried mata o drag\u00e3o Fafnir e banha-se em seu sangue, tornando-se invulner\u00e1vel. O sangue simboliza a assimila\u00e7\u00e3o da for\u00e7a bruta, da coragem extrema e da vit\u00f3ria sobre o caos primordial.",
-      content: "<h2>O Mito de Siegfried e o Drag\u00e3o</h2><p>A hist\u00f3ria de Siegfried derrotando o drag\u00e3o e se banhando em seu sangue \u00e9 uma poderosa met\u00e1fora para a condi\u00e7\u00e3o humana. Na mitologia, a vit\u00f3ria do her\u00f3i sobre a ferocidade se traduz em uma quase invencibilidade. Contudo, essa invulnerabilidade \u00e9 ilusoria e revela uma importante li\u00e7\u00e3o: mesmo os mais poderosos t\u00eam suas fraquezas.</p><h2>A Ilus\u00e3o da For\u00e7a e o Perigo da Ignor\u00e2ncia</h2><p>Nos seres humanos, acumulamos for\u00e7a, conhecimento e conquistas ao longo de nossa vida. No entanto, assim como a \u00fanica folha que exp\u00f4s Siegfried, sempre h\u00e1 um ponto vulner\u00e1vel que pode nos derrubar. Muitas vezes, ca\u00edmos n\u00e3o por falta de poder, mas por ignorar onde somos mais fracos. Esta fragilidade esquecida pode ser um obst\u00e1culo em nossa jornada, mostrando que a chave para a verdadeira for\u00e7a reside no reconhecimento de nossas limita\u00e7\u00f5es.</p><h2>A Import\u00e2ncia do Autoconhecimento</h2><p>O autoconhecimento \u00e9 crucial para um crescimento sustent\u00e1vel. Quando conseguimos identificar nossos pontos fracos, podemos trabalhar para fortalec\u00ea-los. Assim como Siegfried, que apesar de sua for\u00e7a, poderia ter sido derrotado por uma \u00fanica falha, n\u00f3s tamb\u00e9m podemos nos deparar com situa\u00e7\u00f5es que revelam nossas vulnerabilidades. Encorajar um olhar introspectico nos permite n\u00e3o s\u00f3 crescer como indiv\u00edduos mas tamb\u00e9m evitar quedas desnecess\u00e1rias que podem resultar da falta de prepara\u00e7\u00e3o.</p><p>Em suma, a narrativa de Siegfried nos ensina que a invulnerabilidade \u00e9 uma ilus\u00e3o. A verdadeira sabedoria \u00e9 reconhecer e aceitar nossas fragilidades, uma a\u00e7\u00e3o que n\u00e3o diminui nossa for\u00e7a mas, ao contr\u00e1rio, a potencializa. Encorpore esta li\u00e7\u00e3o, permita-se ser humano, e aprenda a navegar pelas fraquezas que todos n\u00f3s possu\u00edmos. Ao fazer isso, nos tornamos n\u00e3o apenas mais fortes, mas tamb\u00e9m mais completos em nossa jornada.</p>"
-    }
-  ];
+  /* POSTS is loaded from SITE/posts.js. */
+  var ASSET_VERSION = '20260530-cards';
 
   /* ============================================
      RENDERIZAR CARDS NA GRADE
@@ -2643,31 +2644,72 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     grid.innerHTML = '';
 
-    POSTS.forEach(function(post) {
+    function text(value) {
+      return String(value || '').replace(/[&<>"']/g, function(ch) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
+      });
+    }
+
+    var CARD_THUMBS = {
+      'peter-pan-sindrome-amadurecimento': 'assets/post_cards/peter-pan.jpeg',
+      'escala-6x1-trabalho-tempo-vida': 'assets/post_cards/existencialismo.jpeg',
+      'sao-tomas-fe-razao-explicacao': 'assets/post_cards/sto-agostinho.jpeg',
+      'epicuro-pouco-suficiencia-desejo': 'assets/post_cards/aristoteles.jpeg',
+      'protagoras-medida-todas-coisas': 'assets/post_cards/aristoteles.jpeg',
+      'heraclito-duas-vezes-mesmo-rio': 'assets/post_cards/kant.jpeg',
+      'formigas-diante-do-universo': 'assets/post_cards/existencialismo.jpeg',
+      'arte-controle-humano': 'assets/post_cards/religiao-e-filosofia.jpeg',
+      'laplace-sonho-razao-absoluta': 'assets/post_cards/kant.jpeg',
+      'balzac-escritor-alma-capitalismo': 'assets/post_cards/kant.jpeg',
+      'confissoes-santo-agostinho': 'assets/post_cards/sto-agostinho.jpeg',
+      'ser-so-religioso-pode-te-tornar-ignorante': 'assets/post_cards/religiao-e-filosofia.jpeg',
+      'somos-livres-por-completo': 'assets/post_cards/existencialismo.jpeg',
+      'sartre-liberdade-condenacao': 'assets/post_cards/existencialismo.jpeg',
+      'a-etica-da-virtude-segundo-aristoteles': 'assets/post_cards/aristoteles.jpeg',
+      'critica-da-razao-pura': 'assets/post_cards/kant.jpeg',
+      'licoes-de-siegfried': 'assets/post_cards/siegfried.jpeg'
+    };
+
+    var CARD_THUMB_FALLBACKS = [
+      'assets/post_cards/peter-pan.jpeg',
+      'assets/post_cards/sto-agostinho.jpeg',
+      'assets/post_cards/existencialismo.jpeg',
+      'assets/post_cards/religiao-e-filosofia.jpeg',
+      'assets/post_cards/aristoteles.jpeg',
+      'assets/post_cards/kant.jpeg',
+      'assets/post_cards/siegfried.jpeg'
+    ];
+
+    POSTS.slice(0, 9).forEach(function(post, index) {
+      var slug = post.slug || post.id;
+      var thumb = null; // imagens dos cards desativadas — usa cover de texto
+      var thumbSrc = '';
       var card = document.createElement('article');
-      card.className = 'news-card';
-      card.setAttribute('data-slug', post.slug);
+      card.className = 'news-card' + (index < 3 ? ' featured-card' : '');
+      card.setAttribute('data-slug', slug);
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');
       card.setAttribute('aria-label', 'Ler artigo: ' + post.title);
 
       card.innerHTML =
-        (post.thumb ? '<img class="news-card-thumb" src="' + post.thumb + '" alt="' + post.title + '" loading="lazy">' : '') +
+        (thumb
+          ? '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(thumbSrc) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '"></div>'
+          : '<div class="news-card-cover"><span>' + text((post.title || 'P').charAt(0)) + '</span></div>') +
         '<div class="news-card-body">' +
-          '<span class="news-card-tag">' + post.tag + '</span>' +
-          '<h3 class="news-card-title">' + post.title + '</h3>' +
-          '<p class="news-card-excerpt">' + post.excerpt + '</p>' +
+          '<span class="news-card-tag">' + text(post.tag) + '</span>' +
+          '<h3 class="news-card-title">' + text(post.title) + '</h3>' +
+          '<p class="news-card-excerpt">' + text(post.excerpt) + '</p>' +
           '<div class="news-card-meta">' +
-            '<span class="news-card-date">' + post.date + '</span>' +
+            '<span class="news-card-date">' + text(post.date) + '</span>' +
             '<span class="news-card-read">Ler materia ' +
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
             '</span>' +
           '</div>' +
         '</div>';
 
-      card.addEventListener('click', function() { openPost(post.slug); });
+      card.addEventListener('click', function() { openPost(slug); });
       card.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPost(post.slug); }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPost(slug); }
       });
 
       grid.appendChild(card);
@@ -2687,7 +2729,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   function openPost(slug) {
     var post = null;
     for (var i = 0; i < POSTS.length; i++) {
-      if (POSTS[i].slug === slug) { post = POSTS[i]; break; }
+      if ((POSTS[i].slug || POSTS[i].id) === slug) { post = POSTS[i]; break; }
     }
     if (!post) return;
 
@@ -2794,88 +2836,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 (function() {
   if (typeof POSTS === 'undefined') return;
   POSTS.unshift({
-    slug:     'confissoes-santo-agostinho',
-    title:    'As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental',
-    tag:      'FILOSOFIA MEDIEVAL',
-    date:     '09 de Maio de 2026',
-    excerpt:  'Escrito entre 397 e 400 d.C., As Confissões não é uma autobiografia. É um longo diálogo com Deus — seis momentos que atravessam séculos e ainda falam ao coração de quem os lê.',
-    thumb:    '../CONTENT/posts/santo_agostinho.jpeg',
-    featured: true,
-    content:  `<p>Escrito entre 397 e 400 d.C., <em>As Confissões</em> de Santo Agostinho não é uma autobiografia no sentido moderno. É um longo diálogo com Deus — feito em voz alta, diante de quem quer que leia. Agostinho confessa seus pecados, suas buscas, seus equívocos filosóficos e sua conversão não para se justificar, mas para mostrar como uma alma pode estar completamente perdida e ainda assim ser encontrada.</p>
-
-<p>A obra tem 13 livros. Cada um é uma camada de uma mesma pergunta: <strong>o que é o ser humano diante de Deus?</strong> Separamos aqui os momentos mais decisivos — seis confissões que atravessam séculos e ainda falam ao coração de quem as lê.</p>
-
-<hr>
-
-<h2>1. A Inquietação como Condição Humana — Livro I</h2>
-<p>A frase que abre o livro é uma das mais citadas da filosofia ocidental:</p>
-<blockquote><em>"Nosso coração está inquieto até que repousa em Ti."</em></blockquote>
-<p>Agostinho não começa pelas suas falhas. Começa pelo diagnóstico da condição humana: somos seres feitos para algo que excede tudo o que o mundo oferece. O desejo nunca se satisfaz completamente com riqueza, prazer, fama ou saber. Há uma fissura em nós que os bens finitos não preenchem.</p>
-<p>Isso não é pessimismo. É precisamente o oposto: é a tese de que a inquietação humana é um sinal de grandeza. O animal não se inquieta existencialmente. O ser humano sim — e é nessa inquietação que Agostinho enxerga a marca de uma origem e de um destino que ultrapassam o tempo.</p>
-<p>Para a filosofia, esta confissão lança uma questão que nenhuma escola antiga havia formulado com tanta clareza: e se o desejo humano for, em si mesmo, uma espécie de prova ontológica? E se o fato de sempre querermos mais do que temos for evidência de que fomos feitos para o infinito?</p>
-
-<hr>
-
-<h2>2. O Roubo das Peras — Por Que Fazemos o Mal? — Livro II</h2>
-<p>Aos dezesseis anos, Agostinho e um grupo de amigos roubaram peras de um pomar vizinho. Não estavam com fome. As peras eram amargas. Jogaram a maioria fora.</p>
-<p>Décadas depois, esse episódio banal ocupa páginas inteiras de reflexão filosófica. Por quê?</p>
-<p>Porque Agostinho percebe algo perturbador naquele ato: <strong>ele quis o mal pelo mal</strong>. Não por necessidade, não por fraqueza da razão — mas por uma espécie de prazer perverso na transgressão em si.</p>
-<blockquote><em>"Amei minha própria perdição. Amei cair — não aquilo para o qual caía, mas a queda em si mesma."</em></blockquote>
-<p>Essa confissão antecipa séculos de debate filosófico sobre o mal. Diferente das explicações que reduzem o mal à ignorância (Sócrates) ou à ausência de bem (Platão), Agostinho identifica algo mais sombrio: uma vontade que pode se dobrar sobre si mesma e escolher o que sabe ser destrutivo, simplesmente porque sim.</p>
-<p>É uma das análises mais honestas e desconfortáveis que a filosofia já produziu sobre a liberdade humana.</p>
-
-<hr>
-
-<h2>3. A Morte do Amigo e a Ilusão do Amor Mortal — Livro IV</h2>
-<p>Em Tagaste, Agostinho tinha um amigo íntimo — cujo nome nunca revela — com quem compartilhava tudo. Quando esse amigo morreu jovem, Agostinho entrou em colapso:</p>
-<blockquote><em>"Minha terra natal tornara-se para mim um suplício, e a casa paterna uma tristeza estranha. Tudo o que havia partilhado com ele transformara-se em cruel tormento sem ele."</em></blockquote>
-<p>A confissão do luto é também uma confissão filosófica sobre o erro de depositar em um ser finito a totalidade do próprio ser. Agostinho não diz que amar é errado. Diz que amar como se o outro fosse eterno — como se a perda dele fosse a perda de tudo — é uma forma de idolatria existencial.</p>
-<p>O argumento que surge daí é sutil: <strong>só amamos com liberdade quando amamos sabendo que o amado é finito</strong>. Quando o amor se transforma em dependência absoluta, ele se volta contra nós no momento da perda.</p>
-<p>Esta confissão ecoa em toda a filosofia existencial posterior: de Kierkegaard a Heidegger, a questão de como amar o finito sem ser destruído por sua finitude nunca deixou de ser urgente.</p>
-
-<hr>
-
-<h2>4. O Jardim de Milão — A Conversão — Livro VIII</h2>
-<p>A cena mais famosa das <em>Confissões</em>. Agostinho está num jardim em Milão. Tem 31 anos. Já é professor de retórica. Já leu Platão. Já sabe, intelectualmente, o que acredita. Mas a vontade não segue o intelecto.</p>
-<blockquote><em>"Ordenava a mim mesmo que quisesse, e não queria querer. Não me movia totalmente. Tornava a tentar. Estava quase lá, e não chegava."</em></blockquote>
-<p>É a fenomenologia da vontade dividida. Agostinho percebe que não há uma única vontade humana — há múltiplas tendências que disputam entre si. O que ele chama de "duas vontades" não é dualismo metafísico, mas a experiência vivida de querer e não-querer ao mesmo tempo.</p>
-<p>Então ouve uma voz infantil cantando: <em>Tolle, lege</em> — pega e lê. Abre a Carta aos Romanos. E algo muda — não com ruído, mas com silêncio. A guerra cessa.</p>
-<p>Para a filosofia, esta cena é o relato mais preciso que temos de como a conversão funciona: não como convencimento racional, mas como resolução de uma tensão que o argumento sozinho não consegue desfazer.</p>
-
-<hr>
-
-<h2>5. A Visão de Óstia — O Toque do Eterno — Livro IX</h2>
-<p>Pouco antes de embarcar de volta para a África, Agostinho e sua mãe Mônica estão à janela de uma casa em Óstia, olhando para o jardim. Eles conversam sobre o que seria a vida eterna — e então, por um instante, algo acontece:</p>
-<blockquote><em>"Tocamos levemente, com todo o ímpeto do coração, a sabedoria eterna que permanece sobre todas as coisas. E enquanto falávamos e suspirávamos por ela, alcançamo-la por um instante com um pleno bater do coração."</em></blockquote>
-<p>Dias depois, Mônica morre. Agostinho não chora imediatamente — e se culpa por isso. Quando as lágrimas finalmente vêm, é com alívio, não vergonha.</p>
-<p>Esta confissão é única porque não é sobre pecado ou busca. É sobre chegada — mesmo que por um segundo. Agostinho descreve o contato com o absoluto numa conversa simples entre mãe e filho, à janela de uma casa de porto.</p>
-
-<hr>
-
-<h2>6. O Que é o Tempo? — Livro XI</h2>
-<p>Nos últimos livros, Agostinho abandona a narrativa autobiográfica e entra na especulação pura. O Livro XI é uma meditação sobre o tempo que permanece, 1.600 anos depois, sem resposta definitiva.</p>
-<blockquote><em>"O que é o tempo? Se ninguém me pergunta, sei. Se quero explicar a quem pergunta, não sei."</em></blockquote>
-<p>O argumento é rigoroso: o passado não existe mais. O futuro ainda não existe. O presente é apenas o instante de passagem de um ao outro — e enquanto você tenta segurá-lo, já passou.</p>
-<p>A resposta de Agostinho é surpreendente: <strong>o tempo existe na alma</strong>. O passado existe como memória. O futuro existe como expectativa. O presente existe como atenção. O tempo não é uma propriedade do mundo externo — é uma estrutura da consciência.</p>
-<p>Essa antecipação da fenomenologia do tempo — que Husserl e Heidegger desenvolveriam no século XX — aparece aqui formulada por um bispo norte-africano do século IV. A resposta que encontrou fundou uma das tradições mais férteis da filosofia ocidental.</p>
-
-<hr>
-
-<h2>Por Que Ler As Confissões Hoje</h2>
-<p><em>As Confissões</em> não é um livro de respostas. É um livro de perguntas feitas com uma honestidade que a maioria dos filósofos evita — porque elas são pessoais demais, doem demais, expõem demais.</p>
-<p>Agostinho pergunta: por que desejo o que sei que vai me destruir? Por que o amor humano nunca basta? Por que a vontade não obedece à razão? O que é o tempo, e o que sou eu dentro dele?</p>
-<p>Nenhuma dessas perguntas envelheceu. São as mesmas que qualquer pessoa séria faz a si mesma quando para de correr e olha para dentro.</p>
-<p>A grandeza das <em>Confissões</em> está precisamente aí: no fato de que um homem do século IV, ao falar de si mesmo com absoluta franqueza, acabou falando de todos nós.</p>`
-  });
-})();
-</script>
-
-
-
-<script>
-(function() {
-  if (typeof POSTS === 'undefined') return;
-  POSTS.unshift({
     slug:     'peter-pan-sindrome-amadurecimento',
     title:    'J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais',
     tag:      'FILOSOFIA E PSICOLOGIA',
@@ -2942,132 +2902,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 })();
 </script>
 
-<script>
-(function() {
-  if (typeof POSTS === 'undefined') return;
-  POSTS.unshift({
-    slug:     'balzac-escritor-alma-capitalismo',
-    title:    'Honoré de Balzac: o escritor que enxergou a alma do capitalismo',
-    tag:      'FILOSOFIA MODERNA',
-    date:     '20 de Maio de 2026',
-    excerpt:  'Muito antes de Marx, Balzac já descrevia com precisão quase brutal os efeitos psicológicos e sociais da modernidade. Sua obra revela como o capitalismo não altera apenas a economia — ele transforma a alma humana.',
-    thumb:    '../CONTENT/posts/balzac.jpeg',
-    featured: false,
-    content:  `<p>Quando pensamos em críticas ao capitalismo, normalmente lembramos de economistas, sociólogos ou filósofos políticos. No entanto, muito antes de Karl Marx estruturar teorias sobre capital, exploração e alienação, um escritor francês já descrevia com precisão quase brutal os efeitos psicológicos e sociais da modernidade: Honoré de Balzac.</p>
 
-<p>Nascido em 20 de maio de 1799, Balzac não foi apenas um romancista. Ele foi um observador obsessivo da sociedade. Sua grande obra, <em>A Comédia Humana</em>, funciona como um gigantesco retrato da França do século XIX, revelando como o dinheiro começava a reorganizar completamente as relações humanas.</p>
-
-<p>Balzac percebeu algo revolucionário para sua época: o capitalismo não alterava apenas a economia. Ele transformava valores, comportamentos, ambições e até mesmo a maneira como os indivíduos enxergavam uns aos outros.</p>
-
-<p>A aristocracia tradicional perdia espaço para a ascensão burguesa. O prestígio deixava de vir da honra, da tradição ou da religião e passava a ser medido pela riqueza, pela aparência e pela posição social. Nesse novo mundo, o indivíduo moderno surgia marcado pela competição permanente, pela ansiedade social e pela necessidade constante de reconhecimento.</p>
-
-<hr>
-
-<h2>Por que Balzac continua atual</h2>
-
-<p>Ao ler suas obras hoje, encontramos personagens consumidos pela ambição, relações humanas transformadas em interesse, amizades subordinadas ao status e indivíduos desesperados por ascensão social. Em muitos aspectos, Balzac antecipou aquilo que mais tarde seria discutido por sociólogos, filósofos e críticos da modernidade.</p>
-
-<p>Karl Marx admirava profundamente sua capacidade de revelar os mecanismos sociais do capital através da literatura. Mesmo sendo politicamente conservador, Balzac conseguiu expor de maneira quase cirúrgica:</p>
-
-<ul>
-<li>a corrupção moral causada pelo dinheiro,</li>
-<li>a lógica da exploração,</li>
-<li>o vazio da elite burguesa,</li>
-<li>e a degradação das relações humanas em uma sociedade dominada pelo interesse econômico.</li>
-</ul>
-
-<hr>
-
-<h2>Georg Lukács e a literatura como espelho da modernidade</h2>
-
-<p>O filósofo húngaro Georg Lukács chegou a considerar Balzac um dos maiores intérpretes da sociedade moderna justamente porque sua literatura conseguia revelar aquilo que estatísticas e teorias econômicas muitas vezes não conseguem: a experiência humana da modernidade.</p>
-
-<p>Balzac compreendeu que sistemas econômicos não produzem apenas riqueza ou pobreza. Eles produzem formas de vida. Produzem subjetividades. Moldam desejos, medos e identidades.</p>
-
-<hr>
-
-<h2>O capitalismo como produtor de almas</h2>
-
-<p>A modernidade capitalista criou conforto material, crescimento urbano e progresso técnico. Mas também produziu indivíduos cada vez mais competitivos, performáticos e dependentes da validação social.</p>
-
-<p>No fundo, Balzac entendeu uma verdade desconfortável:</p>
-
-<blockquote><em>Uma sociedade baseada exclusivamente em dinheiro e aparência inevitavelmente transforma também a alma humana.</em></blockquote>
-
-<p>Mais de dois séculos depois de seu nascimento, sua obra permanece não apenas como literatura, mas como uma poderosa reflexão filosófica sobre o mundo moderno — e sobre aquilo que nos tornamos dentro dele.</p>`
-  });
-})();
-</script>
-
-<script>
-(function() {
-  if (typeof POSTS === 'undefined') return;
-  POSTS.unshift({
-    slug:     'laplace-sonho-razao-absoluta',
-    title:    'Laplace e o Sonho da Razão Absoluta',
-    tag:      'FILOSOFIA DA CIÊNCIA',
-    date:     '21 de Maio de 2026',
-    excerpt:  'Laplace imaginou uma inteligência capaz de calcular o futuro inteiro a partir das leis da natureza. Esse sonho racional moldou a modernidade — e suas rachaduras definem o mundo em que vivemos.',
-    thumb:    '../CONTENT/posts/laplace.jpeg',
-    featured: false,
-    content:  `<p>Poucos pensadores simbolizam tão profundamente o espírito racional da modernidade quanto Pierre-Simon Laplace. Matemático, físico e astrônomo francês, Laplace não foi apenas um cientista brilhante: ele representou uma visão de mundo. Em sua obra, o universo deixa de ser um espaço governado pelo mistério para tornar-se uma estrutura lógica, matemática e previsível.</p>
-
-<p>Sua filosofia científica nasce diretamente do Iluminismo europeu, período em que a razão passou a ocupar o centro da compreensão humana. Para Laplace, a natureza não operava por acaso, milagres ou arbitrariedades divinas. Tudo obedecia a leis universais rigorosas. Se o ser humano ainda não compreendia completamente o cosmos, isso ocorria apenas porque lhe faltavam informações suficientes.</p>
-
-<hr>
-
-<h2>O Demônio de Laplace</h2>
-
-<p>Essa ideia atingiu sua formulação máxima no famoso conceito conhecido como <em>Laplace's demon</em>. Laplace imaginou uma inteligência hipotética capaz de conhecer simultaneamente:</p>
-
-<ul>
-<li>todas as forças da natureza,</li>
-<li>todas as posições das partículas do universo,</li>
-<li>e todas as relações matemáticas entre elas.</li>
-</ul>
-
-<p>Para essa inteligência, o futuro e o passado seriam perfeitamente transparentes. Nada seria incerto. O universo inteiro poderia ser calculado como uma gigantesca equação.</p>
-
-<p>Essa hipótese se tornou um dos maiores símbolos do <strong>determinismo moderno</strong>. Em outras palavras, Laplace acreditava que todos os acontecimentos do universo possuem causas precisas e inevitáveis. O acaso seria apenas um reflexo da ignorância humana, não uma característica real da natureza.</p>
-
-<hr>
-
-<h2>O impacto de uma visão de mundo</h2>
-
-<p>O impacto dessa visão ultrapassou a física e influenciou profundamente:</p>
-
-<ul>
-<li>a filosofia,</li>
-<li>a sociologia,</li>
-<li>a economia,</li>
-<li>a psicologia,</li>
-<li>e a própria ideia moderna de progresso científico.</li>
-</ul>
-
-<p>O pensamento laplaciano ajudou a consolidar a crença de que a razão humana seria capaz de dominar completamente a realidade através da ciência. O mundo moderno industrial, técnico e burocrático nasceu em grande parte dessa confiança radical na previsibilidade.</p>
-
-<hr>
-
-<h2>As rachaduras do sonho racional</h2>
-
-<p>Entretanto, o século XX abalaria profundamente esse sonho racional absoluto. A mecânica quântica demonstrou que certas partículas não podem ser medidas simultaneamente com precisão total. O <strong>princípio da incerteza de Werner Heisenberg</strong> colocou limites fundamentais no conhecimento humano. Já a teoria do caos revelou que sistemas aparentemente simples podem gerar comportamentos imprevisíveis.</p>
-
-<p>Mesmo assim, Laplace permanece central para a história do pensamento. Sua obra representa o auge da confiança moderna na razão matemática. Ele personifica um momento histórico em que a humanidade acreditou poder transformar o universo inteiro em conhecimento calculável.</p>
-
-<hr>
-
-<h2>O símbolo filosófico que não envelhece</h2>
-
-<p>Mais do que um cientista, Laplace tornou-se um símbolo filosófico: o símbolo da ambição humana de compreender totalmente a realidade.</p>
-
-<p>Em uma época marcada por inteligência artificial, <em>big data</em> e algoritmos preditivos, a pergunta de Laplace retorna com força renovada:</p>
-
-<blockquote><em>Até que ponto o mundo pode realmente ser previsto?</em></blockquote>
-
-<p>Talvez a resposta mais honesta seja: o suficiente para construir tecnologias impressionantes — e insuficiente para eliminar a incerteza que define a condição humana.</p>`
-  });
-})();
-</script>
 
 
 
@@ -3437,12 +3272,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
   var FILOSOFOS=[
     {nome:'Epicteto',    era:'Antiga',       periodo:'50 — 135 d.C.',  corrente:'Estoicismo',           img:'assets/epicteto.png',         bio:'<p>Nasceu escravo em Hierápolis. Tornou-se o mais radical dos estoicos: para ele, a liberdade não está nas correntes ou na ausência delas — está na distinção entre o que depende de nós e o que não depende.</p><p>Seu <em>Enchiridion</em> é um dos manuais práticos de filosofia mais influentes já escritos. Epicteto nunca escreveu uma linha — seus ensinamentos foram registrados por seu discípulo Arriano. A filosofia como forma de vida, não como sistema teórico.</p>'},
-    {nome:'Marco Aurélio',era:'Antiga',      periodo:'121 — 180 d.C.',corrente:'Estoicismo',           img:'../BRANDING/assets/Fil%C3%B3sofos%20/marco-aurelio.JPG',bio:'<p>Imperador de Roma por quase duas décadas, governou durante guerras, pragas e crises de fronteira. Mesmo no poder absoluto, escrevia para si mesmo.</p><p><em>Meditações</em> não foi escrito para publicação — é o diário de um homem tentando ser melhor do que o cargo exigia. O filósofo-rei que Platão sonhou, confrontando diariamente a diferença entre o ideal e o possível.</p>'},
+    {nome:'Marco Aurélio',era:'Antiga',      periodo:'121 — 180 d.C.',corrente:'Estoicismo',           img:'assets/marco-aurelio.JPG',bio:'<p>Imperador de Roma por quase duas décadas, governou durante guerras, pragas e crises de fronteira. Mesmo no poder absoluto, escrevia para si mesmo.</p><p><em>Meditações</em> não foi escrito para publicação — é o diário de um homem tentando ser melhor do que o cargo exigia. O filósofo-rei que Platão sonhou, confrontando diariamente a diferença entre o ideal e o possível.</p>'},
     {nome:'Sêneca',      era:'Antiga',       periodo:'4 a.C. — 65 d.C.',corrente:'Estoicismo',          img:'assets/seneca.png',          bio:'<p>Conselheiro de Nero e um dos homens mais ricos de Roma — o mais contraditório dos estoicos. Pregou a moderação enquanto acumulava fortunas. Foi forçado a se suicidar pelo próprio imperador que aconselhou.</p><p>Suas <em>Cartas a Lucílio</em> permanecem entre os textos mais honestos sobre o tempo, a amizade e o medo da morte que a filosofia já produziu.</p>'},
     {nome:'Platão',      era:'Antiga',       periodo:'428 — 348 a.C.', corrente:'Filosofia Clássica',   img:'assets/platao-mestre.jpeg',  bio:'<p>Fundou a Academia de Atenas — a primeira instituição de ensino superior do Ocidente. Discípulo de Sócrates, mestre de Aristóteles.</p><p>Para Platão, o mundo que vemos é sombra de um mundo mais real, acessível apenas pela razão. Toda a filosofia ocidental, dizia Whitehead, é uma série de notas de rodapé a Platão.</p>'},
     {nome:'Aristóteles', era:'Antiga',       periodo:'384 — 322 a.C.', corrente:'Filosofia Clássica',   img:'assets/aristoteles-mestre.jpeg',bio:'<p>Discípulo de Platão e tutor de Alexandre, o Grande. Escreveu sobre lógica, biologia, política, poética e metafísica com igual profundidade.</p><p>Onde Platão buscava o eterno, Aristóteles observava o concreto. A <em>Ética a Nicômaco</em> continua sendo o texto fundador da filosofia moral ocidental.</p>'},
     {nome:'Nietzsche',   era:'Moderna',      periodo:'1844 — 1900',    corrente:'Filosofia Moderna',    img:'assets/nietzsche-mestre.jpg',  bio:'<p>Anunciou a morte de Deus — não com alegria, mas com espanto diante do que isso significa. Filólogo antes de filósofo, atacou a moral e o niilismo com um martelo.</p><p>O eterno retorno, o além-homem, a vontade de potência: conceitos que o século XX não conseguiu ignorar nem digerir completamente. Enlouqueceu aos 44 anos e nunca se recuperou.</p>'},
-    {nome:'Hannah Arendt',era:'Contemporânea',periodo:'1906 — 1975',  corrente:'Filosofia Contemporânea',img:'../BRANDING/assets/Fil%C3%B3sofos%20/hannah-arendt.jpg',bio:'<p>Refugiada judia que fugiu do nazismo e se tornou a pensadora política mais importante do século XX. Cunhou a expressão "banalidade do mal" ao cobrir o julgamento de Eichmann em Jerusalém.</p><p>Em <em>A Condição Humana</em>, distinguiu trabalho, obra e ação política — e defendeu que é na ação que a liberdade se torna real. Seu pensamento permanece urgente.</p>'},
+    {nome:'Hannah Arendt',era:'Contemporânea',periodo:'1906 — 1975',  corrente:'Filosofia Contemporânea',img:'assets/hannah-arendt.jpg',bio:'<p>Refugiada judia que fugiu do nazismo e se tornou a pensadora política mais importante do século XX. Cunhou a expressão "banalidade do mal" ao cobrir o julgamento de Eichmann em Jerusalém.</p><p>Em <em>A Condição Humana</em>, distinguiu trabalho, obra e ação política — e defendeu que é na ação que a liberdade se torna real. Seu pensamento permanece urgente.</p>'},
   ];
 
   var CSS=`
