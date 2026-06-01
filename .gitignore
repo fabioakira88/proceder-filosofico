@@ -5,3 +5,10 @@ __pycache__/
 .venv/
 venv/
 env/
+
+# public/ images are duplicates of assets/ — preserved locally, not in git
+SITE/public/**/*
+!SITE/public/**/.gitkeep
+
+# backups are local only — too large for git
+SITE/docs/backups/
