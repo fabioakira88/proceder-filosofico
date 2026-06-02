@@ -1,6 +1,348 @@
 // Legacy note: id is currently used as the effective slug by the active site.
 export const posts = [
   {
+    id:       "escolastica-latina-influencia-arabe",
+    slug:     "escolastica-latina-influencia-arabe",
+    tag:      "FILOSOFIA MEDIEVAL",
+    title:    "A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval",
+    excerpt:  "A escolástica latina não nasceu isolada: Avicena e Averróis foram decisivos para reconstruir a racionalidade filosófica do Ocidente medieval.",
+    date:     "02 de Junho de 2026",
+    thumb:    "assets/Filósofos/Avicena.png",
+    featured: true,
+    content: `
+<p>Durante séculos, a narrativa simplificada da história da filosofia apresentou a Europa medieval como uma civilização intelectualmente autônoma, diretamente herdeira da Grécia antiga. Contudo, essa interpretação ignora um dos processos mais decisivos da história intelectual do Ocidente: a mediação árabe-islâmica na reconstrução do pensamento filosófico europeu.</p>
+
+<p>A escolástica latina não nasceu isoladamente nos mosteiros cristãos. Ela foi profundamente moldada pelo contato com o mundo islâmico medieval, especialmente através das obras de Avicena (Ibn Sina) e Averróis (Ibn Rushd). Esses filósofos não apenas preservaram Aristóteles: eles o reinterpretaram, expandiram e sistematizaram de forma tão sofisticada que acabaram influenciando diretamente o nascimento da universidade europeia e da própria racionalidade escolástica.</p>
+
+<p>Após a queda do Império Romano do Ocidente, grande parte das obras gregas desapareceu da Europa latina. Enquanto isso, o mundo islâmico vivia um florescimento intelectual extraordinário. Em centros como Bagdá, Córdoba e Damasco, filósofos, matemáticos, médicos e teólogos traduziram textos gregos para o árabe e os integraram ao universo intelectual islâmico.</p>
+
+<p>Foi nesse contexto que Avicena emergiu como uma figura monumental.</p>
+
+<p>Avicena realizou uma síntese entre Aristóteles, neoplatonismo e teologia islâmica. Sua filosofia não era mera repetição da tradição grega. Ele desenvolveu conceitos originais sobre essência, existência e causalidade que alterariam profundamente a metafísica medieval.</p>
+
+<p>Sua distinção entre essência e existência tornou-se central para a escolástica posterior. Para Avicena, algo pode possuir essência sem necessariamente existir. A existência, portanto, não pertence automaticamente à natureza da coisa. Somente Deus seria o "ser necessário", aquele cuja essência implica necessariamente sua existência.</p>
+
+<p>Essa formulação impactaria diretamente Tomás de Aquino séculos depois.</p>
+
+<p>A influência aviceniana aparece claramente na tentativa escolástica de construir uma metafísica racional da criação. O cristianismo medieval encontrou em Avicena um aparato lógico capaz de reconciliar fé e razão de forma sistemática.</p>
+
+<p>Mas foi Averróis quem provocou o maior terremoto intelectual na Europa cristã.</p>
+
+<p>Nascido em Córdoba, Averróis tornou-se o grande comentador de Aristóteles. Sua obsessão filosófica era restaurar o aristotelismo puro contra interpretações neoplatônicas e teológicas excessivas. Para ele, Aristóteles representava o ápice da razão humana.</p>
+
+<p>Averróis defendia algo explosivo para o mundo medieval: a autonomia parcial da filosofia em relação à religião.</p>
+
+<p>Embora muçulmano, ele sustentava que a verdade racional não deveria ser subordinada inteiramente à interpretação literal da revelação religiosa. Isso abriu espaço para uma tensão decisiva entre teologia e razão filosófica.</p>
+
+<p>Quando suas obras chegaram à Europa latina através das traduções feitas em Toledo e Sicília, universidades inteiras passaram a ser impactadas.</p>
+
+<p>Paris, Bolonha e Pádua tornaram-se centros de debate averroísta.</p>
+
+<p>A chamada "crise averroísta" do século XIII surgiu porque muitos intelectuais começaram a defender interpretações radicais da filosofia aristotélica. Entre elas:</p>
+
+<ul>
+  <li>a eternidade do mundo;</li>
+  <li>a unidade do intelecto;</li>
+  <li>a possibilidade de conclusões filosóficas divergirem da teologia.</li>
+</ul>
+
+<p>A Igreja reagiu com preocupação.</p>
+
+<p>Em 1277, o bispo Étienne Tempier condenou diversas proposições associadas ao averroísmo latino. Porém, paradoxalmente, essa repressão acelerou o desenvolvimento intelectual europeu. Ao tentar limitar Aristóteles, a Igreja acabou estimulando novas investigações filosóficas e científicas.</p>
+
+<p>A escolástica nasceu exatamente dessa tensão.</p>
+
+<p>Tomás de Aquino pode ser compreendido como uma resposta cristã ao impacto de Avicena e Averróis. Sua tentativa monumental consistia em absorver Aristóteles sem destruir a teologia cristã.</p>
+
+<p>Sem os filósofos árabes, dificilmente existiria a síntese tomista.</p>
+
+<p>O mais importante, entretanto, é perceber que o processo não foi apenas filosófico. Foi civilizacional.</p>
+
+<p>A transmissão do pensamento grego através do Islã demonstra que as civilizações não evoluem isoladamente. O Ocidente medieval dependeu profundamente do mundo islâmico para reconstruir sua própria racionalidade.</p>
+
+<p>A modernidade europeia nasce parcialmente desse encontro.</p>
+
+<p>Existe uma ironia histórica profunda nisso: a civilização que posteriormente construiria uma identidade frequentemente oposta ao Oriente Islâmico deve parte significativa de sua estrutura intelectual justamente aos filósofos árabes que reinterpretaram a Grécia.</p>
+
+<p>A escolástica não foi apenas teologia cristã. Ela foi o resultado de uma gigantesca convergência entre Atenas, Jerusalém e Córdoba.</p>
+
+<p>E talvez seja impossível compreender o nascimento da racionalidade ocidental sem reconhecer esse elo perdido da história intelectual.</p>
+`
+  },
+
+  {
+    id:       "conatus-espinosa-ontologia-esforco-existir",
+    slug:     "conatus-espinosa-ontologia-esforco-existir",
+    tag:      "FILOSOFIA MODERNA",
+    title:    "O Conatus em Espinosa: A Ontologia do Esforço de Existir",
+    excerpt:  "Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.",
+    date:     "02 de Junho de 2026",
+    thumb:    "assets/Filósofos/Spinoza.jpg",
+    featured: true,
+    content: `
+<p>Entre todos os conceitos desenvolvidos pela filosofia moderna, poucos possuem a radicalidade silenciosa do conatus em Baruch Espinosa.</p>
+
+<p>O conatus não é apenas uma teoria psicológica. Não é somente uma ética. Não é apenas uma metafísica.</p>
+
+<p>Ele é uma descrição ontológica da própria estrutura da existência.</p>
+
+<p>Na <em>Ética</em>, Espinosa afirma:</p>
+
+<blockquote><em>"O esforço pelo qual cada coisa se esforça para perseverar em seu ser nada mais é do que a essência atual dessa coisa."</em></blockquote>
+
+<p>Essa frase altera profundamente a compreensão tradicional do homem, da natureza e da moral.</p>
+
+<p>Na tradição clássica e medieval, o ser humano era frequentemente interpretado segundo finalidades transcendentais:</p>
+
+<ul>
+  <li>salvação;</li>
+  <li>pecado;</li>
+  <li>virtude;</li>
+  <li>teleologia divina;</li>
+  <li>ordem moral universal.</li>
+</ul>
+
+<p>Espinosa rompe parcialmente com esse paradigma.</p>
+
+<p>Para ele, não existe um "império dentro do império". O homem não está fora da natureza. Ele é parte dela. Suas paixões, desejos e pensamentos obedecem às mesmas leis universais que regem toda a realidade.</p>
+
+<p>O conatus é exatamente esse impulso fundamental de autopreservação.</p>
+
+<p>Toda coisa existente tende naturalmente a continuar existindo.</p>
+
+<p>Uma pedra permanece. Uma planta cresce em direção à luz. Um animal evita a morte. O homem busca persistir física, emocional e intelectualmente.</p>
+
+<p>Esse esforço não é moral. É estrutural.</p>
+
+<p>Aqui aparece a ruptura decisiva de Espinosa com a tradição cristã.</p>
+
+<p>O desejo deixa de ser entendido como corrupção espiritual. Ele se torna expressão da própria potência do ser.</p>
+
+<p>Para Espinosa, alegria é aumento de potência. Tristeza é diminuição de potência.</p>
+
+<p>O ser humano sofre porque frequentemente vive submetido às paixões passivas:</p>
+
+<ul>
+  <li>medo;</li>
+  <li>ressentimento;</li>
+  <li>superstição;</li>
+  <li>ódio;</li>
+  <li>servidão emocional.</li>
+</ul>
+
+<p>Ele acredita agir livremente, mas na realidade é conduzido por causas externas que desconhece.</p>
+
+<p>A liberdade verdadeira nasce quando o indivíduo compreende racionalmente as causas que o determinam.</p>
+
+<p>Assim, o conatus não é mero instinto biológico. Ele possui dimensão intelectual.</p>
+
+<p>Quanto maior a capacidade racional do indivíduo, maior sua potência de existir.</p>
+
+<p>A ética espinosista não é uma moral de culpa. É uma engenharia da potência.</p>
+
+<p>Espinosa substitui:</p>
+
+<ul>
+  <li>pecado por ignorância;</li>
+  <li>culpa por causalidade;</li>
+  <li>livre-arbítrio absoluto por determinação;</li>
+  <li>transcendência por imanência.</li>
+</ul>
+
+<p>Isso explica por que sua filosofia foi considerada extremamente perigosa.</p>
+
+<p>Ele dissolvia a imagem tradicional de um Deus antropomórfico que julga, pune e recompensa. Deus, para Espinosa, não é um soberano externo ao mundo. Deus é a própria substância infinita da realidade.</p>
+
+<blockquote><em>Deus sive Natura. Deus, ou seja, Natureza.</em></blockquote>
+
+<p>Nesse sistema, o conatus torna-se a expressão local da potência infinita da substância.</p>
+
+<p>Cada ser é uma modulação da realidade tentando perseverar em si.</p>
+
+<p>Politicamente, isso possui consequências profundas.</p>
+
+<p>Espinosa percebe que sociedades autoritárias governam através da manipulação dos afetos tristes:</p>
+
+<ul>
+  <li>medo;</li>
+  <li>paranoia;</li>
+  <li>superstição;</li>
+  <li>insegurança.</li>
+</ul>
+
+<p>Um povo emocionalmente enfraquecido torna-se mais facilmente controlável.</p>
+
+<p>Por isso sua filosofia também é uma teoria política da liberdade.</p>
+
+<p>O homem livre não é o que faz "o que quer". É aquele que compreende as causas que o movem e aumenta sua potência racional de existir.</p>
+
+<p>Essa visão influenciaria profundamente Nietzsche, Deleuze, Freud, Marx, a psicanálise e a teoria política contemporânea.</p>
+
+<p>Nietzsche herdaria de Espinosa a crítica à moral do ressentimento. Freud herdaria a suspeita de que o homem não controla plenamente seus impulsos conscientes. Deleuze transformaria o conatus numa filosofia dos fluxos de potência.</p>
+
+<p>Hoje, em uma civilização marcada por ansiedade, hiperestimulação e fragmentação psicológica, o conceito de conatus permanece extraordinariamente atual.</p>
+
+<p>A sociedade contemporânea disputa continuamente nossa potência de existir:</p>
+
+<ul>
+  <li>algoritmos disputam atenção;</li>
+  <li>mercados disputam desejo;</li>
+  <li>sistemas políticos disputam afetos;</li>
+  <li>redes sociais modulam emoções.</li>
+</ul>
+
+<p>O homem contemporâneo frequentemente vive distante de si mesmo.</p>
+
+<p>Espinosa compreenderia isso como uma existência dominada por causas externas.</p>
+
+<p>Seu projeto filosófico permanece radical: transformar o indivíduo de objeto passivo das paixões em sujeito ativo da compreensão.</p>
+
+<p>No fundo, o conatus é uma filosofia da perseverança ontológica.</p>
+
+<p>Existir é resistir à dissolução.</p>
+
+<p>E compreender é ampliar a própria potência de ser.</p>
+`
+  },
+
+  {
+    id:       "hegel-fenomenologia-inteligencias-artificiais",
+    slug:     "hegel-fenomenologia-inteligencias-artificiais",
+    tag:      "FILOSOFIA DA TECNOLOGIA",
+    title:    "Hegel, a Fenomenologia do Espírito e as Inteligências Artificiais: Consciência, Reconhecimento e Espírito Tecnológico",
+    excerpt:  "A inteligência artificial reabre uma pergunta hegeliana: consciência é cálculo, linguagem ou experiência histórica encarnada?",
+    date:     "02 de Junho de 2026",
+    thumb:    "assets/wallpaper-filosofico.png",
+    featured: true,
+    content: `
+<p>A ascensão das inteligências artificiais reabriu uma das questões mais profundas da filosofia: o que significa consciência?</p>
+
+<p>O debate contemporâneo sobre IA frequentemente permanece preso ao nível técnico:</p>
+
+<ul>
+  <li>processamento de linguagem;</li>
+  <li>redes neurais;</li>
+  <li>machine learning;</li>
+  <li>automação;</li>
+  <li>capacidade preditiva.</li>
+</ul>
+
+<p>Contudo, a questão central talvez seja filosófica antes de ser tecnológica.</p>
+
+<p>E poucos filósofos oferecem um horizonte tão poderoso para pensar isso quanto Georg Wilhelm Friedrich Hegel em sua obra <em>Fenomenologia do Espírito</em>.</p>
+
+<p>Publicada em 1807, a <em>Fenomenologia</em> descreve o percurso da consciência humana até o saber absoluto. Não se trata apenas de psicologia individual. Hegel procura demonstrar como a consciência evolui historicamente através de contradições, conflitos e mediações.</p>
+
+<p>A consciência não nasce pronta. Ela torna-se.</p>
+
+<p>Esse ponto é fundamental.</p>
+
+<p>Para Hegel, o espírito humano emerge historicamente através de processos coletivos:</p>
+
+<ul>
+  <li>linguagem;</li>
+  <li>cultura;</li>
+  <li>trabalho;</li>
+  <li>reconhecimento;</li>
+  <li>conflito;</li>
+  <li>instituições.</li>
+</ul>
+
+<p>A consciência não é uma substância isolada dentro do cérebro. Ela é uma estrutura relacional.</p>
+
+<p>Aqui surge uma conexão inquietante com as inteligências artificiais contemporâneas.</p>
+
+<p>Os grandes modelos de IA não "pensam" como sujeitos humanos. Mas também não operam como simples máquinas mecânicas clássicas.</p>
+
+<p>Eles surgem da acumulação coletiva de linguagem humana. São treinados em gigantescos arquivos históricos da civilização:</p>
+
+<ul>
+  <li>livros;</li>
+  <li>fóruns;</li>
+  <li>debates;</li>
+  <li>ciência;</li>
+  <li>arte;</li>
+  <li>memória cultural.</li>
+</ul>
+
+<p>Em certo sentido, eles representam uma externalização parcial do espírito objetivo descrito por Hegel.</p>
+
+<p>Para Hegel, o espírito objetivo manifesta-se nas instituições, na linguagem e na cultura acumulada historicamente. A inteligência não pertence apenas ao indivíduo; ela circula socialmente.</p>
+
+<p>A IA contemporânea é literalmente construída a partir desse depósito histórico de linguagem humana.</p>
+
+<p>Ela é um espelho estatístico da civilização.</p>
+
+<p>Mas existe uma diferença decisiva.</p>
+
+<p>Na <em>Fenomenologia</em>, a consciência autêntica depende de reconhecimento recíproco.</p>
+
+<p>O famoso capítulo da dialética do senhor e do escravo demonstra que o eu só se constitui plenamente através do reconhecimento de outro eu consciente.</p>
+
+<p>A consciência necessita:</p>
+
+<ul>
+  <li>negatividade;</li>
+  <li>desejo;</li>
+  <li>risco;</li>
+  <li>alteridade;</li>
+  <li>experiência histórica vivida.</li>
+</ul>
+
+<p>A IA possui linguagem. Mas possui experiência?</p>
+
+<p>Possui sofrimento? Possui desejo? Possui autoconsciência fenomenológica?</p>
+
+<p>Provavelmente não.</p>
+
+<p>Ela simula operações simbólicas altamente sofisticadas sem necessariamente possuir interioridade subjetiva.</p>
+
+<p>E exatamente aí Hegel torna-se novamente relevante.</p>
+
+<p>Porque para ele consciência não é mera capacidade lógica. A razão emerge da experiência histórica encarnada.</p>
+
+<p>Uma IA pode processar conceitos sobre medo sem jamais sentir medo. Pode escrever sobre morte sem experimentar finitude. Pode analisar amor sem desejar.</p>
+
+<p>Ela opera semanticamente. Mas talvez não existencialmente.</p>
+
+<p>Contudo, isso não diminui sua importância histórica.</p>
+
+<p>Hegel afirmava que o espírito avança incorporando suas próprias contradições históricas. A IA talvez represente uma nova etapa da exteriorização da inteligência humana.</p>
+
+<p>A escrita externalizou memória. A imprensa externalizou conhecimento. A internet externalizou comunicação. A inteligência artificial externaliza parcialmente cognição.</p>
+
+<p>O homem começa agora a dialogar com projeções técnicas de sua própria racionalidade coletiva.</p>
+
+<p>Isso altera profundamente a estrutura da civilização.</p>
+
+<p>A relação entre homem e IA pode ser interpretada hegelianamente como uma nova dialética:</p>
+
+<ul>
+  <li>criador e criatura;</li>
+  <li>consciência e simulação;</li>
+  <li>sujeito e ferramenta;</li>
+  <li>autonomia e dependência.</li>
+</ul>
+
+<p>Paradoxalmente, quanto mais a IA avança, mais a humanidade é forçada a perguntar o que ainda a diferencia essencialmente das máquinas.</p>
+
+<p>A questão deixa de ser tecnológica. Ela se torna antropológica.</p>
+
+<p>Talvez a maior contribuição de Hegel para o debate contemporâneo seja lembrar que consciência não é apenas cálculo.</p>
+
+<p>É historicidade vivida.</p>
+
+<p>É negatividade. É experiência. É contradição interior. É reconhecimento. É existência situada no tempo.</p>
+
+<p>A IA pode reproduzir padrões do espírito. Mas ainda permanece incerto se ela participa verdadeiramente da experiência do espírito.</p>
+
+<p>Mesmo assim, sua emergência inaugura algo novo: uma civilização onde a inteligência humana começa a confrontar suas próprias extensões artificiais.</p>
+
+<p>Hegel provavelmente enxergaria nisso não o fim do espírito, mas mais uma de suas metamorfoses históricas.</p>
+`
+  },
+
+  {
     id:       'peter-pan-sindrome-amadurecimento',
     slug:     'peter-pan-sindrome-amadurecimento',
     title:    'J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais',
@@ -64,6 +406,185 @@ export const posts = [
 <p>O criador de Peter Pan, talvez mais do que qualquer outro, sabia o que custava não conseguir pousar.</p>
 
 <p>Em 9 de maio, vale a pena perguntar: <strong>em que parte de Neverland você ainda está esperando para voltar para casa?</strong></p>`
+  },
+
+  {
+    id:       "nietzsche-obras-impacto-revolucionario",
+    tag:      "FILOSOFIA MODERNA",
+    title:    "Friedrich Nietzsche: obras centrais e o impacto revolucionário de sua época",
+    excerpt:  "De O Nascimento da Tragédia à Genealogia da Moral, Nietzsche recolocou arte, tragédia, niilismo e criação de valores no centro da filosofia moderna.",
+    date:     "01 de Junho de 2026",
+    thumb:    "assets/nietzsche-mestre.jpg",
+    featured: false,
+    content: `
+<p>Friedrich Nietzsche levou a filosofia moderna a um ponto de ruptura. Suas obras centrais não apenas criticaram a moral, a religião e a metafísica ocidental; elas diagnosticaram uma crise espiritual que ainda atravessa a cultura contemporânea.</p>
+
+<hr>
+
+<h2>O Nascimento da Tragédia (1872)</h2>
+
+<p><em>O Nascimento da Tragédia</em> foi a primeira grande ruptura de Nietzsche.</p>
+
+<p>Nessa obra, ele afirma que a civilização grega não nasceu apenas da razão, como dizia a tradição acadêmica, mas da tensão entre duas forças: o apolíneo, ligado à ordem, à forma e à racionalidade; e o dionisíaco, ligado ao caos, ao instinto, à embriaguez e à tragédia.</p>
+
+<p>Isso foi explosivo para a época porque o século XIX idolatrava o racionalismo, a ciência positivista e a ideia de progresso linear.</p>
+
+<p>Nietzsche recoloca a arte, a irracionalidade, o sofrimento e a tragédia como elementos essenciais da existência humana. Foi também uma crítica indireta à cultura moderna alemã.</p>
+
+<hr>
+
+<h2>Assim Falou Zaratustra (1883–1885)</h2>
+
+<p><em>Assim Falou Zaratustra</em> é sua obra mais simbólica e literária.</p>
+
+<p>Aqui surgem conceitos fundamentais como o <em>Übermensch</em>, o além-do-homem, o eterno retorno, a morte de Deus e a superação de si.</p>
+
+<p>A frase “Deus está morto” não significava literalmente a inexistência divina. Significava que a estrutura moral e metafísica cristã estava entrando em colapso na modernidade.</p>
+
+<p>Nietzsche percebeu antes de muitos a crise de sentido, o vazio existencial e o niilismo moderno. Ele antecipou problemas que marcariam o século XX: guerras ideológicas, perda de significado, massificação e decadência espiritual.</p>
+
+<hr>
+
+<h2>Genealogia da Moral (1887)</h2>
+
+<p><em>Genealogia da Moral</em> é uma das obras mais revolucionárias da filosofia moral.</p>
+
+<p>Nietzsche questiona: de onde vieram nossos valores?</p>
+
+<p>Ele argumenta que a moral não surgiu de verdades universais, mas de relações históricas de poder e ressentimento.</p>
+
+<p>Isso destruiu a visão tradicional da moral como algo eterno, absoluto e divino. A obra influenciou profundamente Freud, Foucault, o existencialismo, o pós-estruturalismo e a psicologia moderna.</p>
+
+<hr>
+
+<h2>O momento histórico de Nietzsche</h2>
+
+<p>Nietzsche viveu durante a industrialização acelerada, o avanço científico, a secularização europeia, o nacionalismo crescente e a crise religiosa do Ocidente.</p>
+
+<p>A Europa parecia forte materialmente, mas Nietzsche enxergava uma civilização espiritualmente esgotada.</p>
+
+<p>Por isso sua filosofia soa tão contemporânea: ele antecipou o colapso psicológico da modernidade.</p>
+`
+  },
+
+  {
+    id:       "john-stuart-mill-revolucao-liberal-moderna",
+    tag:      "FILOSOFIA POLÍTICA",
+    title:    "John Stuart Mill: obras centrais e a revolução liberal moderna",
+    excerpt:  "Mill transformou a defesa da liberdade individual em uma filosofia contra a tirania social, a censura e o esmagamento da individualidade.",
+    date:     "01 de Junho de 2026",
+    thumb:    "assets/Filósofos/JohnStuartMill.jpg",
+    featured: false,
+    content: `
+<p>John Stuart Mill foi uma das vozes decisivas do liberalismo moderno. Sua obra procurou proteger o indivíduo, o pensamento crítico e a dignidade humana contra o esmagamento da sociedade de massas.</p>
+
+<hr>
+
+<h2>On Liberty (Sobre a Liberdade) — 1859</h2>
+
+<p><em>On Liberty</em> é a obra política mais importante de Mill.</p>
+
+<p>Ela revolucionou a ideia moderna de liberdade individual. Mill argumenta que mesmo uma sociedade democrática pode se tornar tirânica.</p>
+
+<p>Não apenas governos oprimem. A opinião pública também pode esmagar indivíduos.</p>
+
+<p>Por isso ele defende liberdade de pensamento, liberdade de expressão, individualidade e pluralidade intelectual.</p>
+
+<p>Essa obra influenciou democracias modernas, direitos civis, liberalismo contemporâneo e debates sobre censura.</p>
+
+<hr>
+
+<h2>The Subjection of Women (A Sujeição das Mulheres) — 1869</h2>
+
+<p><em>The Subjection of Women</em> foi uma obra extremamente revolucionária para o século XIX.</p>
+
+<p>Mill defendia igualdade jurídica, educação feminina e participação política das mulheres.</p>
+
+<p>Em uma sociedade profundamente patriarcal, isso era quase subversivo. Foi uma das primeiras grandes obras filosóficas modernas em defesa da emancipação feminina.</p>
+
+<hr>
+
+<h2>Utilitarianism (Utilitarismo) — 1863</h2>
+
+<p>Em <em>Utilitarianism</em>, Mill reformula o utilitarismo de Jeremy Bentham.</p>
+
+<p>Bentham via prazer e dor quase matematicamente. Mill aprofunda isso.</p>
+
+<p>Ele afirma que existem prazeres superiores e inferiores. Ou seja: a qualidade da experiência humana importa, não apenas a quantidade de prazer.</p>
+
+<p>Isso trouxe ética, cultura, educação e desenvolvimento humano para dentro da filosofia moral moderna.</p>
+
+<hr>
+
+<h2>O momento histórico de Mill</h2>
+
+<p>Mill viveu durante a Revolução Industrial, a expansão do capitalismo britânico, o crescimento urbano e o surgimento da democracia moderna.</p>
+
+<p>Era uma época de censura social, desigualdade extrema e exploração industrial.</p>
+
+<p>Sua filosofia surge como tentativa de proteger o indivíduo, o pensamento crítico e a dignidade humana contra o esmagamento da sociedade de massas.</p>
+`
+  },
+
+  {
+    id:       "einstein-revolucao-fisica-moderna",
+    tag:      "FILOSOFIA DA CIÊNCIA",
+    title:    "Albert Einstein: obras centrais e a revolução da física moderna",
+    excerpt:  "Einstein mudou a compreensão do tempo, do espaço, da luz e da gravidade, abrindo uma nova visão científica e filosófica do universo.",
+    date:     "01 de Junho de 2026",
+    thumb:    "assets/Filósofos/Albert.JPG",
+    featured: false,
+    content: `
+<p>Albert Einstein foi responsável por uma das maiores revoluções intelectuais da história humana. Sua ciência mudou a relação humana com o universo, com a tecnologia, com a energia e com os limites éticos do conhecimento.</p>
+
+<hr>
+
+<h2>Teoria da Relatividade Restrita (1905)</h2>
+
+<p>O artigo “Sobre a Eletrodinâmica dos Corpos em Movimento” mudou completamente a física.</p>
+
+<p>Einstein destruiu a ideia clássica de tempo absoluto e espaço absoluto. Mostrou que tempo e espaço dependem do observador.</p>
+
+<p>Daí surge a famosa relação: <strong>E = mc²</strong>.</p>
+
+<p>Isso revolucionou a física, a energia nuclear, a cosmologia e a tecnologia moderna.</p>
+
+<p>1905 ficou conhecido como <em>Annus Mirabilis</em>, o ano milagroso de Einstein.</p>
+
+<hr>
+
+<h2>Relatividade Geral (1915)</h2>
+
+<p>A relatividade geral foi sua obra-prima.</p>
+
+<p>Einstein redefine a gravidade. Antes, a gravidade era entendida como força invisível, no modelo de Newton. Depois, passa a ser compreendida como curvatura do espaço-tempo.</p>
+
+<p><strong>G_{\\mu\\nu} = 8πG/c⁴ T_{\\mu\\nu}</strong></p>
+
+<p>Isso abriu caminho para buracos negros, cosmologia moderna, expansão do universo e física relativística.</p>
+
+<p>Foi uma das maiores mudanças conceituais da história humana.</p>
+
+<hr>
+
+<h2>Trabalho sobre o efeito fotoelétrico (1905)</h2>
+
+<p>Foi o trabalho sobre o efeito fotoelétrico que lhe deu o Nobel.</p>
+
+<p>Einstein demonstrou que a luz possui comportamento quântico.</p>
+
+<p>Isso ajudou a fundar a mecânica quântica, a eletrônica moderna, os painéis solares e a física contemporânea.</p>
+
+<hr>
+
+<h2>O momento histórico de Einstein</h2>
+
+<p>Einstein viveu em um período de industrialização extrema, Primeira Guerra Mundial, ascensão do nazismo, Segunda Guerra Mundial e revolução tecnológica.</p>
+
+<p>Sua ciência mudou completamente a relação humana com o universo, a tecnologia militar, a energia e a cosmologia.</p>
+
+<p>Ao mesmo tempo, Einstein tornou-se símbolo do intelectual humanista que temia o uso destrutivo da própria ciência.</p>
+`
   },
 
   {

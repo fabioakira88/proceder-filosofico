@@ -47,5 +47,29 @@ export const contentAreas = [
       alt: "💡",
       src: "assets/1f4a1.svg"
     }
+  },
+  {
+    title: "Existencialismo & Niilismo",
+    description: "Nietzsche, Kierkegaard, Cioran, Camus e a crise de sentido da modernidade.",
+    icon: {
+      text: "∅"
+    },
+    postSlug: "nietzsche-obras-impacto-revolucionario"
+  },
+  {
+    title: "Liberalismo & Sociedade",
+    description: "John Stuart Mill, Locke, Rousseau e os fundamentos da liberdade moderna.",
+    icon: {
+      text: "§"
+    },
+    postSlug: "john-stuart-mill-revolucao-liberal-moderna"
+  },
+  {
+    title: "Ciência & Epistemologia",
+    description: "Einstein, Popper, Kuhn e as revoluções científicas que redefiniram o universo.",
+    icon: {
+      text: "Ω"
+    },
+    postSlug: "einstein-revolucao-fisica-moderna"
   }
 ];

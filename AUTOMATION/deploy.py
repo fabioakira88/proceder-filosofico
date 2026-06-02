@@ -48,7 +48,7 @@ INCLUDE_EXTENSIONS = {
     ".svg", ".ico", ".webp", ".gif", ".pdf", ".txt", ".json",
 }
 EXCLUDE_DIRS = {
-    ".git", ".github", "__pycache__", "BACKUP", "EXPORTS", "DOCS",
+    ".git", ".github", "__pycache__", "BACKUP", "EXPORTS", "DOCS", "docs",
     "BRANDING", "AUTOMATION",
 }
 EXCLUDE_FILES = {

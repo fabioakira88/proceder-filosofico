@@ -1340,7 +1340,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
        ============================================ */
 
     .news-section {
-      padding: 5rem 1.5rem;
+      padding: 5rem 1.5rem 5.5rem;
       background: linear-gradient(180deg, var(--azul-profundo), var(--azul-escuro));
       border-top: 1px solid var(--borda-dourada);
     }
@@ -1351,6 +1351,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       gap: 1.5rem;
       max-width: 1200px;
       margin: 0 auto;
+      align-items: stretch;
     }
 
     .news-card {
@@ -1364,7 +1365,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      min-height: 500px;
+      min-height: 520px;
+      height: 100%;
       text-decoration: none;
       color: inherit;
       opacity: 1 !important;
@@ -1381,6 +1383,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       background: linear-gradient(90deg, transparent, var(--dourado), transparent);
       opacity: 0;
       transition: opacity 0.4s ease;
+      z-index: 1;
     }
 
     .news-card:hover {
@@ -1401,6 +1404,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       justify-content: center;
       border-bottom: 1px solid rgba(201, 168, 76, 0.2);
       flex-shrink: 0;
+      background: rgba(6, 13, 30, 0.72);
     }
 
     .news-card-thumb {
@@ -1409,6 +1413,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       object-fit: cover;
       object-position: center center;
       display: block;
+      transition: transform 0.5s ease, filter 0.5s ease;
+      filter: saturate(0.92) contrast(1.03);
+    }
+
+    .news-card:hover .news-card-thumb {
+      transform: scale(1.045);
+      filter: saturate(1.02) contrast(1.08);
     }
 
     .news-card-cover {
@@ -1436,6 +1447,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       flex: 1;
       display: flex;
       flex-direction: column;
+      min-height: 0;
     }
 
     .news-card-tag {
@@ -1445,7 +1457,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--dourado);
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.75rem;
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -1464,11 +1476,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       font-weight: 700;
       color: var(--branco);
       line-height: 1.35;
-      margin-bottom: 0.85rem;
+      margin: 0 0 0.85rem;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      min-height: calc(1.08rem * 1.35 * 3);
     }
 
     .news-card-excerpt {
@@ -1481,6 +1494,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      min-height: calc(0.88rem * 1.65 * 3);
     }
 
     .news-card-meta {
@@ -1491,6 +1505,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       padding-top: 1rem;
       border-top: 1px solid var(--borda-dourada);
       margin-top: auto;
+      min-height: 44px;
     }
 
     .news-card-date {
@@ -1537,10 +1552,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     .news-card.featured-card .news-card-title {
       font-size: 1.28rem;
       -webkit-line-clamp: 3;
+      min-height: calc(1.28rem * 1.35 * 3);
     }
 
     .news-card.featured-card .news-card-excerpt {
       -webkit-line-clamp: 4;
+      min-height: calc(0.88rem * 1.65 * 4);
     }
 
     /* --- Leitor de Post (overlay) --- */
@@ -1642,6 +1659,27 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     .post-reader-content p { margin-bottom: 1.5rem; }
 
+    .post-reader-content figure {
+      margin: 0 0 2rem;
+    }
+
+    .post-reader-content img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .post-reader-content ul {
+      margin: 0 0 1.5rem 1.25rem;
+      padding: 0;
+    }
+
+    .post-reader-content li {
+      margin-bottom: 0.45rem;
+    }
+
     .post-reader-content h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.6rem;
@@ -1697,10 +1735,33 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     @media (max-width: 1024px) {
       .news-grid { grid-template-columns: repeat(2, 1fr); }
+      .news-card.featured-card { min-height: 540px; }
     }
 
     @media (max-width: 640px) {
       .news-grid { grid-template-columns: 1fr; }
+      .news-section { padding: 4rem 1rem; }
+      .news-card,
+      .news-card.featured-card { min-height: 0; }
+      .news-card-img-wrap,
+      .news-card.featured-card .news-card-img-wrap { height: 215px; }
+      .news-card-body,
+      .news-card.featured-card .news-card-body { padding: 1.25rem; }
+      .news-card-title,
+      .news-card.featured-card .news-card-title {
+        min-height: 0;
+        font-size: 1.12rem;
+      }
+      .news-card-excerpt,
+      .news-card.featured-card .news-card-excerpt {
+        min-height: 0;
+        -webkit-line-clamp: 3;
+      }
+      .news-card-meta {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
       .post-reader-title { font-size: 1.75rem; }
       .post-reader-inner { padding: 4rem 1.25rem 3rem; }
     }
@@ -1808,7 +1869,21 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     @media(max-width:900px){#ms-grid{grid-template-columns:repeat(4,1fr)}}
     @media(max-width:600px){#ms-grid{grid-template-columns:repeat(3,1fr);gap:16px}#mestres-section{padding:48px 16px}.ms-nome{font-size:12px}#ms-modal-inner{padding:36px 16px 60px}}
     @media(max-width:380px){#ms-grid{grid-template-columns:repeat(2,1fr)}}
-  </style><script src="assets/wp-emoji-release.min.js" defer=""></script></head>
+  </style><script src="assets/wp-emoji-release.min.js" defer=""></script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0P68P26ZV7"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-0P68P26ZV7');
+</script>
+</head>
 <body class="home wp-singular page-template-default page page-id-68 wp-custom-logo wp-embed-responsive wp-theme-hostinger-ai-theme hostinger-ai-builder-elementor elementor-default elementor-kit-5 elementor-page elementor-page-68" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
   <!-- ============================================
@@ -1833,7 +1908,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <li><a href="https://procederfilosofico.com.br/#conteudo">Conteúdo</a></li>
         <li><a href="https://procederfilosofico.com.br/#filosofos">Filósofos</a></li>
         <li><a href="https://procederfilosofico.com.br/#sobre">Sobre</a></li>
-        <li><a href="https://procederfilosofico.com.br/#artigos">Artigos</a></li>
+        <li><a href="https://procederfilosofico.com.br/artigos/">Artigos</a></li>
         <li><a href="https://procederfilosofico.com.br/#newsletter">Newsletter</a></li>
         <li><a href="biblioteca.html">Livros</a></li>
         <!-- BOTÃO CTA: Troque o href pelo link desejado -->
@@ -1929,6 +2004,24 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
           <div class="content-card-icon"><img draggable="false" role="img" class="emoji" alt="💡" src="assets/1f4a1.svg"></div>
           <h3>Filosofia Aplicada</h3>
           <p>Como aplicar o pensamento filosófico na vida prática, nos negócios e no desenvolvimento pessoal.</p>
+        </div>
+
+        <div class="content-card fade-in visible" role="button" tabindex="0" onclick="openPost('nietzsche-obras-impacto-revolucionario')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPost('nietzsche-obras-impacto-revolucionario')}">
+          <div class="content-card-icon"><span style="font-family:'Playfair Display',serif;color:#C9A84C;font-size:34px">∅</span></div>
+          <h3>Existencialismo &amp; Niilismo</h3>
+          <p>Nietzsche, Kierkegaard, Cioran, Camus e a crise de sentido da modernidade.</p>
+        </div>
+
+        <div class="content-card fade-in visible" role="button" tabindex="0" onclick="openPost('john-stuart-mill-revolucao-liberal-moderna')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPost('john-stuart-mill-revolucao-liberal-moderna')}">
+          <div class="content-card-icon"><span style="font-family:'Playfair Display',serif;color:#C9A84C;font-size:34px">§</span></div>
+          <h3>Liberalismo &amp; Sociedade</h3>
+          <p>John Stuart Mill, Locke, Rousseau e os fundamentos da liberdade moderna.</p>
+        </div>
+
+        <div class="content-card fade-in visible" role="button" tabindex="0" onclick="openPost('einstein-revolucao-fisica-moderna')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPost('einstein-revolucao-fisica-moderna')}">
+          <div class="content-card-icon"><span style="font-family:'Playfair Display',serif;color:#C9A84C;font-size:34px">Ω</span></div>
+          <h3>Ciência &amp; Epistemologia</h3>
+          <p>Einstein, Popper, Kuhn e as revoluções científicas que redefiniram o universo.</p>
         </div>
       </div>
     </div>
@@ -2314,7 +2407,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
           <li><a href="https://procederfilosofico.com.br/#conteudo">Conteúdo</a></li>
           <li><a href="https://procederfilosofico.com.br/#filosofos">Filósofos</a></li>
           <li><a href="https://procederfilosofico.com.br/#sobre">Sobre</a></li>
-          <li><a href="https://procederfilosofico.com.br/#artigos">Artigos</a></li>
+          <li><a href="https://procederfilosofico.com.br/artigos/">Artigos</a></li>
           <li><a href="https://procederfilosofico.com.br/#newsletter">Newsletter</a></li>
         </ul>
 
@@ -2621,7 +2714,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     });
   </script>
 
-  <script src="posts.js?v=20260530-cards"></script>
+  <script src="posts.js?v=20260602-artigos"></script>
 
   <!-- ============================================
        ARTIGOS — JSON + LOGICA DE CARDS E LEITOR
@@ -2633,7 +2726,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
      BANCO DE DADOS DOS ARTIGOS
      ============================================ */
   /* POSTS is loaded from SITE/posts.js. */
-  var ASSET_VERSION = '20260530-cards';
+  var ASSET_VERSION = '20260602-artigos';
 
   /* ============================================
      RENDERIZAR CARDS NA GRADE
@@ -2651,6 +2744,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     }
 
     var CARD_THUMBS = {
+      'escolastica-latina-influencia-arabe': 'assets/Filósofos/Avicena.png',
+      'conatus-espinosa-ontologia-esforco-existir': 'assets/Filósofos/Spinoza.jpg',
+      'hegel-fenomenologia-inteligencias-artificiais': 'assets/wallpaper-filosofico.png',
+      'john-stuart-mill-revolucao-liberal-moderna': 'assets/Filósofos/JohnStuartMill.jpg',
       'peter-pan-sindrome-amadurecimento': 'assets/post_cards/peter-pan.jpeg',
       'escala-6x1-trabalho-tempo-vida': 'assets/post_cards/existencialismo.jpeg',
       'sao-tomas-fe-razao-explicacao': 'assets/post_cards/sto-agostinho.jpeg',
@@ -2682,8 +2779,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     POSTS.slice(0, 9).forEach(function(post, index) {
       var slug = post.slug || post.id;
-      var thumb = null; // imagens dos cards desativadas — usa cover de texto
-      var thumbSrc = '';
+      var thumbSrc = CARD_THUMBS[slug] || post.thumb || CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
+      var fallbackThumb = CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
+      var postUrl = 'artigos/?post=' + encodeURIComponent(slug);
       var card = document.createElement('article');
       card.className = 'news-card' + (index < 3 ? ' featured-card' : '');
       card.setAttribute('data-slug', slug);
@@ -2692,24 +2790,22 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       card.setAttribute('aria-label', 'Ler artigo: ' + post.title);
 
       card.innerHTML =
-        (thumb
-          ? '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(thumbSrc) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '"></div>'
-          : '<div class="news-card-cover"><span>' + text((post.title || 'P').charAt(0)) + '</span></div>') +
+        '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(thumbSrc) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '" onerror="this.onerror=null;this.src=&quot;' + text(fallbackThumb) + '&quot;;"></div>' +
         '<div class="news-card-body">' +
           '<span class="news-card-tag">' + text(post.tag) + '</span>' +
           '<h3 class="news-card-title">' + text(post.title) + '</h3>' +
           '<p class="news-card-excerpt">' + text(post.excerpt) + '</p>' +
           '<div class="news-card-meta">' +
             '<span class="news-card-date">' + text(post.date) + '</span>' +
-            '<span class="news-card-read">Ler materia ' +
+            '<span class="news-card-read">Ler matéria ' +
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
             '</span>' +
           '</div>' +
         '</div>';
 
-      card.addEventListener('click', function() { openPost(slug); });
+      card.addEventListener('click', function() { window.location.href = postUrl; });
       card.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPost(slug); }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = postUrl; }
       });
 
       grid.appendChild(card);
@@ -2831,82 +2927,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0;padding-bottom:0" id="wp--skip-link--target">
-    <div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
-<script>
-(function() {
-  if (typeof POSTS === 'undefined') return;
-  POSTS.unshift({
-    slug:     'peter-pan-sindrome-amadurecimento',
-    title:    'J.M. Barrie e a Síndrome de Peter Pan — quando crescer dói demais',
-    tag:      'FILOSOFIA E PSICOLOGIA',
-    date:     '09 de Maio de 2026',
-    excerpt:  'Peter Pan não é uma história infantil. É um diagnóstico. Existe uma pergunta que a maioria das pessoas evita fazer em voz alta: eu realmente cresci, ou apenas aprendi a fingir que cresci?',
-    thumb:    'assets/AJPBTuUJaFhjwjvx.jpg',
-    featured: true,
-    content:  `<p>Hoje, 9 de maio, nasceu o homem que criou o menino que nunca quis crescer. Mas Peter Pan não é uma história infantil. É um diagnóstico.</p>
-
-<p>Existe uma pergunta que a maioria das pessoas evita fazer em voz alta: <strong>eu realmente cresci, ou apenas aprendi a fingir que cresci?</strong></p>
-
-<p>James Matthew Barrie nasceu em 9 de maio de 1860, na Escócia. Era o nono filho de uma família humilde e carregava uma história pessoal marcada por perda — seu irmão mais velho, David, morreu em um acidente aos 13 anos, e a mãe de Barrie nunca se recuperou completamente do luto. David foi, para ela, eternamente jovem. Eternamente perfeito. Eternamente criança.</p>
-
-<p>Barrie cresceu à sombra de um morto que nunca envelheceu. E criou Peter Pan.</p>
-
-<hr>
-
-<h2>A síndrome que não está no manual</h2>
-
-<p>Em 1983, o psicólogo americano Dan Kiley publicou o livro <em>The Peter Pan Syndrome</em>, descrevendo um padrão de comportamento em adultos — majoritariamente homens, mas não exclusivamente — que resistem profundamente às responsabilidades da vida madura: relacionamentos comprometidos, trabalho estável, independência emocional, capacidade de lidar com frustrações.</p>
-
-<p>O perfil clássico não é o do "irresponsável óbvio". É muito mais sutil. É o adulto encantador, criativo, cheio de energia — que some quando as coisas ficam sérias. Que muda de emprego antes de ser avaliado. Que sabota relacionamentos no momento em que a profundidade começa a assustá-lo. Que vive em modo de preview, sempre se preparando para a vida que vai começar "em breve".</p>
-
-<p>Kiley identificou seis características centrais: irresponsabilidade, ansiedade, solidão, dependência, problemas de relacionamento e narcisismo. Mas há uma raiz comum a todas elas — o medo. Não o medo da morte, como Freud sugeria. <strong>O medo de tornar-se.</strong></p>
-
-<hr>
-
-<h2>Peter Pan na cultura pop: o espelho que não mente</h2>
-
-<p>A cultura pop é o lugar onde a filosofia aparece sem pedir licença. E a síndrome de Peter Pan está em todo lugar — só precisamos aprender a reconhecê-la.</p>
-
-<p>Walter White, de <em>Breaking Bad</em>, passa cinco temporadas convencendo a si mesmo de que está "agindo por sua família" quando, na verdade, está finalmente se permitindo existir fora das expectativas alheias — como uma criança que descobriu que pode fazer o que quer quando os adultos saem de casa.</p>
-
-<p>Tony Stark, antes de se tornar Homem de Ferro, é a síndrome de Peter Pan em forma de bilionário: genial, encantador, incapaz de intimidade real, sempre em fuga para a próxima aventura tecnológica. O arco de <em>Iron Man</em> é, no fundo, a história de um homem aprendendo — dolorosamente — a crescer.</p>
-
-<p>Até <em>Bohemian Rhapsody</em> toca nesse nervo. Freddie Mercury viveu em perpétua tensão entre a criança que queria ser amada incondicionalmente e o adulto que sabia que o amor real exige presença — e presença dói.</p>
-
-<p>E no anime? O Japão é o mestre absoluto dessa narrativa. <em>Neon Genesis Evangelion</em> é inteiramente sobre um adolescente que se recusa a amadurecer porque amadurecer significa ser responsável pelo fim do mundo. <em>Your Lie in April</em> é sobre aprender a sentir novamente depois de ter anestesiado a própria infância. <em>Spirited Away</em>, de Miyazaki, é a jornada de uma criança que só pode salvar os pais — e a si mesma — crescendo dentro de um mundo que não faz sentido.</p>
-
-<hr>
-
-<h2>O que a filosofia tem a dizer sobre isso</h2>
-
-<p>Nietzsche propôs o eterno retorno como teste de afirmação da vida: se você tivesse que viver sua vida exatamente como ela é, infinitas vezes, você diria sim? A síndrome de Peter Pan é a resposta não disfarçada de <em>talvez</em>. É a vida pausada no modo rascunho, esperando condições ideais que nunca chegam.</p>
-
-<p>Carl Jung chamaria o Peter Pan interno de <em>puer aeternus</em> — o eterno jovem, um arquétipo que habita o inconsciente e se recusa a se integrar à vida adulta. Jung não via isso como fraqueza moral, mas como um desequilíbrio psíquico: a energia do <em>puer</em> é criativa, espontânea e vital — mas sem o contrapeso do <em>senex</em> (o ancião interior, a sabedoria da experiência), ela se torna autodestrutiva.</p>
-
-<blockquote><em>O objetivo não é matar Peter Pan. É aprender a voar e pousar.</em></blockquote>
-
-<hr>
-
-<h2>Crescer não é trair a criança que você foi</h2>
-
-<p>O maior equívoco sobre amadurecimento é acreditar que ele exige abandono — que se tornar adulto significa deixar para trás a curiosidade, a imaginação, a leveza. Essa confusão é o que alimenta a síndrome.</p>
-
-<p>Amadurecer, no sentido psicológico profundo, não é perder o encantamento. É ser capaz de <strong>sustentar o encantamento mesmo quando a vida cobra o preço da realidade</strong>. É poder amar sem fugir. Trabalhar sem se autossabotar. Estar presente sem precisar transformar cada momento em aventura para suportar a intensidade de simplesmente existir.</p>
-
-<p>Barrie passou a vida criando histórias. Nunca se casou com plena felicidade. Teve uma relação complexa com os filhos da família Llewelyn Davies, que o inspiraram a criar Peter Pan, e que carregaram o peso dessa inspiração de formas muito diferentes ao longo de suas vidas.</p>
-
-<p>O criador de Peter Pan, talvez mais do que qualquer outro, sabia o que custava não conseguir pousar.</p>
-
-<p>Em 9 de maio, vale a pena perguntar: <strong>em que parte de Neverland você ainda está esperando para voltar para casa?</strong></p>`
-  });
-})();
-</script>
-
-
-
-
-
-<script>
+    <div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained"><script>
 (function() {
   // ── Lead Magnet: Newsletter + Download PDF ─────────────────
   if (typeof window.__procederNewsletterInjected !== 'undefined') return;
