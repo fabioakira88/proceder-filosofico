@@ -2744,6 +2744,7 @@ gtag('config', 'G-0P68P26ZV7');
     }
 
     var CARD_THUMBS = {
+      'conforto-excessivo-enfraquece-civilizacoes': 'assets/sociedade-fragil.png',
       'escolastica-latina-influencia-arabe': 'assets/Filósofos/Avicena.png',
       'conatus-espinosa-ontologia-esforco-existir': 'assets/Filósofos/Spinoza.jpg',
       'hegel-fenomenologia-inteligencias-artificiais': 'assets/wallpaper-filosofico.png',
@@ -2779,9 +2780,9 @@ gtag('config', 'G-0P68P26ZV7');
 
     POSTS.slice(0, 9).forEach(function(post, index) {
       var slug = post.slug || post.id;
-      var thumbSrc = CARD_THUMBS[slug] || post.thumb || CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
-      var fallbackThumb = CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
       var postUrl = 'artigos/?post=' + encodeURIComponent(slug);
+      var rawThumb = CARD_THUMBS[slug] || post.thumb || CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
+      var fallbackThumb = CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
       var card = document.createElement('article');
       card.className = 'news-card' + (index < 3 ? ' featured-card' : '');
       card.setAttribute('data-slug', slug);
@@ -2790,7 +2791,7 @@ gtag('config', 'G-0P68P26ZV7');
       card.setAttribute('aria-label', 'Ler artigo: ' + post.title);
 
       card.innerHTML =
-        '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(thumbSrc) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '" onerror="this.onerror=null;this.src=&quot;' + text(fallbackThumb) + '&quot;;"></div>' +
+        '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(rawThumb) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '" onerror="this.onerror=null;this.src=&quot;' + text(fallbackThumb) + '&quot;"></div>' +
         '<div class="news-card-body">' +
           '<span class="news-card-tag">' + text(post.tag) + '</span>' +
           '<h3 class="news-card-title">' + text(post.title) + '</h3>' +
