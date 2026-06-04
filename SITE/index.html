@@ -2714,7 +2714,7 @@ gtag('config', 'G-0P68P26ZV7');
     });
   </script>
 
-  <script src="posts.js?v=20260602-artigos"></script>
+  <script src="posts.js?v=20260604-articles-final"></script>
 
   <!-- ============================================
        ARTIGOS — JSON + LOGICA DE CARDS E LEITOR
@@ -2726,7 +2726,7 @@ gtag('config', 'G-0P68P26ZV7');
      BANCO DE DADOS DOS ARTIGOS
      ============================================ */
   /* POSTS is loaded from SITE/posts.js. */
-  var ASSET_VERSION = '20260602-artigos';
+  var ASSET_VERSION = '20260604-articles-final';
 
   /* ============================================
      RENDERIZAR CARDS NA GRADE
@@ -2743,46 +2743,44 @@ gtag('config', 'G-0P68P26ZV7');
       });
     }
 
-    var CARD_THUMBS = {
-      'conforto-excessivo-enfraquece-civilizacoes': 'assets/sociedade-fragil.png',
-      'escolastica-latina-influencia-arabe': 'assets/Filósofos/Avicena.png',
-      'conatus-espinosa-ontologia-esforco-existir': 'assets/Filósofos/Spinoza.jpg',
-      'hegel-fenomenologia-inteligencias-artificiais': 'assets/wallpaper-filosofico.png',
-      'john-stuart-mill-revolucao-liberal-moderna': 'assets/Filósofos/JohnStuartMill.jpg',
-      'peter-pan-sindrome-amadurecimento': 'assets/post_cards/peter-pan.jpeg',
-      'escala-6x1-trabalho-tempo-vida': 'assets/post_cards/existencialismo.jpeg',
-      'sao-tomas-fe-razao-explicacao': 'assets/post_cards/sto-agostinho.jpeg',
-      'epicuro-pouco-suficiencia-desejo': 'assets/post_cards/aristoteles.jpeg',
-      'protagoras-medida-todas-coisas': 'assets/post_cards/aristoteles.jpeg',
-      'heraclito-duas-vezes-mesmo-rio': 'assets/post_cards/kant.jpeg',
-      'formigas-diante-do-universo': 'assets/post_cards/existencialismo.jpeg',
-      'arte-controle-humano': 'assets/post_cards/religiao-e-filosofia.jpeg',
-      'laplace-sonho-razao-absoluta': 'assets/post_cards/kant.jpeg',
-      'balzac-escritor-alma-capitalismo': 'assets/post_cards/kant.jpeg',
-      'confissoes-santo-agostinho': 'assets/post_cards/sto-agostinho.jpeg',
-      'ser-so-religioso-pode-te-tornar-ignorante': 'assets/post_cards/religiao-e-filosofia.jpeg',
-      'somos-livres-por-completo': 'assets/post_cards/existencialismo.jpeg',
-      'sartre-liberdade-condenacao': 'assets/post_cards/existencialismo.jpeg',
-      'a-etica-da-virtude-segundo-aristoteles': 'assets/post_cards/aristoteles.jpeg',
-      'critica-da-razao-pura': 'assets/post_cards/kant.jpeg',
-      'licoes-de-siegfried': 'assets/post_cards/siegfried.jpeg'
+    var DEFAULT_THUMB = 'assets/default-article.jpg';
+    var MONTHS_PT = {
+      janeiro: 0, fevereiro: 1, marco: 2, 'março': 2, abril: 3,
+      maio: 4, junho: 5, julho: 6, agosto: 7, setembro: 8,
+      outubro: 9, novembro: 10, dezembro: 11
     };
 
-    var CARD_THUMB_FALLBACKS = [
-      'assets/post_cards/peter-pan.jpeg',
-      'assets/post_cards/sto-agostinho.jpeg',
-      'assets/post_cards/existencialismo.jpeg',
-      'assets/post_cards/religiao-e-filosofia.jpeg',
-      'assets/post_cards/aristoteles.jpeg',
-      'assets/post_cards/kant.jpeg',
-      'assets/post_cards/siegfried.jpeg'
-    ];
+    function postTimestamp(post) {
+      if (post.dateISO) {
+        var iso = Date.parse(post.dateISO);
+        if (!Number.isNaN(iso)) return iso;
+      }
+      var match = String(post.date || '').toLowerCase().match(/(\d{1,2})\s+de\s+([a-zç]+)\s+de\s+(\d{4})/);
+      if (!match || MONTHS_PT[match[2]] === undefined) return 0;
+      return new Date(Number(match[3]), MONTHS_PT[match[2]], Number(match[1])).getTime();
+    }
 
-    POSTS.slice(0, 9).forEach(function(post, index) {
+    function sortedPosts() {
+      return (Array.isArray(POSTS) ? POSTS : []).slice().sort(function(a, b) {
+        var diff = postTimestamp(b) - postTimestamp(a);
+        if (diff !== 0) return diff;
+        return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
+      });
+    }
+
+    function resolveThumb(post) {
+      var raw = String(post.thumb || DEFAULT_THUMB).trim();
+      if (!raw) return DEFAULT_THUMB + '?v=' + ASSET_VERSION;
+      if (/^https?:\/\//.test(raw)) return raw;
+      return raw.replace(/^\/+/, '') + '?v=' + ASSET_VERSION;
+    }
+
+    var orderedPosts = sortedPosts().slice(0, 9);
+    orderedPosts.forEach(function(post, index) {
       var slug = post.slug || post.id;
       var postUrl = 'artigos/?post=' + encodeURIComponent(slug);
-      var rawThumb = CARD_THUMBS[slug] || post.thumb || CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
-      var fallbackThumb = CARD_THUMB_FALLBACKS[index % CARD_THUMB_FALLBACKS.length];
+      var rawThumb = resolveThumb(post);
+      var fallbackThumb = DEFAULT_THUMB + '?v=' + ASSET_VERSION;
       var card = document.createElement('article');
       card.className = 'news-card' + (index < 3 ? ' featured-card' : '');
       card.setAttribute('data-slug', slug);
@@ -2791,7 +2789,7 @@ gtag('config', 'G-0P68P26ZV7');
       card.setAttribute('aria-label', 'Ler artigo: ' + post.title);
 
       card.innerHTML =
-        '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(rawThumb) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '" onerror="this.onerror=null;this.src=&quot;' + text(fallbackThumb) + '&quot;"></div>' +
+        '<div class="news-card-img-wrap"><img class="news-card-thumb" src="' + text(rawThumb) + '" alt="' + text(post.title) + '" loading="' + (index < 3 ? 'eager' : 'lazy') + '" decoding="async" onerror="this.onerror=null;this.src=&quot;' + text(fallbackThumb) + '&quot;"></div>' +
         '<div class="news-card-body">' +
           '<span class="news-card-tag">' + text(post.tag) + '</span>' +
           '<h3 class="news-card-title">' + text(post.title) + '</h3>' +

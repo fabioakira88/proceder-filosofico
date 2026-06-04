@@ -331,24 +331,14 @@
     </article>
   </main>
 
-  <script src="../posts.js?v=20260602-artigos"></script>
+  <script src="../posts.js?v=20260604-articles-final"></script>
   <script>
-    var FALLBACK_THUMBS = [
-      '../assets/post_cards/existencialismo.jpeg',
-      '../assets/post_cards/religiao-e-filosofia.jpeg',
-      '../assets/post_cards/kant.jpeg',
-      '../assets/post_cards/aristoteles.jpeg',
-      '../assets/post_cards/sto-agostinho.jpeg',
-      '../assets/wallpaper-filosofico.png'
-    ];
-
-    var CARD_THUMBS = {
-      'conforto-excessivo-enfraquece-civilizacoes': '../assets/sociedade-fragil.png',
-      'escolastica-latina-influencia-arabe': '../assets/Filósofos/Avicena.png',
-      'conatus-espinosa-ontologia-esforco-existir': '../assets/Filósofos/Spinoza.jpg',
-      'hegel-fenomenologia-inteligencias-artificiais': '../assets/wallpaper-filosofico.png',
-      'john-stuart-mill-revolucao-liberal-moderna': '../assets/Filósofos/JohnStuartMill.jpg',
-      'peter-pan-sindrome-amadurecimento': '../assets/post_cards/peter-pan.jpeg'
+    var ASSET_VERSION = '20260604-articles-final';
+    var DEFAULT_THUMB = '../assets/default-article.jpg';
+    var MONTHS_PT = {
+      janeiro: 0, fevereiro: 1, marco: 2, 'março': 2, abril: 3,
+      maio: 4, junho: 5, julho: 6, agosto: 7, setembro: 8,
+      outubro: 9, novembro: 10, dezembro: 11
     };
 
     function text(value) {
@@ -358,9 +348,33 @@
     }
 
     function assetUrl(value, index) {
-      var raw = value || FALLBACK_THUMBS[index % FALLBACK_THUMBS.length];
+      var raw = value || DEFAULT_THUMB;
       if (/^https?:\/\//.test(raw) || raw.indexOf('../') === 0) return raw;
       return '../' + raw.replace(/^\/+/, '');
+    }
+
+    function versionedAsset(value) {
+      var url = assetUrl(value);
+      if (/^https?:\/\//.test(url)) return url;
+      return url + '?v=' + ASSET_VERSION;
+    }
+
+    function postTimestamp(post) {
+      if (post.dateISO) {
+        var iso = Date.parse(post.dateISO);
+        if (!Number.isNaN(iso)) return iso;
+      }
+      var match = String(post.date || '').toLowerCase().match(/(\d{1,2})\s+de\s+([a-zç]+)\s+de\s+(\d{4})/);
+      if (!match || MONTHS_PT[match[2]] === undefined) return 0;
+      return new Date(Number(match[3]), MONTHS_PT[match[2]], Number(match[1])).getTime();
+    }
+
+    function sortedPosts() {
+      return (Array.isArray(POSTS) ? POSTS : []).slice().sort(function(a, b) {
+        var diff = postTimestamp(b) - postTimestamp(a);
+        if (diff !== 0) return diff;
+        return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
+      });
     }
 
     function rewriteContent(content) {
@@ -370,17 +384,17 @@
     function renderGrid() {
       var grid = document.getElementById('articlesGrid');
       grid.innerHTML = '';
-      POSTS.forEach(function(post, index) {
+      sortedPosts().forEach(function(post, index) {
         var slug = post.slug || post.id;
-        var thumb = CARD_THUMBS[slug] || assetUrl(post.thumb, index);
-        var fallback = FALLBACK_THUMBS[index % FALLBACK_THUMBS.length];
+        var thumb = versionedAsset(post.thumb);
+        var fallback = DEFAULT_THUMB + '?v=' + ASSET_VERSION;
         var card = document.createElement('article');
         card.className = 'article-card';
         card.setAttribute('tabindex', '0');
         card.setAttribute('role', 'button');
         card.setAttribute('aria-label', 'Ler matéria: ' + post.title);
         card.innerHTML =
-          '<div class="article-image"><img src="' + text(thumb) + '" alt="' + text(post.title) + '" loading="' + (index < 6 ? 'eager' : 'lazy') + '" onerror="this.onerror=null;this.src=&quot;' + text(fallback) + '&quot;;"></div>' +
+          '<div class="article-image"><img src="' + text(thumb) + '" alt="' + text(post.title) + '" loading="' + (index < 6 ? 'eager' : 'lazy') + '" decoding="async" onerror="this.onerror=null;this.src=&quot;' + text(fallback) + '&quot;;"></div>' +
           '<div class="article-body">' +
             '<div class="article-tag">' + text(post.tag) + '</div>' +
             '<h2 class="article-title">' + text(post.title) + '</h2>' +

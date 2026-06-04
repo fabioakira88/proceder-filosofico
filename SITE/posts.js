@@ -116,7 +116,7 @@ const POSTS = [
     title:    "A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval",
     excerpt:  "A escolástica latina não nasceu isolada: Avicena e Averróis foram decisivos para reconstruir a racionalidade filosófica do Ocidente medieval.",
     date:     "02 de Junho de 2026",
-    thumb:    "assets/Filósofos/Avicena.png",
+    thumb:    "assets/post_cards/kant.jpeg",
     featured: true,
     content: `
 <p>Durante séculos, a narrativa simplificada da história da filosofia apresentou a Europa medieval como uma civilização intelectualmente autônoma, diretamente herdeira da Grécia antiga. Contudo, essa interpretação ignora um dos processos mais decisivos da história intelectual do Ocidente: a mediação árabe-islâmica na reconstrução do pensamento filosófico europeu.</p>
@@ -186,7 +186,7 @@ const POSTS = [
     title:    "O Conatus em Espinosa: A Ontologia do Esforço de Existir",
     excerpt:  "Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.",
     date:     "02 de Junho de 2026",
-    thumb:    "assets/Filósofos/Spinoza.jpg",
+    thumb:    "assets/metafisica-post.png",
     featured: true,
     content: `
 <p>Entre todos os conceitos desenvolvidos pela filosofia moderna, poucos possuem a radicalidade silenciosa do conatus em Baruch Espinosa.</p>
@@ -516,7 +516,7 @@ const POSTS = [
     title:    "John Stuart Mill: obras centrais e a revolução liberal moderna",
     excerpt:  "Mill transformou a defesa da liberdade individual em uma filosofia contra a tirania social, a censura e o esmagamento da individualidade.",
     date:     "01 de Junho de 2026",
-    thumb:    "assets/Filósofos/JohnStuartMill.jpg",
+    thumb:    "assets/post2.png",
     featured: false,
     content: `
 <p>John Stuart Mill foi uma das vozes decisivas do liberalismo moderno. Sua obra procurou proteger o indivíduo, o pensamento crítico e a dignidade humana contra o esmagamento da sociedade de massas.</p>
@@ -575,7 +575,7 @@ const POSTS = [
     title:    "Albert Einstein: obras centrais e a revolução da física moderna",
     excerpt:  "Einstein mudou a compreensão do tempo, do espaço, da luz e da gravidade, abrindo uma nova visão científica e filosófica do universo.",
     date:     "01 de Junho de 2026",
-    thumb:    "assets/Filósofos/Albert.JPG",
+    thumb:    "assets/laplace.jpeg",
     featured: false,
     content: `
 <p>Albert Einstein foi responsável por uma das maiores revoluções intelectuais da história humana. Sua ciência mudou a relação humana com o universo, com a tecnologia, com a energia e com os limites éticos do conhecimento.</p>
@@ -1011,7 +1011,7 @@ const POSTS = [
     title:    "As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental",
     excerpt:  "Escrito entre 397 e 400 d.C., As Confissões não é uma autobiografia. É um longo diálogo com Deus — seis momentos que atravessam séculos e ainda falam ao coração de quem os lê.",
     date:     "09 de Maio de 2026",
-    thumb:    "assets/Filósofos/Agostinho.JPG",
+    thumb:    "assets/post_cards/sto-agostinho.jpeg",
     featured: true,
     content: `
 <p>Escrito entre 397 e 400 d.C., <em>As Confissões</em> de Santo Agostinho não é uma autobiografia no sentido moderno. É um longo diálogo com Deus — feito em voz alta, diante de quem quer que leia. Agostinho confessa seus pecados, suas buscas, seus equívocos filosóficos e sua conversão não para se justificar, mas para mostrar como uma alma pode estar completamente perdida e ainda assim ser encontrada.</p>
@@ -1088,7 +1088,7 @@ const POSTS = [
     title:    "Sócrates: A Arte de Queixar-se de Si Mesmo",
     excerpt:  "\"É costume de um tolo quando erra queixar-se do outro; é costume do sábio queixar-se de si mesmo.\" Uma frase que resume todo o método socrático: a responsabilidade filosófica começa pelo autoexame.",
     date:     "08 de Maio de 2026",
-    thumb:    "assets/Filósofos/Sócrates.png",
+    thumb:    "assets/frase-socrates-post.png",
     featured: false,
     content: `
 <p>Sócrates (470–399 a.C.) nunca escreveu uma única linha. Não fundou uma escola no sentido físico do termo. Não deixou tratados nem sistemas. E, ainda assim, é considerado o pilar sobre o qual toda a filosofia ocidental foi construída. Por quê?</p>
@@ -1132,7 +1132,7 @@ const POSTS = [
     title:    "Platão: Tudo Quanto Vive Provém do Que Morreu",
     excerpt:  "\"Tudo quanto vive provém daquilo que morreu.\" Em poucas palavras, Platão sintetiza o ciclo que estrutura tanto sua teoria da imortalidade quanto a distinção fundamental entre aparência e realidade.",
     date:     "07 de Maio de 2026",
-    thumb:    "assets/Filósofos/Platão.png",
+    thumb:    "assets/frase-platao.png",
     featured: false,
     content: `
 <p>Platão (428–348 a.C.) nasceu em Atenas numa família aristocrática, foi discípulo de Sócrates e fundou a Academia — a primeira instituição de ensino superior do Ocidente. Mas sua contribuição maior não foi institucional: foi uma visão do mundo que separa de forma radical o que parece ser real do que é verdadeiramente real.</p>
@@ -1176,7 +1176,7 @@ const POSTS = [
     title:    "Tales de Mileto: A Pergunta que Inaugurou a Filosofia",
     excerpt:  "Por volta de 624 a.C., um grego de Mileto fez a pergunta mais simples e mais profunda da história do pensamento: do que é feito tudo o que existe? Essa foi a pergunta que inaugurou a filosofia.",
     date:     "06 de Maio de 2026",
-    thumb:    "assets/Filósofos/Talesdemileto.png",
+    thumb:    "assets/frase-tales.png",
     featured: false,
     content: `
 <p>Tales de Mileto (624–546 a.C.) é chamado de o primeiro filósofo ocidental — e, possivelmente, o primeiro cientista. Não porque suas respostas fossem corretas, mas porque o tipo de pergunta que ele fez era inteiramente novo.</p>
@@ -1218,7 +1218,7 @@ const POSTS = [
     title:    "Demócrito: Por Que a Alma Vale Mais que o Corpo",
     excerpt:  "\"Convém ao homem dar maior atenção à Alma do que ao corpo; pois a excelência da Alma corrige a fraqueza do corpo, mas a força do corpo sem a razão não aperfeiçoa em nada a Alma.\"",
     date:     "05 de Maio de 2026",
-    thumb:    "assets/Filósofos/democrito.png",
+    thumb:    "assets/frase-democrito-post.png",
     featured: false,
     content: `
 <p>Demócrito de Abdera (460–370 a.C.) era chamado pelos antigos de "o filósofo que ri". Não de ironia ou desprezo, mas de uma espécie de serenidade lúcida diante da condição humana. Alguém que havia chegado a uma visão tão clara da realidade que as tragicomédias do dia a dia pareciam, mais do que dolorosas, simplesmente curiosas.</p>
@@ -1261,7 +1261,7 @@ const POSTS = [
     title:    "Leucipo: O Pai do Atomismo que a História Quase Esqueceu",
     excerpt:  "Antes de Demócrito, antes de Einstein, antes de toda a física moderna — houve Leucipo. Por volta de 440 a.C., ele propôs que a realidade é composta de partículas indivisíveis movendo-se no vazio. E quase ninguém sabe seu nome.",
     date:     "04 de Maio de 2026",
-    thumb:    "assets/Filósofos/Leucipo de Mileto.png",
+    thumb:    "assets/frase-leucipo-post.png",
     featured: false,
     content: `
 <p>Se você já ouviu falar de átomos, já ouviu falar — indiretamente — de Leucipo. Mas enquanto Demócrito ficou para a história como "o filósofo atômico", o nome de seu mestre e co-fundador do atomismo quase desapareceu completamente.</p>
@@ -1304,7 +1304,7 @@ const POSTS = [
     title:    "Empédocles: Amor e Ódio como Forças que Governam o Universo",
     excerpt:  "Empédocles propôs que tudo o que existe é feito de quatro raízes — fogo, ar, água e terra — combinadas e separadas por duas forças cósmicas: o Amor e a Discórdia. Uma visão que antecipa a física das forças fundamentais de forma surpreendente.",
     date:     "03 de Maio de 2026",
-    thumb:    "assets/Filósofos/Empédocles.png",
+    thumb:    "assets/frase-empedocles-post.png",
     featured: false,
     content: `
 <p>Empédocles de Agrigento (490–430 a.C.) foi talvez o filósofo pré-socrático mais extravagante. Médico reconhecido, orador poderoso, político influente e — segundo ele mesmo — algo próximo de um deus. Caminhou por cidades usando sandálias douradas e uma coroa de louros, cercado por seguidores que esperavam dele curas milagrosas e profecias.</p>
@@ -1391,7 +1391,7 @@ const POSTS = [
     title:    "John Locke e a Tábula Rasa: Ninguém Nasce com a Verdade",
     excerpt:  "John Locke desafiou séculos de tradição ao afirmar que a mente humana ao nascer é uma folha em branco. Todo conhecimento vem da experiência. Simples de enunciar — radical nas consequências políticas, pedagógicas e filosóficas.",
     date:     "01 de Maio de 2026",
-    thumb:    "assets/Filósofos/jonh-locke.JPG",
+    thumb:    "assets/frase-locke.png",
     featured: false,
     content: `
 <p>John Locke (1632–1704) é o filósofo que está na base de duas das maiores revoluções da modernidade: a Gloriosa Revolução inglesa de 1688 e, um século depois, a Revolução Americana. Sua filosofia política e sua epistemologia estão entrelaçadas de uma forma que não é acidental.</p>
@@ -1475,7 +1475,7 @@ const POSTS = [
     title:    "Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant",
     excerpt:  "Kant não disse que Deus não existe. Disse algo mais radical: que provar Deus é filosoficamente impossível — não por falta de evidência, mas porque a razão humana não pode ultrapassar os limites da experiência possível.",
     date:     "29 de Abril de 2026",
-    thumb:    "assets/Filósofos/Kant.jpeg",
+    thumb:    "assets/post_cards/kant.jpeg",
     featured: false,
     content: `
 <p>Immanuel Kant (1724–1804) levou décadas para publicar sua obra mais importante. A <em>Crítica da Razão Pura</em> (1781) chegou após anos de silêncio filosófico — um silêncio que Kant atribuiu ao "sono dogmático" do qual Hume o havia despertado.</p>
@@ -1517,7 +1517,7 @@ const POSTS = [
     title:    "Sartre: Você Está Condenado a Ser Livre",
     excerpt:  "\"Eu sempre posso escolher, mas devo saber que, se não escolher, ainda estou escolhendo.\" Para Sartre, a liberdade não é um presente — é um peso que não podemos depositar em lugar nenhum.",
     date:     "28 de Abril de 2026",
-    thumb:    "assets/Filósofos/sartre1.JPG",
+    thumb:    "assets/frase-jean-paul-sartrepost.png",
     featured: false,
     content: `
 <p>Jean-Paul Sartre (1905–1980) escreveu uma das frases mais desconfortáveis da filosofia: <em>"O homem está condenado a ser livre."</em> Condenado — não abençoado, não privilegiado, não destinado. Condenado.</p>
@@ -1604,7 +1604,7 @@ const POSTS = [
     title:    "Confúcio: A Virtude não é um Estado — é uma Prática Diária",
     excerpt:  "Confúcio não criou uma religião nem um sistema metafísico. Criou um caminho de vida baseado em relações, virtude e cultivo contínuo do caráter. Um dos pensamentos mais práticos e duradouros da história humana.",
     date:     "26 de Abril de 2026",
-    thumb:    "assets/Filósofos/Confúcio.jpeg",
+    thumb:    "assets/frase-confucio.png",
     featured: false,
     content: `
 <p>Confúcio (551–479 a.C.) foi contemporâneo de Sócrates, de Gautama Buda e de Lao-Tsé — um daqueles momentos extraordinários em que diferentes partes do mundo parecem despertar para a questão ética simultaneamente. Karl Jaspers chamou esse período de "Era Axial": o tempo em que a humanidade passou a refletir criticamente sobre si mesma.</p>
@@ -1692,7 +1692,7 @@ const POSTS = [
     title:    "Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática por 2.000 Anos",
     excerpt:  "\"Quem é um amigo? Um outro eu.\" Mas Zenão de Eleia ficou famoso por algo ainda mais perturbador: paradoxos que pareciam provar que o movimento é impossível — e que a matemática levou 2.000 anos para resolver.",
     date:     "24 de Abril de 2026",
-    thumb:    "assets/Filósofos/Zenão de Eléia.png",
+    thumb:    "assets/frase-zenao-eleiapost.png",
     featured: false,
     content: `
 <p>Zenão de Eleia (490–430 a.C.) foi discípulo de Parmênides e herdeiro do problema mais perturbador da filosofia antiga: a relação entre o pensamento e o movimento, entre a lógica e a experiência dos sentidos.</p>
