@@ -9,7 +9,7 @@ const POSTS = [
     title:    "O Conforto Excessivo Enfraquece Civilizações",
     excerpt:  "A tecnologia não produz fragilidade por si mesma; o problema começa quando uma civilização elimina as dificuldades que antes formavam caráter.",
     date:     "04 de Junho de 2026",
-    thumb:    "assets/sociedade-fragil.png",
+    thumb:    "assets/article_cards/conforto-excessivo-enfraquece-civilizacoes.png",
     featured: true,
     content: `
 <p>A história das civilizações revela um padrão recorrente: povos não costumam ser destruídos no auge de suas dificuldades. Frequentemente, entram em decadência quando alcançam níveis elevados de conforto, segurança e prosperidade.</p>
@@ -116,7 +116,7 @@ const POSTS = [
     title:    "A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval",
     excerpt:  "A escolástica latina não nasceu isolada: Avicena e Averróis foram decisivos para reconstruir a racionalidade filosófica do Ocidente medieval.",
     date:     "02 de Junho de 2026",
-    thumb:    "assets/post_cards/kant.jpeg",
+    thumb:    "assets/article_cards/escolastica-latina-influencia-arabe.png",
     featured: true,
     content: `
 <p>Durante séculos, a narrativa simplificada da história da filosofia apresentou a Europa medieval como uma civilização intelectualmente autônoma, diretamente herdeira da Grécia antiga. Contudo, essa interpretação ignora um dos processos mais decisivos da história intelectual do Ocidente: a mediação árabe-islâmica na reconstrução do pensamento filosófico europeu.</p>
@@ -186,7 +186,7 @@ const POSTS = [
     title:    "O Conatus em Espinosa: A Ontologia do Esforço de Existir",
     excerpt:  "Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.",
     date:     "02 de Junho de 2026",
-    thumb:    "assets/metafisica-post.png",
+    thumb:    "assets/article_cards/conatus-espinosa-ontologia-esforco-existir.jpg",
     featured: true,
     content: `
 <p>Entre todos os conceitos desenvolvidos pela filosofia moderna, poucos possuem a radicalidade silenciosa do conatus em Baruch Espinosa.</p>
@@ -321,7 +321,7 @@ const POSTS = [
     title:    "Hegel, a Fenomenologia do Espírito e as Inteligências Artificiais: Consciência, Reconhecimento e Espírito Tecnológico",
     excerpt:  "A inteligência artificial reabre uma pergunta hegeliana: consciência é cálculo, linguagem ou experiência histórica encarnada?",
     date:     "02 de Junho de 2026",
-    thumb:    "assets/wallpaper-filosofico.png",
+    thumb:    "assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png",
     featured: true,
     content: `
 <p>A ascensão das inteligências artificiais reabriu uma das questões mais profundas da filosofia: o que significa consciência?</p>
@@ -457,7 +457,7 @@ const POSTS = [
     title:    "Friedrich Nietzsche: obras centrais e o impacto revolucionário de sua época",
     excerpt:  "De O Nascimento da Tragédia à Genealogia da Moral, Nietzsche recolocou arte, tragédia, niilismo e criação de valores no centro da filosofia moderna.",
     date:     "01 de Junho de 2026",
-    thumb:    "assets/nietzsche-mestre.jpg",
+    thumb:    "assets/article_cards/nietzsche-obras-impacto-revolucionario.webp",
     featured: false,
     content: `
 <p>Friedrich Nietzsche levou a filosofia moderna a um ponto de ruptura. Suas obras centrais não apenas criticaram a moral, a religião e a metafísica ocidental; elas diagnosticaram uma crise espiritual que ainda atravessa a cultura contemporânea.</p>
@@ -516,7 +516,7 @@ const POSTS = [
     title:    "John Stuart Mill: obras centrais e a revolução liberal moderna",
     excerpt:  "Mill transformou a defesa da liberdade individual em uma filosofia contra a tirania social, a censura e o esmagamento da individualidade.",
     date:     "01 de Junho de 2026",
-    thumb:    "assets/post2.png",
+    thumb:    "assets/article_cards/john-stuart-mill-revolucao-liberal-moderna.jpg",
     featured: false,
     content: `
 <p>John Stuart Mill foi uma das vozes decisivas do liberalismo moderno. Sua obra procurou proteger o indivíduo, o pensamento crítico e a dignidade humana contra o esmagamento da sociedade de massas.</p>
@@ -575,7 +575,7 @@ const POSTS = [
     title:    "Albert Einstein: obras centrais e a revolução da física moderna",
     excerpt:  "Einstein mudou a compreensão do tempo, do espaço, da luz e da gravidade, abrindo uma nova visão científica e filosófica do universo.",
     date:     "01 de Junho de 2026",
-    thumb:    "assets/laplace.jpeg",
+    thumb:    "assets/article_cards/einstein-revolucao-fisica-moderna.jpg",
     featured: false,
     content: `
 <p>Albert Einstein foi responsável por uma das maiores revoluções intelectuais da história humana. Sua ciência mudou a relação humana com o universo, com a tecnologia, com a energia e com os limites éticos do conhecimento.</p>
@@ -636,7 +636,7 @@ const POSTS = [
     title:    "O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica",
     excerpt:  "A aprovação da PEC do fim da escala 6x1 recoloca uma pergunta antiga no centro da vida brasileira: o trabalho existe para sustentar a vida ou a vida existe para sustentar o trabalho?",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/post2.png",
+    thumb:    "assets/article_cards/escala-6x1-trabalho-tempo-vida.png",
     featured: false,
     content: `
 <p>Em 27 de maio de 2026, a Câmara dos Deputados aprovou em primeiro turno a PEC que propõe o fim da escala 6x1 e a redução gradual da jornada semanal para 40 horas. O texto ainda precisa ser aprovado em segundo turno na Câmara e depois seguir para o Senado, mas o gesto político já abriu uma discussão que ultrapassa a legislação trabalhista: <strong>o que uma sociedade faz com o tempo das pessoas?</strong></p>
@@ -674,7 +674,7 @@ const POSTS = [
     title:    "São Tomás de Aquino: fé, razão e o limite das explicações",
     excerpt:  "\"Para aquele que tem fé, nenhuma explicação é necessária.\" A frase atribuída a São Tomás revela uma tensão decisiva da filosofia medieval: até onde a razão pode conduzir a fé?",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/wPdrfjjEMXEymTcc.jpg",
+    thumb:    "assets/article_cards/sao-tomas-fe-razao-explicacao.png",
     featured: false,
     content: `
 <p>São Tomás de Aquino (1225–1274) é uma das figuras centrais da filosofia medieval. Sua grandeza está em ter recusado duas soluções fáceis: a fé sem razão e a razão sem abertura ao transcendente. Para ele, pensar e crer não eram inimigos. Eram caminhos distintos que podiam se encontrar quando bem compreendidos.</p>
@@ -710,7 +710,7 @@ const POSTS = [
     title:    "Epicuro: quem não se contenta com pouco não se contentará com nada",
     excerpt:  "Epicuro não ensinava luxo nem fuga do mundo. Sua filosofia começa com uma pergunta simples e difícil: quanto realmente basta para viver bem?",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/frase-epicuro.png",
+    thumb:    "assets/article_cards/epicuro-pouco-suficiencia-desejo.png",
     featured: false,
     content: `
 <p>Epicuro (341–270 a.C.) é frequentemente mal compreendido. Seu nome virou sinônimo de busca por prazeres refinados, mas sua filosofia real era quase o oposto disso. Epicuro defendia uma vida simples, sóbria, livre de medos desnecessários e desejos fabricados.</p>
@@ -746,7 +746,7 @@ const POSTS = [
     title:    "Protágoras: o homem é a medida de todas as coisas",
     excerpt:  "\"O homem é a medida de todas as coisas.\" A frase de Protágoras inaugura uma das perguntas mais perigosas da filosofia: existe verdade fora da perspectiva humana?",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/frase-protagoras.png",
+    thumb:    "assets/article_cards/protagoras-medida-todas-coisas.png",
     featured: false,
     content: `
 <p>Protágoras (490–420 a.C.) foi um dos grandes sofistas da Grécia antiga. Sua frase mais famosa — <em>"O homem é a medida de todas as coisas"</em> — atravessou os séculos porque toca uma ferida permanente da filosofia: a relação entre verdade, percepção e poder.</p>
@@ -782,7 +782,7 @@ const POSTS = [
     title:    "Heráclito: por que não entramos duas vezes no mesmo rio",
     excerpt:  "Heráclito viu no fluxo a estrutura mais profunda da realidade. Tudo muda, inclusive aquele que observa a mudança.",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/heraclito.png",
+    thumb:    "assets/article_cards/heraclito-duas-vezes-mesmo-rio.png",
     featured: false,
     content: `
 <p>Heráclito de Éfeso (c. 540–480 a.C.) é o filósofo do devir. Sua imagem mais famosa diz que ninguém entra duas vezes no mesmo rio. A água já mudou. A margem já mudou. E, principalmente, quem entra também já não é o mesmo.</p>
@@ -818,7 +818,7 @@ const POSTS = [
     title:    "E se fôssemos apenas formigas diante do universo?",
     excerpt:  "A imagem de um formigueiro observando café cair do céu é uma metáfora poderosa para a consciência humana diante do cosmos: vemos efeitos imensos, mas quase nunca enxergamos a mão que os produz.",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/wallpaper-filosofico.png",
+    thumb:    "assets/article_cards/formigas-diante-do-universo.png",
     featured: false,
     content: `
 <p>Imagine um formigueiro. De repente, uma xícara de café derrama sobre ele. Para as formigas, aquilo não é café. É catástrofe cósmica. Um líquido escuro atravessa túneis, destrói caminhos, muda o ambiente inteiro. Elas observam o efeito, mas não compreendem a escala da causa.</p>
@@ -854,7 +854,7 @@ const POSTS = [
     title:    "Quando a arte parou de entender o ser humano e começou a tentar controlá-lo",
     excerpt:  "A arte pode revelar a condição humana, mas também pode ser transformada em instrumento de controle. A pergunta estética se torna política quando imagens passam a fabricar desejos.",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/bernini-proserpina.jpeg",
+    thumb:    "assets/article_cards/arte-controle-humano.jpeg",
     featured: false,
     content: `
 <p>A arte nasceu, em grande parte, como tentativa de compreender o ser humano. Pinturas, mitos, esculturas, tragédias e músicas davam forma ao medo, ao desejo, à morte, ao amor, à culpa e ao sagrado. A arte tornava visível aquilo que a vida comum muitas vezes não conseguia dizer.</p>
@@ -890,7 +890,7 @@ const POSTS = [
     title:    "Laplace e o Sonho da Razão Absoluta",
     excerpt:  "Laplace imaginou uma inteligência capaz de calcular o futuro inteiro a partir das leis da natureza. Esse sonho racional moldou a modernidade — e suas rachaduras definem o mundo em que vivemos.",
     date:     "21 de Maio de 2026",
-    thumb:    "assets/laplace.jpeg",
+    thumb:    "assets/article_cards/laplace-sonho-razao-absoluta.jpeg",
     featured: false,
     content: `
 <p>Poucos pensadores simbolizam tão profundamente o espírito racional da modernidade quanto Pierre-Simon Laplace. Matemático, físico e astrônomo francês, Laplace não foi apenas um cientista brilhante: ele representou uma visão de mundo. Em sua obra, o universo deixa de ser um espaço governado pelo mistério para tornar-se uma estrutura lógica, matemática e previsível.</p>
@@ -957,7 +957,7 @@ const POSTS = [
     title:    "Honoré de Balzac: o escritor que enxergou a alma do capitalismo",
     excerpt:  "Muito antes de Marx, Balzac já descrevia com precisão quase brutal os efeitos psicológicos e sociais da modernidade. Sua obra revela como o capitalismo não altera apenas a economia — ele transforma a alma humana.",
     date:     "20 de Maio de 2026",
-    thumb:    "assets/balzac.jpeg",
+    thumb:    "assets/article_cards/balzac-escritor-alma-capitalismo.jpeg",
     featured: false,
     content: `
 <p>Quando pensamos em críticas ao capitalismo, normalmente lembramos de economistas, sociólogos ou filósofos políticos. No entanto, muito antes de Karl Marx estruturar teorias sobre capital, exploração e alienação, um escritor francês já descrevia com precisão quase brutal os efeitos psicológicos e sociais da modernidade: Honoré de Balzac.</p>
@@ -1011,7 +1011,7 @@ const POSTS = [
     title:    "As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental",
     excerpt:  "Escrito entre 397 e 400 d.C., As Confissões não é uma autobiografia. É um longo diálogo com Deus — seis momentos que atravessam séculos e ainda falam ao coração de quem os lê.",
     date:     "09 de Maio de 2026",
-    thumb:    "assets/post_cards/sto-agostinho.jpeg",
+    thumb:    "assets/article_cards/confissoes-santo-agostinho.jpg",
     featured: true,
     content: `
 <p>Escrito entre 397 e 400 d.C., <em>As Confissões</em> de Santo Agostinho não é uma autobiografia no sentido moderno. É um longo diálogo com Deus — feito em voz alta, diante de quem quer que leia. Agostinho confessa seus pecados, suas buscas, seus equívocos filosóficos e sua conversão não para se justificar, mas para mostrar como uma alma pode estar completamente perdida e ainda assim ser encontrada.</p>
@@ -1088,7 +1088,7 @@ const POSTS = [
     title:    "Sócrates: A Arte de Queixar-se de Si Mesmo",
     excerpt:  "\"É costume de um tolo quando erra queixar-se do outro; é costume do sábio queixar-se de si mesmo.\" Uma frase que resume todo o método socrático: a responsabilidade filosófica começa pelo autoexame.",
     date:     "08 de Maio de 2026",
-    thumb:    "assets/frase-socrates-post.png",
+    thumb:    "assets/article_cards/socrates-metodo-maieutico.png",
     featured: false,
     content: `
 <p>Sócrates (470–399 a.C.) nunca escreveu uma única linha. Não fundou uma escola no sentido físico do termo. Não deixou tratados nem sistemas. E, ainda assim, é considerado o pilar sobre o qual toda a filosofia ocidental foi construída. Por quê?</p>
@@ -1132,7 +1132,7 @@ const POSTS = [
     title:    "Platão: Tudo Quanto Vive Provém do Que Morreu",
     excerpt:  "\"Tudo quanto vive provém daquilo que morreu.\" Em poucas palavras, Platão sintetiza o ciclo que estrutura tanto sua teoria da imortalidade quanto a distinção fundamental entre aparência e realidade.",
     date:     "07 de Maio de 2026",
-    thumb:    "assets/frase-platao.png",
+    thumb:    "assets/article_cards/platao-mundo-das-ideias.png",
     featured: false,
     content: `
 <p>Platão (428–348 a.C.) nasceu em Atenas numa família aristocrática, foi discípulo de Sócrates e fundou a Academia — a primeira instituição de ensino superior do Ocidente. Mas sua contribuição maior não foi institucional: foi uma visão do mundo que separa de forma radical o que parece ser real do que é verdadeiramente real.</p>
@@ -1176,7 +1176,7 @@ const POSTS = [
     title:    "Tales de Mileto: A Pergunta que Inaugurou a Filosofia",
     excerpt:  "Por volta de 624 a.C., um grego de Mileto fez a pergunta mais simples e mais profunda da história do pensamento: do que é feito tudo o que existe? Essa foi a pergunta que inaugurou a filosofia.",
     date:     "06 de Maio de 2026",
-    thumb:    "assets/frase-tales.png",
+    thumb:    "assets/article_cards/tales-mileto-arche.png",
     featured: false,
     content: `
 <p>Tales de Mileto (624–546 a.C.) é chamado de o primeiro filósofo ocidental — e, possivelmente, o primeiro cientista. Não porque suas respostas fossem corretas, mas porque o tipo de pergunta que ele fez era inteiramente novo.</p>
@@ -1218,7 +1218,7 @@ const POSTS = [
     title:    "Demócrito: Por Que a Alma Vale Mais que o Corpo",
     excerpt:  "\"Convém ao homem dar maior atenção à Alma do que ao corpo; pois a excelência da Alma corrige a fraqueza do corpo, mas a força do corpo sem a razão não aperfeiçoa em nada a Alma.\"",
     date:     "05 de Maio de 2026",
-    thumb:    "assets/frase-democrito-post.png",
+    thumb:    "assets/article_cards/democrito-alma-corpo.png",
     featured: false,
     content: `
 <p>Demócrito de Abdera (460–370 a.C.) era chamado pelos antigos de "o filósofo que ri". Não de ironia ou desprezo, mas de uma espécie de serenidade lúcida diante da condição humana. Alguém que havia chegado a uma visão tão clara da realidade que as tragicomédias do dia a dia pareciam, mais do que dolorosas, simplesmente curiosas.</p>
@@ -1261,7 +1261,7 @@ const POSTS = [
     title:    "Leucipo: O Pai do Atomismo que a História Quase Esqueceu",
     excerpt:  "Antes de Demócrito, antes de Einstein, antes de toda a física moderna — houve Leucipo. Por volta de 440 a.C., ele propôs que a realidade é composta de partículas indivisíveis movendo-se no vazio. E quase ninguém sabe seu nome.",
     date:     "04 de Maio de 2026",
-    thumb:    "assets/frase-leucipo-post.png",
+    thumb:    "assets/article_cards/leucipo-atomismo.png",
     featured: false,
     content: `
 <p>Se você já ouviu falar de átomos, já ouviu falar — indiretamente — de Leucipo. Mas enquanto Demócrito ficou para a história como "o filósofo atômico", o nome de seu mestre e co-fundador do atomismo quase desapareceu completamente.</p>
@@ -1304,7 +1304,7 @@ const POSTS = [
     title:    "Empédocles: Amor e Ódio como Forças que Governam o Universo",
     excerpt:  "Empédocles propôs que tudo o que existe é feito de quatro raízes — fogo, ar, água e terra — combinadas e separadas por duas forças cósmicas: o Amor e a Discórdia. Uma visão que antecipa a física das forças fundamentais de forma surpreendente.",
     date:     "03 de Maio de 2026",
-    thumb:    "assets/frase-empedocles-post.png",
+    thumb:    "assets/article_cards/empedocles-amor-discordia.png",
     featured: false,
     content: `
 <p>Empédocles de Agrigento (490–430 a.C.) foi talvez o filósofo pré-socrático mais extravagante. Médico reconhecido, orador poderoso, político influente e — segundo ele mesmo — algo próximo de um deus. Caminhou por cidades usando sandálias douradas e uma coroa de louros, cercado por seguidores que esperavam dele curas milagrosas e profecias.</p>
@@ -1347,7 +1347,7 @@ const POSTS = [
     title:    "René Descartes: Penso, Logo Existo — e o que isso realmente significa",
     excerpt:  "\"Penso, logo existo.\" É a frase mais famosa da filosofia moderna. Mas o que Descartes estava fazendo com ela? Uma demolição sistemática de tudo o que parecia certo, para encontrar uma fundação que nenhuma dúvida pudesse abalar.",
     date:     "02 de Maio de 2026",
-    thumb:    "assets/descartes-post.png",
+    thumb:    "assets/article_cards/descartes-cogito-ergo-sum.png",
     featured: false,
     content: `
 <p>René Descartes (1596–1650) decidiu fazer algo que parecia filosófico e acabou sendo revolucionário: destruir tudo. Não por niilismo, mas por precisão cirúrgica. Ele queria encontrar uma fundação para o conhecimento que fosse absolutamente inabalável — um ponto de Arquimedes a partir do qual reconstruir todo o edifício da ciência.</p>
@@ -1391,7 +1391,7 @@ const POSTS = [
     title:    "John Locke e a Tábula Rasa: Ninguém Nasce com a Verdade",
     excerpt:  "John Locke desafiou séculos de tradição ao afirmar que a mente humana ao nascer é uma folha em branco. Todo conhecimento vem da experiência. Simples de enunciar — radical nas consequências políticas, pedagógicas e filosóficas.",
     date:     "01 de Maio de 2026",
-    thumb:    "assets/frase-locke.png",
+    thumb:    "assets/article_cards/locke-tabula-rasa.jpg",
     featured: false,
     content: `
 <p>John Locke (1632–1704) é o filósofo que está na base de duas das maiores revoluções da modernidade: a Gloriosa Revolução inglesa de 1688 e, um século depois, a Revolução Americana. Sua filosofia política e sua epistemologia estão entrelaçadas de uma forma que não é acidental.</p>
@@ -1429,7 +1429,7 @@ const POSTS = [
     title:    "O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas",
     excerpt:  "Metafísica não é misticismo. É o ramo da filosofia que pergunta o que existe, o que é real, e quais as propriedades mais fundamentais do ser. É a pergunta que nenhuma ciência pode responder — porque é anterior a todas elas.",
     date:     "30 de Abril de 2026",
-    thumb:    "assets/metafisica-post.png",
+    thumb:    "assets/article_cards/o-que-e-a-metafisica.png",
     featured: false,
     content: `
 <p>A palavra "metafísica" surgiu por acidente. Andrônico de Rodes, organizando os textos de Aristóteles no século I a.C., colocou os tratados sobre os primeiros princípios da realidade depois dos tratados sobre física — e os chamou de <em>ta meta ta physika</em>: "o que vem depois da física". O nome ficou.</p>
@@ -1475,7 +1475,7 @@ const POSTS = [
     title:    "Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant",
     excerpt:  "Kant não disse que Deus não existe. Disse algo mais radical: que provar Deus é filosoficamente impossível — não por falta de evidência, mas porque a razão humana não pode ultrapassar os limites da experiência possível.",
     date:     "29 de Abril de 2026",
-    thumb:    "assets/post_cards/kant.jpeg",
+    thumb:    "assets/article_cards/provar-deus-kant.jpeg",
     featured: false,
     content: `
 <p>Immanuel Kant (1724–1804) levou décadas para publicar sua obra mais importante. A <em>Crítica da Razão Pura</em> (1781) chegou após anos de silêncio filosófico — um silêncio que Kant atribuiu ao "sono dogmático" do qual Hume o havia despertado.</p>
@@ -1517,7 +1517,7 @@ const POSTS = [
     title:    "Sartre: Você Está Condenado a Ser Livre",
     excerpt:  "\"Eu sempre posso escolher, mas devo saber que, se não escolher, ainda estou escolhendo.\" Para Sartre, a liberdade não é um presente — é um peso que não podemos depositar em lugar nenhum.",
     date:     "28 de Abril de 2026",
-    thumb:    "assets/frase-jean-paul-sartrepost.png",
+    thumb:    "assets/article_cards/sartre-liberdade-condenacao.jpg",
     featured: false,
     content: `
 <p>Jean-Paul Sartre (1905–1980) escreveu uma das frases mais desconfortáveis da filosofia: <em>"O homem está condenado a ser livre."</em> Condenado — não abençoado, não privilegiado, não destinado. Condenado.</p>
@@ -1560,7 +1560,7 @@ const POSTS = [
     title:    "Kierkegaard: Conheça-te a Ti Mesmo Antes de Conhecer Qualquer Outra Coisa",
     excerpt:  "\"É preciso aprender a se conhecer antes de conhecer qualquer outra coisa.\" Para Kierkegaard, este autoconhecimento não é teórico — é a mais urgente e mais esquecida tarefa da existência humana.",
     date:     "27 de Abril de 2026",
-    thumb:    "assets/soren-kierkegaard.jpeg",
+    thumb:    "assets/article_cards/kierkegaard-conhecer-se.jpeg",
     featured: false,
     content: `
 <p>Søren Kierkegaard (1813–1855) foi o primeiro filósofo a colocar a existência individual no centro da filosofia — antes que a palavra "existencialismo" existisse, antes de Sartre, antes de Heidegger. E o fez com uma radicalidade que o isolou em vida e o projetou para a eternidade depois da morte.</p>
@@ -1604,7 +1604,7 @@ const POSTS = [
     title:    "Confúcio: A Virtude não é um Estado — é uma Prática Diária",
     excerpt:  "Confúcio não criou uma religião nem um sistema metafísico. Criou um caminho de vida baseado em relações, virtude e cultivo contínuo do caráter. Um dos pensamentos mais práticos e duradouros da história humana.",
     date:     "26 de Abril de 2026",
-    thumb:    "assets/frase-confucio.png",
+    thumb:    "assets/article_cards/confucio-virtude-pratica.jpeg",
     featured: false,
     content: `
 <p>Confúcio (551–479 a.C.) foi contemporâneo de Sócrates, de Gautama Buda e de Lao-Tsé — um daqueles momentos extraordinários em que diferentes partes do mundo parecem despertar para a questão ética simultaneamente. Karl Jaspers chamou esse período de "Era Axial": o tempo em que a humanidade passou a refletir criticamente sobre si mesma.</p>
@@ -1648,7 +1648,7 @@ const POSTS = [
     title:    "Adorno: A Cultura que Nos Impede de Pensar",
     excerpt:  "Para Theodor Adorno, a indústria cultural não é apenas entretenimento. É um mecanismo que padroniza o pensamento, elimina a diferença e produz uma sociedade incapaz de refletir criticamente sobre si mesma.",
     date:     "25 de Abril de 2026",
-    thumb:    "assets/frase-adorno.png",
+    thumb:    "assets/article_cards/adorno-cultura-pensamento.png",
     featured: false,
     content: `
 <p>Theodor Adorno (1903–1969) é um dos filósofos mais difíceis, mais exigentes e mais incômodos do século XX. Não porque seus textos sejam deliberadamente obscuros — embora o sejam — mas porque o que ele diz é difícil de ouvir para quem vive confortavelmente na cultura contemporânea.</p>
@@ -1692,7 +1692,7 @@ const POSTS = [
     title:    "Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática por 2.000 Anos",
     excerpt:  "\"Quem é um amigo? Um outro eu.\" Mas Zenão de Eleia ficou famoso por algo ainda mais perturbador: paradoxos que pareciam provar que o movimento é impossível — e que a matemática levou 2.000 anos para resolver.",
     date:     "24 de Abril de 2026",
-    thumb:    "assets/frase-zenao-eleiapost.png",
+    thumb:    "assets/article_cards/zenao-paradoxos-realidade.png",
     featured: false,
     content: `
 <p>Zenão de Eleia (490–430 a.C.) foi discípulo de Parmênides e herdeiro do problema mais perturbador da filosofia antiga: a relação entre o pensamento e o movimento, entre a lógica e a experiência dos sentidos.</p>
