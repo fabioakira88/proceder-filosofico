@@ -2,7 +2,12 @@
 
 Belzebu e um orquestrador editorial externo para operar a producao de conteudo do Japao Relativo e do Proceder Filosofico.
 
-Este MVP 0.2 roda apenas em modo `dry-run`. Ele pode ler pautas reais do Notion, mas nao chama APIs de IA, nao altera os sites, nao cria commits automaticamente e nao executa deploy.
+Este MVP 0.3 roda em dois modos seguros:
+
+- `dry-run`: simula a esteira e gera Markdown local.
+- `generate-only`: usa um provider de IA para gerar JSON editorial estruturado.
+
+Ele pode ler pautas reais do Notion, mas nao altera os sites, nao cria commits automaticamente e nao executa deploy.
 
 ## Objetivo do MVP 0.1
 
@@ -91,10 +96,103 @@ Status: Backlog, Em Produção, Publicado, Erro
 Site: Japão Relativo, Proceder Filosófico
 ```
 
+## AI Provider
+
+O modo `generate-only` suporta:
+
+- Anthropic Claude
+- OpenAI
+
+Configure em `.env`:
+
+```text
+AI_PROVIDER=anthropic
+ANTHROPIC_API_KEY=
+OPENAI_API_KEY=
+ANTHROPIC_MODEL=claude-3-5-sonnet-20241022
+OPENAI_MODEL=gpt-4.1
+```
+
+Exemplo com sample local:
+
+```bash
+python3 src/main.py --source sample --sample data/sample_pauta.json --generate-only
+```
+
+Exemplo com Notion:
+
+```bash
+python3 src/main.py --source notion --site japao-relativo --limit 1 --generate-only
+```
+
+Saidas do `generate-only`:
+
+```text
+output/generated/[slug]/article.json
+output/generated/[slug]/seo.json
+output/generated/[slug]/faq.json
+output/generated/[slug]/image-prompt.json
+output/generated/[slug]/report.json
+```
+
+## Estrutura dos JSONs
+
+`article.json`:
+
+```json
+{
+  "title": "...",
+  "slug": "...",
+  "summary": "...",
+  "body_markdown": "...",
+  "reading_time": 8,
+  "h2_structure": ["..."]
+}
+```
+
+`seo.json`:
+
+```json
+{
+  "meta_title": "...",
+  "meta_description": "...",
+  "focus_keyword": "...",
+  "og_title": "...",
+  "og_description": "...",
+  "schema_article": {}
+}
+```
+
+`faq.json`:
+
+```json
+{
+  "questions": [
+    {
+      "question": "...",
+      "answer": "..."
+    }
+  ],
+  "schema_faq": {}
+}
+```
+
+`image-prompt.json`:
+
+```json
+{
+  "og_prompt": "...",
+  "instagram_prompt": "...",
+  "visual_direction": "...",
+  "palette": "...",
+  "style": "..."
+}
+```
+
 ## Limites atuais
 
 - Notion esta conectado apenas para leitura e atualizacao opcional de status.
-- Geracao por API ainda nao conectada.
+- Geracao por API esta conectada apenas ao modo `generate-only`.
 - Publicacao nos sites ainda nao implementada.
 - Commit, push e deploy automaticos ainda nao implementados.
 
