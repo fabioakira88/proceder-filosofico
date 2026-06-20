@@ -1,8 +1,29 @@
 {
   "notionTokenEnv": "NOTION_TOKEN",
-  "databaseId": "COLE_AQUI_O_DATABASE_ID",
-  "statusField": "Status",
-  "readyStatus": "Aprovada",
-  "publishedStatus": "Publicada",
-  "errorStatus": "Erro"
+  "databaseIdEnv": "NOTION_DATABASE_ID",
+  "notionVersion": "2022-06-28",
+  "properties": {
+    "titulo": "Título",
+    "site": "Site",
+    "status": "Status",
+    "categoria": "Categoria",
+    "cluster": "Cluster/Hub",
+    "slug": "Slug",
+    "prioridade": "Prioridade",
+    "palavras_chave": "Palavras-chave",
+    "notas_editoriais": "Notas editoriais",
+    "data_publicacao": "Data publicação",
+    "log_erro": "Log de erro",
+    "run_id": "Run ID"
+  },
+  "statuses": {
+    "backlog": "Backlog",
+    "inProduction": "Em Produção",
+    "published": "Publicado",
+    "error": "Erro"
+  },
+  "sites": {
+    "japao-relativo": "Japão Relativo",
+    "proceder-filosofico": "Proceder Filosófico"
+  }
 }

@@ -115,12 +115,21 @@ Sucesso.
 - Draft: {draft_path}
 - Prompt de imagem: {image_prompt_path}
 
+## Origem
+
+- Notion page ID: {pauta.get('notion_page_id', 'n/a')}
+- Prioridade: {pauta.get('prioridade', 'n/a')}
+- Data publicacao: {pauta.get('data_publicacao', 'n/a')}
+
 ## Acoes nao executadas
 
-- Nenhuma chamada ao Notion real.
 - Nenhuma chamada a API de geracao.
 - Nenhuma alteracao em Japao Relativo.
 - Nenhuma alteracao em Proceder Filosofico.
 - Nenhum commit automatico.
 - Nenhum deploy.
+
+## Notion
+
+Se a pauta veio do Notion, qualquer atualizacao de status foi simulada, exceto quando o comando usou `--write-notion`.
 """
