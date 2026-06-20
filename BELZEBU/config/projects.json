@@ -1,0 +1,26 @@
+{
+  "projects": {
+    "japao-relativo": {
+      "name": "Japao Relativo",
+      "root": "/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/JAPAO_RELATIVO:",
+      "siteDir": "SITE",
+      "contentMode": "static-html",
+      "sitemap": "SITE/sitemap.xml",
+      "deploy": {
+        "type": "github-pages",
+        "enabled": false
+      }
+    },
+    "proceder-filosofico": {
+      "name": "Proceder Filosofico",
+      "root": "/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:",
+      "siteDir": "SITE",
+      "contentMode": "posts-js",
+      "sitemap": "SITE/sitemap.xml",
+      "deploy": {
+        "type": "manual",
+        "enabled": false
+      }
+    }
+  }
+}

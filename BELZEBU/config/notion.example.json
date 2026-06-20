@@ -1,0 +1,8 @@
+{
+  "notionTokenEnv": "NOTION_TOKEN",
+  "databaseId": "COLE_AQUI_O_DATABASE_ID",
+  "statusField": "Status",
+  "readyStatus": "Aprovada",
+  "publishedStatus": "Publicada",
+  "errorStatus": "Erro"
+}
