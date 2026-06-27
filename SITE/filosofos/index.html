@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filósofos | Proceder Filosófico</title>
   <meta name="description" content="Explore filósofos e sofistas por período histórico na biblioteca do Proceder Filosófico.">
+  <meta property="og:title" content="Filósofos | Proceder Filosófico">
+  <meta property="og:description" content="Explore filósofos e sofistas por período histórico na biblioteca do Proceder Filosófico.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procederfilosofico.com.br/filosofos/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Filósofos | Proceder Filosófico">
+  <meta name="twitter:description" content="Explore filósofos e sofistas por período histórico na biblioteca do Proceder Filosófico.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://procederfilosofico.com.br/filosofos/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
+  <script src="/assets/js/navigation.js" defer></script>
   <style>
     :root{--azul:#060D1E;--azul2:#061E47;--dourado:#C9A84C;--dourado2:#E6D28A;--branco:#F7F3EA;--cinza:#B8B3A8}
     *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}a{color:inherit;text-decoration:none}
@@ -20,6 +34,7 @@
     footer{text-align:center;padding:30px 24px;border-top:1px solid rgba(201,168,76,.12);color:rgba(255,255,255,.35);font-size:12px}
     @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.navbar-inner{padding:13px 16px;position:relative}.logo span{display:none}.menu-toggle{display:block}.nav{display:none;position:absolute;top:100%;left:0;right:0;background:#061E47;border-bottom:1px solid rgba(201,168,76,.2);padding:16px;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:11px 8px;border-bottom:1px solid rgba(255,255,255,.06)}main{padding:50px 16px 70px}.grid{grid-template-columns:1fr}}
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Filósofos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/filosofos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
 </head>
 <body>
   <nav class="navbar">
@@ -78,7 +93,6 @@
       if(!root.children.length)root.innerHTML='<p class="empty">Nenhum filósofo encontrado.</p>';
     }
     document.getElementById('philosopherSearch').addEventListener('input',function(){render(this.value)});
-    document.getElementById('menuToggle').addEventListener('click',function(){var nav=document.getElementById('libraryNav'),open=nav.classList.toggle('open');this.setAttribute('aria-expanded',String(open))});
     render('');
   </script>
 </body>

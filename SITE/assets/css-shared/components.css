@@ -1,0 +1,54 @@
+/* Shared component primitives extracted from repeated page patterns. */
+.pf-label,
+.label,
+.section-label,
+.hero-label {
+  font-family: var(--pf-font-label);
+  color: var(--pf-dourado);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.pf-button,
+.button,
+.cta {
+  border-color: var(--pf-dourado);
+  color: var(--pf-dourado);
+  font-family: var(--pf-font-label);
+  text-transform: uppercase;
+}
+
+.pf-card {
+  border: 1px solid var(--pf-borda-dourada);
+  border-radius: 8px;
+}
+
+.pf-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.pf-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  border-color: var(--pf-dourado);
+}
+
+@media (max-width: 900px) {
+  .pf-grid-3,
+  .pf-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .pf-grid-3,
+  .pf-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,11 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PROCEDER:SEO_START -->
   <title>Artigos | Proceder Filosófico</title>
   <meta name="description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://procederfilosofico.com.br/artigos/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Proceder Filosófico">
+  <meta property="og:title" content="Artigos | Proceder Filosófico">
+  <meta property="og:description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta property="og:url" content="https://procederfilosofico.com.br/artigos/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/default-article.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Artigos | Proceder Filosófico">
+  <meta name="twitter:description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/default-article.jpg">
+  <!-- PROCEDER:SEO_END -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
   <style>
     :root {
       --azul-profundo: #060D1E;
@@ -317,11 +335,13 @@
       .article-meta { align-items: flex-start; flex-direction: column; gap: 8px; }
     }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Artigos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/artigos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
 </head>
 <body>
-  <a class="home-link" href="../">Home</a>
+  <a class="home-link" href="/">Home</a>
   <main>
     <section class="articles-grid" id="articlesGrid"></section>
+    <!-- PROCEDER:ARTICLE_START -->
     <article class="reader" id="reader">
       <button class="back" id="backButton">Voltar aos artigos</button>
       <div class="reader-tag" id="readerTag"></div>
@@ -329,12 +349,15 @@
       <div class="reader-date" id="readerDate"></div>
       <div class="reader-content" id="readerContent"></div>
     </article>
+    <!-- PROCEDER:ARTICLE_END -->
   </main>
 
-  <script src="../posts.js?v=20260604-article-cards-v2"></script>
+  <script src="/posts.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/site-seo.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/js/reader.js"></script>
   <script>
-    var ASSET_VERSION = '20260604-article-cards-v2';
-    var DEFAULT_THUMB = '../assets/default-article.jpg';
+    var ASSET_VERSION = '20260610-single-source';
+    var DEFAULT_THUMB = '/assets/default-article.jpg';
     var MONTHS_PT = {
       janeiro: 0, fevereiro: 1, marco: 2, 'março': 2, abril: 3,
       maio: 4, junho: 5, julho: 6, agosto: 7, setembro: 8,
@@ -349,8 +372,8 @@
 
     function assetUrl(value, index) {
       var raw = value || DEFAULT_THUMB;
-      if (/^https?:\/\//.test(raw) || raw.indexOf('../') === 0) return raw;
-      return '../' + raw.replace(/^\/+/, '');
+      if (/^https?:\/\//.test(raw)) return raw;
+      return '/' + raw.replace(/^\/+/, '').replace(/^(\.\.\/)+/, '');
     }
 
     function versionedAsset(value) {
@@ -378,7 +401,7 @@
     }
 
     function rewriteContent(content) {
-      return String(content || '').replace(/(src|href)="assets\//g, '$1="../assets/');
+      return window.ProcederReader.rewriteArticleContent(content);
     }
 
     function renderGrid() {
@@ -422,6 +445,7 @@
     function openPost(slug, updateUrl) {
       var post = findPost(slug);
       if (!post) return;
+      if (window.ProcederSEO) window.ProcederSEO.update(slug);
       document.body.classList.add('reading');
       document.getElementById('reader').classList.add('open');
       document.getElementById('readerTag').textContent = post.tag;
@@ -429,7 +453,7 @@
       document.getElementById('readerDate').textContent = post.date;
       document.getElementById('readerContent').innerHTML = rewriteContent(post.content);
       if (updateUrl !== false) {
-        history.pushState({ post: slug }, post.title, '?post=' + encodeURIComponent(slug));
+        history.pushState({ post: slug }, post.title, '/artigos/' + encodeURIComponent(slug) + '/');
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -437,22 +461,31 @@
     function closePost() {
       document.body.classList.remove('reading');
       document.getElementById('reader').classList.remove('open');
-      history.pushState({}, 'Artigos | Proceder Filosófico', './');
+      history.pushState({}, 'Artigos | Proceder Filosófico', '/artigos/');
+      if (window.ProcederSEO) window.ProcederSEO.reset();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     document.getElementById('backButton').addEventListener('click', closePost);
+    function routeSlug() {
+      var querySlug = new URLSearchParams(location.search).get('post');
+      if (querySlug) return querySlug;
+      var match = location.pathname.match(/^\/artigos\/([^/]+)\/?$/);
+      return match ? decodeURIComponent(match[1]) : null;
+    }
+
     window.addEventListener('popstate', function(){
-      var slug = new URLSearchParams(location.search).get('post');
+      var slug = routeSlug();
       if (slug) openPost(slug, false);
       else {
         document.body.classList.remove('reading');
         document.getElementById('reader').classList.remove('open');
+        if (window.ProcederSEO) window.ProcederSEO.reset();
       }
     });
 
     renderGrid();
-    var initialSlug = new URLSearchParams(location.search).get('post');
+    var initialSlug = routeSlug();
     if (initialSlug) openPost(initialSlug, false);
   </script>
 </body>
