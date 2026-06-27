@@ -1,0 +1,88 @@
+{
+  "$schema": "./editorial-taxonomy.schema.json",
+  "schemaVersion": 1,
+  "categories": [
+    {
+      "id": "filosofia",
+      "slug": "filosofia",
+      "title": "Filosofia",
+      "description": "Eixo dedicado aos conceitos, problemas, autores e escolas da tradicao filosofica.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "historia-da-civilizacao",
+      "slug": "historia-da-civilizacao",
+      "title": "História da Civilização",
+      "description": "Eixo para a evolucao das instituicoes, ideias, periodos historicos e formas civilizacionais.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "antropologia",
+      "slug": "antropologia",
+      "title": "Antropologia",
+      "description": "Eixo para cultura, rito, linguagem, parentesco, simbolos e formas de vida.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "sociologia",
+      "slug": "sociologia",
+      "title": "Sociologia",
+      "description": "Eixo para estruturas sociais, instituicoes, classe, modernidade e vida coletiva.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "literatura",
+      "slug": "literatura",
+      "title": "Literatura",
+      "description": "Eixo para obras, autores, linguagem literaria e formas narrativas da experiencia humana.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "arte",
+      "slug": "arte",
+      "title": "Arte",
+      "description": "Eixo para imagem, forma, musica, arquitetura, estetica e expressao sensivel.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "religiao",
+      "slug": "religiao",
+      "title": "Religião",
+      "description": "Eixo para tradicoes religiosas, sagrado, transcendencia, teologia e pratica espiritual.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "ciencia",
+      "slug": "ciencia",
+      "title": "Ciência",
+      "description": "Eixo para descobertas, metodos, cosmologias cientificas e seus impactos culturais.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "politica",
+      "slug": "politica",
+      "title": "Política",
+      "description": "Eixo para poder, Estado, soberania, ideologias, liberdade e conflito publico.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    },
+    {
+      "id": "atualidade-filosofica",
+      "slug": "atualidade-filosofica",
+      "title": "Atualidade Filosófica",
+      "description": "Eixo para diagnosticos do presente, tecnologia, cultura digital e dilemas contemporaneos.",
+      "supports": { "articles": true, "essays": true, "dossiers": true, "bibliography": true, "relatedAuthors": true }
+    }
+  ],
+  "relationshipFields": [
+    "category",
+    "subcategory",
+    "dossier",
+    "philosophers",
+    "books",
+    "themes",
+    "civilizations",
+    "historicalPeriods",
+    "relatedArticles",
+    "editorialPriority"
+  ]
+}

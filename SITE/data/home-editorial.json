@@ -1,0 +1,35 @@
+{
+  "$schema": "./home-editorial.schema.json",
+  "schemaVersion": 1,
+  "rails": [
+    {
+      "id": "destaques",
+      "title": "Destaques",
+      "source": "manual",
+      "enabled": true,
+      "items": [
+        "sociedade-moderna-destruiu-silencio",
+        "poetas-dramaturgos-educacao-grecia-antiga",
+        "tecnologia-mais-rapida-que-sabedoria"
+      ]
+    },
+    {
+      "id": "categorias",
+      "title": "Categorias",
+      "source": "category",
+      "enabled": true,
+      "items": [
+        "filosofia",
+        "historia-da-civilizacao",
+        "literatura",
+        "ciencia",
+        "religiao",
+        "atualidade-filosofica"
+      ]
+    },
+    { "id": "filosofos", "title": "Filósofos", "source": "manual", "enabled": true, "items": ["Sócrates", "Platão", "Friedrich Nietzsche"] },
+    { "id": "dossies", "title": "Dossiês", "source": "dossier", "enabled": true, "items": ["a-questao-da-beleza"] },
+    { "id": "biblioteca", "title": "Biblioteca", "source": "library", "enabled": true, "items": ["a-republica", "meditacoes", "assim-falou-zaratustra"] },
+    { "id": "newsletter", "title": "Newsletter", "source": "manual", "enabled": true, "items": [] }
+  ]
+}

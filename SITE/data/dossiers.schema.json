@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://procederfilosofico.com.br/schemas/dossiers.schema.json",
+  "title": "Proceder Filosofico Dossiers",
+  "type": "object",
+  "required": ["schemaVersion", "dossiers"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "dossiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "subtitle",
+          "category",
+          "status",
+          "isCanonicalModel",
+          "editorialIntroduction",
+          "intellectualObjective",
+          "mainArticle",
+          "relatedArticles",
+          "recommendedArticles",
+          "relatedBooks",
+          "relatedPhilosophers",
+          "relatedAuthors",
+          "relatedArtworks",
+          "historicalPeriods",
+          "civilizations",
+          "timeline",
+          "bibliography",
+          "futureReadings",
+          "continueStudying"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "category": { "type": ["string", "null"] },
+          "status": { "enum": ["planned", "active", "archived"] },
+          "isCanonicalModel": { "type": "boolean" },
+          "editorialIntroduction": { "type": "string" },
+          "intellectualObjective": { "type": "string" },
+          "mainArticle": { "type": ["string", "null"] },
+          "relatedArticles": { "type": "array", "items": { "type": "string" } },
+          "recommendedArticles": { "type": "array", "items": { "type": "string" } },
+          "relatedBooks": { "type": "array", "items": { "type": "string" } },
+          "relatedPhilosophers": { "type": "array", "items": { "type": "string" } },
+          "relatedAuthors": { "type": "array", "items": { "type": "string" } },
+          "relatedArtworks": { "type": "array", "items": { "type": "string" } },
+          "historicalPeriods": { "type": "array", "items": { "type": "string" } },
+          "civilizations": { "type": "array", "items": { "type": "string" } },
+          "timeline": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "date", "description"],
+              "properties": {
+                "label": { "type": "string" },
+                "date": { "type": ["string", "null"] },
+                "description": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "bibliography": { "type": "array", "items": { "type": "string" } },
+          "futureReadings": { "type": "array", "items": { "type": "string" } },
+          "continueStudying": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

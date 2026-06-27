@@ -14,9 +14,14 @@ URL: `procederfilosofico.com.br`
 | `SITE/assets/site-seo.js` | SEO dinâmico dos artigos: title, description, canonical, Open Graph, Twitter Card e JSON-LD. |
 | `SITE/assets/css-shared/` | Camada compartilhada temporária de tokens, base, componentes e helpers de páginas. |
 | `SITE/assets/js/` | Utilitários compartilhados de navegação, filtros, lista de artigos e leitura. |
+| `SITE/data/editorial-taxonomy.json` | Taxonomia editorial oficial da revista cultural digital. |
+| `SITE/data/dossiers.json` | Registro estrutural de dossiês editoriais; nasce vazio até curadoria aprovada. |
+| `SITE/data/home-editorial.json` | Base dos trilhos editoriais futuros da Home. |
+| `SITE/categoria/` | Páginas estáticas geradas para a taxonomia oficial. |
+| `SITE/dossies/` | Página base gerada para dossiês editoriais. |
 | `SITE/data/hubs.json` | Registro curatorial dos HUBs, com referências aos slugs oficiais de `SITE/posts.js`. |
 | `AUTOMATION/templates/hub.html` | Template usado para gerar páginas HUB sob `/conteudo/<slug>/`. |
-| `AUTOMATION/generate_seo.mjs` | Gera páginas estáticas por slug, `SITE/sitemap.xml` e `SITE/robots.txt` a partir da fonte editorial única. |
+| `AUTOMATION/generate_seo.mjs` | Gera páginas estáticas de artigos, categorias, HUBs, Home editorial, `SITE/sitemap.xml` e `SITE/robots.txt` a partir da fonte editorial única. |
 | `SITE/biblioteca.html` | Página de biblioteca/livros. |
 | `SITE/assets/` | Assets capturados do site/WordPress e usados pelo snapshot local. |
 | `CONTENT/posts/` | Imagens editoriais usadas nos artigos. |
@@ -82,6 +87,13 @@ pip install -r AUTOMATION/requirements.txt
   period: null,
   civilization: null,
   philosophers: [],
+  dossier: null,
+  books: [],
+  themes: [],
+  civilizations: [],
+  historicalPeriods: [],
+  relatedArticles: [],
+  editorialPriority: "P2",
   format: "artigo",
   featured: false,
   content: `
@@ -105,15 +117,70 @@ node --check SITE/posts.js
 node --check VALIDATION/validate_links.mjs
 node --check VALIDATION/validate_assets.mjs
 node --check VALIDATION/validate_editorial_metadata.mjs
+node --check VALIDATION/validate_editorial_architecture.mjs
 node --check VALIDATION/validate_sitemap_robots.mjs
 node VALIDATION/validate_editorial_metadata.mjs
+node VALIDATION/validate_editorial_architecture.mjs
 node AUTOMATION/generate_seo.mjs
 node VALIDATION/validate_links.mjs
 node VALIDATION/validate_assets.mjs
 node VALIDATION/validate_sitemap_robots.mjs
 ```
 
-Esses scripts validam links internos, presença de assets referenciados, metadados mínimos dos 43 artigos e consistência básica de `sitemap.xml`/`robots.txt`.
+Esses scripts validam links internos, presença de assets referenciados, metadados mínimos dos 43 artigos, arquitetura editorial oficial e consistência básica de `sitemap.xml`/`robots.txt`.
+
+## Arquitetura editorial
+
+A taxonomia oficial da Sprint 02 vive em `SITE/data/editorial-taxonomy.json`.
+
+Categorias oficiais:
+
+- Filosofia
+- História da Civilização
+- Antropologia
+- Sociologia
+- Literatura
+- Arte
+- Religião
+- Ciência
+- Política
+- Atualidade Filosófica
+
+Cada categoria está preparada para receber artigos, ensaios, dossiês, bibliografia e autores relacionados. As páginas públicas de categoria são geradas em `/categoria/<slug>/` por `node AUTOMATION/generate_seo.mjs`.
+
+A Home já possui um bloco editorial gerado para Filosofia, História da Civilização, Literatura, Ciência, Religião e Atualidade Filosófica. Dossiês futuros devem ser registrados em `SITE/data/dossiers.json`; a página base `/dossies/` permanece vazia enquanto não houver dossiês oficiais.
+
+### Sistema de dossiês
+
+O modelo canônico de dossiês é definido por `SITE/data/dossiers.schema.json` e instanciado em `SITE/data/dossiers.json`.
+
+Campos obrigatórios de cada dossiê:
+
+- `id`, `slug`, `title`, `subtitle`, `category`, `status`, `isCanonicalModel`.
+- `editorialIntroduction`, `intellectualObjective`.
+- `mainArticle`, `relatedArticles`, `recommendedArticles`, `continueStudying`.
+- `relatedPhilosophers`, `relatedAuthors`, `relatedBooks`, `relatedArtworks`.
+- `historicalPeriods`, `civilizations`, `timeline`, `bibliography`, `futureReadings`.
+
+Para cadastrar um novo dossiê, adicione um objeto em `SITE/data/dossiers.json`, use apenas slugs reais de artigos existentes nos campos relacionais e rode:
+
+```bash
+node VALIDATION/validate_editorial_architecture.mjs
+node AUTOMATION/generate_seo.mjs
+node VALIDATION/validate_links.mjs
+node VALIDATION/validate_sitemap_robots.mjs
+```
+
+### Curadoria dos artigos
+
+A curadoria oficial do acervo existente fica em `ARTICLE_CURATION`, dentro de `SITE/posts.js`, separada do corpo dos textos publicados. Ela define categoria principal, subcategoria, dossiê, filósofos, livros, civilização, período, temas, artigos relacionados e prioridade editorial.
+
+Campos neutros aceitos:
+
+- `dossier: null`, quando ainda não há dossiê oficial cadastrado.
+- `books: []`, quando não há livro seguro relacionado.
+- `philosophers: []`, quando o artigo não trata diretamente de um autor.
+- `civilization: null` e `period: null`, quando a associação histórica seria especulativa.
 
 ## Como gerar SEO técnico
 

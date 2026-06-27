@@ -2643,6 +2643,527 @@ A meta alcançada se torna rotina.</p>
   }
 ];
 
+// Sprint 03: curadoria editorial do acervo existente.
+// Esta camada classifica e relaciona os artigos sem alterar o texto publicado.
+const ARTICLE_CURATION = {
+  "sociedade-moderna-destruiu-silencio": {
+    category: "Atualidade Filosófica",
+    subcategory: "vida interior e atenção",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["silêncio", "atenção", "vida interior", "modernidade", "cultura digital"],
+    relatedArticles: ["humanidade-trocou-contemplacao-por-distracao", "algoritmo-substituiu-verdade-pela-atencao", "crise-contemporanea-nao-e-economica-e-espiritual"],
+    editorialPriority: "P0"
+  },
+  "crise-contemporanea-nao-e-economica-e-espiritual": {
+    category: "Atualidade Filosófica",
+    subcategory: "crise de sentido",
+    dossier: null,
+    philosophers: ["Friedrich Nietzsche"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["niilismo", "sentido", "modernidade", "espiritualidade", "diagnóstico do presente"],
+    relatedArticles: ["modernidade-matou-sagrado", "nietzsche-obras-impacto-revolucionario", "sociedade-moderna-destruiu-silencio"],
+    editorialPriority: "P0"
+  },
+  "humanidade-trocou-contemplacao-por-distracao": {
+    category: "Atualidade Filosófica",
+    subcategory: "atenção e cultura digital",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["contemplação", "distração", "atenção", "cultura digital", "vida interior"],
+    relatedArticles: ["sociedade-moderna-destruiu-silencio", "algoritmo-substituiu-verdade-pela-atencao", "tecnologia-mais-rapida-que-sabedoria"],
+    editorialPriority: "P0"
+  },
+  "algoritmo-substituiu-verdade-pela-atencao": {
+    category: "Atualidade Filosófica",
+    subcategory: "verdade e algoritmos",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["algoritmos", "verdade", "atenção", "redes sociais", "debate público"],
+    relatedArticles: ["humanidade-trocou-contemplacao-por-distracao", "tecnologia-mais-rapida-que-sabedoria", "adorno-cultura-pensamento"],
+    editorialPriority: "P0"
+  },
+  "tecnologia-mais-rapida-que-sabedoria": {
+    category: "Atualidade Filosófica",
+    subcategory: "ética da tecnologia",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["tecnologia", "sabedoria", "ética", "inteligência artificial", "responsabilidade"],
+    relatedArticles: ["hegel-fenomenologia-inteligencias-artificiais", "algoritmo-substituiu-verdade-pela-atencao", "conforto-excessivo-enfraquece-civilizacoes"],
+    editorialPriority: "P0"
+  },
+  "modernidade-matou-sagrado": {
+    category: "Religião",
+    subcategory: "secularização e sagrado",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["sagrado", "secularização", "religião", "desencantamento", "modernidade"],
+    relatedArticles: ["crise-contemporanea-nao-e-economica-e-espiritual", "sao-tomas-fe-razao-explicacao", "confissoes-santo-agostinho"],
+    editorialPriority: "P0"
+  },
+  "luis-de-camoes-morte-lingua-portuguesa": {
+    category: "Literatura",
+    subcategory: "língua portuguesa e memória cultural",
+    dossier: null,
+    philosophers: [],
+    books: ["Os Lusíadas"],
+    civilization: "Civilização lusófona",
+    period: "Renascimento",
+    themes: ["Luís de Camões", "língua portuguesa", "literatura", "memória", "identidade cultural"],
+    relatedArticles: ["nostalgia-forma-consciencia-historica", "balzac-escritor-alma-capitalismo"],
+    editorialPriority: "P1"
+  },
+  "nostalgia-forma-consciencia-historica": {
+    category: "História da Civilização",
+    subcategory: "memória histórica",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: null,
+    period: null,
+    themes: ["nostalgia", "história", "memória", "tempo", "consciência histórica"],
+    relatedArticles: ["luis-de-camoes-morte-lingua-portuguesa", "crise-contemporanea-nao-e-economica-e-espiritual", "conforto-excessivo-enfraquece-civilizacoes"],
+    editorialPriority: "P1"
+  },
+  "poetas-dramaturgos-educacao-grecia-antiga": {
+    category: "Literatura",
+    subcategory: "poesia e formação grega",
+    dossier: null,
+    philosophers: ["Homero", "Hesíodo", "Ésquilo", "Sófocles", "Eurípides"],
+    books: ["Ilíada", "Odisseia", "Teogonia"],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["educação", "tragédia", "virtude", "destino", "cultura grega"],
+    relatedArticles: ["sofistas-primeiros-mestres-persuasao", "socrates-metodo-maieutico", "platao-mundo-das-ideias"],
+    editorialPriority: "P0"
+  },
+  "sofistas-primeiros-mestres-persuasao": {
+    category: "Filosofia",
+    subcategory: "sofística e retórica",
+    dossier: null,
+    philosophers: ["Protágoras"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["sofistas", "persuasão", "retórica", "verdade", "democracia ateniense"],
+    relatedArticles: ["protagoras-medida-todas-coisas", "socrates-metodo-maieutico", "poetas-dramaturgos-educacao-grecia-antiga"],
+    editorialPriority: "P0"
+  },
+  "vida-pendulo-schopenhauer-desejo-humano": {
+    category: "Filosofia",
+    subcategory: "filosofia moderna do desejo",
+    dossier: null,
+    philosophers: ["Arthur Schopenhauer"],
+    books: ["O Mundo como Vontade e Representação"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["desejo", "vontade", "sofrimento", "tédio", "existência"],
+    relatedArticles: ["sartre-liberdade-condenacao", "kierkegaard-conhecer-se", "nietzsche-obras-impacto-revolucionario"],
+    editorialPriority: "P0"
+  },
+  "conforto-excessivo-enfraquece-civilizacoes": {
+    category: "História da Civilização",
+    subcategory: "declínio e formação do caráter",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: null,
+    period: null,
+    themes: ["civilização", "conforto", "tecnologia", "caráter", "fragilidade"],
+    relatedArticles: ["tecnologia-mais-rapida-que-sabedoria", "nostalgia-forma-consciencia-historica", "escala-6x1-trabalho-tempo-vida"],
+    editorialPriority: "P1"
+  },
+  "escolastica-latina-influencia-arabe": {
+    category: "História da Civilização",
+    subcategory: "transmissão intelectual medieval",
+    dossier: null,
+    philosophers: ["Avicena", "Averróis", "Tomás de Aquino"],
+    books: [],
+    civilization: "Ocidente medieval",
+    period: "Idade Média",
+    themes: ["escolástica", "filosofia árabe", "tradução", "razão", "medievo"],
+    relatedArticles: ["sao-tomas-fe-razao-explicacao", "confissoes-santo-agostinho", "modernidade-matou-sagrado"],
+    editorialPriority: "P0"
+  },
+  "conatus-espinosa-ontologia-esforco-existir": {
+    category: "Filosofia",
+    subcategory: "ontologia moderna",
+    dossier: null,
+    philosophers: ["Baruch Espinosa"],
+    books: ["Ética"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["conatus", "ontologia", "desejo", "liberdade", "potência"],
+    relatedArticles: ["descartes-cogito-ergo-sum", "o-que-e-a-metafisica", "vida-pendulo-schopenhauer-desejo-humano"],
+    editorialPriority: "P0"
+  },
+  "hegel-fenomenologia-inteligencias-artificiais": {
+    category: "Atualidade Filosófica",
+    subcategory: "inteligência artificial e reconhecimento",
+    dossier: null,
+    philosophers: ["Georg Wilhelm Friedrich Hegel"],
+    books: ["Fenomenologia do Espírito"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["inteligência artificial", "consciência", "reconhecimento", "espírito", "tecnologia"],
+    relatedArticles: ["tecnologia-mais-rapida-que-sabedoria", "algoritmo-substituiu-verdade-pela-atencao", "laplace-sonho-razao-absoluta"],
+    editorialPriority: "P0"
+  },
+  "nietzsche-obras-impacto-revolucionario": {
+    category: "Filosofia",
+    subcategory: "niilismo e criação de valores",
+    dossier: null,
+    philosophers: ["Friedrich Nietzsche"],
+    books: ["O Nascimento da Tragédia", "Genealogia da Moral", "Assim Falou Zaratustra"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Nietzsche", "niilismo", "tragédia", "valores", "modernidade"],
+    relatedArticles: ["crise-contemporanea-nao-e-economica-e-espiritual", "vida-pendulo-schopenhauer-desejo-humano", "sartre-liberdade-condenacao"],
+    editorialPriority: "P0"
+  },
+  "john-stuart-mill-revolucao-liberal-moderna": {
+    category: "Política",
+    subcategory: "liberalismo moderno",
+    dossier: null,
+    philosophers: ["John Stuart Mill"],
+    books: ["Sobre a Liberdade"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["liberdade", "liberalismo", "individualidade", "censura", "tirania social"],
+    relatedArticles: ["escala-6x1-trabalho-tempo-vida", "locke-tabula-rasa", "adorno-cultura-pensamento"],
+    editorialPriority: "P0"
+  },
+  "einstein-revolucao-fisica-moderna": {
+    category: "Ciência",
+    subcategory: "física moderna e visão de mundo",
+    dossier: null,
+    philosophers: ["Albert Einstein"],
+    books: [],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["física moderna", "relatividade", "tempo", "espaço", "universo"],
+    relatedArticles: ["laplace-sonho-razao-absoluta", "formigas-diante-do-universo", "leucipo-atomismo"],
+    editorialPriority: "P0"
+  },
+  "escala-6x1-trabalho-tempo-vida": {
+    category: "Política",
+    subcategory: "trabalho e tempo social",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Brasil contemporâneo",
+    period: "Contemporâneo",
+    themes: ["trabalho", "tempo", "vida", "política pública", "Brasil"],
+    relatedArticles: ["john-stuart-mill-revolucao-liberal-moderna", "conforto-excessivo-enfraquece-civilizacoes", "balzac-escritor-alma-capitalismo"],
+    editorialPriority: "P1"
+  },
+  "sao-tomas-fe-razao-explicacao": {
+    category: "Religião",
+    subcategory: "fé e razão",
+    dossier: null,
+    philosophers: ["Tomás de Aquino"],
+    books: ["Suma Teológica"],
+    civilization: "Ocidente medieval",
+    period: "Idade Média",
+    themes: ["fé", "razão", "teologia", "filosofia medieval", "explicação"],
+    relatedArticles: ["escolastica-latina-influencia-arabe", "confissoes-santo-agostinho", "provar-deus-kant"],
+    editorialPriority: "P0"
+  },
+  "epicuro-pouco-suficiencia-desejo": {
+    category: "Filosofia",
+    subcategory: "helenismo e suficiência",
+    dossier: null,
+    philosophers: ["Epicuro"],
+    books: ["Carta a Meneceu"],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Epicuro", "desejo", "suficiência", "prazer", "vida boa"],
+    relatedArticles: ["vida-pendulo-schopenhauer-desejo-humano", "socrates-metodo-maieutico", "kierkegaard-conhecer-se"],
+    editorialPriority: "P0"
+  },
+  "protagoras-medida-todas-coisas": {
+    category: "Filosofia",
+    subcategory: "sofística e relativismo",
+    dossier: null,
+    philosophers: ["Protágoras"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Protágoras", "verdade", "perspectiva", "sofistas", "relativismo"],
+    relatedArticles: ["sofistas-primeiros-mestres-persuasao", "socrates-metodo-maieutico", "platao-mundo-das-ideias"],
+    editorialPriority: "P0"
+  },
+  "heraclito-duas-vezes-mesmo-rio": {
+    category: "Filosofia",
+    subcategory: "pré-socráticos e mudança",
+    dossier: null,
+    philosophers: ["Heráclito"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Heráclito", "mudança", "fluxo", "realidade", "pré-socráticos"],
+    relatedArticles: ["tales-mileto-arche", "empedocles-amor-discordia", "zenao-paradoxos-realidade"],
+    editorialPriority: "P0"
+  },
+  "formigas-diante-do-universo": {
+    category: "Ciência",
+    subcategory: "cosmologia filosófica",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: null,
+    period: null,
+    themes: ["cosmologia", "consciência", "escala", "universo", "limites humanos"],
+    relatedArticles: ["einstein-revolucao-fisica-moderna", "laplace-sonho-razao-absoluta", "o-que-e-a-metafisica"],
+    editorialPriority: "P1"
+  },
+  "arte-controle-humano": {
+    category: "Arte",
+    subcategory: "estética e poder",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["arte", "estética", "controle", "imagem", "desejo"],
+    relatedArticles: ["adorno-cultura-pensamento", "algoritmo-substituiu-verdade-pela-atencao", "poetas-dramaturgos-educacao-grecia-antiga"],
+    editorialPriority: "P1"
+  },
+  "laplace-sonho-razao-absoluta": {
+    category: "Ciência",
+    subcategory: "determinismo e razão moderna",
+    dossier: null,
+    philosophers: ["Pierre-Simon Laplace"],
+    books: [],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Laplace", "determinismo", "razão", "ciência moderna", "previsão"],
+    relatedArticles: ["einstein-revolucao-fisica-moderna", "formigas-diante-do-universo", "hegel-fenomenologia-inteligencias-artificiais"],
+    editorialPriority: "P0"
+  },
+  "balzac-escritor-alma-capitalismo": {
+    category: "Literatura",
+    subcategory: "literatura e capitalismo",
+    dossier: null,
+    philosophers: ["Honoré de Balzac"],
+    books: ["A Comédia Humana"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Balzac", "capitalismo", "modernidade", "literatura", "vida social"],
+    relatedArticles: ["luis-de-camoes-morte-lingua-portuguesa", "escala-6x1-trabalho-tempo-vida", "adorno-cultura-pensamento"],
+    editorialPriority: "P1"
+  },
+  "confissoes-santo-agostinho": {
+    category: "Religião",
+    subcategory: "patrística e interioridade",
+    dossier: null,
+    philosophers: ["Agostinho de Hipona"],
+    books: ["Confissões"],
+    civilization: "Cristandade latina",
+    period: "Antiguidade tardia",
+    themes: ["Agostinho", "confissão", "interioridade", "fé", "filosofia cristã"],
+    relatedArticles: ["sao-tomas-fe-razao-explicacao", "modernidade-matou-sagrado", "kierkegaard-conhecer-se"],
+    editorialPriority: "P0"
+  },
+  "socrates-metodo-maieutico": {
+    category: "Filosofia",
+    subcategory: "socratismo e autoexame",
+    dossier: null,
+    philosophers: ["Sócrates"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Sócrates", "maiêutica", "autoexame", "responsabilidade", "sabedoria"],
+    relatedArticles: ["platao-mundo-das-ideias", "protagoras-medida-todas-coisas", "epicuro-pouco-suficiencia-desejo"],
+    editorialPriority: "P0"
+  },
+  "platao-mundo-das-ideias": {
+    category: "Filosofia",
+    subcategory: "platonismo",
+    dossier: null,
+    philosophers: ["Platão"],
+    books: ["Fédon"],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Platão", "ideias", "alma", "morte", "realidade"],
+    relatedArticles: ["socrates-metodo-maieutico", "o-que-e-a-metafisica", "protagoras-medida-todas-coisas"],
+    editorialPriority: "P0"
+  },
+  "tales-mileto-arche": {
+    category: "Filosofia",
+    subcategory: "pré-socráticos e origem",
+    dossier: null,
+    philosophers: ["Tales de Mileto"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Tales de Mileto", "arché", "origem", "natureza", "pré-socráticos"],
+    relatedArticles: ["heraclito-duas-vezes-mesmo-rio", "leucipo-atomismo", "democrito-alma-corpo"],
+    editorialPriority: "P0"
+  },
+  "democrito-alma-corpo": {
+    category: "Filosofia",
+    subcategory: "atomismo e ética",
+    dossier: null,
+    philosophers: ["Demócrito"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Demócrito", "alma", "corpo", "razão", "atomismo"],
+    relatedArticles: ["leucipo-atomismo", "tales-mileto-arche", "empedocles-amor-discordia"],
+    editorialPriority: "P0"
+  },
+  "leucipo-atomismo": {
+    category: "Filosofia",
+    subcategory: "atomismo antigo",
+    dossier: null,
+    philosophers: ["Leucipo", "Demócrito"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Leucipo", "atomismo", "vazio", "natureza", "pré-socráticos"],
+    relatedArticles: ["democrito-alma-corpo", "tales-mileto-arche", "einstein-revolucao-fisica-moderna"],
+    editorialPriority: "P0"
+  },
+  "empedocles-amor-discordia": {
+    category: "Filosofia",
+    subcategory: "pré-socráticos e cosmologia",
+    dossier: null,
+    philosophers: ["Empédocles"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Empédocles", "amor", "discórdia", "cosmologia", "forças"],
+    relatedArticles: ["heraclito-duas-vezes-mesmo-rio", "democrito-alma-corpo", "formigas-diante-do-universo"],
+    editorialPriority: "P0"
+  },
+  "descartes-cogito-ergo-sum": {
+    category: "Filosofia",
+    subcategory: "racionalismo moderno",
+    dossier: null,
+    philosophers: ["René Descartes"],
+    books: ["Discurso do Método", "Meditações Metafísicas"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Descartes", "cogito", "dúvida", "razão", "fundamento"],
+    relatedArticles: ["locke-tabula-rasa", "conatus-espinosa-ontologia-esforco-existir", "o-que-e-a-metafisica"],
+    editorialPriority: "P0"
+  },
+  "locke-tabula-rasa": {
+    category: "Filosofia",
+    subcategory: "empirismo moderno",
+    dossier: null,
+    philosophers: ["John Locke"],
+    books: ["Ensaio sobre o Entendimento Humano"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Locke", "experiência", "conhecimento", "empirismo", "educação"],
+    relatedArticles: ["descartes-cogito-ergo-sum", "john-stuart-mill-revolucao-liberal-moderna", "provar-deus-kant"],
+    editorialPriority: "P0"
+  },
+  "o-que-e-a-metafisica": {
+    category: "Filosofia",
+    subcategory: "metafísica",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: null,
+    period: null,
+    themes: ["metafísica", "ser", "realidade", "existência", "fundamento"],
+    relatedArticles: ["platao-mundo-das-ideias", "descartes-cogito-ergo-sum", "conatus-espinosa-ontologia-esforco-existir"],
+    editorialPriority: "P0"
+  },
+  "provar-deus-kant": {
+    category: "Filosofia",
+    subcategory: "crítica da razão",
+    dossier: null,
+    philosophers: ["Immanuel Kant"],
+    books: ["Crítica da Razão Pura"],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Kant", "Deus", "razão", "limites do conhecimento", "metafísica"],
+    relatedArticles: ["sao-tomas-fe-razao-explicacao", "locke-tabula-rasa", "o-que-e-a-metafisica"],
+    editorialPriority: "P0"
+  },
+  "sartre-liberdade-condenacao": {
+    category: "Filosofia",
+    subcategory: "existencialismo",
+    dossier: null,
+    philosophers: ["Jean-Paul Sartre"],
+    books: ["O Ser e o Nada", "O Existencialismo é um Humanismo"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["Sartre", "liberdade", "responsabilidade", "escolha", "existencialismo"],
+    relatedArticles: ["kierkegaard-conhecer-se", "nietzsche-obras-impacto-revolucionario", "vida-pendulo-schopenhauer-desejo-humano"],
+    editorialPriority: "P0"
+  },
+  "kierkegaard-conhecer-se": {
+    category: "Filosofia",
+    subcategory: "existência e interioridade",
+    dossier: null,
+    philosophers: ["Søren Kierkegaard"],
+    books: [],
+    civilization: "Ocidente moderno",
+    period: "Modernidade",
+    themes: ["Kierkegaard", "autoconhecimento", "existência", "interioridade", "subjetividade"],
+    relatedArticles: ["sartre-liberdade-condenacao", "confissoes-santo-agostinho", "epicuro-pouco-suficiencia-desejo"],
+    editorialPriority: "P0"
+  },
+  "confucio-virtude-pratica": {
+    category: "Filosofia",
+    subcategory: "filosofia chinesa e virtude",
+    dossier: null,
+    philosophers: ["Confúcio"],
+    books: ["Analectos"],
+    civilization: "China Antiga",
+    period: "Antiguidade",
+    themes: ["Confúcio", "virtude", "prática", "relações", "caráter"],
+    relatedArticles: ["epicuro-pouco-suficiencia-desejo", "socrates-metodo-maieutico", "poetas-dramaturgos-educacao-grecia-antiga"],
+    editorialPriority: "P1"
+  },
+  "adorno-cultura-pensamento": {
+    category: "Sociologia",
+    subcategory: "indústria cultural",
+    dossier: null,
+    philosophers: ["Theodor Adorno"],
+    books: ["Dialética do Esclarecimento"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["Adorno", "indústria cultural", "pensamento crítico", "cultura de massa", "sociedade"],
+    relatedArticles: ["arte-controle-humano", "algoritmo-substituiu-verdade-pela-atencao", "balzac-escritor-alma-capitalismo"],
+    editorialPriority: "P0"
+  },
+  "zenao-paradoxos-realidade": {
+    category: "Filosofia",
+    subcategory: "eleatismo e paradoxo",
+    dossier: null,
+    philosophers: ["Zenão de Eleia"],
+    books: [],
+    civilization: "Grécia Antiga",
+    period: "Antiguidade",
+    themes: ["Zenão de Eleia", "paradoxo", "movimento", "lógica", "matemática"],
+    relatedArticles: ["heraclito-duas-vezes-mesmo-rio", "tales-mileto-arche", "laplace-sonho-razao-absoluta"],
+    editorialPriority: "P0"
+  }
+};
+
 // Sprint 01B/P0: normalizacao editorial minima sem alterar o conteudo.
 // Campos incertos usam valores neutros para preparar validacoes e geracao futura.
 (function normalizeEditorialMetadata(){
@@ -2650,12 +3171,23 @@ A meta alcançada se torna rotina.</p>
     if (!post.slug) post.slug = post.id || null;
     if (!post.id) post.id = post.slug || null;
     if (!post.description) post.description = post.metaDescription || post.excerpt || null;
+    const curation = ARTICLE_CURATION[post.slug] || {};
+    Object.keys(curation).forEach(function(key){
+      post[key] = curation[key];
+    });
     if (!post.category) post.category = post.tag ? post.tag.toLowerCase() : 'geral';
     if (!post.subcategory) post.subcategory = 'geral';
     if (!Array.isArray(post.tags)) post.tags = post.tag ? [post.tag] : [];
     if (!('period' in post)) post.period = null;
     if (!('civilization' in post)) post.civilization = null;
     if (!Array.isArray(post.philosophers)) post.philosophers = [];
+    if (!('dossier' in post)) post.dossier = null;
+    if (!Array.isArray(post.books)) post.books = [];
+    if (!Array.isArray(post.themes)) post.themes = [];
+    if (!Array.isArray(post.civilizations)) post.civilizations = post.civilization ? [post.civilization] : [];
+    if (!Array.isArray(post.historicalPeriods)) post.historicalPeriods = post.period ? [post.period] : [];
+    if (!Array.isArray(post.relatedArticles)) post.relatedArticles = [];
+    if (!post.editorialPriority) post.editorialPriority = 'P2';
     if (!post.format) post.format = 'artigo';
     if (!post.heroImage) post.heroImage = post.cover || post.thumb || null;
     if (!post.date) post.date = post.dateISO || null;

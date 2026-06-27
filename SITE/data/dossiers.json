@@ -1,0 +1,49 @@
+{
+  "$schema": "./dossiers.schema.json",
+  "schemaVersion": 1,
+  "dossiers": [
+    {
+      "id": "a-questao-da-beleza",
+      "slug": "a-questao-da-beleza",
+      "title": "A Questão da Beleza",
+      "subtitle": "Modelo canônico de dossiê editorial",
+      "category": "Arte",
+      "status": "planned",
+      "isCanonicalModel": true,
+      "editorialIntroduction": "Placeholder editorial: introdução a ser escrita quando o dossiê for aprovado para publicação.",
+      "intellectualObjective": "Placeholder editorial: objetivo intelectual a ser definido pela curadoria antes da publicação.",
+      "mainArticle": null,
+      "relatedArticles": [
+        "arte-controle-humano",
+        "poetas-dramaturgos-educacao-grecia-antiga",
+        "platao-mundo-das-ideias"
+      ],
+      "recommendedArticles": [
+        "arte-controle-humano",
+        "poetas-dramaturgos-educacao-grecia-antiga"
+      ],
+      "relatedBooks": [],
+      "relatedPhilosophers": [
+        "Platão"
+      ],
+      "relatedAuthors": [],
+      "relatedArtworks": [],
+      "historicalPeriods": [
+        "Antiguidade",
+        "Contemporâneo"
+      ],
+      "civilizations": [
+        "Grécia Antiga",
+        "Ocidente contemporâneo"
+      ],
+      "timeline": [],
+      "bibliography": [],
+      "futureReadings": [],
+      "continueStudying": [
+        "arte-controle-humano",
+        "poetas-dramaturgos-educacao-grecia-antiga",
+        "platao-mundo-das-ideias"
+      ]
+    }
+  ]
+}
