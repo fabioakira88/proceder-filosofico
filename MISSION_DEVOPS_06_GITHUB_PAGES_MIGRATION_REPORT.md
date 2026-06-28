@@ -119,3 +119,45 @@ Faltam três decisões que só você pode tomar, em ordem:
 3. Só depois da validação visual: configurar o custom domain no painel do GitHub e trocar os registros DNS no Hostinger.
 
 Nenhuma dessas três ações foi executada nesta missão.
+
+---
+
+## 12. Atualização — Fase 1 e Fase 2 executadas (2026-06-28)
+
+### Fase 1 — Versionar (concluída)
+- Commit `1783ea5` — `ci: prepare GitHub Pages deployment`, exatamente os 4 arquivos planejados.
+- PR [#2](https://github.com/fabioakira88/proceder-filosofico/pull/2) aberto, mergeado em `main` (`59b31f6`), com sua autorização explícita.
+
+### Fase 2 — Testar (concluída, com um ajuste necessário)
+
+- Primeira execução do workflow (`28315550405`, disparada automaticamente pelo merge) **falhou no passo "Setup Pages"**: `Get Pages site failed... Not Found`. Causa: GitHub Pages não estava habilitado no repositório.
+- Ao tentar habilitar via API, novo bloqueio: **`Your current plan does not support GitHub Pages for this repository`** — Pages em repositório privado exige plano pago (Pro/Team/Enterprise); no plano gratuito, exige repositório público.
+- Com sua autorização explícita, o repositório `fabioakira88/proceder-filosofico` foi tornado **público**. GitHub Pages habilitado (`build_type: workflow`).
+- Segunda execução (`28319128470`, via `workflow_dispatch`) — **sucesso total**: build, validações e publicação concluídos sem erro.
+- **Achado de validação importante**: a URL temporária `https://fabioakira88.github.io/proceder-filosofico/` carrega o HTML (HTTP 200), mas como o site usa caminhos absolutos (`/assets/...`), e essa URL publica o projeto numa subpasta, o navegador resolve esses caminhos a partir da raiz do `github.io` — CSS, JS e imagens dão 404 ali. **Isso não é um defeito da migração**, é uma particularidade conhecida de "project pages" do GitHub Pages.
+- Para validar de forma fiel sem tocar em DNS real, configurei (com sua autorização) o **domínio customizado no GitHub Pages** (`cname: procederfilosofico.com.br`) — ação que não depende de DNS e não afeta o site ao vivo no Hostinger. Validação feita via `curl --resolve` (simula a resolução de DNS apenas na chamada, sem alterar `/etc/hosts` ou qualquer configuração do seu computador), apontando para um dos 4 IPs do GitHub Pages:
+
+| Verificação | Resultado |
+|---|---|
+| Home (`/`) | HTTP 200 |
+| `/filosofos/` | HTTP 200 |
+| `/artigos/` | HTTP 200 |
+| `/dossies/` | HTTP 200 |
+| `/conteudo/` | HTTP 200 |
+| `/sobre/` | HTTP 200 |
+| `/sitemap.xml` | HTTP 200 |
+| `/robots.txt` | HTTP 200 |
+| `/categoria/filosofia/` (subcategoria real) | HTTP 200 |
+| `/categoria/` (sem subcategoria) | HTTP 404 — **idêntico à produção atual**, que devolve 403 para o mesmo caminho; não é regressão |
+| `/assets/css-shared/tokens.css`, `base.css`, `components.css` | HTTP 200 |
+| `/assets/js/navigation.js` | HTTP 200 |
+| `/assets/homero2.png` | HTTP 200 |
+| HTTPS na raiz do domínio (simulado) | HTTP 200 — certificado ainda não emitido oficialmente (`https_enforced: false`, domínio não verificado via DNS real), mas a resposta já funciona |
+
+**Status atual:** `gh api repos/fabioakira88/proceder-filosofico/pages` retorna `cname: procederfilosofico.com.br`, `html_url: http://procederfilosofico.com.br/`, `https_enforced: false`. Nenhum registro DNS foi alterado — o Hostinger continua sendo, hoje, quem responde por `procederfilosofico.com.br` para o público.
+
+### Mudança de escopo registrada
+O repositório `fabioakira88/proceder-filosofico`, criado privado na Sprint UX/UI 03, **passou a ser público** — decisão necessária para viabilizar o GitHub Pages no plano gratuito, autorizada explicitamente por você. Efeito: código do site, `BRANDING/` (governança, manuais editoriais) e os relatórios de missão na raiz agora são visíveis publicamente no GitHub.
+
+### Pendente para a Fase 3
+Apenas a troca real de DNS no painel do Hostinger (4 registros A + CNAME `www`, listados na seção 5) — nenhuma ação nesse sentido foi tomada.
