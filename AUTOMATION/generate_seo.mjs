@@ -128,13 +128,28 @@ const escapeXml = (value) => String(value)
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&apos;');
 
+const enciclopediaSlugs = [
+  'pre-historia',
+  'revolucao-neolitica',
+  'mesopotamia',
+  'egito-antigo',
+  'vale-do-indo',
+  'china-antiga',
+  'grecia-antiga',
+  'roma-antiga',
+  'idade-media',
+  'renascimento'
+];
+
 const staticUrls = [
   { loc: `${SITE_URL}/`, lastmod: null },
   { loc: `${SITE_URL}/artigos/`, lastmod: null },
   { loc: `${SITE_URL}/conteudo/`, lastmod: null },
   dossierIndexUrl,
   { loc: `${SITE_URL}/filosofos/`, lastmod: null },
-  { loc: `${SITE_URL}/sobre/`, lastmod: null }
+  { loc: `${SITE_URL}/sobre/`, lastmod: null },
+  { loc: `${SITE_URL}/enciclopedia/`, lastmod: null },
+  ...enciclopediaSlugs.map((slug) => ({ loc: `${SITE_URL}/enciclopedia/${slug}/`, lastmod: null }))
 ];
 
 const sitemap = [
