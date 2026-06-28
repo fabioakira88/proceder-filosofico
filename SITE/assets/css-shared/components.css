@@ -342,6 +342,8 @@ footer a {
   .site-nav-inner,
   .nav-inner {
     position: relative !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
   }
 
   .navbar-links,
