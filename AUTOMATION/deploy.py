@@ -13,6 +13,7 @@ Credenciais no .env (na raiz do projeto):
 Regra de deploy:
     Envia somente o conteúdo de SITE/ para a raiz pública do domínio.
     Nunca envia a raiz do projeto, .env, automações, docs, backups ou branding.
+    Por padrão, publica somente arquivos versionados pelo Git.
 """
 
 import ftplib
@@ -42,6 +43,8 @@ PASS       = os.getenv("FTP_PASS")
 REMOTE_DIR = os.getenv("FTP_REMOTE_DIR", "/public_html")
 FTP_TIMEOUT = int(os.getenv("FTP_TIMEOUT", "30"))
 FILE_TIMEOUT = int(os.getenv("FTP_FILE_TIMEOUT", "45"))
+GENERATE_BEFORE_DEPLOY = os.getenv("DEPLOY_GENERATE_SEO", "1") != "0"
+TRACKED_ONLY = os.getenv("DEPLOY_TRACKED_ONLY", "1") != "0"
 
 # Arquivos da pasta SITE que devem ser enviados
 INCLUDE_EXTENSIONS = {
@@ -58,6 +61,8 @@ EXCLUDE_FILES = {
 
 def check_env():
     missing = [v for v in ("FTP_HOST", "FTP_USER", "FTP_PASS") if not os.getenv(v)]
+    if os.getenv("GITHUB_ACTIONS") == "true" and not os.getenv("FTP_REMOTE_DIR"):
+        missing.append("FTP_REMOTE_DIR")
     if missing:
         print(f"[ERRO] Variáveis faltando no .env: {', '.join(missing)}")
         print()
@@ -81,7 +86,26 @@ def ftp_mkdirs(ftp, remote_path):
 
 def collect_files():
     files = []
-    for path in SITE.rglob("*"):
+    if TRACKED_ONLY:
+        try:
+            result = subprocess.run(
+                ["git", "-C", str(ROOT), "ls-files", "SITE"],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+        except (subprocess.CalledProcessError, FileNotFoundError) as exc:
+            print(f"[ERRO] Não foi possível listar arquivos versionados pelo Git: {exc}", flush=True)
+            sys.exit(1)
+        candidates = [ROOT / line.strip() for line in result.stdout.splitlines() if line.strip()]
+    else:
+        candidates = SITE.rglob("*")
+
+    for path in candidates:
+        if not path.exists():
+            continue
+        if not path.is_relative_to(SITE):
+            continue
         relative = path.relative_to(SITE)
         if any(part in EXCLUDE_DIRS or part.startswith(".") for part in relative.parts[:-1]):
             continue
@@ -108,8 +132,9 @@ def connect():
     return ftp
 
 def main():
-    print("Gerando sitemap.xml e robots.txt a partir de SITE/posts.js …", flush=True)
-    subprocess.run(["node", str(ROOT / "AUTOMATION" / "generate_seo.mjs")], check=True)
+    if GENERATE_BEFORE_DEPLOY:
+        print("Gerando sitemap.xml e robots.txt a partir de SITE/posts.js …", flush=True)
+        subprocess.run(["node", str(ROOT / "AUTOMATION" / "generate_seo.mjs")], check=True)
 
     check_env()
 
@@ -125,7 +150,8 @@ def main():
         print(f"[ERRO] Falha na conexão FTP: {e}", flush=True)
         sys.exit(1)
 
-    print(f"Conectado. Enviando somente SITE/ ({len(files)} arquivo(s)) para {REMOTE_DIR} …", flush=True)
+    source_mode = "arquivos versionados pelo Git" if TRACKED_ONLY else "arquivos locais filtrados"
+    print(f"Conectado. Enviando somente SITE/ ({len(files)} arquivo(s), {source_mode}) para {REMOTE_DIR} …", flush=True)
     print(f"Timeout por arquivo: {FILE_TIMEOUT}s\n", flush=True)
 
     ok = 0

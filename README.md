@@ -125,9 +125,10 @@ node AUTOMATION/generate_seo.mjs
 node VALIDATION/validate_links.mjs
 node VALIDATION/validate_assets.mjs
 node VALIDATION/validate_sitemap_robots.mjs
+node VALIDATION/validate_deploy_manifest.mjs
 ```
 
-Esses scripts validam links internos, presença de assets referenciados, metadados mínimos dos 43 artigos, arquitetura editorial oficial e consistência básica de `sitemap.xml`/`robots.txt`.
+Esses scripts validam links internos, presença de assets referenciados, metadados mínimos dos 43 artigos, arquitetura editorial oficial, consistência básica de `sitemap.xml`/`robots.txt` e se o deploy tracked-only não apontará para assets não versionados.
 
 ## Arquitetura editorial
 
@@ -190,11 +191,28 @@ As páginas SEO por slug, os HUBs, o sitemap e o robots são derivados de `SITE/
 node AUTOMATION/generate_seo.mjs
 ```
 
-O fluxo oficial de deploy FTP executa esse gerador automaticamente antes de publicar:
+O deploy de produção deve ser feito pelo GitHub Actions após push em `main` ou `production`.
+O workflow valida o site, gera SEO, bloqueia drift de arquivos gerados e publica via FTP usando somente arquivos versionados pelo Git.
+
+Secrets necessários no GitHub:
+
+- `PROCEDER_FTP_HOST`
+- `PROCEDER_FTP_USER`
+- `PROCEDER_FTP_PASS`
+- `PROCEDER_FTP_REMOTE_DIR`
+
+Variáveis opcionais:
+
+- `PROCEDER_FTP_TIMEOUT`
+- `PROCEDER_FTP_FILE_TIMEOUT`
+
+O deploy manual continua existindo como fallback operacional:
 
 ```bash
 python3 AUTOMATION/deploy.py
 ```
+
+Por padrão, o deploy manual também publica somente arquivos versionados pelo Git. Para uma emergência local conscientemente revisada, é possível desativar isso com `DEPLOY_TRACKED_ONLY=0`, mas esse modo não deve ser usado em produção contínua.
 
 ## Cuidados
 
