@@ -2,27 +2,27 @@
 export const quoteSlides = [
   {
     author: "Sócrates",
-    image: "assets/frase-socrates-post.png",
+    image: "/assets/frase-socrates-post.png",
     alt: "Sócrates"
   },
   {
     author: "Sêneca",
-    image: "assets/frase-seneca.png",
+    image: "/assets/frase-seneca.png",
     alt: "Sêneca"
   },
   {
     author: "Platão",
-    image: "assets/frase-platao.png",
+    image: "/assets/frase-platao.png",
     alt: "Platão"
   },
   {
     author: "Marco Aurélio",
-    image: "assets/frase-marco-aurelio.png",
+    image: "/assets/frase-marco-aurelio.png",
     alt: "Marco Aurélio"
   },
   {
     author: "Jean-Paul Sartre",
-    image: "assets/frase-jean-paul-sartrepost.png",
+    image: "/assets/frase-jean-paul-sartrepost.png",
     alt: "Sartre"
   }
 ];

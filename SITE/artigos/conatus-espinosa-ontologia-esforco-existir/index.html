@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PROCEDER:SEO_START -->
+  <title>O Conatus em Espinosa: A Ontologia do Esforço de Existir | Proceder Filosófico</title>
+  <meta name="description" content="Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://procederfilosofico.com.br/artigos/conatus-espinosa-ontologia-esforco-existir/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Proceder Filosófico">
+  <meta property="og:title" content="O Conatus em Espinosa: A Ontologia do Esforço de Existir | Proceder Filosófico">
+  <meta property="og:description" content="Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.">
+  <meta property="og:url" content="https://procederfilosofico.com.br/artigos/conatus-espinosa-ontologia-esforco-existir/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/article_cards/conatus-espinosa-ontologia-esforco-existir.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O Conatus em Espinosa: A Ontologia do Esforço de Existir | Proceder Filosófico">
+  <meta name="twitter:description" content="Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/article_cards/conatus-espinosa-ontologia-esforco-existir.jpg">
+  <script id="proceder-article-jsonld" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"O Conatus em Espinosa: A Ontologia do Esforço de Existir","description":"Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.","image":["https://procederfilosofico.com.br/assets/article_cards/conatus-espinosa-ontologia-esforco-existir.jpg"],"articleSection":"Filosofia","keywords":"FILOSOFIA MODERNA","mainEntityOfPage":{"@type":"WebPage","@id":"https://procederfilosofico.com.br/artigos/conatus-espinosa-ontologia-esforco-existir/"},"author":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"},"publisher":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
+  <!-- PROCEDER:SEO_END -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
+  <script src="/assets/js/navigation.js" defer></script>
+  <style>
+    :root {
+      --azul-profundo: #060D1E;
+      --azul-escuro: #061E47;
+      --azul-real: #0B3D91;
+      --dourado: #C9A84C;
+      --dourado-claro: #E6D28A;
+      --branco: #F7F3EA;
+      --branco-suave: #E8E1D2;
+      --cinza-claro: #B8B3A8;
+      --cinza-medio: #8A8478;
+      --borda-dourada: rgba(201, 168, 76, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--azul-profundo);
+      color: var(--branco);
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.35rem, 6vw, 4.6rem);
+      line-height: 1.04;
+      margin: 0;
+      max-width: 860px;
+      letter-spacing: 0;
+    }
+
+    main {
+      min-height: 100vh;
+      padding: 78px 24px 78px;
+      background: linear-gradient(180deg, var(--azul-profundo), var(--azul-escuro));
+    }
+
+    .site-nav {
+      position: fixed;
+      top: 22px;
+      left: 24px;
+      right: 24px;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .site-nav-inner {
+      width: min(1180px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(201, 168, 76, 0.22);
+      border-radius: 999px;
+      background: rgba(6, 13, 30, 0.78);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+      pointer-events: auto;
+    }
+
+    .site-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--dourado);
+      font-family: 'Cinzel', serif;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      white-space: nowrap;
+    }
+
+    .site-brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--dourado);
+    }
+
+    .site-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .site-links a {
+      color: var(--branco-suave);
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.22s ease;
+    }
+
+    .site-links a:hover,
+    .site-links .active {
+      color: var(--dourado);
+    }
+
+    .articles-grid {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .article-card {
+      min-height: 520px;
+      height: 100%;
+      background: linear-gradient(145deg, rgba(11, 61, 145, 0.34), rgba(6, 30, 71, 0.66));
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--dourado);
+      box-shadow: 0 16px 46px rgba(0, 0, 0, 0.42);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+      background: rgba(6, 13, 30, 0.72);
+      flex-shrink: 0;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.92) contrast(1.04);
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .article-card:hover img {
+      transform: scale(1.045);
+      filter: saturate(1.03) contrast(1.08);
+    }
+
+    .article-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+      min-height: 0;
+    }
+
+    .article-tag {
+      font-family: 'Cinzel', serif;
+      color: var(--dourado);
+      font-size: 0.66rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 12px;
+    }
+
+    .article-tag::before {
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: var(--dourado);
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.16rem;
+      line-height: 1.35;
+      margin: 0 0 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: calc(1.16rem * 1.35 * 3);
+    }
+
+    .article-excerpt {
+      color: var(--cinza-claro);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin: 0 0 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: calc(0.92rem * 1.65 * 3);
+    }
+
+    .article-meta {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--borda-dourada);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 44px;
+    }
+
+    .article-date,
+    .article-read {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .article-date { color: var(--cinza-medio); }
+    .article-read { color: var(--dourado); font-weight: 600; }
+
+    .reader {
+      display: none;
+      width: min(860px, 100%);
+      margin: 0 auto;
+      padding: 0 0 78px;
+    }
+
+    .reader.open { display: block; }
+    body.reading .articles-grid { display: none; }
+
+    .back {
+      margin: 32px 0 24px;
+      background: transparent;
+      border: 1px solid var(--borda-dourada);
+      color: var(--dourado);
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .reader-tag {
+      font-family: 'Cinzel', serif;
+      color: var(--dourado);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      margin-bottom: 16px;
+    }
+
+    .reader h1 {
+      font-size: clamp(2rem, 5vw, 3.65rem);
+      max-width: 100%;
+      margin-bottom: 14px;
+    }
+
+    .reader-date {
+      font-family: 'Cinzel', serif;
+      color: var(--cinza-medio);
+      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--borda-dourada);
+      margin-bottom: 32px;
+    }
+
+    .reader-content {
+      color: rgba(247, 243, 234, 0.9);
+      font-size: 1.06rem;
+      line-height: 1.88;
+    }
+
+    .reader-content p { margin: 0 0 1.45rem; }
+    .reader-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      line-height: 1.25;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--borda-dourada);
+    }
+
+    .reader-content ul {
+      margin: 0 0 1.5rem 1.25rem;
+      padding: 0;
+    }
+
+    .reader-content li { margin-bottom: 0.45rem; }
+
+    .reader-content blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.18rem;
+      color: var(--branco-suave);
+      border-left: 3px solid var(--dourado);
+      margin: 2rem 0;
+      padding: 1rem 1.4rem;
+      background: rgba(11, 61, 145, 0.18);
+    }
+
+    .reader-content img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .reader-taxonomy {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--borda-dourada);
+    }
+
+    .taxonomy-meta,
+    .taxonomy-chips,
+    .taxonomy-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .taxonomy-meta span,
+    .taxonomy-pill,
+    .taxonomy-chips span,
+    .taxonomy-links span {
+      border: 1px solid rgba(201,168,76,.24);
+      border-radius: 999px;
+      color: var(--branco-suave);
+      font-size: .78rem;
+      padding: 7px 11px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .taxonomy-pill {
+      color: var(--dourado);
+      font-family: 'Cinzel', serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .taxonomy-links {
+      align-items: center;
+    }
+
+    .taxonomy-links strong,
+    .next-reading span,
+    .related-reading h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--dourado);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .next-reading {
+      margin: 30px 0;
+      padding: 22px;
+      border: 1px solid rgba(201,168,76,.22);
+      border-radius: 8px;
+      background: rgba(11,61,145,.18);
+    }
+
+    .next-reading a {
+      display: block;
+      margin-top: 8px;
+      font-family: 'Playfair Display', serif;
+      color: var(--branco);
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .related-reading h2 {
+      margin-bottom: 16px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 14px;
+    }
+
+    .related-card {
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: 8px;
+      padding: 16px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .related-card span {
+      display: block;
+      color: var(--dourado);
+      font-family: 'Cinzel', serif;
+      font-size: .62rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .related-card strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    @media (max-width: 980px) {
+      .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .related-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      main { padding: 76px 18px 58px; }
+      .site-nav { position: static; padding: 14px 18px 0; }
+      .site-nav-inner { align-items: flex-start; border-radius: 8px; flex-direction: column; }
+      .site-links { justify-content: flex-start; gap: 10px 14px; }
+      .site-links a { font-size: .58rem; }
+      .articles-grid { grid-template-columns: 1fr; }
+      .article-card { min-height: 0; }
+      .article-image { height: 210px; }
+      .article-title,
+      .article-excerpt { min-height: 0; }
+      .article-meta { align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Artigos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/artigos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
+</head>
+<body class="reading">
+  <nav class="site-nav" aria-label="Navegação principal">
+    <div class="site-nav-inner">
+      <a class="site-brand" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="libraryNav">Menu</button>
+      <div class="site-links" id="libraryNav">
+        <a href="/">Início</a>
+        <a class="active" href="/artigos/">Artigos</a>
+        <a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/biblioteca.html">Livros</a>
+        <a href="/sobre/">Sobre</a>
+        <a href="/#newsletter">Newsletter</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="articles-grid" id="articlesGrid"></section>
+    <!-- PROCEDER:ARTICLE_START -->
+    <article class="reader open" id="reader">
+      <button class="back" id="backButton">Voltar aos artigos</button>
+      <div class="reader-tag" id="readerTag">Filosofia</div>
+      <h1 id="readerTitle">O Conatus em Espinosa: A Ontologia do Esforço de Existir</h1>
+      <div class="reader-date" id="readerDate">02 de Junho de 2026</div>
+      <div class="reader-content" id="readerContent">
+<p>Entre todos os conceitos desenvolvidos pela filosofia moderna, poucos possuem a radicalidade silenciosa do conatus em Baruch Espinosa.</p>
+
+<p>O conatus não é apenas uma teoria psicológica. Não é somente uma ética. Não é apenas uma metafísica.</p>
+
+<p>Ele é uma descrição ontológica da própria estrutura da existência.</p>
+
+<p>Na <em>Ética</em>, Espinosa afirma:</p>
+
+<blockquote><em>"O esforço pelo qual cada coisa se esforça para perseverar em seu ser nada mais é do que a essência atual dessa coisa."</em></blockquote>
+
+<p>Essa frase altera profundamente a compreensão tradicional do homem, da natureza e da moral.</p>
+
+<p>Na tradição clássica e medieval, o ser humano era frequentemente interpretado segundo finalidades transcendentais:</p>
+
+<ul>
+  <li>salvação;</li>
+  <li>pecado;</li>
+  <li>virtude;</li>
+  <li>teleologia divina;</li>
+  <li>ordem moral universal.</li>
+</ul>
+
+<p>Espinosa rompe parcialmente com esse paradigma.</p>
+
+<p>Para ele, não existe um "império dentro do império". O homem não está fora da natureza. Ele é parte dela. Suas paixões, desejos e pensamentos obedecem às mesmas leis universais que regem toda a realidade.</p>
+
+<p>O conatus é exatamente esse impulso fundamental de autopreservação.</p>
+
+<p>Toda coisa existente tende naturalmente a continuar existindo.</p>
+
+<p>Uma pedra permanece. Uma planta cresce em direção à luz. Um animal evita a morte. O homem busca persistir física, emocional e intelectualmente.</p>
+
+<p>Esse esforço não é moral. É estrutural.</p>
+
+<p>Aqui aparece a ruptura decisiva de Espinosa com a tradição cristã.</p>
+
+<p>O desejo deixa de ser entendido como corrupção espiritual. Ele se torna expressão da própria potência do ser.</p>
+
+<p>Para Espinosa, alegria é aumento de potência. Tristeza é diminuição de potência.</p>
+
+<p>O ser humano sofre porque frequentemente vive submetido às paixões passivas:</p>
+
+<ul>
+  <li>medo;</li>
+  <li>ressentimento;</li>
+  <li>superstição;</li>
+  <li>ódio;</li>
+  <li>servidão emocional.</li>
+</ul>
+
+<p>Ele acredita agir livremente, mas na realidade é conduzido por causas externas que desconhece.</p>
+
+<p>A liberdade verdadeira nasce quando o indivíduo compreende racionalmente as causas que o determinam.</p>
+
+<p>Assim, o conatus não é mero instinto biológico. Ele possui dimensão intelectual.</p>
+
+<p>Quanto maior a capacidade racional do indivíduo, maior sua potência de existir.</p>
+
+<p>A ética espinosista não é uma moral de culpa. É uma engenharia da potência.</p>
+
+<p>Espinosa substitui:</p>
+
+<ul>
+  <li>pecado por ignorância;</li>
+  <li>culpa por causalidade;</li>
+  <li>livre-arbítrio absoluto por determinação;</li>
+  <li>transcendência por imanência.</li>
+</ul>
+
+<p>Isso explica por que sua filosofia foi considerada extremamente perigosa.</p>
+
+<p>Ele dissolvia a imagem tradicional de um Deus antropomórfico que julga, pune e recompensa. Deus, para Espinosa, não é um soberano externo ao mundo. Deus é a própria substância infinita da realidade.</p>
+
+<blockquote><em>Deus sive Natura. Deus, ou seja, Natureza.</em></blockquote>
+
+<p>Nesse sistema, o conatus torna-se a expressão local da potência infinita da substância.</p>
+
+<p>Cada ser é uma modulação da realidade tentando perseverar em si.</p>
+
+<p>Politicamente, isso possui consequências profundas.</p>
+
+<p>Espinosa percebe que sociedades autoritárias governam através da manipulação dos afetos tristes:</p>
+
+<ul>
+  <li>medo;</li>
+  <li>paranoia;</li>
+  <li>superstição;</li>
+  <li>insegurança.</li>
+</ul>
+
+<p>Um povo emocionalmente enfraquecido torna-se mais facilmente controlável.</p>
+
+<p>Por isso sua filosofia também é uma teoria política da liberdade.</p>
+
+<p>O homem livre não é o que faz "o que quer". É aquele que compreende as causas que o movem e aumenta sua potência racional de existir.</p>
+
+<p>Essa visão influenciaria profundamente Nietzsche, Deleuze, Freud, Marx, a psicanálise e a teoria política contemporânea.</p>
+
+<p>Nietzsche herdaria de Espinosa a crítica à moral do ressentimento. Freud herdaria a suspeita de que o homem não controla plenamente seus impulsos conscientes. Deleuze transformaria o conatus numa filosofia dos fluxos de potência.</p>
+
+<p>Hoje, em uma civilização marcada por ansiedade, hiperestimulação e fragmentação psicológica, o conceito de conatus permanece extraordinariamente atual.</p>
+
+<p>A sociedade contemporânea disputa continuamente nossa potência de existir:</p>
+
+<ul>
+  <li>algoritmos disputam atenção;</li>
+  <li>mercados disputam desejo;</li>
+  <li>sistemas políticos disputam afetos;</li>
+  <li>redes sociais modulam emoções.</li>
+</ul>
+
+<p>O homem contemporâneo frequentemente vive distante de si mesmo.</p>
+
+<p>Espinosa compreenderia isso como uma existência dominada por causas externas.</p>
+
+<p>Seu projeto filosófico permanece radical: transformar o indivíduo de objeto passivo das paixões em sujeito ativo da compreensão.</p>
+
+<p>No fundo, o conatus é uma filosofia da perseverança ontológica.</p>
+
+<p>Existir é resistir à dissolução.</p>
+
+<p>E compreender é ampliar a própria potência de ser.</p>
+</div>
+      <section class="reader-taxonomy" aria-label="Navegação editorial do artigo">
+        <div class="taxonomy-meta">
+          <a class="taxonomy-pill" href="/categoria/filosofia/">Filosofia</a>
+          <span>ontologia moderna</span>
+          <span>Modernidade</span>
+          <span>Ocidente moderno</span>
+        </div>
+        <div class="taxonomy-chips" aria-label="Temas relacionados"><span>conatus</span><span>ontologia</span><span>desejo</span><span>liberdade</span><span>potência</span></div>
+        <div class="taxonomy-links"><strong>Livros relacionados</strong><span>Ética</span></div>
+        <div class="taxonomy-links"><strong>Autores relacionados</strong><span>Baruch Espinosa</span></div>
+        <div class="next-reading">
+          <span>Próximo estudo recomendado</span>
+          <a href="/artigos/descartes-cogito-ergo-sum/">René Descartes: Penso, Logo Existo — e o que isso realmente significa</a>
+        </div>
+        <div class="related-reading">
+          <h2>Continue estudando</h2>
+          <div class="related-grid">
+          <a class="related-card" href="/artigos/descartes-cogito-ergo-sum/">
+            <span>Filosofia</span>
+            <strong>René Descartes: Penso, Logo Existo — e o que isso realmente significa</strong>
+          </a>
+          <a class="related-card" href="/artigos/o-que-e-a-metafisica/">
+            <span>Filosofia</span>
+            <strong>O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas</strong>
+          </a>
+          <a class="related-card" href="/artigos/vida-pendulo-schopenhauer-desejo-humano/">
+            <span>Filosofia</span>
+            <strong>A Vida Como um Pêndulo: A Visão de Schopenhauer Sobre o Desejo Humano</strong>
+          </a>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- PROCEDER:ARTICLE_END -->
+  </main>
+
+  <script src="/posts.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/site-seo.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/js/reader.js"></script>
+  <script>
+    var ASSET_VERSION = '20260610-single-source';
+    var DEFAULT_THUMB = '/assets/default-article.jpg';
+    var MONTHS_PT = {
+      janeiro: 0, fevereiro: 1, marco: 2, 'março': 2, abril: 3,
+      maio: 4, junho: 5, julho: 6, agosto: 7, setembro: 8,
+      outubro: 9, novembro: 10, dezembro: 11
+    };
+
+    function text(value) {
+      return String(value || '').replace(/[&<>"']/g, function(ch) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
+      });
+    }
+
+    function assetUrl(value, index) {
+      var raw = value || DEFAULT_THUMB;
+      if (/^https?:\/\//.test(raw)) return raw;
+      return '/' + raw.replace(/^\/+/, '').replace(/^(\.\.\/)+/, '');
+    }
+
+    function versionedAsset(value) {
+      var url = assetUrl(value);
+      if (/^https?:\/\//.test(url)) return url;
+      return url + '?v=' + ASSET_VERSION;
+    }
+
+    function postTimestamp(post) {
+      if (post.dateISO) {
+        var iso = Date.parse(post.dateISO);
+        if (!Number.isNaN(iso)) return iso;
+      }
+      var match = String(post.date || '').toLowerCase().match(/(\d{1,2})\s+de\s+([a-zç]+)\s+de\s+(\d{4})/);
+      if (!match || MONTHS_PT[match[2]] === undefined) return 0;
+      return new Date(Number(match[3]), MONTHS_PT[match[2]], Number(match[1])).getTime();
+    }
+
+    function sortedPosts() {
+      return (Array.isArray(POSTS) ? POSTS : []).slice().sort(function(a, b) {
+        var diff = postTimestamp(b) - postTimestamp(a);
+        if (diff !== 0) return diff;
+        return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
+      });
+    }
+
+    function rewriteContent(content) {
+      return window.ProcederReader.rewriteArticleContent(content);
+    }
+
+    function renderGrid() {
+      var grid = document.getElementById('articlesGrid');
+      grid.innerHTML = '';
+      sortedPosts().forEach(function(post, index) {
+        var slug = post.slug || post.id;
+        var thumb = versionedAsset(post.thumb);
+        var fallback = DEFAULT_THUMB + '?v=' + ASSET_VERSION;
+        var card = document.createElement('article');
+        card.className = 'article-card';
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', 'Ler matéria: ' + post.title);
+        card.innerHTML =
+          '<div class="article-image"><img src="' + text(thumb) + '" alt="' + text(post.title) + '" loading="' + (index < 6 ? 'eager' : 'lazy') + '" decoding="async" onerror="this.onerror=null;this.src=&quot;' + text(fallback) + '&quot;;"></div>' +
+          '<div class="article-body">' +
+            '<div class="article-tag">' + text(post.tag) + '</div>' +
+            '<h2 class="article-title">' + text(post.title) + '</h2>' +
+            '<p class="article-excerpt">' + text(post.excerpt) + '</p>' +
+            '<div class="article-meta">' +
+              '<span class="article-date">' + text(post.date) + '</span>' +
+              '<span class="article-read">Ler matéria</span>' +
+            '</div>' +
+          '</div>';
+        card.addEventListener('click', function(){ openPost(slug); });
+        card.addEventListener('keydown', function(event){
+          if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openPost(slug); }
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    function findPost(slug) {
+      for (var i = 0; i < POSTS.length; i++) {
+        if ((POSTS[i].slug || POSTS[i].id) === slug) return POSTS[i];
+      }
+      return null;
+    }
+
+    function openPost(slug, updateUrl) {
+      var post = findPost(slug);
+      if (!post) return;
+      if (window.ProcederSEO) window.ProcederSEO.update(slug);
+      document.body.classList.add('reading');
+      document.getElementById('reader').classList.add('open');
+      document.getElementById('readerTag').textContent = post.tag;
+      document.getElementById('readerTitle').textContent = post.title;
+      document.getElementById('readerDate').textContent = post.date;
+      document.getElementById('readerContent').innerHTML = rewriteContent(post.content);
+      if (updateUrl !== false) {
+        history.pushState({ post: slug }, post.title, '/artigos/' + encodeURIComponent(slug) + '/');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closePost() {
+      document.body.classList.remove('reading');
+      document.getElementById('reader').classList.remove('open');
+      history.pushState({}, 'Artigos | Proceder Filosófico', '/artigos/');
+      if (window.ProcederSEO) window.ProcederSEO.reset();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.getElementById('backButton').addEventListener('click', closePost);
+    function routeSlug() {
+      var querySlug = new URLSearchParams(location.search).get('post');
+      if (querySlug) return querySlug;
+      var match = location.pathname.match(/^\/artigos\/([^/]+)\/?$/);
+      return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    window.addEventListener('popstate', function(){
+      var slug = routeSlug();
+      if (slug) openPost(slug, false);
+      else {
+        document.body.classList.remove('reading');
+        document.getElementById('reader').classList.remove('open');
+        if (window.ProcederSEO) window.ProcederSEO.reset();
+      }
+    });
+
+    renderGrid();
+    var initialSlug = routeSlug();
+    if (initialSlug) openPost(initialSlug, false);
+  </script>
+</body>
+</html>

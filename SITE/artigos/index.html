@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PROCEDER:SEO_START -->
   <title>Artigos | Proceder Filosófico</title>
   <meta name="description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://procederfilosofico.com.br/artigos/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Proceder Filosófico">
+  <meta property="og:title" content="Artigos | Proceder Filosófico">
+  <meta property="og:description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta property="og:url" content="https://procederfilosofico.com.br/artigos/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/default-article.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Artigos | Proceder Filosófico">
+  <meta name="twitter:description" content="Artigos do Proceder Filosófico: filosofia clássica, medieval, moderna, política, ciência e tecnologia em linguagem editorial contemporânea.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/default-article.jpg">
+  <!-- PROCEDER:SEO_END -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
+  <script src="/assets/js/navigation.js" defer></script>
   <style>
     :root {
       --azul-profundo: #060D1E;
@@ -49,34 +68,73 @@
       background: linear-gradient(180deg, var(--azul-profundo), var(--azul-escuro));
     }
 
-    .home-link {
+    .site-nav {
       position: fixed;
       top: 22px;
       left: 24px;
+      right: 24px;
       z-index: 20;
-      display: inline-flex;
-      align-items: center;
+      display: flex;
       justify-content: center;
-      min-height: 38px;
-      padding: 9px 15px;
-      border: 1px solid rgba(201, 168, 76, 0.36);
+      pointer-events: none;
+    }
+
+    .site-nav-inner {
+      width: min(1180px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(201, 168, 76, 0.22);
       border-radius: 999px;
       background: rgba(6, 13, 30, 0.78);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+      pointer-events: auto;
+    }
+
+    .site-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       color: var(--dourado);
       font-family: 'Cinzel', serif;
-      font-size: 0.68rem;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      white-space: nowrap;
+    }
+
+    .site-brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--dourado);
+    }
+
+    .site-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .site-links a {
+      color: var(--branco-suave);
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
       font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
-      transition: transform 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+      transition: color 0.22s ease;
     }
 
-    .home-link:hover {
-      transform: translateY(-2px);
-      border-color: var(--dourado);
-      color: var(--dourado-claro);
+    .site-links a:hover,
+    .site-links .active {
+      color: var(--dourado);
     }
 
     .articles-grid {
@@ -296,19 +354,116 @@
       margin-bottom: 2rem;
     }
 
+    .reader-taxonomy {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--borda-dourada);
+    }
+
+    .taxonomy-meta,
+    .taxonomy-chips,
+    .taxonomy-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .taxonomy-meta span,
+    .taxonomy-pill,
+    .taxonomy-chips span,
+    .taxonomy-links span {
+      border: 1px solid rgba(201,168,76,.24);
+      border-radius: 999px;
+      color: var(--branco-suave);
+      font-size: .78rem;
+      padding: 7px 11px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .taxonomy-pill {
+      color: var(--dourado);
+      font-family: 'Cinzel', serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .taxonomy-links {
+      align-items: center;
+    }
+
+    .taxonomy-links strong,
+    .next-reading span,
+    .related-reading h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--dourado);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .next-reading {
+      margin: 30px 0;
+      padding: 22px;
+      border: 1px solid rgba(201,168,76,.22);
+      border-radius: 8px;
+      background: rgba(11,61,145,.18);
+    }
+
+    .next-reading a {
+      display: block;
+      margin-top: 8px;
+      font-family: 'Playfair Display', serif;
+      color: var(--branco);
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .related-reading h2 {
+      margin-bottom: 16px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 14px;
+    }
+
+    .related-card {
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: 8px;
+      padding: 16px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .related-card span {
+      display: block;
+      color: var(--dourado);
+      font-family: 'Cinzel', serif;
+      font-size: .62rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .related-card strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
     @media (max-width: 980px) {
       .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .related-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 680px) {
       main { padding: 76px 18px 58px; }
-      .home-link {
-        top: 16px;
-        left: 18px;
-        min-height: 36px;
-        padding: 8px 13px;
-        font-size: 0.64rem;
-      }
+      .site-nav { position: static; padding: 14px 18px 0; }
+      .site-nav-inner { align-items: flex-start; border-radius: 8px; flex-direction: column; }
+      .site-links { justify-content: flex-start; gap: 10px 14px; }
+      .site-links a { font-size: .58rem; }
       .articles-grid { grid-template-columns: 1fr; }
       .article-card { min-height: 0; }
       .article-image { height: 210px; }
@@ -317,11 +472,28 @@
       .article-meta { align-items: flex-start; flex-direction: column; gap: 8px; }
     }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Artigos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/artigos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
 </head>
 <body>
-  <a class="home-link" href="../">Home</a>
+  <nav class="site-nav" aria-label="Navegação principal">
+    <div class="site-nav-inner">
+      <a class="site-brand" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="libraryNav">Menu</button>
+      <div class="site-links" id="libraryNav">
+        <a href="/">Início</a>
+        <a class="active" href="/artigos/">Artigos</a>
+        <a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/biblioteca.html">Livros</a>
+        <a href="/sobre/">Sobre</a>
+        <a href="/#newsletter">Newsletter</a>
+      </div>
+    </div>
+  </nav>
   <main>
     <section class="articles-grid" id="articlesGrid"></section>
+    <!-- PROCEDER:ARTICLE_START -->
     <article class="reader" id="reader">
       <button class="back" id="backButton">Voltar aos artigos</button>
       <div class="reader-tag" id="readerTag"></div>
@@ -329,12 +501,15 @@
       <div class="reader-date" id="readerDate"></div>
       <div class="reader-content" id="readerContent"></div>
     </article>
+    <!-- PROCEDER:ARTICLE_END -->
   </main>
 
-  <script src="../posts.js?v=20260604-article-cards-v2"></script>
+  <script src="/posts.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/site-seo.js?v=20260611-architecture-seo"></script>
+  <script src="/assets/js/reader.js"></script>
   <script>
-    var ASSET_VERSION = '20260604-article-cards-v2';
-    var DEFAULT_THUMB = '../assets/default-article.jpg';
+    var ASSET_VERSION = '20260610-single-source';
+    var DEFAULT_THUMB = '/assets/default-article.jpg';
     var MONTHS_PT = {
       janeiro: 0, fevereiro: 1, marco: 2, 'março': 2, abril: 3,
       maio: 4, junho: 5, julho: 6, agosto: 7, setembro: 8,
@@ -349,8 +524,8 @@
 
     function assetUrl(value, index) {
       var raw = value || DEFAULT_THUMB;
-      if (/^https?:\/\//.test(raw) || raw.indexOf('../') === 0) return raw;
-      return '../' + raw.replace(/^\/+/, '');
+      if (/^https?:\/\//.test(raw)) return raw;
+      return '/' + raw.replace(/^\/+/, '').replace(/^(\.\.\/)+/, '');
     }
 
     function versionedAsset(value) {
@@ -378,7 +553,7 @@
     }
 
     function rewriteContent(content) {
-      return String(content || '').replace(/(src|href)="assets\//g, '$1="../assets/');
+      return window.ProcederReader.rewriteArticleContent(content);
     }
 
     function renderGrid() {
@@ -422,6 +597,7 @@
     function openPost(slug, updateUrl) {
       var post = findPost(slug);
       if (!post) return;
+      if (window.ProcederSEO) window.ProcederSEO.update(slug);
       document.body.classList.add('reading');
       document.getElementById('reader').classList.add('open');
       document.getElementById('readerTag').textContent = post.tag;
@@ -429,7 +605,7 @@
       document.getElementById('readerDate').textContent = post.date;
       document.getElementById('readerContent').innerHTML = rewriteContent(post.content);
       if (updateUrl !== false) {
-        history.pushState({ post: slug }, post.title, '?post=' + encodeURIComponent(slug));
+        history.pushState({ post: slug }, post.title, '/artigos/' + encodeURIComponent(slug) + '/');
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -437,22 +613,31 @@
     function closePost() {
       document.body.classList.remove('reading');
       document.getElementById('reader').classList.remove('open');
-      history.pushState({}, 'Artigos | Proceder Filosófico', './');
+      history.pushState({}, 'Artigos | Proceder Filosófico', '/artigos/');
+      if (window.ProcederSEO) window.ProcederSEO.reset();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     document.getElementById('backButton').addEventListener('click', closePost);
+    function routeSlug() {
+      var querySlug = new URLSearchParams(location.search).get('post');
+      if (querySlug) return querySlug;
+      var match = location.pathname.match(/^\/artigos\/([^/]+)\/?$/);
+      return match ? decodeURIComponent(match[1]) : null;
+    }
+
     window.addEventListener('popstate', function(){
-      var slug = new URLSearchParams(location.search).get('post');
+      var slug = routeSlug();
       if (slug) openPost(slug, false);
       else {
         document.body.classList.remove('reading');
         document.getElementById('reader').classList.remove('open');
+        if (window.ProcederSEO) window.ProcederSEO.reset();
       }
     });
 
     renderGrid();
-    var initialSlug = new URLSearchParams(location.search).get('post');
+    var initialSlug = routeSlug();
     if (initialSlug) openPost(initialSlug, false);
   </script>
 </body>

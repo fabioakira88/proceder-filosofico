@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://procederfilosofico.com.br/schemas/editorial-taxonomy.schema.json",
+  "title": "Proceder Filosofico Editorial Taxonomy",
+  "type": "object",
+  "required": ["schemaVersion", "categories", "relationshipFields"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "categories": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["id", "slug", "title", "description", "supports"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "title": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "supports": {
+            "type": "object",
+            "required": ["articles", "essays", "dossiers", "bibliography", "relatedAuthors"],
+            "properties": {
+              "articles": { "type": "boolean" },
+              "essays": { "type": "boolean" },
+              "dossiers": { "type": "boolean" },
+              "bibliography": { "type": "boolean" },
+              "relatedAuthors": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "relationshipFields": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

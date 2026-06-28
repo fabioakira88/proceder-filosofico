@@ -4,10 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biblioteca Filosófica — Proceder Filosófico</title>
+  <link rel="canonical" href="https://procederfilosofico.com.br/biblioteca.html">
   <meta name="description" content="Os grandes livros da filosofia ocidental — edições brasileiras e americanas com capas e links de afiliado Amazon.">
+  <meta property="og:title" content="Biblioteca Filosófica — Proceder Filosófico">
+  <meta property="og:description" content="Os grandes livros da filosofia ocidental — edições brasileiras e americanas com capas e links de afiliado Amazon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procederfilosofico.com.br/biblioteca.html">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biblioteca Filosófica — Proceder Filosófico">
+  <meta name="twitter:description" content="Os grandes livros da filosofia ocidental — edições brasileiras e americanas com capas e links de afiliado Amazon.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <script src="/assets/js/navigation.js" defer></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -113,23 +127,27 @@
     .footer a { color: var(--gold); text-decoration: none; }
     .footer a:hover { text-decoration: underline; }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Biblioteca | Proceder Filosófico", "url": "https://procederfilosofico.com.br/biblioteca.html", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="navbar-inner">
-    <a href="index.html" class="navbar-logo">
-      <img src="assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico">
+    <a href="/" class="navbar-logo">
+      <img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico">
       <span>Proceder Filosófico</span>
     </a>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="navbar-links" id="navLinks">
-      <li><a href="index.html#inicio">Início</a></li>
-      <li><a href="index.html#filosofos">Filósofos</a></li>
-      <li><a href="artigos/">Artigos</a></li>
+      <li><a href="/">Início</a></li>
+      <li><a href="/artigos/">Artigos</a></li>
+      <li><a href="/#categorias">Categorias</a></li>
+      <li><a href="/filosofos/">Filósofos</a></li>
+      <li><a href="/dossies/">Dossiês</a></li>
       <li><a href="biblioteca.html" class="active">Livros</a></li>
-      <li><a href="index.html#newsletter" class="navbar-cta">Assinar</a></li>
+      <li><a href="/sobre/">Sobre</a></li>
+      <li><a href="/#newsletter" class="navbar-cta">Newsletter</a></li>
     </ul>
   </div>
 </nav>
@@ -535,11 +553,6 @@ document.querySelectorAll('#filtros-usa .filt-btn').forEach(function(btn) {
     btn.classList.add('active');
     renderGrid(LIVROS_USA, 'grid-usa', 'contador-usa', btn.getAttribute('data-cat'), 'btn-usa', '🇺🇸 Buy in USA');
   });
-});
-
-/* ── HAMBURGER ───────────────────────────────── */
-document.getElementById('hamburger').addEventListener('click', function() {
-  document.getElementById('navLinks').classList.toggle('open');
 });
 
 /* ── INIT ────────────────────────────────────── */

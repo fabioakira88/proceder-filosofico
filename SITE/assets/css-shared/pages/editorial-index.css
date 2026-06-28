@@ -1,0 +1,36 @@
+/* Shared editorial listing helpers. Kept additive during Sprint 01C. */
+.page-head {
+  text-align: center;
+}
+
+.page-head h1 {
+  font-family: var(--pf-font-display);
+  letter-spacing: 0;
+  line-height: 1.06;
+}
+
+.area,
+.period {
+  scroll-margin-top: 90px;
+}
+
+.area-head,
+.period-head {
+  border-bottom-color: var(--pf-borda-dourada);
+}
+
+.count,
+.period-count {
+  font-family: var(--pf-font-label);
+  color: var(--pf-dourado);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.card {
+  border-color: var(--pf-border);
+}
+
+.card:hover {
+  border-color: rgba(201, 168, 76, .36);
+}

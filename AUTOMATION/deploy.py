@@ -17,6 +17,7 @@ Regra de deploy:
 
 import ftplib
 import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -45,11 +46,11 @@ FILE_TIMEOUT = int(os.getenv("FTP_FILE_TIMEOUT", "45"))
 # Arquivos da pasta SITE que devem ser enviados
 INCLUDE_EXTENSIONS = {
     ".html", ".js", ".css", ".png", ".jpg", ".jpeg",
-    ".svg", ".ico", ".webp", ".gif", ".pdf", ".txt", ".json",
+    ".svg", ".ico", ".webp", ".gif", ".pdf", ".txt", ".json", ".xml",
 }
 EXCLUDE_DIRS = {
     ".git", ".github", "__pycache__", "BACKUP", "EXPORTS", "DOCS", "docs",
-    "BRANDING", "AUTOMATION",
+    "BRANDING", "AUTOMATION", "wp-content", "wp-includes",
 }
 EXCLUDE_FILES = {
     ".env", ".env.example", "README.md",
@@ -107,6 +108,9 @@ def connect():
     return ftp
 
 def main():
+    print("Gerando sitemap.xml e robots.txt a partir de SITE/posts.js …", flush=True)
+    subprocess.run(["node", str(ROOT / "AUTOMATION" / "generate_seo.mjs")], check=True)
+
     check_env()
 
     files = collect_files()

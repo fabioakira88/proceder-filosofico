@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://procederfilosofico.com.br/schemas/home-editorial.schema.json",
+  "title": "Proceder Filosofico Home Editorial Rails",
+  "type": "object",
+  "required": ["schemaVersion", "rails"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "rails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "source", "enabled", "items"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "title": { "type": "string" },
+          "source": { "enum": ["manual", "category", "dossier", "format", "library"] },
+          "enabled": { "type": "boolean" },
+          "items": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

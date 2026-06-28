@@ -1,0 +1,62 @@
+{
+  "$schema": "./hubs.schema.json",
+  "schemaVersion": 1,
+  "hubs": [
+    {
+      "id": "filosofia-da-tecnologia-e-ia",
+      "slug": "filosofia-da-tecnologia-e-ia",
+      "type": "category",
+      "title": "Filosofia da Tecnologia e IA",
+      "label": "Área de estudo",
+      "description": "Uma leitura filosófica dos algoritmos, da inteligência artificial e da aceleração técnica que transforma a vida humana.",
+      "intro": "Este percurso reúne artigos sobre a relação entre técnica, atenção, consciência e responsabilidade. A tecnologia aparece aqui não apenas como ferramenta, mas como força capaz de reorganizar valores, hábitos e instituições.",
+      "tag": "FILOSOFIA DA TECNOLOGIA",
+      "postSlugs": [],
+      "metaTitle": "Filosofia da Tecnologia e IA | Proceder Filosófico",
+      "metaDescription": "Explore artigos sobre inteligência artificial, algoritmos, atenção, consciência e os limites éticos do progresso tecnológico.",
+      "image": "/assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png",
+      "updatedISO": "2026-06-12"
+    },
+    {
+      "id": "pre-socraticos",
+      "slug": "pre-socraticos",
+      "type": "curated",
+      "title": "Pré-Socráticos",
+      "label": "Percurso histórico",
+      "description": "Os primeiros filósofos gregos e as perguntas que inauguraram a investigação racional da natureza e da realidade.",
+      "intro": "Antes de Sócrates deslocar a filosofia para a vida ética da cidade, os primeiros pensadores gregos investigaram a origem, a mudança, a matéria e os limites da razão. Este percurso acompanha algumas dessas perguntas fundadoras.",
+      "postSlugs": [
+        "tales-mileto-arche",
+        "heraclito-duas-vezes-mesmo-rio",
+        "empedocles-amor-discordia",
+        "leucipo-atomismo",
+        "democrito-alma-corpo",
+        "zenao-paradoxos-realidade"
+      ],
+      "metaTitle": "Pré-Socráticos: Guia de Leitura | Proceder Filosófico",
+      "metaDescription": "Conheça Tales, Heráclito, Empédocles, Leucipo, Demócrito e Zenão em um percurso introdutório pelos pré-socráticos.",
+      "image": "/assets/article_cards/tales-mileto-arche.png",
+      "updatedISO": "2026-06-12"
+    },
+    {
+      "id": "atenas-classica",
+      "slug": "atenas-classica",
+      "type": "curated",
+      "title": "Atenas Clássica",
+      "label": "Percurso histórico",
+      "description": "Poesia, tragédia, retórica e filosofia na cidade que transformou a educação e o debate público no Ocidente.",
+      "intro": "Atenas tornou-se um laboratório intelectual no qual poetas, dramaturgos, sofistas e filósofos disputaram a formação do cidadão. Este percurso acompanha a passagem da educação poética ao exame filosófico da verdade e da vida pública.",
+      "postSlugs": [
+        "poetas-dramaturgos-educacao-grecia-antiga",
+        "sofistas-primeiros-mestres-persuasao",
+        "protagoras-medida-todas-coisas",
+        "socrates-metodo-maieutico",
+        "platao-mundo-das-ideias"
+      ],
+      "metaTitle": "Atenas Clássica: Educação, Retórica e Filosofia | Proceder Filosófico",
+      "metaDescription": "Explore a formação intelectual de Atenas Clássica por meio dos poetas, dramaturgos, sofistas, Sócrates e Platão.",
+      "image": "/assets/homero2.png",
+      "updatedISO": "2026-06-12"
+    }
+  ]
+}

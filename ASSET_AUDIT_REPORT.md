@@ -1,0 +1,716 @@
+# ASSET_AUDIT_REPORT.md — Proceder Filosófico
+
+Gerado em: 2026-06-25T17:48:19
+
+> **Nota de consolidação (Diretoria Criativa, 2026-06-26):** este relatório e `ASSET_REGISTRY.md`
+> foram gerados no mesmo timestamp, com as mesmas métricas resumidas — `ASSET_REGISTRY.md` é o
+> superconjunto (inventário arquivo-a-arquivo completo); este documento é o subconjunto focado em
+> quebras/duplicatas/peso. Recomendação registrada em `DOCUMENTATION_MAP.md`: próxima rodada de
+> auditoria de assets (Engenharia) deveria consolidar os dois em um único documento para evitar
+> manutenção duplicada. Nenhum dos dois foi alterado/removido nesta nota — é só sinalização.
+
+## Métricas
+
+- total_files_scanned: 1106
+- total_assets: 914
+- total_images: 883
+- used_images: 106
+- orphan_images: 777
+- broken_references: 338
+- duplicate_groups: 180
+- duplicate_files: 874
+- heavy_images: 422
+- very_heavy_images: 379
+- pages: 57
+- pages_without_og: 9
+- img_without_alt: 0
+- img_without_lazy: 21
+- json_errors: 0
+- internal_link_issues: 14
+
+## Métricas SITE/
+
+- site_assets: 723
+- site_images: 721
+- site_used_images: 106
+- site_orphan_images: 615
+- site_broken_references: 313
+- site_internal_link_issues: 14
+- site_pages: 54
+- site_pages_without_og: 6
+- site_img_without_alt: 0
+- site_img_without_lazy: 20
+- site_heavy_images: 338
+- site_very_heavy_images: 305
+
+## Quebras Detectadas
+
+- `README.md` referencia `../CONTENT/posts/nome-da-imagem.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/CONTENT/posts/nome-da-imagem.png`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `../posts.js?v=...` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/posts.js`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `Author_Steven_Pressfield,_June_2011.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/Author_Steven_Pressfield,_June_2011.jpeg`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `Sören Kierkegaard — Wikipédia.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/Sören Kierkegaard — Wikipédia.jpeg`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `posts.js?v=...` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/posts.js`
+- `CONTENT/briefings/2026-06-11-auditoria-trabalho-pendente.md` referencia `Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`
+- `CONTENT/briefings/2026-06-11-auditoria-editorial-completa-500-artigos.md` referencia `assets/site-seo.js?v=20260611-architecture-seo` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/assets/site-seo.js`
+- `CONTENT/briefings/2026-06-11-auditoria-editorial-completa-500-artigos.md` referencia `assets/default-article.jpg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/CONTENT/briefings/assets/default-article.jpg`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/ProstoOne-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/ProstoOne-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Bold.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Bold.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Cormorant-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Cormorant-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/FiraSans-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/FiraSans-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Gruppo-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Gruppo-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Prompt-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Prompt-Regular.ttf`
+- `SITE/index.html` referencia `Manual-de-Epicteto-Proceder-Filosofico.pdf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/Manual-de-Epicteto-Proceder-Filosofico.pdf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Poppins-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Poppins-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Lato-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Lato-Regular.ttf`
+- `SITE/index.html` referencia `a` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/a`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Catamaran-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Catamaran-Variable.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/NunitoSans-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/NunitoSans-Variable.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Roboto-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Roboto-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Manrope-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Manrope-Variable.ttf`
+- `SITE/index.html` referencia `\'' + s.image + '\` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/\'' + s.image + '\`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Trirong-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Trirong-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Caudex-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Caudex-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Junge-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Junge-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/TitilliumWeb-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/TitilliumWeb-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Prata-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Prata-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/feed/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/feed`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-MediumItalic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-MediumItalic.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-json/wp/v2/pages/68` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/wp/v2/pages/68`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/uploads/2026/05/manual-epicteto.pdf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/uploads/2026/05/manual-epicteto.pdf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/comments/feed/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/comments/feed`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/IBMPlexMono-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/IBMPlexMono-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-json/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Medium.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Medium.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/OpenSans-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/OpenSans-Variable.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSerifDisplay-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSerifDisplay-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/xmlrpc.php?rsd` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/xmlrpc.php`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Italic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Italic.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F&amp;format=xml` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/oembed/1.0/embed`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Montserrat-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Montserrat-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/PlayfairDisplay-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/PlayfairDisplay-Regular.ttf`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/oembed/1.0/embed`
+- `SITE/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-BoldItalic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-BoldItalic.ttf`
+- `SITE/biblioteca.html` referencia `isbn` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/isbn`
+- `SITE/biblioteca.html` referencia `l.isbn` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/l.isbn`
+- `SITE/biblioteca.html` referencia `-L.jpg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/-L.jpg`
+- `SITE/artigos/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/value, index`
+- `SITE/artigos/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/\`
+- `SITE/artigos/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/value`
+- `SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/value, index`
+- `SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/\`
+- `SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/value`
+- `SITE/artigos/sartre-liberdade-condenacao/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sartre-liberdade-condenacao/value, index`
+- `SITE/artigos/sartre-liberdade-condenacao/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sartre-liberdade-condenacao/value`
+- `SITE/artigos/sartre-liberdade-condenacao/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/sartre-liberdade-condenacao/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sartre-liberdade-condenacao/\`
+- `SITE/artigos/protagoras-medida-todas-coisas/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/protagoras-medida-todas-coisas/value, index`
+- `SITE/artigos/protagoras-medida-todas-coisas/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/protagoras-medida-todas-coisas/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/protagoras-medida-todas-coisas/\`
+- `SITE/artigos/protagoras-medida-todas-coisas/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/protagoras-medida-todas-coisas/value`
+- `SITE/artigos/laplace-sonho-razao-absoluta/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/laplace-sonho-razao-absoluta/value, index`
+- `SITE/artigos/laplace-sonho-razao-absoluta/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/laplace-sonho-razao-absoluta/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/laplace-sonho-razao-absoluta/\`
+- `SITE/artigos/laplace-sonho-razao-absoluta/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/laplace-sonho-razao-absoluta/value`
+- `SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/value, index`
+- `SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/\`
+- `SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/value`
+- `SITE/artigos/platao-mundo-das-ideias/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/platao-mundo-das-ideias/value, index`
+- `SITE/artigos/platao-mundo-das-ideias/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/platao-mundo-das-ideias/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/platao-mundo-das-ideias/\`
+- `SITE/artigos/platao-mundo-das-ideias/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/platao-mundo-das-ideias/value`
+- `SITE/artigos/arte-controle-humano/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/arte-controle-humano/value, index`
+- `SITE/artigos/arte-controle-humano/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/arte-controle-humano/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/arte-controle-humano/\`
+- `SITE/artigos/arte-controle-humano/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/arte-controle-humano/value`
+- `SITE/artigos/confucio-virtude-pratica/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confucio-virtude-pratica/value, index`
+- `SITE/artigos/confucio-virtude-pratica/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/confucio-virtude-pratica/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confucio-virtude-pratica/\`
+- `SITE/artigos/confucio-virtude-pratica/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confucio-virtude-pratica/value`
+- `SITE/artigos/balzac-escritor-alma-capitalismo/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/balzac-escritor-alma-capitalismo/value, index`
+- `SITE/artigos/balzac-escritor-alma-capitalismo/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/balzac-escritor-alma-capitalismo/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/balzac-escritor-alma-capitalismo/\`
+- `SITE/artigos/balzac-escritor-alma-capitalismo/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/balzac-escritor-alma-capitalismo/value`
+- `SITE/artigos/adorno-cultura-pensamento/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/adorno-cultura-pensamento/value, index`
+- `SITE/artigos/adorno-cultura-pensamento/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/adorno-cultura-pensamento/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/adorno-cultura-pensamento/\`
+- `SITE/artigos/adorno-cultura-pensamento/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/adorno-cultura-pensamento/value`
+- `SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/value, index`
+- `SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/\`
+- `SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/value`
+- `SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/value, index`
+- `SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/\`
+- `SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/value`
+- `SITE/artigos/conatus-espinosa-ontologia-esforco-existir/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conatus-espinosa-ontologia-esforco-existir/value, index`
+- `SITE/artigos/conatus-espinosa-ontologia-esforco-existir/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/conatus-espinosa-ontologia-esforco-existir/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conatus-espinosa-ontologia-esforco-existir/\`
+- `SITE/artigos/conatus-espinosa-ontologia-esforco-existir/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conatus-espinosa-ontologia-esforco-existir/value`
+- `SITE/artigos/sao-tomas-fe-razao-explicacao/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sao-tomas-fe-razao-explicacao/value, index`
+- `SITE/artigos/sao-tomas-fe-razao-explicacao/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/sao-tomas-fe-razao-explicacao/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sao-tomas-fe-razao-explicacao/\`
+- `SITE/artigos/sao-tomas-fe-razao-explicacao/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sao-tomas-fe-razao-explicacao/value`
+- `SITE/artigos/tecnologia-mais-rapida-que-sabedoria/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tecnologia-mais-rapida-que-sabedoria/value, index`
+- `SITE/artigos/tecnologia-mais-rapida-que-sabedoria/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/tecnologia-mais-rapida-que-sabedoria/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tecnologia-mais-rapida-que-sabedoria/\`
+- `SITE/artigos/tecnologia-mais-rapida-que-sabedoria/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tecnologia-mais-rapida-que-sabedoria/value`
+- `SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/value, index`
+- `SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/\`
+- `SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/value`
+- `SITE/artigos/socrates-metodo-maieutico/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/socrates-metodo-maieutico/value, index`
+- `SITE/artigos/socrates-metodo-maieutico/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/socrates-metodo-maieutico/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/socrates-metodo-maieutico/\`
+- `SITE/artigos/socrates-metodo-maieutico/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/socrates-metodo-maieutico/value`
+- `SITE/artigos/heraclito-duas-vezes-mesmo-rio/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/heraclito-duas-vezes-mesmo-rio/value, index`
+- `SITE/artigos/heraclito-duas-vezes-mesmo-rio/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/heraclito-duas-vezes-mesmo-rio/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/heraclito-duas-vezes-mesmo-rio/\`
+- `SITE/artigos/heraclito-duas-vezes-mesmo-rio/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/heraclito-duas-vezes-mesmo-rio/value`
+- `SITE/artigos/escolastica-latina-influencia-arabe/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escolastica-latina-influencia-arabe/value, index`
+- `SITE/artigos/escolastica-latina-influencia-arabe/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/escolastica-latina-influencia-arabe/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escolastica-latina-influencia-arabe/\`
+- `SITE/artigos/escolastica-latina-influencia-arabe/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escolastica-latina-influencia-arabe/value`
+- `SITE/artigos/sofistas-primeiros-mestres-persuasao/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sofistas-primeiros-mestres-persuasao/value, index`
+- `SITE/artigos/sofistas-primeiros-mestres-persuasao/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/sofistas-primeiros-mestres-persuasao/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sofistas-primeiros-mestres-persuasao/\`
+- `SITE/artigos/sofistas-primeiros-mestres-persuasao/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sofistas-primeiros-mestres-persuasao/value`
+- `SITE/artigos/zenao-paradoxos-realidade/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/zenao-paradoxos-realidade/value, index`
+- `SITE/artigos/zenao-paradoxos-realidade/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/zenao-paradoxos-realidade/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/zenao-paradoxos-realidade/\`
+- `SITE/artigos/zenao-paradoxos-realidade/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/zenao-paradoxos-realidade/value`
+- `SITE/artigos/descartes-cogito-ergo-sum/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/descartes-cogito-ergo-sum/value, index`
+- `SITE/artigos/descartes-cogito-ergo-sum/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/descartes-cogito-ergo-sum/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/descartes-cogito-ergo-sum/\`
+- `SITE/artigos/descartes-cogito-ergo-sum/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/descartes-cogito-ergo-sum/value`
+- `SITE/artigos/provar-deus-kant/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/provar-deus-kant/value, index`
+- `SITE/artigos/provar-deus-kant/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/provar-deus-kant/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/provar-deus-kant/\`
+- `SITE/artigos/provar-deus-kant/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/provar-deus-kant/value`
+- `SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/value, index`
+- `SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/\`
+- `SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/value`
+- `SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/value, index`
+- `SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/\`
+- `SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/value`
+- `SITE/artigos/escala-6x1-trabalho-tempo-vida/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escala-6x1-trabalho-tempo-vida/value, index`
+- `SITE/artigos/escala-6x1-trabalho-tempo-vida/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/escala-6x1-trabalho-tempo-vida/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escala-6x1-trabalho-tempo-vida/\`
+- `SITE/artigos/escala-6x1-trabalho-tempo-vida/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/escala-6x1-trabalho-tempo-vida/value`
+- `SITE/artigos/nietzsche-obras-impacto-revolucionario/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nietzsche-obras-impacto-revolucionario/value, index`
+- `SITE/artigos/nietzsche-obras-impacto-revolucionario/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/nietzsche-obras-impacto-revolucionario/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nietzsche-obras-impacto-revolucionario/\`
+- `SITE/artigos/nietzsche-obras-impacto-revolucionario/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nietzsche-obras-impacto-revolucionario/value`
+- `SITE/artigos/nostalgia-forma-consciencia-historica/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nostalgia-forma-consciencia-historica/value, index`
+- `SITE/artigos/nostalgia-forma-consciencia-historica/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nostalgia-forma-consciencia-historica/value`
+- `SITE/artigos/nostalgia-forma-consciencia-historica/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/nostalgia-forma-consciencia-historica/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/nostalgia-forma-consciencia-historica/\`
+- `SITE/artigos/confissoes-santo-agostinho/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confissoes-santo-agostinho/value, index`
+- `SITE/artigos/confissoes-santo-agostinho/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/confissoes-santo-agostinho/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confissoes-santo-agostinho/\`
+- `SITE/artigos/confissoes-santo-agostinho/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/confissoes-santo-agostinho/value`
+- `SITE/artigos/leucipo-atomismo/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/leucipo-atomismo/value, index`
+- `SITE/artigos/leucipo-atomismo/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/leucipo-atomismo/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/leucipo-atomismo/\`
+- `SITE/artigos/leucipo-atomismo/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/leucipo-atomismo/value`
+- `SITE/artigos/locke-tabula-rasa/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/locke-tabula-rasa/value, index`
+- `SITE/artigos/locke-tabula-rasa/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/locke-tabula-rasa/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/locke-tabula-rasa/\`
+- `SITE/artigos/locke-tabula-rasa/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/locke-tabula-rasa/value`
+- `SITE/artigos/formigas-diante-do-universo/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/formigas-diante-do-universo/value, index`
+- `SITE/artigos/formigas-diante-do-universo/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/formigas-diante-do-universo/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/formigas-diante-do-universo/\`
+- `SITE/artigos/formigas-diante-do-universo/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/formigas-diante-do-universo/value`
+- `SITE/artigos/sociedade-moderna-destruiu-silencio/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sociedade-moderna-destruiu-silencio/value, index`
+- `SITE/artigos/sociedade-moderna-destruiu-silencio/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/sociedade-moderna-destruiu-silencio/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sociedade-moderna-destruiu-silencio/\`
+- `SITE/artigos/sociedade-moderna-destruiu-silencio/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/sociedade-moderna-destruiu-silencio/value`
+- `SITE/artigos/o-que-e-a-metafisica/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/o-que-e-a-metafisica/value, index`
+- `SITE/artigos/o-que-e-a-metafisica/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/o-que-e-a-metafisica/value`
+- `SITE/artigos/o-que-e-a-metafisica/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/o-que-e-a-metafisica/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/o-que-e-a-metafisica/\`
+- `SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/value, index`
+- `SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/\`
+- `SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/value`
+- `SITE/artigos/empedocles-amor-discordia/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/empedocles-amor-discordia/value, index`
+- `SITE/artigos/empedocles-amor-discordia/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/empedocles-amor-discordia/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/empedocles-amor-discordia/\`
+- `SITE/artigos/empedocles-amor-discordia/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/empedocles-amor-discordia/value`
+- `SITE/artigos/epicuro-pouco-suficiencia-desejo/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/epicuro-pouco-suficiencia-desejo/value, index`
+- `SITE/artigos/epicuro-pouco-suficiencia-desejo/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/epicuro-pouco-suficiencia-desejo/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/epicuro-pouco-suficiencia-desejo/\`
+- `SITE/artigos/epicuro-pouco-suficiencia-desejo/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/epicuro-pouco-suficiencia-desejo/value`
+- `SITE/artigos/humanidade-trocou-contemplacao-por-distracao/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/humanidade-trocou-contemplacao-por-distracao/value, index`
+- `SITE/artigos/humanidade-trocou-contemplacao-por-distracao/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/humanidade-trocou-contemplacao-por-distracao/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/humanidade-trocou-contemplacao-por-distracao/\`
+- `SITE/artigos/humanidade-trocou-contemplacao-por-distracao/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/humanidade-trocou-contemplacao-por-distracao/value`
+- `SITE/artigos/einstein-revolucao-fisica-moderna/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/einstein-revolucao-fisica-moderna/value, index`
+- `SITE/artigos/einstein-revolucao-fisica-moderna/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/einstein-revolucao-fisica-moderna/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/einstein-revolucao-fisica-moderna/\`
+- `SITE/artigos/einstein-revolucao-fisica-moderna/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/einstein-revolucao-fisica-moderna/value`
+- `SITE/artigos/democrito-alma-corpo/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/democrito-alma-corpo/value, index`
+- `SITE/artigos/democrito-alma-corpo/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/democrito-alma-corpo/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/democrito-alma-corpo/\`
+- `SITE/artigos/democrito-alma-corpo/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/democrito-alma-corpo/value`
+- `SITE/artigos/kierkegaard-conhecer-se/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/kierkegaard-conhecer-se/value, index`
+- `SITE/artigos/kierkegaard-conhecer-se/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/kierkegaard-conhecer-se/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/kierkegaard-conhecer-se/\`
+- `SITE/artigos/kierkegaard-conhecer-se/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/kierkegaard-conhecer-se/value`
+- `SITE/artigos/tales-mileto-arche/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tales-mileto-arche/value, index`
+- `SITE/artigos/tales-mileto-arche/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/tales-mileto-arche/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tales-mileto-arche/\`
+- `SITE/artigos/tales-mileto-arche/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/tales-mileto-arche/value`
+- `SITE/artigos/modernidade-matou-sagrado/index.html` referencia `value, index` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/modernidade-matou-sagrado/value, index`
+- `SITE/artigos/modernidade-matou-sagrado/index.html` referencia `/artigos/$1/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/$1`
+- `SITE/artigos/modernidade-matou-sagrado/index.html` referencia `\?post=([^` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/modernidade-matou-sagrado/\`
+- `SITE/artigos/modernidade-matou-sagrado/index.html` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/artigos/modernidade-matou-sagrado/value`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/ProstoOne-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/ProstoOne-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Bold.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Bold.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Cormorant-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Cormorant-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/siegfried.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/siegfried.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/FiraSans-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/FiraSans-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Gruppo-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Gruppo-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Prompt-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Prompt-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `Manual-de-Epicteto-Proceder-Filosofico.pdf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/Manual-de-Epicteto-Proceder-Filosofico.pdf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Poppins-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Poppins-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Lato-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Lato-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `a` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/a`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Catamaran-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Catamaran-Variable.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/NunitoSans-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/NunitoSans-Variable.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Roboto-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Roboto-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Manrope-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Manrope-Variable.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `\'' + s.image + '\` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/\'' + s.image + '\`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Trirong-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Trirong-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/religiao-e-filosofia.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/religiao-e-filosofia.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/sto-agostinho.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/sto-agostinho.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Caudex-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Caudex-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Junge-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Junge-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/TitilliumWeb-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/TitilliumWeb-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/kant.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/kant.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Prata-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Prata-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/feed/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/feed`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-MediumItalic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-MediumItalic.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-json/wp/v2/pages/68` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/wp/v2/pages/68`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/uploads/2026/05/manual-epicteto.pdf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/uploads/2026/05/manual-epicteto.pdf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/comments/feed/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/comments/feed`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/IBMPlexMono-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/IBMPlexMono-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-json/` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/existencialismo.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/existencialismo.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Medium.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Medium.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/OpenSans-Variable.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/OpenSans-Variable.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSerifDisplay-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSerifDisplay-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/peter-pan.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/peter-pan.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/xmlrpc.php?rsd` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/xmlrpc.php`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Italic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-Italic.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `assets/post_cards/aristoteles.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/post_cards/aristoteles.jpeg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F&amp;format=xml` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/oembed/1.0/embed`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/Montserrat-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/Montserrat-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/PlayfairDisplay-Regular.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/PlayfairDisplay-Regular.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-json/oembed/1.0/embed`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` referencia `https://procederfilosofico.com.br/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-BoldItalic.ttf` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/wp-content/themes/hostinger-ai-theme/assets/fonts/DMSans-BoldItalic.ttf`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` referencia `isbn` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/isbn`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` referencia `l.isbn` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/l.isbn`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` referencia `-L.jpg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/-L.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/jquery.min.js` referencia `u.src,{nonce:u.nonce||u.getAttribute("nonce` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/docs/backups/proceder-fase1-20260601-110542/assets/u.src,{nonce:u.nonce||u.getAttribute("nonce`
+- `SITE/conteudo/index.html` referencia `assets/default-article.jpg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/conteudo/assets/default-article.jpg`
+- `SITE/data/hubs.schema.json` referencia `https://procederfilosofico.com.br/schemas/hubs.schema.json` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/schemas/hubs.schema.json`
+- `SITE/data/hubs.json` referencia `assets/homero2.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/data/assets/homero2.png`
+- `SITE/data/hubs.json` referencia `assets/article_cards/tales-mileto-arche.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/data/assets/article_cards/tales-mileto-arche.png`
+- `SITE/data/hubs.json` referencia `assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/data/assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png`
+- `SITE/assets/jquery.min.js` referencia `u.src,{nonce:u.nonce||u.getAttribute("nonce` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/assets/u.src,{nonce:u.nonce||u.getAttribute("nonce`
+- `SITE/assets/site-seo.js` referencia `value` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/assets/value`
+- `SITE/assets/site-seo.js` referencia `post.cover || post.thumb` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/assets/post.cover || post.thumb`
+- `SITE/src/data/quote-slides.js` referencia `assets/frase-platao.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/frase-platao.png`
+- `SITE/src/data/quote-slides.js` referencia `assets/frase-seneca.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/frase-seneca.png`
+- `SITE/src/data/quote-slides.js` referencia `assets/frase-jean-paul-sartrepost.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/frase-jean-paul-sartrepost.png`
+- `SITE/src/data/quote-slides.js` referencia `assets/frase-socrates-post.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/frase-socrates-post.png`
+- `SITE/src/data/quote-slides.js` referencia `assets/frase-marco-aurelio.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/frase-marco-aurelio.png`
+- `SITE/src/data/content-areas.js` referencia `assets/26ea.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/26ea.svg`
+- `SITE/src/data/content-areas.js` referencia `assets/2696.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/2696.svg`
+- `SITE/src/data/content-areas.js` referencia `assets/1f3db.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/1f3db.svg`
+- `SITE/src/data/content-areas.js` referencia `assets/1f52d.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/1f52d.svg`
+- `SITE/src/data/content-areas.js` referencia `assets/1f9e0.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/1f9e0.svg`
+- `SITE/src/data/content-areas.js` referencia `assets/1f4a1.svg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/1f4a1.svg`
+- `SITE/src/data/philosophers.js` referencia `assets/tolstoy.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/tolstoy.png`
+- `SITE/src/data/philosophers.js` referencia `assets/homero.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/homero.png`
+- `SITE/src/data/philosophers.js` referencia `assets/sartre1.JPG` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/sartre1.JPG`
+- `SITE/src/data/philosophers.js` referencia `assets/Sophocles.png` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/Sophocles.png`
+- `SITE/src/data/philosophers.js` referencia `assets/aristoteles-mestre.jpeg` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/aristoteles-mestre.jpeg`
+- `SITE/src/data/philosophers.js` referencia `assets/soren.JPG` -> `/Users/fabiotsugawa/Downloads/DIGITAL_PROJECTS:/PROCEDER_FILOSOFICO:/SITE/src/data/assets/soren.JPG`
+- ... mais 38 itens
+
+## Links Internos Quebrados
+
+- `SITE/index.html` -> `https://procederfilosofico.com.br/feed/`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/comments/feed/`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F&format=xml`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/wp-json/`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/wp-json/wp/v2/pages/68`
+- `SITE/index.html` -> `https://procederfilosofico.com.br/xmlrpc.php?rsd`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/feed/`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/comments/feed/`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprocederfilosofico.com.br%2F&format=xml`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/wp-json/`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/wp-json/wp/v2/pages/68`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` -> `https://procederfilosofico.com.br/xmlrpc.php?rsd`
+
+## Imagens Muito Pesadas (>1MB)
+
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/zBmXzIGbgLLlbNyh.jpg` — 7911.8 KB — HEAVY
+- `SITE/public/images/hero/zBmXzIGbgLLlbNyh.jpg` — 7911.8 KB — ORPHAN
+- `SITE/assets/zBmXzIGbgLLlbNyh.jpg` — 7911.8 KB — HEAVY
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/yPCECtiDBKjEdTjP.jpg` — 6131.4 KB — HEAVY
+- `SITE/public/images/hero/yPCECtiDBKjEdTjP.jpg` — 6131.4 KB — ORPHAN
+- `SITE/assets/yPCECtiDBKjEdTjP.jpg` — 6131.4 KB — HEAVY
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/wPdrfjjEMXEymTcc.jpg` — 5918.2 KB — HEAVY
+- `SITE/public/images/hero/wPdrfjjEMXEymTcc.jpg` — 5918.2 KB — ORPHAN
+- `SITE/assets/wPdrfjjEMXEymTcc.jpg` — 5918.2 KB — HEAVY
+- `SITE/assets/article_cards/sao-tomas-fe-razao-explicacao.png` — 5918.2 KB — HEAVY
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/AJPBTuUJaFhjwjvx.jpg` — 5512.2 KB — HEAVY
+- `SITE/public/images/hero/AJPBTuUJaFhjwjvx.jpg` — 5512.2 KB — ORPHAN
+- `SITE/assets/AJPBTuUJaFhjwjvx.jpg` — 5512.2 KB — HEAVY
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/FLaneKfrfyGYOgJd.jpg` — 5264.3 KB — HEAVY
+- `SITE/public/images/hero/FLaneKfrfyGYOgJd.jpg` — 5264.3 KB — ORPHAN
+- `SITE/assets/FLaneKfrfyGYOgJd.jpg` — 5264.3 KB — HEAVY
+- `BRANDING/Filósofos /voltaire.png` — 3680.2 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/voltaire.png` — 3680.2 KB — ORPHAN
+- `SITE/public/images/philosophers/voltaire.png` — 3680.2 KB — ORPHAN
+- `SITE/assets/voltaire.png` — 3680.2 KB — ORPHAN
+- `SITE/assets/Filósofos/voltaire.png` — 3680.2 KB — ORPHAN
+- `BRANDING/frases/frase-seneca.png` — 3550.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-seneca.png` — 3550.3 KB — HEAVY
+- `SITE/public/images/quotes/frase-seneca.png` — 3550.3 KB — ORPHAN
+- `SITE/assets/frase-seneca.png` — 3550.3 KB — HEAVY
+- `BRANDING/frases/frase-epicuro.png` — 3242.7 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-epicuro.png` — 3242.7 KB — HEAVY
+- `SITE/public/images/quotes/frase-epicuro.png` — 3242.7 KB — ORPHAN
+- `SITE/assets/frase-epicuro.png` — 3242.7 KB — ORPHAN
+- `SITE/assets/article_cards/epicuro-pouco-suficiencia-desejo.png` — 3242.7 KB — HEAVY
+- `BRANDING/frases/frase-tales.png` — 3219.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-tales.png` — 3219.0 KB — ORPHAN
+- `SITE/public/images/quotes/frase-tales.png` — 3219.0 KB — ORPHAN
+- `SITE/assets/frase-tales.png` — 3219.0 KB — ORPHAN
+- `BRANDING/frases/frase-marco-aurelio.png` — 3105.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-marco-aurelio.png` — 3105.3 KB — HEAVY
+- `SITE/public/images/quotes/frase-marco-aurelio.png` — 3105.3 KB — ORPHAN
+- `SITE/assets/frase-marco-aurelio.png` — 3105.3 KB — HEAVY
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/metafisica-post.png` — 2575.3 KB — HEAVY
+- `SITE/public/images/posts/metafisica-post.png` — 2575.3 KB — ORPHAN
+- `SITE/assets/metafisica-post.png` — 2575.3 KB — ORPHAN
+- `SITE/assets/article_cards/o-que-e-a-metafisica.png` — 2575.3 KB — HEAVY
+- `BRANDING/Filósofos /Escola-athenas.jpg` — 2411.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Escola-athenas.jpg` — 2411.0 KB — ORPHAN
+- `SITE/public/images/philosophers/Escola-athenas.jpg` — 2411.0 KB — ORPHAN
+- `SITE/assets/Escola-athenas.jpg` — 2411.0 KB — HEAVY
+- `SITE/assets/Filósofos/Escola-athenas.jpg` — 2411.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/(Lote 1) Citação.png` — 2395.6 KB — ORPHAN
+- `SITE/public/images/quotes/(Lote 1) Citação.png` — 2395.6 KB — ORPHAN
+- `SITE/assets/(Lote 1) Citação.png` — 2395.6 KB — ORPHAN
+- `BRANDING/Filósofos /plotino.png` — 2208.5 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/plotino.png` — 2208.5 KB — ORPHAN
+- `SITE/public/images/philosophers/plotino.png` — 2208.5 KB — ORPHAN
+- `SITE/assets/plotino.png` — 2208.5 KB — ORPHAN
+- `SITE/assets/Filósofos/plotino.png` — 2208.5 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/post2.png` — 2169.7 KB — HEAVY
+- `SITE/public/images/posts/post2.png` — 2169.7 KB — ORPHAN
+- `SITE/assets/post2.png` — 2169.7 KB — ORPHAN
+- `SITE/assets/article_cards/escala-6x1-trabalho-tempo-vida.png` — 2169.7 KB — HEAVY
+- `BRANDING/Filósofos /tales de mileto.png` — 2139.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/tales de mileto.png` — 2139.3 KB — ORPHAN
+- `SITE/public/images/philosophers/tales de mileto.png` — 2139.3 KB — ORPHAN
+- `SITE/assets/tales de mileto.png` — 2139.3 KB — ORPHAN
+- `SITE/assets/Filósofos/tales de mileto.png` — 2139.3 KB — ORPHAN
+- `BRANDING/Filósofos /Pitágoras1.png` — 2129.1 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Pitágoras1.png` — 2129.1 KB — ORPHAN
+- `SITE/public/images/philosophers/Pitágoras1.png` — 2129.1 KB — ORPHAN
+- `SITE/assets/Pitágoras1.png` — 2129.1 KB — ORPHAN
+- `SITE/assets/Filósofos/Pitágoras1.png` — 2129.1 KB — ORPHAN
+- `BRANDING/frases/frase-locke.png` — 2106.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-locke.png` — 2106.0 KB — ORPHAN
+- `SITE/public/images/quotes/frase-locke.png` — 2106.0 KB — ORPHAN
+- `SITE/assets/frase-locke.png` — 2106.0 KB — ORPHAN
+- `BRANDING/Filósofos /democrito2.png` — 2077.5 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/democrito2.png` — 2077.5 KB — ORPHAN
+- `SITE/public/images/philosophers/democrito2.png` — 2077.5 KB — ORPHAN
+- `SITE/assets/democrito2.png` — 2077.5 KB — ORPHAN
+- `SITE/assets/Filósofos/democrito2.png` — 2077.5 KB — ORPHAN
+- `BRANDING/Filósofos /Avicena.png` — 2072.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Avicena.png` — 2072.3 KB — ORPHAN
+- `SITE/public/images/philosophers/Avicena.png` — 2072.3 KB — ORPHAN
+- `SITE/assets/Avicena.png` — 2072.3 KB — ORPHAN
+- `SITE/assets/Filósofos/Avicena.png` — 2072.3 KB — ORPHAN
+- `SITE/assets/article_cards/escolastica-latina-influencia-arabe.png` — 2072.3 KB — HEAVY
+- `BRANDING/Filósofos /lao Tsé.png` — 2068.6 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/lao Tsé.png` — 2068.6 KB — ORPHAN
+- `SITE/public/images/philosophers/lao Tsé.png` — 2068.6 KB — ORPHAN
+- `SITE/assets/lao Tsé.png` — 2068.6 KB — ORPHAN
+- `SITE/assets/Filósofos/lao Tsé.png` — 2068.6 KB — ORPHAN
+- `BRANDING/Filósofos /fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png` — 2059.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png` — 2059.0 KB — ORPHAN
+- `SITE/public/images/philosophers/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png` — 2059.0 KB — ORPHAN
+- `SITE/assets/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png` — 2059.0 KB — ORPHAN
+- `SITE/assets/Filósofos/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png` — 2059.0 KB — ORPHAN
+- `BRANDING/Filósofos /Talesdemileto.png` — 2058.0 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Talesdemileto.png` — 2058.0 KB — HEAVY
+- `SITE/public/images/philosophers/Talesdemileto.png` — 2058.0 KB — ORPHAN
+- `SITE/assets/Talesdemileto.png` — 2058.0 KB — ORPHAN
+- `SITE/assets/Filósofos/Talesdemileto.png` — 2058.0 KB — ORPHAN
+- `SITE/assets/article_cards/tales-mileto-arche.png` — 2058.0 KB — HEAVY
+- `BRANDING/frases/frase-adorno.png` — 2056.4 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-adorno.png` — 2056.4 KB — HEAVY
+- `SITE/public/images/quotes/frase-adorno.png` — 2056.4 KB — ORPHAN
+- `SITE/assets/frase-adorno.png` — 2056.4 KB — ORPHAN
+- `SITE/assets/article_cards/adorno-cultura-pensamento.png` — 2056.4 KB — HEAVY
+- `BRANDING/Filósofos /Euripides2.png` — 2052.2 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Euripides2.png` — 2052.2 KB — ORPHAN
+- `SITE/public/images/philosophers/Euripides2.png` — 2052.2 KB — ORPHAN
+- `SITE/assets/Euripides2.png` — 2052.2 KB — ORPHAN
+- `SITE/assets/Filósofos/Euripides2.png` — 2052.2 KB — ORPHAN
+- `BRANDING/LOGO/7.png` — 2051.2 KB — ORPHAN
+- `BRANDING/frases/frase-michel-f4.png` — 2040.2 KB — ORPHAN
+- `BRANDING/Filósofos /Sólon.png` — 2010.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Sólon.png` — 2010.3 KB — ORPHAN
+- `SITE/public/images/philosophers/Sólon.png` — 2010.3 KB — ORPHAN
+- `SITE/assets/Sólon.png` — 2010.3 KB — ORPHAN
+- `SITE/assets/Filósofos/Sólon.png` — 2010.3 KB — ORPHAN
+- `BRANDING/Filósofos /homero2.png` — 1993.9 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/homero2.png` — 1993.9 KB — ORPHAN
+- `SITE/public/images/philosophers/homero2.png` — 1993.9 KB — ORPHAN
+- `SITE/assets/homero2.png` — 1993.9 KB — HEAVY
+- `SITE/assets/Filósofos/homero2.png` — 1993.9 KB — ORPHAN
+- `BRANDING/Filósofos /hesíodo.png` — 1987.4 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/hesíodo.png` — 1987.4 KB — ORPHAN
+- `SITE/public/images/philosophers/hesíodo.png` — 1987.4 KB — ORPHAN
+- `SITE/assets/hesíodo.png` — 1987.4 KB — HEAVY
+- `SITE/assets/Filósofos/hesíodo.png` — 1987.4 KB — ORPHAN
+- `BRANDING/Filósofos /fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png` — 1985.5 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png` — 1985.5 KB — ORPHAN
+- `SITE/public/images/philosophers/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png` — 1985.5 KB — ORPHAN
+- `SITE/assets/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png` — 1985.5 KB — ORPHAN
+- `SITE/assets/Filósofos/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png` — 1985.5 KB — ORPHAN
+- `BRANDING/Filósofos /Zenãodecitio1.png` — 1970.3 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zenãodecitio1.png` — 1970.3 KB — ORPHAN
+- `SITE/public/images/philosophers/Zenãodecitio1.png` — 1970.3 KB — ORPHAN
+- `SITE/assets/Zenãodecitio1.png` — 1970.3 KB — ORPHAN
+- `SITE/assets/Filósofos/Zenãodecitio1.png` — 1970.3 KB — ORPHAN
+- `BRANDING/Filósofos /Sophocles2.png` — 1948.4 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Sophocles2.png` — 1948.4 KB — ORPHAN
+- `SITE/public/images/philosophers/Sophocles2.png` — 1948.4 KB — ORPHAN
+- `SITE/assets/Sophocles2.png` — 1948.4 KB — ORPHAN
+- `SITE/assets/Filósofos/Sophocles2.png` — 1948.4 KB — ORPHAN
+- `BRANDING/Filósofos /democrito.png` — 1916.4 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/democrito.png` — 1916.4 KB — HEAVY
+- `SITE/public/images/philosophers/democrito.png` — 1916.4 KB — ORPHAN
+- `SITE/assets/democrito.png` — 1916.4 KB — ORPHAN
+- `SITE/assets/Filósofos/democrito.png` — 1916.4 KB — ORPHAN
+- `SITE/assets/article_cards/democrito-alma-corpo.png` — 1916.4 KB — HEAVY
+- `BRANDING/Filósofos /Epicteto.png` — 1904.9 KB — ORPHAN
+- `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Epicteto.png` — 1904.9 KB — ORPHAN
+- ... mais 229 imagens
+
+## Duplicatas por Hash
+
+- 12 arquivos iguais: `BRANDING/Filósofos /IMG_2546 2.JPG`, `BRANDING/Filósofos /marco-aurelio.JPG`, `SITE/assets/Filósofos/IMG_2546 2.JPG`, `SITE/assets/Filósofos/marco-aurelio.JPG`, `SITE/assets/IMG_2546 2.JPG`, `SITE/assets/marco-aurelio.JPG` (+6)
+- 10 arquivos iguais: `BRANDING/Filósofos /santo_agostinho.jpeg`, `SITE/assets/Filósofos/santo_agostinho.jpeg`, `SITE/assets/santo_agostinho 2.jpeg`, `SITE/assets/santo_agostinho.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/santo_agostinho.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/santo_agostinho 2.jpeg` (+4)
+- 9 arquivos iguais: `BRANDING/Filósofos /Kant.jpeg`, `SITE/assets/Filósofos/Kant.jpeg`, `SITE/assets/article_cards/provar-deus-kant.jpeg`, `SITE/assets/kant.jpeg`, `SITE/assets/post_cards/kant.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Kant.jpeg` (+3)
+- 9 arquivos iguais: `BRANDING/Filósofos /laplace.JPG`, `SITE/assets/Filósofos/laplace.JPG`, `SITE/assets/article_cards/laplace-sonho-razao-absoluta.jpeg`, `SITE/assets/laplace.JPG`, `SITE/assets/laplace.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/laplace.JPG` (+3)
+- 9 arquivos iguais: `BRANDING/Filósofos /Bernini - The Rape of Proserpina.jpeg`, `SITE/assets/Bernini - The Rape of Proserpina.jpeg`, `SITE/assets/Filósofos/Bernini - The Rape of Proserpina.jpeg`, `SITE/assets/article_cards/arte-controle-humano.jpeg`, `SITE/assets/bernini-proserpina.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Bernini - The Rape of Proserpina.jpeg` (+3)
+- 9 arquivos iguais: `BRANDING/Filósofos /Søren Kierkegaard — Wikipédia.jpeg`, `SITE/assets/Filósofos/Søren Kierkegaard — Wikipédia.jpeg`, `SITE/assets/Søren Kierkegaard — Wikipédia.jpeg`, `SITE/assets/article_cards/kierkegaard-conhecer-se.jpeg`, `SITE/assets/soren-kierkegaard.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Søren Kierkegaard — Wikipédia.jpeg` (+3)
+- 9 arquivos iguais: `BRANDING/Filósofos /BALZAK.JPG`, `SITE/assets/BALZAK.JPG`, `SITE/assets/Filósofos/BALZAK.JPG`, `SITE/assets/article_cards/balzac-escritor-alma-capitalismo.jpeg`, `SITE/assets/balzac.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/BALZAK.JPG` (+3)
+- 8 arquivos iguais: `BRANDING/Filósofos /heraclito.png`, `SITE/assets/Filósofos/heraclito.png`, `SITE/assets/article_cards/heraclito-duas-vezes-mesmo-rio.png`, `SITE/assets/heraclito.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/heraclito.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/heraclito.png` (+2)
+- 7 arquivos iguais: `BRANDING/Filósofos /hannah-arendt.jpg`, `SITE/assets/Filósofos/hannah-arendt.jpg`, `SITE/assets/hannah-arendt.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/hannah-arendt.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/hannah-arendt.jpg`, `SITE/public/images/philosophers/hannah-arendt.jpg` (+1)
+- 6 arquivos iguais: `BRANDING/Filósofos /Agostinho.JPG`, `SITE/assets/Agostinho.JPG`, `SITE/assets/Filósofos/Agostinho.JPG`, `SITE/assets/article_cards/confissoes-santo-agostinho.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Agostinho.JPG`, `SITE/public/images/philosophers/Agostinho.JPG`
+- 6 arquivos iguais: `BRANDING/Filósofos /Albert.JPG`, `SITE/assets/Albert.JPG`, `SITE/assets/Filósofos/Albert.JPG`, `SITE/assets/article_cards/einstein-revolucao-fisica-moderna.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Albert.JPG`, `SITE/public/images/philosophers/Albert.JPG`
+- 6 arquivos iguais: `BRANDING/Filósofos /Platão.png`, `SITE/assets/Filósofos/Platão.png`, `SITE/assets/Platão.png`, `SITE/assets/article_cards/platao-mundo-das-ideias.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Platão.png`, `SITE/public/images/philosophers/Platão.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /democrito.png`, `SITE/assets/Filósofos/democrito.png`, `SITE/assets/article_cards/democrito-alma-corpo.png`, `SITE/assets/democrito.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/democrito.png`, `SITE/public/images/philosophers/democrito.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /Empédocles.png`, `SITE/assets/Empédocles.png`, `SITE/assets/Filósofos/Empédocles.png`, `SITE/assets/article_cards/empedocles-amor-discordia.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Empédocles.png`, `SITE/public/images/philosophers/Empédocles.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /Confúcio.jpeg`, `SITE/assets/Confúcio.jpeg`, `SITE/assets/Filósofos/Confúcio.jpeg`, `SITE/assets/article_cards/confucio-virtude-pratica.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Confúcio.jpeg`, `SITE/public/images/philosophers/Confúcio.jpeg`
+- 6 arquivos iguais: `BRANDING/Filósofos /Leucipo de Mileto .png`, `SITE/assets/Filósofos/Leucipo de Mileto.png`, `SITE/assets/Leucipo de Mileto.png`, `SITE/assets/article_cards/leucipo-atomismo.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Leucipo de Mileto.png`, `SITE/public/images/philosophers/Leucipo de Mileto.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /Talesdemileto.png`, `SITE/assets/Filósofos/Talesdemileto.png`, `SITE/assets/Talesdemileto.png`, `SITE/assets/article_cards/tales-mileto-arche.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Talesdemileto.png`, `SITE/public/images/philosophers/Talesdemileto.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /jonh-locke.JPG`, `SITE/assets/Filósofos/jonh-locke.JPG`, `SITE/assets/article_cards/locke-tabula-rasa.jpg`, `SITE/assets/jonh-locke.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/jonh-locke.JPG`, `SITE/public/images/philosophers/jonh-locke.JPG`
+- 6 arquivos iguais: `BRANDING/Filósofos /Avicena.png`, `SITE/assets/Avicena.png`, `SITE/assets/Filósofos/Avicena.png`, `SITE/assets/article_cards/escolastica-latina-influencia-arabe.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Avicena.png`, `SITE/public/images/philosophers/Avicena.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /Sócrates.png`, `SITE/assets/Filósofos/Sócrates.png`, `SITE/assets/Sócrates.png`, `SITE/assets/article_cards/socrates-metodo-maieutico.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Sócrates.png`, `SITE/public/images/philosophers/Sócrates.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /Zenão de Eléia.png`, `SITE/assets/Filósofos/Zenão de Eléia.png`, `SITE/assets/Zenão de Eléia.png`, `SITE/assets/article_cards/zenao-paradoxos-realidade.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zenão de Eléia.png`, `SITE/public/images/philosophers/Zenão de Eléia.png`
+- 6 arquivos iguais: `BRANDING/Filósofos /sartre1.JPG`, `SITE/assets/Filósofos/sartre1.JPG`, `SITE/assets/article_cards/sartre-liberdade-condenacao.jpg`, `SITE/assets/sartre1.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/sartre1.JPG`, `SITE/public/images/philosophers/sartre1.JPG`
+- 6 arquivos iguais: `SITE/assets/article_cards/formigas-diante-do-universo.png`, `SITE/assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png`, `SITE/assets/default-article.jpg`, `SITE/assets/wallpaper-filosofico.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/wallpaper-filosofico.png`, `SITE/public/images/posts/wallpaper-filosofico.png`
+- 5 arquivos iguais: `BRANDING/frases/frase-adorno.png`, `SITE/assets/article_cards/adorno-cultura-pensamento.png`, `SITE/assets/frase-adorno.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-adorno.png`, `SITE/public/images/quotes/frase-adorno.png`
+- 5 arquivos iguais: `BRANDING/frases/frase-epicuro.png`, `SITE/assets/article_cards/epicuro-pouco-suficiencia-desejo.png`, `SITE/assets/frase-epicuro.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-epicuro.png`, `SITE/public/images/quotes/frase-epicuro.png`
+- 5 arquivos iguais: `BRANDING/frases/frase-protagoras.png`, `SITE/assets/article_cards/protagoras-medida-todas-coisas.png`, `SITE/assets/frase-protagoras.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/frase-protagoras.png`, `SITE/public/images/quotes/frase-protagoras.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /kant-art.JPG`, `SITE/assets/Filósofos/kant-art.JPG`, `SITE/assets/kant-art.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/kant-art.JPG`, `SITE/public/images/philosophers/kant-art.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Zenãodecitio1.png`, `SITE/assets/Filósofos/Zenãodecitio1.png`, `SITE/assets/Zenãodecitio1.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zenãodecitio1.png`, `SITE/public/images/philosophers/Zenãodecitio1.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /agostinho1.JPG`, `SITE/assets/Filósofos/agostinho1.JPG`, `SITE/assets/agostinho1.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/agostinho1.JPG`, `SITE/public/images/philosophers/agostinho1.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7632.JPG`, `SITE/assets/Filósofos/IMG_7632.JPG`, `SITE/assets/IMG_7632.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7632.JPG`, `SITE/public/images/philosophers/IMG_7632.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Steven Pressfield.jpeg`, `SITE/assets/Filósofos/Steven Pressfield.jpeg`, `SITE/assets/Steven Pressfield.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Steven Pressfield.jpeg`, `SITE/public/images/philosophers/Steven Pressfield.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /santo agostinho.png`, `SITE/assets/Filósofos/santo agostinho.png`, `SITE/assets/santo agostinho.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/santo agostinho.png`, `SITE/public/images/philosophers/santo agostinho.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /kant__8_original.jpg`, `SITE/assets/Filósofos/kant__8_original.jpg`, `SITE/assets/kant__8_original.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/kant__8_original.jpg`, `SITE/public/images/philosophers/kant__8_original.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /homero2.png`, `SITE/assets/Filósofos/homero2.png`, `SITE/assets/homero2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/homero2.png`, `SITE/public/images/philosophers/homero2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7631.JPG`, `SITE/assets/Filósofos/IMG_7631.JPG`, `SITE/assets/IMG_7631.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7631.JPG`, `SITE/public/images/philosophers/IMG_7631.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_Yuval_Noah_Harari_is_an_Israeli_history_professor_an_a34327a0-935d-461b-ae97-558eb3b6e6a4.png`, `SITE/assets/Filósofos/fabioakira_Yuval_Noah_Harari_is_an_Israeli_history_professor_an_a34327a0-935d-461b-ae97-558eb3b6e6a4.png`, `SITE/assets/fabioakira_Yuval_Noah_Harari_is_an_Israeli_history_professor_an_a34327a0-935d-461b-ae97-558eb3b6e6a4.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Yuval_Noah_Harari_is_an_Israeli_history_professor_an_a34327a0-935d-461b-ae97-558eb3b6e6a4.png`, `SITE/public/images/philosophers/fabioakira_Yuval_Noah_Harari_is_an_Israeli_history_professor_an_a34327a0-935d-461b-ae97-558eb3b6e6a4.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Cicero.png`, `SITE/assets/Cicero.png`, `SITE/assets/Filósofos/Cicero.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Cicero.png`, `SITE/public/images/philosophers/Cicero.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Confúcio2.jpeg`, `SITE/assets/Confúcio2.jpeg`, `SITE/assets/Filósofos/Confúcio2.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Confúcio2.jpeg`, `SITE/public/images/philosophers/Confúcio2.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /nietzsche1.jpeg`, `SITE/assets/Filósofos/nietzsche1.jpeg`, `SITE/assets/nietzsche1.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nietzsche1.jpeg`, `SITE/public/images/philosophers/nietzsche1.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Anaximenes.png`, `SITE/assets/Anaximenes.png`, `SITE/assets/Filósofos/Anaximenes.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Anaximenes.png`, `SITE/public/images/philosophers/Anaximenes.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Sophocles2.png`, `SITE/assets/Filósofos/Sophocles2.png`, `SITE/assets/Sophocles2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Sophocles2.png`, `SITE/public/images/philosophers/Sophocles2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Noam Chomsky.jpeg`, `SITE/assets/Filósofos/Noam Chomsky.jpeg`, `SITE/assets/Noam Chomsky.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Noam Chomsky.jpeg`, `SITE/public/images/philosophers/Noam Chomsky.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /George Orwell.jpeg`, `SITE/assets/Filósofos/George Orwell.jpeg`, `SITE/assets/George Orwell.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/George Orwell.jpeg`, `SITE/public/images/philosophers/George Orwell.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /nietzsche-art.jpeg`, `SITE/assets/Filósofos/nietzsche-art.jpeg`, `SITE/assets/nietzsche-art.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nietzsche-art.jpeg`, `SITE/public/images/philosophers/nietzsche-art.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /voltaire.png`, `SITE/assets/Filósofos/voltaire.png`, `SITE/assets/voltaire.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/voltaire.png`, `SITE/public/images/philosophers/voltaire.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7621.JPG`, `SITE/assets/Filósofos/IMG_7621.JPG`, `SITE/assets/IMG_7621.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7621.JPG`, `SITE/public/images/philosophers/IMG_7621.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7620.JPG`, `SITE/assets/Filósofos/IMG_7620.JPG`, `SITE/assets/IMG_7620.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7620.JPG`, `SITE/public/images/philosophers/IMG_7620.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Ernest Hemingway.png`, `SITE/assets/Ernest Hemingway.png`, `SITE/assets/Filósofos/Ernest Hemingway.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Ernest Hemingway.png`, `SITE/public/images/philosophers/Ernest Hemingway.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Max weber.jpeg`, `SITE/assets/Filósofos/Max weber.jpeg`, `SITE/assets/Max weber.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Max weber.jpeg`, `SITE/public/images/philosophers/Max weber.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /locke.JPG`, `SITE/assets/Filósofos/locke.JPG`, `SITE/assets/locke.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/locke.JPG`, `SITE/public/images/philosophers/locke.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7622.JPG`, `SITE/assets/Filósofos/IMG_7622.JPG`, `SITE/assets/IMG_7622.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7622.JPG`, `SITE/public/images/philosophers/IMG_7622.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7623.JPG`, `SITE/assets/Filósofos/IMG_7623.JPG`, `SITE/assets/IMG_7623.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7623.JPG`, `SITE/public/images/philosophers/IMG_7623.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /platao.jpeg`, `SITE/assets/Filósofos/platao.jpeg`, `SITE/assets/platao.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/platao.jpeg`, `SITE/public/images/philosophers/platao.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Sophocles.png`, `SITE/assets/Filósofos/Sophocles.png`, `SITE/assets/Sophocles.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Sophocles.png`, `SITE/public/images/philosophers/Sophocles.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Hesíodo3.png`, `SITE/assets/Filósofos/Hesíodo3.png`, `SITE/assets/Hesíodo3.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Hesíodo3.png`, `SITE/public/images/philosophers/Hesíodo3.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Zygmunt Bauman.jpg`, `SITE/assets/Filósofos/Zygmunt Bauman.jpg`, `SITE/assets/Zygmunt Bauman.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zygmunt Bauman.jpg`, `SITE/public/images/philosophers/Zygmunt Bauman.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Empédocles2.png`, `SITE/assets/Empédocles2.png`, `SITE/assets/Filósofos/Empédocles2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Empédocles2.png`, `SITE/public/images/philosophers/Empédocles2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`, `SITE/assets/Filósofos/Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`, `SITE/assets/Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`, `SITE/public/images/philosophers/Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Nicolaudecusa.png`, `SITE/assets/Filósofos/Nicolaudecusa.png`, `SITE/assets/Nicolaudecusa.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Nicolaudecusa.png`, `SITE/public/images/philosophers/Nicolaudecusa.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /michel-de-montaigne.png`, `SITE/assets/Filósofos/michel-de-montaigne.png`, `SITE/assets/michel-de-montaigne.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/michel-de-montaigne.png`, `SITE/public/images/philosophers/michel-de-montaigne.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_7533.JPG`, `SITE/assets/Filósofos/IMG_7533.JPG`, `SITE/assets/IMG_7533.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_7533.JPG`, `SITE/public/images/philosophers/IMG_7533.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /nicolaudecusa2.png`, `SITE/assets/Filósofos/nicolaudecusa2.png`, `SITE/assets/nicolaudecusa2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nicolaudecusa2.png`, `SITE/public/images/philosophers/nicolaudecusa2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /prometeu-aguia.JPG`, `SITE/assets/Filósofos/prometeu-aguia.JPG`, `SITE/assets/prometeu-aguia.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/prometeu-aguia.JPG`, `SITE/public/images/philosophers/prometeu-aguia.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Eça_de_Queirós_c._1882.jpg`, `SITE/assets/Eça_de_Queirós_c._1882.jpg`, `SITE/assets/Filósofos/Eça_de_Queirós_c._1882.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Eça_de_Queirós_c._1882.jpg`, `SITE/public/images/philosophers/Eça_de_Queirós_c._1882.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /tolstoy.png`, `SITE/assets/Filósofos/tolstoy.png`, `SITE/assets/tolstoy.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/tolstoy.png`, `SITE/public/images/philosophers/tolstoy.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Friedrich Nietzsche - Wikipedia.jpeg`, `SITE/assets/Filósofos/Friedrich Nietzsche - Wikipedia.jpeg`, `SITE/assets/Friedrich Nietzsche - Wikipedia.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Friedrich Nietzsche - Wikipedia.jpeg`, `SITE/public/images/philosophers/Friedrich Nietzsche - Wikipedia.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /paulo freire.jpg`, `SITE/assets/Filósofos/paulo freire.jpg`, `SITE/assets/paulo freire.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/paulo freire.jpg`, `SITE/public/images/philosophers/paulo freire.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /nietzsche-ia.jpeg`, `SITE/assets/Filósofos/nietzsche-ia.jpeg`, `SITE/assets/nietzsche-ia.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nietzsche-ia.jpeg`, `SITE/public/images/philosophers/nietzsche-ia.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /ErnestHemingway.jpg`, `SITE/assets/ErnestHemingway.jpg`, `SITE/assets/Filósofos/ErnestHemingway.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/ErnestHemingway.jpg`, `SITE/public/images/philosophers/ErnestHemingway.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /nietzsche.JPG`, `SITE/assets/Filósofos/nietzsche.JPG`, `SITE/assets/nietzsche.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nietzsche.JPG`, `SITE/public/images/philosophers/nietzsche.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`, `SITE/assets/Filósofos/Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`, `SITE/assets/Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`, `SITE/public/images/philosophers/Friedrich Nietzsche(Filósofo_) Ultra-Realista.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /democrito2.png`, `SITE/assets/Filósofos/democrito2.png`, `SITE/assets/democrito2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/democrito2.png`, `SITE/public/images/philosophers/democrito2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_Max_Weber_born_April_21_1864_Erfurt_Prussia_Germany-_9e5efd54-dbff-4ecd-8d50-d94517a19696.png`, `SITE/assets/Filósofos/fabioakira_Max_Weber_born_April_21_1864_Erfurt_Prussia_Germany-_9e5efd54-dbff-4ecd-8d50-d94517a19696.png`, `SITE/assets/fabioakira_Max_Weber_born_April_21_1864_Erfurt_Prussia_Germany-_9e5efd54-dbff-4ecd-8d50-d94517a19696.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Max_Weber_born_April_21_1864_Erfurt_Prussia_Germany-_9e5efd54-dbff-4ecd-8d50-d94517a19696.png`, `SITE/public/images/philosophers/fabioakira_Max_Weber_born_April_21_1864_Erfurt_Prussia_Germany-_9e5efd54-dbff-4ecd-8d50-d94517a19696.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Aldous Huxley.jpg`, `SITE/assets/Aldous Huxley.jpg`, `SITE/assets/Filósofos/Aldous Huxley.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Aldous Huxley.jpg`, `SITE/public/images/philosophers/Aldous Huxley.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /283023157808351638.jpeg`, `SITE/assets/283023157808351638.jpeg`, `SITE/assets/Filósofos/283023157808351638.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/283023157808351638.jpeg`, `SITE/public/images/philosophers/283023157808351638.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Zenão.png`, `SITE/assets/Filósofos/Zenão.png`, `SITE/assets/Zenão.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zenão.png`, `SITE/public/images/philosophers/Zenão.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_George_Orwell_born_June_25_1903_Motihari_Bengal_Indi_6121b5fe-509a-4fa8-9243-560be57f0f0b.png`, `SITE/assets/Filósofos/fabioakira_George_Orwell_born_June_25_1903_Motihari_Bengal_Indi_6121b5fe-509a-4fa8-9243-560be57f0f0b.png`, `SITE/assets/fabioakira_George_Orwell_born_June_25_1903_Motihari_Bengal_Indi_6121b5fe-509a-4fa8-9243-560be57f0f0b.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_George_Orwell_born_June_25_1903_Motihari_Bengal_Indi_6121b5fe-509a-4fa8-9243-560be57f0f0b.png`, `SITE/public/images/philosophers/fabioakira_George_Orwell_born_June_25_1903_Motihari_Bengal_Indi_6121b5fe-509a-4fa8-9243-560be57f0f0b.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /voltaire.webp`, `SITE/assets/Filósofos/voltaire.webp`, `SITE/assets/voltaire.webp`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/voltaire.webp`, `SITE/public/images/philosophers/voltaire.webp`
+- 5 arquivos iguais: `BRANDING/Filósofos /Martin Luther king.png`, `SITE/assets/Filósofos/Martin Luther king.png`, `SITE/assets/Martin Luther king.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Martin Luther king.png`, `SITE/public/images/philosophers/Martin Luther king.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_8782.JPG`, `SITE/assets/Filósofos/IMG_8782.JPG`, `SITE/assets/IMG_8782.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_8782.JPG`, `SITE/public/images/philosophers/IMG_8782.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /Zebão de citio 2.png`, `SITE/assets/Filósofos/Zebão de citio 2.png`, `SITE/assets/Zebão de citio 2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Zebão de citio 2.png`, `SITE/public/images/philosophers/Zebão de citio 2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /immanuel-kant.JPG`, `SITE/assets/Filósofos/immanuel-kant.JPG`, `SITE/assets/immanuel-kant.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/immanuel-kant.JPG`, `SITE/public/images/philosophers/immanuel-kant.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /homero.png`, `SITE/assets/Filósofos/homero.png`, `SITE/assets/homero.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/homero.png`, `SITE/public/images/philosophers/homero.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Thomas Paine.jpeg`, `SITE/assets/Filósofos/Thomas Paine.jpeg`, `SITE/assets/Thomas Paine.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Thomas Paine.jpeg`, `SITE/public/images/philosophers/Thomas Paine.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /ésquilo 2.png`, `SITE/assets/Filósofos/ésquilo 2.png`, `SITE/assets/ésquilo 2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/ésquilo 2.png`, `SITE/public/images/philosophers/ésquilo 2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Pitágoras1.png`, `SITE/assets/Filósofos/Pitágoras1.png`, `SITE/assets/Pitágoras1.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Pitágoras1.png`, `SITE/public/images/philosophers/Pitágoras1.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Jorge Luis Borges.jpeg`, `SITE/assets/Filósofos/Jorge Luis Borges.jpeg`, `SITE/assets/Jorge Luis Borges.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Jorge Luis Borges.jpeg`, `SITE/public/images/philosophers/Jorge Luis Borges.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /nietzsche.jpeg`, `SITE/assets/Filósofos/nietzsche.jpeg`, `SITE/assets/nietzsche.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/nietzsche.jpeg`, `SITE/public/images/philosophers/nietzsche.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png`, `SITE/assets/Filósofos/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png`, `SITE/assets/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png`, `SITE/public/images/philosophers/fabioakira_Emily_Bronte_born_July_30_1818_Thornton_Yorkshire_En_e159e851-76f2-4904-8567-fff03818058c.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Euripides2.png`, `SITE/assets/Euripides2.png`, `SITE/assets/Filósofos/Euripides2.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Euripides2.png`, `SITE/public/images/philosophers/Euripides2.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /Escola-athenas.jpg`, `SITE/assets/Escola-athenas.jpg`, `SITE/assets/Filósofos/Escola-athenas.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Escola-athenas.jpg`, `SITE/public/images/philosophers/Escola-athenas.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /IMG_8237.JPG`, `SITE/assets/Filósofos/IMG_8237.JPG`, `SITE/assets/IMG_8237.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/IMG_8237.JPG`, `SITE/public/images/philosophers/IMG_8237.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /soren.JPG`, `SITE/assets/Filósofos/soren.JPG`, `SITE/assets/soren.JPG`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/soren.JPG`, `SITE/public/images/philosophers/soren.JPG`
+- 5 arquivos iguais: `BRANDING/Filósofos /franz-kafka.jpg`, `SITE/assets/Filósofos/franz-kafka.jpg`, `SITE/assets/franz-kafka.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/franz-kafka.jpg`, `SITE/public/images/philosophers/franz-kafka.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Nietzsche_ _Culpabilidade_.jpeg`, `SITE/assets/Filósofos/Nietzsche_ _Culpabilidade_.jpeg`, `SITE/assets/Nietzsche_ _Culpabilidade_.jpeg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Nietzsche_ _Culpabilidade_.jpeg`, `SITE/public/images/philosophers/Nietzsche_ _Culpabilidade_.jpeg`
+- 5 arquivos iguais: `BRANDING/Filósofos /Arthur-schopenhauer.jpg`, `SITE/assets/Arthur-schopenhauer.jpg`, `SITE/assets/Filósofos/Arthur-schopenhauer.jpg`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Arthur-schopenhauer.jpg`, `SITE/public/images/philosophers/Arthur-schopenhauer.jpg`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png`, `SITE/assets/Filósofos/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png`, `SITE/assets/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png`, `SITE/public/images/philosophers/fabioakira_Jacques-Marie_Emile_Lacan_was_a_French_psychoanalyst_e78c0547-c2d9-4ccf-9ccf-8f336a9319db.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /fabioakira_Augustine_Aloysius_Joyce_1882_-_1941_was_an_Irish_wr_a62a3af7-ed41-4f2c-92af-bab97fecb1cf.png`, `SITE/assets/Filósofos/fabioakira_Augustine_Aloysius_Joyce_1882_-_1941_was_an_Irish_wr_a62a3af7-ed41-4f2c-92af-bab97fecb1cf.png`, `SITE/assets/fabioakira_Augustine_Aloysius_Joyce_1882_-_1941_was_an_Irish_wr_a62a3af7-ed41-4f2c-92af-bab97fecb1cf.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/fabioakira_Augustine_Aloysius_Joyce_1882_-_1941_was_an_Irish_wr_a62a3af7-ed41-4f2c-92af-bab97fecb1cf.png`, `SITE/public/images/philosophers/fabioakira_Augustine_Aloysius_Joyce_1882_-_1941_was_an_Irish_wr_a62a3af7-ed41-4f2c-92af-bab97fecb1cf.png`
+- 5 arquivos iguais: `BRANDING/Filósofos /yuval noah harari.webp`, `SITE/assets/Filósofos/yuval noah harari.webp`, `SITE/assets/yuval noah harari.webp`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/yuval noah harari.webp`, `SITE/public/images/philosophers/yuval noah harari.webp`
+- 5 arquivos iguais: `BRANDING/Filósofos /Anaximandro1.png`, `SITE/assets/Anaximandro1.png`, `SITE/assets/Filósofos/Anaximandro1.png`, `SITE/docs/backups/proceder-fase1-20260601-110542/assets/Filósofos/Anaximandro1.png`, `SITE/public/images/philosophers/Anaximandro1.png`
+- ... mais 80 grupos
+
+## Problemas por Página
+
+- `SITE/biblioteca.html` — missing-lazy: `assets/LQHqVnilFspwfHEy.png`
+- `SITE/biblioteca.html` — missing-open-graph-image: `page`
+- `SITE/biblioteca.html` — missing-favicon: `page`
+- `SITE/sobre/index.html` — missing-open-graph-image: `hub`
+- `SITE/sobre/index.html` — missing-favicon: `hub`
+- `SITE/artigos/index.html` — missing-favicon: `article`
+- `SITE/artigos/poetas-dramaturgos-educacao-grecia-antiga/index.html` — missing-favicon: `article`
+- `SITE/artigos/sartre-liberdade-condenacao/index.html` — missing-favicon: `article`
+- `SITE/artigos/protagoras-medida-todas-coisas/index.html` — missing-favicon: `article`
+- `SITE/artigos/laplace-sonho-razao-absoluta/index.html` — missing-favicon: `article`
+- `SITE/artigos/john-stuart-mill-revolucao-liberal-moderna/index.html` — missing-favicon: `article`
+- `SITE/artigos/platao-mundo-das-ideias/index.html` — missing-favicon: `article`
+- `SITE/artigos/arte-controle-humano/index.html` — missing-favicon: `article`
+- `SITE/artigos/confucio-virtude-pratica/index.html` — missing-favicon: `article`
+- `SITE/artigos/balzac-escritor-alma-capitalismo/index.html` — missing-favicon: `article`
+- `SITE/artigos/adorno-cultura-pensamento/index.html` — missing-favicon: `article`
+- `SITE/artigos/hegel-fenomenologia-inteligencias-artificiais/index.html` — missing-favicon: `article`
+- `SITE/artigos/luis-de-camoes-morte-lingua-portuguesa/index.html` — missing-favicon: `article`
+- `SITE/artigos/conatus-espinosa-ontologia-esforco-existir/index.html` — missing-favicon: `article`
+- `SITE/artigos/sao-tomas-fe-razao-explicacao/index.html` — missing-favicon: `article`
+- `SITE/artigos/tecnologia-mais-rapida-que-sabedoria/index.html` — missing-favicon: `article`
+- `SITE/artigos/algoritmo-substituiu-verdade-pela-atencao/index.html` — missing-favicon: `article`
+- `SITE/artigos/socrates-metodo-maieutico/index.html` — missing-favicon: `article`
+- `SITE/artigos/heraclito-duas-vezes-mesmo-rio/index.html` — missing-favicon: `article`
+- `SITE/artigos/escolastica-latina-influencia-arabe/index.html` — missing-favicon: `article`
+- `SITE/artigos/sofistas-primeiros-mestres-persuasao/index.html` — missing-favicon: `article`
+- `SITE/artigos/zenao-paradoxos-realidade/index.html` — missing-favicon: `article`
+- `SITE/artigos/descartes-cogito-ergo-sum/index.html` — missing-favicon: `article`
+- `SITE/artigos/provar-deus-kant/index.html` — missing-favicon: `article`
+- `SITE/artigos/conforto-excessivo-enfraquece-civilizacoes/index.html` — missing-favicon: `article`
+- `SITE/artigos/crise-contemporanea-nao-e-economica-e-espiritual/index.html` — missing-favicon: `article`
+- `SITE/artigos/escala-6x1-trabalho-tempo-vida/index.html` — missing-favicon: `article`
+- `SITE/artigos/nietzsche-obras-impacto-revolucionario/index.html` — missing-favicon: `article`
+- `SITE/artigos/nostalgia-forma-consciencia-historica/index.html` — missing-favicon: `article`
+- `SITE/artigos/confissoes-santo-agostinho/index.html` — missing-favicon: `article`
+- `SITE/artigos/leucipo-atomismo/index.html` — missing-favicon: `article`
+- `SITE/artigos/locke-tabula-rasa/index.html` — missing-favicon: `article`
+- `SITE/artigos/formigas-diante-do-universo/index.html` — missing-favicon: `article`
+- `SITE/artigos/sociedade-moderna-destruiu-silencio/index.html` — missing-favicon: `article`
+- `SITE/artigos/o-que-e-a-metafisica/index.html` — missing-favicon: `article`
+- `SITE/artigos/vida-pendulo-schopenhauer-desejo-humano/index.html` — missing-favicon: `article`
+- `SITE/artigos/empedocles-amor-discordia/index.html` — missing-favicon: `article`
+- `SITE/artigos/epicuro-pouco-suficiencia-desejo/index.html` — missing-favicon: `article`
+- `SITE/artigos/humanidade-trocou-contemplacao-por-distracao/index.html` — missing-favicon: `article`
+- `SITE/artigos/einstein-revolucao-fisica-moderna/index.html` — missing-favicon: `article`
+- `SITE/artigos/democrito-alma-corpo/index.html` — missing-favicon: `article`
+- `SITE/artigos/kierkegaard-conhecer-se/index.html` — missing-favicon: `article`
+- `SITE/artigos/tales-mileto-arche/index.html` — missing-favicon: `article`
+- `SITE/artigos/modernidade-matou-sagrado/index.html` — missing-favicon: `article`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/LQHqVnilFspwfHEy.png`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/FLaneKfrfyGYOgJd.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/zBmXzIGbgLLlbNyh.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/AJPBTuUJaFhjwjvx.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/wPdrfjjEMXEymTcc.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/yPCECtiDBKjEdTjP.jpg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/1f3db.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/26ea.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/1f52d.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/1f9e0.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/2696.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/1f4a1.svg`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-lazy: `assets/LQHqVnilFspwfHEy.png`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-open-graph-image: `hub`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/index.html` — missing-favicon: `hub`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` — missing-lazy: `assets/LQHqVnilFspwfHEy.png`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` — missing-open-graph-image: `page`
+- `SITE/docs/backups/proceder-fase1-20260601-110542/biblioteca.html` — missing-favicon: `page`
+- `SITE/filosofos/index.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `SITE/filosofos/index.html` — missing-open-graph-image: `hub`
+- `SITE/filosofos/index.html` — missing-favicon: `hub`
+- `SITE/conteudo/index.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `SITE/conteudo/index.html` — missing-open-graph-image: `hub`
+- `SITE/conteudo/index.html` — missing-favicon: `hub`
+- `SITE/conteudo/pre-socraticos/index.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `SITE/conteudo/pre-socraticos/index.html` — missing-favicon: `hub`
+- `SITE/conteudo/filosofia-da-tecnologia-e-ia/index.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `SITE/conteudo/filosofia-da-tecnologia-e-ia/index.html` — missing-favicon: `hub`
+- `SITE/conteudo/atenas-classica/index.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `SITE/conteudo/atenas-classica/index.html` — missing-favicon: `hub`
+- `BELZEBU/output/published/japao-relativo/tanabata-amor-impossivel-cultura-japonesa/index.html` — missing-open-graph-image: `hub`
+- `BELZEBU/output/published/japao-relativo/tanabata-amor-impossivel-cultura-japonesa/index.html` — missing-favicon: `hub`
+- `AUTOMATION/patch_manual_home.html` — missing-open-graph-image: `page`
+- `AUTOMATION/patch_manual_home.html` — missing-favicon: `page`
+- `AUTOMATION/templates/hub.html` — missing-lazy: `/assets/LQHqVnilFspwfHEy.png`
+- `AUTOMATION/templates/hub.html` — missing-open-graph-image: `page`
+- `AUTOMATION/templates/hub.html` — missing-favicon: `page`
+
+## JSON
+
+- Todos os JSON auditados são parseáveis.

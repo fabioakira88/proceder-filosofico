@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://procederfilosofico.com.br/sitemap.xml
