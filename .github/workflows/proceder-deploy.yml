@@ -1,0 +1,74 @@
+name: Proceder Filosofico Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - production
+  workflow_dispatch:
+
+concurrency:
+  group: proceder-filosofico-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-deploy:
+    name: Validate and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Static checks
+        run: |
+          node --check AUTOMATION/generate_seo.mjs
+          node --check SITE/posts.js
+          python3 -m py_compile AUTOMATION/deploy.py
+
+      - name: Generate SEO artifacts
+        run: node AUTOMATION/generate_seo.mjs
+
+      - name: Validate site
+        run: |
+          node VALIDATION/validate_editorial_metadata.mjs
+          node VALIDATION/validate_editorial_architecture.mjs
+          node VALIDATION/validate_links.mjs
+          node VALIDATION/validate_deploy_manifest.mjs
+          node VALIDATION/validate_assets.mjs
+          node VALIDATION/validate_sitemap_robots.mjs
+
+      - name: Block unexpected generated drift
+        run: |
+          if ! git diff --quiet -- SITE/sitemap.xml SITE/robots.txt SITE/artigos SITE/categoria SITE/dossies SITE/conteudo SITE/index.html; then
+            echo "Generated files changed during the workflow."
+            echo "Run node AUTOMATION/generate_seo.mjs locally, review the diff, and commit the generated artifacts before deploying."
+            git diff --stat -- SITE/sitemap.xml SITE/robots.txt SITE/artigos SITE/categoria SITE/dossies SITE/conteudo SITE/index.html
+            exit 1
+          fi
+
+      - name: Deploy to Hostinger via FTP
+        env:
+          FTP_HOST: ${{ secrets.PROCEDER_FTP_HOST }}
+          FTP_USER: ${{ secrets.PROCEDER_FTP_USER }}
+          FTP_PASS: ${{ secrets.PROCEDER_FTP_PASS }}
+          FTP_REMOTE_DIR: ${{ secrets.PROCEDER_FTP_REMOTE_DIR }}
+          FTP_TIMEOUT: ${{ vars.PROCEDER_FTP_TIMEOUT || '30' }}
+          FTP_FILE_TIMEOUT: ${{ vars.PROCEDER_FTP_FILE_TIMEOUT || '45' }}
+          DEPLOY_TRACKED_ONLY: "1"
+          DEPLOY_GENERATE_SEO: "0"
+        run: python3 AUTOMATION/deploy.py
