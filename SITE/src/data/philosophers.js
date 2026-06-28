@@ -7,25 +7,25 @@ export const mestreCategories = [
       {
         "nome": "Sócrates",
         "periodo": "470–399 a.C.",
-        "img": "assets/article_cards/socrates-metodo-maieutico.png",
+        "img": "/assets/article_cards/socrates-metodo-maieutico.png",
         "bio": "<p>Filósofo ateniense considerado o pai da filosofia ocidental. Não deixou escritos; seu pensamento foi preservado principalmente por Platão.</p><p>Tornou-se símbolo da busca pela verdade através do diálogo, do autoexame e da coragem intelectual diante da cidade.</p>"
       },
       {
         "nome": "Platão",
         "periodo": "427–347 a.C.",
-        "img": "assets/Platão.png",
+        "img": "/assets/Platão.png",
         "bio": "<p>Discípulo de Sócrates e fundador da Academia de Atenas. Desenvolveu a Teoria das Ideias e influenciou profundamente toda a tradição filosófica ocidental.</p>"
       },
       {
         "nome": "Aristóteles",
         "periodo": "384–322 a.C.",
-        "img": "assets/aristoteles-mestre.jpeg",
+        "img": "/assets/aristoteles-mestre.jpeg",
         "bio": "<p>Discípulo de Platão e tutor de Alexandre Magno. Organizou praticamente todas as áreas do conhecimento de sua época: lógica, ética, política, metafísica e biologia.</p>"
       },
       {
         "nome": "Epicuro",
         "periodo": "341–270 a.C.",
-        "img": "assets/article_cards/epicuro-pouco-suficiencia-desejo.png",
+        "img": "/assets/article_cards/epicuro-pouco-suficiencia-desejo.png",
         "bio": "<p>Defendeu que a felicidade consiste na ausência de sofrimento e na busca racional pela tranquilidade da alma.</p>"
       },
       {
@@ -42,7 +42,7 @@ export const mestreCategories = [
       {
         "nome": "Protágoras",
         "periodo": "490–420 a.C.",
-        "img": "assets/article_cards/protagoras-medida-todas-coisas.png",
+        "img": "/assets/article_cards/protagoras-medida-todas-coisas.png",
         "bio": "<p>Famoso pela frase: “O homem é a medida de todas as coisas”. Foi um dos primeiros grandes relativistas da história.</p>"
       },
       {
@@ -65,13 +65,13 @@ export const mestreCategories = [
       {
         "nome": "Homero",
         "periodo": "século VIII a.C.",
-        "img": "assets/homero.png",
+        "img": "/assets/homero.png",
         "bio": "<p>Autor da <em>Ilíada</em> e da <em>Odisseia</em>, obras fundamentais da cultura ocidental.</p>"
       },
       {
         "nome": "Hesíodo",
         "periodo": "século VIII a.C.",
-        "img": "assets/hesíodo.png",
+        "img": "/assets/hesíodo.png",
         "bio": "<p>Autor da <em>Teogonia</em>, uma das principais narrativas sobre a origem dos deuses gregos.</p>"
       },
       {
@@ -106,19 +106,19 @@ export const mestreCategories = [
       {
         "nome": "Ésquilo",
         "periodo": "525–456 a.C.",
-        "img": "assets/ésquilo.png",
+        "img": "/assets/ésquilo.png",
         "bio": "<p>Pai da tragédia grega e um dos fundadores da dramaturgia ocidental.</p>"
       },
       {
         "nome": "Sófocles",
         "periodo": "496–406 a.C.",
-        "img": "assets/Sophocles.png",
+        "img": "/assets/Sophocles.png",
         "bio": "<p>Autor de <em>Édipo Rei</em>, uma das maiores tragédias já escritas.</p>"
       },
       {
         "nome": "Eurípides",
         "periodo": "480–406 a.C.",
-        "img": "assets/Euripides.png",
+        "img": "/assets/Euripides.png",
         "bio": "<p>Explorou conflitos psicológicos e humanos em suas peças, aproximando a tragédia da interioridade humana.</p>"
       }
     ]
@@ -187,13 +187,13 @@ export const mestreCategories = [
       {
         "nome": "Fiódor Dostoiévski",
         "periodo": "1821–1881",
-        "img": "assets/fiodor.jpg",
+        "img": "/assets/fiodor.jpg",
         "bio": "<p>Explorou liberdade, culpa, fé e moralidade com profundidade psicológica rara.</p>"
       },
       {
         "nome": "Liev Tolstói",
         "periodo": "1828–1910",
-        "img": "assets/tolstoy.png",
+        "img": "/assets/tolstoy.png",
         "bio": "<p>Autor de <em>Guerra e Paz</em> e <em>Anna Kariênina</em>, duas obras monumentais da literatura universal.</p>"
       }
     ]
@@ -216,7 +216,7 @@ export const mestreCategories = [
       {
         "nome": "Max Weber",
         "periodo": "1864–1920",
-        "img": "assets/Max weber.jpeg",
+        "img": "/assets/Max weber.jpeg",
         "bio": "<p>Analisou burocracia, poder e racionalização da sociedade.</p>"
       }
     ]
@@ -238,7 +238,7 @@ export const philosophers = [
     "categoria": "Filósofos",
     "periodo": "470–399 a.C.",
     "corrente": "Filósofos",
-    "img": "assets/article_cards/socrates-metodo-maieutico.png",
+    "img": "/assets/article_cards/socrates-metodo-maieutico.png",
     "bio": "<p>Filósofo ateniense considerado o pai da filosofia ocidental. Não deixou escritos; seu pensamento foi preservado principalmente por Platão.</p><p>Tornou-se símbolo da busca pela verdade através do diálogo, do autoexame e da coragem intelectual diante da cidade.</p>"
   },
   {
@@ -247,7 +247,7 @@ export const philosophers = [
     "categoria": "Filósofos",
     "periodo": "427–347 a.C.",
     "corrente": "Filósofos",
-    "img": "assets/Platão.png",
+    "img": "/assets/Platão.png",
     "bio": "<p>Discípulo de Sócrates e fundador da Academia de Atenas. Desenvolveu a Teoria das Ideias e influenciou profundamente toda a tradição filosófica ocidental.</p>"
   },
   {
@@ -256,7 +256,7 @@ export const philosophers = [
     "categoria": "Filósofos",
     "periodo": "384–322 a.C.",
     "corrente": "Filósofos",
-    "img": "assets/aristoteles-mestre.jpeg",
+    "img": "/assets/aristoteles-mestre.jpeg",
     "bio": "<p>Discípulo de Platão e tutor de Alexandre Magno. Organizou praticamente todas as áreas do conhecimento de sua época: lógica, ética, política, metafísica e biologia.</p>"
   },
   {
@@ -265,7 +265,7 @@ export const philosophers = [
     "categoria": "Filósofos",
     "periodo": "341–270 a.C.",
     "corrente": "Filósofos",
-    "img": "assets/article_cards/epicuro-pouco-suficiencia-desejo.png",
+    "img": "/assets/article_cards/epicuro-pouco-suficiencia-desejo.png",
     "bio": "<p>Defendeu que a felicidade consiste na ausência de sofrimento e na busca racional pela tranquilidade da alma.</p>"
   },
   {
@@ -283,7 +283,7 @@ export const philosophers = [
     "categoria": "Sofistas",
     "periodo": "490–420 a.C.",
     "corrente": "Sofistas",
-    "img": "assets/article_cards/protagoras-medida-todas-coisas.png",
+    "img": "/assets/article_cards/protagoras-medida-todas-coisas.png",
     "bio": "<p>Famoso pela frase: “O homem é a medida de todas as coisas”. Foi um dos primeiros grandes relativistas da história.</p>"
   },
   {
@@ -310,7 +310,7 @@ export const philosophers = [
     "categoria": "Poetas",
     "periodo": "século VIII a.C.",
     "corrente": "Poetas",
-    "img": "assets/homero.png",
+    "img": "/assets/homero.png",
     "bio": "<p>Autor da <em>Ilíada</em> e da <em>Odisseia</em>, obras fundamentais da cultura ocidental.</p>"
   },
   {
@@ -319,7 +319,7 @@ export const philosophers = [
     "categoria": "Poetas",
     "periodo": "século VIII a.C.",
     "corrente": "Poetas",
-    "img": "assets/hesíodo.png",
+    "img": "/assets/hesíodo.png",
     "bio": "<p>Autor da <em>Teogonia</em>, uma das principais narrativas sobre a origem dos deuses gregos.</p>"
   },
   {
@@ -364,7 +364,7 @@ export const philosophers = [
     "categoria": "Dramaturgos",
     "periodo": "525–456 a.C.",
     "corrente": "Dramaturgos",
-    "img": "assets/ésquilo.png",
+    "img": "/assets/ésquilo.png",
     "bio": "<p>Pai da tragédia grega e um dos fundadores da dramaturgia ocidental.</p>"
   },
   {
@@ -373,7 +373,7 @@ export const philosophers = [
     "categoria": "Dramaturgos",
     "periodo": "496–406 a.C.",
     "corrente": "Dramaturgos",
-    "img": "assets/Sophocles.png",
+    "img": "/assets/Sophocles.png",
     "bio": "<p>Autor de <em>Édipo Rei</em>, uma das maiores tragédias já escritas.</p>"
   },
   {
@@ -382,7 +382,7 @@ export const philosophers = [
     "categoria": "Dramaturgos",
     "periodo": "480–406 a.C.",
     "corrente": "Dramaturgos",
-    "img": "assets/Euripides.png",
+    "img": "/assets/Euripides.png",
     "bio": "<p>Explorou conflitos psicológicos e humanos em suas peças, aproximando a tragédia da interioridade humana.</p>"
   },
   {
@@ -463,7 +463,7 @@ export const philosophers = [
     "categoria": "Escritores",
     "periodo": "1821–1881",
     "corrente": "Escritores",
-    "img": "assets/fiodor.jpg",
+    "img": "/assets/fiodor.jpg",
     "bio": "<p>Explorou liberdade, culpa, fé e moralidade com profundidade psicológica rara.</p>"
   },
   {
@@ -472,7 +472,7 @@ export const philosophers = [
     "categoria": "Escritores",
     "periodo": "1828–1910",
     "corrente": "Escritores",
-    "img": "assets/tolstoy.png",
+    "img": "/assets/tolstoy.png",
     "bio": "<p>Autor de <em>Guerra e Paz</em> e <em>Anna Kariênina</em>, duas obras monumentais da literatura universal.</p>"
   },
   {

@@ -5,7 +5,7 @@ export const contentAreas = [
     description: "De Tales a Marco Aurélio, explore os fundamentos do pensamento ocidental que moldaram nossa civilização.",
     icon: {
       alt: "🏛️",
-      src: "assets/1f3db.svg"
+      src: "/assets/1f3db.svg"
     }
   },
   {
@@ -13,7 +13,7 @@ export const contentAreas = [
     description: "A síntese entre fé e razão com Santo Agostinho, Tomás de Aquino e os grandes escolásticos.",
     icon: {
       alt: "⛪",
-      src: "assets/26ea.svg"
+      src: "/assets/26ea.svg"
     }
   },
   {
@@ -21,7 +21,7 @@ export const contentAreas = [
     description: "De Descartes a Kant, a revolução do pensamento que transformou a ciência e a política.",
     icon: {
       alt: "🔭",
-      src: "assets/1f52d.svg"
+      src: "/assets/1f52d.svg"
     }
   },
   {
@@ -29,7 +29,7 @@ export const contentAreas = [
     description: "Existencialismo, fenomenologia e as correntes que definem o pensamento do século XX e XXI.",
     icon: {
       alt: "🧠",
-      src: "assets/1f9e0.svg"
+      src: "/assets/1f9e0.svg"
     }
   },
   {
@@ -37,7 +37,7 @@ export const contentAreas = [
     description: "Questões fundamentais sobre o bem, a virtude e a justiça que orientam nossas decisões diárias.",
     icon: {
       alt: "⚖️",
-      src: "assets/2696.svg"
+      src: "/assets/2696.svg"
     }
   },
   {
@@ -45,7 +45,7 @@ export const contentAreas = [
     description: "Como aplicar o pensamento filosófico na vida prática, nos negócios e no desenvolvimento pessoal.",
     icon: {
       alt: "💡",
-      src: "assets/1f4a1.svg"
+      src: "/assets/1f4a1.svg"
     }
   },
   {

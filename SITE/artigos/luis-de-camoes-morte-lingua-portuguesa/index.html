@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="/assets/css-shared/base.css">
   <link rel="stylesheet" href="/assets/css-shared/components.css">
   <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
+  <script src="/assets/js/navigation.js" defer></script>
   <style>
     :root {
       --azul-profundo: #060D1E;
@@ -99,16 +100,19 @@
       align-items: center;
       gap: 10px;
       color: var(--dourado);
-      font-family: 'Playfair Display', serif;
-      font-size: .96rem;
-      font-weight: 700;
+      font-family: 'Cinzel', serif;
+      font-size: .88rem;
+      font-weight: 600;
+      letter-spacing: .05em;
       white-space: nowrap;
     }
 
     .site-brand img {
-      width: 30px;
-      height: 30px;
-      object-fit: contain;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--dourado);
     }
 
     .site-links {
@@ -475,7 +479,8 @@
   <nav class="site-nav" aria-label="Navegação principal">
     <div class="site-nav-inner">
       <a class="site-brand" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
-      <div class="site-links">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="libraryNav">Menu</button>
+      <div class="site-links" id="libraryNav">
         <a href="/">Início</a>
         <a class="active" href="/artigos/">Artigos</a>
         <a href="/#categorias">Categorias</a>

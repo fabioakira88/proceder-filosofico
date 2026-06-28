@@ -5,6 +5,8 @@
 
 .page-head h1 {
   font-family: var(--pf-font-display);
+  letter-spacing: 0;
+  line-height: 1.06;
 }
 
 .area,
@@ -22,4 +24,13 @@
   font-family: var(--pf-font-label);
   color: var(--pf-dourado);
   text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.card {
+  border-color: var(--pf-border);
+}
+
+.card:hover {
+  border-color: rgba(201, 168, 76, .36);
 }

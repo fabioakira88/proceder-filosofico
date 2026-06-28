@@ -9,10 +9,24 @@ html {
 
 body {
   margin: 0;
+  background-color: var(--pf-azul-profundo);
+  color: var(--pf-branco);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: var(--pf-focus-ring);
 }
 
 img {
@@ -27,7 +41,8 @@ img {
 
 .pf-page-shell {
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--pf-azul-profundo), var(--pf-azul-escuro));
+  background:
+    linear-gradient(180deg, var(--pf-azul-profundo), var(--pf-azul-escuro));
   color: var(--pf-branco);
   font-family: var(--pf-font-body);
 }

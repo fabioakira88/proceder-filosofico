@@ -12,8 +12,22 @@
   --pf-borda-dourada: rgba(201, 168, 76, .18);
   --pf-sombra-card: 0 18px 46px rgba(0, 0, 0, .38);
   --pf-font-display: 'Playfair Display', serif;
+  --pf-font-reading: 'EB Garamond', Georgia, serif;
   --pf-font-body: 'Lato', sans-serif;
   --pf-font-label: 'Cinzel', serif;
+  --pf-void: #0c0f1a;
+  --pf-depth: #111827;
+  --pf-surface: #151b2d;
+  --pf-surface-soft: rgba(255, 255, 255, .035);
+  --pf-border: rgba(201, 168, 76, .16);
+  --pf-border-quiet: rgba(255, 255, 255, .08);
+  --pf-text: #F7F3EA;
+  --pf-text-soft: rgba(247, 243, 234, .74);
+  --pf-text-muted: rgba(247, 243, 234, .52);
+  --pf-radius-card: 8px;
+  --pf-radius-control: 6px;
+  --pf-shadow-soft: 0 1px 3px rgba(0, 0, 0, .06), 0 4px 16px rgba(0, 0, 0, .07);
+  --pf-focus-ring: 0 0 0 3px rgba(201, 168, 76, .2);
 
   /* Aliases used by current inline page styles. */
   --azul-profundo: var(--pf-azul-profundo);
