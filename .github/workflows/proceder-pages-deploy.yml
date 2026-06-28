@@ -1,25 +1,29 @@
-name: Proceder Filosofico Deploy (FTP - Fallback Manual)
+name: Proceder Filosofico Deploy (GitHub Pages)
 
-# Desativado como deploy automatico em 2026-06-28 (MISSAO DEVOPS 06): o Hostinger
-# bloqueia/nao responde a conexoes FTP originadas dos runners do GitHub Actions
-# (causa confirmada na MISSAO DEVOPS 04, reproduzida na MISSAO DEVOPS 03). O deploy
-# automatico passou a ser feito via GitHub Pages (proceder-pages-deploy.yml).
-# Este workflow continua existindo, sem AUTOMATION/deploy.py removido, apenas para
-# um deploy manual via FTP se algum dia for necessario — so dispara por workflow_dispatch.
+# Substitui o deploy via FTP (proceder-deploy.yml) como caminho principal de publicacao.
+# Motivo: Hostinger nao responde a conexoes FTP originadas dos runners do GitHub Actions
+# (ver MISSION_DEVOPS_04 e MISSION_DEVOPS_03 Release Notes) — o site e 100% estatico, entao
+# publicar via GitHub Pages elimina essa dependencia de rede sem alterar UX/UI/conteudo.
 
 on:
+  push:
+    branches:
+      - main
+      - production
   workflow_dispatch:
 
 concurrency:
-  group: proceder-filosofico-deploy
+  group: proceder-filosofico-pages
   cancel-in-progress: false
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  validate-and-deploy:
-    name: Validate and deploy
+  build:
+    name: Validate and build
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -64,14 +68,30 @@ jobs:
             exit 1
           fi
 
-      - name: Deploy to Hostinger via FTP
-        env:
-          FTP_HOST: ${{ secrets.PROCEDER_FTP_HOST }}
-          FTP_USER: ${{ secrets.PROCEDER_FTP_USER }}
-          FTP_PASS: ${{ secrets.PROCEDER_FTP_PASS }}
-          FTP_REMOTE_DIR: ${{ secrets.PROCEDER_FTP_REMOTE_DIR }}
-          FTP_TIMEOUT: ${{ vars.PROCEDER_FTP_TIMEOUT || '30' }}
-          FTP_FILE_TIMEOUT: ${{ vars.PROCEDER_FTP_FILE_TIMEOUT || '45' }}
-          DEPLOY_TRACKED_ONLY: "1"
-          DEPLOY_GENERATE_SEO: "0"
-        run: python3 AUTOMATION/deploy.py
+      - name: Stage publishable content
+        # Espelha as exclusoes de AUTOMATION/deploy.py (EXCLUDE_DIRS): docs/ guarda
+        # snapshots de backup arquivados, nunca publicados via FTP, e nao devem
+        # passar a ser publicados agora so porque o Pages publica a pasta inteira.
+        run: |
+          mkdir -p PAGES_BUILD
+          rsync -a --exclude='docs' --exclude='wp-content' --exclude='wp-includes' SITE/ PAGES_BUILD/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: PAGES_BUILD
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
