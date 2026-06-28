@@ -352,7 +352,15 @@ function renderHomeRail(rail, index) {
       label: 'Newsletter',
       title: 'Receba novas <span class="dourado">reflexões</span>',
       subtitle: 'Um canal simples para acompanhar novos textos, percursos e leituras da revista.',
-      body: '        <div class="newsletter-box"><a class="button" href="mailto:procederfilosofico@gmail.com?subject=Newsletter%20Proceder%20Filos%C3%B3fico">Entrar em contato</a></div>',
+      body: [
+        '        <div class="newsletter-box">',
+        '          <form class="newsletter-form" id="newsletterForm">',
+        '            <input type="email" id="newsletterEmail" placeholder="seu@email.com" aria-label="Seu e-mail" required>',
+        '            <button type="submit" class="newsletter-submit">Inscrever-se</button>',
+        '          </form>',
+        '          <p class="newsletter-note">Ao confirmar, abriremos um e-mail para <strong>procederfilosofico@gmail.com</strong> com o seu endereço.</p>',
+        '        </div>'
+      ].join('\n'),
       alt: index % 2 === 1
     });
   }
