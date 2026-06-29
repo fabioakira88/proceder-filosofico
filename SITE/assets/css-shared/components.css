@@ -123,7 +123,7 @@
   display: flex !important;
   align-items: center !important;
   gap: .75rem !important;
-  color: var(--pf-dourado) !important;
+  color: var(--pf-branco) !important;
   font-family: var(--pf-font-label) !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
@@ -232,7 +232,7 @@
 .hamburger,
 .menu-toggle,
 [data-nav-toggle] {
-  display: none;
+  display: none !important;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
