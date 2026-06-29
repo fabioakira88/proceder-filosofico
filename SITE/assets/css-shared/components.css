@@ -233,17 +233,18 @@
 .menu-toggle,
 [data-nav-toggle] {
   display: none !important;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: var(--pf-dourado);
-  padding: 4px;
-  font-family: var(--pf-font-label);
-  font-size: 11px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  flex-direction: column !important;
+  gap: 5px !important;
+  cursor: pointer !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: var(--pf-dourado) !important;
+  padding: 4px !important;
+  font-family: var(--pf-font-label) !important;
+  font-size: 11px !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
 }
 
 .hamburger span,
