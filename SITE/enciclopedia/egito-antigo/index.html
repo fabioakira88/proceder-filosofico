@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/assets/css-shared/base.css">
   <link rel="stylesheet" href="/assets/css-shared/components.css">
   <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
-  <script src="/assets/js/navigation.js" defer></script>
+  <link rel="stylesheet" href="/assets/css-shared/proceder-shell.css">
   <style>
     :root{--azul:#060D1E;--azul2:#061E47;--dourado:#C9A84C;--branco:#F7F3EA}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}a{color:inherit;text-decoration:none}
     
@@ -37,8 +37,38 @@
 </head>
 <body>
   <!-- PROCEDER:GENERATED_EDITORIAL_PAGE -->
-  <nav class="navbar"><div class="navbar-inner"><a class="navbar-logo" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a><div class="navbar-links" id="libraryNav"><a href="/">Início</a><a href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a><a href="/filosofos/">Filósofos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a><a href="/biblioteca.html">Livros</a><a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a><a href="/#newsletter">Newsletter</a></div></div></nav>
-  <main>
+  <header class="pf-header" role="banner">
+    <div class="pf-header__top">
+      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">
+        <span class="pf-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+        <span class="pf-brand__text">
+          <span class="pf-brand__name">Proceder Filosófico</span>
+          <span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span>
+        </span>
+      </a>
+      <div class="pf-header__tools" aria-label="Ações rápidas">
+        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos">
+          <span class="pf-tool__icon" aria-hidden="true">⌕</span>
+          <span>Buscar</span>
+        </a>
+        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter">
+          <span class="pf-tool__icon" aria-hidden="true">✉</span>
+          <span>Newsletter</span>
+        </a>
+      </div>
+    </div>
+    <nav class="pf-nav" aria-label="Navegação principal">
+      <a class="pf-nav__link" href="/">Início</a>
+      <a class="pf-nav__link" href="/artigos/">Artigos</a>
+      <a class="pf-nav__link" href="/#categorias">Categorias</a>
+      <a class="pf-nav__link" href="/filosofos/">Filósofos</a>
+      <a class="pf-nav__link" href="/dossies/">Dossiês</a>
+      <a class="pf-nav__link is-active" href="/enciclopedia/">Enciclopédia</a>
+      <a class="pf-nav__link" href="/biblioteca.html">Livros</a>
+      <a class="pf-nav__link" href="/#newsletter">Newsletter</a>
+    </nav>
+  </header>
+  <main class="pf-main">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Início</a><span>›</span><a href="/enciclopedia/">Enciclopédia</a><span>›</span><strong>Egito Antigo</strong></nav>
     <header class="hero">
       <span class="label">Enciclopédia da História Humana · 04/10</span>
@@ -71,6 +101,73 @@
       <a class="back-link" href="/enciclopedia/">&larr; Voltar para a Enciclopédia</a>
     </section>
   </main>
-  <footer>Proceder Filosófico · Biblioteca de pensamento</footer>
+  <footer class="pf-footer" role="contentinfo">
+    <div class="pf-footer__inner">
+      <section class="pf-footer__brand" aria-label="Proceder Filosófico">
+        <a class="pf-footer-brand" href="/">
+          <span class="pf-footer-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+          <span class="pf-footer-brand__name">Proceder<br>Filosófico</span>
+        </a>
+        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem. Um arquivo para a cultura, a filosofia e a civilização.</p>
+        <div class="pf-social" aria-label="Canais editoriais">
+          <a href="/artigos/" aria-label="Artigos">A</a>
+          <a href="/dossies/" aria-label="Dossiês">D</a>
+          <a href="/enciclopedia/" aria-label="Enciclopédia">E</a>
+          <a href="/biblioteca.html" aria-label="Biblioteca">B</a>
+        </div>
+      </section>
+      <nav class="pf-footer__column" aria-label="Navegação">
+        <h2>Navegação</h2>
+        <a href="/">Início</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Livros</a>
+        <a href="/#newsletter">Newsletter</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Áreas">
+        <h2>Áreas</h2>
+        <a href="/categoria/filosofia/">Filosofia</a>
+        <a href="/categoria/historia-da-civilizacao/">História da Civilização</a>
+        <a href="/categoria/literatura/">Literatura</a>
+        <a href="/categoria/ciencia/">Ciência</a>
+        <a href="/categoria/religiao/">Religião</a>
+        <a href="/categoria/arte/">Arte</a>
+        <a href="/categoria/politica/">Política</a>
+        <a href="/categoria/atualidade-filosofica/">Atualidade Filosófica</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <a href="/sobre/">Sobre o Projeto</a>
+        <a href="/artigos/">Acervo de Artigos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Biblioteca</a>
+      </nav>
+      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento">
+        <span class="pf-footer__symbol" aria-hidden="true">✦</span>
+        <h2>Palavra e Pensamento</h2>
+        <p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p>
+        <form class="pf-newsletter-form" action="/#newsletter" method="get">
+          <label for="pf-footer-email-enciclopedia-egito-antigo-index">Receba novos artigos e dossiês.</label>
+          <div class="pf-newsletter-form__row">
+            <input id="pf-footer-email-enciclopedia-egito-antigo-index" name="email" type="email" placeholder="Seu e-mail">
+            <button type="submit" aria-label="Assinar newsletter">→</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="pf-footer__bottom">
+      <span class="pf-footer__star" aria-hidden="true">✶</span>
+      <p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p>
+      <nav aria-label="Links legais">
+        <a href="/sobre/">Sobre</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#newsletter">Contato</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

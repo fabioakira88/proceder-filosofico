@@ -25,19 +25,44 @@
   <link rel="stylesheet" href="/assets/css-shared/tokens.css">
   <link rel="stylesheet" href="/assets/css-shared/base.css">
   <link rel="stylesheet" href="/assets/css-shared/components.css">
-  <script src="/assets/js/navigation.js" defer></script>
+  <link rel="stylesheet" href="/assets/css-shared/proceder-shell.css">
   <style>
     :root{--azul-profundo:#060D1E;--azul-escuro:#061E47;--azul-real:#0B3D91;--dourado:#C9A84C;--dourado-claro:#E6D28A;--branco:#F7F3EA;--branco-suave:#E8E1D2;--cinza-claro:#B8B3A8;--cinza-medio:#8A8478;--borda-dourada:rgba(201,168,76,.18)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--azul-profundo);color:var(--branco);font-family:'Lato',sans-serif;line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.hero{min-height:94vh;position:relative;display:flex;align-items:center;overflow:hidden;background:var(--azul-profundo);padding-top:76px}.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .7s ease}.hero-slide.active{opacity:1}.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(.85) contrast(1.05)}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,13,30,.94) 0%,rgba(6,13,30,.62) 45%,rgba(6,13,30,.18) 100%)}.hero-content{position:relative;z-index:2;width:min(1180px,calc(100% - 40px));margin:0 auto;padding-top:max(170px,24vh)}.hero-label,.section-label{font-family:'Cinzel',serif;color:var(--dourado);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}.hero h1,.hero h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:600;line-height:1.2;letter-spacing:.01em;margin:10px 0 14px;max-width:460px;overflow-wrap:break-word}.hero-dates{font-family:'Cinzel',serif;color:var(--dourado-claro);letter-spacing:.16em;font-size:.9rem;margin-bottom:24px}.hero-quote{max-width:620px;color:var(--branco-suave);font-family:'Playfair Display',serif;font-size:clamp(1.25rem,3vw,2rem);line-height:1.35;margin:0 0 34px}.button{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--dourado);border-radius:6px;color:var(--dourado);font-family:'Cinzel',serif;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:14px 24px}.button:hover{background:var(--dourado);color:var(--azul-profundo)}.hero-controls{position:absolute;z-index:4;right:38px;bottom:34px;display:flex;gap:10px}.hero-controls button{width:38px;height:38px;border:1px solid rgba(201,168,76,.42);border-radius:50%;background:rgba(6,13,30,.72);color:var(--dourado);cursor:pointer}.section{padding:92px 0;background:linear-gradient(180deg,var(--azul-profundo),var(--azul-escuro))}.section.alt{background:var(--azul-profundo)}.section-header{text-align:center;max-width:780px;margin:0 auto 48px}.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.15;margin:10px 0;color:var(--branco)}.dourado{color:var(--dourado)}.section-subtitle{color:var(--cinza-claro);font-size:1rem;line-height:1.75;margin:0}.news-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.news-card{min-height:100%;display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(201,168,76,.24);border-radius:8px;background:linear-gradient(145deg,rgba(11,61,145,.26),rgba(6,30,71,.68));transition:transform .26s,border-color .26s,box-shadow .26s}.news-card:hover{transform:translateY(-6px);border-color:var(--dourado);box-shadow:0 18px 46px rgba(0,0,0,.38)}.news-thumb{width:100%;height:172px;object-fit:cover;border-bottom:1px solid rgba(201,168,76,.2);background:rgba(6,13,30,.7)}.news-body{padding:20px;display:flex;flex-direction:column;flex:1}.news-tag{font-family:'Cinzel',serif;color:var(--dourado);font-size:.64rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}.news-title{font-family:'Playfair Display',serif;font-size:1.08rem;line-height:1.32;margin:0 0 12px}.news-excerpt{color:var(--cinza-claro);font-size:.9rem;line-height:1.62;margin:0 0 18px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.news-meta{margin-top:auto;border-top:1px solid var(--borda-dourada);padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--dourado-claro);font-family:'Cinzel',serif;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase}.library-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.library-card{border:1px solid rgba(201,168,76,.24);border-radius:8px;padding:26px;background:rgba(255,255,255,.035)}.library-card .mark{font-family:'Playfair Display',serif;color:var(--dourado);font-size:2rem}.library-card h3{font-family:'Playfair Display',serif;margin:14px 0 8px;font-size:1.3rem}.library-card p{color:var(--cinza-claro);margin:0 0 18px}.newsletter-box{max-width:680px;margin:0 auto;text-align:center;border:1px solid rgba(201,168,76,.22);border-radius:8px;padding:46px 32px;background:linear-gradient(135deg,rgba(11,61,145,.22),rgba(6,30,71,.6))}.newsletter-box p{color:var(--cinza-claro)}.newsletter-form{display:flex;gap:12px;max-width:440px;margin:0 auto}.newsletter-form input{flex:1;min-width:0;background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.32);border-radius:6px;color:var(--branco);font-family:'Lato',sans-serif;font-size:.95rem;padding:0 16px;height:48px}.newsletter-form input::placeholder{color:rgba(247,243,234,.4)}.newsletter-form input:focus{outline:none;border-color:var(--dourado)}.newsletter-submit{border:1px solid var(--dourado);background:var(--dourado);color:var(--azul-profundo)!important;border-radius:6px;font-family:'Cinzel',serif;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:0 22px;height:48px;cursor:pointer;white-space:nowrap}.newsletter-submit:hover{background:var(--dourado-claro)}.newsletter-note{margin:14px 0 0;font-size:.78rem;color:rgba(247,243,234,.42)}@media(max-width:560px){.newsletter-form{flex-direction:column}.newsletter-submit{height:46px}}.footer{padding:42px 0;border-top:1px solid var(--borda-dourada);background:#050b19;color:var(--cinza-claro)}.footer-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center}.footer a{color:var(--dourado)}@media(max-width:1000px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.library-grid{grid-template-columns:1fr}}@media(max-width:720px){.hero{min-height:700px;padding-top:0;align-items:flex-start}.hero-content{padding-top:max(130px,16vh)}.hero-controls{left:20px;right:auto;bottom:24px}.hero-quote{font-size:1.24rem}.news-grid{grid-template-columns:1fr}.container{width:min(100% - 28px,1180px)}.section{padding:70px 0}.footer-inner{display:block}.hero h1,.hero h2{font-size:clamp(1.6rem,7vw,2.2rem);line-height:1.2;max-width:100%}}
 </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a class="navbar-logo" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
-      <div class="navbar-links" id="libraryNav"><a href="/">Início</a><a href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a><a href="/filosofos/">Filósofos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a><a href="/biblioteca.html">Livros</a><a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a><a href="/#newsletter">Newsletter</a></div>
+  <header class="pf-header" role="banner">
+    <div class="pf-header__top">
+      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">
+        <span class="pf-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+        <span class="pf-brand__text">
+          <span class="pf-brand__name">Proceder Filosófico</span>
+          <span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span>
+        </span>
+      </a>
+      <div class="pf-header__tools" aria-label="Ações rápidas">
+        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos">
+          <span class="pf-tool__icon" aria-hidden="true">⌕</span>
+          <span>Buscar</span>
+        </a>
+        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter">
+          <span class="pf-tool__icon" aria-hidden="true">✉</span>
+          <span>Newsletter</span>
+        </a>
+      </div>
     </div>
-  </nav>
+    <nav class="pf-nav" aria-label="Navegação principal">
+      <a class="pf-nav__link is-active" href="/">Início</a>
+      <a class="pf-nav__link" href="/artigos/">Artigos</a>
+      <a class="pf-nav__link" href="/#categorias">Categorias</a>
+      <a class="pf-nav__link" href="/filosofos/">Filósofos</a>
+      <a class="pf-nav__link" href="/dossies/">Dossiês</a>
+      <a class="pf-nav__link" href="/enciclopedia/">Enciclopédia</a>
+      <a class="pf-nav__link" href="/biblioteca.html">Livros</a>
+      <a class="pf-nav__link" href="/#newsletter">Newsletter</a>
+    </nav>
+  </header>
   <header class="hero" id="inicio">
       <div class="hero-slide active">
         <div class="hero-bg" style="background-image:url('assets/FLaneKfrfyGYOgJd.jpg')"></div>
@@ -94,7 +119,7 @@
       <button type="button" id="nextHero" aria-label="Próximo destaque">›</button>
     </div>
   </header>
-  <main>
+  <main class="pf-main">
     <!-- PROCEDER:HOME_HUB_START -->
     <section class="section" id="destaques">
       <div class="container">
@@ -275,10 +300,72 @@
     </section>
     <!-- PROCEDER:HOME_HUB_END -->
   </main>
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© Proceder Filosófico</div>
-      <div><a href="/artigos/">Artigos</a> · <a href="/#categorias">Categorias</a> · <a href="/filosofos/">Filósofos</a> · <a href="/dossies/">Dossiês</a> · <a href="/biblioteca.html">Livros</a> · <a href="/sobre/">Sobre</a></div>
+  <footer class="pf-footer" role="contentinfo">
+    <div class="pf-footer__inner">
+      <section class="pf-footer__brand" aria-label="Proceder Filosófico">
+        <a class="pf-footer-brand" href="/">
+          <span class="pf-footer-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+          <span class="pf-footer-brand__name">Proceder<br>Filosófico</span>
+        </a>
+        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem. Um arquivo para a cultura, a filosofia e a civilização.</p>
+        <div class="pf-social" aria-label="Canais editoriais">
+          <a href="/artigos/" aria-label="Artigos">A</a>
+          <a href="/dossies/" aria-label="Dossiês">D</a>
+          <a href="/enciclopedia/" aria-label="Enciclopédia">E</a>
+          <a href="/biblioteca.html" aria-label="Biblioteca">B</a>
+        </div>
+      </section>
+      <nav class="pf-footer__column" aria-label="Navegação">
+        <h2>Navegação</h2>
+        <a href="/">Início</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Livros</a>
+        <a href="/#newsletter">Newsletter</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Áreas">
+        <h2>Áreas</h2>
+        <a href="/categoria/filosofia/">Filosofia</a>
+        <a href="/categoria/historia-da-civilizacao/">História da Civilização</a>
+        <a href="/categoria/literatura/">Literatura</a>
+        <a href="/categoria/ciencia/">Ciência</a>
+        <a href="/categoria/religiao/">Religião</a>
+        <a href="/categoria/arte/">Arte</a>
+        <a href="/categoria/politica/">Política</a>
+        <a href="/categoria/atualidade-filosofica/">Atualidade Filosófica</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <a href="/sobre/">Sobre o Projeto</a>
+        <a href="/artigos/">Acervo de Artigos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Biblioteca</a>
+      </nav>
+      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento">
+        <span class="pf-footer__symbol" aria-hidden="true">✦</span>
+        <h2>Palavra e Pensamento</h2>
+        <p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p>
+        <form class="pf-newsletter-form" action="/#newsletter" method="get">
+          <label for="pf-footer-email-index">Receba novos artigos e dossiês.</label>
+          <div class="pf-newsletter-form__row">
+            <input id="pf-footer-email-index" name="email" type="email" placeholder="Seu e-mail">
+            <button type="submit" aria-label="Assinar newsletter">→</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="pf-footer__bottom">
+      <span class="pf-footer__star" aria-hidden="true">✶</span>
+      <p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p>
+      <nav aria-label="Links legais">
+        <a href="/sobre/">Sobre</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#newsletter">Contato</a>
+      </nav>
     </div>
   </footer>
   <script>
