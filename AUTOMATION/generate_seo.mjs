@@ -145,6 +145,7 @@ const staticUrls = [
   { loc: `${SITE_URL}/`, lastmod: null },
   { loc: `${SITE_URL}/artigos/`, lastmod: null },
   { loc: `${SITE_URL}/conteudo/`, lastmod: null },
+  { loc: `${SITE_URL}/conteudo/linha-do-tempo-dos-conceitos-filosoficos/`, lastmod: null },
   dossierIndexUrl,
   { loc: `${SITE_URL}/filosofos/`, lastmod: null },
   { loc: `${SITE_URL}/sobre/`, lastmod: null },
