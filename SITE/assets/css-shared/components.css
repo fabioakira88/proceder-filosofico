@@ -230,6 +230,7 @@
 }
 
 .hamburger,
+#hamburger,
 .menu-toggle,
 [data-nav-toggle] {
   display: none !important;
@@ -245,6 +246,17 @@
   font-size: 11px !important;
   letter-spacing: .12em !important;
   text-transform: uppercase !important;
+}
+
+/* Explicit desktop guard: the menu toggle must never render on desktop,
+   independent of load order or any page-local override. */
+@media (min-width: 769px) {
+  .hamburger,
+  #hamburger,
+  .menu-toggle,
+  [data-nav-toggle] {
+    display: none !important;
+  }
 }
 
 .hamburger span,
@@ -350,6 +362,7 @@ footer a {
 
 @media (max-width: 768px) {
   .hamburger,
+  #hamburger,
   .menu-toggle,
   [data-nav-toggle] {
     display: flex !important;
