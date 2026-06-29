@@ -176,6 +176,22 @@
   transition: color .2s ease, background-color .2s ease !important;
 }
 
+.nav-search {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px !important;
+  margin-left: 4px !important;
+}
+
+.nav-search svg {
+  display: block;
+}
+
+.nav-search:hover {
+  color: var(--pf-dourado) !important;
+}
+
 .navbar-links a:hover,
 .navbar-links a.active,
 .site-links a:hover,

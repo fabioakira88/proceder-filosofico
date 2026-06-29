@@ -358,7 +358,7 @@ function renderHomeRail(rail, index) {
         '            <input type="email" id="newsletterEmail" placeholder="seu@email.com" aria-label="Seu e-mail" required>',
         '            <button type="submit" class="newsletter-submit">Inscrever-se</button>',
         '          </form>',
-        '          <p class="newsletter-note">Ao confirmar, abriremos um e-mail para <strong>procederfilosofico@gmail.com</strong> com o seu endereço.</p>',
+        '          <p class="newsletter-note">Ao confirmar, você recebe o PDF gratuito <strong>Manual de Epicteto</strong> e abrimos um e-mail para <strong>procederfilosofico@gmail.com</strong> com o seu endereço.</p>',
         '        </div>'
       ].join('\n'),
       alt: index % 2 === 1

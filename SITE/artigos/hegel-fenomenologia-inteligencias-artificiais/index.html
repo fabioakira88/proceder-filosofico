@@ -138,6 +138,30 @@
       color: var(--dourado);
     }
 
+    .search-wrap {
+      width: min(620px, 100%);
+      margin: 0 auto 32px;
+    }
+
+    .search-wrap .search {
+      width: 100%;
+      padding: 15px 18px;
+      border: 1px solid rgba(201, 168, 76, .28);
+      border-radius: 7px;
+      background: rgba(255, 255, 255, .04);
+      color: #fff;
+      font: inherit;
+      outline: none;
+    }
+
+    .search-wrap .search:focus {
+      border-color: var(--dourado);
+    }
+
+    .search-wrap .search::placeholder {
+      color: rgba(255, 255, 255, .32);
+    }
+
     .articles-grid {
       width: min(1200px, 100%);
       margin: 0 auto;
@@ -488,12 +512,13 @@
         <a href="/dossies/">Dossiês</a>
         <a href="/enciclopedia/">Enciclopédia</a>
         <a href="/biblioteca.html">Livros</a>
-        <a href="/sobre/">Sobre</a>
+        <a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a>
         <a href="/#newsletter">Newsletter</a>
       </div>
     </div>
   </nav>
   <main>
+    <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>
     <section class="articles-grid" id="articlesGrid"></section>
     <!-- PROCEDER:ARTICLE_START -->
     <article class="reader open" id="reader">
@@ -711,14 +736,29 @@
       });
     }
 
+    function normalizeSearch(value) {
+      return String(value || '')
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .toLowerCase();
+    }
+
+    function matchesSearch(post, term) {
+      if (!term) return true;
+      var haystack = normalizeSearch(post.title) + ' ' + normalizeSearch(post.excerpt) + ' ' + normalizeSearch(post.tag);
+      return haystack.indexOf(term) !== -1;
+    }
+
     function rewriteContent(content) {
       return window.ProcederReader.rewriteArticleContent(content);
     }
 
     function renderGrid() {
       var grid = document.getElementById('articlesGrid');
+      var searchInput = document.getElementById('articleSearch');
+      var term = normalizeSearch(searchInput ? searchInput.value.trim() : '');
       grid.innerHTML = '';
-      sortedPosts().forEach(function(post, index) {
+      sortedPosts().filter(function(post){ return matchesSearch(post, term); }).forEach(function(post, index) {
         var slug = post.slug || post.id;
         var thumb = versionedAsset(post.thumb);
         var fallback = DEFAULT_THUMB + '?v=' + ASSET_VERSION;
@@ -796,6 +836,10 @@
     });
 
     renderGrid();
+    var articleSearchInput = document.getElementById('articleSearch');
+    if (articleSearchInput) {
+      articleSearchInput.addEventListener('input', function(){ renderGrid(); });
+    }
     var initialSlug = routeSlug();
     if (initialSlug) openPost(initialSlug, false);
   </script>
