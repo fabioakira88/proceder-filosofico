@@ -336,14 +336,19 @@ section[id],
   color: var(--pf-azul-profundo) !important;
 }
 
+/* Footer typography mirrors the header's label language: same family,
+   weight, tracking and case treatment used for the brand and section labels. */
 .footer,
 footer {
   background: var(--pf-azul-profundo) !important;
   border-top: 1px solid var(--pf-borda-dourada) !important;
-  color: rgba(247, 243, 234, .38) !important;
-  font-family: var(--pf-font-body) !important;
-  font-size: 13px !important;
-  line-height: 1.7 !important;
+  color: rgba(247, 243, 234, .42) !important;
+  font-family: var(--pf-font-label) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+  line-height: 1.9 !important;
   padding-block: 36px !important;
   text-align: center !important;
 }
