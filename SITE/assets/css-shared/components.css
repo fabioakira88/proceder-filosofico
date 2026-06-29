@@ -113,6 +113,7 @@
 .navbar-logo {
   display: flex !important;
   align-items: center !important;
+  flex: 0 0 auto !important;
   gap: .75rem !important;
   color: var(--pf-branco) !important;
   font-family: var(--pf-font-label) !important;
@@ -121,14 +122,30 @@
   letter-spacing: .05em !important;
   white-space: nowrap !important;
   text-decoration: none !important;
+  max-width: min(320px, calc(100vw - 120px)) !important;
+  overflow: hidden !important;
 }
 
 .navbar-logo img {
+  display: block !important;
+  flex: 0 0 40px !important;
   width: 40px !important;
   height: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  aspect-ratio: 1 / 1 !important;
   border-radius: 50% !important;
   object-fit: cover !important;
   border: 2px solid var(--pf-dourado) !important;
+}
+
+.navbar-logo span {
+  display: inline-block !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 .navbar-links {
