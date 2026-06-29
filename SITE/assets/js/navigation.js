@@ -1,59 +1,74 @@
 (function () {
+  var NAV_SELECTOR = '.navbar, .site-nav';
+  var INNER_SELECTOR = '.navbar-inner, .site-nav-inner, .nav-inner';
+  var LINKS_SELECTOR = '.navbar-links, .site-links, .nav-links, .nav';
   var TOGGLE_SELECTOR = '.hamburger, #hamburger, .menu-toggle, [data-nav-toggle]';
   var desktopQuery = typeof window.matchMedia === 'function' ? window.matchMedia('(min-width: 769px)') : null;
+  var autoId = 0;
 
   function bindToggle(button, target) {
-    if (!button || !target) return;
     button.addEventListener('click', function () {
       var open = target.classList.toggle('open');
       button.setAttribute('aria-expanded', String(open));
     });
   }
 
-  // The menu toggle exists only for the mobile nav pattern. On desktop it has
-  // no function at all, so beyond hiding it with CSS, it is actively removed
-  // from rendering, interaction and the accessibility tree at the DOM level.
-  // This is independent of components.css load order or any page-local style.
-  function enforceDesktopState(scope) {
+  // The menu toggle has no purpose on desktop, so the markup is not shipped
+  // in the page source at all. It exists only as a DOM node created here,
+  // and only while the viewport is mobile-sized. On desktop there is no
+  // button element anywhere in the document to hide, style or trip over.
+  function createToggle(nav) {
+    var inner = nav.querySelector(INNER_SELECTOR);
+    var links = nav.querySelector(LINKS_SELECTOR);
+    if (!inner || !links) return;
+    if (!links.id) {
+      autoId += 1;
+      links.id = 'procederNav' + autoId;
+    }
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'menu-toggle';
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-controls', links.id);
+    button.textContent = 'Menu';
+    inner.insertBefore(button, links);
+    bindToggle(button, links);
+  }
+
+  function removeToggle(nav) {
+    var button = nav.querySelector(TOGGLE_SELECTOR);
+    var links = nav.querySelector(LINKS_SELECTOR);
+    if (links) links.classList.remove('open');
+    if (button) button.remove();
+  }
+
+  function syncNav(nav, isDesktop) {
+    var hasToggle = !!nav.querySelector(TOGGLE_SELECTOR);
+    if (isDesktop) {
+      if (hasToggle) removeToggle(nav);
+    } else if (!hasToggle) {
+      createToggle(nav);
+    }
+  }
+
+  function syncAllNavs(scope) {
     var isDesktop = desktopQuery ? desktopQuery.matches : window.innerWidth >= 769;
-    var buttons = scope.querySelectorAll(TOGGLE_SELECTOR);
-    buttons.forEach(function (button) {
-      if (isDesktop) {
-        button.hidden = true;
-        button.setAttribute('aria-hidden', 'true');
-        button.tabIndex = -1;
-        var controls = button.getAttribute('aria-controls');
-        var target = controls ? scope.getElementById && scope.getElementById(controls) : null;
-        if (target) target.classList.remove('open');
-        button.setAttribute('aria-expanded', 'false');
-      } else {
-        button.hidden = false;
-        button.removeAttribute('aria-hidden');
-        button.removeAttribute('tabindex');
-      }
-    });
+    scope.querySelectorAll(NAV_SELECTOR).forEach(function (nav) { syncNav(nav, isDesktop); });
   }
 
   function initNavigation(root) {
-    var scope = root || document;
-    bindToggle(scope.getElementById && scope.getElementById('menuToggle'), scope.getElementById && scope.getElementById('libraryNav'));
-    bindToggle(scope.getElementById && scope.getElementById('hamburger'), scope.getElementById && scope.getElementById('navLinks'));
-    scope.querySelectorAll('[data-nav-toggle]').forEach(function (button) {
-      var target = scope.querySelector(button.getAttribute('data-nav-toggle'));
-      bindToggle(button, target);
-    });
-    enforceDesktopState(scope === document ? document : document);
+    syncAllNavs(root || document);
   }
 
   if (desktopQuery) {
-    var onChange = function () { enforceDesktopState(document); };
+    var onChange = function () { syncAllNavs(document); };
     if (typeof desktopQuery.addEventListener === 'function') {
       desktopQuery.addEventListener('change', onChange);
     } else if (typeof desktopQuery.addListener === 'function') {
       desktopQuery.addListener(onChange);
     }
   } else {
-    window.addEventListener('resize', function () { enforceDesktopState(document); });
+    window.addEventListener('resize', function () { syncAllNavs(document); });
   }
 
   window.ProcederNavigation = { init: initNavigation };
