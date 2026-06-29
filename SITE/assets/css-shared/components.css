@@ -75,16 +75,12 @@
   border-color: var(--pf-dourado);
 }
 
-.site-brand img,
-.brand img,
-.logo img,
-.navbar-logo img {
+.logo img {
   border-radius: 50%;
 }
 
-/* Official institutional navbar, aligned with Biblioteca. */
-.navbar,
-.site-nav {
+/* Single official header component. */
+.navbar {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -98,9 +94,7 @@
   pointer-events: auto !important;
 }
 
-.navbar-inner,
-.site-nav-inner,
-.nav-inner {
+.navbar-inner {
   width: min(1200px, 100%) !important;
   max-width: 1200px !important;
   height: 70px !important;
@@ -116,9 +110,6 @@
   box-shadow: none !important;
 }
 
-.navbar-logo,
-.site-brand,
-.brand,
 .logo {
   display: flex !important;
   align-items: center !important;
@@ -132,9 +123,6 @@
   text-decoration: none !important;
 }
 
-.navbar-logo img,
-.site-brand img,
-.brand img,
 .logo img {
   width: 40px !important;
   height: 40px !important;
@@ -143,9 +131,6 @@
   border: 2px solid var(--pf-dourado) !important;
 }
 
-.navbar-links,
-.site-links,
-.nav-links,
 .nav {
   display: flex !important;
   align-items: center !important;
@@ -159,9 +144,6 @@
   letter-spacing: 0 !important;
 }
 
-.navbar-links a,
-.site-links a,
-.nav-links a,
 .nav a {
   display: block !important;
   color: rgba(255, 255, 255, .70) !important;
@@ -192,12 +174,6 @@
   color: var(--pf-dourado) !important;
 }
 
-.navbar-links a:hover,
-.navbar-links a.active,
-.site-links a:hover,
-.site-links a.active,
-.nav-links a:hover,
-.nav-links a.active,
 .nav a:hover,
 .nav a.active,
 .nav .active {
@@ -205,12 +181,6 @@
   background: transparent !important;
 }
 
-.navbar-cta,
-.nav-cta,
-.navbar-links a[href="/#newsletter"],
-.nav-links a[href="#newsletter"],
-.nav-links a[href="/#newsletter"],
-.site-links a[href="/#newsletter"],
 .nav a[href="/#newsletter"] {
   background: var(--pf-dourado) !important;
   color: var(--pf-azul-profundo) !important;
@@ -218,21 +188,12 @@
   border-radius: 6px !important;
 }
 
-.navbar-cta:hover,
-.nav-cta:hover,
-.navbar-links a[href="/#newsletter"]:hover,
-.nav-links a[href="#newsletter"]:hover,
-.nav-links a[href="/#newsletter"]:hover,
-.site-links a[href="/#newsletter"]:hover,
 .nav a[href="/#newsletter"]:hover {
   background: var(--pf-dourado-claro) !important;
   color: var(--pf-azul-profundo) !important;
 }
 
-.hamburger,
-#hamburger,
-.menu-toggle,
-[data-nav-toggle] {
+.menu-toggle {
   display: none !important;
   flex-direction: column !important;
   gap: 5px !important;
@@ -251,16 +212,12 @@
 /* Explicit desktop guard: the menu toggle must never render on desktop,
    independent of load order or any page-local override. */
 @media (min-width: 769px) {
-  .hamburger,
-  #hamburger,
-  .menu-toggle,
-  [data-nav-toggle] {
+  .menu-toggle {
     display: none !important;
   }
 }
 
-.hamburger span,
-[data-nav-toggle] span {
+.menu-toggle span {
   display: block;
   width: 24px;
   height: 2px;
@@ -268,8 +225,7 @@
   border-radius: 2px;
 }
 
-.navbar + main,
-.site-nav + main {
+.navbar + main {
   padding-top: max(100px, 8vh) !important;
 }
 
@@ -284,8 +240,7 @@ section[id],
   scroll-margin-top: 92px;
 }
 
-.navbar + .hero,
-.site-nav + .hero {
+.navbar + .hero {
   padding-top: max(118px, 13vh) !important;
 }
 
@@ -366,24 +321,16 @@ footer a {
 }
 
 @media (max-width: 768px) {
-  .hamburger,
-  #hamburger,
-  .menu-toggle,
-  [data-nav-toggle] {
+  .menu-toggle {
     display: flex !important;
   }
 
-  .navbar-inner,
-  .site-nav-inner,
-  .nav-inner {
+  .navbar-inner {
     position: relative !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
   }
 
-  .navbar-links,
-  .site-links,
-  .nav-links,
   .nav {
     display: none !important;
     position: absolute !important;
@@ -399,21 +346,10 @@ footer a {
     padding: 10px 0 !important;
   }
 
-  .navbar-links.open,
-  .site-links.open,
-  .nav-links.open,
   .nav.open {
     display: flex !important;
   }
 
-  .navbar-links li,
-  .nav-links li {
-    width: 100% !important;
-  }
-
-  .navbar-links a,
-  .site-links a,
-  .nav-links a,
   .nav a {
     width: 100% !important;
     padding: 12px 24px !important;

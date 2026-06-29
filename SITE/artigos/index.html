@@ -68,75 +68,6 @@
       background: linear-gradient(180deg, var(--azul-profundo), var(--azul-escuro));
     }
 
-    .site-nav {
-      position: fixed;
-      top: 22px;
-      left: 24px;
-      right: 24px;
-      z-index: 20;
-      display: flex;
-      justify-content: center;
-      pointer-events: none;
-    }
-
-    .site-nav-inner {
-      width: min(1180px, 100%);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 8px 14px;
-      border: 1px solid rgba(201, 168, 76, 0.22);
-      border-radius: 999px;
-      background: rgba(6, 13, 30, 0.78);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
-      pointer-events: auto;
-    }
-
-    .site-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--dourado);
-      font-family: 'Cinzel', serif;
-      font-size: .88rem;
-      font-weight: 600;
-      letter-spacing: .05em;
-      white-space: nowrap;
-    }
-
-    .site-brand img {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--dourado);
-    }
-
-    .site-links {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .site-links a {
-      color: var(--branco-suave);
-      font-family: 'Cinzel', serif;
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      transition: color 0.22s ease;
-    }
-
-    .site-links a:hover,
-    .site-links .active {
-      color: var(--dourado);
-    }
-
     .search-wrap {
       width: min(620px, 100%);
       margin: 0 auto 32px;
@@ -484,10 +415,6 @@
 
     @media (max-width: 680px) {
       main { padding: 76px 18px 58px; }
-      .site-nav { position: static; padding: 14px 18px 0; }
-      .site-nav-inner { align-items: flex-start; border-radius: 8px; flex-direction: column; }
-      .site-links { justify-content: flex-start; gap: 10px 14px; }
-      .site-links a { font-size: .58rem; }
       .articles-grid { grid-template-columns: 1fr; }
       .article-card { min-height: 0; }
       .article-image { height: 210px; }
@@ -499,21 +426,10 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Artigos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/artigos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
 </head>
 <body>
-  <nav class="site-nav" aria-label="Navegação principal">
-    <div class="site-nav-inner">
-      <a class="site-brand" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
-      
-      <div class="site-links" id="libraryNav">
-        <a href="/">Início</a>
-        <a class="active" href="/artigos/">Artigos</a>
-        <a href="/#categorias">Categorias</a>
-        <a href="/filosofos/">Filósofos</a>
-        <a href="/dossies/">Dossiês</a>
-        <a href="/enciclopedia/">Enciclopédia</a>
-        <a href="/biblioteca.html">Livros</a>
-        <a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a>
-        <a href="/#newsletter">Newsletter</a>
-      </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
+      <div class="nav" id="libraryNav"><a href="/">Início</a><a class="active" href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a><a href="/filosofos/">Filósofos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a><a href="/biblioteca.html">Livros</a><a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a><a href="/#newsletter">Newsletter</a></div>
     </div>
   </nav>
   <main>

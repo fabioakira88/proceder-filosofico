@@ -39,27 +39,6 @@
     html { scroll-behavior: smooth; }
     body { background: var(--page); font-family: 'Lato', sans-serif; min-height: 100vh; }
 
-    /* ─── NAVBAR ─────────────────────────────── */
-    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(6,30,71,.98); border-bottom: 1px solid var(--borda); backdrop-filter: blur(8px); }
-    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
-    .navbar-logo { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
-    .navbar-logo img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
-    .navbar-logo span { font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 600; color: #F7F3EA; letter-spacing: .05em; }
-    .navbar-links { display: flex; align-items: center; gap: .1rem; list-style: none; }
-    .navbar-links a { color: rgba(255,255,255,.70); text-decoration: none; font-size: .85rem; padding: 6px 12px; border-radius: 4px; transition: color .2s; }
-    .navbar-links a:hover, .navbar-links a.active { color: var(--gold); }
-    .navbar-cta { background: var(--gold) !important; color: #060D1E !important; font-weight: 700 !important; border-radius: 6px !important; }
-    .navbar-cta:hover { background: var(--gold2) !important; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); border-radius: 2px; }
-    @media(max-width:768px) {
-      .hamburger { display: flex; }
-      .navbar-links { display: none; flex-direction: column; align-items: flex-start; position: absolute; top: 70px; left: 0; right: 0; background: rgba(6,30,71,.98); border-bottom: 1px solid var(--borda); padding: 10px 0; }
-      .navbar-links.open { display: flex; }
-      .navbar-links li { width: 100%; }
-      .navbar-links a { display: block; padding: 12px 24px; }
-    }
-
     /* ─── HERO ───────────────────────────────── */
     .hero { padding: 120px 24px 48px; text-align: center; background: linear-gradient(170deg, #040d20 0%, #091628 60%, #0b1f3a 100%); }
     .hero-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: .24em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 14px; }
@@ -134,22 +113,8 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="navbar-inner">
-    <a href="/" class="navbar-logo">
-      <img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico" width="40" height="40">
-      <span>Proceder Filosófico</span>
-    </a>
-    
-    <ul class="navbar-links" id="navLinks">
-      <li><a href="/">Início</a></li>
-      <li><a href="/artigos/">Artigos</a></li>
-      <li><a href="/#categorias">Categorias</a></li>
-      <li><a href="/filosofos/">Filósofos</a></li>
-      <li><a href="/dossies/">Dossiês</a></li>
-      <li><a href="/enciclopedia/">Enciclopédia</a></li>
-      <li><a href="biblioteca.html" class="active">Livros</a></li>
-      <li><a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a></li>
-      <li><a href="/#newsletter" class="navbar-cta">Newsletter</a></li>
-    </ul>
+    <a class="logo" href="/"><img src="/assets/LQHqVnilFspwfHEy.png" alt="Proceder Filosófico"><span>Proceder Filosófico</span></a>
+    <div class="nav" id="libraryNav"><a href="/">Início</a><a href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a><a href="/filosofos/">Filósofos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a><a class="active" href="/biblioteca.html">Livros</a><a href="/artigos/" class="nav-search" aria-label="Buscar artigos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a><a href="/#newsletter">Newsletter</a></div>
   </div>
 </nav>
 

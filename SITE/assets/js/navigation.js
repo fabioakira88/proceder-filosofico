@@ -1,8 +1,8 @@
 (function () {
-  var NAV_SELECTOR = '.navbar, .site-nav';
-  var INNER_SELECTOR = '.navbar-inner, .site-nav-inner, .nav-inner';
-  var LINKS_SELECTOR = '.navbar-links, .site-links, .nav-links, .nav';
-  var TOGGLE_SELECTOR = '.hamburger, #hamburger, .menu-toggle, [data-nav-toggle]';
+  var NAV_SELECTOR = '.navbar';
+  var INNER_SELECTOR = '.navbar-inner';
+  var LINKS_SELECTOR = '.nav';
+  var TOGGLE_SELECTOR = '.menu-toggle';
   var desktopQuery = typeof window.matchMedia === 'function' ? window.matchMedia('(min-width: 769px)') : null;
   var autoId = 0;
 
@@ -30,7 +30,10 @@
     button.className = 'menu-toggle';
     button.setAttribute('aria-expanded', 'false');
     button.setAttribute('aria-controls', links.id);
-    button.textContent = 'Menu';
+    button.setAttribute('aria-label', 'Abrir menu');
+    button.appendChild(document.createElement('span'));
+    button.appendChild(document.createElement('span'));
+    button.appendChild(document.createElement('span'));
     inner.insertBefore(button, links);
     bindToggle(button, links);
   }
