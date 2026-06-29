@@ -229,17 +229,116 @@ const renderHomeSection = ({ id, label, title, subtitle, body, alt = false }) =>
   body,
   '      </div>',
   '    </section>'
-].filter(Boolean).join('\n');
-const renderInstitutionalNav = (active = '') => [
-  '<a href="/">Início</a>',
-  '<a href="/artigos/">Artigos</a>',
-  '<a href="/#categorias">Categorias</a>',
-  '<a href="/filosofos/">Filósofos</a>',
-  '<a href="/dossies/">Dossiês</a>',
-  '<a href="/biblioteca.html">Livros</a>',
-  '<a href="/sobre/">Sobre</a>',
-  '<a href="/#newsletter">Newsletter</a>'
-].map((item) => active && item.includes(active) ? item.replace('<a ', '<a class="active" ') : item).join('');
+  ].filter(Boolean).join('\n');
+const shellLogo = '/assets/LQHqVnilFspwfHEy.png';
+const renderShellNavLink = (key, href, label, active) =>
+  `      <a class="pf-nav__link${active === key ? ' is-active' : ''}" href="${href}">${label}</a>`;
+const renderShellHeader = (active = '') => [
+  '  <header class="pf-header" role="banner">',
+  '    <div class="pf-header__top">',
+  '      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">',
+  `        <span class="pf-brand__mark" aria-hidden="true"><img src="${shellLogo}" alt=""></span>`,
+  '        <span class="pf-brand__text">',
+  '          <span class="pf-brand__name">Proceder Filosófico</span>',
+  '          <span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span>',
+  '        </span>',
+  '      </a>',
+  '      <div class="pf-header__tools" aria-label="Ações rápidas">',
+  '        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos">',
+  '          <span class="pf-tool__icon" aria-hidden="true">⌕</span>',
+  '          <span>Buscar</span>',
+  '        </a>',
+  '        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter">',
+  '          <span class="pf-tool__icon" aria-hidden="true">✉</span>',
+  '          <span>Newsletter</span>',
+  '        </a>',
+  '      </div>',
+  '    </div>',
+  '    <nav class="pf-nav" aria-label="Navegação principal">',
+  renderShellNavLink('inicio', '/', 'Início', active),
+  renderShellNavLink('artigos', '/artigos/', 'Artigos', active),
+  renderShellNavLink('categorias', '/#categorias', 'Categorias', active),
+  renderShellNavLink('filosofos', '/filosofos/', 'Filósofos', active),
+  renderShellNavLink('dossies', '/dossies/', 'Dossiês', active),
+  renderShellNavLink('enciclopedia', '/enciclopedia/', 'Enciclopédia', active),
+  renderShellNavLink('livros', '/biblioteca.html', 'Livros', active),
+  renderShellNavLink('newsletter', '/#newsletter', 'Newsletter', active),
+  '    </nav>',
+  '  </header>'
+].join('\n');
+const renderShellFooter = (id = 'generated') => [
+  '  <footer class="pf-footer" role="contentinfo">',
+  '    <div class="pf-footer__inner">',
+  '      <section class="pf-footer__brand" aria-label="Proceder Filosófico">',
+  '        <a class="pf-footer-brand" href="/">',
+  `          <span class="pf-footer-brand__mark" aria-hidden="true"><img src="${shellLogo}" alt=""></span>`,
+  '          <span class="pf-footer-brand__name">Proceder<br>Filosófico</span>',
+  '        </a>',
+  '        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem. Um arquivo para a cultura, a filosofia e a civilização.</p>',
+  '        <div class="pf-social" aria-label="Canais editoriais">',
+  '          <a href="/artigos/" aria-label="Artigos">A</a>',
+  '          <a href="/dossies/" aria-label="Dossiês">D</a>',
+  '          <a href="/enciclopedia/" aria-label="Enciclopédia">E</a>',
+  '          <a href="/biblioteca.html" aria-label="Biblioteca">B</a>',
+  '        </div>',
+  '      </section>',
+  '      <nav class="pf-footer__column" aria-label="Navegação">',
+  '        <h2>Navegação</h2>',
+  '        <a href="/">Início</a>',
+  '        <a href="/artigos/">Artigos</a>',
+  '        <a href="/#categorias">Categorias</a>',
+  '        <a href="/filosofos/">Filósofos</a>',
+  '        <a href="/dossies/">Dossiês</a>',
+  '        <a href="/enciclopedia/">Enciclopédia</a>',
+  '        <a href="/biblioteca.html">Livros</a>',
+  '        <a href="/#newsletter">Newsletter</a>',
+  '      </nav>',
+  '      <nav class="pf-footer__column" aria-label="Áreas">',
+  '        <h2>Áreas</h2>',
+  '        <a href="/categoria/filosofia/">Filosofia</a>',
+  '        <a href="/categoria/historia-da-civilizacao/">História da Civilização</a>',
+  '        <a href="/categoria/literatura/">Literatura</a>',
+  '        <a href="/categoria/ciencia/">Ciência</a>',
+  '        <a href="/categoria/religiao/">Religião</a>',
+  '        <a href="/categoria/arte/">Arte</a>',
+  '        <a href="/categoria/politica/">Política</a>',
+  '        <a href="/categoria/atualidade-filosofica/">Atualidade Filosófica</a>',
+  '      </nav>',
+  '      <nav class="pf-footer__column" aria-label="Institucional">',
+  '        <h2>Institucional</h2>',
+  '        <a href="/sobre/">Sobre o Projeto</a>',
+  '        <a href="/artigos/">Acervo de Artigos</a>',
+  '        <a href="/dossies/">Dossiês</a>',
+  '        <a href="/enciclopedia/">Enciclopédia</a>',
+  '        <a href="/biblioteca.html">Biblioteca</a>',
+  '      </nav>',
+  '      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento">',
+  '        <span class="pf-footer__symbol" aria-hidden="true">✦</span>',
+  '        <h2>Palavra e Pensamento</h2>',
+  '        <p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p>',
+  '        <form class="pf-newsletter-form" action="/#newsletter" method="get">',
+  `          <label for="pf-footer-email-${id}">Receba novos artigos e dossiês.</label>`,
+  '          <div class="pf-newsletter-form__row">',
+  `            <input id="pf-footer-email-${id}" name="email" type="email" placeholder="Seu e-mail">`,
+  '            <button type="submit" aria-label="Assinar newsletter">→</button>',
+  '          </div>',
+  '        </form>',
+  '      </section>',
+  '    </div>',
+  '    <div class="pf-footer__bottom">',
+  '      <span class="pf-footer__star" aria-hidden="true">✶</span>',
+  '      <p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p>',
+  '      <nav aria-label="Links legais">',
+  '        <a href="/sobre/">Sobre</a>',
+  '        <a href="/artigos/">Artigos</a>',
+  '        <a href="/#newsletter">Contato</a>',
+  '      </nav>',
+  '    </div>',
+  '  </footer>'
+].join('\n');
+const renderShellPage = (templateHtml, active, id) => templateHtml
+  .replace('  <!-- PROCEDER:SHELL_HEADER -->', renderShellHeader(active))
+  .replace('  <!-- PROCEDER:SHELL_FOOTER -->', renderShellFooter(id));
 const libraryBooks = new Map([
   ['a-republica', { mark: 'P', title: 'A República', author: 'Platão', href: 'https://amzn.to/3RegesH', action: 'Ler Platão' }],
   ['meditacoes', { mark: 'M', title: 'Meditações', author: 'Marco Aurélio', href: 'https://www.amazon.com.br/s?k=meditacoes+marco+aurelio&tag=proceder-20', action: 'Explorar estoicismo' }],
@@ -647,9 +746,9 @@ for (const { slug, hub, posts: hubPosts, loc } of hubUrls) {
   ].join('\n');
   const targetDir = path.join(path.dirname(CONTENT_INDEX), slug);
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.writeFileSync(path.join(targetDir, 'index.html'), hubTemplate
+  fs.writeFileSync(path.join(targetDir, 'index.html'), renderShellPage(hubTemplate
     .replace('  <!-- PROCEDER:HUB_SEO -->', seo)
-    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content));
+    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content), '', `conteudo-${slug}`));
 }
 
 removeGeneratedChildren(CATEGORY_ROOT);
@@ -678,10 +777,10 @@ for (const { slug, category, posts: categoryPosts, loc } of categoryUrls) {
   ].join('\n');
   const targetDir = path.join(CATEGORY_ROOT, slug);
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.writeFileSync(path.join(targetDir, 'index.html'), hubTemplate
+  fs.writeFileSync(path.join(targetDir, 'index.html'), renderShellPage(hubTemplate
     .replace('  <!-- PROCEDER:HUB_SEO -->', seo)
     .replace('  <!-- PROCEDER:HUB_GENERATED -->', `  <!-- PROCEDER:HUB_GENERATED -->\n  <!-- ${generatedMarker} -->`)
-    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content));
+    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content), 'categorias', `categoria-${slug}`));
 }
 
 removeGeneratedChildren(DOSSIERS_ROOT);
@@ -733,10 +832,10 @@ for (const { slug, dossier, loc } of dossierUrls) {
   ].filter(Boolean).join('\n');
   const targetDir = path.join(DOSSIERS_ROOT, slug);
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.writeFileSync(path.join(targetDir, 'index.html'), hubTemplate
+  fs.writeFileSync(path.join(targetDir, 'index.html'), renderShellPage(hubTemplate
     .replace('  <!-- PROCEDER:HUB_SEO -->', seo)
     .replace('  <!-- PROCEDER:HUB_GENERATED -->', `  <!-- PROCEDER:HUB_GENERATED -->\n  <!-- ${generatedMarker} -->`)
-    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content));
+    .replace('    <!-- PROCEDER:HUB_CONTENT -->', content), 'dossies', `dossies-${slug}`));
 }
 const dossierItems = dossiers.length
   ? dossiers.map((dossier) => [
@@ -767,10 +866,10 @@ const dossiersContent = [
   `      <div class="grid">\n${dossierItems}\n      </div>`,
   '    </section>'
 ].join('\n');
-fs.writeFileSync(path.join(DOSSIERS_ROOT, 'index.html'), hubTemplate
+fs.writeFileSync(path.join(DOSSIERS_ROOT, 'index.html'), renderShellPage(hubTemplate
   .replace('  <!-- PROCEDER:HUB_SEO -->', dossiersSeo)
   .replace('  <!-- PROCEDER:HUB_GENERATED -->', `  <!-- PROCEDER:HUB_GENERATED -->\n  <!-- ${generatedMarker} -->`)
-  .replace('    <!-- PROCEDER:HUB_CONTENT -->', dossiersContent));
+  .replace('    <!-- PROCEDER:HUB_CONTENT -->', dossiersContent), 'dossies', 'dossies-index'));
 
 const contentHubPattern = /    <!-- PROCEDER:HUB_LIST_START -->[\s\S]*?    <!-- PROCEDER:HUB_LIST_END -->/;
 const contentIndex = fs.readFileSync(CONTENT_INDEX, 'utf8');
