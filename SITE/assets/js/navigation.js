@@ -1,7 +1,7 @@
 (function () {
   var NAV_SELECTOR = '.navbar';
   var INNER_SELECTOR = '.navbar-inner';
-  var LINKS_SELECTOR = '.nav';
+  var LINKS_SELECTOR = '.navbar-links';
   var TOGGLE_SELECTOR = '.menu-toggle';
   var desktopQuery = typeof window.matchMedia === 'function' ? window.matchMedia('(min-width: 769px)') : null;
   var autoId = 0;
