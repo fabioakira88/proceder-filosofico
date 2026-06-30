@@ -218,6 +218,44 @@ const renderHomeArticleCard = (post, action = 'Continuar estudando') => [
   '          </div>',
   '        </a>'
 ].join('\n');
+const renderArticleIndexCard = (post, index) => {
+  const image = localImage(post);
+  const fallback = '/assets/default-article.jpg';
+  return [
+    `      <a class="article-card" href="${articleHref(post)}" aria-label="Ler artigo: ${escapeHtml(post.title)}">`,
+    `        <div class="article-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.title)}" loading="${index < 6 ? 'eager' : 'lazy'}" decoding="async" onerror="this.onerror=null;this.src='${fallback}';"></div>`,
+    '        <div class="article-body">',
+    `          <div class="article-tag">${escapeHtml(post.category || post.tag || '')}</div>`,
+    `          <h2 class="article-title">${escapeHtml(post.title || '')}</h2>`,
+    `          <p class="article-excerpt">${escapeHtml(post.excerpt || post.description || '')}</p>`,
+    '          <div class="article-meta">',
+    `            <span class="article-date">${escapeHtml(post.date || '')}</span>`,
+    '            <span class="article-read">Ler artigo</span>',
+    '          </div>',
+    '        </div>',
+    '      </a>'
+  ].join('\n');
+};
+const renderArticleIndexList = () => {
+  const articleCards = posts.slice().sort(byNewest).map(renderArticleIndexCard).join('\n');
+  return [
+    '    <!-- PROCEDER:ARTICLES_LIST_START -->',
+    '    <header class="article-index-head">',
+    '      <div class="reader-tag">Acervo editorial</div>',
+    '      <h1>Artigos</h1>',
+    '      <p class="article-excerpt">Ensaios e estudos do Proceder Filosófico sobre filosofia, civilização, arte, religião, política, ciência e literatura.</p>',
+    '    </header>',
+    '    <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>',
+    `    <section class="articles-grid" id="articlesGrid">\n${articleCards}\n    </section>`,
+    '    <!-- PROCEDER:ARTICLES_LIST_END -->'
+  ].join('\n');
+};
+const renderArticlePageListShell = () => [
+  '    <!-- PROCEDER:ARTICLES_LIST_START -->',
+  '    <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>',
+  '    <section class="articles-grid" id="articlesGrid"></section>',
+  '    <!-- PROCEDER:ARTICLES_LIST_END -->'
+].join('\n');
 const renderHomeSection = ({ id, label, title, subtitle, body, alt = false }) => [
   `    <section class="section${alt ? ' alt' : ''}" id="${escapeHtml(id)}">`,
   '      <div class="container">',
@@ -574,19 +612,26 @@ const renderTaxonomyPanel = (post, relatedPosts) => {
     '      </section>'
   ].filter(Boolean).join('\n');
 };
-const template = fs.readFileSync(ARTICLES_TEMPLATE, 'utf8');
+let template = fs.readFileSync(ARTICLES_TEMPLATE, 'utf8');
 const hubTemplate = fs.readFileSync(HUB_TEMPLATE, 'utf8');
 if (!hubTemplate.includes('<!-- PROCEDER:HUB_SEO -->') || !hubTemplate.includes('<!-- PROCEDER:HUB_CONTENT -->')) {
   throw new Error('Marcadores obrigatórios ausentes em AUTOMATION/templates/hub.html.');
 }
 const seoPattern = /  <!-- PROCEDER:SEO_START -->[\s\S]*?  <!-- PROCEDER:SEO_END -->/;
+const articlesListPattern = /    <!-- PROCEDER:ARTICLES_LIST_START -->[\s\S]*?    <!-- PROCEDER:ARTICLES_LIST_END -->/;
 const articlePattern = /    <!-- PROCEDER:ARTICLE_START -->[\s\S]*?    <!-- PROCEDER:ARTICLE_END -->/;
 if (!seoPattern.test(template)) {
   throw new Error('Marcadores de SEO ausentes em SITE/artigos/index.html.');
 }
+if (!articlesListPattern.test(template)) {
+  throw new Error('Marcadores de listagem ausentes em SITE/artigos/index.html.');
+}
 if (!articlePattern.test(template)) {
   throw new Error('Marcadores de artigo ausentes em SITE/artigos/index.html.');
 }
+template = template.replace(articlesListPattern, renderArticleIndexList());
+fs.writeFileSync(ARTICLES_TEMPLATE, template);
+const articlePageTemplate = template.replace(articlesListPattern, renderArticlePageListShell());
 
 for (const entry of fs.readdirSync(path.dirname(ARTICLES_TEMPLATE), { withFileTypes: true })) {
   if (entry.isDirectory()) fs.rmSync(path.join(path.dirname(ARTICLES_TEMPLATE), entry.name), { recursive: true });
@@ -653,7 +698,7 @@ for (const { slug, post, loc } of urls) {
     '    </article>',
     '    <!-- PROCEDER:ARTICLE_END -->'
   ].join('\n');
-  const page = template
+  const page = articlePageTemplate
     .replace(seoPattern, seo)
     .replace(articlePattern, article)
     .replace('<body>', '<body class="reading">');

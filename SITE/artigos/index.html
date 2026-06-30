@@ -71,6 +71,28 @@
       background: linear-gradient(180deg, var(--azul-profundo), var(--azul-escuro));
     }
 
+    .article-index-head {
+      width: min(960px, 100%);
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+
+    .article-index-head .reader-tag {
+      margin-bottom: 16px;
+    }
+
+    .article-index-head h1 {
+      margin: 0 auto 18px;
+    }
+
+    .article-index-head .article-excerpt {
+      max-width: 760px;
+      min-height: 0;
+      margin: 0 auto;
+      display: block;
+      color: var(--cinza-claro);
+    }
+
     .search-wrap {
       width: min(620px, 100%);
       margin: 0 auto 32px;
@@ -461,8 +483,532 @@
     </nav>
   </header>
   <main class="pf-main">
+    <!-- PROCEDER:ARTICLES_LIST_START -->
+    <header class="article-index-head">
+      <div class="reader-tag">Acervo editorial</div>
+      <h1>Artigos</h1>
+      <p class="article-excerpt">Ensaios e estudos do Proceder Filosófico sobre filosofia, civilização, arte, religião, política, ciência e literatura.</p>
+    </header>
     <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>
-    <section class="articles-grid" id="articlesGrid"></section>
+    <section class="articles-grid" id="articlesGrid">
+      <a class="article-card" href="/artigos/sociedade-moderna-destruiu-silencio/" aria-label="Ler artigo: A Sociedade Moderna Destruiu o Silêncio">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Sociedade Moderna Destruiu o Silêncio" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">A Sociedade Moderna Destruiu o Silêncio</h2>
+          <p class="article-excerpt">O silêncio deixou de ser uma condição da vida interior e passou a ser tratado como falha, vazio ou intervalo que precisa ser preenchido.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/crise-contemporanea-nao-e-economica-e-espiritual/" aria-label="Ler artigo: A Crise Contemporânea Não É Econômica. É Espiritual.">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Crise Contemporânea Não É Econômica. É Espiritual." loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">A Crise Contemporânea Não É Econômica. É Espiritual.</h2>
+          <p class="article-excerpt">A prosperidade material pode aliviar necessidades, mas não responde à pergunta sobre por que viver, sofrer, trabalhar ou construir um futuro.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/humanidade-trocou-contemplacao-por-distracao/" aria-label="Ler artigo: A Humanidade Trocou Contemplação por Distração">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Humanidade Trocou Contemplação por Distração" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">A Humanidade Trocou Contemplação por Distração</h2>
+          <p class="article-excerpt">Não perdemos apenas tempo para contemplar; perdemos a disposição para permanecer diante de algo sem exigir estímulo imediato.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/algoritmo-substituiu-verdade-pela-atencao/" aria-label="Ler artigo: O Algoritmo Substituiu a Verdade pela Atenção">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="O Algoritmo Substituiu a Verdade pela Atenção" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">O Algoritmo Substituiu a Verdade pela Atenção</h2>
+          <p class="article-excerpt">Quando o critério dominante é manter o usuário engajado, a verdade concorre em desvantagem com tudo aquilo que provoca reação imediata.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/tecnologia-mais-rapida-que-sabedoria/" aria-label="Ler artigo: A Humanidade Produz Tecnologia numa Velocidade Maior do que Produz Sabedoria">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Humanidade Produz Tecnologia numa Velocidade Maior do que Produz Sabedoria" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">A Humanidade Produz Tecnologia numa Velocidade Maior do que Produz Sabedoria</h2>
+          <p class="article-excerpt">Aprendemos rapidamente a ampliar nosso poder, mas continuamos lentos para decidir quando, por que e sob quais limites devemos utilizá-lo.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/modernidade-matou-sagrado/" aria-label="Ler artigo: A Modernidade Matou o Sagrado?">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Modernidade Matou o Sagrado?" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Religião</div>
+          <h2 class="article-title">A Modernidade Matou o Sagrado?</h2>
+          <p class="article-excerpt">O sagrado não desapareceu com a secularização; em muitos casos, mudou de lugar e passou a habitar objetos que recusamos chamar de religiosos.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/luis-de-camoes-morte-lingua-portuguesa/" aria-label="Ler artigo: Luís de Camões: Por Que Sua Morte Ainda Importa para a Língua Portuguesa?">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="Luís de Camões: Por Que Sua Morte Ainda Importa para a Língua Portuguesa?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Literatura</div>
+          <h2 class="article-title">Luís de Camões: Por Que Sua Morte Ainda Importa para a Língua Portuguesa?</h2>
+          <p class="article-excerpt">A morte de Camões tornou-se uma data simbólica porque sua obra deu à língua portuguesa uma memória, uma ambição e uma consciência de seus próprios limites.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/nostalgia-forma-consciencia-historica/" aria-label="Ler artigo: A Nostalgia É uma Forma de Consciência Histórica">
+        <div class="article-image"><img src="/assets/default-article.jpg" alt="A Nostalgia É uma Forma de Consciência Histórica" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">História da Civilização</div>
+          <h2 class="article-title">A Nostalgia É uma Forma de Consciência Histórica</h2>
+          <p class="article-excerpt">A nostalgia pode falsificar o passado, mas também revela que reconhecemos perdas históricas e medimos o presente por mundos que deixaram de existir.</p>
+          <div class="article-meta">
+            <span class="article-date">11 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/poetas-dramaturgos-educacao-grecia-antiga/" aria-label="Ler artigo: Poetas, Dramaturgos e a Educação da Grécia Antiga">
+        <div class="article-image"><img src="/assets/homero2.png" alt="Poetas, Dramaturgos e a Educação da Grécia Antiga" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Literatura</div>
+          <h2 class="article-title">Poetas, Dramaturgos e a Educação da Grécia Antiga</h2>
+          <p class="article-excerpt">Antes das escolas filosóficas, Homero, Hesíodo e os grandes tragediógrafos ensinaram aos gregos como pensar a virtude, a justiça, o destino e a vida em comum.</p>
+          <div class="article-meta">
+            <span class="article-date">10 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/sofistas-primeiros-mestres-persuasao/" aria-label="Ler artigo: Os Sofistas: Os Primeiros Mestres da Persuasão">
+        <div class="article-image"><img src="/assets/Escola-athenas.jpg" alt="Os Sofistas: Os Primeiros Mestres da Persuasão" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Os Sofistas: Os Primeiros Mestres da Persuasão</h2>
+          <p class="article-excerpt">Na democracia ateniense, saber argumentar tornou-se uma forma de poder. Os sofistas ensinaram essa arte e obrigaram a filosofia a perguntar se convencer é o mesmo que dizer a verdade.</p>
+          <div class="article-meta">
+            <span class="article-date">10 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/vida-pendulo-schopenhauer-desejo-humano/" aria-label="Ler artigo: A Vida Como um Pêndulo: A Visão de Schopenhauer Sobre o Desejo Humano">
+        <div class="article-image"><img src="/assets/Arthur-schopenhauer.jpg" alt="A Vida Como um Pêndulo: A Visão de Schopenhauer Sobre o Desejo Humano" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">A Vida Como um Pêndulo: A Visão de Schopenhauer Sobre o Desejo Humano</h2>
+          <p class="article-excerpt">Entre a dor do que falta e o tédio do que sobra, Schopenhauer revela a dinâmica inquieta do desejo humano.</p>
+          <div class="article-meta">
+            <span class="article-date">05 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/conforto-excessivo-enfraquece-civilizacoes/" aria-label="Ler artigo: O Conforto Excessivo Enfraquece Civilizações">
+        <div class="article-image"><img src="/assets/article_cards/conforto-excessivo-enfraquece-civilizacoes.png" alt="O Conforto Excessivo Enfraquece Civilizações" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">História da Civilização</div>
+          <h2 class="article-title">O Conforto Excessivo Enfraquece Civilizações</h2>
+          <p class="article-excerpt">A tecnologia não produz fragilidade por si mesma; o problema começa quando uma civilização elimina as dificuldades que antes formavam caráter.</p>
+          <div class="article-meta">
+            <span class="article-date">04 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/escolastica-latina-influencia-arabe/" aria-label="Ler artigo: A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval">
+        <div class="article-image"><img src="/assets/article_cards/escolastica-latina-influencia-arabe.png" alt="A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">História da Civilização</div>
+          <h2 class="article-title">A Escolástica Latina e a Influência Árabe: Avicena, Averróis e a Reconstrução Intelectual do Ocidente Medieval</h2>
+          <p class="article-excerpt">A escolástica latina não nasceu isolada: Avicena e Averróis foram decisivos para reconstruir a racionalidade filosófica do Ocidente medieval.</p>
+          <div class="article-meta">
+            <span class="article-date">02 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/conatus-espinosa-ontologia-esforco-existir/" aria-label="Ler artigo: O Conatus em Espinosa: A Ontologia do Esforço de Existir">
+        <div class="article-image"><img src="/assets/article_cards/conatus-espinosa-ontologia-esforco-existir.jpg" alt="O Conatus em Espinosa: A Ontologia do Esforço de Existir" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">O Conatus em Espinosa: A Ontologia do Esforço de Existir</h2>
+          <p class="article-excerpt">Em Espinosa, existir é perseverar: o conatus transforma desejo, liberdade e política em uma filosofia radical da potência.</p>
+          <div class="article-meta">
+            <span class="article-date">02 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/hegel-fenomenologia-inteligencias-artificiais/" aria-label="Ler artigo: Hegel, a Fenomenologia do Espírito e as Inteligências Artificiais: Consciência, Reconhecimento e Espírito Tecnológico">
+        <div class="article-image"><img src="/assets/article_cards/hegel-fenomenologia-inteligencias-artificiais.png" alt="Hegel, a Fenomenologia do Espírito e as Inteligências Artificiais: Consciência, Reconhecimento e Espírito Tecnológico" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">Hegel, a Fenomenologia do Espírito e as Inteligências Artificiais: Consciência, Reconhecimento e Espírito Tecnológico</h2>
+          <p class="article-excerpt">A inteligência artificial reabre uma pergunta hegeliana: consciência é cálculo, linguagem ou experiência histórica encarnada?</p>
+          <div class="article-meta">
+            <span class="article-date">02 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/nietzsche-obras-impacto-revolucionario/" aria-label="Ler artigo: Friedrich Nietzsche: obras centrais e o impacto revolucionário de sua época">
+        <div class="article-image"><img src="/assets/article_cards/nietzsche-obras-impacto-revolucionario.webp" alt="Friedrich Nietzsche: obras centrais e o impacto revolucionário de sua época" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Friedrich Nietzsche: obras centrais e o impacto revolucionário de sua época</h2>
+          <p class="article-excerpt">De O Nascimento da Tragédia à Genealogia da Moral, Nietzsche recolocou arte, tragédia, niilismo e criação de valores no centro da filosofia moderna.</p>
+          <div class="article-meta">
+            <span class="article-date">01 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/john-stuart-mill-revolucao-liberal-moderna/" aria-label="Ler artigo: John Stuart Mill: obras centrais e a revolução liberal moderna">
+        <div class="article-image"><img src="/assets/article_cards/john-stuart-mill-revolucao-liberal-moderna.jpg" alt="John Stuart Mill: obras centrais e a revolução liberal moderna" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Política</div>
+          <h2 class="article-title">John Stuart Mill: obras centrais e a revolução liberal moderna</h2>
+          <p class="article-excerpt">Mill transformou a defesa da liberdade individual em uma filosofia contra a tirania social, a censura e o esmagamento da individualidade.</p>
+          <div class="article-meta">
+            <span class="article-date">01 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/einstein-revolucao-fisica-moderna/" aria-label="Ler artigo: Albert Einstein: obras centrais e a revolução da física moderna">
+        <div class="article-image"><img src="/assets/article_cards/einstein-revolucao-fisica-moderna.jpg" alt="Albert Einstein: obras centrais e a revolução da física moderna" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Ciência</div>
+          <h2 class="article-title">Albert Einstein: obras centrais e a revolução da física moderna</h2>
+          <p class="article-excerpt">Einstein mudou a compreensão do tempo, do espaço, da luz e da gravidade, abrindo uma nova visão científica e filosófica do universo.</p>
+          <div class="article-meta">
+            <span class="article-date">01 de Junho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/escala-6x1-trabalho-tempo-vida/" aria-label="Ler artigo: O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica">
+        <div class="article-image"><img src="/assets/article_cards/escala-6x1-trabalho-tempo-vida.png" alt="O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Política</div>
+          <h2 class="article-title">O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica</h2>
+          <p class="article-excerpt">A aprovação da PEC do fim da escala 6x1 recoloca uma pergunta antiga no centro da vida brasileira: o trabalho existe para sustentar a vida ou a vida existe para sustentar o trabalho?</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/sao-tomas-fe-razao-explicacao/" aria-label="Ler artigo: São Tomás de Aquino: fé, razão e o limite das explicações">
+        <div class="article-image"><img src="/assets/article_cards/sao-tomas-fe-razao-explicacao.png" alt="São Tomás de Aquino: fé, razão e o limite das explicações" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Religião</div>
+          <h2 class="article-title">São Tomás de Aquino: fé, razão e o limite das explicações</h2>
+          <p class="article-excerpt">&quot;Para aquele que tem fé, nenhuma explicação é necessária.&quot; A frase atribuída a São Tomás revela uma tensão decisiva da filosofia medieval: até onde a razão pode conduzir a fé?</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/epicuro-pouco-suficiencia-desejo/" aria-label="Ler artigo: Epicuro: quem não se contenta com pouco não se contentará com nada">
+        <div class="article-image"><img src="/assets/article_cards/epicuro-pouco-suficiencia-desejo.png" alt="Epicuro: quem não se contenta com pouco não se contentará com nada" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Epicuro: quem não se contenta com pouco não se contentará com nada</h2>
+          <p class="article-excerpt">Epicuro não ensinava luxo nem fuga do mundo. Sua filosofia começa com uma pergunta simples e difícil: quanto realmente basta para viver bem?</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/protagoras-medida-todas-coisas/" aria-label="Ler artigo: Protágoras: o homem é a medida de todas as coisas">
+        <div class="article-image"><img src="/assets/article_cards/protagoras-medida-todas-coisas.png" alt="Protágoras: o homem é a medida de todas as coisas" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Protágoras: o homem é a medida de todas as coisas</h2>
+          <p class="article-excerpt">&quot;O homem é a medida de todas as coisas.&quot; A frase de Protágoras inaugura uma das perguntas mais perigosas da filosofia: existe verdade fora da perspectiva humana?</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/heraclito-duas-vezes-mesmo-rio/" aria-label="Ler artigo: Heráclito: por que não entramos duas vezes no mesmo rio">
+        <div class="article-image"><img src="/assets/article_cards/heraclito-duas-vezes-mesmo-rio.png" alt="Heráclito: por que não entramos duas vezes no mesmo rio" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Heráclito: por que não entramos duas vezes no mesmo rio</h2>
+          <p class="article-excerpt">Heráclito viu no fluxo a estrutura mais profunda da realidade. Tudo muda, inclusive aquele que observa a mudança.</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/formigas-diante-do-universo/" aria-label="Ler artigo: E se fôssemos apenas formigas diante do universo?">
+        <div class="article-image"><img src="/assets/article_cards/formigas-diante-do-universo.png" alt="E se fôssemos apenas formigas diante do universo?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Ciência</div>
+          <h2 class="article-title">E se fôssemos apenas formigas diante do universo?</h2>
+          <p class="article-excerpt">A imagem de um formigueiro observando café cair do céu é uma metáfora poderosa para a consciência humana diante do cosmos: vemos efeitos imensos, mas quase nunca enxergamos a mão que os produz.</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/arte-controle-humano/" aria-label="Ler artigo: Quando a arte parou de entender o ser humano e começou a tentar controlá-lo">
+        <div class="article-image"><img src="/assets/article_cards/arte-controle-humano.jpeg" alt="Quando a arte parou de entender o ser humano e começou a tentar controlá-lo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Arte</div>
+          <h2 class="article-title">Quando a arte parou de entender o ser humano e começou a tentar controlá-lo</h2>
+          <p class="article-excerpt">A arte pode revelar a condição humana, mas também pode ser transformada em instrumento de controle. A pergunta estética se torna política quando imagens passam a fabricar desejos.</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/laplace-sonho-razao-absoluta/" aria-label="Ler artigo: Laplace e o Sonho da Razão Absoluta">
+        <div class="article-image"><img src="/assets/article_cards/laplace-sonho-razao-absoluta.jpeg" alt="Laplace e o Sonho da Razão Absoluta" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Ciência</div>
+          <h2 class="article-title">Laplace e o Sonho da Razão Absoluta</h2>
+          <p class="article-excerpt">Laplace imaginou uma inteligência capaz de calcular o futuro inteiro a partir das leis da natureza. Esse sonho racional moldou a modernidade — e suas rachaduras definem o mundo em que vivemos.</p>
+          <div class="article-meta">
+            <span class="article-date">21 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/balzac-escritor-alma-capitalismo/" aria-label="Ler artigo: Honoré de Balzac: o escritor que enxergou a alma do capitalismo">
+        <div class="article-image"><img src="/assets/article_cards/balzac-escritor-alma-capitalismo.jpeg" alt="Honoré de Balzac: o escritor que enxergou a alma do capitalismo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Literatura</div>
+          <h2 class="article-title">Honoré de Balzac: o escritor que enxergou a alma do capitalismo</h2>
+          <p class="article-excerpt">Muito antes de Marx, Balzac já descrevia com precisão quase brutal os efeitos psicológicos e sociais da modernidade. Sua obra revela como o capitalismo não altera apenas a economia — ele transforma a alma humana.</p>
+          <div class="article-meta">
+            <span class="article-date">20 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/confissoes-santo-agostinho/" aria-label="Ler artigo: As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental">
+        <div class="article-image"><img src="/assets/article_cards/confissoes-santo-agostinho.jpg" alt="As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Religião</div>
+          <h2 class="article-title">As Confissões de Santo Agostinho: seis momentos que mudaram a filosofia ocidental</h2>
+          <p class="article-excerpt">Escrito entre 397 e 400 d.C., As Confissões não é uma autobiografia. É um longo diálogo com Deus — seis momentos que atravessam séculos e ainda falam ao coração de quem os lê.</p>
+          <div class="article-meta">
+            <span class="article-date">09 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/socrates-metodo-maieutico/" aria-label="Ler artigo: Sócrates: A Arte de Queixar-se de Si Mesmo">
+        <div class="article-image"><img src="/assets/article_cards/socrates-metodo-maieutico.png" alt="Sócrates: A Arte de Queixar-se de Si Mesmo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Sócrates: A Arte de Queixar-se de Si Mesmo</h2>
+          <p class="article-excerpt">&quot;É costume de um tolo quando erra queixar-se do outro; é costume do sábio queixar-se de si mesmo.&quot; Uma frase que resume todo o método socrático: a responsabilidade filosófica começa pelo autoexame.</p>
+          <div class="article-meta">
+            <span class="article-date">08 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/platao-mundo-das-ideias/" aria-label="Ler artigo: Platão: Tudo Quanto Vive Provém do Que Morreu">
+        <div class="article-image"><img src="/assets/article_cards/platao-mundo-das-ideias.png" alt="Platão: Tudo Quanto Vive Provém do Que Morreu" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Platão: Tudo Quanto Vive Provém do Que Morreu</h2>
+          <p class="article-excerpt">&quot;Tudo quanto vive provém daquilo que morreu.&quot; Em poucas palavras, Platão sintetiza o ciclo que estrutura tanto sua teoria da imortalidade quanto a distinção fundamental entre aparência e realidade.</p>
+          <div class="article-meta">
+            <span class="article-date">07 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/tales-mileto-arche/" aria-label="Ler artigo: Tales de Mileto: A Pergunta que Inaugurou a Filosofia">
+        <div class="article-image"><img src="/assets/article_cards/tales-mileto-arche.png" alt="Tales de Mileto: A Pergunta que Inaugurou a Filosofia" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Tales de Mileto: A Pergunta que Inaugurou a Filosofia</h2>
+          <p class="article-excerpt">Por volta de 624 a.C., um grego de Mileto fez a pergunta mais simples e mais profunda da história do pensamento: do que é feito tudo o que existe? Essa foi a pergunta que inaugurou a filosofia.</p>
+          <div class="article-meta">
+            <span class="article-date">06 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/democrito-alma-corpo/" aria-label="Ler artigo: Demócrito: Por Que a Alma Vale Mais que o Corpo">
+        <div class="article-image"><img src="/assets/article_cards/democrito-alma-corpo.png" alt="Demócrito: Por Que a Alma Vale Mais que o Corpo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Demócrito: Por Que a Alma Vale Mais que o Corpo</h2>
+          <p class="article-excerpt">&quot;Convém ao homem dar maior atenção à Alma do que ao corpo; pois a excelência da Alma corrige a fraqueza do corpo, mas a força do corpo sem a razão não aperfeiçoa em nada a Alma.&quot;</p>
+          <div class="article-meta">
+            <span class="article-date">05 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/leucipo-atomismo/" aria-label="Ler artigo: Leucipo: O Pai do Atomismo que a História Quase Esqueceu">
+        <div class="article-image"><img src="/assets/article_cards/leucipo-atomismo.png" alt="Leucipo: O Pai do Atomismo que a História Quase Esqueceu" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Leucipo: O Pai do Atomismo que a História Quase Esqueceu</h2>
+          <p class="article-excerpt">Antes de Demócrito, antes de Einstein, antes de toda a física moderna — houve Leucipo. Por volta de 440 a.C., ele propôs que a realidade é composta de partículas indivisíveis movendo-se no vazio. E quase ninguém sabe seu nome.</p>
+          <div class="article-meta">
+            <span class="article-date">04 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/empedocles-amor-discordia/" aria-label="Ler artigo: Empédocles: Amor e Ódio como Forças que Governam o Universo">
+        <div class="article-image"><img src="/assets/article_cards/empedocles-amor-discordia.png" alt="Empédocles: Amor e Ódio como Forças que Governam o Universo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Empédocles: Amor e Ódio como Forças que Governam o Universo</h2>
+          <p class="article-excerpt">Empédocles propôs que tudo o que existe é feito de quatro raízes — fogo, ar, água e terra — combinadas e separadas por duas forças cósmicas: o Amor e a Discórdia. Uma visão que antecipa a física das forças fundamentais de forma surpreendente.</p>
+          <div class="article-meta">
+            <span class="article-date">03 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/descartes-cogito-ergo-sum/" aria-label="Ler artigo: René Descartes: Penso, Logo Existo — e o que isso realmente significa">
+        <div class="article-image"><img src="/assets/article_cards/descartes-cogito-ergo-sum.png" alt="René Descartes: Penso, Logo Existo — e o que isso realmente significa" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">René Descartes: Penso, Logo Existo — e o que isso realmente significa</h2>
+          <p class="article-excerpt">&quot;Penso, logo existo.&quot; É a frase mais famosa da filosofia moderna. Mas o que Descartes estava fazendo com ela? Uma demolição sistemática de tudo o que parecia certo, para encontrar uma fundação que nenhuma dúvida pudesse abalar.</p>
+          <div class="article-meta">
+            <span class="article-date">02 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/locke-tabula-rasa/" aria-label="Ler artigo: John Locke e a Tábula Rasa: Ninguém Nasce com a Verdade">
+        <div class="article-image"><img src="/assets/article_cards/locke-tabula-rasa.jpg" alt="John Locke e a Tábula Rasa: Ninguém Nasce com a Verdade" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">John Locke e a Tábula Rasa: Ninguém Nasce com a Verdade</h2>
+          <p class="article-excerpt">John Locke desafiou séculos de tradição ao afirmar que a mente humana ao nascer é uma folha em branco. Todo conhecimento vem da experiência. Simples de enunciar — radical nas consequências políticas, pedagógicas e filosóficas.</p>
+          <div class="article-meta">
+            <span class="article-date">01 de Maio de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/o-que-e-a-metafisica/" aria-label="Ler artigo: O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas">
+        <div class="article-image"><img src="/assets/article_cards/o-que-e-a-metafisica.png" alt="O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas</h2>
+          <p class="article-excerpt">Metafísica não é misticismo. É o ramo da filosofia que pergunta o que existe, o que é real, e quais as propriedades mais fundamentais do ser. É a pergunta que nenhuma ciência pode responder — porque é anterior a todas elas.</p>
+          <div class="article-meta">
+            <span class="article-date">30 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/provar-deus-kant/" aria-label="Ler artigo: Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant">
+        <div class="article-image"><img src="/assets/article_cards/provar-deus-kant.jpeg" alt="Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant</h2>
+          <p class="article-excerpt">Kant não disse que Deus não existe. Disse algo mais radical: que provar Deus é filosoficamente impossível — não por falta de evidência, mas porque a razão humana não pode ultrapassar os limites da experiência possível.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/sartre-liberdade-condenacao/" aria-label="Ler artigo: Sartre: Você Está Condenado a Ser Livre">
+        <div class="article-image"><img src="/assets/article_cards/sartre-liberdade-condenacao.jpg" alt="Sartre: Você Está Condenado a Ser Livre" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Sartre: Você Está Condenado a Ser Livre</h2>
+          <p class="article-excerpt">&quot;Eu sempre posso escolher, mas devo saber que, se não escolher, ainda estou escolhendo.&quot; Para Sartre, a liberdade não é um presente — é um peso que não podemos depositar em lugar nenhum.</p>
+          <div class="article-meta">
+            <span class="article-date">28 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/kierkegaard-conhecer-se/" aria-label="Ler artigo: Kierkegaard: Conheça-te a Ti Mesmo Antes de Conhecer Qualquer Outra Coisa">
+        <div class="article-image"><img src="/assets/article_cards/kierkegaard-conhecer-se.jpeg" alt="Kierkegaard: Conheça-te a Ti Mesmo Antes de Conhecer Qualquer Outra Coisa" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Kierkegaard: Conheça-te a Ti Mesmo Antes de Conhecer Qualquer Outra Coisa</h2>
+          <p class="article-excerpt">&quot;É preciso aprender a se conhecer antes de conhecer qualquer outra coisa.&quot; Para Kierkegaard, este autoconhecimento não é teórico — é a mais urgente e mais esquecida tarefa da existência humana.</p>
+          <div class="article-meta">
+            <span class="article-date">27 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/confucio-virtude-pratica/" aria-label="Ler artigo: Confúcio: A Virtude não é um Estado — é uma Prática Diária">
+        <div class="article-image"><img src="/assets/article_cards/confucio-virtude-pratica.jpeg" alt="Confúcio: A Virtude não é um Estado — é uma Prática Diária" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Confúcio: A Virtude não é um Estado — é uma Prática Diária</h2>
+          <p class="article-excerpt">Confúcio não criou uma religião nem um sistema metafísico. Criou um caminho de vida baseado em relações, virtude e cultivo contínuo do caráter. Um dos pensamentos mais práticos e duradouros da história humana.</p>
+          <div class="article-meta">
+            <span class="article-date">26 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/adorno-cultura-pensamento/" aria-label="Ler artigo: Adorno: A Cultura que Nos Impede de Pensar">
+        <div class="article-image"><img src="/assets/article_cards/adorno-cultura-pensamento.png" alt="Adorno: A Cultura que Nos Impede de Pensar" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Sociologia</div>
+          <h2 class="article-title">Adorno: A Cultura que Nos Impede de Pensar</h2>
+          <p class="article-excerpt">Para Theodor Adorno, a indústria cultural não é apenas entretenimento. É um mecanismo que padroniza o pensamento, elimina a diferença e produz uma sociedade incapaz de refletir criticamente sobre si mesma.</p>
+          <div class="article-meta">
+            <span class="article-date">25 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/zenao-paradoxos-realidade/" aria-label="Ler artigo: Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática por 2.000 Anos">
+        <div class="article-image"><img src="/assets/article_cards/zenao-paradoxos-realidade.png" alt="Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática por 2.000 Anos" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática por 2.000 Anos</h2>
+          <p class="article-excerpt">&quot;Quem é um amigo? Um outro eu.&quot; Mas Zenão de Eleia ficou famoso por algo ainda mais perturbador: paradoxos que pareciam provar que o movimento é impossível — e que a matemática levou 2.000 anos para resolver.</p>
+          <div class="article-meta">
+            <span class="article-date">24 de Abril de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+    </section>
+    <!-- PROCEDER:ARTICLES_LIST_END -->
     <!-- PROCEDER:ARTICLE_START -->
     <article class="reader" id="reader">
       <button class="back" id="backButton">Voltar aos artigos</button>
