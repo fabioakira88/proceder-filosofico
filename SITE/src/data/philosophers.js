@@ -7,7 +7,7 @@ export const mestreCategories = [
       {
         "nome": "Sócrates",
         "periodo": "470–399 a.C.",
-        "img": "/assets/article_cards/socrates-metodo-maieutico.png",
+        "img": "/assets/Filósofos/Sócrates.png",
         "bio": "<p>Filósofo ateniense considerado o pai da filosofia ocidental. Não deixou escritos; seu pensamento foi preservado principalmente por Platão.</p><p>Tornou-se símbolo da busca pela verdade através do diálogo, do autoexame e da coragem intelectual diante da cidade.</p>"
       },
       {
@@ -216,7 +216,7 @@ export const mestreCategories = [
       {
         "nome": "Max Weber",
         "periodo": "1864–1920",
-        "img": "/assets/Max weber.jpeg",
+        "img": "/assets/Filósofos/Max weber.jpeg",
         "bio": "<p>Analisou burocracia, poder e racionalização da sociedade.</p>"
       }
     ]
@@ -499,7 +499,7 @@ export const philosophers = [
     "categoria": "Sociólogos",
     "periodo": "1864–1920",
     "corrente": "Sociólogos",
-    "img": "assets/Max weber.jpeg",
+    "img": "/assets/Filósofos/Max weber.jpeg",
     "bio": "<p>Analisou burocracia, poder e racionalização da sociedade.</p>"
   }
 ];
