@@ -251,11 +251,10 @@ const renderArticleIndexList = () => {
   ].join('\n');
 };
 const renderArticlePageListShell = () => [
-  '    <!-- PROCEDER:ARTICLES_LIST_START -->',
   '    <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>',
-  '    <section class="articles-grid" id="articlesGrid"></section>',
-  '    <!-- PROCEDER:ARTICLES_LIST_END -->'
+  '    <section class="articles-grid" id="articlesGrid"></section>'
 ].join('\n');
+const removeArticleIndexHeadStyles = (html) => html.replace(/\n    \.article-index-head \{[\s\S]*?\n    \.search-wrap \{/, '\n    .search-wrap {');
 const renderHomeSection = ({ id, label, title, subtitle, body, alt = false }) => [
   `    <section class="section${alt ? ' alt' : ''}" id="${escapeHtml(id)}">`,
   '      <div class="container">',
@@ -631,7 +630,7 @@ if (!articlePattern.test(template)) {
 }
 template = template.replace(articlesListPattern, renderArticleIndexList());
 fs.writeFileSync(ARTICLES_TEMPLATE, template);
-const articlePageTemplate = template.replace(articlesListPattern, renderArticlePageListShell());
+const articlePageTemplate = removeArticleIndexHeadStyles(template).replace(articlesListPattern, renderArticlePageListShell());
 
 for (const entry of fs.readdirSync(path.dirname(ARTICLES_TEMPLATE), { withFileTypes: true })) {
   if (entry.isDirectory()) fs.rmSync(path.join(path.dirname(ARTICLES_TEMPLATE), entry.name), { recursive: true });
