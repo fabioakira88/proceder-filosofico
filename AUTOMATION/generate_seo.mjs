@@ -154,6 +154,11 @@ const staticUrls = [
   { loc: `${SITE_URL}/conceitos/ser/`, lastmod: null },
   { loc: `${SITE_URL}/conceitos/razao/`, lastmod: null },
   { loc: `${SITE_URL}/conceitos/fenomenologia/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/justica/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/consciencia/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/alma/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/tempo/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/linguagem/`, lastmod: null },
   { loc: `${SITE_URL}/sobre/`, lastmod: null },
   { loc: `${SITE_URL}/enciclopedia/`, lastmod: null },
   ...enciclopediaSlugs.map((slug) => ({ loc: `${SITE_URL}/enciclopedia/${slug}/`, lastmod: null }))
