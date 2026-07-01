@@ -500,7 +500,8 @@ const POSTS = [
     excerpt:  "Antes das escolas filosóficas, Homero, Hesíodo e os grandes tragediógrafos ensinaram aos gregos como pensar a virtude, a justiça, o destino e a vida em comum.",
     date:     "10 de Junho de 2026",
     dateISO:  "2026-06-10",
-    thumb:    "assets/homero2.png",
+    thumb:    "assets/article_cards/poetas-dramaturgos-educacao-grecia-antiga.webp",
+    cover:    "assets/article_cards/poetas-dramaturgos-educacao-grecia-antiga.webp",
     featured: true,
     recommended: true,
     content: `
@@ -738,7 +739,8 @@ const POSTS = [
     excerpt:  "Na democracia ateniense, saber argumentar tornou-se uma forma de poder. Os sofistas ensinaram essa arte e obrigaram a filosofia a perguntar se convencer é o mesmo que dizer a verdade.",
     date:     "10 de Junho de 2026",
     dateISO:  "2026-06-10",
-    thumb:    "assets/Escola-athenas.jpg",
+    thumb:    "assets/article_cards/sofistas-primeiros-mestres-persuasao.webp",
+    cover:    "assets/article_cards/sofistas-primeiros-mestres-persuasao.webp",
     featured: true,
     recommended: true,
     content: `
@@ -871,7 +873,8 @@ const POSTS = [
     excerpt:  "Entre a dor do que falta e o tédio do que sobra, Schopenhauer revela a dinâmica inquieta do desejo humano.",
     date:     "05 de Junho de 2026",
     dateISO:  "2026-06-05",
-    thumb:    "assets/Arthur-schopenhauer.jpg",
+    thumb:    "assets/article_cards/vida-pendulo-schopenhauer-desejo-humano.webp",
+    cover:    "assets/article_cards/vida-pendulo-schopenhauer-desejo-humano.webp",
     featured: true,
     content: `
 <blockquote><em>"A vida oscila como um pêndulo entre a dor e o tédio."</em><br>— Arthur Schopenhauer</blockquote>
