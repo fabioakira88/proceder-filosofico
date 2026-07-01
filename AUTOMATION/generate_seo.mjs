@@ -148,6 +148,7 @@ const staticUrls = [
   { loc: `${SITE_URL}/conteudo/linha-do-tempo-dos-conceitos-filosoficos/`, lastmod: null },
   dossierIndexUrl,
   { loc: `${SITE_URL}/filosofos/`, lastmod: null },
+  { loc: `${SITE_URL}/conceitos/`, lastmod: null },
   { loc: `${SITE_URL}/sobre/`, lastmod: null },
   { loc: `${SITE_URL}/enciclopedia/`, lastmod: null },
   ...enciclopediaSlugs.map((slug) => ({ loc: `${SITE_URL}/enciclopedia/${slug}/`, lastmod: null }))
@@ -296,6 +297,7 @@ const renderShellHeader = (active = '') => [
   renderShellNavLink('artigos', '/artigos/', 'Artigos', active),
   renderShellNavLink('categorias', '/#categorias', 'Categorias', active),
   renderShellNavLink('filosofos', '/filosofos/', 'Filósofos', active),
+  renderShellNavLink('conceitos', '/conceitos/', 'Conceitos', active),
   renderShellNavLink('dossies', '/dossies/', 'Dossiês', active),
   renderShellNavLink('enciclopedia', '/enciclopedia/', 'Enciclopédia', active),
   renderShellNavLink('livros', '/biblioteca.html', 'Livros', active),
@@ -325,6 +327,7 @@ const renderShellFooter = (id = 'generated') => [
   '        <a href="/artigos/">Artigos</a>',
   '        <a href="/#categorias">Categorias</a>',
   '        <a href="/filosofos/">Filósofos</a>',
+  '        <a href="/conceitos/">Conceitos</a>',
   '        <a href="/dossies/">Dossiês</a>',
   '        <a href="/enciclopedia/">Enciclopédia</a>',
   '        <a href="/biblioteca.html">Livros</a>',
