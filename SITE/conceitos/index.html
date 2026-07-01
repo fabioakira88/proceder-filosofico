@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceitos Filosóficos | Proceder Filosófico</title>
+  <meta name="description" content="Glossário de conceitos filosóficos fundamentais para estudar metafísica, epistemologia, ética, política e existência.">
+  <meta property="og:title" content="Conceitos Filosóficos | Proceder Filosófico">
+  <meta property="og:description" content="Glossário de conceitos filosóficos fundamentais para estudar metafísica, epistemologia, ética, política e existência.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procederfilosofico.com.br/conceitos/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conceitos Filosóficos | Proceder Filosófico">
+  <meta name="twitter:description" content="Glossário de conceitos filosóficos fundamentais para estudar metafísica, epistemologia, ética, política e existência.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://procederfilosofico.com.br/conceitos/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/pages/editorial-index.css">
+  <link rel="stylesheet" href="/assets/css-shared/proceder-shell.css">
+  <style>
+    :root{--azul:#060D1E;--azul2:#061E47;--dourado:#C9A84C;--dourado2:#E6D28A;--branco:#F7F3EA;--cinza:#B8B3A8}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}
+    a{color:inherit;text-decoration:none}
+    main{max-width:1200px;margin:auto;padding:72px 24px 96px}
+    .page-head{text-align:center;margin-bottom:48px}
+    .page-label{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);display:block;margin-bottom:14px}
+    .page-head h1{font-family:'Playfair Display',serif;font-size:clamp(34px,6vw,60px);line-height:1.05;margin:0 0 18px;font-weight:700}
+    .page-head .lead{max-width:680px;margin:0 auto 14px;color:rgba(255,255,255,.55);line-height:1.75;font-size:1.05rem}
+    .page-head .intro{max-width:680px;margin:0 auto;color:rgba(255,255,255,.38);line-height:1.75;font-size:.9rem;font-style:italic;border-left:2px solid rgba(201,168,76,.3);padding-left:16px;text-align:left}
+    .search-wrap{max-width:640px;margin:0 auto 56px;position:relative}
+    .search{width:100%;padding:15px 18px;border:1px solid rgba(201,168,76,.28);border-radius:7px;background:rgba(255,255,255,.04);color:#fff;font:inherit;outline:none;font-size:1rem}
+    .search:focus{border-color:var(--dourado);background:rgba(255,255,255,.06)}
+    .search::placeholder{color:rgba(255,255,255,.32)}
+    .area{margin-bottom:64px}
+    .area-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(201,168,76,.2);padding-bottom:14px;margin-bottom:28px}
+    .area-head h2{font-family:'Playfair Display',serif;font-size:26px;margin:0;font-weight:600}
+    .area-count{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;color:var(--dourado);text-transform:uppercase}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .card{background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.14);border-radius:9px;padding:22px 22px 20px;transition:transform .22s,border-color .22s,background .22s;cursor:default}
+    .card:hover{transform:translateY(-3px);border-color:rgba(201,168,76,.45);background:rgba(255,255,255,.055)}
+    .card-area{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--dourado);margin-bottom:10px;display:block}
+    .card-name{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;margin-bottom:10px;line-height:1.1}
+    .card-def{font-size:13px;line-height:1.68;color:rgba(255,255,255,.48);margin:0 0 14px}
+    .card-filosofos{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.08em;color:rgba(201,168,76,.62);text-transform:uppercase}
+    .card-filosofos span{color:rgba(255,255,255,.32);font-family:'Lato',sans-serif;text-transform:none;letter-spacing:0;font-size:11px}
+    .card-badge{display:inline-block;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,168,76,.5);border:1px solid rgba(201,168,76,.2);padding:3px 8px;border-radius:3px;margin-top:12px}
+    .empty{text-align:center;color:rgba(255,255,255,.4);padding:48px;font-style:italic}
+    .cta-section{margin-top:72px;border-top:1px solid rgba(201,168,76,.15);padding-top:48px;text-align:center}
+    .cta-section p{color:rgba(255,255,255,.45);line-height:1.75;max-width:560px;margin:0 auto 24px;font-size:.95rem}
+    .cta-btn{display:inline-flex;align-items:center;gap:8px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dourado);border:1px solid rgba(201,168,76,.4);padding:12px 24px;border-radius:4px;transition:background .2s,border-color .2s}
+    .cta-btn:hover{background:rgba(201,168,76,.08);border-color:var(--dourado)}
+    .expanding-note{margin-top:56px;text-align:center;color:rgba(255,255,255,.28);font-size:.82rem;font-style:italic;letter-spacing:.04em}
+    @media(max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:640px){main{padding:50px 16px 70px}.grid{grid-template-columns:1fr}.page-head .intro{font-size:.85rem}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Conceitos Filosóficos | Proceder Filosófico","url":"https://procederfilosofico.com.br/conceitos/","description":"Glossário de conceitos filosóficos fundamentais para estudar metafísica, epistemologia, ética, política e existência.","isPartOf":{"@type":"WebSite","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
+</head>
+<body>
+  <header class="pf-header" role="banner">
+    <div class="pf-header__top">
+      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">
+        <span class="pf-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+        <span class="pf-brand__text">
+          <span class="pf-brand__name">Proceder Filosófico</span>
+          <span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span>
+        </span>
+      </a>
+      <div class="pf-header__tools" aria-label="Ações rápidas">
+        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos">
+          <span class="pf-tool__icon" aria-hidden="true">⌕</span>
+          <span>Buscar</span>
+        </a>
+        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter">
+          <span class="pf-tool__icon" aria-hidden="true">✉</span>
+          <span>Newsletter</span>
+        </a>
+      </div>
+    </div>
+    <nav class="pf-nav" aria-label="Navegação principal">
+      <a class="pf-nav__link" href="/">Início</a>
+      <a class="pf-nav__link" href="/artigos/">Artigos</a>
+      <a class="pf-nav__link" href="/#categorias">Categorias</a>
+      <a class="pf-nav__link" href="/filosofos/">Filósofos</a>
+      <a class="pf-nav__link is-active" href="/conceitos/">Conceitos</a>
+      <a class="pf-nav__link" href="/dossies/">Dossiês</a>
+      <a class="pf-nav__link" href="/enciclopedia/">Enciclopédia</a>
+      <a class="pf-nav__link" href="/biblioteca.html">Livros</a>
+      <a class="pf-nav__link" href="/#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <main class="pf-main">
+    <header class="page-head">
+      <span class="page-label">Glossário Filosófico</span>
+      <h1>Conceitos Filosóficos</h1>
+      <p class="lead">Um glossário filosófico para navegar pelas ideias que estruturam a realidade, o conhecimento, a ética, a política e a existência.</p>
+      <p class="intro">A filosofia não é apenas uma coleção de autores. Ela é também uma rede de conceitos. Termos como ser, verdade, liberdade, justiça, poder e consciência atravessam séculos de pensamento e continuam organizando nossas perguntas fundamentais.</p>
+    </header>
+
+    <div class="search-wrap">
+      <input class="search" id="conceptSearch" type="search" placeholder="Buscar conceito, área ou filósofo..." aria-label="Buscar conceitos filosóficos">
+    </div>
+
+    <div id="areas">
+
+      <section class="area" data-area="Metafísica">
+        <div class="area-head"><h2>Metafísica</h2><span class="area-count">15 conceitos</span></div>
+        <div class="grid">
+          <article class="card" data-name="ser" data-area="metafísica" data-filosofos="parmênides aristóteles heidegger">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Ser</div>
+            <p class="card-def">O próprio fato de que as coisas existem; a questão mais fundamental e abrangente da filosofia. O ser não é um ente entre outros — é aquilo em razão do qual há algo em vez de nada.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Parmênides, Aristóteles, Heidegger</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="ente" data-area="metafísica" data-filosofos="aristóteles tomás de aquino heidegger">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Ente</div>
+            <p class="card-def">Aquilo que é; qualquer coisa que existe, concreta ou abstrata. Diferente do Ser — que é a condição de possibilidade — o ente é o que recebe o ser.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Tomás de Aquino, Heidegger</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="essência" data-area="metafísica" data-filosofos="platão aristóteles avicena">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Essência</div>
+            <p class="card-def">Aquilo que uma coisa é por definição; seu núcleo constitutivo e necessário. A essência responde à pergunta "o que é X?" e permanece independente das propriedades acidentais.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Aristóteles, Avicena</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="existência" data-area="metafísica" data-filosofos="kierkegaard sartre heidegger">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Existência</div>
+            <p class="card-def">O modo pelo qual algo está presente no mundo. Para os existencialistas, a existência humana precede a essência — somos antes de sermos algo definido.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kierkegaard, Sartre, Heidegger</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="substância" data-area="metafísica" data-filosofos="aristóteles descartes spinoza">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Substância</div>
+            <p class="card-def">Aquilo que existe por si mesmo, sem depender de outra coisa para existir. Para Spinoza, há apenas uma substância infinita; para Descartes, há duas — mente e matéria.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Descartes, Spinoza</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="acidente" data-area="metafísica" data-filosofos="aristóteles tomás de aquino">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Acidente</div>
+            <p class="card-def">Propriedade que pode ou não pertencer a uma coisa sem alterar sua essência. A cor de uma maçã é um acidente; ser um fruto é da sua essência.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Tomás de Aquino</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="causa" data-area="metafísica" data-filosofos="aristóteles hume kant">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Causa</div>
+            <p class="card-def">Aquilo que produz ou explica algo. Aristóteles distinguiu quatro causas: material, formal, eficiente e final. Hume questionou se a causalidade é observada ou projetada pela mente.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Hume, Kant</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="finalidade" data-area="metafísica" data-filosofos="aristóteles leibniz kant">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Finalidade</div>
+            <p class="card-def">O propósito ou fim para o qual algo existe ou age. A teleologia aristotélica sustenta que todos os seres têm uma finalidade intrínseca orientada à sua plena realização.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Leibniz, Kant</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="necessidade" data-area="metafísica" data-filosofos="spinoza leibniz hegel">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Necessidade</div>
+            <p class="card-def">O que não pode ser de outro modo; o oposto do contingente. Para Spinoza, tudo o que existe segue com necessidade absoluta da natureza de Deus.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Spinoza, Leibniz, Hegel</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="contingência" data-area="metafísica" data-filosofos="aristóteles leibniz sartre">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Contingência</div>
+            <p class="card-def">O que existe mas poderia não existir; o que depende de circunstâncias. Para Sartre, a existência humana é radicalmente contingente — não fomos convocados a ser.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Leibniz, Sartre</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="devir" data-area="metafísica" data-filosofos="heráclito hegel bergson">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Devir</div>
+            <p class="card-def">A mudança e o fluxo constante da realidade. Para Heráclito, tudo flui e nada permanece. Hegel transforma o devir em motor da história dialética.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Heráclito, Hegel, Bergson</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="permanência" data-area="metafísica" data-filosofos="parmênides platão kant">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Permanência</div>
+            <p class="card-def">O que persiste imutável através do tempo. Para Parmênides, o ser verdadeiro é uno, eterno e imutável; toda mudança seria ilusão dos sentidos.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Parmênides, Platão, Kant</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="realidade" data-area="metafísica" data-filosofos="platão kant wittgenstein">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Realidade</div>
+            <p class="card-def">O conjunto do que existe independentemente de nossa percepção. Platão distinguiu realidade verdadeira (mundo das ideias) da aparência sensível; Kant mostrou que nunca acessamos a coisa em si.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Kant, Wittgenstein</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="aparência" data-area="metafísica" data-filosofos="platão kant husserl">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Aparência</div>
+            <p class="card-def">O modo como as coisas se apresentam aos sentidos, que pode diferir da realidade subjacente. A distinção aparência/realidade é um dos eixos centrais da metafísica ocidental.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Kant, Husserl</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="transcendência" data-area="metafísica" data-filosofos="kant kierkegaard heidegger">
+            <span class="card-area">Metafísica</span>
+            <div class="card-name">Transcendência</div>
+            <p class="card-def">O que está além dos limites da experiência possível. Kant demarcou o território do cognoscível; Kierkegaard usou a transcendência como salto de fé em direção ao absoluto.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Kierkegaard, Heidegger</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="area" data-area="Epistemologia">
+        <div class="area-head"><h2>Epistemologia</h2><span class="area-count">15 conceitos</span></div>
+        <div class="grid">
+          <article class="card" data-name="conhecimento" data-area="epistemologia" data-filosofos="platão descartes locke">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Conhecimento</div>
+            <p class="card-def">Crença verdadeira e justificada. A epistemologia interroga o que podemos saber, como sabemos e quais são os limites do saber humano.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Descartes, Locke</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="verdade" data-area="epistemologia" data-filosofos="aristóteles kant tarski">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Verdade</div>
+            <p class="card-def">A correspondência entre uma proposição e a realidade. As teorias da verdade disputam se ela é correspondência, coerência, utilidade ou resultado de consenso racional.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Kant, Tarski</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="opinião" data-area="epistemologia" data-filosofos="sócrates platão">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Opinião</div>
+            <p class="card-def">Crença não fundamentada em razões suficientes. Para Platão, a opinião (doxa) ocupa um patamar inferior ao conhecimento: pode ser verdadeira por acaso, mas não por razão.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Sócrates, Platão</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="crença" data-area="epistemologia" data-filosofos="hume peirce james">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Crença</div>
+            <p class="card-def">Estado mental de aceitar algo como verdadeiro. As crenças formam a base do conhecimento, mas nem toda crença é conhecimento — falta-lhe justificação e garantia de verdade.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Hume, Peirce, James</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="justificação" data-area="epistemologia" data-filosofos="descartes locke quine">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Justificação</div>
+            <p class="card-def">A base racional que distingue o conhecimento da mera crença. Uma crença é justificada quando há razões adequadas para sustentá-la, independentemente de ser verdadeira.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Descartes, Locke, Quine</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="dúvida" data-area="epistemologia" data-filosofos="descartes pirro sextus empíricus">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Dúvida</div>
+            <p class="card-def">Suspensão do juízo diante da incerteza. Descartes usou a dúvida metódica como instrumento para encontrar certezas inabaláveis; o ceticismo a usa para mostrar os limites do conhecimento.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Descartes, Pirro, Sextus Empíricus</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="método" data-area="epistemologia" data-filosofos="descartes bacon popper">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Método</div>
+            <p class="card-def">Procedimento sistemático para investigar e conhecer a realidade. O debate entre método dedutivo e indutivo percorre a história da ciência e da filosofia moderna.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Descartes, Bacon, Popper</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="razão" data-area="epistemologia" data-filosofos="platão kant hegel">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Razão</div>
+            <p class="card-def">Faculdade de pensar, inferir e julgar com base em princípios. Kant distinguiu razão pura (conhecimento) de razão prática (moral) e investigou seus limites e possibilidades.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Kant, Hegel</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="experiência" data-area="epistemologia" data-filosofos="aristóteles locke hume">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Experiência</div>
+            <p class="card-def">O contato direto com o mundo como fonte de conhecimento. Para os empiristas, toda ideia deriva, em última instância, de impressões sensoriais.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Locke, Hume</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="empirismo" data-area="epistemologia" data-filosofos="locke hume berkeley">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Empirismo</div>
+            <p class="card-def">Doutrina segundo a qual todo conhecimento genuíno deriva da experiência sensível. A mente nasce como tábula rasa que a experiência vai preenchendo progressivamente.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Locke, Hume, Berkeley</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="racionalismo" data-area="epistemologia" data-filosofos="descartes spinoza leibniz">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Racionalismo</div>
+            <p class="card-def">Doutrina que atribui à razão o papel principal na aquisição do conhecimento. Há verdades inatas acessíveis pela intuição intelectual, independentemente da experiência.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Descartes, Spinoza, Leibniz</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="ceticismo" data-area="epistemologia" data-filosofos="pirro hume descartes">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Ceticismo</div>
+            <p class="card-def">Posição que questiona a possibilidade ou os limites do conhecimento. O ceticismo radical suspende todo juízo; o moderado exige critérios rigorosos antes de aceitar qualquer crença.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Pirro, Hume, Descartes</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="dogmatismo" data-area="epistemologia" data-filosofos="wolff kant">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Dogmatismo</div>
+            <p class="card-def">Aceitação de princípios sem questionamento crítico prévio. Kant chamou de dogmática a metafísica que avança sem antes examinar as capacidades e limites da razão.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Wolff, Kant</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="fenomenologia" data-area="epistemologia" data-filosofos="husserl heidegger merleau-ponty">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Fenomenologia</div>
+            <p class="card-def">Método filosófico que parte da descrição rigorosa da experiência consciente. Husserl propôs "voltar às coisas mesmas", suspendendo pressupostos teóricos para examinar como os fenômenos aparecem à consciência.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Husserl, Heidegger, Merleau-Ponty</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="hermenêutica" data-area="epistemologia" data-filosofos="schleiermacher dilthey gadamer">
+            <span class="card-area">Epistemologia</span>
+            <div class="card-name">Hermenêutica</div>
+            <p class="card-def">Arte e teoria da interpretação de textos, símbolos e significados. Gadamer mostrou que toda compreensão é histórica — interpretamos sempre a partir de um horizonte prévio.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Schleiermacher, Dilthey, Gadamer</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="area" data-area="Ética">
+        <div class="area-head"><h2>Ética</h2><span class="area-count">15 conceitos</span></div>
+        <div class="grid">
+          <article class="card" data-name="bem" data-area="ética" data-filosofos="platão aristóteles moore">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Bem</div>
+            <p class="card-def">O que é desejável por si mesmo; objeto da aspiração ética e fim da ação moral. Platão identificou o Bem com o princípio supremo de toda realidade.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Aristóteles, G. E. Moore</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="mal" data-area="ética" data-filosofos="agostinho leibniz hannah arendt">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Mal</div>
+            <p class="card-def">O oposto do bem; para Agostinho, privação de ser e de ordem. Hannah Arendt descreveu o "mal banal" como ausência de pensamento em agentes de atrocidades históricas.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Agostinho, Leibniz, Hannah Arendt</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="virtude" data-area="ética" data-filosofos="sócrates platão aristóteles">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Virtude</div>
+            <p class="card-def">Excelência de caráter que permite viver e agir bem. Para Aristóteles, a virtude é um hábito adquirido pelo exercício — um meio-termo entre o excesso e a deficiência.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Sócrates, Platão, Aristóteles</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="vício" data-area="ética" data-filosofos="aristóteles tomás de aquino">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Vício</div>
+            <p class="card-def">Disposição contrária à virtude; hábito que impede o florescimento humano. O vício se instala pelo excesso ou deficiência nas ações e paixões da vida moral.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Tomás de Aquino</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="justiça" data-area="ética" data-filosofos="platão aristóteles rawls">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Justiça</div>
+            <p class="card-def">Dar a cada um o que lhe é devido; ordenamento justo das relações. Para Platão, a justiça é a harmonia da alma; para Rawls, o resultado de princípios escolhidos sob véu de ignorância.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Aristóteles, Rawls</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="liberdade" data-area="ética" data-filosofos="kant sartre berlin">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Liberdade</div>
+            <p class="card-def">Capacidade de agir segundo a própria razão ou vontade. Kant a concebe como autonomia; Sartre, como condenação; Berlin distingue liberdade negativa (ausência de obstáculos) da positiva (capacidade de autorrealização).</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Sartre, Berlin</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="responsabilidade" data-area="ética" data-filosofos="kant jonas ricoeur">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Responsabilidade</div>
+            <p class="card-def">A obrigação moral de responder pelos próprios atos. Hans Jonas ampliou a responsabilidade para incluir as gerações futuras e os ecossistemas naturais.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Jonas, Ricoeur</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="dever" data-area="ética" data-filosofos="kant hegel ross">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Dever</div>
+            <p class="card-def">Obrigação moral imposta pela razão. Para Kant, agir moralmente é agir por dever e segundo o imperativo categórico, independentemente das consequências ou inclinações.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Hegel, Ross</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="felicidade" data-area="ética" data-filosofos="aristóteles epicuro mill">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Felicidade</div>
+            <p class="card-def">Estado de pleno florescimento humano (eudaimonia). Para Aristóteles, não é um sentimento mas uma atividade — a expressão excelente das capacidades próprias do ser humano.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Aristóteles, Epicuro, Mill</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="prazer" data-area="ética" data-filosofos="epicuro bentham mill">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Prazer</div>
+            <p class="card-def">Sensação agradável e, para muitos hedonistas, o bem supremo. Epicuro distinguia prazeres estáticos (paz da alma) dos cinéticos (excitação), preferindo os primeiros.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Epicuro, Bentham, Mill</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="dor" data-area="ética" data-filosofos="epicuro schopenhauer nietzsche">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Dor</div>
+            <p class="card-def">Sensação desagradável e experiência do sofrimento. Para Schopenhauer, a dor é constitutiva da existência; para Nietzsche, pode ser força de transformação e crescimento.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Epicuro, Schopenhauer, Nietzsche</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="desejo" data-area="ética" data-filosofos="platão spinoza schopenhauer">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Desejo</div>
+            <p class="card-def">Tendência em direção a um objeto percebido como bom. Platão vê no desejo uma força que pode ser dirigida ao bem; Spinoza o identifica com o próprio conatus — o esforço de perseverar no ser.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Spinoza, Schopenhauer</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="vontade" data-area="ética" data-filosofos="agostinho kant schopenhauer">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Vontade</div>
+            <p class="card-def">Faculdade de querer e decidir. Schopenhauer identifica a vontade como a força cega e irracional que move toda a realidade; Kant a eleva à dimensão da lei moral racional.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Agostinho, Kant, Schopenhauer</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="autonomia" data-area="ética" data-filosofos="kant rousseau berlin">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Autonomia</div>
+            <p class="card-def">Capacidade de se dar a própria lei; independência moral racional. Para Kant, a autonomia é o fundamento da dignidade humana — ser livre é legislar para si mesmo segundo a razão.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Rousseau, Berlin</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="dignidade" data-area="ética" data-filosofos="kant pico della mirandola">
+            <span class="card-area">Ética</span>
+            <div class="card-name">Dignidade</div>
+            <p class="card-def">Valor incondicional da pessoa humana que não admite preço. Para Kant, a dignidade distingue as pessoas das coisas: pessoas têm valor em si; coisas têm apenas preço de troca.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Kant, Pico della Mirandola</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="area" data-area="Política e Sociedade">
+        <div class="area-head"><h2>Política e Sociedade</h2><span class="area-count">5 conceitos</span></div>
+        <div class="grid">
+          <article class="card" data-name="poder" data-area="política e sociedade" data-filosofos="maquiavel hobbes foucault">
+            <span class="card-area">Política e Sociedade</span>
+            <div class="card-name">Poder</div>
+            <p class="card-def">Capacidade de impor vontade e influenciar ações alheias. Foucault mostrou que o poder não é apenas repressivo — ele produz sujeitos, saberes e normas que atravessam toda a sociedade.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Maquiavel, Hobbes, Foucault</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="estado" data-area="política e sociedade" data-filosofos="hobbes locke hegel">
+            <span class="card-area">Política e Sociedade</span>
+            <div class="card-name">Estado</div>
+            <p class="card-def">Organização política com autoridade soberana sobre um território. Para Hobbes, o Estado nasce do medo; para Locke, do contrato para proteger direitos; para Hegel, é a realização da liberdade ética.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Hobbes, Locke, Hegel</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="lei" data-area="política e sociedade" data-filosofos="platão montesquieu rawls">
+            <span class="card-area">Política e Sociedade</span>
+            <div class="card-name">Lei</div>
+            <p class="card-def">Norma universal que regula condutas e estabelece direitos e deveres. O debate entre jusnaturalismo (lei fundada na natureza ou razão) e positivismo (lei como ato de vontade política) percorre a filosofia do direito.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Montesquieu, Rawls</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="democracia" data-area="política e sociedade" data-filosofos="platão rousseau tocqueville">
+            <span class="card-area">Política e Sociedade</span>
+            <div class="card-name">Democracia</div>
+            <p class="card-def">Sistema político fundado na soberania popular e igualdade política. Platão a criticou por conduzir à demagogia; Tocqueville alertou para o risco do despotismo brando na igualdade de massas.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Platão, Rousseau, Tocqueville</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+          <article class="card" data-name="ideologia" data-area="política e sociedade" data-filosofos="marx mannheim gramsci">
+            <span class="card-area">Política e Sociedade</span>
+            <div class="card-name">Ideologia</div>
+            <p class="card-def">Conjunto de ideias que reflete e justifica interesses de classe ou grupo. Para Marx, é a superestrutura que legitima relações de produção; Gramsci a articulou com o conceito de hegemonia cultural.</p>
+            <div class="card-filosofos"><span>Filósofos:</span> Marx, Mannheim, Gramsci</div>
+            <span class="card-badge">em expansão</span>
+          </article>
+        </div>
+      </section>
+
+      <p class="empty" id="emptyMsg" style="display:none">Nenhum conceito encontrado.</p>
+
+    </div>
+
+    <section class="cta-section" aria-label="Leituras relacionadas">
+      <p>Os conceitos ganham profundidade quando lidos em seus contextos originais. Explore os artigos do Proceder que aprofundam essas ideias em análises editoriais.</p>
+      <a class="cta-btn" href="/artigos/">Ver artigos filosóficos →</a>
+    </section>
+
+    <p class="expanding-note">Este glossário está em expansão progressiva. Páginas individuais para cada conceito serão publicadas gradualmente.</p>
+  </main>
+
+  <footer class="pf-footer" role="contentinfo">
+    <div class="pf-footer__inner">
+      <section class="pf-footer__brand" aria-label="Proceder Filosófico">
+        <a class="pf-footer-brand" href="/">
+          <span class="pf-footer-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+          <span class="pf-footer-brand__name">Proceder<br>Filosófico</span>
+        </a>
+        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem. Um arquivo para a cultura, a filosofia e a civilização.</p>
+        <div class="pf-social" aria-label="Canais editoriais">
+          <a href="/artigos/" aria-label="Artigos">A</a>
+          <a href="/dossies/" aria-label="Dossiês">D</a>
+          <a href="/enciclopedia/" aria-label="Enciclopédia">E</a>
+          <a href="/biblioteca.html" aria-label="Biblioteca">B</a>
+        </div>
+      </section>
+      <nav class="pf-footer__column" aria-label="Navegação">
+        <h2>Navegação</h2>
+        <a href="/">Início</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a>
+        <a href="/conceitos/">Conceitos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Livros</a>
+        <a href="/#newsletter">Newsletter</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Áreas">
+        <h2>Áreas</h2>
+        <a href="/categoria/filosofia/">Filosofia</a>
+        <a href="/categoria/historia-da-civilizacao/">História da Civilização</a>
+        <a href="/categoria/literatura/">Literatura</a>
+        <a href="/categoria/ciencia/">Ciência</a>
+        <a href="/categoria/religiao/">Religião</a>
+        <a href="/categoria/arte/">Arte</a>
+        <a href="/categoria/politica/">Política</a>
+        <a href="/categoria/atualidade-filosofica/">Atualidade Filosófica</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <a href="/sobre/">Sobre o Projeto</a>
+        <a href="/artigos/">Acervo de Artigos</a>
+        <a href="/dossies/">Dossiês</a>
+        <a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Biblioteca</a>
+      </nav>
+      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento">
+        <span class="pf-footer__symbol" aria-hidden="true">✦</span>
+        <h2>Palavra e Pensamento</h2>
+        <p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p>
+        <form class="pf-newsletter-form" action="/#newsletter" method="get">
+          <label for="pf-footer-email-conceitos">Receba novos artigos e dossiês.</label>
+          <div class="pf-newsletter-form__row">
+            <input id="pf-footer-email-conceitos" name="email" type="email" placeholder="Seu e-mail">
+            <button type="submit" aria-label="Assinar newsletter">→</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="pf-footer__bottom">
+      <span class="pf-footer__star" aria-hidden="true">✶</span>
+      <p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p>
+      <nav aria-label="Links legais">
+        <a href="/sobre/">Sobre</a>
+        <a href="/artigos/">Artigos</a>
+        <a href="/#newsletter">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var cards = Array.from(document.querySelectorAll('#areas .card'));
+    var areas = Array.from(document.querySelectorAll('#areas .area'));
+    var emptyMsg = document.getElementById('emptyMsg');
+    function normalize(s) {
+      return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    }
+    function filter(query) {
+      var term = normalize(query.trim());
+      var anyVisible = false;
+      cards.forEach(function (card) {
+        var text = normalize([
+          card.dataset.name,
+          card.dataset.area,
+          card.dataset.filosofos,
+          card.querySelector('.card-def') ? card.querySelector('.card-def').textContent : ''
+        ].join(' '));
+        var visible = !term || text.indexOf(term) >= 0;
+        card.style.display = visible ? '' : 'none';
+        if (visible) anyVisible = true;
+      });
+      areas.forEach(function (area) {
+        var hasVisible = area.querySelectorAll('.card:not([style*="none"])').length > 0;
+        area.style.display = hasVisible ? '' : 'none';
+      });
+      emptyMsg.style.display = anyVisible ? 'none' : '';
+    }
+    document.getElementById('conceptSearch').addEventListener('input', function () {
+      filter(this.value);
+    });
+  })();
+  </script>
+</body>
+</html>
