@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que é Verdade? — Conceito Filosófico | Proceder Filosófico</title>
+  <meta name="description" content="O que é a verdade em filosofia? Explore o conceito de verdade desde Platão e Aristóteles até Nietzsche e Foucault: teorias, problemas e aplicações.">
+  <meta property="og:title" content="O que é Verdade? — Conceito Filosófico | Proceder Filosófico">
+  <meta property="og:description" content="O que é a verdade em filosofia? Explore o conceito desde Platão até Foucault: teorias da correspondência, coerência, utilidade e poder.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://procederfilosofico.com.br/conceitos/verdade/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O que é Verdade? — Proceder Filosófico">
+  <meta name="twitter:description" content="Conceito filosófico de verdade: teorias, problemas e diferenças essenciais.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://procederfilosofico.com.br/conceitos/verdade/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/proceder-shell.css">
+  <style>
+    :root{--azul:#060D1E;--azul2:#061E47;--dourado:#C9A84C;--branco:#F7F3EA}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}
+    a{color:inherit;text-decoration:none}
+    .concept-wrap{max-width:780px;margin:0 auto;padding:64px 24px 96px}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.6);margin-bottom:40px;display:flex;gap:12px;align-items:center}
+    .breadcrumb a{color:rgba(201,168,76,.6);transition:color .2s}.breadcrumb a:hover{color:var(--dourado)}
+    .breadcrumb span{color:rgba(255,255,255,.25)}
+    .concept-hero{border-left:3px solid var(--dourado);padding-left:28px;margin-bottom:56px}
+    .concept-area{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);margin-bottom:12px;display:block}
+    .concept-title{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,72px);font-weight:700;line-height:1;margin:0 0 20px}
+    .concept-def-short{font-size:1.1rem;line-height:1.72;color:rgba(255,255,255,.65);margin:0 0 20px}
+    .concept-philosophers{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,168,76,.7)}
+    .concept-philosophers span{color:rgba(255,255,255,.4);font-family:'Lato',sans-serif;text-transform:none;letter-spacing:0;font-size:12px}
+    .section{margin-bottom:52px}
+    .section-label{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);margin-bottom:16px;display:block}
+    .section h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;margin:0 0 18px;line-height:1.1}
+    .section p{line-height:1.8;color:rgba(255,255,255,.68);margin:0 0 16px;font-size:1rem}
+    .section p:last-child{margin-bottom:0}
+    .philosophers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .philosopher-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.14);border-radius:7px;padding:18px 20px}
+    .philosopher-card strong{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;display:block;margin-bottom:6px}
+    .philosopher-card p{font-size:.88rem;color:rgba(255,255,255,.48);line-height:1.65;margin:0}
+    .diff-table{width:100%;border-collapse:collapse;margin-top:8px}
+    .diff-table td{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07);font-size:.9rem;line-height:1.6}
+    .diff-table td:first-child{font-family:'Playfair Display',serif;font-weight:600;color:var(--dourado);white-space:nowrap;width:40%}
+    .diff-table td:last-child{color:rgba(255,255,255,.55)}
+    .summary-list{list-style:none;padding:0;margin:0;counter-reset:summary}
+    .summary-list li{counter-increment:summary;display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.65}
+    .summary-list li::before{content:counter(summary);font-family:'Cinzel',serif;font-size:11px;color:var(--dourado);min-width:20px;padding-top:2px}
+    .related-links{display:flex;flex-wrap:wrap;gap:10px}
+    .related-link{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,168,76,.8);border:1px solid rgba(201,168,76,.25);padding:8px 14px;border-radius:4px;transition:background .2s,border-color .2s}
+    .related-link:hover{background:rgba(201,168,76,.08);border-color:var(--dourado)}
+    .back-link{display:inline-flex;align-items:center;gap:8px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.6);margin-top:56px;border-top:1px solid rgba(255,255,255,.08);padding-top:32px;transition:color .2s}
+    .back-link:hover{color:var(--dourado)}
+    @media(max-width:640px){.concept-wrap{padding:48px 18px 72px}.philosophers-grid{grid-template-columns:1fr}.concept-title{font-size:clamp(34px,10vw,56px)}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"O que é Verdade? — Conceito Filosófico","description":"O que é a verdade em filosofia? Explore o conceito de verdade desde Platão e Aristóteles até Nietzsche e Foucault.","url":"https://procederfilosofico.com.br/conceitos/verdade/","isPartOf":{"@type":"WebSite","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
+</head>
+<body>
+  <header class="pf-header" role="banner">
+    <div class="pf-header__top">
+      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">
+        <span class="pf-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+        <span class="pf-brand__text">
+          <span class="pf-brand__name">Proceder Filosófico</span>
+          <span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span>
+        </span>
+      </a>
+      <div class="pf-header__tools" aria-label="Ações rápidas">
+        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos"><span class="pf-tool__icon" aria-hidden="true">⌕</span><span>Buscar</span></a>
+        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter"><span class="pf-tool__icon" aria-hidden="true">✉</span><span>Newsletter</span></a>
+      </div>
+    </div>
+    <nav class="pf-nav" aria-label="Navegação principal">
+      <a class="pf-nav__link" href="/">Início</a>
+      <a class="pf-nav__link" href="/artigos/">Artigos</a>
+      <a class="pf-nav__link" href="/#categorias">Categorias</a>
+      <a class="pf-nav__link" href="/filosofos/">Filósofos</a>
+      <a class="pf-nav__link is-active" href="/conceitos/">Conceitos</a>
+      <a class="pf-nav__link" href="/dossies/">Dossiês</a>
+      <a class="pf-nav__link" href="/enciclopedia/">Enciclopédia</a>
+      <a class="pf-nav__link" href="/biblioteca.html">Livros</a>
+      <a class="pf-nav__link" href="/#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <div class="concept-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Início</a><span>›</span>
+      <a href="/conceitos/">Conceitos</a><span>›</span>
+      <span aria-current="page">Verdade</span>
+    </nav>
+
+    <header class="concept-hero">
+      <span class="concept-area">Epistemologia</span>
+      <h1 class="concept-title">Verdade</h1>
+      <p class="concept-def-short">A correspondência entre o que dizemos e o que as coisas são. A questão da verdade interroga como podemos distinguir realidade de aparência, conhecimento de opinião, e o que justifica chamar uma afirmação de verdadeira.</p>
+      <div class="concept-philosophers"><span>Filósofos centrais:</span> Platão · Aristóteles · Descartes · Kant · Nietzsche · Foucault</div>
+    </header>
+
+    <section class="section">
+      <span class="section-label">Definição essencial</span>
+      <h2>O que é a verdade?</h2>
+      <p>A teoria mais clássica da verdade é a teoria da correspondência: uma afirmação é verdadeira quando corresponde à realidade. "A neve é branca" é verdadeiro se, e somente se, a neve for branca. Aristóteles formulou essa intuição de maneira precisa: "dizer do que é que não é, ou do que não é que é, é falso; dizer do que é que é, e do que não é que não é, é verdadeiro."</p>
+      <p>Mas essa definição levanta problemas imediatos. Como acessamos a realidade para comparar com a afirmação? Sempre a vemos filtrada pela linguagem, pelos conceitos, pelas condições históricas e pelas estruturas cognitivas. Isso levou filósofos a propor teorias alternativas: a teoria da coerência (uma afirmação é verdadeira se coerente com o sistema de crenças), a teoria pragmatista (uma afirmação é verdadeira se funciona, se guia a ação com sucesso) e a teoria do consenso (verdadeiro é o que sobrevive ao debate racional ideal).</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Problema central</span>
+      <h2>Como distinguir realidade, aparência e opinião?</h2>
+      <p>Platão propôs a distinção mais influente: há um abismo entre o mundo das ideias (eterno, imutável, verdadeiro) e o mundo das aparências (mutável, transitório, fonte de opiniões). O conhecimento verdadeiro só é possível em relação ao primeiro; o mundo sensível gera apenas opiniões.</p>
+      <p>Descartes radicaliza o problema ao perguntar: como posso saber que não estou sendo enganado sistematicamente por um gênio maligno? Sua resposta — a certeza do cogito — inaugura o projeto moderno de fundamentar a verdade em bases indubitáveis.</p>
+      <p>Nietzsche subverte toda essa tradição ao afirmar que a "vontade de verdade" é, ela própria, uma vontade de poder disfarçada. Não existe um mundo verdadeiro por trás das aparências; o que chamamos de verdade são interpretações que sobreviveram porque serviam a certos interesses.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Origem histórica</span>
+      <h2>De onde vem o conceito?</h2>
+      <p>A palavra grega <em>aletheia</em> — etimologicamente: o que não está oculto — sugere que a verdade não é uma relação entre linguagem e mundo, mas um desvelamento. Heidegger explorou essa etimologia para mostrar que o conceito moderno de verdade como correspondência é uma redução de algo mais originário: a abertura do ser que permite que os entes se mostrem.</p>
+      <p>Na tradição latina e medieval, <em>veritas</em> estava ligada à conformidade entre o intelecto e a coisa (<em>adaequatio intellectus et rei</em>). A escolástica desenvolveu essa definição com rigor, articulando verdade ontológica (as coisas são verdadeiras na medida em que correspondem às ideias divinas) e verdade lógica (o juízo humano que acerta a coisa).</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Desenvolvimento filosófico</span>
+      <h2>Como o conceito evolui?</h2>
+      <p>Kant marca uma virada decisiva: não podemos conhecer as coisas em si mesmas (<em>Ding an sich</em>), mas apenas os fenômenos — o modo como as coisas aparecem estruturadas pelas formas a priori da sensibilidade e do entendimento. A verdade é sempre verdade para um sujeito transcendental, não para uma perspectiva neutra divina.</p>
+      <p>Hegel dissolve a distinção entre sujeito e objeto na dialética: a verdade não é um estado estático de correspondência, mas um processo dinâmico em que a consciência se reconhece progressivamente na realidade. O verdadeiro é o todo.</p>
+      <p>No século XX, Foucault desloca a questão: em vez de perguntar o que é verdadeiro, pergunta como cada época produz seus "regimes de verdade" — os mecanismos que determinam o que pode ser dito, por quem, com que autoridade e em que condições.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Filósofos relacionados</span>
+      <h2>Quem pensou a verdade?</h2>
+      <div class="philosophers-grid">
+        <div class="philosopher-card">
+          <strong>Platão (427–347 a.C.)</strong>
+          <p>Distingue conhecimento verdadeiro (episteme) de mera opinião (doxa). A verdade reside no mundo inteligível das Formas, inacessível aos sentidos.</p>
+        </div>
+        <div class="philosopher-card">
+          <strong>Aristóteles (384–322 a.C.)</strong>
+          <p>Formula a teoria da correspondência: verdade é dizer do que é que é. Desenvolve a lógica como instrumento de preservação da verdade nas inferências.</p>
+        </div>
+        <div class="philosopher-card">
+          <strong>Descartes (1596–1650)</strong>
+          <p>Busca uma fundamentação indubitável da verdade. O cogito — "penso, logo existo" — é a certeza irredutível que ancora todo o edifício do conhecimento.</p>
+        </div>
+        <div class="philosopher-card">
+          <strong>Kant (1724–1804)</strong>
+          <p>Mostra que toda verdade é condicionada pelas estruturas cognitivas do sujeito. Não acessamos a coisa em si — apenas o fenômeno tal como nossa mente o organiza.</p>
+        </div>
+        <div class="philosopher-card">
+          <strong>Nietzsche (1844–1900)</strong>
+          <p>Critica a "vontade de verdade" como disfarce da vontade de poder. Não há fatos, apenas interpretações. A verdade é uma metáfora que esquecemos ser metáfora.</p>
+        </div>
+        <div class="philosopher-card">
+          <strong>Foucault (1926–1984)</strong>
+          <p>Analisa os "regimes de verdade": as formações históricas que determinam o que conta como verdadeiro em cada época e em cada campo do saber.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Exemplo prático</span>
+      <h2>A verdade fora da filosofia</h2>
+      <p>Na era das redes sociais, a distinção entre verdade e opinião se tornou urgência política. Desinformação, pós-verdade e câmaras de eco são fenômenos que só podem ser pensados seriamente com as ferramentas da epistemologia: o que conta como evidência? Quem tem autoridade para afirmar algo? Por que certas narrativas prevalecem sobre os fatos?</p>
+      <p>O problema de Nietzsche e Foucault não é relativismo barato, mas uma pergunta mais dura: se a verdade é sempre produzida em condições históricas e de poder, como resistir à propaganda sem apelar ingenuamente para uma objetividade absoluta que talvez não exista?</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Diferenças importantes</span>
+      <h2>Verdade e conceitos próximos</h2>
+      <table class="diff-table" aria-label="Diferenças conceituais">
+        <tr><td>Verdade × Opinião</td><td>Opinião é crença não suficientemente justificada; verdade exige fundamento racional ou empírico. Para Platão, a opinião pode acidentalmente ser verdadeira — mas sem razão.</td></tr>
+        <tr><td>Verdade × Crença</td><td>Posso crer em algo falso. A crença é o estado mental de aceitar algo; a verdade é a propriedade da proposição que corresponde ao real.</td></tr>
+        <tr><td>Verdade × Utilidade</td><td>O pragmatismo identifica verdade com utilidade, mas isso levanta problemas: mentiras podem ser úteis; e o que é útil para um pode ser destrutivo para outro.</td></tr>
+        <tr><td>Verdade × Validade</td><td>Um argumento pode ser válido (estruturalmente correto) sem ser verdadeiro. "Todos os unicórnios são azuis; este unicórnio existe; logo, este unicórnio é azul" é válido, mas falso.</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Leituras relacionadas</span>
+      <h2>Aprofunde no Proceder</h2>
+      <div class="related-links">
+        <a class="related-link" href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">Algoritmo e Verdade</a>
+        <a class="related-link" href="/artigos/sofistas-primeiros-mestres-persuasao/">Sofistas e Persuasão</a>
+        <a class="related-link" href="/artigos/protagoras-medida-todas-coisas/">Protágoras e o Relativismo</a>
+        <a class="related-link" href="/artigos/descartes-cogito-ergo-sum/">Descartes e o Cogito</a>
+        <a class="related-link" href="/artigos/platao-mundo-das-ideias/">Platão e as Ideias</a>
+        <a class="related-link" href="/conceitos/">← Todos os conceitos</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Resumo</span>
+      <h2>Cinco pontos essenciais</h2>
+      <ol class="summary-list">
+        <li>A teoria clássica da verdade é a correspondência: uma afirmação é verdadeira quando corresponde à realidade, conforme formulado por Aristóteles.</li>
+        <li>Teorias alternativas — coerência, pragmatismo, consenso — surgem das dificuldades em explicar como acessamos a realidade para fazer a comparação.</li>
+        <li>Kant mostra que toda verdade é condicionada pelas estruturas do sujeito: não conhecemos a coisa em si, mas o fenômeno organizado pela nossa cognição.</li>
+        <li>Nietzsche e Foucault radicalizam o problema ao mostrar que o próprio conceito de verdade é produzido historicamente e está entrelaçado com relações de poder.</li>
+        <li>A questão da verdade não é acadêmica: ela estrutura o jornalismo, a ciência, o direito, a política e a vida cotidiana — especialmente na era da desinformação.</li>
+      </ol>
+    </section>
+
+    <a class="back-link" href="/conceitos/">← Voltar aos conceitos filosóficos</a>
+  </div>
+
+  <footer class="pf-footer" role="contentinfo">
+    <div class="pf-footer__inner">
+      <section class="pf-footer__brand" aria-label="Proceder Filosófico">
+        <a class="pf-footer-brand" href="/"><span class="pf-footer-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span><span class="pf-footer-brand__name">Proceder<br>Filosófico</span></a>
+        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem.</p>
+        <div class="pf-social" aria-label="Canais editoriais">
+          <a href="/artigos/" aria-label="Artigos">A</a><a href="/dossies/" aria-label="Dossiês">D</a><a href="/enciclopedia/" aria-label="Enciclopédia">E</a><a href="/biblioteca.html" aria-label="Biblioteca">B</a>
+        </div>
+      </section>
+      <nav class="pf-footer__column" aria-label="Navegação">
+        <h2>Navegação</h2>
+        <a href="/">Início</a><a href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a>
+        <a href="/filosofos/">Filósofos</a><a href="/conceitos/">Conceitos</a>
+        <a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a>
+        <a href="/biblioteca.html">Livros</a><a href="/#newsletter">Newsletter</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Conceitos">
+        <h2>Conceitos</h2>
+        <a href="/conceitos/verdade/">Verdade</a>
+        <a href="/conceitos/liberdade/">Liberdade</a>
+        <a href="/conceitos/ser/">Ser</a>
+        <a href="/conceitos/razao/">Razão</a>
+        <a href="/conceitos/fenomenologia/">Fenomenologia</a>
+        <a href="/conceitos/">Ver todos</a>
+      </nav>
+      <nav class="pf-footer__column" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <a href="/sobre/">Sobre o Projeto</a><a href="/artigos/">Acervo de Artigos</a>
+        <a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a>
+      </nav>
+      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento">
+        <span class="pf-footer__symbol" aria-hidden="true">✦</span>
+        <h2>Palavra e Pensamento</h2>
+        <p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p>
+        <form class="pf-newsletter-form" action="/#newsletter" method="get">
+          <label for="pf-footer-email-verdade">Receba novos artigos e dossiês.</label>
+          <div class="pf-newsletter-form__row">
+            <input id="pf-footer-email-verdade" name="email" type="email" placeholder="Seu e-mail">
+            <button type="submit" aria-label="Assinar newsletter">→</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="pf-footer__bottom">
+      <span class="pf-footer__star" aria-hidden="true">✶</span>
+      <p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p>
+      <nav aria-label="Links legais"><a href="/sobre/">Sobre</a><a href="/artigos/">Artigos</a><a href="/#newsletter">Contato</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
