@@ -926,7 +926,8 @@ A meta alcançada se torna rotina.</p>
     title:    "O Conforto Excessivo Enfraquece Civilizações",
     excerpt:  "A tecnologia não produz fragilidade por si mesma; o problema começa quando uma civilização elimina as dificuldades que antes formavam caráter.",
     date:     "04 de Junho de 2026",
-    thumb:    "assets/article_cards/conforto-excessivo-enfraquece-civilizacoes.png",
+    thumb:    "assets/article_cards/conforto-excessivo-enfraquece-civilizacoes.webp",
+    cover:    "assets/article_cards/conforto-excessivo-enfraquece-civilizacoes.webp",
     featured: true,
     content: `
 <p>A história das civilizações revela um padrão recorrente: povos não costumam ser destruídos no auge de suas dificuldades. Frequentemente, entram em decadência quando alcançam níveis elevados de conforto, segurança e prosperidade.</p>
@@ -1553,7 +1554,8 @@ A meta alcançada se torna rotina.</p>
     title:    "O Fim da Escala 6x1: quando o tempo volta a ser uma questão filosófica",
     excerpt:  "A aprovação da PEC do fim da escala 6x1 recoloca uma pergunta antiga no centro da vida brasileira: o trabalho existe para sustentar a vida ou a vida existe para sustentar o trabalho?",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/article_cards/escala-6x1-trabalho-tempo-vida.png",
+    thumb:    "assets/article_cards/escala-6x1-trabalho-tempo-vida.webp",
+    cover:    "assets/article_cards/escala-6x1-trabalho-tempo-vida.webp",
     featured: false,
     content: `
 <p>Em 27 de maio de 2026, a Câmara dos Deputados aprovou em primeiro turno a PEC que propõe o fim da escala 6x1 e a redução gradual da jornada semanal para 40 horas. O texto ainda precisa ser aprovado em segundo turno na Câmara e depois seguir para o Senado, mas o gesto político já abriu uma discussão que ultrapassa a legislação trabalhista: <strong>o que uma sociedade faz com o tempo das pessoas?</strong></p>
@@ -1735,7 +1737,8 @@ A meta alcançada se torna rotina.</p>
     title:    "E se fôssemos apenas formigas diante do universo?",
     excerpt:  "A imagem de um formigueiro observando café cair do céu é uma metáfora poderosa para a consciência humana diante do cosmos: vemos efeitos imensos, mas quase nunca enxergamos a mão que os produz.",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/article_cards/formigas-diante-do-universo.webp",
+    thumb:    "assets/article_cards/formigas-diante-do-universo-cafe.webp",
+    cover:    "assets/article_cards/formigas-diante-do-universo-cafe.webp",
     featured: false,
     content: `
 <p>Imagine um formigueiro. De repente, uma xícara de café derrama sobre ele. Para as formigas, aquilo não é café. É catástrofe cósmica. Um líquido escuro atravessa túneis, destrói caminhos, muda o ambiente inteiro. Elas observam o efeito, mas não compreendem a escala da causa.</p>
@@ -1771,7 +1774,8 @@ A meta alcançada se torna rotina.</p>
     title:    "Quando a arte parou de entender o ser humano e começou a tentar controlá-lo",
     excerpt:  "A arte pode revelar a condição humana, mas também pode ser transformada em instrumento de controle. A pergunta estética se torna política quando imagens passam a fabricar desejos.",
     date:     "30 de Maio de 2026",
-    thumb:    "assets/article_cards/arte-controle-humano.jpeg",
+    thumb:    "assets/article_cards/arte-controle-humano.webp",
+    cover:    "assets/article_cards/arte-controle-humano.webp",
     featured: false,
     content: `
 <p>A arte nasceu, em grande parte, como tentativa de compreender o ser humano. Pinturas, mitos, esculturas, tragédias e músicas davam forma ao medo, ao desejo, à morte, ao amor, à culpa e ao sagrado. A arte tornava visível aquilo que a vida comum muitas vezes não conseguia dizer.</p>
@@ -2346,7 +2350,8 @@ A meta alcançada se torna rotina.</p>
     title:    "O que é a Metafísica? A Pergunta por Trás de Todas as Perguntas",
     excerpt:  "Metafísica não é misticismo. É o ramo da filosofia que pergunta o que existe, o que é real, e quais as propriedades mais fundamentais do ser. É a pergunta que nenhuma ciência pode responder — porque é anterior a todas elas.",
     date:     "30 de Abril de 2026",
-    thumb:    "assets/article_cards/o-que-e-a-metafisica.png",
+    thumb:    "assets/article_cards/o-que-e-a-metafisica.webp",
+    cover:    "assets/article_cards/o-que-e-a-metafisica.webp",
     featured: false,
     content: `
 <p>A palavra "metafísica" surgiu por acidente. Andrônico de Rodes, organizando os textos de Aristóteles no século I a.C., colocou os tratados sobre os primeiros princípios da realidade depois dos tratados sobre física — e os chamou de <em>ta meta ta physika</em>: "o que vem depois da física". O nome ficou.</p>
