@@ -32,7 +32,7 @@
     *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}a{color:inherit;text-decoration:none}
     main{max-width:1120px;margin:auto;padding:72px 24px 90px}.page-head{text-align:center;margin-bottom:46px}.label{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);display:block;margin-bottom:14px}.page-head h1{font-family:'Playfair Display',serif;font-size:clamp(34px,6vw,58px);line-height:1.05;margin:0 0 16px}.page-head p{max-width:660px;margin:auto;color:rgba(255,255,255,.5);line-height:1.75}
     .search-wrap{max-width:620px;margin:0 auto 54px}.search{width:100%;padding:15px 18px;border:1px solid rgba(201,168,76,.28);border-radius:7px;background:rgba(255,255,255,.04);color:#fff;font:inherit;outline:none}.search:focus{border-color:var(--dourado)}.search::placeholder{color:rgba(255,255,255,.32)}
-    .period{margin-bottom:58px}.period-head{display:flex;align-items:end;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(201,168,76,.2);padding-bottom:13px;margin-bottom:24px}.period h2{font-family:'Playfair Display',serif;font-size:25px;margin:0}.period-count{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;color:var(--dourado);text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.card{background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.16);border-radius:9px;padding:20px 22px;text-align:center;transition:transform .22s,border-color .22s}.card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.55)}.portrait{width:105px;height:105px;border-radius:50%;margin:0 auto 14px;overflow:hidden;border:2px solid rgba(201,168,76,.3);display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#0d1930,#060D1E);font-family:'Playfair Display',serif;font-size:32px;color:rgba(201,168,76,.42)}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%}.name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700}.dates{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dourado);margin:7px 0 11px}.bio{font-size:13px;line-height:1.65;color:rgba(255,255,255,.46);margin:0}.bio p{margin:0}.empty{text-align:center;color:rgba(255,255,255,.4);padding:40px}
+    .period{margin-bottom:58px}.period-head{display:flex;align-items:end;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(201,168,76,.2);padding-bottom:13px;margin-bottom:24px}.period h2{font-family:'Playfair Display',serif;font-size:25px;margin:0}.period-count{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.12em;color:var(--dourado);text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.card{background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.16);border-radius:9px;padding:20px 22px;text-align:center;transition:transform .22s,border-color .22s}.card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.55)}.portrait{width:105px;height:105px;border-radius:50%;margin:0 auto 14px;overflow:hidden;border:2px solid rgba(201,168,76,.3);display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#0d1930,#060D1E);font-family:'Playfair Display',serif;font-size:32px;color:rgba(201,168,76,.42)}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%}.name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700}.dates{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dourado);margin:7px 0 11px}.bio{font-size:13px;line-height:1.65;color:rgba(255,255,255,.46);margin:0}.bio p{margin:0}.ideas{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:14px 0 0}.ideas a,.ideas span{border:1px solid rgba(201,168,76,.18);border-radius:999px;padding:5px 9px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,243,234,.7)}.ideas a:hover{border-color:rgba(201,168,76,.5);color:var(--dourado)}.empty{text-align:center;color:rgba(255,255,255,.4);padding:40px}
     @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){main{padding:50px 16px 70px}.grid{grid-template-columns:1fr}}
   </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Filósofos | Proceder Filosófico", "url": "https://procederfilosofico.com.br/filosofos/", "isPartOf": {"@type": "WebSite", "name": "Proceder Filosófico", "url": "https://procederfilosofico.com.br/"}}</script>
@@ -86,18 +86,21 @@
           <div class="name">Sócrates</div>
           <div class="dates">470–399 a.C. · Filósofos</div>
           <div class="bio"><p>Filósofo ateniense considerado o pai da filosofia ocidental. Não deixou escritos; seu pensamento foi preservado principalmente por Platão.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Apologia de Sócrates" data-book-author="Platão" data-book-affiliate="https://amzn.to/4nwkdNp" data-book-reason="O discurso que mostra a vida filosófica diante da cidade, da acusação pública e da morte.">Apologia de Sócrates</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="A República" data-book-author="Platão" data-book-affiliate="https://amzn.to/3RegesH" data-book-reason="A obra clássica para entender justiça, cidade, educação e a relação entre alma e ordem política.">A República</button></div>
         </article>
         <article class="card" data-name="platão" data-periodo="427–347 a.c." data-corrente="filósofos">
           <div class="portrait"><img src="/assets/filosofos/platao.webp" alt="Platão" loading="lazy" onerror="this.parentNode.textContent='P'"></div>
           <div class="name">Platão</div>
           <div class="dates">427–347 a.C. · Filósofos</div>
           <div class="bio"><p>Discípulo de Sócrates e fundador da Academia de Atenas. Desenvolveu a Teoria das Ideias e influenciou toda a tradição filosófica ocidental.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="A República" data-book-author="Platão" data-book-affiliate="https://amzn.to/3RegesH" data-book-reason="A obra clássica para entender justiça, cidade, educação e a relação entre alma e ordem política.">A República</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="Fédon" data-book-author="Platão" data-book-affiliate="https://amzn.to/4woh7Po" data-book-reason="Diálogo essencial sobre alma, morte, imortalidade e a vida filosófica diante do fim.">Fédon</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="O Banquete" data-book-author="Platão" data-book-affiliate="https://amzn.to/4eR6jD9" data-book-reason="Uma leitura decisiva para amor, beleza, desejo e ascensão intelectual.">O Banquete</button></div>
         </article>
         <article class="card" data-name="aristóteles" data-periodo="384–322 a.c." data-corrente="filósofos">
           <div class="portrait"><img src="/assets/filosofos/aristoteles.webp" alt="Aristóteles" loading="lazy" onerror="this.parentNode.textContent='A'"></div>
           <div class="name">Aristóteles</div>
           <div class="dates">384–322 a.C. · Filósofos</div>
           <div class="bio"><p>Discípulo de Platão e tutor de Alexandre Magno. Organizou praticamente todas as áreas do conhecimento de sua época: lógica, ética, política, metafísica e biologia.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Ética a Nicômaco" data-book-author="Aristóteles" data-book-affiliate="https://amzn.to/42DoLYI" data-book-reason="A leitura central para compreender virtude, hábito, prudência e a ideia de vida humana realizada.">Ética a Nicômaco</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="Metafísica" data-book-author="Aristóteles" data-book-affiliate="https://amzn.to/3Plu3Fe" data-book-reason="A obra clássica para estudar ser, substância, causa e a pergunta pelo fundamento da realidade.">Metafísica</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="Retórica" data-book-author="Aristóteles" data-book-affiliate="https://amzn.to/4drDXNg" data-book-reason="A obra fundadora para entender linguagem pública, persuasão, ethos, pathos e logos.">Retórica</button></div>
         </article>
         <article class="card" data-name="epicuro" data-periodo="341–270 a.c." data-corrente="filósofos">
           <div class="portrait"><img src="/assets/article_cards/epicuro-pouco-suficiencia-desejo.png" alt="Epicuro" loading="lazy" onerror="this.parentNode.textContent='E'"></div>
@@ -116,12 +119,99 @@
           <div class="name">Immanuel Kant</div>
           <div class="dates">1724–1804 · Filósofos</div>
           <div class="bio"><p>Autor da <em>Crítica da Razão Pura</em>. Fundou o idealismo transcendental e formulou o imperativo categórico como base da ética racional.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Crítica da Razão Pura" data-book-author="Immanuel Kant" data-book-affiliate="https://amzn.to/4tzMx2R" data-book-reason="A obra decisiva para estudar os limites do conhecimento, a razão e as condições da experiência.">Crítica da Razão Pura</button></div>
         </article>
         <article class="card" data-name="friedrich nietzsche" data-periodo="1844–1900" data-corrente="filósofos">
           <div class="portrait"><img src="/assets/filosofos/nietzsche.webp" alt="Friedrich Nietzsche" loading="lazy" onerror="this.parentNode.textContent='N'"></div>
           <div class="name">Friedrich Nietzsche</div>
           <div class="dates">1844–1900 · Filósofos</div>
           <div class="bio"><p>Autor de <em>Assim Falou Zaratustra</em>. Questionou os fundamentos da moral ocidental e propôs a vontade de potência como força criativa da existência.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Assim Falou Zaratustra" data-book-author="Friedrich Nietzsche" data-book-affiliate="https://amzn.to/3PG4Bu6" data-book-reason="A obra mais literária de Nietzsche, essencial para temas como criação de valores, niilismo e superação.">Assim Falou Zaratustra</button></div>
+        </article>
+      </div>
+    </section>
+    <section class="period" data-group="Filosofia moderna e contemporânea">
+      <div class="period-head"><h2>Filosofia moderna e contemporânea</h2><span class="period-count">10 nomes</span></div>
+      <div class="grid">
+        <article class="card" data-name="baruch spinoza" data-periodo="1632–1677" data-corrente="racionalismo">
+          <div class="portrait"><img src="/assets/filosofos/spinoza.jpg" alt="Baruch Spinoza" loading="lazy" onerror="this.parentNode.textContent='S'"></div>
+          <div class="name">Baruch Spinoza</div>
+          <div class="dates">1632–1677 · Racionalismo</div>
+          <div class="bio"><p>Filósofo luso-neerlandês que pensou Deus, natureza, liberdade e afetos como partes de uma mesma ordem racional.</p></div>
+          <div class="ideas"><a href="/conceitos/liberdade/">Liberdade</a><a href="/conceitos/razao/">Razão</a><span>Afetos</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Ética" data-book-author="Baruch Spinoza" data-book-affiliate="https://amzn.to/4ufj7YZ" data-book-reason="A obra central para estudar substância, Deus ou natureza, liberdade e a geometria dos afetos.">Ética</button></div>
+        </article>
+        <article class="card" data-name="rené descartes" data-periodo="1596–1650" data-corrente="racionalismo">
+          <div class="portrait"><img src="/assets/filosofos/descartes.jpg" alt="René Descartes" loading="lazy" onerror="this.parentNode.textContent='D'"></div>
+          <div class="name">René Descartes</div>
+          <div class="dates">1596–1650 · Racionalismo</div>
+          <div class="bio"><p>Fundador da filosofia moderna, tornou a dúvida metódica e o sujeito pensante pontos decisivos para a teoria do conhecimento.</p></div>
+          <div class="ideas"><a href="/conceitos/razao/">Razão</a><a href="/conceitos/verdade/">Verdade</a><span>Dúvida metódica</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Discurso do Método" data-book-author="René Descartes" data-book-affiliate="https://amzn.to/490GNYr" data-book-reason="Texto essencial para entender método, dúvida, evidência e o nascimento do sujeito moderno.">Discurso do Método</button></div>
+        </article>
+        <article class="card" data-name="thomas hobbes" data-periodo="1588–1679" data-corrente="filosofia política">
+          <div class="portrait"><img src="/assets/filosofos/hobbes.jpg" alt="Thomas Hobbes" loading="lazy" onerror="this.parentNode.textContent='H'"></div>
+          <div class="name">Thomas Hobbes</div>
+          <div class="dates">1588–1679 · Filosofia política</div>
+          <div class="bio"><p>Interpretou o Estado como resposta ao medo, à guerra civil e à necessidade de uma autoridade capaz de conter o conflito.</p></div>
+          <div class="ideas"><a href="/conceitos/justica/">Justiça</a><span>Contrato social</span><span>Poder</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Leviatã" data-book-author="Thomas Hobbes" data-book-affiliate="https://amzn.to/4drREfs" data-book-reason="Obra decisiva para pensar soberania, medo, contrato social e origem moderna do Estado.">Leviatã</button></div>
+        </article>
+        <article class="card" data-name="jean-jacques rousseau" data-periodo="1712–1778" data-corrente="iluminismo">
+          <div class="portrait"><img src="/assets/filosofos/rousseau.jpg" alt="Jean-Jacques Rousseau" loading="lazy" onerror="this.parentNode.textContent='R'"></div>
+          <div class="name">Jean-Jacques Rousseau</div>
+          <div class="dates">1712–1778 · Iluminismo</div>
+          <div class="bio"><p>Pensador da liberdade civil, da desigualdade e da vontade geral, influenciou profundamente a política moderna.</p></div>
+          <div class="ideas"><a href="/conceitos/liberdade/">Liberdade</a><a href="/conceitos/justica/">Justiça</a><span>Vontade geral</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="O Contrato Social" data-book-author="Jean-Jacques Rousseau" data-book-affiliate="https://amzn.to/4ugGTDZ" data-book-reason="Leitura central para compreender liberdade política, soberania popular e vontade geral.">O Contrato Social</button></div>
+        </article>
+        <article class="card" data-name="georg wilhelm friedrich hegel" data-periodo="1770–1831" data-corrente="idealismo alemão">
+          <div class="portrait"><img src="/assets/filosofos/hegel.jpg" alt="Georg Wilhelm Friedrich Hegel" loading="lazy" onerror="this.parentNode.textContent='H'"></div>
+          <div class="name">G. W. F. Hegel</div>
+          <div class="dates">1770–1831 · Idealismo alemão</div>
+          <div class="bio"><p>Transformou história, consciência e razão em um processo dialético de formação, conflito e reconhecimento.</p></div>
+          <div class="ideas"><a href="/conceitos/consciencia/">Consciência</a><a href="/conceitos/razao/">Razão</a><span>Dialética</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Fenomenologia do Espírito" data-book-author="G. W. F. Hegel" data-book-reason="A obra mais influente de Hegel para estudar consciência, reconhecimento, história e dialética.">Fenomenologia do Espírito</button></div>
+        </article>
+        <article class="card" data-name="arthur schopenhauer" data-periodo="1788–1860" data-corrente="pessimismo filosófico">
+          <div class="portrait"><img src="/assets/filosofos/schopenhauer.jpg" alt="Arthur Schopenhauer" loading="lazy" onerror="this.parentNode.textContent='S'"></div>
+          <div class="name">Arthur Schopenhauer</div>
+          <div class="dates">1788–1860 · Pessimismo filosófico</div>
+          <div class="bio"><p>Viu a vontade como força cega por trás do mundo e encontrou na arte, na compaixão e na negação do desejo uma saída parcial para o sofrimento.</p></div>
+          <div class="ideas"><a href="/conceitos/consciencia/">Consciência</a><span>Vontade</span><span>Compaixão</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="O Mundo como Vontade e Representação" data-book-author="Arthur Schopenhauer" data-book-reason="Obra fundamental para entender vontade, representação, sofrimento e estética.">O Mundo como Vontade e Representação</button><button class="pf-book-chip" type="button" data-pf-book data-book-title="A Arte de Ter Razão" data-book-author="Arthur Schopenhauer" data-book-affiliate="https://amzn.to/4uXt8tP" data-book-reason="Um complemento curto e provocativo para estudar argumentação, retórica e disputa intelectual.">A Arte de Ter Razão</button></div>
+        </article>
+        <article class="card" data-name="jean-paul sartre" data-periodo="1905–1980" data-corrente="existencialismo">
+          <div class="portrait"><img src="/assets/filosofos/sartre.jpg" alt="Jean-Paul Sartre" loading="lazy" onerror="this.parentNode.textContent='S'"></div>
+          <div class="name">Jean-Paul Sartre</div>
+          <div class="dates">1905–1980 · Existencialismo</div>
+          <div class="bio"><p>Defendeu que a existência precede a essência e pensou liberdade, responsabilidade e angústia no centro da vida humana.</p></div>
+          <div class="ideas"><a href="/conceitos/liberdade/">Liberdade</a><a href="/conceitos/consciencia/">Consciência</a><span>Existência</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="O Existencialismo é um Humanismo" data-book-author="Jean-Paul Sartre" data-book-affiliate="https://amzn.to/3RbYyxS" data-book-reason="Introdução clássica para liberdade, responsabilidade e condição humana no existencialismo.">O Existencialismo é um Humanismo</button></div>
+        </article>
+        <article class="card" data-name="albert camus" data-periodo="1913–1960" data-corrente="absurdo">
+          <div class="portrait"><img src="/assets/filosofos/camus.jpg" alt="Albert Camus" loading="lazy" onerror="this.parentNode.textContent='C'"></div>
+          <div class="name">Albert Camus</div>
+          <div class="dates">1913–1960 · Absurdo</div>
+          <div class="bio"><p>Investigou o absurdo, a revolta e a dignidade humana diante de um mundo que não oferece respostas finais.</p></div>
+          <div class="ideas"><a href="/conceitos/liberdade/">Liberdade</a><span>Absurdo</span><span>Revolta</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="O Mito de Sísifo" data-book-author="Albert Camus" data-book-affiliate="https://amzn.to/4ddqXMz" data-book-reason="Ensaio essencial para entender absurdo, suicídio filosófico e revolta consciente.">O Mito de Sísifo</button></div>
+        </article>
+        <article class="card" data-name="agostinho de hipona santo agostinho" data-periodo="354–430" data-corrente="patrística">
+          <div class="portrait"><img src="/assets/filosofos/agostinho.jpg" alt="Agostinho de Hipona" loading="lazy" onerror="this.parentNode.textContent='A'"></div>
+          <div class="name">Agostinho de Hipona</div>
+          <div class="dates">354–430 · Patrística</div>
+          <div class="bio"><p>Unificou herança clássica e cristianismo em uma reflexão sobre interioridade, graça, tempo, memória e desejo.</p></div>
+          <div class="ideas"><a href="/conceitos/alma/">Alma</a><a href="/conceitos/tempo/">Tempo</a><span>Graça</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Confissões" data-book-author="Agostinho de Hipona" data-book-affiliate="https://amzn.to/4nyQZNU" data-book-reason="Obra fundamental para estudar interioridade, memória, tempo e conversão filosófico-religiosa.">Confissões</button></div>
+        </article>
+        <article class="card" data-name="tomás de aquino sao tomas de aquino" data-periodo="1225–1274" data-corrente="escolástica">
+          <div class="portrait"><img src="/assets/filosofos/tomas-de-aquino.jpg" alt="Tomás de Aquino" loading="lazy" onerror="this.parentNode.textContent='T'"></div>
+          <div class="name">Tomás de Aquino</div>
+          <div class="dates">1225–1274 · Escolástica</div>
+          <div class="bio"><p>Sistematizou Aristóteles e a teologia cristã em uma arquitetura intelectual sobre ser, causa, lei, virtude e Deus.</p></div>
+          <div class="ideas"><a href="/conceitos/ser/">Ser</a><a href="/conceitos/razao/">Razão</a><span>Lei natural</span></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Suma Teológica" data-book-author="Tomás de Aquino" data-book-reason="A grande síntese escolástica para estudar Deus, ser, virtude, lei e razão teológica.">Suma Teológica</button></div>
         </article>
       </div>
     </section>
@@ -255,6 +345,7 @@
           <div class="name">Fiódor Dostoiévski</div>
           <div class="dates">1821–1881 · Escritores</div>
           <div class="bio"><p>Explorou liberdade, culpa, fé e moralidade com profundidade psicológica rara.</p></div>
+          <div class="pf-book-strip"><button class="pf-book-chip" type="button" data-pf-book data-book-title="Crime e Castigo" data-book-author="Fiódor Dostoiévski" data-book-affiliate="https://amzn.to/3PKvsoT" data-book-reason="Romance essencial para estudar culpa, consciência moral, liberdade e redenção.">Crime e Castigo</button></div>
         </article>
         <article class="card" data-name="liev tolstói" data-periodo="1828–1910" data-corrente="escritores">
           <div class="portrait">L</div>
@@ -396,7 +487,8 @@
         cards.forEach(function (card) {
           var text = normalize([
             card.dataset.name, card.dataset.periodo, card.dataset.corrente,
-            card.querySelector('.bio') ? card.querySelector('.bio').textContent : ''
+            card.querySelector('.bio') ? card.querySelector('.bio').textContent : '',
+            card.querySelector('.ideas') ? card.querySelector('.ideas').textContent : ''
           ].join(' '));
           var visible = !term || text.indexOf(term) >= 0;
           card.style.display = visible ? '' : 'none';
@@ -413,5 +505,6 @@
       });
     })();
   </script>
+  <script src="/assets/js/book-affiliate-modal.js" defer></script>
 </body>
 </html>
