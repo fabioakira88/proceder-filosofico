@@ -3,6 +3,417 @@
 
 const POSTS = [
   {
+    id:       "budismo-filosofia-impermanencia-nao-eu",
+    slug:     "budismo-filosofia-impermanencia-nao-eu",
+    tag:      "FILOSOFIA DA RELIGIÃO",
+    category: "Religião",
+    title:    "Budismo como filosofia: impermanência, não-eu e libertação",
+    excerpt:  "O budismo pode ser lido como uma filosofia da experiência: tudo muda, o eu não é substância fixa e o apego transforma fluxo em sofrimento.",
+    date:     "03 de Julho de 2026",
+    dateISO:  "2026-07-03",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/budismo-filosofia-impermanencia-nao-eu.jpg",
+    cover:    "assets/article_cards/budismo-filosofia-impermanencia-nao-eu.jpg",
+    tags:     ["budismo","impermanência","não-eu","sofrimento","filosofia da religião"],
+    featured: true,
+    metaTitle: "Budismo como filosofia: impermanência e não-eu",
+    metaDescription: "Uma leitura filosófica do budismo: impermanência, não-eu, sofrimento, apego, ética, meditação e relação com Heráclito e a modernidade líquida.",
+    keywords: ["budismo","impermanência","anatta","dukkha","filosofia budista","não-eu"],
+    content: `
+<p><strong>O budismo não começa perguntando o que o mundo é em abstrato. Começa perguntando por que sofremos.</strong></p>
+
+<p>Essa diferença é decisiva. Muitas tradições filosóficas ocidentais buscaram o fundamento do ser, da verdade ou da moral. O budismo parte da experiência concreta: desejo, apego, medo, envelhecimento, perda, frustração e instabilidade. Sua filosofia não separa conhecimento e transformação da vida.</p>
+
+<h2>Impermanência: tudo passa</h2>
+
+<p>A ideia de impermanência, frequentemente chamada de <em>anicca</em>, afirma que todos os fenômenos compostos mudam. Corpo, emoção, pensamento, relação, poder, juventude, opinião e identidade aparecem, transformam-se e desaparecem.</p>
+
+<p>Essa tese aproxima o budismo de Heráclito, mas com outra finalidade. Não se trata apenas de dizer que tudo flui. Trata-se de perceber que sofreremos enquanto exigirmos permanência daquilo que por natureza não pode permanecer.</p>
+
+<h2>Não-eu: identidade como processo</h2>
+
+<p>O ensinamento do não-eu, ou <em>anatta</em>, é uma das ideias mais difíceis e radicais do budismo. Ele não significa simplesmente que não existimos. Significa que aquilo que chamamos “eu” não é uma substância fixa, eterna e independente.</p>
+
+<p>O eu é composto por corpo, sensações, percepções, formações mentais e consciência. Esses elementos mudam constantemente. A identidade é real como processo, mas ilusória quando imaginada como núcleo imóvel.</p>
+
+<p>Essa perspectiva desafia tanto o individualismo moderno quanto a ansiedade da autopromoção. Se o eu é processo, a obsessão por construir uma imagem permanente de si mesmo torna-se uma forma sofisticada de apego.</p>
+
+<h2>Sofrimento e apego</h2>
+
+<p>O budismo fala de <em>dukkha</em>, frequentemente traduzido como sofrimento, insatisfação ou mal-estar. Não se trata apenas de dor física. É a instabilidade estrutural de uma vida que tenta agarrar o que escapa.</p>
+
+<p>Desejar não é automaticamente errado. O problema é o apego que transforma coisas impermanentes em promessa de salvação. Quando exigimos que pessoas, status, prazer, reputação ou identidade nos deem permanência absoluta, criamos sofrimento.</p>
+
+<h2>Ética como clareza</h2>
+
+<p>A ética budista não é mera obediência externa. Ela nasce da percepção de interdependência. Se o eu não é ilha isolada, agir com violência, ganância e ignorância perturba a própria rede da qual fazemos parte.</p>
+
+<p>Compaixão, atenção e não-violência não são adereços espirituais. São consequências práticas de ver com mais clareza. A meditação, nesse sentido, não é fuga do mundo. É treinamento para observar desejo, medo e pensamento antes que eles se tornem reação automática.</p>
+
+<h2>Budismo e sociedade líquida</h2>
+
+<p>A modernidade líquida confirma a impermanência, mas frequentemente sem sabedoria. Tudo muda, mas continuamos apegados à imagem, à visibilidade e à estabilidade emocional que as plataformas prometem. O budismo não nega o fluxo; ensina a não se afogar nele.</p>
+
+<p>Por isso sua visão filosófica é contemporânea. Ela nos lembra que liberdade não é controlar tudo, nem solidificar uma identidade perfeita. Liberdade é compreender a natureza transitória da experiência e reduzir o apego que transforma mudança em ameaça.</p>
+
+<h2>Fontes e créditos</h2>
+
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, “Buddha”, disponível em <a href="https://plato.stanford.edu/entries/buddha/" target="_blank" rel="noopener">plato.stanford.edu/entries/buddha</a>.</li>
+  <li>Referência conceitual tradicional: as noções de <em>anicca</em>, <em>anatta</em> e <em>dukkha</em> na filosofia budista.</li>
+  <li>Conexões internas: <a href="/artigos/sociedade-liquida-conteudo-liquido/">Sociedade líquida e conteúdo líquido</a>, <a href="/artigos/heraclito-parmenides-mudanca-essencia/">Heráclito e Parmênides</a> e <a href="/conceitos/consciencia/">Consciência</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id:       "manifesto-comunista-ias-monopolio-informacao",
+    slug:     "manifesto-comunista-ias-monopolio-informacao",
+    tag:      "FILOSOFIA POLÍTICA",
+    category: "Política",
+    title:    "Do Manifesto Comunista ao manifesto das IAs: quem controla a informação?",
+    excerpt:  "Se os meios de produção hoje incluem dados, modelos e plataformas, a luta pelo poder passa também pelo monopólio da informação.",
+    date:     "03 de Julho de 2026",
+    dateISO:  "2026-07-03",
+    readTime: "14 min",
+    thumb:    "assets/article_cards/manifesto-comunista-ias-monopolio-informacao.jpg",
+    cover:    "assets/article_cards/manifesto-comunista-ias-monopolio-informacao.jpg",
+    tags:     ["Marx","inteligência artificial","dados","monopólio","informação"],
+    featured: true,
+    metaTitle: "Manifesto Comunista, IAs e monopólio da informação",
+    metaDescription: "Releitura filosófica do Manifesto Comunista na era das IAs: dados, modelos, plataformas, monopólio informacional e poder digital.",
+    keywords: ["Manifesto Comunista","inteligência artificial","dados","monopólio da informação","Marx","plataformas"],
+    content: `
+<p><strong>Se Marx e Engels perguntaram quem controla os meios de produção, nossa época precisa perguntar quem controla os meios de informação.</strong></p>
+
+<p>O <em>Manifesto Comunista</em> nasceu em 1848, no coração da sociedade industrial. Sua imagem central era a concentração de capital, propriedade e poder nas mãos de uma classe capaz de organizar a produção e submeter o trabalho. Hoje, sem repetir mecanicamente o século XIX, podemos deslocar a pergunta: na economia das inteligências artificiais, quais são os novos meios de produção?</p>
+
+<p>Dados, modelos, infraestrutura computacional, plataformas, sistemas de recomendação e canais de distribuição tornaram-se elementos centrais de poder. Quem controla esses meios não controla apenas fábricas. Controla visibilidade, reputação, memória, pesquisa, criação e circulação simbólica.</p>
+
+<h2>Dados como matéria-prima</h2>
+
+<p>A indústria clássica precisava de matéria-prima, máquinas e trabalho. A economia digital precisa de dados, infraestrutura e atenção. Usuários escrevem, clicam, compram, comentam, ensinam preferências e deixam rastros. Criadores produzem textos, imagens, vídeos e estilos. Plataformas agregam esse material e o transformam em valor.</p>
+
+<p>Na era da IA, esse processo ganha nova intensidade. Conteúdos humanos podem treinar sistemas que depois competem com os próprios produtores de conteúdo. A pergunta política não é apenas técnica: quem se beneficia da inteligência coletiva acumulada?</p>
+
+<h2>O novo monopólio</h2>
+
+<p>O monopólio informacional não precisa censurar diretamente tudo. Basta organizar o que aparece primeiro, o que desaparece, o que é recomendado, o que é considerado relevante e o que se torna invisível. O poder moderno opera tanto pela proibição quanto pela ordenação do fluxo.</p>
+
+<p>Quando poucos atores controlam modelos, plataformas e infraestrutura, a esfera pública se torna dependente de critérios opacos. A informação deixa de ser apenas bem cultural e torna-se ambiente. Viver dentro de plataformas é viver dentro de arquiteturas de escolha construídas por outros.</p>
+
+<h2>Um manifesto das IAs?</h2>
+
+<p>Um “manifesto das IAs” não deveria ser uma fantasia em que máquinas tomam consciência de classe. A questão é humana: como impedir que a automação concentre ainda mais poder informacional? Como garantir transparência, remuneração justa, pluralidade, direito de contestação e acesso amplo ao conhecimento?</p>
+
+<p>Se os dados são produzidos socialmente, a governança da IA não pode ser apenas privada. Isso não significa abolir inovação, mas reconhecer que infraestruturas cognitivas moldam a vida comum. Uma sociedade que terceiriza memória, criação e recomendação a poucos sistemas perde autonomia sem perceber.</p>
+
+<h2>Kant, Nietzsche e o poder informacional</h2>
+
+<p>Uma pergunta kantiana seria: podemos querer como lei universal que poucos grupos controlem a mediação da informação de todos? Se a resposta for não, o monopólio informacional fere a autonomia pública.</p>
+
+<p>Uma pergunta nietzscheana seria: que forças se afirmam por trás do discurso de eficiência e neutralidade? Quem ganha potência quando tudo é quantificado, previsto e recomendado? A IA pode ampliar criação; também pode domesticar a imaginação em padrões previsíveis.</p>
+
+<h2>A luta pela visibilidade</h2>
+
+<p>O conflito contemporâneo não se dá apenas entre quem possui máquinas e quem vende força de trabalho. Dá-se também entre quem controla os critérios de visibilidade e quem depende deles para existir publicamente.</p>
+
+<p>O desafio filosófico é construir uma política da informação que não reduza conhecimento a propriedade exclusiva nem transforme criação humana em simples insumo invisível. A pergunta marxiana retorna em nova forma: quem produz valor, quem captura valor e quem decide o mundo em que todos devem pensar?</p>
+
+<h2>Fontes e créditos</h2>
+
+<ul>
+  <li>Karl Marx e Friedrich Engels, <em>The Communist Manifesto</em>, texto disponível no <a href="https://www.gutenberg.org/ebooks/61" target="_blank" rel="noopener">Project Gutenberg</a>.</li>
+  <li>Shoshana Zuboff, <em>The Age of Surveillance Capitalism</em>, referência para capitalismo de vigilância e extração de dados.</li>
+  <li>Conexões internas: <a href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">O Algoritmo Substituiu a Verdade pela Atenção</a>, <a href="/artigos/tecnologia-mais-rapida-que-sabedoria/">A Tecnologia Ficou Mais Rápida que a Sabedoria</a> e <a href="/conceitos/liberdade/">Liberdade</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id:       "heraclito-parmenides-mudanca-essencia",
+    slug:     "heraclito-parmenides-mudanca-essencia",
+    tag:      "FILOSOFIA CLÁSSICA",
+    category: "Filosofia",
+    title:    "Heráclito e Parmênides: por que mudar demais pode destruir uma essência",
+    excerpt:  "Entre o rio de Heráclito e o ser imóvel de Parmênides, a vida humana precisa aprender a mudar sem perder forma.",
+    date:     "03 de Julho de 2026",
+    dateISO:  "2026-07-03",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/heraclito-parmenides-mudanca-essencia.jpg",
+    cover:    "assets/article_cards/heraclito-parmenides-mudanca-essencia.jpg",
+    tags:     ["Heráclito","Parmênides","mudança","essência","identidade"],
+    featured: true,
+    metaTitle: "Heráclito e Parmênides: mudança, essência e identidade",
+    metaDescription: "Ensaio sobre Heráclito, Parmênides, mudança, permanência e a necessidade de uma essência dinâmica para a vida e a criação.",
+    keywords: ["Heráclito","Parmênides","mudança","permanência","essência","filosofia antiga"],
+    content: `
+<p><strong>Mudar é necessário. Mudar demais, porém, pode dissolver aquilo que torna uma vida reconhecível.</strong></p>
+
+<p>Heráclito e Parmênides representam duas intuições extremas da filosofia antiga. Para Heráclito, tudo flui. Para Parmênides, o ser é imóvel e a mudança pertence ao domínio enganoso dos sentidos. A história da filosofia pode ser lida como uma tentativa de responder a essa tensão: somos rio ou rocha? Processo ou essência? Movimento ou permanência?</p>
+
+<h2>Heráclito: a verdade do fluxo</h2>
+
+<p>Heráclito percebe que a realidade não está parada. O corpo muda, a cidade muda, os desejos mudam, as estações mudam, as opiniões mudam. Tentar viver como se tudo fosse fixo é negar a experiência mais simples do mundo.</p>
+
+<p>Mas Heráclito não é filósofo da bagunça. O fluxo possui uma ordem. O fogo transforma, mas não transforma ao acaso. O rio muda de águas, mas ainda pode ser reconhecido como rio. A mudança, quando possui forma, não destrói necessariamente a identidade; pode expressá-la.</p>
+
+<h2>Parmênides: a exigência de permanência</h2>
+
+<p>Parmênides parte de outra exigência: o pensamento precisa de estabilidade. Se tudo muda absolutamente, nada pode ser conhecido. Dizer que algo é já pressupõe alguma permanência. O ser não pode ao mesmo tempo ser e não ser.</p>
+
+<p>Essa posição parece rígida, mas toca um problema real. Uma vida que muda de princípio a cada estímulo perde continuidade. Uma obra que troca de identidade a cada tendência perde densidade. Uma sociedade que altera todos os valores sem critério pode confundir abertura com desorientação.</p>
+
+<h2>O erro de escolher apenas um lado</h2>
+
+<p>Se seguimos apenas Heráclito de modo superficial, tudo vira adaptação: muda-se de opinião, estética, linguagem e valor conforme o ambiente. A identidade torna-se estratégia. Nada permanece tempo suficiente para formar caráter.</p>
+
+<p>Se seguimos apenas Parmênides, a vida endurece. Toda mudança parece traição. Toda transformação parece decadência. O indivíduo se protege tanto contra o fluxo que deixa de aprender.</p>
+
+<p>O problema não é mudar. O problema é mudar sem eixo. O problema não é manter essência. O problema é confundir essência com imobilidade.</p>
+
+<h2>Essência dinâmica</h2>
+
+<p>Talvez a resposta esteja numa noção de essência dinâmica. Uma árvore muda de folhas, cresce, perde galhos, adapta-se ao clima. Ainda assim, não se torna qualquer coisa. Sua identidade não está em permanecer igual, mas em desenvolver uma forma própria de transformação.</p>
+
+<p>O mesmo vale para uma pessoa, um projeto intelectual ou uma revista cultural. É preciso mudar de linguagem, ampliar temas, responder ao tempo. Mas é preciso preservar um eixo: a pergunta fundamental, o tom, a exigência de verdade, a fidelidade a uma vocação.</p>
+
+<p>Heráclito ensina que nada vivo permanece intacto. Parmênides ensina que nada inteligível existe sem alguma permanência. Entre ambos, a sabedoria talvez consista em mudar sem se tornar líquido demais para ter forma.</p>
+
+<h2>Fontes e créditos</h2>
+
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, “Heraclitus”, disponível em <a href="https://plato.stanford.edu/entries/heraclitus/" target="_blank" rel="noopener">plato.stanford.edu/entries/heraclitus</a>.</li>
+  <li>Stanford Encyclopedia of Philosophy, “Parmenides”, disponível em <a href="https://plato.stanford.edu/entries/parmenides/" target="_blank" rel="noopener">plato.stanford.edu/entries/parmenides</a>.</li>
+  <li>Conexões internas: <a href="/artigos/heraclito-duas-vezes-mesmo-rio/">Heráclito e o rio</a>, <a href="/conceitos/ser/">Ser</a> e <a href="/conceitos/tempo/">Tempo</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id:       "kant-nietzsche-moral-dever-potencia",
+    slug:     "kant-nietzsche-moral-dever-potencia",
+    tag:      "ÉTICA",
+    category: "Filosofia",
+    title:    "Kant contra Nietzsche: dever, potência e o conflito da moral moderna",
+    excerpt:  "Kant busca uma moral universal fundada na razão; Nietzsche pergunta se essa universalidade não esconde ressentimento contra a vida.",
+    date:     "03 de Julho de 2026",
+    dateISO:  "2026-07-03",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/kant-nietzsche-moral-dever-potencia.jpg",
+    cover:    "assets/article_cards/kant-nietzsche-moral-dever-potencia.jpg",
+    tags:     ["Kant","Nietzsche","ética","dever","vontade de potência"],
+    featured: true,
+    metaTitle: "Kant contra Nietzsche: moral do dever e moral da potência",
+    metaDescription: "Comparação filosófica entre a moral de Kant e a crítica moral de Nietzsche: dever, universalidade, autonomia, ressentimento e afirmação da vida.",
+    keywords: ["Kant","Nietzsche","moral","imperativo categórico","vontade de potência","ética"],
+    content: `
+<p><strong>Kant e Nietzsche não discordam apenas sobre regras morais. Eles discordam sobre o que significa ser humano.</strong></p>
+
+<p>Para Kant, a grandeza moral do homem está na capacidade de obedecer a uma lei que a razão reconhece como universal. Para Nietzsche, essa pretensão de universalidade pode ser justamente o sintoma de uma moral que teme a diferença, a força e a criação de novos valores. Entre os dois aparece uma tensão decisiva da modernidade: precisamos de uma moral comum ou de uma ética capaz de afirmar singularidades?</p>
+
+<h2>Kant: a moral como lei da razão</h2>
+
+<p>A ética kantiana nasce da tentativa de fundar a moral em algo mais seguro do que desejo, costume, autoridade religiosa ou consequência. Se uma ação é moral apenas porque produz prazer, vantagem ou aprovação social, ela depende de fatores instáveis. Kant procura outro fundamento: a razão prática.</p>
+
+<p>O imperativo categórico resume essa exigência. Devemos agir apenas segundo máximas que possamos querer como lei universal. Mentir, explorar ou usar alguém como mero instrumento não são erros apenas porque causam dano eventual. São erros porque não respeitam a dignidade racional da pessoa.</p>
+
+<p>O centro da moral kantiana é a autonomia. Ser livre não é fazer qualquer coisa; é obedecer à lei que a própria razão reconhece. A liberdade moral não é capricho. É autogoverno racional.</p>
+
+<h2>Nietzsche: a moral como sintoma</h2>
+
+<p>Nietzsche muda a pergunta. Ele não pergunta primeiro qual regra deve valer para todos. Pergunta de onde vieram nossas regras, que tipo de vida elas favorecem e que forças elas reprimem. A moral deixa de ser vista como tribunal neutro e passa a ser interpretada como criação histórica.</p>
+
+<p>Em sua crítica à moral, Nietzsche vê muitos valores modernos como herdeiros do ressentimento: uma inversão pela qual fraqueza, obediência e negação dos instintos se apresentam como superioridade moral. A moral universal pode funcionar como proteção dos fracos contra os fortes, mas também pode tornar-se hostilidade contra tudo que é excepcional, criativo e afirmativo.</p>
+
+<p>Isso não significa que Nietzsche defenda brutalidade simples. Seu problema é a vida diminuída. Uma moral que apenas proíbe, iguala e domestica pode proteger a convivência, mas também pode empobrecer a existência.</p>
+
+<h2>Dever ou potência?</h2>
+
+<p>Kant pergunta: “e se todos agissem assim?”. Nietzsche pergunta: “que tipo de vida quer agir assim?”. A primeira pergunta protege a universalidade. A segunda desconfia da universalidade quando ela se torna máscara.</p>
+
+<p>Na criação cultural, a diferença é evidente. Uma ética kantiana do criador exigiria honestidade, respeito ao outro, não manipulação e responsabilidade pública. Uma ética nietzscheana perguntaria se o criador está apenas repetindo valores do rebanho ou se está produzindo forma, risco, intensidade e interpretação própria.</p>
+
+<p>O perigo kantiano é transformar a moral em formalismo frio. O perigo nietzscheano é confundir criação de valores com licença estética para qualquer violência. O problema não se resolve escolhendo caricaturas.</p>
+
+<h2>O que ainda podemos aprender com os dois</h2>
+
+<p>De Kant, herdamos a necessidade de limites: nenhuma potência criadora justifica reduzir pessoas a objetos. De Nietzsche, herdamos a suspeita contra moralidades que chamam de virtude aquilo que talvez seja medo da vida.</p>
+
+<p>Uma ética madura talvez precise dos dois movimentos: a exigência kantiana de não instrumentalizar o outro e a pergunta nietzscheana sobre se nossos valores aumentam ou diminuem a potência da existência.</p>
+
+<p>Sem Kant, a liberdade pode virar desculpa para domínio. Sem Nietzsche, a moral pode virar obediência sem alma.</p>
+
+<h2>Fontes e créditos</h2>
+
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, “Kant's Moral Philosophy”, disponível em <a href="https://plato.stanford.edu/entries/kant-moral/" target="_blank" rel="noopener">plato.stanford.edu/entries/kant-moral</a>.</li>
+  <li>Stanford Encyclopedia of Philosophy, “Nietzsche's Moral and Political Philosophy”, disponível em <a href="https://plato.stanford.edu/entries/nietzsche-moral-political/" target="_blank" rel="noopener">plato.stanford.edu/entries/nietzsche-moral-political</a>.</li>
+  <li>Conexões internas: <a href="/artigos/nietzsche-obras-impacto-revolucionario/">Nietzsche: obras centrais</a>, <a href="/artigos/provar-deus-kant/">Kant e os limites da razão</a> e <a href="/conceitos/liberdade/">Liberdade</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id:       "sociedade-liquida-conteudo-liquido",
+    slug:     "sociedade-liquida-conteudo-liquido",
+    tag:      "FILOSOFIA DA CULTURA",
+    category: "Atualidade Filosófica",
+    title:    "Sociedade líquida e conteúdo líquido: quando tudo vira fluxo",
+    excerpt:  "Na sociedade líquida, até a criação deixa de buscar permanência: posts, vídeos e identidades circulam como espuma antes de virarem pensamento.",
+    date:     "03 de Julho de 2026",
+    dateISO:  "2026-07-03",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/sociedade-liquida-conteudo-liquido.jpg",
+    cover:    "assets/article_cards/sociedade-liquida-conteudo-liquido.jpg",
+    tags:     ["sociedade líquida","Bauman","conteúdo","algoritmos","atenção"],
+    featured: true,
+    metaTitle: "Sociedade líquida e conteúdo líquido | Proceder Filosófico",
+    metaDescription: "Um ensaio filosófico sobre Bauman, criação de conteúdo, fluxo digital, algoritmos, Heráclito e a dificuldade de produzir permanência numa cultura líquida.",
+    keywords: ["sociedade líquida","conteúdo líquido","Bauman","criação de conteúdo","filosofia da cultura"],
+    content: `
+<p><strong>A sociedade líquida não produz apenas relações instáveis. Ela produz também conteúdos instáveis.</strong></p>
+
+<p>Zygmunt Bauman usou a imagem da liquidez para descrever uma modernidade em que instituições, vínculos e identidades perdem forma durável. O sólido resiste, ocupa lugar e exige tempo. O líquido se adapta ao recipiente, escorre, muda de forma e raramente permanece. A cultura digital levou essa imagem a um novo grau: não vivemos apenas em relações líquidas; criamos em formatos líquidos.</p>
+
+<p>O criador contemporâneo trabalha dentro de um rio que nunca para. O vídeo precisa ser curto, o texto precisa circular, a imagem precisa prender atenção antes que o dedo deslize. A obra deixa de ser pensada como permanência e passa a ser pensada como desempenho no fluxo. Ela existe enquanto engaja, desaparece quando o algoritmo a esquece e retorna depois como tendência reciclada.</p>
+
+<h2>Do conteúdo como obra ao conteúdo como correnteza</h2>
+
+<p>Durante muito tempo, criar significava deixar algo relativamente estável: um livro, um ensaio, uma pintura, uma aula, uma carta. Mesmo quando a obra era efêmera, seu ideal estava ligado a alguma forma de permanência. Hoje, grande parte da criação nasce já adaptada à desaparição. Um conteúdo é feito para ser atravessado, não habitado.</p>
+
+<p>Isso não significa que toda criação digital seja superficial. O problema é mais sutil. A plataforma não pergunta primeiro se algo é verdadeiro, belo ou necessário. Pergunta se aquilo retém atenção. A consequência é uma pressão estrutural: ideias complexas são empurradas para formatos cada vez mais leves, rápidos e repetíveis.</p>
+
+<p>Assim, a liquidez deixa de ser apenas tema sociológico. Torna-se condição estética. A forma do conteúdo passa a imitar a instabilidade da sociedade que o produz.</p>
+
+<h2>Heráclito venceu a internet?</h2>
+
+<p>Heráclito é frequentemente lembrado pela imagem do rio: não entramos duas vezes no mesmo rio porque novas águas correm sempre. A internet parece confirmar essa intuição. Feed, tendência, meme, opinião, escândalo e reação mudam antes de amadurecer.</p>
+
+<p>Mas Heráclito não defendia confusão pura. O fluxo possui logos, uma ordem interna da mudança. O problema da cultura líquida não é mudar. É mudar sem memória. Quando tudo flui sem sedimentar, a experiência perde continuidade. O criador pode reinventar-se, mas também pode perder qualquer critério interno de forma.</p>
+
+<h2>A tentação de virar apenas reação</h2>
+
+<p>O conteúdo líquido é reativo. Ele responde ao tema do dia, ao humor da plataforma, ao medo de desaparecer. A pergunta deixa de ser “o que preciso dizer?” e se torna “o que preciso publicar agora para não sair do fluxo?”. Essa inversão empobrece a criação porque substitui vocação por reflexo.</p>
+
+<p>Uma cultura inteira pode tornar-se incapaz de esperar por uma ideia. Tudo precisa aparecer imediatamente, ainda incompleto, ainda sem forma. A consequência é uma abundância de expressão e uma escassez de pensamento.</p>
+
+<h2>Como criar sem dissolver a própria voz</h2>
+
+<p>A resposta não é rejeitar o digital. Seria ingenuidade. A questão é recuperar algum princípio de permanência dentro do fluxo. Um criador precisa mudar de formato, experimentar linguagem, adaptar-se a contextos. Mas precisa também reconhecer uma linha interior: os temas, problemas e valores que não negocia a cada tendência.</p>
+
+<p>A maturidade editorial nasce quando o fluxo encontra forma. O conteúdo pode circular como rio, mas precisa carregar uma nascente reconhecível. Sem isso, o criador não cria: apenas se dissolve na correnteza que deveria atravessar.</p>
+
+<h2>Fontes e créditos</h2>
+
+<ul>
+  <li>Zygmunt Bauman, <em>Liquid Modernity</em>, referência central para a ideia de modernidade líquida.</li>
+  <li>Stanford Encyclopedia of Philosophy, “Heraclitus”, disponível em <a href="https://plato.stanford.edu/entries/heraclitus/" target="_blank" rel="noopener">plato.stanford.edu/entries/heraclitus</a>.</li>
+  <li>Conexões internas: <a href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">O Algoritmo Substituiu a Verdade pela Atenção</a> e <a href="/artigos/humanidade-trocou-contemplacao-por-distracao/">A Humanidade Trocou Contemplação por Distração</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id:       "maquiavel-poder-politica-realismo",
+    slug:     "maquiavel-poder-politica-realismo",
+    tag:      "FILOSOFIA POLÍTICA",
+    category: "Política",
+    title:    "Maquiavel: poder, virtù e a verdade efetiva da política",
+    excerpt:  "Um hub editorial para entender Maquiavel além do clichê: O Príncipe, os Discursos, virtù, fortuna, república, medo, conflito e realismo político.",
+    date:     "02 de Julho de 2026",
+    dateISO:  "2026-07-02",
+    readTime: "14 min",
+    thumb:    "assets/article_cards/maquiavel-poder-politica-realismo.jpg",
+    cover:    "assets/article_cards/maquiavel-poder-politica-realismo.jpg",
+    tags:     ["Maquiavel", "poder", "virtù", "fortuna", "realismo político", "república"],
+    featured: true,
+    metaTitle: "Maquiavel: poder, virtù e realismo político | Proceder Filosófico",
+    metaDescription: "Hub editorial sobre Maquiavel: O Príncipe, Discursos sobre Tito Lívio, virtù, fortuna, república, conflito, moralidade e política moderna.",
+    keywords: ["Maquiavel", "O Príncipe", "virtù", "fortuna", "realismo político", "filosofia política", "república"],
+    content: `
+<p><strong>Maquiavel é quase sempre lembrado pelo adjetivo errado.</strong> Chamamos de maquiavélico aquilo que parece frio, manipulador e sem escrúpulos. Mas essa caricatura empobrece um dos pensadores mais importantes da política moderna. Maquiavel não inventou a crueldade; ele obrigou a filosofia a olhar para a política sem desviar os olhos quando ela se torna conflito, força, medo, ambição e instabilidade.</p>
+
+<p>Este hub serve como porta de entrada para estudar Nicolau Maquiavel dentro do Proceder Filosófico. Ele organiza os conceitos centrais, as obras principais, os debates interpretativos e os caminhos de leitura para quem quer entender por que <em>O Príncipe</em> ainda incomoda cinco séculos depois.</p>
+
+<h2>Quem foi Maquiavel?</h2>
+
+<p>Nicolau Maquiavel nasceu em Florença, em 1469, e viveu no coração da crise política italiana do Renascimento. A península era atravessada por disputas entre cidades, famílias poderosas, papado, França, Espanha e Império. A política não aparecia como teoria abstrata, mas como experiência cotidiana de diplomacia, traição, guerra, instabilidade e tentativa de sobrevivência.</p>
+
+<p>Em 1498, Maquiavel entrou no serviço público da República de Florença como secretário da Segunda Chancelaria. Durante anos, participou de missões diplomáticas e observou de perto líderes, exércitos, alianças e quedas de governo. Em 1512, com o retorno dos Médici ao poder, perdeu o cargo. Em 1513, foi preso e torturado sob suspeita de conspiração. Depois disso, retirou-se da vida pública direta e escreveu algumas de suas obras mais importantes.</p>
+
+<p>Esse dado biográfico importa porque Maquiavel não escreve como um professor afastado do mundo. Ele escreve como alguém que viu governos nascerem e ruírem. Seu pensamento nasce da ferida entre desejo republicano, derrota política e observação dura do poder.</p>
+
+<h2>O problema central: a verdade efetiva</h2>
+
+<p>Uma das chaves de Maquiavel é a ideia de olhar para a <em>verdade efetiva</em> das coisas. Em vez de perguntar apenas como a política deveria ser segundo modelos ideais, ele pergunta como ela opera quando homens reais disputam comando, segurança, honra e sobrevivência.</p>
+
+<p>Isso não significa abandonar todo juízo moral. Significa reconhecer que o governante, a república e o povo vivem em um campo onde boas intenções não bastam. Uma decisão politicamente bela pode destruir uma cidade se ignorar forças concretas. Uma ação moralmente desconfortável pode preservar uma ordem comum em situação extrema. É nesse ponto que Maquiavel se torna incômodo: ele não permite que a política seja reduzida a sermão.</p>
+
+<h2>O Príncipe: manual de tirania ou anatomia do poder?</h2>
+
+<p><em>O Príncipe</em> foi escrito por volta de 1513 e publicado postumamente em 1532. A obra analisa como principados são conquistados, mantidos e perdidos. Seu tom direto, sua atenção à força e sua disposição para discutir medo, crueldade e aparência fizeram dela uma das obras mais controversas da tradição ocidental.</p>
+
+<p>A leitura superficial transforma o livro em manual de manipulação. Uma leitura mais cuidadosa percebe algo mais complexo. Maquiavel descreve mecanismos do poder para mostrar que a política possui uma lógica própria. O governante que ignora essa lógica pode cair, mesmo sendo pessoalmente virtuoso no sentido moral comum.</p>
+
+<p>A pergunta do livro não é simplesmente “como ser mau?”. A pergunta é mais dura: que tipo de ação se torna possível, necessária ou perigosa quando a existência de um Estado está em jogo?</p>
+
+<h2>Virtù: energia, inteligência e adaptação</h2>
+
+<p>O termo <em>virtù</em> é um dos mais importantes e mais difíceis em Maquiavel. Ele não significa apenas virtude moral. Significa capacidade de agir com energia, inteligência, coragem, cálculo e adaptação diante das circunstâncias.</p>
+
+<p>Um governante ou fundador com <em>virtù</em> não espera passivamente que a história seja favorável. Ele interpreta o momento, aproveita oportunidades, prepara defesas e muda de conduta quando a situação exige. A <em>virtù</em> maquiaveliana é uma competência política: a arte de agir no tempo certo, com meios adequados, sem confundir desejo com realidade.</p>
+
+<h2>Fortuna: o acaso que nenhum poder controla totalmente</h2>
+
+<p>Ao lado da <em>virtù</em>, Maquiavel coloca a <em>fortuna</em>. Fortuna é a instabilidade do mundo: acontecimentos imprevistos, mudanças de humor popular, guerras, crises, alianças, doenças, acidentes e oportunidades. Nenhum governante controla tudo. A política nunca é matemática pura.</p>
+
+<p>Mas Maquiavel não defende fatalismo. A fortuna pode ser resistida por preparação. O governante prudente constrói diques antes da enchente. Instituições, armas próprias, leitura da história e conhecimento dos homens são formas de reduzir a dependência do acaso.</p>
+
+<h2>Medo, amor e aparência</h2>
+
+<p>A frase mais conhecida de Maquiavel pergunta se é melhor ser amado ou temido. Sua resposta é famosa: se não for possível unir as duas coisas, é mais seguro ser temido do que amado. Mas essa afirmação costuma ser isolada de seu limite decisivo: o governante deve evitar ser odiado.</p>
+
+<p>O medo, em Maquiavel, é uma ferramenta de estabilidade; o ódio é uma semente de conspiração. O governante que toca na propriedade, humilha o povo ou age com crueldade inútil cria inimigos duradouros. A aparência também importa porque a política se dá diante de públicos que julgam sinais, gestos e resultados. Não basta possuir qualidades; é preciso parecer capaz de governar.</p>
+
+<h2>Os Discursos: o Maquiavel republicano</h2>
+
+<p>Quem lê apenas <em>O Príncipe</em> encontra um Maquiavel concentrado no poder de um governante. Quem lê os <em>Discursos sobre a primeira década de Tito Lívio</em> encontra um pensador profundamente interessado em repúblicas, leis, liberdade, conflito civil e participação popular.</p>
+
+<p>Nos <em>Discursos</em>, Maquiavel olha para Roma como laboratório político. O conflito entre povo e grandes não aparece apenas como ameaça; pode ser fonte de liberdade quando canalizado por instituições. Essa é uma das partes mais férteis de seu pensamento: uma cidade livre não é aquela sem conflito, mas aquela capaz de dar forma política ao conflito.</p>
+
+<h2>Maquiavel contra Platão?</h2>
+
+<p>Maquiavel rompe com uma tradição que buscava ordenar a política a partir da cidade ideal, da virtude moral ou da harmonia entre alma e Estado. Em Platão, a pergunta política conduz à justiça e à educação da alma. Em Maquiavel, a pergunta política começa no risco de perda, dominação e ruína.</p>
+
+<p>Isso não torna Platão ingênuo nem Maquiavel simplesmente cínico. Eles olham para níveis diferentes da vida política. Platão pergunta que ordem seria justa. Maquiavel pergunta por que ordens reais sobrevivem ou desmoronam. Uma revista filosófica madura precisa dos dois: a exigência do justo e a lucidez sobre o poder.</p>
+
+<h2>Por que Maquiavel ainda importa?</h2>
+
+<p>Maquiavel continua atual porque a política contemporânea também vive entre imagem, medo, instituições frágeis, disputa narrativa e desejo de estabilidade. Campanhas eleitorais, redes sociais, guerras culturais e crises democráticas mostram que poder não é apenas lei escrita. É percepção, força organizada, confiança pública, conflito de interesses e capacidade de decisão.</p>
+
+<p>Seu pensamento ajuda a separar moralismo fácil de responsabilidade política. Também ajuda a desconfiar do poder que se apresenta como puro bem. Governantes que dizem agir apenas por amor, salvação ou virtude podem esconder ambições muito concretas. Maquiavel nos ensina a perguntar: quem ganha poder com isso? Quem perde? Que forças reais sustentam essa decisão?</p>
+
+<h2>Caminhos de estudo no Proceder</h2>
+
+<p>Para continuar, leia também <a href="/conceitos/justica/">Justiça</a>, <a href="/conceitos/liberdade/">Liberdade</a>, <a href="/conceitos/razao/">Razão</a> e o artigo <a href="/artigos/john-stuart-mill-revolucao-liberal-moderna/">John Stuart Mill e a revolução liberal moderna</a>. Maquiavel conversa diretamente com poder, liberdade, Estado, conflito e limites da moral na vida pública.</p>
+
+<p>Na Biblioteca do Proceder, a obra central é <a href="/biblioteca.html"><strong>O Príncipe</strong></a>, apresentada como leitura de entrada para compreender realismo político, governo e a tensão entre moralidade e preservação do Estado.</p>
+
+<h2>Fontes e créditos</h2>
+
+<p>Este hub foi construído a partir de referências primárias e acadêmicas. As fontes principais consultadas foram:</p>
+
+<ul>
+  <li>Niccolò Machiavelli, <em>O Príncipe</em> / <em>The Prince</em>, texto disponível no <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Project Gutenberg</a>.</li>
+  <li>Cary J. Nederman, “Niccolò Machiavelli”, <a href="https://plato.stanford.edu/entries/machiavelli/" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy</a>, revisão substantiva de 2023.</li>
+  <li>Internet Encyclopedia of Philosophy, “Machiavelli, Niccolò”, disponível em <a href="https://iep.utm.edu/machiave/" target="_blank" rel="noopener">iep.utm.edu/machiave</a>.</li>
+  <li>Referência bibliográfica interna da Biblioteca do Proceder: <em>O Príncipe</em>, Nicolau Maquiavel.</li>
+</ul>
+`
+  },
+
+  {
     id:       "sociedade-moderna-destruiu-silencio",
     slug:     "sociedade-moderna-destruiu-silencio",
     tag:      "FILOSOFIA DA CULTURA",
@@ -2654,6 +3065,150 @@ A meta alcançada se torna rotina.</p>
 // Sprint 03: curadoria editorial do acervo existente.
 // Esta camada classifica e relaciona os artigos sem alterar o texto publicado.
 const ARTICLE_CURATION = {
+  "budismo-filosofia-impermanencia-nao-eu": {
+      "category": "Religião",
+      "subcategory": "filosofia budista",
+      "dossier": null,
+      "philosophers": [
+          "Buda"
+      ],
+      "books": [],
+      "civilization": "Índia Antiga",
+      "period": "Antiguidade",
+      "themes": [
+          "budismo",
+          "impermanência",
+          "não-eu",
+          "sofrimento",
+          "apego"
+      ],
+      "relatedArticles": [
+          "sociedade-liquida-conteudo-liquido",
+          "heraclito-parmenides-mudanca-essencia",
+          "sociedade-moderna-destruiu-silencio"
+      ],
+      "editorialPriority": "P0"
+  },
+  "manifesto-comunista-ias-monopolio-informacao": {
+      "category": "Política",
+      "subcategory": "poder informacional e tecnologia",
+      "dossier": null,
+      "philosophers": [
+          "Karl Marx",
+          "Friedrich Engels"
+      ],
+      "books": [
+          "Manifesto Comunista"
+      ],
+      "civilization": "Ocidente contemporâneo",
+      "period": "Contemporâneo",
+      "themes": [
+          "inteligência artificial",
+          "dados",
+          "monopólio",
+          "informação",
+          "capitalismo"
+      ],
+      "relatedArticles": [
+          "algoritmo-substituiu-verdade-pela-atencao",
+          "tecnologia-mais-rapida-que-sabedoria",
+          "john-stuart-mill-revolucao-liberal-moderna"
+      ],
+      "editorialPriority": "P0"
+  },
+  "heraclito-parmenides-mudanca-essencia": {
+      "category": "Filosofia",
+      "subcategory": "pré-socráticos e ontologia",
+      "dossier": null,
+      "philosophers": [
+          "Heráclito",
+          "Parmênides"
+      ],
+      "books": [],
+      "civilization": "Grécia Antiga",
+      "period": "Antiguidade",
+      "themes": [
+          "mudança",
+          "essência",
+          "ser",
+          "tempo",
+          "identidade"
+      ],
+      "relatedArticles": [
+          "heraclito-duas-vezes-mesmo-rio",
+          "zenao-paradoxos-realidade",
+          "o-que-e-a-metafisica"
+      ],
+      "editorialPriority": "P0"
+  },
+  "kant-nietzsche-moral-dever-potencia": {
+      "category": "Filosofia",
+      "subcategory": "ética moderna e crítica da moral",
+      "dossier": null,
+      "philosophers": [
+          "Immanuel Kant",
+          "Friedrich Nietzsche"
+      ],
+      "books": [
+          "Crítica da Razão Pura",
+          "Genealogia da Moral",
+          "Assim Falou Zaratustra"
+      ],
+      "civilization": "Ocidente moderno",
+      "period": "Modernidade",
+      "themes": [
+          "ética",
+          "dever",
+          "vontade de potência",
+          "autonomia",
+          "ressentimento"
+      ],
+      "relatedArticles": [
+          "nietzsche-obras-impacto-revolucionario",
+          "provar-deus-kant",
+          "sartre-liberdade-condenacao"
+      ],
+      "editorialPriority": "P0"
+  },
+  "sociedade-liquida-conteudo-liquido": {
+      "category": "Atualidade Filosófica",
+      "subcategory": "modernidade liquida e cultura digital",
+      "dossier": null,
+      "philosophers": [
+          "Zygmunt Bauman",
+          "Heráclito"
+      ],
+      "books": [
+          "Liquid Modernity"
+      ],
+      "civilization": "Ocidente contemporâneo",
+      "period": "Contemporâneo",
+      "themes": [
+          "sociedade líquida",
+          "conteúdo",
+          "atenção",
+          "algoritmos",
+          "criação"
+      ],
+      "relatedArticles": [
+          "algoritmo-substituiu-verdade-pela-atencao",
+          "humanidade-trocou-contemplacao-por-distracao",
+          "sociedade-moderna-destruiu-silencio"
+      ],
+      "editorialPriority": "P0"
+  },
+  "maquiavel-poder-politica-realismo": {
+    category: "Política",
+    subcategory: "realismo político e Estado",
+    dossier: null,
+    philosophers: ["Nicolau Maquiavel"],
+    books: ["O Príncipe", "Discursos sobre Tito Lívio"],
+    civilization: "Renascimento italiano",
+    period: "Renascimento",
+    themes: ["Maquiavel", "poder", "virtù", "fortuna", "Estado", "república", "realismo político"],
+    relatedArticles: ["john-stuart-mill-revolucao-liberal-moderna", "escala-6x1-trabalho-tempo-vida", "platao-mundo-das-ideias"],
+    editorialPriority: "P0"
+  },
   "sociedade-moderna-destruiu-silencio": {
     category: "Atualidade Filosófica",
     subcategory: "vida interior e atenção",
