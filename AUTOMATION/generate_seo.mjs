@@ -306,7 +306,7 @@ const renderShellHeader = (active = '') => [
   renderShellNavLink('inicio', '/', 'Início', active),
   renderShellNavLink('artigos', '/artigos/', 'Artigos', active),
   renderShellNavLink('categorias', '/#categorias', 'Categorias', active),
-  renderShellNavLink('filosofos', '/filosofos/', 'Filósofos', active),
+  renderShellNavLink('filosofos', '/filosofos/', 'Pensadores', active),
   renderShellNavLink('conceitos', '/conceitos/', 'Conceitos', active),
   renderShellNavLink('dossies', '/dossies/', 'Dossiês', active),
   renderShellNavLink('enciclopedia', '/enciclopedia/', 'Enciclopédia', active),
@@ -336,7 +336,7 @@ const renderShellFooter = (id = 'generated') => [
   '        <a href="/">Início</a>',
   '        <a href="/artigos/">Artigos</a>',
   '        <a href="/#categorias">Categorias</a>',
-  '        <a href="/filosofos/">Filósofos</a>',
+  '        <a href="/filosofos/">Pensadores</a>',
   '        <a href="/conceitos/">Conceitos</a>',
   '        <a href="/dossies/">Dossiês</a>',
   '        <a href="/enciclopedia/">Enciclopédia</a>',
@@ -490,7 +490,7 @@ function renderHomeRail(rail, index) {
     return renderHomeSection({
       id: 'filosofos',
       label: 'Autores',
-      title: 'Filósofos <span class="dourado">e mestres</span>',
+      title: 'Pensadores <span class="dourado">e mestres</span>',
       subtitle: 'A leitura continua pelos autores que estruturam a tradição.',
       body: `        <div class="library-grid">\n${cards}\n        </div>`,
       alt: index % 2 === 1
