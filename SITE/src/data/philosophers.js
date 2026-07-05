@@ -359,6 +359,33 @@ export const philosophers = [
     "bio": "<p>Um dos maiores nomes da literatura brasileira, conhecido pela precisão, ironia e profundidade existencial de sua poesia.</p>"
   },
   {
+    "nome": "Rainer Maria Rilke",
+    "era": "Poetas",
+    "categoria": "Poetas",
+    "periodo": "1875–1926",
+    "corrente": "Poetas",
+    "img": "",
+    "bio": "<p>Poeta da solidão, da criação e da morte. Sua obra transforma amadurecimento interior e espiritualidade em experiência estética.</p>"
+  },
+  {
+    "nome": "Charles Baudelaire",
+    "era": "Poetas",
+    "categoria": "Poetas",
+    "periodo": "1821–1867",
+    "corrente": "Poetas",
+    "img": "",
+    "bio": "<p>Revelou a beleza sombria da cidade moderna, o tédio, o desejo e a decadência da alma urbana.</p>"
+  },
+  {
+    "nome": "Cecília Meireles",
+    "era": "Poetas",
+    "categoria": "Poetas",
+    "periodo": "1901–1964",
+    "corrente": "Poetas",
+    "img": "",
+    "bio": "<p>Poeta da impermanência, do silêncio e da memória. Sua linguagem une delicadeza lírica e reflexão sobre a finitude.</p>"
+  },
+  {
     "nome": "Ésquilo",
     "era": "Dramaturgos",
     "categoria": "Dramaturgos",
@@ -474,6 +501,33 @@ export const philosophers = [
     "corrente": "Escritores",
     "img": "/assets/tolstoy.png",
     "bio": "<p>Autor de <em>Guerra e Paz</em> e <em>Anna Kariênina</em>, duas obras monumentais da literatura universal.</p>"
+  },
+  {
+    "nome": "Franz Kafka",
+    "era": "Escritores",
+    "categoria": "Escritores",
+    "periodo": "1883–1924",
+    "corrente": "Escritores",
+    "img": "",
+    "bio": "<p>Expressou a angústia do indivíduo diante de sistemas opacos, culpa sem causa e perda de sentido na modernidade burocrática.</p>"
+  },
+  {
+    "nome": "Machado de Assis",
+    "era": "Escritores",
+    "categoria": "Escritores",
+    "periodo": "1839–1908",
+    "corrente": "Escritores",
+    "img": "",
+    "bio": "<p>Desmontou vaidade, hipocrisia social, autoengano e moralidade aparente com ironia filosófica sem equivalente na literatura brasileira.</p>"
+  },
+  {
+    "nome": "George Orwell",
+    "era": "Escritores",
+    "categoria": "Escritores",
+    "periodo": "1903–1950",
+    "corrente": "Escritores",
+    "img": "",
+    "bio": "<p>Pensou vigilância, manipulação da linguagem, totalitarismo e degradação da verdade política no mundo moderno.</p>"
   },
   {
     "nome": "Karl Marx",
