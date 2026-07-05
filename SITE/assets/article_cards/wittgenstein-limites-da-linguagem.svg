@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-label="Uma moldura retangular com linhas internas que se conectam e param exatamente na borda, enquanto outras linhas continuam soltas fora do limite, simbolizando os limites da linguagem">
+  <defs>
+    <linearGradient id="wi-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#060D1E"/>
+      <stop offset="1" stop-color="#061E47"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#wi-bg)"/>
+
+  <!-- the boundary: the limit of language/world -->
+  <rect x="430" y="150" width="540" height="488" fill="none" stroke="#F7F3EA" stroke-width="3" stroke-opacity="0.9"/>
+
+  <!-- inside the boundary: connected propositions, a coherent picture -->
+  <g stroke="#E6D28A" stroke-width="2" fill="none" opacity="0.9">
+    <path d="M 500 250 L 620 300 L 560 400 L 700 420 L 660 540"/>
+    <path d="M 900 220 L 820 320 L 900 380 L 800 480 L 860 580"/>
+  </g>
+  <g fill="#E6D28A">
+    <circle cx="500" cy="250" r="6"/><circle cx="620" cy="300" r="6"/><circle cx="560" cy="400" r="6"/>
+    <circle cx="700" cy="420" r="6"/><circle cx="660" cy="540" r="6"/>
+    <circle cx="900" cy="220" r="6"/><circle cx="820" cy="320" r="6"/><circle cx="900" cy="380" r="6"/>
+    <circle cx="800" cy="480" r="6"/><circle cx="860" cy="580" r="6"/>
+  </g>
+
+  <!-- outside the boundary: loose, disconnected marks that cannot be said -->
+  <g fill="#F7F3EA" fill-opacity="0.35">
+    <circle cx="220" cy="230" r="4"/>
+    <circle cx="300" cy="340" r="4"/>
+    <circle cx="180" cy="470" r="4"/>
+    <circle cx="270" cy="580" r="4"/>
+    <circle cx="1130" cy="240" r="4"/>
+    <circle cx="1200" cy="360" r="4"/>
+    <circle cx="1140" cy="490" r="4"/>
+    <circle cx="1220" cy="590" r="4"/>
+  </g>
+  <g stroke="#F7F3EA" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="2 6">
+    <line x1="220" y1="230" x2="300" y2="340"/>
+    <line x1="180" y1="470" x2="270" y2="580"/>
+    <line x1="1130" y1="240" x2="1200" y2="360"/>
+    <line x1="1140" y1="490" x2="1220" y2="590"/>
+  </g>
+</svg>

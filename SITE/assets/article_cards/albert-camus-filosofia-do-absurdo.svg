@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-label="Uma pedra redonda repetida em vários pontos ao longo da encosta de uma montanha, sugerindo o esforço repetitivo e eterno do mito de Sísifo">
+  <defs>
+    <linearGradient id="ca-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#061E47"/>
+      <stop offset="1" stop-color="#060D1E"/>
+    </linearGradient>
+    <linearGradient id="ca-mount" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A84C" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#ca-bg)"/>
+
+  <!-- mountain silhouette -->
+  <path d="M 150 660 L 700 190 L 1250 660 Z" fill="url(#ca-mount)"/>
+  <path d="M 150 660 L 700 190 L 1250 660" fill="none" stroke="#C9A84C" stroke-opacity="0.6" stroke-width="2"/>
+
+  <!-- the slope path the stone travels -->
+  <line x1="260" y1="600" x2="700" y2="230" stroke="#F7F3EA" stroke-opacity="0.25" stroke-width="1.4" stroke-dasharray="3 8"/>
+
+  <!-- the stone, repeated at points along the ascent: same shape, fading as it nears the top, echoing eternal repetition -->
+  <g fill="#E6D28A">
+    <circle cx="290" cy="580" r="30" fill-opacity="0.95"/>
+    <circle cx="410" cy="500" r="27" fill-opacity="0.8"/>
+    <circle cx="520" cy="420" r="24" fill-opacity="0.6"/>
+    <circle cx="610" cy="340" r="21" fill-opacity="0.42"/>
+    <circle cx="680" cy="260" r="18" fill-opacity="0.26"/>
+  </g>
+
+  <!-- ground line -->
+  <line x1="0" y1="660" x2="1400" y2="660" stroke="#C9A84C" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- faint stars, indifferent sky -->
+  <g fill="#F7F3EA" fill-opacity="0.3">
+    <circle cx="180" cy="120" r="2"/><circle cx="320" cy="90" r="1.6"/><circle cx="980" cy="110" r="2"/>
+    <circle cx="1120" cy="150" r="1.6"/><circle cx="1220" cy="90" r="2"/><circle cx="880" cy="70" r="1.4"/>
+  </g>
+</svg>
