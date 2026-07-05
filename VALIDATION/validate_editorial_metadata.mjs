@@ -86,7 +86,7 @@ posts.forEach((post) => {
   });
 });
 
-if (posts.length !== 49) failures.push(`total de artigos esperado: 49; encontrado: ${posts.length}`);
+if (posts.length !== 55) failures.push(`total de artigos esperado: 55; encontrado: ${posts.length}`);
 
 if (failures.length) {
   console.error('Metadados editoriais invalidos:');
