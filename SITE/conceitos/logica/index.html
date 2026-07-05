@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que é Lógica? — Conceito Filosófico | Proceder Filosófico</title>
+  <meta name="description" content="O que é lógica em filosofia? De Aristóteles a Frege e Wittgenstein, explore o estudo das formas válidas de raciocínio e inferência.">
+  <meta property="og:title" content="O que é Lógica? — Conceito Filosófico | Proceder Filosófico">
+  <meta property="og:description" content="Lógica: o estudo das formas válidas de raciocínio. De Aristóteles ao silogismo, de Frege à lógica simbólica moderna.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://procederfilosofico.com.br/conceitos/logica/">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lógica — Proceder Filosófico">
+  <meta name="twitter:description" content="Lógica: o estudo das formas válidas de raciocínio. De Aristóteles ao silogismo, de Frege à lógica simbólica moderna.">
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/LQHqVnilFspwfHEy.png">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://procederfilosofico.com.br/conceitos/logica/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css-shared/tokens.css">
+  <link rel="stylesheet" href="/assets/css-shared/base.css">
+  <link rel="stylesheet" href="/assets/css-shared/components.css">
+  <link rel="stylesheet" href="/assets/css-shared/proceder-shell.css">
+  <style>
+    :root{--azul:#060D1E;--azul2:#061E47;--dourado:#C9A84C;--branco:#F7F3EA}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--azul),var(--azul2));color:var(--branco);font-family:'Lato',sans-serif;min-height:100vh}a{color:inherit;text-decoration:none}
+    .concept-wrap{max-width:780px;margin:0 auto;padding:64px 24px 96px}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.6);margin-bottom:40px;display:flex;gap:12px;align-items:center}
+    .breadcrumb a{color:rgba(201,168,76,.6);transition:color .2s}.breadcrumb a:hover{color:var(--dourado)}.breadcrumb span{color:rgba(255,255,255,.25)}
+    .concept-hero{border-left:3px solid var(--dourado);padding-left:28px;margin-bottom:56px}
+    .concept-area{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);margin-bottom:12px;display:block}
+    .concept-title{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,72px);font-weight:700;line-height:1;margin:0 0 20px}
+    .concept-def-short{font-size:1.1rem;line-height:1.72;color:rgba(255,255,255,.65);margin:0 0 20px}
+    .concept-philosophers{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,168,76,.7)}
+    .concept-philosophers span{color:rgba(255,255,255,.4);font-family:'Lato',sans-serif;text-transform:none;letter-spacing:0;font-size:12px}
+    .section{margin-bottom:52px}
+    .section-label{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);margin-bottom:16px;display:block}
+    .section h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;margin:0 0 18px;line-height:1.1}
+    .section p{line-height:1.8;color:rgba(255,255,255,.68);margin:0 0 16px;font-size:1rem}.section p:last-child{margin-bottom:0}
+    .philosophers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .philosopher-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.14);border-radius:7px;padding:18px 20px}
+    .philosopher-card strong{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;display:block;margin-bottom:6px}
+    .philosopher-card p{font-size:.88rem;color:rgba(255,255,255,.48);line-height:1.65;margin:0}
+    .diff-table{width:100%;border-collapse:collapse;margin-top:8px}
+    .diff-table td{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07);font-size:.9rem;line-height:1.6}
+    .diff-table td:first-child{font-family:'Playfair Display',serif;font-weight:600;color:var(--dourado);white-space:nowrap;width:40%}
+    .diff-table td:last-child{color:rgba(255,255,255,.55)}
+    .summary-list{list-style:none;padding:0;margin:0;counter-reset:summary}
+    .summary-list li{counter-increment:summary;display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.65}
+    .summary-list li::before{content:counter(summary);font-family:'Cinzel',serif;font-size:11px;color:var(--dourado);min-width:20px;padding-top:2px}
+    .related-links{display:flex;flex-wrap:wrap;gap:10px}
+    .related-link{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,168,76,.8);border:1px solid rgba(201,168,76,.25);padding:8px 14px;border-radius:4px;transition:background .2s,border-color .2s}
+    .related-link:hover{background:rgba(201,168,76,.08);border-color:var(--dourado)}
+    .back-link{display:inline-flex;align-items:center;gap:8px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.6);margin-top:56px;border-top:1px solid rgba(255,255,255,.08);padding-top:32px;transition:color .2s}
+    .back-link:hover{color:var(--dourado)}
+    @media(max-width:640px){.concept-wrap{padding:48px 18px 72px}.philosophers-grid{grid-template-columns:1fr}.concept-title{font-size:clamp(34px,10vw,56px)}}</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"O que é Lógica? — Conceito Filosófico | Proceder Filosófico","description":"O que é lógica em filosofia? De Aristóteles a Frege e Wittgenstein, explore o estudo das formas válidas de raciocínio e inferência.","url":"https://procederfilosofico.com.br/conceitos/logica/","isPartOf":{"@type":"WebSite","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
+</head>
+<body>
+  <header class="pf-header" role="banner">
+    <div class="pf-header__top">
+      <a class="pf-brand" href="/" aria-label="Proceder Filosófico - Início">
+        <span class="pf-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span>
+        <span class="pf-brand__text"><span class="pf-brand__name">Proceder Filosófico</span><span class="pf-brand__tagline">Arquivo cultural, filosófico e civilizacional</span></span>
+      </a>
+      <div class="pf-header__tools" aria-label="Ações rápidas">
+        <a class="pf-tool" href="/artigos/" aria-label="Buscar artigos"><span class="pf-tool__icon" aria-hidden="true">⌕</span><span>Buscar</span></a>
+        <a class="pf-tool pf-tool--highlight" href="/#newsletter" aria-label="Newsletter"><span class="pf-tool__icon" aria-hidden="true">✉</span><span>Newsletter</span></a>
+      </div>
+    </div>
+    <nav class="pf-nav" aria-label="Navegação principal">
+      <a class="pf-nav__link" href="/">Início</a><a class="pf-nav__link" href="/artigos/">Artigos</a>
+      <a class="pf-nav__link" href="/#categorias">Categorias</a><a class="pf-nav__link" href="/filosofos/">Pensadores</a>
+      <a class="pf-nav__link is-active" href="/conceitos/">Conceitos</a>
+      <a class="pf-nav__link" href="/dossies/">Dossiês</a><a class="pf-nav__link" href="/enciclopedia/">Enciclopédia</a>
+      <a class="pf-nav__link" href="/biblioteca.html">Livros</a><a class="pf-nav__link" href="/#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <div class="concept-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Início</a><span>›</span><a href="/conceitos/">Conceitos</a><span>›</span><span aria-current="page">Lógica</span>
+    </nav>
+
+    <header class="concept-hero">
+      <span class="concept-area">Lógica</span>
+      <h1 class="concept-title">Lógica</h1>
+      <p class="concept-def-short">Estudo das formas válidas de raciocínio e inferência: como derivar conclusões corretas a partir de premissas, independentemente do conteúdo particular sobre o qual se argumenta.</p>
+      <div class="concept-philosophers"><span>Filósofos centrais:</span> Aristóteles · Crisipo · Gottlob Frege · Wittgenstein</div>
+    </header>
+
+    <section class="section">
+      <span class="section-label">Definição essencial</span>
+      <h2>O que é a lógica?</h2>
+      <p>A lógica estuda a estrutura do raciocínio válido: quais formas de argumento garantem que, se as premissas forem verdadeiras, a conclusão também será. O interesse da lógica não está no conteúdo específico de um argumento — se fala de gatos, planetas ou números —, mas na sua forma: "todo A é B; C é A; logo, C é B" é válido qualquer que seja o significado de A, B e C.</p>
+      <p>Essa distinção entre validade formal e verdade material é central: um argumento pode ser logicamente válido mesmo partindo de premissas falsas ("todo peixe voa; um cavalo é um peixe; logo, um cavalo voa" é uma forma válida, ainda que absurda no conteúdo). E um argumento pode ter conclusão verdadeira sem ser válido, se a conexão entre premissas e conclusão for apenas acidental.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Problema central</span>
+      <h2>O que torna um raciocínio válido?</h2>
+      <p>O problema central da lógica é identificar, de modo sistemático e não apenas intuitivo, quais formas de inferência preservam a verdade. Isso exige formalizar a linguagem natural — cheia de ambiguidade — em símbolos precisos que representem apenas a estrutura lógica do pensamento, despida de conotações e imprecisões do discurso cotidiano.</p>
+      <p>Um problema relacionado, que atravessa a história da lógica, são os paradoxos: argumentos que parecem seguir passos válidos, mas chegam a conclusões absurdas ou contraditórias — como os paradoxos de Zenão sobre o movimento, ou o paradoxo do mentiroso ("esta frase é falsa"). Resolver esses paradoxos frequentemente exige refinar os próprios princípios lógicos usados para construir o argumento.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Origem histórica</span>
+      <h2>De onde vem o conceito?</h2>
+      <p>Aristóteles é o fundador da lógica formal ocidental. No <em>Organon</em>, sistematiza o silogismo — a forma de inferência que, a partir de duas premissas compartilhando um termo comum, garante uma conclusão necessária. Por mais de dois mil anos, a lógica aristotélica permanece essencialmente o sistema padrão de raciocínio formal no Ocidente.</p>
+      <p>Os estoicos, em paralelo, desenvolvem uma lógica proposicional distinta da silogística aristotélica, focada nas relações entre proposições inteiras ("se chove, então a rua molha") em vez de relações entre termos dentro de uma proposição — uma abordagem que antecipa, de certo modo, a lógica simbólica moderna.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Desenvolvimento filosófico</span>
+      <h2>Como o conceito evolui?</h2>
+      <p>Depois de séculos de relativa estabilidade, a lógica passa por uma revolução no final do século XIX com Gottlob Frege, que cria uma notação simbólica capaz de expressar relações lógicas muito mais complexas do que o silogismo aristotélico permitia — lançando as bases da lógica de predicados moderna e, com isso, de boa parte da matemática e da ciência da computação contemporâneas.</p>
+      <p>Wittgenstein, no <em>Tractatus Logico-Philosophicus</em>, explora os limites daquilo que a lógica pode dizer sobre o mundo: propõe que a linguagem representa a realidade através de uma estrutura lógica compartilhada entre proposição e fato, e que os limites da linguagem lógica coincidem com os limites do que pode ser dito com sentido — "sobre aquilo de que não se pode falar, deve-se calar".</p>
+      <p>Gödel, com seus teoremas da incompletude, mostra que qualquer sistema formal suficientemente rico para expressar a aritmética básica contém afirmações verdadeiras que não podem ser provadas dentro do próprio sistema — um limite interno à ambição de formalizar completamente todo o raciocínio matemático em bases puramente lógicas.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Filósofos relacionados</span>
+      <h2>Quem pensou a lógica?</h2>
+<div class="philosophers-grid">
+        <div class="philosopher-card"><strong>Aristóteles (384–322 a.C.)</strong><p>Sistematiza o silogismo no Organon, fundando a lógica formal que dominaria o Ocidente por dois milênios.</p></div>
+        <div class="philosopher-card"><strong>Crisipo (c. 279–206 a.C.)</strong><p>Desenvolve a lógica proposicional estoica, centrada nas relações entre proposições inteiras.</p></div>
+        <div class="philosopher-card"><strong>Gottlob Frege (1848–1925)</strong><p>Cria a notação da lógica de predicados moderna, revolucionando a lógica formal depois de Aristóteles.</p></div>
+        <div class="philosopher-card"><strong>Ludwig Wittgenstein (1889–1951)</strong><p>Explora os limites daquilo que a linguagem lógica pode dizer com sentido sobre o mundo.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Exemplo prático</span>
+      <h2>A lógica na vida contemporânea</h2>
+      <p>Toda a computação digital repousa sobre lógica formal: circuitos lógicos processam informação através de portas AND, OR e NOT, diretamente derivadas da álgebra booleana, que por sua vez formaliza operações lógicas fundamentais identificadas desde Aristóteles. Programar é, em grande medida, especificar inferências logicamente válidas que uma máquina pode executar sem ambiguidade.</p>
+      <p>Fora da computação, o reconhecimento de falácias lógicas — like o espantalho, o apelo à autoridade, a falsa dicotomia — é uma ferramenta prática de pensamento crítico, útil para avaliar argumentos em debates públicos, publicidade e discurso político, onde conclusões plausíveis muitas vezes escondem inferências inválidas.</p>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Diferenças importantes</span>
+      <h2>Lógica e conceitos próximos</h2>
+<table class="diff-table">
+        <tr><td>Validade × Verdade</td><td>Um argumento pode ser válido (a forma garante a conclusão a partir das premissas) mesmo com premissas falsas. Verdade e validade são propriedades independentes.</td></tr>
+        <tr><td>Lógica × Dialética</td><td>A lógica formal opera com princípios estáveis, como o de não contradição. A dialética hegeliana admite contradições reais que se resolvem historicamente em sínteses.</td></tr>
+        <tr><td>Silogismo × Lógica proposicional</td><td>O silogismo aristotélico opera com termos dentro de proposições (todo A é B). A lógica proposicional, desenvolvida pelos estoicos e formalizada depois por Frege, opera com relações entre proposições inteiras.</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Leituras relacionadas</span>
+      <h2>Aprofunde no Proceder</h2>
+<div class="related-links">
+        <a class="related-link" href="/artigos/zenao-paradoxos-realidade/">Zenão e os Paradoxos</a>
+        <a class="related-link" href="/conceitos/razao/">Conceito: Razão</a>
+        <a class="related-link" href="/conceitos/">← Todos os conceitos</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-label">Resumo</span>
+      <h2>Cinco pontos essenciais</h2>
+<ol class="summary-list">
+        <li>Lógica: o estudo das formas válidas de raciocínio, independentemente do conteúdo específico sobre o qual se argumenta.</li>
+        <li>Aristóteles funda a lógica formal ocidental com o silogismo, sistema dominante por mais de dois mil anos.</li>
+        <li>Frege revoluciona a disciplina no século XIX com uma notação simbólica muito mais expressiva, base da lógica moderna.</li>
+        <li>Wittgenstein investiga os limites do que a linguagem lógica pode dizer com sentido sobre o mundo.</li>
+        <li>Gödel demonstra que sistemas formais suficientemente ricos contêm verdades que não podem ser provadas dentro deles mesmos.</li>
+      </ol>
+    </section>
+
+    <a class="back-link" href="/conceitos/">← Voltar aos conceitos filosóficos</a>
+  </div>
+
+  <footer class="pf-footer" role="contentinfo">
+    <div class="pf-footer__inner">
+      <section class="pf-footer__brand" aria-label="Proceder Filosófico">
+        <a class="pf-footer-brand" href="/"><span class="pf-footer-brand__mark" aria-hidden="true"><img src="/assets/LQHqVnilFspwfHEy.png" alt=""></span><span class="pf-footer-brand__name">Proceder<br>Filosófico</span></a>
+        <p>Preservamos e promovemos o pensamento que investiga a verdade, a justiça e o bem.</p>
+        <div class="pf-social" aria-label="Canais editoriais"><a href="/artigos/" aria-label="Artigos">A</a><a href="/dossies/" aria-label="Dossiês">D</a><a href="/enciclopedia/" aria-label="Enciclopédia">E</a><a href="/biblioteca.html" aria-label="Biblioteca">B</a></div>
+      </section>
+      <nav class="pf-footer__column" aria-label="Navegação"><h2>Navegação</h2><a href="/">Início</a><a href="/artigos/">Artigos</a><a href="/#categorias">Categorias</a><a href="/filosofos/">Pensadores</a><a href="/conceitos/">Conceitos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a><a href="/biblioteca.html">Livros</a><a href="/#newsletter">Newsletter</a></nav>
+      <nav class="pf-footer__column" aria-label="Conceitos"><h2>Conceitos</h2><a href="/conceitos/verdade/">Verdade</a><a href="/conceitos/liberdade/">Liberdade</a><a href="/conceitos/ser/">Ser</a><a href="/conceitos/razao/">Razão</a><a href="/conceitos/fenomenologia/">Fenomenologia</a><a href="/conceitos/">Ver todos</a></nav>
+      <nav class="pf-footer__column" aria-label="Institucional"><h2>Institucional</h2><a href="/sobre/">Sobre o Projeto</a><a href="/artigos/">Acervo de Artigos</a><a href="/dossies/">Dossiês</a><a href="/enciclopedia/">Enciclopédia</a></nav>
+      <section class="pf-footer__manifesto" aria-label="Palavra e pensamento"><span class="pf-footer__symbol" aria-hidden="true">✦</span><h2>Palavra e Pensamento</h2><p class="pf-footer__quote">A filosofia não é um luxo, mas uma necessidade da alma que busca compreender o mundo e a si mesma.</p><form class="pf-newsletter-form" action="/#newsletter" method="get"><label for="pf-footer-email-logica">Receba novos artigos e dossiês.</label><div class="pf-newsletter-form__row"><input id="pf-footer-email-logica" name="email" type="email" placeholder="Seu e-mail"><button type="submit" aria-label="Assinar newsletter">→</button></div></form></section>
+    </div>
+    <div class="pf-footer__bottom"><span class="pf-footer__star" aria-hidden="true">✶</span><p>© 2026 Proceder Filosófico. Todos os direitos reservados.</p><nav aria-label="Links legais"><a href="/sobre/">Sobre</a><a href="/artigos/">Artigos</a><a href="/#newsletter">Contato</a></nav></div>
+  </footer>
+  <script src="/assets/js/book-affiliate-modal.js" defer></script>
+</body>
+</html>
