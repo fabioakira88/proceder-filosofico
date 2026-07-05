@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-label="Densa grade de barras de ferro diante de uma engrenagem iluminada, simbolizando a racionalização burocrática que aprisiona">
+  <defs>
+    <linearGradient id="wb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061E47"/>
+      <stop offset="1" stop-color="#060D1E"/>
+    </linearGradient>
+    <radialGradient id="wb-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E6D28A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E6D28A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wb-vig" cx="50%" cy="50%" r="75%">
+      <stop offset="0" stop-color="#060D1E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060D1E" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#wb-bg)"/>
+  <circle cx="700" cy="394" r="260" fill="url(#wb-glow)"/>
+
+  <!-- gear, larger and more detailed -->
+  <g transform="translate(700,394)" opacity="0.75">
+    <circle r="175" fill="none" stroke="#E6D28A" stroke-width="3"/>
+    <circle r="110" fill="none" stroke="#E6D28A" stroke-width="1.4" stroke-opacity="0.7"/>
+    <circle r="60" fill="none" stroke="#E6D28A" stroke-width="1.2" stroke-opacity="0.5"/>
+    <g stroke="#E6D28A" stroke-width="16" stroke-opacity="0.9">
+      <line x1="0" y1="-175" x2="0" y2="-215"/>
+      <line x1="0" y1="175" x2="0" y2="215"/>
+      <line x1="-175" y1="0" x2="-215" y2="0"/>
+      <line x1="175" y1="0" x2="215" y2="0"/>
+      <line x1="124" y1="-124" x2="152" y2="-152"/>
+      <line x1="-124" y1="-124" x2="-152" y2="-152"/>
+      <line x1="124" y1="124" x2="152" y2="152"/>
+      <line x1="-124" y1="124" x2="-152" y2="152"/>
+      <line x1="67" y1="-163" x2="82" y2="-200"/>
+      <line x1="-67" y1="-163" x2="-82" y2="-200"/>
+      <line x1="67" y1="163" x2="82" y2="200"/>
+      <line x1="-67" y1="163" x2="-82" y2="200"/>
+    </g>
+    <circle r="22" fill="#E6D28A" fill-opacity="0.9"/>
+    <circle r="10" fill="#060D1E"/>
+  </g>
+
+  <!-- dense iron cage grid -->
+  <g stroke="#F7F3EA" stroke-width="12" stroke-opacity="0.95">
+    <line x1="120" y1="0" x2="120" y2="788"/>
+    <line x1="310" y1="0" x2="310" y2="788"/>
+    <line x1="500" y1="0" x2="500" y2="788"/>
+    <line x1="700" y1="0" x2="700" y2="788"/>
+    <line x1="900" y1="0" x2="900" y2="788"/>
+    <line x1="1090" y1="0" x2="1090" y2="788"/>
+    <line x1="1280" y1="0" x2="1280" y2="788"/>
+  </g>
+  <g stroke="#F7F3EA" stroke-width="10" stroke-opacity="0.7">
+    <line x1="0" y1="130" x2="1400" y2="130"/>
+    <line x1="0" y1="290" x2="1400" y2="290"/>
+    <line x1="0" y1="500" x2="1400" y2="500"/>
+    <line x1="0" y1="660" x2="1400" y2="660"/>
+  </g>
+  <!-- rivets at intersections for material feel -->
+  <g fill="#0B1226">
+    <circle cx="120" cy="130" r="6"/><circle cx="310" cy="130" r="6"/><circle cx="500" cy="130" r="6"/><circle cx="700" cy="130" r="6"/><circle cx="900" cy="130" r="6"/><circle cx="1090" cy="130" r="6"/><circle cx="1280" cy="130" r="6"/>
+    <circle cx="120" cy="290" r="6"/><circle cx="310" cy="290" r="6"/><circle cx="500" cy="290" r="6"/><circle cx="700" cy="290" r="6"/><circle cx="900" cy="290" r="6"/><circle cx="1090" cy="290" r="6"/><circle cx="1280" cy="290" r="6"/>
+    <circle cx="120" cy="500" r="6"/><circle cx="310" cy="500" r="6"/><circle cx="500" cy="500" r="6"/><circle cx="700" cy="500" r="6"/><circle cx="900" cy="500" r="6"/><circle cx="1090" cy="500" r="6"/><circle cx="1280" cy="500" r="6"/>
+    <circle cx="120" cy="660" r="6"/><circle cx="310" cy="660" r="6"/><circle cx="500" cy="660" r="6"/><circle cx="700" cy="660" r="6"/><circle cx="900" cy="660" r="6"/><circle cx="1090" cy="660" r="6"/><circle cx="1280" cy="660" r="6"/>
+  </g>
+  <rect width="1400" height="788" fill="url(#wb-vig)"/>
+</svg>

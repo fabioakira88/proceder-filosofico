@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-label="Perfil simplificado de cabeça humana se dissolvendo em linhas de circuito e nós de rede, simbolizando a fusão entre corpo e técnica">
+  <defs>
+    <linearGradient id="tr-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#060D1E"/>
+      <stop offset="1" stop-color="#061E47"/>
+    </linearGradient>
+    <linearGradient id="tr-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F7F3EA" stop-opacity="0.95"/>
+      <stop offset="0.75" stop-color="#C9A84C" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#tr-bg)"/>
+
+  <!-- clean head profile: skull circle + brow + nose + lips + chin + neck -->
+  <g fill="url(#tr-fade)">
+    <path d="
+      M 560 394
+      A 150 150 0 1 1 634 522
+      L 634 460
+      C 660 452 680 440 696 424
+      C 712 408 718 396 736 394
+      C 750 392 758 384 752 372
+      C 746 362 742 356 748 344
+      C 752 334 748 324 738 320
+      C 744 306 738 292 724 288
+      C 730 274 720 262 706 264
+      C 700 244 680 234 662 244
+      C 648 220 616 216 598 236
+      C 566 250 546 278 540 312
+      C 512 328 494 358 494 394
+      Z"/>
+  </g>
+  <circle cx="676" cy="360" r="6" fill="#060D1E"/>
+
+  <!-- neck / shoulders -->
+  <path d="M 596 500 L 660 500 L 680 560 L 560 560 Z" fill="url(#tr-fade)"/>
+
+  <!-- circuit / neural lines emerging to the right from the face -->
+  <g stroke="#C9A84C" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M 752 372 L 830 372 L 870 340 L 940 340"/>
+    <path d="M 748 344 L 820 320 L 860 290 L 920 290"/>
+    <path d="M 738 320 L 810 260 L 860 230 L 920 230"/>
+    <path d="M 696 424 L 780 460 L 830 500 L 900 500"/>
+    <path d="M 660 470 L 740 520 L 790 560 L 860 560"/>
+  </g>
+  <g fill="#E6D28A">
+    <circle cx="940" cy="340" r="7"/>
+    <circle cx="920" cy="290" r="7"/>
+    <circle cx="920" cy="230" r="7"/>
+    <circle cx="900" cy="500" r="7"/>
+    <circle cx="860" cy="560" r="7"/>
+  </g>
+  <g stroke="#C9A84C" stroke-width="1.2" opacity="0.5">
+    <line x1="940" y1="340" x2="1010" y2="310"/>
+    <line x1="940" y1="340" x2="1010" y2="370"/>
+    <line x1="920" y1="290" x2="1000" y2="260"/>
+    <line x1="920" y1="230" x2="1000" y2="200"/>
+    <line x1="900" y1="500" x2="980" y2="470"/>
+    <line x1="900" y1="500" x2="970" y2="540"/>
+    <line x1="860" y1="560" x2="940" y2="600"/>
+  </g>
+  <g fill="#F7F3EA" opacity="0.55">
+    <circle cx="1010" cy="310" r="3.5"/>
+    <circle cx="1010" cy="370" r="3.5"/>
+    <circle cx="1000" cy="260" r="3.5"/>
+    <circle cx="1000" cy="200" r="3.5"/>
+    <circle cx="980" cy="470" r="3.5"/>
+    <circle cx="970" cy="540" r="3.5"/>
+    <circle cx="940" cy="600" r="3.5"/>
+  </g>
+</svg>

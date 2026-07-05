@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-label="Colunas clássicas gregas sob um disco radiante, simbolizando a eudaimonia aristotélica">
+  <defs>
+    <linearGradient id="ar-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#061E47"/>
+      <stop offset="1" stop-color="#060D1E"/>
+    </linearGradient>
+    <radialGradient id="ar-sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E6D28A" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#C9A84C" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ar-col" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A84C" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="788" fill="url(#ar-bg)"/>
+  <circle cx="700" cy="330" r="260" fill="url(#ar-sun)"/>
+  <circle cx="700" cy="330" r="70" fill="none" stroke="#E6D28A" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- horizon -->
+  <line x1="0" y1="560" x2="1400" y2="560" stroke="#C9A84C" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- meio-termo balance line -->
+  <path d="M 430 300 Q 700 250 970 300" fill="none" stroke="#F7F3EA" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <circle cx="430" cy="300" r="4" fill="#F7F3EA" fill-opacity="0.7"/>
+  <circle cx="970" cy="300" r="4" fill="#F7F3EA" fill-opacity="0.7"/>
+  <circle cx="700" cy="258" r="5" fill="#E6D28A"/>
+  <!-- colonnade -->
+  <g>
+    <rect x="330" y="430" width="740" height="14" fill="url(#ar-col)"/>
+    <g>
+      <rect x="360" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="460" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="560" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="686" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="812" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="912" y="444" width="28" height="150" fill="url(#ar-col)"/>
+      <rect x="1012" y="444" width="28" height="150" fill="url(#ar-col)"/>
+    </g>
+    <rect x="330" y="594" width="740" height="16" fill="url(#ar-col)"/>
+    <rect x="300" y="610" width="800" height="10" fill="#C9A84C" fill-opacity="0.55"/>
+  </g>
+  <!-- fine ground lines -->
+  <line x1="0" y1="640" x2="1400" y2="640" stroke="#F7F3EA" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="700" x2="1400" y2="700" stroke="#F7F3EA" stroke-opacity="0.04" stroke-width="1"/>
+</svg>
