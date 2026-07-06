@@ -12,3 +12,12 @@ SITE/public/**/*
 
 # backups are local only — too large for git
 SITE/docs/backups/
+
+# src/ was scaffolding for a component architecture never wired into any
+# page (zero consumers confirmed in PF-FRONT-01 audit) — kept locally only
+SITE/src/**/*
+!SITE/src/**/.gitkeep
+
+# raw/unsorted philosopher portrait dump, referenced only by the orphaned
+# src/data/philosophers.js removed above — kept locally only
+SITE/assets/Filósofos/
