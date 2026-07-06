@@ -160,6 +160,7 @@ const staticUrls = [
   { loc: `${SITE_URL}/conceitos/razao/`, lastmod: null },
   { loc: `${SITE_URL}/conceitos/fenomenologia/`, lastmod: null },
   { loc: `${SITE_URL}/sobre/`, lastmod: null },
+  { loc: `${SITE_URL}/biblioteca.html`, lastmod: null },
   { loc: `${SITE_URL}/enciclopedia/`, lastmod: null },
   ...enciclopediaSlugs.map((slug) => ({ loc: `${SITE_URL}/enciclopedia/${slug}/`, lastmod: null }))
 ];
