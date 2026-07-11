@@ -3659,11 +3659,1144 @@ A meta alcançada se torna rotina.</p>
 </ul>
 `
   }
+,
+  {
+    id: "baruch-espinosa-vida-obra-etica",
+    slug: "baruch-espinosa-vida-obra-etica",
+    tag: "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title: "Baruch Espinosa: a lente, a excomunhão e a Ética more geometrico",
+    excerpt: "Expulso da comunidade judaica de Amsterdã aos 23 anos, Spinoza sustentou-se polindo lentes enquanto construía uma das arquiteturas filosóficas mais radicais da modernidade.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/baruch-espinosa-vida-obra-etica.jpg",
+    cover: "assets/article_cards/baruch-espinosa-vida-obra-etica.jpg",
+    tags: ["Spinoza", "biografia", "excomunhão", "panteísmo", "racionalismo"],
+    featured: false,
+    metaTitle: "Baruch Espinosa: vida, excomunhão e a Ética more geometrico",
+    metaDescription: "A biografia de Baruch Espinosa: a excomunhão de 1656, o ofício de polir lentes, a Ética more geometrico e o panteísmo que assustou a Europa moderna.",
+    keywords: ["Baruch Espinosa", "Spinoza biografia", "herem", "Ética de Spinoza", "panteísmo", "racionalismo moderno"],
+    content: `
+<p><strong>Aos 23 anos, Baruch Espinosa foi expulso para sempre da comunidade que o havia criado. O documento da excomunhão amaldiçoava-o "de dia e de noite, ao deitar e ao levantar" e proibia qualquer judeu de morar sob o mesmo teto, ler o que escrevesse ou aproximar-se dele a menos de quatro metros.</strong> A partir desse dia, Espinosa deixou de assinar como Baruch e passou a usar Benedictus — a mesma palavra, "abençoado", em latim, a língua dos que não pertenciam a nenhuma comunidade fechada.</p>
+
+<h2>Amsterdã e a comunidade sefardita</h2>
+<p>Nascido em 1632, filho de comerciantes judeus portugueses que haviam fugido da Inquisição ibérica, Espinosa cresceu numa Amsterdã tolerante para os padrões europeus, mas cuja comunidade sefardita vivia sob vigilância própria: qualquer desvio doutrinário ameaçava o frágil equilíbrio conquistado com as autoridades holandesas. Foi nesse ambiente que o jovem estudou Torá, Talmude e filosofia judaica medieval — e começou a formular perguntas que a ortodoxia não tolerava.</p>
+
+<h2>O herem de 1656</h2>
+<p>Em 27 de julho de 1656, o conselho da sinagoga decretou contra Espinosa o herem, a excomunhão máxima. Os registros não detalham as "abomináveis heresias" e "atos monstruosos" citados no decreto, mas biógrafos associam a punição a ideias que já circulavam informalmente: dúvidas sobre a imortalidade pessoal da alma, sobre a origem divina da Torá e sobre um Deus que interviesse pessoalmente na história. Espinosa nunca pediu perdão nem se retratou.</p>
+
+<h2>Lentes, isolamento e independência</h2>
+<p>Sem comunidade, sem família disposta a sustentá-lo e recusando a vida acadêmica convencional, Espinosa aprendeu o ofício de polir lentes para microscópios e telescópios — um trabalho de precisão manual que exercia enquanto elaborava mentalmente seus sistemas filosóficos. Recusou uma cátedra na Universidade de Heidelberg em 1673 para preservar a liberdade de pensamento que o cargo, temia, poderia comprometer. Viveu com frugalidade extrema até morrer, provavelmente de doença pulmonar agravada pela poeira de vidro, em 1677, aos 44 anos.</p>
+
+<h2>A Ética demonstrada more geometrico</h2>
+<p>Sua obra-prima, publicada apenas após sua morte por medo de perseguição, tem um título que já é uma declaração de método: <em>Ética demonstrada à maneira dos geômetras</em>. Espinosa organiza a filosofia como Euclides organizava a geometria — definições, axiomas, proposições e demonstrações — para tratar de Deus, da mente, das paixões e da liberdade humana com o mesmo rigor que se aplicaria a um teorema.</p>
+
+<h2>Deus ou a Natureza</h2>
+<p>A tese central e mais radical de Espinosa é a identificação entre Deus e a Natureza (<em>Deus sive Natura</em>): não existe um criador pessoal separado do mundo, mas uma única substância infinita da qual tudo o que existe é modo ou expressão. Essa posição, hoje descrita como panteísmo, foi lida por contemporâneos como ateísmo disfarçado — e valeu a Espinosa a fama de "o judeu maldito" por gerações, antes de ser redescoberto por Goethe, Hegel e Einstein, que se disse crente "no Deus de Spinoza, que se revela na harmonia legal de tudo o que existe".</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Baruch Spinoza", disponível em <a href="https://plato.stanford.edu/entries/spinoza/" target="_blank" rel="noopener">plato.stanford.edu/entries/spinoza</a>.</li>
+  <li>Steven Nadler, <em>Spinoza: A Life</em>, Cambridge University Press — biografia de referência sobre a excomunhão e os anos em Amsterdã.</li>
+  <li>Conexões internas: <a href="/artigos/conatus-espinosa-ontologia-esforco-existir/">O Conatus em Espinosa</a> e <a href="/artigos/problema-mente-corpo-dualismo-materialismo/">O problema mente-corpo</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "thomas-hobbes-leviata-medo-e-ordem",
+    slug: "thomas-hobbes-leviata-medo-e-ordem",
+    tag: "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title: "Thomas Hobbes: o medo, a guerra civil e a origem do Leviatã",
+    excerpt: "\"Minha mãe deu à luz gêmeos: eu e o medo.\" Hobbes nasceu prematuro em 1588, quando a Armada Espanhola ameaçava a Inglaterra — e fez do medo o fundamento de toda a política.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/thomas-hobbes-leviata-medo-e-ordem.jpg",
+    cover: "assets/article_cards/thomas-hobbes-leviata-medo-e-ordem.jpg",
+    tags: ["Hobbes", "biografia", "Leviatã", "contrato social", "estado de natureza"],
+    featured: false,
+    metaTitle: "Thomas Hobbes: vida, guerra civil e a origem do Leviatã",
+    metaDescription: "A biografia de Thomas Hobbes: o nascimento sob o medo da Armada Espanhola, o exílio em Paris, a Guerra Civil Inglesa e a criação do Leviatã.",
+    keywords: ["Thomas Hobbes", "Hobbes biografia", "Leviatã", "estado de natureza", "contrato social", "guerra civil inglesa"],
+    content: `
+<p><strong>Thomas Hobbes gostava de contar que nasceu prematuro em abril de 1588, quando sua mãe, tomada de pânico com os rumores da aproximação da Armada Espanhola, entrou em trabalho de parto antes da hora. "Minha mãe deu à luz gêmeos", escreveria ele décadas depois, "eu mesmo e o medo, juntos."</strong> A frase não é apenas uma boutade biográfica: o medo — da morte violenta, da guerra de todos contra todos — tornou-se o eixo de toda a sua filosofia política.</p>
+
+<h2>Preceptor de uma família nobre</h2>
+<p>Filho de um vigário rural semianalfabeto que abandonou a família após uma briga, Hobbes foi criado por um tio e, graças a um talento precoce para o latim e o grego, entrou em Oxford aos 14 anos. Tornou-se preceptor da família Cavendish, cargo que lhe garantiu acesso a bibliotecas, viagens pela Europa continental e contato direto com os debates científicos e filosóficos do seu tempo — incluindo um encontro pessoal com Galileu Galilei, em Florença, em 1636.</p>
+
+<h2>Paris e a Guerra Civil Inglesa</h2>
+<p>Em 1640, temendo represálias por textos que defendiam a autoridade real absoluta, Hobbes fugiu para Paris, onde permaneceria por cerca de onze anos como parte da comunidade de exilados realistas — chegou a ser preceptor de matemática do futuro Carlos II. Foi em Paris, observando a distância a Inglaterra mergulhada na guerra civil entre parlamentaristas e monarquistas, que escreveu sua obra mais influente.</p>
+
+<h2>O estado de natureza</h2>
+<p>Hobbes parte de um experimento mental: como seria a vida humana sem nenhuma autoridade comum para impor a ordem? Sua resposta, na famosa passagem do <em>Leviatã</em> (1651), é sombria — uma condição de guerra de todos contra todos, na qual a vida do homem seria "solitária, pobre, sórdida, brutal e curta". Não por maldade inata, mas porque a escassez de recursos e a igualdade aproximada de forças tornam qualquer um vulnerável a qualquer outro.</p>
+
+<h2>O Leviatã: a máquina do Estado</h2>
+<p>Para escapar desse estado de guerra permanente, os indivíduos transferem, por contrato mútuo, seu direito de autogoverno a um soberano — pessoa ou assembleia — que concentra poder suficiente para impor a paz. Esse soberano artificial é o Leviatã do título, uma figura bíblica que Hobbes usa como metáfora de um "homem artificial" maior e mais poderoso que qualquer indivíduo, feito da soma de todos os cidadãos que a ele se submetem.</p>
+
+<h2>Um pensador controverso até o fim</h2>
+<p>Hobbes voltou à Inglaterra em 1651, fazendo as pazes pragmáticas com o governo de Cromwell, e depois com a Restauração da monarquia. Acusado de ateísmo por reduzir a religião a um instrumento de ordem política, viveu seus últimos anos sob suspeita, mas continuou escrevendo e traduzindo Homero até morrer em 1679, aos 91 anos — uma longevidade notável que ele atribuía, com ironia típica, ao hábito de cantar sozinho à noite "para exercitar os pulmões".</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Thomas Hobbes", disponível em <a href="https://plato.stanford.edu/entries/hobbes/" target="_blank" rel="noopener">plato.stanford.edu/entries/hobbes</a>.</li>
+  <li>Stanford Encyclopedia of Philosophy, "Hobbes's Moral and Political Philosophy", disponível em <a href="https://plato.stanford.edu/entries/hobbes-moral/" target="_blank" rel="noopener">plato.stanford.edu/entries/hobbes-moral</a>.</li>
+  <li>Conexões internas: <a href="/artigos/rawls-teoria-justica-veu-ignorancia/">A Teoria da Justiça de John Rawls</a> e <a href="/artigos/maquiavel-poder-politica-realismo/">Maquiavel: poder, virtù e a verdade efetiva da política</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "jean-jacques-rousseau-vida-contrato-social",
+    slug: "jean-jacques-rousseau-vida-contrato-social",
+    tag: "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title: "Jean-Jacques Rousseau: a vida errante do autor do Contrato Social",
+    excerpt: "Órfão de mãe aos nove dias de vida, aprendiz fugitivo, best-seller condenado à fogueira em Paris e Genebra: a trajetória de Rousseau é tão instável quanto radical foi seu pensamento.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/jean-jacques-rousseau-vida-contrato-social.jpg",
+    cover: "assets/article_cards/jean-jacques-rousseau-vida-contrato-social.jpg",
+    tags: ["Rousseau", "biografia", "contrato social", "Iluminismo", "educação"],
+    featured: false,
+    metaTitle: "Jean-Jacques Rousseau: a vida do autor do Contrato Social",
+    metaDescription: "A biografia de Jean-Jacques Rousseau: a infância em Genebra, os anos de formação, a condenação do Emílio e do Contrato Social, o exílio e as Confissões.",
+    keywords: ["Jean-Jacques Rousseau", "Rousseau biografia", "Contrato Social", "Emílio", "Iluminismo", "vontade geral"],
+    content: `
+<p><strong>Rousseau nunca conheceu sua mãe: Suzanne Bernard morreu de complicações do parto nove dias depois de dar à luz o filho, em Genebra, em 1712.</strong> Criado por um pai relojoeiro instável e depois por um tio, o menino teve uma educação irregular, feita de leituras avulsas de romances e biografias de Plutarco — e de uma sensação precoce de desenraizamento que marcaria toda a sua obra.</p>
+
+<h2>Fuga e formação errante</h2>
+<p>Aprendiz de gravador em Genebra, Rousseau fugiu da cidade aos 16 anos após ser trancado do lado de fora dos portões por chegar atrasado. Vagou pela Saboia até ser acolhido por Françoise-Louise de Warens, uma nobre convertida ao catolicismo que se tornou sua protetora, amante e, segundo os relatos do próprio Rousseau em suas <em>Confissões</em>, a figura mais decisiva de sua formação intelectual.</p>
+
+<h2>O prêmio de Dijon e a fama repentina</h2>
+<p>Em 1750, já em Paris e próximo do círculo de Diderot e dos enciclopedistas, Rousseau venceu um concurso da Academia de Dijon com o <em>Discurso sobre as Ciências e as Artes</em>, argumentando que o progresso do conhecimento havia corrompido, e não aperfeiçoado, os costumes humanos. A tese, provocadora para uma época que celebrava o progresso iluminista, tornou-o célebre da noite para o dia.</p>
+
+<h2>Emílio e o Contrato Social: o ano de 1762</h2>
+<p>No mesmo ano, Rousseau publicou duas obras que definiriam sua reputação: <em>Emílio, ou Da Educação</em>, um tratado sobre formação humana centrado na bondade natural da criança, e <em>Do Contrato Social</em>, que abre com a frase mais citada do pensamento político moderno — "o homem nasce livre, e por toda parte está agrilhoado". Ambos os livros foram condenados: queimados em praça pública em Paris e em Genebra, sua própria cidade natal, que emitiu um mandado de prisão contra ele.</p>
+
+<h2>Perseguição, paranoia e o exílio inglês</h2>
+<p>Passou os anos seguintes fugindo de país em país — Suíça, Prússia — até aceitar, em 1766, o convite de David Hume para refugiar-se na Inglaterra. A amizade terminou em rompimento público e amargo: Rousseau, cada vez mais convencido de conspirações contra si, acusou Hume de tramar sua desonra. Historiadores hoje atribuem o episódio tanto à crescente instabilidade mental de Rousseau quanto às tensões reais entre dois temperamentos filosóficos opostos.</p>
+
+<h2>As Confissões e o legado romântico</h2>
+<p>Nos últimos anos, isolado e obcecado em explicar-se à posteridade, Rousseau escreveu as <em>Confissões</em>, publicadas postumamente — um dos primeiros grandes exercícios de autobiografia íntima da literatura ocidental. Morreu em 1778, em Ermenonville, poucas semanas antes de Voltaire, seu maior rival intelectual. Sua ideia de uma "vontade geral" capaz de fundar a legitimidade política, e sua valorização do sentimento e da natureza contra o artificialismo social, alimentariam tanto a Revolução Francesa quanto o Romantismo europeu.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Jean-Jacques Rousseau", disponível em <a href="https://plato.stanford.edu/entries/rousseau/" target="_blank" rel="noopener">plato.stanford.edu/entries/rousseau</a>.</li>
+  <li>Jean-Jacques Rousseau, <em>Confissões</em>, fonte autobiográfica primária sobre os anos de formação e o rompimento com David Hume.</li>
+  <li>Conexões internas: <a href="/artigos/david-hume-ceticismo-vida-obra/">David Hume: o ceticismo elegante do filósofo escocês</a> e <a href="/artigos/rawls-teoria-justica-veu-ignorancia/">A Teoria da Justiça de John Rawls</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "david-hume-ceticismo-vida-obra",
+    slug: "david-hume-ceticismo-vida-obra",
+    tag: "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title: "David Hume: o ceticismo elegante do filósofo escocês",
+    excerpt: "Seu primeiro livro \"caiu morto da prensa\", nas suas próprias palavras. Décadas depois, Hume enfrentaria a própria morte com uma serenidade que impressionou até seus adversários religiosos.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "11 min",
+    thumb: "assets/article_cards/david-hume-ceticismo-vida-obra.jpg",
+    cover: "assets/article_cards/david-hume-ceticismo-vida-obra.jpg",
+    tags: ["David Hume", "biografia", "ceticismo", "empirismo", "Iluminismo escocês"],
+    featured: false,
+    metaTitle: "David Hume: vida e ceticismo do filósofo escocês",
+    metaDescription: "A biografia de David Hume: o fracasso inicial do Tratado da Natureza Humana, o ceticismo sobre causalidade, a amizade com Rousseau e a morte serena de um cético.",
+    keywords: ["David Hume", "Hume biografia", "ceticismo", "empirismo britânico", "Iluminismo escocês", "causalidade"],
+    content: `
+<p><strong>"Nenhuma obra literária jamais teve estreia mais infeliz." Foi assim que David Hume descreveu, anos depois, a recepção de seu primeiro grande livro: dizia que ele "caiu morto da prensa, sem sequer alcançar a distinção de provocar um rumor entre os fanáticos."</strong> O livro era o <em>Tratado da Natureza Humana</em>, hoje considerado uma das obras mais importantes da filosofia moderna.</p>
+
+<h2>Um prodígio precoce em Edimburgo</h2>
+<p>Nascido em 1711 numa família de posses modestas da nobreza escocesa, Hume entrou na Universidade de Edimburgo aos doze anos — idade normal para a época, mas reveladora de sua precocidade intelectual. Abandonou os estudos de direito, que a família esperava que seguisse, para dedicar-se inteiramente à filosofia, um projeto que ele mesmo descreveu como uma obsessão que quase arruinou sua saúde nervosa na juventude.</p>
+
+<h2>O Tratado e seu fracasso comercial</h2>
+<p>Publicado em duas partes entre 1739 e 1740, quando Hume tinha apenas 28 anos, o <em>Tratado da Natureza Humana</em> tentava aplicar o método experimental de Newton ao estudo da mente humana. A obra continha já as teses centrais que tornariam Hume célebre — o ceticismo sobre a causalidade, a crítica à ideia de um "eu" substancial — mas passou quase despercebida. Hume reescreveria essas ideias, com mais sucesso, nas <em>Investigações sobre o Entendimento Humano</em>.</p>
+
+<h2>Causa, hábito e os limites da razão</h2>
+<p>A tese mais duradoura de Hume é que nunca observamos diretamente uma "causa" produzindo um "efeito": observamos apenas eventos que se sucedem repetidamente, e é o hábito — não a razão — que nos leva a esperar que o futuro se pareça com o passado. Essa análise solapou séculos de certeza metafísica sobre causalidade e, segundo o próprio testemunho de Immanuel Kant, foi o que o "despertou de seu sono dogmático".</p>
+
+<h2>Bibliotecário, historiador, diplomata</h2>
+<p>Incapaz de obter uma cátedra universitária por sua reputação de cético em matéria religiosa, Hume sustentou-se como bibliotecário da Advocates' Library de Edimburgo e como autor de uma monumental <em>História da Inglaterra</em>, best-seller que lhe garantiu finalmente segurança financeira. Serviu ainda como secretário de embaixada em Paris entre 1763 e 1765, onde foi celebrado pelos salões iluministas franceses — e onde conheceu Jean-Jacques Rousseau, a quem convidou para refugiar-se na Inglaterra, num episódio que terminaria em rompimento amargo.</p>
+
+<h2>A morte serena de um cético</h2>
+<p>Ao saber-se doente terminal em 1776, Hume enfrentou a morte com um humor e uma tranquilidade que intrigaram seus contemporâneos religiosos, que esperavam sinais de arrependimento ou pânico num homem que duvidara publicamente da imortalidade da alma. O biógrafo James Boswell visitou-o pouco antes do fim e registrou, perplexo, a serenidade do filósofo. Adam Smith, amigo próximo, descreveu-o postumamente como "tão próximo da ideia de um homem perfeitamente sábio e virtuoso quanto a fragilidade da natureza humana permite".</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "David Hume", disponível em <a href="https://plato.stanford.edu/entries/hume/" target="_blank" rel="noopener">plato.stanford.edu/entries/hume</a>.</li>
+  <li>Adam Smith, carta a William Strahan (1776), relato do falecimento de Hume, citado na tradição biográfica humeana.</li>
+  <li>Conexões internas: <a href="/artigos/jean-jacques-rousseau-vida-contrato-social/">Jean-Jacques Rousseau: a vida errante do autor do Contrato Social</a> e <a href="/artigos/provar-deus-kant/">Por que Provar Deus é Filosoficamente Equivocado — Segundo Kant</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "mary-wollstonecraft-vida-vindicacao",
+    slug: "mary-wollstonecraft-vida-vindicacao",
+    tag: "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title: "Mary Wollstonecraft: a vida por trás da Vindicação dos Direitos da Mulher",
+    excerpt: "Testemunhou a violência doméstica na própria infância, sustentou-se sozinha num mundo hostil a mulheres independentes e escreveu o texto fundador da filosofia feminista moderna.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/mary-wollstonecraft-vida-vindicacao.jpg",
+    cover: "assets/article_cards/mary-wollstonecraft-vida-vindicacao.jpg",
+    tags: ["Mary Wollstonecraft", "biografia", "feminismo", "Iluminismo", "direitos das mulheres"],
+    featured: false,
+    metaTitle: "Mary Wollstonecraft: vida e a Vindicação dos Direitos da Mulher",
+    metaDescription: "A biografia de Mary Wollstonecraft: a infância marcada pela violência doméstica, a Revolução Francesa, a Vindicação dos Direitos da Mulher e a morte precoce em 1797.",
+    keywords: ["Mary Wollstonecraft", "Wollstonecraft biografia", "Vindicação dos Direitos da Mulher", "feminismo iluminista", "Revolução Francesa"],
+    content: `
+<p><strong>Ainda menina, Mary Wollstonecraft dormia atravessada na porta do quarto dos pais para se colocar entre a mãe e um pai violento, embriagado com frequência.</strong> Essa cena, relatada por sua irmã e biógrafos posteriores, ajuda a explicar por que Wollstonecraft passaria a vida adulta questionando a ideia de que mulheres deveriam depender, para sua segurança e sustento, da boa vontade de homens.</p>
+
+<h2>Uma independência conquistada cedo</h2>
+<p>Nascida em Londres em 1759, Wollstonecraft recusou desde jovem o caminho convencional do casamento como única saída econômica. Trabalhou como dama de companhia, fundou com a irmã e uma amiga uma escola para meninas em Newington Green e, depois de seu fechamento, atuou como preceptora de uma família aristocrática irlandesa — experiência que a convenceu de que a educação disponível às mulheres as preparava para a submissão, não para a autonomia.</p>
+
+<h2>Escritora profissional numa época hostil</h2>
+<p>De volta a Londres, tornou-se uma das primeiras mulheres da história a viver profissionalmente da escrita, trabalhando para o editor radical Joseph Johnson, que reunia em seu círculo figuras como William Blake e Thomas Paine. Em 1790, respondeu ao conservador Edmund Burke com <em>Uma Vindicação dos Direitos dos Homens</em>, defendendo os princípios da Revolução Francesa contra as críticas que ele lhe dirigia.</p>
+
+<h2>A Vindicação dos Direitos da Mulher</h2>
+<p>Em 1792, publicou a obra que a tornaria célebre: <em>Uma Vindicação dos Direitos da Mulher</em>. Nela, argumenta que a suposta inferioridade intelectual feminina não é natural, mas produto de uma educação deliberadamente empobrecida — e que uma sociedade racional deveria formar mulheres como seres racionais e independentes, não como ornamentos destinados a agradar. O texto é hoje considerado o marco fundador da filosofia feminista de tradição iluminista.</p>
+
+<h2>Paris revolucionária e a maternidade</h2>
+<p>Wollstonecraft viajou à Paris em 1792 para testemunhar a Revolução Francesa de perto, onde viveu um relacionamento tumultuado com o aventureiro americano Gilbert Imlay, com quem teve a filha Fanny em 1794. O abandono de Imlay a levou a duas tentativas de suicídio. De volta a Londres, aproximou-se do filósofo William Godwin, com quem formaria uma relação intelectual e afetiva incomum para a época — os dois mantiveram residências separadas mesmo depois de se casarem, em 1797, quando ela já estava grávida novamente.</p>
+
+<h2>Morte precoce e reabilitação póstuma</h2>
+<p>Wollstonecraft morreu em 10 de setembro de 1797, de febre puerperal, dez dias depois de dar à luz sua segunda filha, Mary — que se tornaria, sob o nome de Mary Shelley, autora de <em>Frankenstein</em>. Movido pelo luto, Godwin publicou no ano seguinte umas Memórias francas sobre a vida da esposa, revelando os casos amorosos e as tentativas de suicídio. O gesto, pensado como uma homenagem sincera, foi usado por críticos vitorianos para desacreditar sua obra por mais de um século — até que o feminismo do século XX a resgatasse como pensadora fundadora.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Mary Wollstonecraft", disponível em <a href="https://plato.stanford.edu/entries/wollstonecraft/" target="_blank" rel="noopener">plato.stanford.edu/entries/wollstonecraft</a>.</li>
+  <li>William Godwin, <em>Memoirs of the Author of A Vindication of the Rights of Woman</em> (1798), fonte biográfica primária e controversa sobre os últimos anos de Wollstonecraft.</li>
+  <li>Conexões internas: <a href="/artigos/simone-de-beauvoir-liberdade-situada/">Simone de Beauvoir e a liberdade situada</a> e <a href="/artigos/hannah-arendt-banalidade-do-mal/">Hannah Arendt e a banalidade do mal</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "livre-arbitrio-determinismo-compatibilismo",
+    slug: "livre-arbitrio-determinismo-compatibilismo",
+    tag: "METAFÍSICA",
+    category: "Filosofia",
+    title: "Livre-arbítrio: determinismo, compatibilismo e o problema da responsabilidade moral",
+    excerpt: "Se cada evento tem uma causa que remonta ao início dos tempos, em que sentido alguém poderia ter agido de outro modo? A pergunta atravessa metafísica, ciência e direito penal.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/livre-arbitrio-determinismo-compatibilismo.jpg",
+    cover: "assets/article_cards/livre-arbitrio-determinismo-compatibilismo.jpg",
+    tags: ["livre-arbítrio", "determinismo", "compatibilismo", "responsabilidade moral", "metafísica"],
+    featured: false,
+    metaTitle: "Livre-arbítrio: determinismo, compatibilismo e responsabilidade moral",
+    metaDescription: "Um panorama filosófico do debate sobre livre-arbítrio: determinismo, libertarianismo metafísico, compatibilismo e o que a neurociência realmente mostra.",
+    keywords: ["livre-arbítrio", "determinismo", "compatibilismo", "responsabilidade moral", "Libet", "metafísica da ação"],
+    content: `
+<p><strong>Se todo evento do universo, incluindo cada estado do seu cérebro, é o resultado necessário de causas anteriores que remontam ao Big Bang, em que sentido você poderia ter escolhido diferente do que escolheu?</strong> Essa pergunta simples sustenta um dos debates mais persistentes da filosofia: o problema do livre-arbítrio.</p>
+
+<h2>O que está em jogo</h2>
+<p>A questão não é apenas acadêmica. Toda a nossa prática de elogiar, culpar, punir e recompensar pressupõe que as pessoas poderiam, em algum sentido relevante, ter agido de outro modo. Se essa pressuposição for falsa, sistemas penais, noções de mérito e até a experiência cotidiana de deliberar sobre o que fazer precisam ser repensados.</p>
+
+<h2>Determinismo: um universo de causas</h2>
+<p>O determinismo causal sustenta que todo estado do universo é fixado por seus estados anteriores mais as leis da natureza. Se isso for verdade — e boa parte da física clássica sugeria que sim — então, no momento do seu nascimento, já estava determinado tudo o que você faria: cada escolha, cada arrependimento, cada "eu poderia ter feito diferente" seria uma ilusão retrospectiva.</p>
+
+<h2>Libertarianismo metafísico: a exigência de origem</h2>
+<p>Os libertaristas metafísicos — não confundir com a posição política de mesmo nome — negam o determinismo e defendem que ao menos algumas ações humanas têm sua origem genuína no agente, não em uma cadeia causal anterior. O desafio dessa posição é explicar como uma ação pode ser livre sem ser simplesmente aleatória: se nada determina minha escolha, ela parece acidental, não mais "minha" do que um evento determinado.</p>
+
+<h2>Compatibilismo: liberdade sem indeterminação</h2>
+<p>A maioria dos filósofos contemporâneos adota alguma forma de compatibilismo: a tese de que liberdade e determinismo não são mutuamente excludentes, porque ser livre não significa escapar da causalidade, mas agir de acordo com os próprios desejos, sem coerção externa. Para o compatibilista, um ladrão que rouba porque quer roubar age livremente, mesmo que seu querer tenha causas anteriores — o que haveria de errado não é a existência de uma causa, mas a natureza dessa causa.</p>
+
+<h2>O que a neurociência realmente mostra</h2>
+<p>Os experimentos de Benjamin Libet nos anos 1980, que detectaram atividade cerebral precedendo a consciência da decisão de mover um dedo, foram amplamente divulgados como prova de que "o cérebro decide antes de você". A leitura é exagerada: Libet media decisões motoras triviais e sem deliberação, e mesmo ele preservava a ideia de um "veto" consciente sobre impulsos já iniciados. A maior parte dos filósofos da mente considera esses experimentos insuficientes para resolver a questão metafísica do livre-arbítrio.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Free Will", disponível em <a href="https://plato.stanford.edu/entries/freewill/" target="_blank" rel="noopener">plato.stanford.edu/entries/freewill</a>.</li>
+  <li>Stanford Encyclopedia of Philosophy, "Compatibilism", disponível em <a href="https://plato.stanford.edu/entries/compatibilism/" target="_blank" rel="noopener">plato.stanford.edu/entries/compatibilism</a>.</li>
+  <li>Conexões internas: <a href="/artigos/problema-mente-corpo-dualismo-materialismo/">O problema mente-corpo</a> e <a href="/artigos/sartre-liberdade-condenacao/">Sartre: Você Está Condenado a Ser Livre</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "problema-mente-corpo-dualismo-materialismo",
+    slug: "problema-mente-corpo-dualismo-materialismo",
+    tag: "FILOSOFIA DA MENTE",
+    category: "Filosofia",
+    title: "O problema mente-corpo: dualismo, materialismo e a natureza da consciência",
+    excerpt: "Descartes localizou o encontro entre alma e corpo numa pequena glândula no centro do cérebro. Quatro séculos depois, ainda não sabemos explicar como a matéria produz experiência.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/problema-mente-corpo-dualismo-materialismo.gif",
+    cover: "assets/article_cards/problema-mente-corpo-dualismo-materialismo.gif",
+    tags: ["mente e corpo", "dualismo", "materialismo", "consciência", "filosofia da mente"],
+    featured: false,
+    metaTitle: "O problema mente-corpo: dualismo, materialismo e consciência",
+    metaDescription: "Um panorama do problema mente-corpo: o dualismo cartesiano, o materialismo, o problema difícil da consciência e os qualia.",
+    keywords: ["problema mente-corpo", "dualismo cartesiano", "materialismo", "consciência", "qualia", "problema difícil"],
+    content: `
+<p><strong>René Descartes acreditava ter localizado o ponto exato do cérebro onde a alma imaterial encontra o corpo mecânico: a glândula pineal, uma pequena estrutura no centro do encéfalo que ele escolheu por não ter, ao contrário de quase todo o resto do cérebro, duplicata nos dois hemisférios.</strong> A solução parece hoje ingênua, mas o problema que Descartes tentava resolver continua sem resposta definitiva.</p>
+
+<h2>O dualismo de substâncias</h2>
+<p>Descartes defendia que existem dois tipos radicalmente diferentes de realidade: a res cogitans, substância pensante e imaterial, e a res extensa, substância material e extensa no espaço. A mente pensa mas não ocupa lugar; o corpo ocupa lugar mas não pensa. O problema óbvio dessa divisão é explicar como duas substâncias tão diferentes podem interagir causalmente — como um pensamento imaterial faz um braço material se mover.</p>
+
+<h2>Materialismo e identidade mente-cérebro</h2>
+<p>A maior parte da filosofia contemporânea abandonou o dualismo em favor de alguma forma de materialismo: a tese de que estados mentais são, de algum modo, estados físicos do cérebro — idênticos a eles, ou realizados por eles, ou funções deles. Essa posição evita o problema da interação cartesiana, mas enfrenta um desafio próprio: explicar por que processos físicos, por mais complexos que sejam, deveriam vir acompanhados de experiência subjetiva.</p>
+
+<h2>O problema difícil da consciência</h2>
+<p>O filósofo David Chalmers popularizou essa dificuldade sob o nome de "problema difícil da consciência". Os "problemas fáceis" — explicar como o cérebro processa informação, discrimina estímulos, integra dados sensoriais — são fáceis apenas em comparação: são, ao menos em princípio, tratáveis pelos métodos padrão da ciência cognitiva. O problema difícil é outro: por que todo esse processamento é acompanhado de experiência subjetiva, em vez de ocorrer "no escuro", sem que exista nada que seja "como" ser aquele sistema?</p>
+
+<h2>Zumbis filosóficos e qualia</h2>
+<p>Para tornar o problema vívido, Chalmers propõe o experimento mental do zumbi filosófico: um ser fisicamente idêntico a você, com o mesmo comportamento e a mesma estrutura cerebral, mas sem nenhuma experiência subjetiva interna — sem qualia, sem "o que é sentir" a cor vermelha ou a dor. Se esse ser é ao menos concebível sem contradição, argumenta Chalmers, então a consciência não pode ser reduzida integralmente a fatos físicos e funcionais.</p>
+
+<h2>Onde isso nos deixa hoje</h2>
+<p>Nenhuma das posições disponíveis — dualismo, materialismo redutivo, funcionalismo, panpsiquismo — resolveu o problema de modo consensual. O que mudou desde Descartes não é a existência da dificuldade, mas sua urgência prática: sistemas de inteligência artificial cada vez mais sofisticados reabrem a pergunta sobre o que, exatamente, faria de um sistema físico algo dotado de experiência — e não apenas um processador eficiente de informação.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "Dualism", disponível em <a href="https://plato.stanford.edu/entries/dualism/" target="_blank" rel="noopener">plato.stanford.edu/entries/dualism</a>.</li>
+  <li>David Chalmers, "Facing Up to the Problem of Consciousness", <em>Journal of Consciousness Studies</em>, 1995.</li>
+  <li>Conexões internas: <a href="/artigos/descartes-cogito-ergo-sum/">René Descartes: Penso, Logo Existo</a> e <a href="/artigos/livre-arbitrio-determinismo-compatibilismo/">Livre-arbítrio: determinismo, compatibilismo e responsabilidade moral</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "utilitarismo-bentham-calculo-felicidade",
+    slug: "utilitarismo-bentham-calculo-felicidade",
+    tag: "ÉTICA",
+    category: "Filosofia",
+    title: "Utilitarismo: o cálculo da felicidade e os limites da ética consequencialista",
+    excerpt: "Jeremy Bentham queria transformar a moral numa aritmética: somar prazeres, subtrair dores, e agir sempre para maximizar o resultado líquido. A ideia é sedutora — e profundamente perigosa.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/utilitarismo-bentham-calculo-felicidade.jpg",
+    cover: "assets/article_cards/utilitarismo-bentham-calculo-felicidade.jpg",
+    tags: ["utilitarismo", "Bentham", "Mill", "ética consequencialista", "altruísmo eficaz"],
+    featured: false,
+    metaTitle: "Utilitarismo: o cálculo da felicidade e seus limites éticos",
+    metaDescription: "Uma introdução ao utilitarismo: o cálculo hedonista de Bentham, a distinção de Mill entre prazeres, o problema das minorias e o altruísmo eficaz contemporâneo.",
+    keywords: ["utilitarismo", "Jeremy Bentham", "John Stuart Mill", "ética consequencialista", "cálculo hedonista", "altruísmo eficaz"],
+    content: `
+<p><strong>Jeremy Bentham propôs algo que soava, para seus contemporâneos, tão absurdo quanto ambicioso: transformar a ética numa aritmética. Somar os prazeres que uma ação produz, subtrair as dores, comparar o resultado líquido com o de ações alternativas — e agir sempre segundo o cálculo que maximizasse a felicidade total.</strong> Essa é a semente do utilitarismo, uma das tradições éticas mais influentes da modernidade.</p>
+
+<h2>O princípio da maior felicidade</h2>
+<p>Para Bentham, correto é aquilo que produz "a maior felicidade para o maior número". A proposta tinha um alvo político preciso: substituir leis fundadas em tradição, privilégio de nascimento ou dogma religioso por legislação fundamentada em consequências mensuráveis sobre o bem-estar real das pessoas — um projeto radicalmente igualitário para o início do século XIX, já que a dor e o prazer de qualquer pessoa contavam igualmente, independentemente de classe.</p>
+
+<h2>O cálculo hedonista</h2>
+<p>Bentham chegou a propor um "cálculo hedonista" com variáveis explícitas — intensidade, duração, certeza, proximidade, fecundidade, pureza e extensão do prazer ou da dor — como se fosse possível, ao menos em princípio, quantificar precisamente o valor moral de qualquer ação. A proposta encontrou resistência imediata: como comparar a dor de um indivíduo com o prazer de outro numa mesma escala numérica?</p>
+
+<h2>Mill e a qualidade dos prazeres</h2>
+<p>John Stuart Mill, discípulo crítico de Bentham, tentou refinar a teoria distinguindo prazeres superiores — intelectuais, estéticos, morais — de prazeres inferiores, meramente sensoriais. Sua frase mais célebre resume a posição: "é melhor ser um Sócrates insatisfeito do que um tolo satisfeito". A distinção resolve parte do problema, mas introduz outro: se nem todo prazer conta igualmente, o utilitarismo já não é o cálculo puramente quantitativo que Bentham propunha.</p>
+
+<h2>O problema das minorias sacrificáveis</h2>
+<p>A objeção mais persistente ao utilitarismo é estrutural: se o que importa é apenas a soma total de bem-estar, nada impede, em princípio, que o sofrimento extremo de uma minoria seja justificado pelo ganho agregado da maioria. Casos extremos — escravizar uma pessoa para o conforto de muitas, sacrificar um inocente para salvar cinco — expõem a tensão entre maximizar utilidade e respeitar direitos individuais como limites invioláveis.</p>
+
+<h2>Ecos contemporâneos: o altruísmo eficaz</h2>
+<p>O utilitarismo continua vivo em debates contemporâneos, notavelmente no movimento do altruísmo eficaz, associado ao filósofo Peter Singer, que aplica o raciocínio consequencialista à filantropia: doar para as causas que produzem o maior benefício mensurável por unidade de recurso, mesmo que isso signifique preterir causas emocionalmente mais próximas. A discussão sobre os limites e a força dessa lógica continua tão viva quanto no tempo de Bentham.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "The History of Utilitarianism", disponível em <a href="https://plato.stanford.edu/entries/utilitarianism-history/" target="_blank" rel="noopener">plato.stanford.edu/entries/utilitarianism-history</a>.</li>
+  <li>John Stuart Mill, <em>Utilitarianism</em> (1863), fonte primária sobre a distinção entre prazeres superiores e inferiores.</li>
+  <li>Conexões internas: <a href="/artigos/john-stuart-mill-revolucao-liberal-moderna/">John Stuart Mill: obras centrais e a revolução liberal moderna</a> e <a href="/artigos/rawls-teoria-justica-veu-ignorancia/">A Teoria da Justiça de John Rawls</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "rawls-teoria-justica-veu-ignorancia",
+    slug: "rawls-teoria-justica-veu-ignorancia",
+    tag: "FILOSOFIA POLÍTICA",
+    category: "Política",
+    title: "A Teoria da Justiça de John Rawls: o véu da ignorância e o contrato social contemporâneo",
+    excerpt: "Imagine que você deve desenhar as regras de uma sociedade sem saber qual posição nela ocupará. É esse experimento mental que sustenta a teoria da justiça mais influente do século XX.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/rawls-teoria-justica-veu-ignorancia.jpg",
+    cover: "assets/article_cards/rawls-teoria-justica-veu-ignorancia.jpg",
+    tags: ["John Rawls", "teoria da justiça", "véu da ignorância", "contratualismo", "filosofia política"],
+    featured: false,
+    metaTitle: "John Rawls: a Teoria da Justiça e o véu da ignorância",
+    metaDescription: "Uma introdução à Teoria da Justiça de John Rawls: a posição original, o véu da ignorância, os dois princípios de justiça e as críticas de Nozick e dos comunitaristas.",
+    keywords: ["John Rawls", "Teoria da Justiça", "véu da ignorância", "posição original", "contratualismo", "princípio da diferença"],
+    content: `
+<p><strong>Imagine que você precisa desenhar as regras fundamentais de uma sociedade — como distribuir renda, direitos, oportunidades — mas não sabe qual lugar ocupará nela: pode nascer rico ou pobre, saudável ou doente, membro da maioria ou de uma minoria perseguida.</strong> Esse experimento mental, proposto por John Rawls em <em>Uma Teoria da Justiça</em> (1971), reanimou o contratualismo político depois de um século de domínio utilitarista.</p>
+
+<h2>A retomada do contratualismo</h2>
+<p>Rawls escreve num momento em que o utilitarismo dominava a filosofia política anglo-saxã havia gerações. Sua objeção central é que uma teoria que apenas maximiza a soma total de bem-estar pode, em princípio, justificar sacrificar os interesses fundamentais de alguns em nome do benefício agregado de outros. Para evitar esse risco, Rawls retoma a tradição do contrato social de Hobbes, Locke e Rousseau, mas a reformula como um experimento puramente hipotético.</p>
+
+<h2>A posição original</h2>
+<p>Rawls pede que imaginemos indivíduos racionais reunidos numa "posição original" para escolher os princípios que governarão sua sociedade — antes de ela existir. Esses indivíduos são racionais, buscam o próprio interesse, mas negociam sob uma condição muito especial que torna a escolha imparcial por construção.</p>
+
+<h2>O véu da ignorância</h2>
+<p>Essa condição é o "véu da ignorância": os participantes não sabem qual será sua classe social, talento natural, gênero, religião ou concepção de vida boa dentro da sociedade que estão desenhando. Sem saber se serão beneficiados ou prejudicados por uma regra específica, argumenta Rawls, as pessoas escolherão princípios justos, porque ninguém aceitaria racionalmente um sistema que pudesse condená-lo à miséria caso o acaso o colocasse na pior posição possível.</p>
+
+<h2>Dois princípios de justiça</h2>
+<p>Rawls argumenta que, sob o véu da ignorância, os participantes escolheriam dois princípios: primeiro, liberdades básicas iguais para todos — expressão, voto, propriedade pessoal; segundo, que desigualdades sociais e econômicas só são justas se acompanhadas de igualdade equitativa de oportunidades e, sobretudo, se beneficiarem os membros menos favorecidos da sociedade — o chamado princípio da diferença.</p>
+
+<h2>Críticas: Nozick, comunitaristas e Sen</h2>
+<p>A teoria de Rawls gerou décadas de resposta filosófica. Robert Nozick, em <em>Anarquia, Estado e Utopia</em>, contestou o princípio da diferença em nome dos direitos de propriedade individual, argumentando que redistribuições forçadas violam a liberdade legítima de quem produziu a riqueza. Filósofos comunitaristas, como Michael Sandel, questionaram se um "eu" verdadeiramente despido de identidade social — como exige a posição original — é sequer coerente. Amartya Sen propôs deslocar o foco de bens primários para capacidades reais das pessoas de converter recursos em uma vida que valorizem.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "John Rawls", disponível em <a href="https://plato.stanford.edu/entries/rawls/" target="_blank" rel="noopener">plato.stanford.edu/entries/rawls</a>.</li>
+  <li>John Rawls, <em>A Theory of Justice</em>, Harvard University Press, 1971 — obra primária de referência.</li>
+  <li>Conexões internas: <a href="/artigos/thomas-hobbes-leviata-medo-e-ordem/">Thomas Hobbes: o medo, a guerra civil e a origem do Leviatã</a> e <a href="/artigos/utilitarismo-bentham-calculo-felicidade/">Utilitarismo: o cálculo da felicidade</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "paradoxo-mentiroso-limites-logica",
+    slug: "paradoxo-mentiroso-limites-logica",
+    tag: "LÓGICA",
+    category: "Filosofia",
+    title: "O paradoxo do mentiroso: autorreferência, verdade e os limites da lógica",
+    excerpt: "\"Esta frase é falsa.\" Se for verdadeira, é falsa. Se for falsa, é verdadeira. Um enigma de aparência trivial que expôs rachaduras nos fundamentos da matemática e da lógica formal.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/paradoxo-mentiroso-limites-logica.jpg",
+    cover: "assets/article_cards/paradoxo-mentiroso-limites-logica.jpg",
+    tags: ["paradoxo do mentiroso", "lógica", "autorreferência", "Gödel", "Tarski"],
+    featured: false,
+    metaTitle: "O paradoxo do mentiroso e os limites da lógica",
+    metaDescription: "Uma introdução ao paradoxo do mentiroso: da autorreferência de Epimênides à hierarquia de Tarski, ao teorema de Gödel e ao paradoxo de Russell.",
+    keywords: ["paradoxo do mentiroso", "autorreferência", "Tarski", "Gödel", "teorema da incompletude", "paradoxo de Russell"],
+    content: `
+<p><strong>"Esta frase é falsa." Pare e pense: se a frase for verdadeira, então o que ela diz é o caso — logo, ela é falsa. Mas se for falsa, então o que ela diz não é o caso, o que significa que ela é verdadeira.</strong> É impossível atribuir-lhe consistentemente um valor de verdade. Esse pequeno enigma, conhecido como paradoxo do mentiroso, revelou fissuras profundas nos fundamentos da lógica e da matemática.</p>
+
+<h2>Epimênides, o cretense</h2>
+<p>A versão mais antiga do paradoxo é atribuída ao poeta cretense Epimênides, que teria dito "todos os cretenses são mentirosos" — sendo ele mesmo cretense. A formulação original é logicamente mais fraca do que parece (é possível que alguns cretenses mintam e outros não, sem contradição estrita), mas o núcleo do problema — uma afirmação que fala sobre sua própria verdade ou falsidade — já está ali, e seria refinado por lógicos ao longo de séculos até sua forma moderna e irrefutável.</p>
+
+<h2>A estrutura da autorreferência</h2>
+<p>O que torna o paradoxo genuinamente insolúvel não é o conteúdo da frase, mas sua estrutura: ela se refere a si mesma para atribuir-se um valor de verdade. Frases comuns descrevem fatos no mundo; esta descreve apenas seu próprio estatuto lógico, criando um laço fechado sem saída consistente. Variações mais sofisticadas — como duas frases que se referem mutuamente ("a próxima frase é falsa" / "a frase anterior é verdadeira") — mostram que o problema não depende de uma única sentença autorreferente.</p>
+
+<h2>Tarski e a hierarquia de linguagens</h2>
+<p>O lógico Alfred Tarski propôs, nos anos 1930, uma solução técnica influente: nenhuma linguagem suficientemente expressiva pode conter seu próprio predicado de verdade sem gerar contradições como a do mentiroso. Sua saída foi hierarquizar linguagens — uma "linguagem-objeto" da qual se fala, e uma "metalinguagem" na qual se fala sobre a verdade das sentenças da primeira. O preço dessa solução é que nenhuma linguagem pode falar completamente sobre si mesma.</p>
+
+<h2>Gödel e a incompletude</h2>
+<p>Kurt Gödel usou uma estratégia relacionada — codificar afirmações autorreferentes dentro de sistemas matemáticos formais — para provar, em 1931, seus célebres teoremas da incompletude: qualquer sistema formal suficientemente poderoso para expressar a aritmética básica contém afirmações verdadeiras que não podem ser demonstradas dentro do próprio sistema. A construção de Gödel é, em essência, uma versão matemática rigorosa do paradoxo do mentiroso: uma sentença que afirma, dentro do sistema, "eu não sou demonstrável".</p>
+
+<h2>Russell e o paradoxo dos conjuntos</h2>
+<p>Bertrand Russell encontrou um problema estruturalmente análogo na teoria ingênua dos conjuntos: o "conjunto de todos os conjuntos que não pertencem a si mesmos" pertence a si mesmo se, e somente se, não pertencer. A descoberta, em 1901, abalou o projeto de fundamentar toda a matemática na lógica pura e forçou décadas de reconstrução axiomática mais cautelosa.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, "The Liar Paradox", disponível em <a href="https://plato.stanford.edu/entries/liar-paradox/" target="_blank" rel="noopener">plato.stanford.edu/entries/liar-paradox</a>.</li>
+  <li>Stanford Encyclopedia of Philosophy, "Kurt Gödel", disponível em <a href="https://plato.stanford.edu/entries/goedel/" target="_blank" rel="noopener">plato.stanford.edu/entries/goedel</a>.</li>
+  <li>Conexões internas: <a href="/artigos/zenao-paradoxos-realidade/">Zenão de Eleia: Os Paradoxos que Desafiaram a Matemática</a> e <a href="/artigos/wittgenstein-limites-da-linguagem/">Wittgenstein e os limites da linguagem</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "biblioteca-de-alexandria-ascensao-queda",
+    slug: "biblioteca-de-alexandria-ascensao-queda",
+    tag: "HISTÓRIA ANTIGA",
+    category: "História da Civilização",
+    title: "A Biblioteca de Alexandria: ascensão e queda do maior centro de saber da Antiguidade",
+    excerpt: "Mais que um depósito de rolos de papiro, a Biblioteca de Alexandria foi um projeto político: reunir todo o conhecimento do mundo conhecido sob um único teto, e com ele, o prestígio de um império.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/biblioteca-de-alexandria-ascensao-queda.jpg",
+    cover: "assets/article_cards/biblioteca-de-alexandria-ascensao-queda.jpg",
+    tags: ["Biblioteca de Alexandria", "Egito helenístico", "Museion", "história antiga", "transmissão do saber"],
+    featured: false,
+    metaTitle: "A Biblioteca de Alexandria: ascensão e queda do saber antigo",
+    metaDescription: "A história da Biblioteca de Alexandria: o projeto dos Ptolomeus, o Museion, Eratóstenes e Euclides, os incêndios históricos e o lento declínio de uma instituição.",
+    keywords: ["Biblioteca de Alexandria", "Museion", "Ptolomeu", "Eratóstenes", "Egito helenístico", "história da civilização"],
+    content: `
+<p><strong>Segundo relatos antigos, os Ptolomeus ordenavam que todo navio que atracasse no porto de Alexandria entregasse seus rolos de papiro para cópia — e às vezes devolvia apenas a cópia, ficando com o original.</strong> Verdadeira ou exagerada, a lenda capta bem a ambição do projeto: reunir, num único lugar, a totalidade do conhecimento acessível ao mundo mediterrâneo e do Oriente Próximo.</p>
+
+<h2>Um projeto de Alexandre e dos Ptolomeus</h2>
+<p>Fundada no início do século III a.C. sob Ptolomeu I Sóter e expandida por seu filho Ptolomeu II Filadelfo, a Biblioteca nasceu na cidade que Alexandre, o Grande, havia fundado décadas antes no delta do Nilo. Para os Ptolomeus, gregos governando um Egito multicultural, controlar o saber era também uma forma de legitimar seu poder e afirmar Alexandria como sucessora de Atenas no cetro da cultura helênica.</p>
+
+<h2>O Museion: uma instituição, não um prédio</h2>
+<p>A Biblioteca fazia parte de um complexo maior, o Museion — literalmente, "templo das Musas" — que reunia salas de estudo, jardins, um observatório e alojamentos para dezenas de estudiosos sustentados pelo Estado ptolomaico para pesquisar em tempo integral. Era, em termos modernos, algo entre uma universidade de pesquisa e uma academia de ciências, financiada por recursos reais.</p>
+
+<h2>Eratóstenes, Euclides e a produção do saber</h2>
+<p>Pela Biblioteca e pelo Museion passaram algumas das mentes mais influentes da Antiguidade: Euclides sistematizou ali a geometria em seus <em>Elementos</em>; Eratóstenes, bibliotecário-chefe, calculou a circunferência da Terra com notável precisão medindo sombras em dois pontos distantes do Egito; Aristarco de Samos propôs, ainda no século III a.C., um modelo heliocêntrico do sistema solar, dezoito séculos antes de Copérnico. Callimachus organizou o acervo em um catálogo pioneiro, o <em>Pinakes</em>.</p>
+
+<h2>Mito e história dos incêndios</h2>
+<p>A destruição da Biblioteca é frequentemente narrada como um único evento catastrófico, mas historiadores modernos descrevem um processo mais longo e gradual. Júlio César provocou um incêndio no porto de Alexandria em 48 a.C. durante um conflito militar, que danificou depósitos próximos ao cais — possivelmente parte do acervo. O Serapeu, biblioteca-filha do templo de Serápis, foi destruído em 391 d.C. durante campanhas cristãs contra templos pagãos sob o patriarca Teófilo. A história de que o califa Omar ordenou queimar os livros restantes na conquista árabe de 642 d.C. é considerada, pela maioria dos historiadores, uma lenda tardia sem base em fontes contemporâneas.</p>
+
+<h2>Um declínio institucional, não apenas um incêndio</h2>
+<p>Mais decisivo que qualquer fogo isolado foi o lento esvaziamento institucional: cortes de financiamento, instabilidade política do Egito romano tardio e a migração de estudiosos para outros centros — Constantinopla, Antioquia, mais tarde Bagdá — dissolveram gradualmente aquilo que fogo algum havia destruído por completo. O que perdemos não foi apenas um edifício, mas séculos de obras originais de autores gregos que hoje só conhecemos por citações fragmentárias em textos posteriores.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Roger S. Bagnall, "Alexandria: Library of Dreams", <em>Proceedings of the American Philosophical Society</em>, 2002 — reavaliação histórica da destruição gradual da Biblioteca.</li>
+  <li>Encyclopaedia Britannica, "Library of Alexandria", verbete de referência sobre fundação, acervo e declínio.</li>
+  <li>Conexões internas: <a href="/artigos/casa-da-sabedoria-bagda-seculo-de-ouro/">A Casa da Sabedoria de Bagdá</a> e <a href="/artigos/tales-mileto-arche/">Tales de Mileto: A Pergunta que Inaugurou a Filosofia</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "casa-da-sabedoria-bagda-seculo-de-ouro",
+    slug: "casa-da-sabedoria-bagda-seculo-de-ouro",
+    tag: "HISTÓRIA MEDIEVAL",
+    category: "História da Civilização",
+    title: "A Casa da Sabedoria de Bagdá e o século de ouro da tradução islâmica",
+    excerpt: "Enquanto a Europa ocidental atravessava seus séculos mais instáveis, Bagdá reunia tradutores para verter Aristóteles, Galeno e Ptolomeu do grego para o árabe — salvando parte do legado clássico.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/casa-da-sabedoria-bagda-seculo-de-ouro.jpg",
+    cover: "assets/article_cards/casa-da-sabedoria-bagda-seculo-de-ouro.jpg",
+    tags: ["Casa da Sabedoria", "Bagdá", "califado abássida", "tradução", "história islâmica"],
+    featured: false,
+    metaTitle: "A Casa da Sabedoria de Bagdá e o século de ouro islâmico",
+    metaDescription: "A história da Bayt al-Hikma de Bagdá: al-Mamun, o movimento de tradução greco-árabe, Al-Khwarizmi, Al-Kindi e a queda de 1258 diante dos mongóis.",
+    keywords: ["Casa da Sabedoria", "Bayt al-Hikma", "Bagdá", "califado abássida", "Al-Khwarizmi", "tradução greco-árabe"],
+    content: `
+<p><strong>No século IX, o califa abássida al-Mamun teria tido um sonho em que Aristóteles lhe aparecia para lhe assegurar que razão e fé religiosa não estavam em conflito.</strong> Verdadeira ou não, a lenda circulava para justificar um dos maiores investimentos institucionais em tradução e ciência da história pré-moderna: a Bayt al-Hikma, a Casa da Sabedoria de Bagdá.</p>
+
+<h2>Bagdá, capital de um império em expansão</h2>
+<p>Fundada em 762 pelo califa al-Mansur, Bagdá tornou-se rapidamente uma das maiores cidades do mundo, capital de um califado abássida que se estendia da Ibéria à Ásia Central. Diferentemente de impérios anteriores organizados sobre uma única cultura dominante, o califado abássida governava sobre populações persas, sírias, gregas, judaicas e árabes — uma diversidade que alimentou, e não sufocou, sua vida intelectual.</p>
+
+<h2>Al-Mamun e a Bayt al-Hikma</h2>
+<p>Sob o califa al-Mamun, que reinou entre 813 e 833, a Casa da Sabedoria consolidou-se como um centro institucional de tradução, pesquisa e ensino, sustentado com recursos do Estado. Estudiosos de diferentes religiões e origens étnicas trabalhavam lado a lado, remunerados generosamente — segundo alguns relatos, com o peso em ouro equivalente ao dos manuscritos traduzidos.</p>
+
+<h2>O movimento de tradução greco-árabe</h2>
+<p>O projeto mais duradouro da Casa da Sabedoria foi verter para o árabe o corpus filosófico e científico grego: Aristóteles, Platão, Galeno, Ptolomeu, Euclides — muitas vezes através de traduções intermediárias em siríaco, feitas por comunidades cristãs que preservavam esse legado. Hunayn ibn Ishaq, tradutor cristão nestoriano, tornou-se célebre por sua metodologia rigorosa de cotejar múltiplos manuscritos antes de traduzir.</p>
+
+<h2>Al-Khwarizmi, Al-Kindi e a ciência em árabe</h2>
+<p>A Casa da Sabedoria não foi apenas um posto de tradução passiva, mas um motor de produção original. Al-Khwarizmi sistematizou ali a álgebra — a própria palavra deriva do título de seu tratado <em>al-jabr</em>, e "algoritmo" deriva de seu nome latinizado, Algorithmi. Al-Kindi, considerado o primeiro grande filósofo de língua árabe, trabalhou para conciliar a filosofia grega com a teologia islâmica, abrindo caminho para pensadores posteriores como Avicena e Averróis.</p>
+
+<h2>A ponte para a Europa medieval</h2>
+<p>Séculos depois, quando cidades como Toledo e Palermo se tornaram pontos de contato entre o mundo islâmico e a Europa latina, foram justamente essas traduções árabes de textos gregos — muitas vezes já perdidos em seus originais — que permitiram à Europa medieval redescobrir Aristóteles e a ciência clássica, alimentando o que se convencionou chamar de Renascimento do século XII.</p>
+
+<h2>O fim: 1258 e o cerco mongol</h2>
+<p>A Casa da Sabedoria e a rica vida intelectual de Bagdá sofreram um golpe catastrófico em 1258, quando o exército mongol de Hulagu Khan cercou e destruiu a cidade. A tradição historiográfica registra que tantos manuscritos foram lançados ao rio Tigre que suas águas escureceram com a tinta — um símbolo, ainda que possivelmente exagerado, do fim abrupto de séculos de acumulação de saber.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Dimitri Gutas, <em>Greek Thought, Arabic Culture: The Graeco-Arabic Translation Movement in Baghdad</em>, Routledge, 1998 — estudo de referência sobre o movimento de tradução abássida.</li>
+  <li>Encyclopaedia Britannica, "House of Wisdom", verbete sobre a Bayt al-Hikma e seu papel institucional.</li>
+  <li>Conexões internas: <a href="/artigos/biblioteca-de-alexandria-ascensao-queda/">A Biblioteca de Alexandria</a> e <a href="/artigos/escolastica-latina-influencia-arabe/">A Escolástica Latina e a Influência Árabe</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "grande-cisma-1054-oriente-ocidente",
+    slug: "grande-cisma-1054-oriente-ocidente",
+    tag: "HISTÓRIA MEDIEVAL",
+    category: "História da Civilização",
+    title: "O Grande Cisma de 1054: a ruptura entre Roma e Constantinopla",
+    excerpt: "Um cardeal romano depositou uma bula de excomunhão sobre o altar de Hagia Sophia. O patriarca de Constantinopla respondeu excomungando o cardeal. A cristandade não seria mais uma só.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "11 min",
+    thumb: "assets/article_cards/grande-cisma-1054-oriente-ocidente.jpg",
+    cover: "assets/article_cards/grande-cisma-1054-oriente-ocidente.jpg",
+    tags: ["Grande Cisma", "1054", "Igreja Ortodoxa", "Igreja Católica", "história medieval"],
+    featured: false,
+    metaTitle: "O Grande Cisma de 1054: a ruptura entre Roma e Constantinopla",
+    metaDescription: "A história do Grande Cisma de 1054: o filioque, a excomunhão mútua entre Humberto de Silva Cândida e Miguel Cerulário, e a divisão duradoura da cristandade.",
+    keywords: ["Grande Cisma", "Cisma de 1054", "Igreja Ortodoxa", "Igreja Católica", "filioque", "Miguel Cerulário"],
+    content: `
+<p><strong>Em 16 de julho de 1054, o cardeal Humberto de Silva Cândida entrou na basílica de Hagia Sophia, em Constantinopla, durante a liturgia, e depositou sobre o altar uma bula que excomungava o patriarca Miguel Cerulário.</strong> Dias depois, um sínodo convocado pelo próprio patriarca respondeu excomungando o cardeal e seus companheiros. Nenhum dos dois lados sabia, no momento, que estava inaugurando uma ruptura que atravessaria os próximos mil anos.</p>
+
+<h2>Duas Romas, dois mundos</h2>
+<p>A divisão entre o cristianismo latino, centrado em Roma, e o cristianismo grego, centrado em Constantinopla, vinha se aprofundando havia séculos por razões que iam muito além da teologia: diferenças de língua (latim contra grego), de estrutura política (um papado que reivindicava autoridade universal contra um patriarcado que respondia a um imperador bizantino) e de prática litúrgica cotidiana.</p>
+
+<h2>O filioque e as diferenças teológicas</h2>
+<p>A disputa doutrinária mais duradoura girava em torno do "filioque" — a cláusula, adicionada ao Credo Niceno pelas igrejas ocidentais, segundo a qual o Espírito Santo procede "do Pai e do Filho", e não apenas "do Pai", como afirmava a tradição grega original. Para os teólogos orientais, a alteração unilateral do credo por Roma era tanto um erro teológico quanto uma usurpação de autoridade que deveria pertencer a concílios ecumênicos, não a um único bispo.</p>
+
+<h2>Humberto de Silva Cândida e Miguel Cerulário</h2>
+<p>O episódio de 1054 foi, em grande medida, o resultado de um confronto entre duas personalidades pouco dispostas à conciliação. O legado papal Humberto de Silva Cândida chegou a Constantinopla numa missão diplomática já tensa, e o patriarca Miguel Cerulário, defensor assertivo das prerrogativas de sua sé, recusou-se a reconhecer as demandas romanas sobre primazia. A bula de excomunhão depositada no altar, tecnicamente, excomungava apenas o patriarca e alguns assessores — não toda a Igreja Oriental — mas o gesto simbólico foi interpretado, e usado politicamente, como uma ruptura total.</p>
+
+<h2>Mais que um cisma religioso</h2>
+<p>Reduzir o evento de 1054 a uma disputa puramente teológica distorce sua natureza: era também um confronto entre dois centros de poder que disputavam autoridade sobre um mundo cristão cada vez mais fragmentado política e culturalmente. A ruptura se aprofundaria ainda mais em 1204, quando exércitos da Quarta Cruzada, nominalmente cristãos ocidentais, saquearam a própria Constantinopla — um trauma que os ortodoxos ainda hoje recordam como decisivo para o distanciamento entre as duas tradições.</p>
+
+<h2>Consequências de longa duração</h2>
+<p>A excomunhão mútua de 1054 permaneceu formalmente em vigor por 911 anos, até que o papa Paulo VI e o patriarca ecumênico Atenágoras I a revogassem simbolicamente num encontro em Jerusalém, em 1965. A reconciliação institucional, porém, não desfez a divisão de fundo: as igrejas Católica e Ortodoxa seguem hoje como comunhões distintas, com suas próprias estruturas de autoridade, calendários litúrgicos e tradições teológicas.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Encyclopaedia Britannica, "Schism of 1054", verbete de referência sobre o evento e suas causas de longo prazo.</li>
+  <li>Henry Chadwick, <em>East and West: The Making of a Rift in the Church</em>, Oxford University Press, 2003 — estudo histórico sobre as raízes do cisma.</li>
+  <li>Conexões internas: <a href="/artigos/escolastica-latina-influencia-arabe/">A Escolástica Latina e a Influência Árabe</a> e <a href="/artigos/sao-tomas-fe-razao-explicacao/">São Tomás de Aquino: fé, razão e o limite das explicações</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "peste-negra-transformacao-europa-medieval",
+    slug: "peste-negra-transformacao-europa-medieval",
+    tag: "HISTÓRIA MEDIEVAL",
+    category: "História da Civilização",
+    title: "A Peste Negra e a transformação mental da Europa medieval",
+    excerpt: "Entre 1347 e 1351, a peste matou entre um terço e metade da população europeia. A catástrofe demográfica reorganizou o trabalho, a religiosidade e a própria imagem que a Europa fazia da morte.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/peste-negra-transformacao-europa-medieval.jpg",
+    cover: "assets/article_cards/peste-negra-transformacao-europa-medieval.jpg",
+    tags: ["Peste Negra", "Idade Média", "história medieval", "demografia histórica", "dança macabra"],
+    featured: false,
+    metaTitle: "A Peste Negra e a transformação da Europa medieval",
+    metaDescription: "A história da Peste Negra de 1347-1351: a rota de contágio, o colapso demográfico, os flagelantes, a crise do trabalho servil e a Dança da Morte na arte.",
+    keywords: ["Peste Negra", "peste bubônica medieval", "Idade Média", "crise do século XIV", "Dança da Morte", "servidão medieval"],
+    content: `
+<p><strong>Em outubro de 1347, doze navios genoveses atracaram no porto de Messina, na Sicília, vindos do Mar Negro. A maior parte da tripulação já estava morta ou moribunda, coberta de manchas escuras.</strong> As autoridades locais ordenaram que a "frota fantasma" deixasse o porto imediatamente — mas era tarde demais. A peste bubônica já havia desembarcado na Europa.</p>
+
+<h2>Rotas comerciais, rotas de contágio</h2>
+<p>A doença, causada pela bactéria Yersinia pestis e transmitida principalmente por pulgas de roedores, teria se originado na Ásia Central e viajado para o oeste ao longo das rotas comerciais terrestres e marítimas que conectavam a China, o Império Mongol e o Mediterrâneo — as mesmas rotas que, décadas antes, haviam trazido especiarias, seda e conhecimento científico à Europa passaram a transportar, sem que ninguém soubesse, a morte.</p>
+
+<h2>Um colapso demográfico sem precedentes</h2>
+<p>Entre 1347 e 1351, estima-se que a Peste Negra tenha matado entre um terço e metade da população europeia — números que historiadores demográficos continuam ajustando, mas que em qualquer caso configuram a maior catástrofe populacional documentada da história europeia. Cidades inteiras perderam mais da metade de seus habitantes em poucos meses; vilarejos inteiros foram simplesmente abandonados.</p>
+
+<h2>Flagelantes e bodes expiatórios</h2>
+<p>Diante de um sofrimento que a medicina da época não conseguia explicar nem tratar, muitas comunidades buscaram respostas religiosas extremas. Grupos de flagelantes percorriam cidades açoitando-se publicamente como penitência coletiva, na esperança de aplacar a ira divina. Em paralelo, e de forma trágica, comunidades judaicas foram acusadas — sem qualquer fundamento — de envenenar poços e provocar a peste deliberadamente, o que desencadeou massacres em diversas cidades da Europa central.</p>
+
+<h2>A crise do trabalho servil</h2>
+<p>Paradoxalmente, a catástrofe teve também efeitos que fortaleceram a posição dos trabalhadores sobreviventes: com metade da mão de obra dizimada, os camponeses que restaram puderam exigir salários mais altos e melhores condições, pressionando as estruturas da servidão feudal. Tentativas da nobreza de conter esses ganhos por meio de leis salariais provocaram revoltas, como a Revolta dos Camponeses de 1381 na Inglaterra — um dos primeiros grandes levantes populares da Europa medieval tardia.</p>
+
+<h2>A Dança da Morte e uma nova sensibilidade</h2>
+<p>A experiência coletiva e repetida da morte súbita e indiscriminada — que atingia ricos e pobres, clérigos e leigos, sem aviso — deixou marcas profundas na cultura visual da época. Surgiu o motivo da <em>Dança da Morte</em>, em que esqueletos dançantes conduzem representantes de todas as classes sociais rumo ao túmulo, lembrando a todos que a morte não respeita hierarquia. Esse imaginário, junto com crônicas como a de Boccaccio no <em>Decameron</em>, marca uma Europa que já não pensava a mortalidade da mesma forma serena da alta Idade Média.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Ole J. Benedictow, <em>The Black Death, 1346-1353: The Complete History</em>, Boydell Press, 2004 — estudo demográfico de referência.</li>
+  <li>Encyclopaedia Britannica, "Black Death", verbete sobre origem, disseminação e impacto social da peste.</li>
+  <li>Conexões internas: <a href="/artigos/conforto-excessivo-enfraquece-civilizacoes/">O Conforto Excessivo Enfraquece Civilizações</a> e <a href="/artigos/nostalgia-forma-consciencia-historica/">A Nostalgia É uma Forma de Consciência Histórica</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "gutenberg-imprensa-revolucao-conhecimento",
+    slug: "gutenberg-imprensa-revolucao-conhecimento",
+    tag: "HISTÓRIA MODERNA",
+    category: "História da Civilização",
+    title: "Gutenberg e a imprensa: a revolução que multiplicou o conhecimento",
+    excerpt: "Um ourives endividado de Mainz combinou tipos móveis metálicos, tinta oleosa e uma prensa de vinho adaptada — e mudou para sempre a velocidade com que ideias circulam.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/gutenberg-imprensa-revolucao-conhecimento.jpg",
+    cover: "assets/article_cards/gutenberg-imprensa-revolucao-conhecimento.jpg",
+    tags: ["Gutenberg", "imprensa", "Bíblia de 42 linhas", "Renascimento", "história do livro"],
+    featured: false,
+    metaTitle: "Gutenberg e a imprensa: a revolução do conhecimento",
+    metaDescription: "A história da invenção da imprensa por Johannes Gutenberg: os tipos móveis, a Bíblia de 42 linhas, a disputa judicial com Fust e o impacto sobre a Reforma e a ciência.",
+    keywords: ["Johannes Gutenberg", "imprensa de tipos móveis", "Bíblia de 42 linhas", "história do livro", "Reforma Protestante", "galáxia de Gutenberg"],
+    content: `
+<p><strong>Por volta de 1450, num ateliê discreto na cidade alemã de Mainz, um ourives endividado chamado Johannes Gutenberg combinou três elementos que existiam separadamente havia séculos — tipos móveis, tinta oleosa e uma prensa mecânica adaptada de prensas de vinho — numa síntese que multiplicaria a velocidade de circulação do conhecimento humano como nenhuma outra invenção antes dela.</strong></p>
+
+<h2>Um ourives endividado</h2>
+<p>Pouco se sabe com certeza sobre a vida pessoal de Gutenberg antes de sua invenção. Nascido por volta de 1400 numa família de artesãos ligados à cunhagem de moedas, ele já trabalhava havia anos com metais e prensas quando começou a desenvolver, em segredo, seu sistema de impressão — financiado por um empréstimo substancial do comerciante Johann Fust, que se tornaria, mais tarde, seu adversário numa disputa judicial decisiva.</p>
+
+<h2>Tipos móveis: a invenção por trás da invenção</h2>
+<p>O verdadeiro avanço técnico de Gutenberg não foi a prensa em si — prensas já existiam — mas um sistema para fundir, em metal, milhares de letras individuais idênticas, reutilizáveis e intercambiáveis, que podiam ser organizadas em qualquer combinação de texto e depois desmontadas para o próximo trabalho. Essa padronização é o que tornou a impressão em massa, e não apenas a impressão pontual, tecnicamente viável.</p>
+
+<h2>A Bíblia de 42 linhas</h2>
+<p>Por volta de 1455, o ateliê de Gutenberg produziu sua obra mais célebre: a Bíblia de 42 linhas, também chamada Bíblia Mazarina, impressa em cerca de 180 exemplares — um número que, para a época, representava um salto de escala sem precedentes em relação aos manuscritos copiados à mão. Apenas 49 exemplares, completos ou parciais, sobreviveram até hoje, hoje entre os objetos mais valiosos do patrimônio bibliográfico mundial.</p>
+
+<h2>Uma disputa judicial que fragmentou o legado</h2>
+<p>Ironicamente, o próprio Gutenberg perdeu boa parte do controle sobre sua invenção pouco depois de concluí-la: processado por Johann Fust em 1455 por não conseguir pagar o empréstimo, perdeu na Justiça grande parte de seu equipamento e de sua oficina, que passaram para as mãos do credor e de seu genro, Peter Schöffer. Gutenberg morreu, décadas depois, sem grande reconhecimento financeiro pela revolução que havia iniciado.</p>
+
+<h2>Da oficina de Mainz à Europa inteira</h2>
+<p>A técnica se espalhou com uma velocidade notável: em poucas décadas, oficinas de impressão surgiram em Roma, Veneza, Paris, Londres e dezenas de outras cidades europeias. Essa disseminação tornou possível a rápida circulação de panfletos que alimentaram a Reforma Protestante de Martinho Lutero, a padronização de línguas vernáculas e a difusão acelerada de textos científicos que sustentaria a Revolução Científica dos séculos seguintes.</p>
+
+<h2>A galáxia de Gutenberg</h2>
+<p>O teórico da comunicação Marshall McLuhan cunhou, no livro <em>A Galáxia de Gutenberg</em> (1962), a expressão que se tornaria sinônimo de toda uma era cultural: os séculos em que a cultura ocidental foi organizada, cognitivamente, em torno da lógica linear e sequencial do texto impresso — uma era, argumentava McLuhan já em pleno século XX, que a televisão e, mais tarde, as tecnologias digitais começariam a substituir por novas formas de organizar a experiência e o pensamento.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Elizabeth L. Eisenstein, <em>The Printing Press as an Agent of Change</em>, Cambridge University Press, 1980 — estudo de referência sobre o impacto cultural da imprensa.</li>
+  <li>Marshall McLuhan, <em>The Gutenberg Galaxy</em>, University of Toronto Press, 1962.</li>
+  <li>Conexões internas: <a href="/artigos/manifesto-comunista-ias-monopolio-informacao/">Do Manifesto Comunista ao manifesto das IAs</a> e <a href="/artigos/ia-generativa-crise-da-autoria/">Inteligência artificial generativa e a crise filosófica da autoria</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "ia-generativa-crise-da-autoria",
+    slug: "ia-generativa-crise-da-autoria",
+    tag: "FILOSOFIA DA TECNOLOGIA",
+    category: "Atualidade Filosófica",
+    title: "Inteligência artificial generativa e a crise filosófica da autoria",
+    excerpt: "Em julho de 2026, jornais liderados pelo New York Times pediram a um tribunal que sancionasse a OpenAI por, segundo alegam, ocultar provas sobre o uso de seus textos no treinamento de modelos de IA.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/ia-generativa-crise-da-autoria.jpg",
+    cover: "assets/article_cards/ia-generativa-crise-da-autoria.jpg",
+    tags: ["inteligência artificial", "autoria", "direitos autorais", "OpenAI", "Foucault"],
+    featured: false,
+    metaTitle: "IA generativa e a crise filosófica da autoria",
+    metaDescription: "Uma leitura filosófica do litígio entre o New York Times e a OpenAI: o que significa autoria depois da IA generativa, com Foucault e o debate sobre uso justo.",
+    keywords: ["IA generativa", "crise da autoria", "New York Times OpenAI", "direitos autorais IA", "Foucault autor", "uso justo"],
+    content: `
+<p><strong>Em julho de 2026, um grupo de jornais liderado pelo New York Times pediu a um tribunal federal em Manhattan que aplicasse sanções à OpenAI, alegando que a empresa mentiu sobre sua capacidade de buscar, em seus próprios sistemas, provas de que artigos protegidos por direitos autorais foram usados no treinamento de seus modelos de linguagem.</strong> O processo, movido também contra a Microsoft e ainda em fase de instrução probatória, tornou-se o litígio mais observado sobre o que significa "autoria" na era da inteligência artificial generativa.</p>
+
+<h2>O que significava "autor" antes da IA generativa</h2>
+<p>Por séculos, o direito autoral moderno pressupôs uma cadeia relativamente simples: uma pessoa cria uma obra, essa pessoa é reconhecida como autora, e esse reconhecimento gera direitos econômicos e morais sobre a obra. Sistemas de IA generativa treinados em bilhões de textos escritos por humanos — sem consentimento explícito da maioria deles — tensionam essa cadeia num ponto que o direito ainda não sabe resolver com clareza.</p>
+
+<h2>O caso New York Times contra OpenAI e Microsoft</h2>
+<p>Segundo registros do próprio processo, o Times alega que a OpenAI teria realizado buscas internas em seus modelos por conteúdo de seus artigos — e, mesmo assim, afirmado ao tribunal que não conseguia fazer esse tipo de verificação. O caso já produziu decisões relevantes sobre pedidos de descarte e uma ordem controversa que obrigou, por um período, a preservação de bilhões de conversas de usuários do ChatGPT como possível prova. Em junho de 2026, o Times buscou ainda ampliar a ação para alegar que a Microsoft teria incentivado ativamente a OpenAI a usar seu conteúdo sem autorização.</p>
+
+<h2>Treinar máquinas com palavras humanas: uso justo ou apropriação?</h2>
+<p>O núcleo jurídico da disputa gira em torno da doutrina do uso justo (fair use): empresas de IA argumentam que treinar um modelo em textos publicados constitui um uso transformador, análogo ao modo como um estudante aprende lendo livros; editoras argumentam que a escala industrial da extração, somada à capacidade dos modelos de reproduzir trechos quase literais, ultrapassa qualquer analogia razoável com a leitura humana.</p>
+
+<h2>Foucault e "o que é um autor?"</h2>
+<p>Décadas antes de qualquer modelo de linguagem existir, Michel Foucault já questionava, em seu ensaio "O que é um autor?" (1969), a ideia de que a autoria é uma propriedade natural e óbvia de um texto, e não uma função histórica e jurídica construída para organizar responsabilidade, propriedade e prestígio sobre discursos. A pergunta foucaultiana ganha urgência renovada quando o "autor" de um texto pode ser, literalmente, um sistema estatístico sem intenção, memória ou biografia — mas cujo texto foi moldado, letra por letra, por milhões de autores humanos não creditados.</p>
+
+<h2>Uma autoria depois da autoria</h2>
+<p>O que está em disputa nos tribunais de 2026 não é apenas dinheiro, mas a própria arquitetura conceitual da criação: se todo texto novo é, em algum grau, recombinação do que veio antes — como sugeriam já os estruturalistas —, o que torna ilegítimo especificamente o fato de uma máquina fazer, em escala industrial, o que escritores sempre fizeram artesanalmente? A resposta provavelmente não virá apenas do direito, mas de uma reflexão filosófica renovada sobre o que devemos reconhecer, e recompensar, como origem de uma ideia.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>The Washington Post, "News outlets urge a judge to sanction OpenAI in a high-stakes AI copyright fight", 9 de julho de 2026.</li>
+  <li>Wikipédia em inglês, "The New York Times v. Microsoft and OpenAI", verbete atualizado sobre o andamento processual do caso.</li>
+  <li>Michel Foucault, "Qu'est-ce qu'un auteur?", conferência de 1969, publicada em <em>Dits et Écrits</em>.</li>
+  <li>Conexões internas: <a href="/artigos/manifesto-comunista-ias-monopolio-informacao/">Do Manifesto Comunista ao manifesto das IAs</a> e <a href="/artigos/walter-benjamin-obra-de-arte-reprodutibilidade/">Walter Benjamin e a obra de arte na era da reprodutibilidade técnica</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "ai-act-europeu-filosofia-do-risco",
+    slug: "ai-act-europeu-filosofia-do-risco",
+    tag: "FILOSOFIA DA TECNOLOGIA",
+    category: "Atualidade Filosófica",
+    title: "O AI Act europeu e a filosofia do risco: regular antes de entender?",
+    excerpt: "Em maio de 2026, a União Europeia acordou adiar em até 16 meses obrigações centrais de sua lei de inteligência artificial. O recuo expõe um dilema filosófico antigo: como regular o que ainda não compreendemos?",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/ai-act-europeu-filosofia-do-risco.jpg",
+    cover: "assets/article_cards/ai-act-europeu-filosofia-do-risco.jpg",
+    tags: ["AI Act", "regulação da IA", "União Europeia", "Hans Jonas", "princípio responsabilidade"],
+    featured: false,
+    metaTitle: "O AI Act europeu e a filosofia do risco tecnológico",
+    metaDescription: "Uma leitura filosófica do AI Act europeu e do Digital Omnibus de 2026: classificação de risco, o princípio responsabilidade de Hans Jonas e o dilema de regular sem entender.",
+    keywords: ["AI Act", "regulação de inteligência artificial", "União Europeia IA", "Digital Omnibus", "Hans Jonas", "princípio responsabilidade"],
+    content: `
+<p><strong>Em 7 de maio de 2026, negociadores do Conselho da União Europeia, do Parlamento Europeu e da Comissão Europeia chegaram a um acordo provisório sobre o "Digital Omnibus", o primeiro pacote de emendas ao AI Act desde sua aprovação em 2024 — adiando por até dezesseis meses obrigações centrais de conformidade para sistemas de alto risco.</strong> O recuo, aprovado definitivamente pelo Conselho em 29 de junho de 2026, revela um dilema filosófico que a euforia regulatória original não havia resolvido: como legislar sobre uma tecnologia cuja trajetória técnica ninguém consegue prever com segurança?</p>
+
+<h2>Da ética da precaução à arquitetura do risco</h2>
+<p>O AI Act, aprovado originalmente em 2024, organiza sistemas de inteligência artificial numa hierarquia de risco — inaceitável, alto, limitado e mínimo — impondo obrigações proporcionalmente mais rígidas quanto maior o risco potencial à segurança e aos direitos fundamentais. A lógica subjacente é uma versão institucionalizada do princípio da precaução: na dúvida sobre o dano potencial de uma tecnologia poderosa, o ônus da prova deveria recair sobre quem a implementa, não sobre quem pode ser prejudicado por ela.</p>
+
+<h2>O Digital Omnibus de 2026</h2>
+<p>As emendas de 2026 adiaram as obrigações para sistemas de alto risco baseados em uso (Anexo III) de agosto de 2026 para dezembro de 2027, e para sistemas de alto risco regulados por produto (Anexo I, incluindo dispositivos médicos e elevadores) de agosto de 2027 para agosto de 2028. Ao mesmo tempo, o pacote ampliou as práticas proibidas para incluir aplicativos de "nudificação" — sistemas que geram ou manipulam imagens íntimas sem consentimento — a partir de dezembro de 2026, e manteve as obrigações de transparência do Artigo 50 em vigor desde agosto de 2026.</p>
+
+<h2>Hans Jonas e o princípio responsabilidade</h2>
+<p>O filósofo Hans Jonas argumentou, em <em>O Princípio Responsabilidade</em> (1979), que tecnologias com capacidade de causar danos irreversíveis e em larga escala exigem uma ética inteiramente nova, orientada não pela ação individual imediata, mas pelas consequências difusas e futuras de sistemas técnicos poderosos. Sua proposta — agir de modo que os efeitos de nossa ação sejam compatíveis com a permanência de uma vida humana genuína no futuro — antecipa, por décadas, o vocabulário hoje usado para justificar regulações como o AI Act.</p>
+
+<h2>Regular sem entender: um dilema epistêmico</h2>
+<p>O recuo do Digital Omnibus expõe uma tensão real na aplicação prática do princípio de Jonas: legislar com prudência exige compreender, ao menos aproximadamente, o que se está regulando — mas a velocidade de desenvolvimento de modelos de IA generativa tornou obsoletas, em poucos anos, categorias técnicas que pareciam sólidas quando a lei foi redigida. Adiar prazos pode significar tanto uma capitulação a interesses da indústria quanto um reconhecimento honesto de que regulação apressada, mal calibrada à tecnologia real, pode ser tão perigosa quanto a ausência de regulação.</p>
+
+<h2>O que está realmente em jogo</h2>
+<p>Por trás do debate técnico sobre prazos e anexos, o AI Act europeu testa uma questão filosófica mais ampla: se sociedades democráticas conseguem desenvolver instituições capazes de acompanhar, em tempo real, tecnologias que se transformam mais rápido do que qualquer processo legislativo tradicional — ou se estamos condenados a regular sempre o problema de ontem.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Global Policy Watch / Covington, "EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions", maio de 2026.</li>
+  <li>Gibson Dunn, "EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes", 2026.</li>
+  <li>Hans Jonas, <em>Das Prinzip Verantwortung</em> (O Princípio Responsabilidade), Insel Verlag, 1979.</li>
+  <li>Conexões internas: <a href="/artigos/ia-generativa-crise-da-autoria/">Inteligência artificial generativa e a crise filosófica da autoria</a> e <a href="/artigos/transumanismo-limites-humanos-tecnica/">Transumanismo: o sonho de superar os limites humanos pela técnica</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "epidemia-de-solidao-filosofia-da-amizade",
+    slug: "epidemia-de-solidao-filosofia-da-amizade",
+    tag: "ATUALIDADE FILOSÓFICA",
+    category: "Atualidade Filosófica",
+    title: "A epidemia de solidão e a filosofia da amizade na era digital",
+    excerpt: "A OMS estima que uma em cada seis pessoas no mundo sofre de solidão, associada a 871 mil mortes por ano. Aristóteles já explicava por que conexão digital não é a mesma coisa que amizade.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "12 min",
+    thumb: "assets/article_cards/epidemia-de-solidao-filosofia-da-amizade.jpg",
+    cover: "assets/article_cards/epidemia-de-solidao-filosofia-da-amizade.jpg",
+    tags: ["solidão", "amizade", "Aristóteles", "OMS", "vida digital"],
+    featured: false,
+    metaTitle: "A epidemia de solidão e a filosofia da amizade",
+    metaDescription: "O relatório da Comissão da OMS sobre Conexão Social e a filosofia da amizade em Aristóteles e Epicuro: por que conexão digital não substitui a philia.",
+    keywords: ["epidemia de solidão", "OMS solidão", "filosofia da amizade", "Aristóteles philia", "conexão social", "vida digital"],
+    content: `
+<p><strong>Em junho de 2025, a Comissão da Organização Mundial da Saúde sobre Conexão Social lançou um relatório com um número impressionante: uma em cada seis pessoas no mundo sofre de solidão, e o isolamento social está associado a cerca de 871 mil mortes por ano — algo próximo de cem mortes por hora.</strong> Entre adolescentes e jovens adultos, a proporção sobe para quase uma em cada cinco. A filosofia, que desde a Antiguidade trata a amizade como condição da vida boa, tem muito a dizer sobre por que isso aconteceu justamente na era mais conectada da história.</p>
+
+<h2>O que o relatório da OMS revela</h2>
+<p>O documento situa a solidão não como um mal-estar meramente subjetivo, mas como uma questão de saúde pública com efeitos mensuráveis sobre doenças cardiovasculares, diabetes tipo 2, depressão e ansiedade — comparáveis, em magnitude de risco, a fatores como tabagismo e obesidade. A Comissão recomenda ação coordenada em cinco frentes: política pública, pesquisa, intervenção, medição de dados e engajamento social, situando o problema no mesmo patamar de prioridade de outras grandes crises sanitárias globais.</p>
+
+<h2>Aristóteles e as três formas de amizade</h2>
+<p>Na <em>Ética a Nicômaco</em>, Aristóteles distingue três tipos de amizade: a fundada no prazer mútuo, a fundada na utilidade recíproca, e a amizade virtuosa — aquela em que cada amigo deseja o bem do outro por si mesmo, não por aquilo que pode obter dele. Apenas essa terceira forma, argumenta Aristóteles, é amizade em sentido pleno, e ela exige tempo, proximidade continuada e vulnerabilidade compartilhada — precisamente os elementos que interações mediadas por telas tendem a comprimir ou eliminar.</p>
+
+<h2>Conexão digital não é a mesma coisa que amizade</h2>
+<p>Ter centenas de contatos numa rede social pode coexistir, sem contradição alguma, com um isolamento social profundo. A distinção aristotélica ajuda a entender por quê: plataformas digitais são otimizadas para interações rápidas, frequentemente baseadas em prazer ou utilidade momentânea — curtidas, validação, entretenimento — mas oferecem pouco suporte estrutural ao tipo de presença sustentada e recíproca que a amizade virtuosa exige.</p>
+
+<h2>Epicuro e a comunidade de amigos</h2>
+<p>Epicuro, de modo diferente mas convergente, colocava a amizade no centro de sua filosofia da vida boa: para ele, cercar-se de amigos confiáveis era uma das condições mais seguras para uma existência tranquila, um refúgio contra a instabilidade do mundo exterior. Sua comunidade filosófica, o Jardim, era organizada, na prática, como um experimento de vida em comum fundado na amizade — um contraponto interessante a modelos contemporâneos de conexão social mediada e dispersa.</p>
+
+<h2>Reaprender a philia numa era conectada e só</h2>
+<p>O paradoxo identificado pela OMS não é que a tecnologia impede a conexão — é que ela multiplica contatos superficiais ao mesmo tempo em que corrói as condições materiais e temporais da amizade profunda: tempo não fragmentado, presença sem finalidade instrumental, disposição a ser visto sem edição. Recuperar essa dimensão não exige rejeitar a vida digital, mas reconhecer, com Aristóteles, que nem toda forma de estar conectado é uma forma de não estar só.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>World Health Organization, "Report of the WHO Commission on Social Connection", junho de 2025, disponível em <a href="https://www.who.int/groups/commission-on-social-connection/report" target="_blank" rel="noopener">who.int/groups/commission-on-social-connection/report</a>.</li>
+  <li>Aristóteles, <em>Ética a Nicômaco</em>, Livros VIII e IX, sobre as formas de amizade.</li>
+  <li>Conexões internas: <a href="/artigos/epicuro-pouco-suficiencia-desejo/">Epicuro: quem não se contenta com pouco não se contentará com nada</a> e <a href="/artigos/sociedade-moderna-destruiu-silencio/">A Sociedade Moderna Destruiu o Silêncio</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "pos-verdade-desinformacao-filosofia-da-verdade",
+    slug: "pos-verdade-desinformacao-filosofia-da-verdade",
+    tag: "ATUALIDADE FILOSÓFICA",
+    category: "Atualidade Filosófica",
+    title: "Pós-verdade e desinformação: o que resta da verdade na era dos algoritmos e da IA generativa",
+    excerpt: "Pesquisas sobre as eleições de 2024 encontraram poucas centenas de deepfakes eleitorais — e sete vezes mais desinformação sem qualquer IA envolvida. O problema pode não ser a tecnologia, mas algo mais antigo.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/pos-verdade-desinformacao-filosofia-da-verdade.jpg",
+    cover: "assets/article_cards/pos-verdade-desinformacao-filosofia-da-verdade.jpg",
+    tags: ["pós-verdade", "desinformação", "deepfake", "Hannah Arendt", "Foucault"],
+    featured: false,
+    metaTitle: "Pós-verdade e desinformação na era da IA generativa",
+    metaDescription: "Uma leitura filosófica da pós-verdade com dados reais sobre deepfakes eleitorais em 2024, Hannah Arendt sobre a mentira organizada e Foucault sobre regimes de verdade.",
+    keywords: ["pós-verdade", "desinformação eleitoral", "deepfake eleições", "Hannah Arendt mentira", "Foucault regime de verdade", "IA generativa"],
+    content: `
+<p><strong>Pesquisadores que analisaram as eleições de 2024 em cinquenta países com pleitos competitivos encontraram apenas 215 casos documentados de desinformação eleitoral gerada por deepfakes — enquanto conteúdo enganoso sem qualquer inteligência artificial envolvida apareceu, segundo o News Literacy Project, sete vezes mais.</strong> A Meta chegou a estimar que menos de 1% de toda a desinformação verificada durante o ciclo eleitoral de 2024 era gerada por IA. Os números desafiam a narrativa mais comum sobre a crise da verdade contemporânea: talvez o problema central não seja a tecnologia, mas algo mais antigo que ela apenas amplifica.</p>
+
+<h2>O que os números realmente dizem</h2>
+<p>Isso não significa que a IA generativa seja irrelevante: o volume de arquivos deepfake identificados saltou de cerca de 500 mil em 2023 para uma projeção de 8 milhões em 2025, e episódios específicos — como os cerca de 50 milhões de dólares gastos em conteúdo gerado por IA durante as eleições indianas de 2024 — mostram escala crescente. Mas a desproporção entre a atenção pública dedicada aos deepfakes e seu peso real na desinformação eleitoral sugere que estamos, em parte, discutindo o sintoma errado.</p>
+
+<h2>Antes da IA, a mentira já era organizada</h2>
+<p>Hannah Arendt, em ensaios como "Verdade e Política" (1967), já observava que a mentira política organizada não depende de nenhuma tecnologia específica: depende da disposição de audiências a preferir uma narrativa coerente com seus interesses e identidades a uma verdade factual inconveniente. Para Arendt, o totalitarismo do século XX prosperou não por enganar pessoas ingênuas, mas por cultivar um público disposto a acreditar em tudo e em nada simultaneamente — uma descrição que antecipa, com precisão incômoda, o funcionamento das redes sociais contemporâneas.</p>
+
+<h2>Pós-verdade como categoria filosófica</h2>
+<p>"Pós-verdade" não descreve bem, filosoficamente, um mundo sem verdade — descreve um mundo em que a verdade perdeu prioridade estrutural sobre a validação emocional e tribal. A pergunta relevante não é apenas "isso é verdadeiro?", mas "isso confirma o que meu grupo já acredita?" — e essa segunda pergunta, historicamente, sempre teve poder de mobilização maior que a primeira, com ou sem algoritmos de recomendação.</p>
+
+<h2>Foucault e os regimes de verdade</h2>
+<p>Michel Foucault argumentava que toda sociedade produz seu próprio "regime de verdade" — os mecanismos institucionais que determinam o que conta como verdadeiro, quem tem autoridade para dizê-lo e como essa autoridade se legitima. Plataformas digitais, ao decidir algoritmicamente o que é amplificado e o que é enterrado, tornaram-se um novo tipo de instituição produtora de regime de verdade — sem prestar contas segundo os critérios de responsabilidade que tradicionalmente se exigia de universidades, tribunais ou imprensa.</p>
+
+<h2>O que a filosofia pode oferecer além do fact-checking</h2>
+<p>Verificação factual continua necessária, mas é insuficiente sozinha: corrigir um fato específico não desarma o mecanismo tribal que tornou aquele fato atraente antes de ser verificado. A contribuição filosófica mais duradoura pode ser menos técnica e mais formativa — cultivar, deliberadamente, o hábito de duvidar primeiro das crenças mais confortáveis, não apenas das mais estranhas, um exercício que a tradição cética praticava muito antes de qualquer algoritmo existir.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>Knight First Amendment Institute, "We Looked at 78 Election Deepfakes. Political Misinformation Is Not an AI Problem.", 2025.</li>
+  <li>Surfshark Research, "38 countries have faced deepfakes in elections", 2026.</li>
+  <li>Hannah Arendt, "Truth and Politics", <em>The New Yorker</em>, 1967.</li>
+  <li>Conexões internas: <a href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">O Algoritmo Substituiu a Verdade pela Atenção</a> e <a href="/artigos/hannah-arendt-banalidade-do-mal/">Hannah Arendt e a banalidade do mal</a>.</li>
+</ul>
+`
+  },
+
+  {
+    id: "antropoceno-etica-crise-climatica",
+    slug: "antropoceno-etica-crise-climatica",
+    tag: "ÉTICA AMBIENTAL",
+    category: "Atualidade Filosófica",
+    title: "Antropoceno: a ética ambiental diante da crise climática",
+    excerpt: "A atualização climática divulgada para a COP30 confirmou que 2025 deve figurar entre os dois ou três anos mais quentes já registrados. A filosofia precisa de uma ética capaz de responder a essa escala.",
+    date: "11 de Julho de 2026",
+    dateISO: "2026-07-11",
+    readTime: "13 min",
+    thumb: "assets/article_cards/antropoceno-etica-crise-climatica.jpg",
+    cover: "assets/article_cards/antropoceno-etica-crise-climatica.jpg",
+    tags: ["Antropoceno", "ética ambiental", "crise climática", "Hans Jonas", "justiça intergeracional"],
+    featured: false,
+    metaTitle: "Antropoceno: ética ambiental e crise climática",
+    metaDescription: "Uma leitura filosófica do Antropoceno e da crise climática, com dados da COP30 e do IPCC, Hans Jonas, justiça intergeracional e ecologia profunda.",
+    keywords: ["Antropoceno", "ética ambiental", "crise climática", "COP30", "IPCC", "justiça intergeracional", "Hans Jonas"],
+    content: `
+<p><strong>A Atualização do Estado do Clima divulgada pela Organização Meteorológica Mundial para a COP30, realizada em Belém em 2025, confirmou que aquele ano deveria figurar entre o segundo ou terceiro mais quentes já registrados — e que o período entre 2015 e 2025 seria, com folga, a década mais quente da história registrada, com temperatura média entre janeiro e agosto de 2025 já 1,42°C acima dos níveis pré-industriais.</strong> Números como esse sustentam a ideia, cada vez mais aceita entre cientistas, de que entramos numa nova era geológica moldada pela ação humana: o Antropoceno.</p>
+
+<h2>O que significa dizer que entramos no Antropoceno</h2>
+<p>O termo "Antropoceno" descreve a hipótese de que a atividade humana — emissões de carbono, alteração de ciclos biogeoquímicos, extinção acelerada de espécies — tornou-se uma força geológica comparável às grandes eras que moldaram o planeta ao longo de bilhões de anos. Independentemente do debate estritamente geológico sobre quando essa era teria começado, a ideia carrega um peso filosófico inescapável: a espécie humana precisa agora se pensar como agente de escala planetária, não apenas como habitante de um cenário natural estável.</p>
+
+<h2>Os números que a COP30 confirmou</h2>
+<p>O sexto relatório de avaliação do IPCC, descrito por observadores como o mais contundente já publicado pelo painel, chega à COP30 afirmando que a ameaça da mudança climática ao bem-estar humano e aos ecossistemas do planeta é hoje "inequívoca". O painel já avança para seu sétimo ciclo de avaliação, previsto para o período entre 2025 e 2027, incluindo um relatório especial sobre cidades e mudança climática programado para 2027 — sinal de que a comunidade científica trata a urgência não como um pico passageiro, mas como uma tendência estrutural de longo prazo.</p>
+
+<h2>Hans Jonas e uma ética para o futuro que não vota</h2>
+<p>As éticas tradicionais, de Aristóteles a Kant, foram construídas para regular relações entre contemporâneos capazes de reciprocidade. Hans Jonas argumentou que a era tecnológica exige algo diferente: uma ética capaz de considerar seres que ainda não existem, mas que serão afetados por decisões tomadas hoje. Sua formulação do imperativo ecológico — agir de modo que os efeitos de nossa ação sejam compatíveis com a permanência de uma vida humana genuína no futuro — desloca a responsabilidade moral para uma escala temporal que nenhuma urna eleitoral consegue representar diretamente.</p>
+
+<h2>Justiça intergeracional</h2>
+<p>Esse deslocamento levanta uma questão de justiça pouco convencional: que dever temos com pessoas que ainda não nasceram, e que não podem negociar, votar ou reivindicar seus próprios interesses no presente? Filósofos da justiça intergeracional argumentam que a ausência de reciprocidade não elimina a obrigação moral — assim como não achamos aceitável destruir deliberadamente o patrimônio que herdamos de gerações passadas, também não parece aceitável esgotar, sem justificativa, os recursos e a estabilidade climática de que dependerão as gerações futuras.</p>
+
+<h2>Ecologia profunda e antropocentrismo em xeque</h2>
+<p>Uma vertente mais radical da ética ambiental, associada à ecologia profunda de pensadores como Arne Næss, vai além da preocupação com o bem-estar humano futuro e questiona o próprio antropocentrismo: por que o valor moral de rios, florestas e espécies não-humanas deveria depender exclusivamente de sua utilidade para os seres humanos? Essa posição desafia diretamente a estrutura das éticas ambientais mais moderadas, centradas ainda no interesse humano de longo prazo.</p>
+
+<h2>Uma ética à altura da escala do problema</h2>
+<p>O que a COP30 e o IPCC confirmam, ano após ano, com dados cada vez mais robustos, é que a crise climática não é mais uma previsão distante, mas uma tendência mensurável em curso. O desafio filosófico permanece o mesmo identificado por Jonas há quase cinquenta anos: construir uma ética capaz de operar na escala temporal e espacial do próprio problema que criamos — algo que nenhuma tradição moral herdada foi originalmente desenhada para fazer.</p>
+
+<h2>Fontes e créditos</h2>
+<ul>
+  <li>World Meteorological Organization, "State of the Climate Update for COP30", 2025.</li>
+  <li>Intergovernmental Panel on Climate Change, Sixth Assessment Report (AR6) e planejamento do sétimo ciclo de avaliação, disponível em <a href="https://www.ipcc.ch/" target="_blank" rel="noopener">ipcc.ch</a>.</li>
+  <li>Hans Jonas, <em>Das Prinzip Verantwortung</em> (O Princípio Responsabilidade), Insel Verlag, 1979.</li>
+  <li>Conexões internas: <a href="/artigos/ai-act-europeu-filosofia-do-risco/">O AI Act europeu e a filosofia do risco</a> e <a href="/artigos/tecnologia-mais-rapida-que-sabedoria/">A Humanidade Produz Tecnologia numa Velocidade Maior do que Produz Sabedoria</a>.</li>
+</ul>
+`
+  }
 ];
 
 // Sprint 03: curadoria editorial do acervo existente.
 // Esta camada classifica e relaciona os artigos sem alterar o texto publicado.
 const ARTICLE_CURATION = {
+  "baruch-espinosa-vida-obra-etica": {
+    category: "Filosofia",
+    subcategory: "racionalismo moderno e biografia filosófica",
+    dossier: null,
+    philosophers: ["Baruch Espinosa"],
+    books: ["Ética"],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Spinoza", "excomunhão", "panteísmo", "racionalismo", "biografia"],
+    relatedArticles: ["conatus-espinosa-ontologia-esforco-existir", "problema-mente-corpo-dualismo-materialismo", "descartes-cogito-ergo-sum"],
+    editorialPriority: "P1"
+  },
+  "thomas-hobbes-leviata-medo-e-ordem": {
+    category: "Filosofia",
+    subcategory: "contratualismo e biografia filosófica",
+    dossier: null,
+    philosophers: ["Thomas Hobbes"],
+    books: ["Leviatã"],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Hobbes", "Leviatã", "estado de natureza", "contrato social", "biografia"],
+    relatedArticles: ["rawls-teoria-justica-veu-ignorancia", "maquiavel-poder-politica-realismo", "jean-jacques-rousseau-vida-contrato-social"],
+    editorialPriority: "P1"
+  },
+  "jean-jacques-rousseau-vida-contrato-social": {
+    category: "Filosofia",
+    subcategory: "contratualismo e biografia filosófica",
+    dossier: null,
+    philosophers: ["Jean-Jacques Rousseau"],
+    books: ["Do Contrato Social", "Emílio", "Confissões"],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Rousseau", "contrato social", "vontade geral", "Iluminismo", "biografia"],
+    relatedArticles: ["david-hume-ceticismo-vida-obra", "thomas-hobbes-leviata-medo-e-ordem", "rawls-teoria-justica-veu-ignorancia"],
+    editorialPriority: "P1"
+  },
+  "david-hume-ceticismo-vida-obra": {
+    category: "Filosofia",
+    subcategory: "empirismo e biografia filosófica",
+    dossier: null,
+    philosophers: ["David Hume"],
+    books: ["Tratado da Natureza Humana"],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Hume", "ceticismo", "causalidade", "empirismo", "biografia"],
+    relatedArticles: ["jean-jacques-rousseau-vida-contrato-social", "provar-deus-kant", "locke-tabula-rasa"],
+    editorialPriority: "P1"
+  },
+  "mary-wollstonecraft-vida-vindicacao": {
+    category: "Filosofia",
+    subcategory: "filosofia feminista e biografia filosófica",
+    dossier: null,
+    philosophers: ["Mary Wollstonecraft"],
+    books: ["Uma Vindicação dos Direitos da Mulher"],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Wollstonecraft", "feminismo iluminista", "direitos das mulheres", "Revolução Francesa", "biografia"],
+    relatedArticles: ["simone-de-beauvoir-liberdade-situada", "hannah-arendt-banalidade-do-mal", "john-stuart-mill-revolucao-liberal-moderna"],
+    editorialPriority: "P1"
+  },
+  "livre-arbitrio-determinismo-compatibilismo": {
+    category: "Filosofia",
+    subcategory: "metafísica da ação",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["livre-arbítrio", "determinismo", "compatibilismo", "responsabilidade moral"],
+    relatedArticles: ["problema-mente-corpo-dualismo-materialismo", "sartre-liberdade-condenacao"],
+    editorialPriority: "P1"
+  },
+  "problema-mente-corpo-dualismo-materialismo": {
+    category: "Filosofia",
+    subcategory: "filosofia da mente",
+    dossier: null,
+    philosophers: ["René Descartes", "David Chalmers"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["dualismo", "materialismo", "consciência", "qualia", "problema difícil"],
+    relatedArticles: ["descartes-cogito-ergo-sum", "livre-arbitrio-determinismo-compatibilismo"],
+    editorialPriority: "P1"
+  },
+  "utilitarismo-bentham-calculo-felicidade": {
+    category: "Filosofia",
+    subcategory: "ética consequencialista",
+    dossier: null,
+    philosophers: ["Jeremy Bentham", "John Stuart Mill", "Peter Singer"],
+    books: [],
+    civilization: "Ocidente moderno e contemporâneo",
+    period: "Moderno",
+    themes: ["utilitarismo", "cálculo hedonista", "consequencialismo", "altruísmo eficaz"],
+    relatedArticles: ["john-stuart-mill-revolucao-liberal-moderna", "rawls-teoria-justica-veu-ignorancia"],
+    editorialPriority: "P1"
+  },
+  "rawls-teoria-justica-veu-ignorancia": {
+    category: "Política",
+    subcategory: "contratualismo contemporâneo",
+    dossier: null,
+    philosophers: ["John Rawls"],
+    books: ["Uma Teoria da Justiça"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["justiça", "véu da ignorância", "contratualismo", "posição original"],
+    relatedArticles: ["thomas-hobbes-leviata-medo-e-ordem", "utilitarismo-bentham-calculo-felicidade"],
+    editorialPriority: "P1"
+  },
+  "paradoxo-mentiroso-limites-logica": {
+    category: "Filosofia",
+    subcategory: "lógica e fundamentos",
+    dossier: null,
+    philosophers: ["Alfred Tarski", "Kurt Gödel", "Bertrand Russell"],
+    books: [],
+    civilization: "Grécia Antiga e Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["paradoxo do mentiroso", "autorreferência", "incompletude", "lógica formal"],
+    relatedArticles: ["zenao-paradoxos-realidade", "wittgenstein-limites-da-linguagem"],
+    editorialPriority: "P1"
+  },
+  "biblioteca-de-alexandria-ascensao-queda": {
+    category: "História da Civilização",
+    subcategory: "Antiguidade helenística",
+    dossier: null,
+    philosophers: ["Eratóstenes", "Euclides"],
+    books: [],
+    civilization: "Egito helenístico",
+    period: "Antiguidade",
+    themes: ["Biblioteca de Alexandria", "Museion", "transmissão do saber", "helenismo"],
+    relatedArticles: ["casa-da-sabedoria-bagda-seculo-de-ouro", "tales-mileto-arche"],
+    editorialPriority: "P1"
+  },
+  "casa-da-sabedoria-bagda-seculo-de-ouro": {
+    category: "História da Civilização",
+    subcategory: "Idade Média islâmica",
+    dossier: null,
+    philosophers: ["Al-Kindi", "Al-Khwarizmi"],
+    books: [],
+    civilization: "Califado Abássida",
+    period: "Idade Média",
+    themes: ["Casa da Sabedoria", "Bagdá", "tradução greco-árabe", "ciência islâmica"],
+    relatedArticles: ["biblioteca-de-alexandria-ascensao-queda", "escolastica-latina-influencia-arabe"],
+    editorialPriority: "P1"
+  },
+  "grande-cisma-1054-oriente-ocidente": {
+    category: "História da Civilização",
+    subcategory: "cristandade medieval",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Europa medieval e Império Bizantino",
+    period: "Idade Média",
+    themes: ["Grande Cisma", "Igreja Ortodoxa", "Igreja Católica", "filioque"],
+    relatedArticles: ["escolastica-latina-influencia-arabe", "sao-tomas-fe-razao-explicacao"],
+    editorialPriority: "P1"
+  },
+  "peste-negra-transformacao-europa-medieval": {
+    category: "História da Civilização",
+    subcategory: "crise do século XIV",
+    dossier: null,
+    philosophers: [],
+    books: [],
+    civilization: "Europa medieval",
+    period: "Idade Média",
+    themes: ["Peste Negra", "colapso demográfico", "servidão medieval", "Dança da Morte"],
+    relatedArticles: ["conforto-excessivo-enfraquece-civilizacoes", "nostalgia-forma-consciencia-historica"],
+    editorialPriority: "P1"
+  },
+  "gutenberg-imprensa-revolucao-conhecimento": {
+    category: "História da Civilização",
+    subcategory: "Renascimento e revolução do livro",
+    dossier: null,
+    philosophers: ["Marshall McLuhan"],
+    books: [],
+    civilization: "Europa moderna",
+    period: "Moderno",
+    themes: ["Gutenberg", "imprensa", "Bíblia de 42 linhas", "galáxia de Gutenberg"],
+    relatedArticles: ["manifesto-comunista-ias-monopolio-informacao", "ia-generativa-crise-da-autoria"],
+    editorialPriority: "P1"
+  },
+  "ia-generativa-crise-da-autoria": {
+    category: "Atualidade Filosófica",
+    subcategory: "filosofia da tecnologia e propriedade intelectual",
+    dossier: null,
+    philosophers: ["Michel Foucault"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["inteligência artificial", "autoria", "direitos autorais", "uso justo"],
+    relatedArticles: ["manifesto-comunista-ias-monopolio-informacao", "walter-benjamin-obra-de-arte-reprodutibilidade", "gutenberg-imprensa-revolucao-conhecimento"],
+    editorialPriority: "P0"
+  },
+  "ai-act-europeu-filosofia-do-risco": {
+    category: "Atualidade Filosófica",
+    subcategory: "filosofia da tecnologia e regulação",
+    dossier: null,
+    philosophers: ["Hans Jonas"],
+    books: [],
+    civilization: "União Europeia contemporânea",
+    period: "Contemporâneo",
+    themes: ["AI Act", "regulação de IA", "princípio responsabilidade", "risco tecnológico"],
+    relatedArticles: ["ia-generativa-crise-da-autoria", "transumanismo-limites-humanos-tecnica", "antropoceno-etica-crise-climatica"],
+    editorialPriority: "P0"
+  },
+  "epidemia-de-solidao-filosofia-da-amizade": {
+    category: "Atualidade Filosófica",
+    subcategory: "vida digital e vínculo social",
+    dossier: null,
+    philosophers: ["Aristóteles", "Epicuro"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["solidão", "amizade", "vida digital", "saúde pública"],
+    relatedArticles: ["epicuro-pouco-suficiencia-desejo", "sociedade-moderna-destruiu-silencio", "aristoteles-eudaimonia-vida-boa"],
+    editorialPriority: "P0"
+  },
+  "pos-verdade-desinformacao-filosofia-da-verdade": {
+    category: "Atualidade Filosófica",
+    subcategory: "verdade e cultura digital",
+    dossier: null,
+    philosophers: ["Hannah Arendt", "Michel Foucault"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["pós-verdade", "desinformação", "deepfake", "regime de verdade"],
+    relatedArticles: ["algoritmo-substituiu-verdade-pela-atencao", "hannah-arendt-banalidade-do-mal", "ia-generativa-crise-da-autoria"],
+    editorialPriority: "P0"
+  },
+  "antropoceno-etica-crise-climatica": {
+    category: "Atualidade Filosófica",
+    subcategory: "ética ambiental",
+    dossier: null,
+    philosophers: ["Hans Jonas", "Arne Næss"],
+    books: [],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["Antropoceno", "crise climática", "justiça intergeracional", "ecologia profunda"],
+    relatedArticles: ["ai-act-europeu-filosofia-do-risco", "tecnologia-mais-rapida-que-sabedoria"],
+    editorialPriority: "P0"
+  },
   "budismo-filosofia-impermanencia-nao-eu": {
       "category": "Religião",
       "subcategory": "filosofia budista",
