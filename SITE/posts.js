@@ -3,6 +3,181 @@
 
 const POSTS = [
   {
+    id:       "epicteto-vida-obra-estoicismo-pratico",
+    slug:     "epicteto-vida-obra-estoicismo-pratico",
+    tag:      "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title:    "Epicteto: o escravo que ensinou o que depende de nós",
+    excerpt:  "Epicteto nasceu sem liberdade e virou um dos mestres mais lidos do estoicismo. Sua vida é, ela mesma, a demonstração da sua filosofia: o corpo pode ser propriedade de outro; o julgamento, nunca.",
+    date:     "14 de Julho de 2026",
+    dateISO:  "2026-07-14",
+    readTime: "11 min",
+    thumb:    "assets/article_cards/epicteto-vida-obra-estoicismo-pratico.jpg",
+    cover:    "assets/article_cards/epicteto-vida-obra-estoicismo-pratico.jpg",
+    tags:     ["epicteto","estoicismo","dicotomia do controle","escravidão na roma antiga","filosofia prática"],
+    featured: false,
+    metaTitle: "Epicteto: vida, obra e a dicotomia do controle",
+    metaDescription: "A biografia de Epicteto, o filósofo estoico que nasceu escravo em Hierápolis, foi expulso de Roma e fundou uma escola onde ensinou que a liberdade é interior.",
+    keywords: ["epicteto","epicteto biografia","dicotomia do controle","enchiridion","arriano","estoicismo romano"],
+    content: `
+<p><strong>Epicteto nasceu por volta de 50 d.C. em Hierápolis, na Frígia, e nasceu escravo.</strong> Esse fato não é um detalhe biográfico qualquer: é o ponto de partida de toda a sua filosofia. Um homem a quem a lei romana negava até a posse do próprio corpo passou a vida ensinando que a única liberdade que realmente importa nunca esteve à venda.</p>
+<img src="assets/article_cards/epicteto-vida-obra-estoicismo-pratico.jpg" alt="Gravura do século XVIII representando o filósofo estoico Epicteto" style="width:100%;border-radius:10px;display:block;margin:24px 0;object-fit:cover;aspect-ratio:16/9;">
+<h2>De escravo a filósofo de Roma</h2>
+<p>Epicteto pertenceu a Epafrodito, um liberto que serviu como secretário do imperador Nero. É provável que tenha sofrido um dano físico permanente na perna ainda como escravo — algumas fontes antigas atribuem isso a maus-tratos, embora a certeza histórica seja menor do que a lenda sugere. O que se sabe com segurança é que, em algum momento, foi libertado e passou a estudar com Musônio Rufo, o mais respeitado professor estoico de sua geração em Roma.</p>
+<h2>Expulso pelo imperador, não pela filosofia</h2>
+<p>Em 93 d.C., o imperador Domiciano expulsou todos os filósofos de Roma, temendo sua influência política. Epicteto se mudou para Nicópolis, na Grécia, e ali fundou sua própria escola. É um detalhe irônico e revelador: o poder político conseguiu expulsá-lo da cidade, mas não conseguiu tocar naquilo que ele próprio ensinava ser inatingível — seu julgamento, sua vontade, seu caráter.</p>
+<h2>A dicotomia do controle</h2>
+<p>O núcleo do pensamento de Epicteto é uma distinção simples de enunciar e difícil de praticar: existem coisas que dependem de nós — opinião, impulso, desejo, aversão — e coisas que não dependem de nós — corpo, propriedade, reputação, cargo, e, em seu caso extremo, a própria condição de escravo ou livre. Sofremos, segundo ele, sempre que tratamos como nossas coisas que não são, e desperdiçamos como se fossem alheias as poucas coisas que realmente comandamos.</p>
+<h2>Epicteto nunca escreveu um livro</h2>
+<p>Como Sócrates, Epicteto não deixou nada escrito por sua própria mão. Tudo o que conhecemos vem de um aluno, o historiador Árrian, que registrou suas aulas nos quatro livros das <em>Diatribes</em> (Discursos) e resumiu os pontos centrais no pequeno <em>Enchiridion</em>, o "Manual" que se tornaria um dos textos mais lidos e reeditados de toda a filosofia estoica, influenciando desde imperadores romanos até leitores contemporâneos.</p>
+<h2>Por que ele ainda é lido</h2>
+<p>A força de Epicteto não está em um sistema metafísico complexo, mas na aplicação prática e quase implacável de uma ideia simples: culpar circunstâncias externas pelo próprio sofrimento é, para ele, o erro fundamental de quase todos os seres humanos. Não é uma filosofia de resignação passiva — é uma filosofia de foco extremo naquilo que está genuinamente ao alcance de alguém, mesmo quando esse alguém começou a vida sem nenhum poder sobre a própria existência.</p>
+<h2>Fontes e créditos</h2>
+<p>Fontes: Árrian, <em>Discursos</em> e <em>Enchiridion</em> de Epicteto; verbete "Epictetus" da Stanford Encyclopedia of Philosophy; registros biográficos clássicos sobre a expulsão dos filósofos por Domiciano em 93 d.C. Imagem: gravura do século XVIII atribuída a Claude Reydellet (desenho) e S. Beyssent (gravura), via Wikimedia Commons, domínio público.</p>
+`,
+  },
+
+  {
+    id:       "seneca-vida-obra-estoicismo-romano",
+    slug:     "seneca-vida-obra-estoicismo-romano",
+    tag:      "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title:    "Sêneca: o estoico mais rico e mais contraditório de Roma",
+    excerpt:  "Tutor de Nero, um dos homens mais ricos do império e autor de textos que pregam desapego à riqueza — Sêneca viveu a tensão entre ensinar a virtude e sobreviver dentro do poder, até o poder cobrar a conta.",
+    date:     "14 de Julho de 2026",
+    dateISO:  "2026-07-14",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/seneca-vida-obra-estoicismo-romano.jpg",
+    cover:    "assets/article_cards/seneca-vida-obra-estoicismo-romano.jpg",
+    tags:     ["seneca","estoicismo romano","nero","cartas a lucilio","filosofia e poder"],
+    featured: false,
+    metaTitle: "Sêneca: vida, obra e a contradição do estoico rico",
+    metaDescription: "A biografia de Sêneca: exílio na Córsega, tutoria de Nero, as Cartas a Lucílio, a acusação de hipocrisia e o suicídio forçado que encerrou sua vida em 65 d.C.",
+    keywords: ["seneca biografia","cartas a lucilio","seneca nero","estoicismo romano","seneca suicidio"],
+    content: `
+<p><strong>Lúcio Aneu Sêneca nasceu por volta de 4 a.C. em Córdoba, na Hispânia, e morreu em 65 d.C. sob ordens do próprio homem que ele havia educado.</strong> Entre esses dois pontos, viveu uma das trajetórias mais bem-sucedidas e mais moralmente ambíguas de toda a filosofia romana: estadista, dramaturgo, conselheiro imperial e, ao mesmo tempo, um dos homens mais ricos de seu tempo escrevendo sobre os perigos da riqueza.</p>
+<img src="assets/article_cards/seneca-vida-obra-estoicismo-romano.jpg" alt="Desenho de Peter Paul Rubens representando o chamado Pseudo-Sêneca, busto romano tradicionalmente identificado com o filósofo" style="width:100%;border-radius:10px;display:block;margin:24px 0;object-fit:cover;aspect-ratio:16/9;">
+<h2>Exílio na Córsega</h2>
+<p>Em 41 d.C., Sêneca foi acusado de adultério com Júlia Livila, irmã de Calígula, por ordem do imperador Cláudio, e passou oito anos exilado na ilha da Córsega. Foi um período de quase apagamento político — e, segundo seus próprios escritos consolatórios da época, também um período de reflexão forçada sobre perda, tempo e o que realmente vale a pena lamentar.</p>
+<h2>Tutor de Nero</h2>
+<p>Recuperado do exílio em 49 d.C. por influência de Agripina, mãe do futuro imperador, Sêneca tornou-se tutor do jovem Nero. Durante os primeiros anos do reinado de Nero, muitos historiadores atribuem a Sêneca e ao prefeito Burro uma influência moderadora sobre um imperador que se tornaria, mais tarde, um dos mais violentos da história romana.</p>
+<h2>A acusação de hipocrisia</h2>
+<p>Sêneca acumulou uma fortuna descomunal para os padrões da época — incluindo empréstimos concedidos até mesmo na Britânia, segundo o historiador Cássio Dio — enquanto escrevia tratados como <em>Sobre a Vida Breve</em> e cartas inteiras recomendando desapego material e simplicidade. Críticos antigos e modernos apontaram essa tensão como hipocrisia; seus defensores argumentam que Sêneca nunca disse que a riqueza era proibida, apenas que ela não deveria comandar a alma de quem a possui — um ensinamento mais difícil de julgar do que de enunciar.</p>
+<h2>As Cartas a Lucílio</h2>
+<p>Sua obra mais lida hoje, as <em>Epistulae Morales ad Lucilium</em> (Cartas a Lucílio), reúne 124 cartas filosóficas sobre tempo, morte, amizade, fortuna e virtude, escritas nos últimos anos de vida. Ao lado delas, tratados como <em>Sobre a Ira</em> e <em>Sobre a Clemência</em>, além de tragédias como <em>Medeia</em> e <em>Tiestes</em>, fazem de Sêneca uma das poucas figuras antigas que dominou simultaneamente a filosofia, a política e o teatro.</p>
+<h2>A morte ordenada por Nero</h2>
+<p>Em 65 d.C., Sêneca foi implicado na conspiração de Pisão contra Nero. Não há certeza histórica sobre sua real participação, mas Nero ordenou que ele se suicidasse. Segundo o relato de Tácito, Sêneca cortou os próprios pulsos diante de amigos e discípulos, ditando palavras finais, em uma cena que os antigos liam explicitamente como uma tentativa de morrer à maneira de Sócrates — com serenidade filosófica diante da morte imposta pelo poder.</p>
+<h2>Fontes e créditos</h2>
+<p>Fontes: Tácito, <em>Anais</em>, sobre o exílio, a tutoria de Nero e a morte de Sêneca; Cássio Dio sobre os empréstimos na Britânia; Sêneca, <em>Epistulae Morales ad Lucilium</em> e <em>De Brevitate Vitae</em>. Imagem: desenho de Peter Paul Rubens, "Bust of Pseudo-Seneca" (c. 1600-1626), Robert Lehman Collection, Metropolitan Museum of Art, via Wikimedia Commons, CC0.</p>
+`,
+  },
+
+  {
+    id:       "karl-marx-vida-obra-materialismo-historico",
+    slug:     "karl-marx-vida-obra-materialismo-historico",
+    tag:      "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title:    "Karl Marx: da crítica a Hegel ao materialismo histórico",
+    excerpt:  "Marx morreu na pobreza em Londres, sustentado pelo amigo Friedrich Engels, depois de escrever a obra que mais reorganizou o pensamento político dos dois séculos seguintes.",
+    date:     "14 de Julho de 2026",
+    dateISO:  "2026-07-14",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/karl-marx-vida-obra-materialismo-historico.jpg",
+    cover:    "assets/article_cards/karl-marx-vida-obra-materialismo-historico.jpg",
+    tags:     ["karl marx","materialismo histórico","luta de classes","hegel","o capital"],
+    featured: false,
+    metaTitle: "Karl Marx: vida, obra e o materialismo histórico",
+    metaDescription: "A biografia de Karl Marx: a formação em Trier, a ruptura com Hegel, o exílio em Paris, Bruxelas e Londres, a parceria com Engels e a construção de O Capital.",
+    keywords: ["karl marx biografia","materialismo historico","manifesto comunista","o capital","marx engels"],
+    content: `
+<p><strong>Karl Marx nasceu em 1818 na cidade de Trier, então parte da Prússia, filho de uma família judaica convertida ao luteranismo por razões mais pragmáticas do que religiosas.</strong> Formou-se em direito e depois em filosofia, e foi justamente na filosofia que travou o primeiro grande combate de sua vida intelectual: a ruptura com o idealismo de Hegel.</p>
+<img src="assets/article_cards/karl-marx-vida-obra-materialismo-historico.jpg" alt="Fotografia de Karl Marx feita por John Jabez Edwin Mayall antes de 1875" style="width:100%;border-radius:10px;display:block;margin:24px 0;object-fit:cover;aspect-ratio:16/9;">
+<h2>A herança e a inversão de Hegel</h2>
+<p>Marx doutorou-se com uma tese comparando as filosofias da natureza de Demócrito e Epicuro, mas foi a leitura crítica de Hegel que definiu seu método. Onde Hegel via a história como o desdobramento de uma Ideia ou Espírito, Marx propôs uma inversão materialista: não é a consciência que determina a existência social, mas a existência social — as relações de produção, o trabalho, a economia — que determina a consciência.</p>
+<h2>Jornalista perseguido, exilado tríplice</h2>
+<p>Como editor da <em>Rheinische Zeitung</em>, Marx escreveu artigos que levaram o jornal a ser fechado pela censura prussiana. Seguiu-se um exílio em cadeia: Paris, onde conheceu Friedrich Engels em 1844, depois Bruxelas, de onde foi expulso após a publicação do <em>Manifesto do Partido Comunista</em> em 1848, e finalmente Londres, onde viveria o resto da vida.</p>
+<h2>A parceria com Engels</h2>
+<p>Friedrich Engels não foi apenas colaborador intelectual de Marx — foi seu sustento material. Filho de um industrial têxtil, Engels financiou boa parte da vida de Marx em Londres, permitindo que ele passasse décadas pesquisando na Biblioteca do Museu Britânico para escrever sua obra mais ambiciosa.</p>
+<h2>O Capital e o materialismo histórico</h2>
+<p>Publicado em 1867 (o primeiro dos três volumes, os outros dois organizados por Engels após a morte de Marx), <em>O Capital</em> analisa o capitalismo através de conceitos como valor-trabalho, mais-valia e alienação: o trabalhador, para Marx, produz um valor maior do que aquele que recebe como salário, e se torna estranho ao próprio produto do seu trabalho, ao próprio processo produtivo e, em última instância, a si mesmo.</p>
+<h2>Pobreza pessoal, influência histórica</h2>
+<p>Apesar do apoio de Engels, Marx viveu boa parte da vida londrina em condições financeiras precárias — três de seus filhos morreram ainda crianças, em parte por causa das condições de moradia. Morreu em 1883, relativamente pouco conhecido fora de círculos socialistas, e foi enterrado no Cemitério de Highgate. Nas décadas seguintes, sua obra se tornaria uma das bases intelectuais mais discutidas e mais disputadas da política, da economia e da sociologia modernas.</p>
+<h2>Fontes e créditos</h2>
+<p>Fontes: Karl Marx, <em>O Capital</em>, vol. 1; Marx e Engels, <em>Manifesto do Partido Comunista</em>; biografias clássicas sobre o exílio em Paris, Bruxelas e Londres e a relação com Friedrich Engels. Imagem: fotografia de John Jabez Edwin Mayall (antes de 24 de agosto de 1875), acervo do International Institute of Social History (Amsterdã), via Wikimedia Commons, domínio público.</p>
+`,
+  },
+
+  {
+    id:       "immanuel-kant-vida-obra-criticas",
+    slug:     "immanuel-kant-vida-obra-criticas",
+    tag:      "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title:    "Immanuel Kant: a vida de rotina rígida que revolucionou a razão",
+    excerpt:  "Kant nunca viajou mais do que algumas dezenas de quilômetros de Königsberg. Nessa vida quase imóvel, produziu uma das reviravoltas mais radicais da história da filosofia.",
+    date:     "14 de Julho de 2026",
+    dateISO:  "2026-07-14",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/immanuel-kant-vida-obra-criticas.jpg",
+    cover:    "assets/article_cards/immanuel-kant-vida-obra-criticas.jpg",
+    tags:     ["kant","criticismo","imperativo categorico","iluminismo","idealismo transcendental"],
+    featured: false,
+    metaTitle: "Immanuel Kant: vida, obra e a virada crítica",
+    metaDescription: "A biografia de Immanuel Kant: a rotina em Königsberg, o despertar do sono dogmático provocado por Hume e as três Críticas que fundaram o idealismo transcendental.",
+    keywords: ["kant biografia","critica da razao pura","imperativo categorico","kant konigsberg","idealismo transcendental"],
+    content: `
+<p><strong>Immanuel Kant nasceu em 1724 em Königsberg, na Prússia Oriental, e morreu em 1804 na mesma cidade, sem jamais ter se afastado dela por mais do que uma pequena distância ao longo de toda a vida.</strong> A biografia de Kant é, em certo sentido, a demonstração de que uma revolução filosófica não precisa de uma vida de aventuras — precisa de uma mente disposta a levar perguntas simples até as últimas consequências.</p>
+<img src="assets/article_cards/immanuel-kant-vida-obra-criticas.jpg" alt="Retrato pintado de Immanuel Kant, c. 1790" style="width:100%;border-radius:10px;display:block;margin:24px 0;object-fit:cover;aspect-ratio:16/9;">
+<h2>A rotina que virou lenda</h2>
+<p>Kant seguia uma rotina diária tão precisa que, segundo relatos da época, vizinhos ajustavam relógios pelo horário em que ele saía para sua caminhada vespertina. Professor da Universidade de Königsberg, viveu de forma modesta e disciplinada, dedicando a maior parte da vida ao ensino e à escrita filosófica.</p>
+<h2>O despertar do sono dogmático</h2>
+<p>Kant descreveu a leitura do escocês David Hume como o que o "despertou do sono dogmático". O ceticismo de Hume sobre causalidade — a ideia de que nunca observamos diretamente uma coisa causando outra, apenas sequências repetidas de eventos — colocou em xeque toda a confiança racionalista no conhecimento humano. Kant passou a década seguinte tentando responder a esse desafio.</p>
+<h2>As três Críticas</h2>
+<p>O resultado foi um dos projetos filosóficos mais ambiciosos já escritos: a <em>Crítica da Razão Pura</em> (1781), que investiga os limites e as condições do conhecimento humano; a <em>Crítica da Razão Prática</em> (1788), que funda a ética no chamado imperativo categórico — aja apenas segundo máximas que você poderia querer que se tornassem lei universal; e a <em>Crítica da Faculdade do Juízo</em> (1790), sobre estética e finalidade na natureza.</p>
+<h2>Nem racionalista, nem empirista</h2>
+<p>A síntese kantiana propõe que a mente humana não é uma tábula rasa que apenas recebe impressões do mundo (como diziam os empiristas), nem possui acesso direto a verdades puramente racionais independentes da experiência (como diziam os racionalistas). Em vez disso, a mente estrutura ativamente a experiência através de categorias como espaço, tempo e causalidade — uma posição que ele chamou de idealismo transcendental.</p>
+<h2>Um retrato na parede, uma revolução na história</h2>
+<p>Diz a tradição biográfica que o único retrato que Kant mantinha em seu escritório era o de Jean-Jacques Rousseau, cuja defesa da dignidade humana comum o impressionou profundamente. Kant viveu para ver o início da Revolução Francesa e escreveu, já idoso, sobre o Iluminismo com o lema que se tornaria símbolo do movimento: <em>Sapere aude</em> — ouse saber.</p>
+<h2>Fontes e créditos</h2>
+<p>Fontes: Immanuel Kant, <em>Crítica da Razão Pura</em>, <em>Crítica da Razão Prática</em> e "Resposta à pergunta: o que é o Iluminismo?"; registros biográficos clássicos sobre a rotina em Königsberg e a influência de Hume. Imagem: retrato pintado, autoria incerta (possivelmente Elisabeth von Stägemann, escola de Anton Graff), c. 1790, via Wikimedia Commons, domínio público.</p>
+`,
+  },
+
+  {
+    id:       "blaise-pascal-vida-obra-aposta-razao-coracao",
+    slug:     "blaise-pascal-vida-obra-aposta-razao-coracao",
+    tag:      "BIOGRAFIA FILOSÓFICA",
+    category: "Filosofia",
+    title:    "Blaise Pascal: o gênio da matemática que apostou em Deus",
+    excerpt:  "Antes dos vinte anos, Pascal já tinha inventado uma calculadora mecânica. Depois de uma noite de conversão mística em 1654, passou a escrever sobre os limites da razão diante da fé.",
+    date:     "14 de Julho de 2026",
+    dateISO:  "2026-07-14",
+    readTime: "11 min",
+    thumb:    "assets/article_cards/blaise-pascal-vida-obra-aposta-razao-coracao.jpg",
+    cover:    "assets/article_cards/blaise-pascal-vida-obra-aposta-razao-coracao.jpg",
+    tags:     ["blaise pascal","aposta de pascal","pensees","jansenismo","filosofia e fe"],
+    featured: false,
+    metaTitle: "Blaise Pascal: vida, obra e a aposta entre razão e fé",
+    metaDescription: "A biografia de Blaise Pascal: prodígio da matemática, inventor da Pascalina, autor das Cartas Provinciais e dos Pensamentos, e da célebre aposta sobre a existência de Deus.",
+    keywords: ["blaise pascal biografia","aposta de pascal","pensees pascal","jansenismo","pascal matematica"],
+    content: `
+<p><strong>Blaise Pascal nasceu em 1623 em Clermont-Ferrand, na França, e morreu com apenas 39 anos, em 1662 — tempo suficiente para se tornar, ao mesmo tempo, um dos maiores matemáticos, físicos e escritores religiosos de sua época.</strong> Poucas vidas filosóficas concentram tanta produção intelectual em um espaço de tempo tão curto.</p>
+<img src="assets/article_cards/blaise-pascal-vida-obra-aposta-razao-coracao.jpg" alt="Retrato de Blaise Pascal, cópia de pintura de François II Quesnel, c. 1690, Palácio de Versalhes" style="width:100%;border-radius:10px;display:block;margin:24px 0;object-fit:cover;aspect-ratio:16/9;">
+<h2>Um prodígio antes dos vinte anos</h2>
+<p>Educado pelo próprio pai, Pascal demonstrou talento matemático precoce e, ainda adolescente, construiu a Pascalina, uma das primeiras máquinas de calcular mecânicas da história, projetada para ajudar seu pai, cobrador de impostos, com somas repetitivas. Em correspondência com Pierre de Fermat, lançou as bases da teoria da probabilidade, e o triângulo aritmético que organiza coeficientes binomiais leva seu nome até hoje.</p>
+<h2>Física, pressão e vácuo</h2>
+<p>Pascal também investigou fenômenos físicos como a pressão atmosférica, realizando experimentos que ajudaram a confirmar a existência do vácuo — uma questão cientificamente controversa na época. O princípio físico que descreve a transmissão de pressão em fluidos ainda é conhecido como Lei de Pascal, e sua unidade de medida de pressão, o pascal, também carrega seu nome.</p>
+<h2>A noite de fogo</h2>
+<p>Na noite de 23 de novembro de 1654, Pascal viveu uma experiência religiosa intensa que registrou em um pequeno texto conhecido como o "Memorial". Costurou o papel no forro do próprio casaco, e ele só foi descoberto por um criado depois de sua morte. O texto não fala do Deus dos filósofos, mas do "Deus de Abraão, Deus de Isaac, Deus de Jacó" — uma distinção que marcaria toda sua obra posterior.</p>
+<h2>Jansenismo e as Cartas Provinciais</h2>
+<p>Aproximou-se então do jansenismo, movimento religioso ligado ao convento de Port-Royal, e escreveu as <em>Cartas Provinciais</em>, uma série de textos polêmicos e satíricos contra a casuística jesuíta, considerados hoje um marco da prosa filosófica e argumentativa em língua francesa.</p>
+<h2>A aposta e os Pensamentos</h2>
+<p>Nos últimos anos de vida, Pascal reuniu notas fragmentadas para uma grande obra de defesa da fé cristã, nunca concluída, publicada postumamente como <em>Pensées</em> (Pensamentos). É ali que aparece sua argumentação mais famosa, conhecida como a aposta de Pascal: diante da incerteza racional sobre a existência de Deus, apostar que Ele existe e viver de acordo com essa aposta tem um custo-benefício superior a apostar o contrário — um dos primeiros usos filosóficos explícitos de raciocínio de decisão sob incerteza. É dos <em>Pensamentos</em> também a frase que resume sua visão sobre os limites da razão: "o coração tem razões que a própria razão desconhece".</p>
+<h2>Fontes e créditos</h2>
+<p>Fontes: Blaise Pascal, <em>Pensées</em> e <em>Lettres provinciales</em>; correspondência entre Pascal e Fermat sobre teoria da probabilidade; registros históricos sobre a "noite de fogo" de 1654 e o Memorial encontrado após sua morte. Imagem: retrato anônimo, cópia de pintura de François II Quesnel (c. 1690), Palácio de Versalhes, via Wikimedia Commons, domínio público.</p>
+`,
+  },
+
+  {
     id:       "budismo-filosofia-impermanencia-nao-eu",
     slug:     "budismo-filosofia-impermanencia-nao-eu",
     tag:      "FILOSOFIA DA RELIGIÃO",
