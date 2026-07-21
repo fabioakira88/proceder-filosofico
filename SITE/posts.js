@@ -2,6 +2,443 @@
 // Adicione novos artigos neste array.
 
 const POSTS = [
+
+  {
+    id:       "excesso-de-conforto-civilizacoes-frageis",
+    slug:     "excesso-de-conforto-civilizacoes-frageis",
+    tag:      "FILOSOFIA DA CULTURA",
+    category: "Atualidade Filosófica",
+    title:    "O excesso de conforto produz civilizações frágeis?",
+    excerpt:  "Conforto não é decadência automática. O problema começa quando bem-estar vira incapacidade de suportar limite, frustração e responsabilidade.",
+    date:     "21 de Julho de 2026",
+    dateISO:  "2026-07-21",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
+    cover:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
+    tags:     ["conforto", "civilização", "estoicismo", "Nietzsche", "Byung-Chul Han"],
+    featured: true,
+    metaTitle: "O excesso de conforto produz civilizações frágeis?",
+    metaDescription: "Ensaio sobre conforto, disciplina, resiliência, estoicismo, Nietzsche, Byung-Chul Han e o risco de romantizar sofrimento.",
+    keywords: ["excesso de conforto", "civilizações frágeis", "estoicismo", "último homem", "Byung-Chul Han", "resiliência"],
+    content: `
+<p><strong>O conforto é uma conquista civilizatória. A fragilidade começa quando ele deixa de proteger a vida e passa a substituir a formação do caráter.</strong></p>
+
+<p>Seria injusto tratar aquecimento, saúde pública, segurança, alimento disponível, direitos trabalhistas e tecnologias de cuidado como sinais de decadência. Grande parte da história humana foi marcada por sofrimento evitável, doença, fome, violência e trabalho brutal. Eliminar parte desse sofrimento não torna uma sociedade menor. Pelo contrário: pode ser uma das marcas de sua maturidade moral.</p>
+
+<p>A pergunta filosófica é outra. O que acontece quando uma cultura começa a imaginar que toda frustração é intolerável, toda espera é agressão, todo limite é opressão e toda dificuldade deve desaparecer imediatamente? Nesse ponto, o conforto deixa de ser condição para florescimento e se transforma em pedagogia da incapacidade.</p>
+
+<h2>Conforto material e formação moral</h2>
+
+<p>Os estoicos não defendiam a pobreza como virtude em si. Epicteto e Marco Aurélio insistiam que a liberdade humana depende de distinguir aquilo que controlamos daquilo que não controlamos. A adversidade, quando não destrói a pessoa, pode revelar a diferença entre dependência e domínio de si.</p>
+
+<p>Essa tese precisa ser usada com cuidado. Dor imposta, miséria, abuso e violência não são escolas morais românticas. Muitas vezes apenas mutilam. O erro contemporâneo, porém, é concluir que toda forma de desconforto deve ser expulsa da vida. Uma pessoa incapaz de lidar com perda, crítica, demora ou contradição torna-se vulnerável justamente porque nunca treinou a própria alma para o real.</p>
+
+<h2>Nietzsche e o último homem</h2>
+
+<p>Em <em>Assim falou Zaratustra</em>, Nietzsche descreve a figura do “último homem”: aquele que deseja apenas segurança, pequeno prazer, ausência de risco e conforto previsível. Não se trata de uma crítica simples ao bem-estar. Nietzsche mira uma cultura que perde grandeza porque já não suporta tensão, criação e ultrapassagem de si.</p>
+
+<p>O último homem não é feliz no sentido forte. Ele está anestesiado. Prefere estabilidade sem horizonte a uma vida capaz de criar valores. Sua fragilidade não nasce da cama macia, mas da recusa de qualquer exigência que o retire da zona conhecida.</p>
+
+<h2>Byung-Chul Han e a sociedade sem negatividade</h2>
+
+<p>Byung-Chul Han descreve a sociedade contemporânea como uma cultura que tenta expulsar a negatividade: dor, limite, silêncio, conflito, alteridade e demora. O sujeito moderno não é apenas reprimido de fora; ele se explora em nome de desempenho, positividade e otimização.</p>
+
+<p>O conforto, nesse cenário, torna-se ambíguo. De um lado, promete suavizar a vida. De outro, exige produtividade emocional permanente: estar bem, render, consumir, responder, melhorar. A fragilidade não vem apenas da ausência de dureza, mas da incapacidade de habitar qualquer experiência que não seja imediatamente agradável.</p>
+
+<h2>O risco político de romantizar sofrimento</h2>
+
+<p>Há um perigo real em discursos sobre civilizações frágeis: eles podem virar defesa da crueldade. Governos, empresas e elites podem usar a linguagem da disciplina para justificar exploração, precariedade e abandono. “Sofrer fortalece” é uma frase conveniente quando dita por quem não sofrerá as consequências.</p>
+
+<p>Por isso, a distinção decisiva é entre sofrimento evitável e frustração formativa. Uma sociedade decente deve reduzir miséria, violência e humilhação. Mas não deve educar seus membros para acreditar que viver bem significa nunca enfrentar limite. Civilização não é tornar tudo fácil; é criar condições para que dificuldades inevitáveis sejam enfrentadas sem desumanização.</p>
+
+<h2>Uma conclusão sem nostalgia da dureza</h2>
+
+<p>O excesso de conforto pode produzir fragilidade quando elimina o treino da paciência, da atenção, do esforço e da responsabilidade. Mas a solução não é cultuar dor, pobreza ou brutalidade. A tarefa é mais fina: preservar conquistas materiais sem perder musculatura moral.</p>
+
+<p>Uma civilização forte não é aquela que sofre mais. É aquela que sabe proteger os vulneráveis, limitar o sofrimento evitável e ainda formar pessoas capazes de responder ao real quando ele não obedece aos seus desejos.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Epicteto, <em>Enchiridion</em>, especialmente a distinção entre o que depende e o que não depende de nós.</li>
+  <li>Friedrich Nietzsche, <em>Assim falou Zaratustra</em>, prólogo e figura do “último homem”.</li>
+  <li>Byung-Chul Han, <em>A Sociedade do Cansaço</em> e <em>A Expulsão do Outro</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, “Nietzsche’s Moral and Political Philosophy”, disponível em <a href="https://plato.stanford.edu/entries/nietzsche-moral-political/" target="_blank" rel="noopener">plato.stanford.edu</a>.</li>
+  <li>Leia também: <a href="/artigos/conforto-excessivo-enfraquece-civilizacoes/">O Conforto Excessivo Enfraquece Civilizações</a> e <a href="/artigos/tecnologia-mais-rapida-que-sabedoria/">A tecnologia ficou mais rápida que a sabedoria</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre conforto, fragilidade moral, estoicismo, Nietzsche, Byung-Chul Han e os limites de romantizar o sofrimento.",
+    subcategory: "Filosofia da cultura",
+    dossier: "",
+    philosophers: ["Epicteto", "Marco Aurélio", "Friedrich Nietzsche", "Byung-Chul Han"],
+    books: ["Enchiridion", "Meditações", "Assim falou Zaratustra", "A Sociedade do Cansaço"],
+    civilization: "Contemporânea",
+    period: "Século XXI",
+    themes: ["conforto", "resiliência", "disciplina", "fragilidade", "civilização"],
+    relatedArticles: ["conforto-excessivo-enfraquece-civilizacoes", "tecnologia-mais-rapida-que-sabedoria", "vida-pendulo-schopenhauer-desejo-humano"],
+    editorialPriority: "P1",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
+    updated: "2026-07-21"
+  },
+
+  {
+    id:       "por-que-civilizacoes-entram-em-decadencia",
+    slug:     "por-que-civilizacoes-entram-em-decadencia",
+    tag:      "HISTÓRIA DA CIVILIZAÇÃO",
+    category: "História da Civilização",
+    title:    "Por que as civilizações entram em decadência?",
+    excerpt:  "Civilizações não caem por uma causa única. Elas se enfraquecem quando instituições, coesão social, imaginação histórica e capacidade de resposta perdem forma.",
+    date:     "21 de Julho de 2026",
+    dateISO:  "2026-07-21",
+    readTime: "14 min",
+    thumb:    "assets/article_cards/por-que-civilizacoes-entram-em-decadencia.webp",
+    cover:    "assets/article_cards/por-que-civilizacoes-entram-em-decadencia.webp",
+    tags:     ["civilização", "decadência", "Ibn Khaldun", "Vico", "Spengler", "Toynbee"],
+    featured: true,
+    metaTitle: "Por que as civilizações entram em decadência?",
+    metaDescription: "Ensaio comparativo sobre decadência civilizacional em Ibn Khaldun, Vico, Spengler e Toynbee, com limites e críticas das teorias de declínio.",
+    keywords: ["decadência das civilizações", "Ibn Khaldun", "Vico", "Spengler", "Toynbee", "história da civilização"],
+    content: `
+<p><strong>Civilizações raramente entram em decadência por uma única ferida. Elas costumam enfraquecer quando já não conseguem responder às próprias contradições.</strong></p>
+
+<p>A tentação é buscar uma causa simples: invasões, corrupção, luxo, crise moral, economia, religião, tecnologia ou perda de valores. Cada uma dessas forças pode importar. Nenhuma, sozinha, explica a complexidade histórica. A decadência civilizacional é menos um evento do que um processo: instituições perdem legitimidade, elites perdem responsabilidade, populações perdem confiança e problemas antigos deixam de receber respostas novas.</p>
+
+<p>Quatro autores ajudam a pensar esse processo sem reduzi-lo a slogan: Ibn Khaldun, Giambattista Vico, Oswald Spengler e Arnold Toynbee. Cada um propôs uma gramática da ascensão e da queda. Todos precisam ser lidos com cuidado.</p>
+
+<h2>Ibn Khaldun e a perda da coesão</h2>
+
+<p>Ibn Khaldun, no século XIV, formulou uma das teorias mais poderosas sobre a dinâmica dos grupos humanos. Seu conceito de <em>asabiyyah</em> costuma ser traduzido como coesão, solidariedade grupal ou vínculo social. Para ele, grupos fortes nascem de disciplina, interdependência e senso compartilhado de destino.</p>
+
+<p>Com o tempo, porém, a prosperidade pode dissolver a energia que tornou o grupo forte. Elites se afastam da vida concreta, o luxo substitui a responsabilidade, a administração pesa sobre a vitalidade social e a coesão inicial se enfraquece. A decadência, aqui, não é punição moral automática. É perda de vínculo.</p>
+
+<h2>Vico e os ciclos históricos</h2>
+
+<p>Giambattista Vico imaginou a história como movimento de idades: dos deuses, dos heróis e dos homens. Sua tese não deve ser lida como relógio rígido, mas como tentativa de entender como linguagens, leis, imaginação e instituições se transformam.</p>
+
+<p>Para Vico, a racionalidade moderna não elimina a possibilidade de regressão. Uma sociedade altamente refinada pode voltar à barbárie quando perde a densidade simbólica que sustentava seus vínculos. A barbárie final não é falta de inteligência; pode ser excesso de cálculo sem mundo comum.</p>
+
+<h2>Spengler e a morfologia das culturas</h2>
+
+<p>Oswald Spengler descreveu culturas como organismos históricos que nascem, amadurecem e se tornam civilizações tardias. Sua obra, <em>O Declínio do Ocidente</em>, influenciou debates sobre crise cultural, técnica, urbanização e perda de forma espiritual.</p>
+
+<p>Mas Spengler precisa ser lido criticamente. Sua visão tende ao determinismo: como se culturas tivessem destino biológico inevitável. Isso torna sua análise sugestiva, mas perigosa quando transforma história em fatalidade. Civilizações não são plantas. Elas contêm conflitos, escolhas, acidentes, reformas e possibilidades.</p>
+
+<h2>Toynbee e o desafio-resposta</h2>
+
+<p>Arnold Toynbee propôs uma alternativa mais dinâmica: civilizações crescem quando respondem criativamente a desafios. Desafio ambiental, pressão externa, crise institucional ou tensão espiritual podem destruir um povo, mas também podem produzir inovação.</p>
+
+<p>A decadência começa quando a minoria criadora se torna apenas minoria dominante. Em vez de oferecer respostas, ela conserva privilégios. Em vez de inspirar, administra. A sociedade continua existindo, mas sua imaginação histórica empobrece.</p>
+
+<h2>Aplicação prudente ao presente</h2>
+
+<p>O presente oferece sinais que esses autores ajudariam a interrogar: polarização, solidão social, descrédito institucional, concentração econômica, crise climática, aceleração tecnológica e esgotamento psíquico. Mas diagnosticar problemas não autoriza profecias fáceis.</p>
+
+<p>O discurso da decadência costuma seduzir porque oferece superioridade moral: “nós enxergamos a queda que os outros ignoram”. A filosofia deve resistir a essa vaidade. Decadência é uma categoria séria quando nos obriga a perguntar se ainda somos capazes de responder aos desafios que criamos.</p>
+
+<h2>Conclusão</h2>
+
+<p>Civilizações entram em decadência quando perdem coesão, sentido, capacidade institucional e imaginação de futuro. Mas a história não é sentença fechada. O que parece declínio pode ser transição; o que parece grandeza pode esconder apodrecimento.</p>
+
+<p>A pergunta decisiva talvez não seja “estamos decadentes?”, mas: quais desafios já enxergamos, quais respostas estamos adiando e que tipo de vida comum ainda somos capazes de construir?</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Ibn Khaldun, <em>Muqaddimah</em>, especialmente a análise da <em>asabiyyah</em>.</li>
+  <li>Giambattista Vico, <em>A Ciência Nova</em>.</li>
+  <li>Oswald Spengler, <em>O Declínio do Ocidente</em>.</li>
+  <li>Arnold J. Toynbee, <em>A Study of History</em>.</li>
+  <li>Encyclopaedia Britannica, verbetes sobre <a href="https://www.britannica.com/biography/Ibn-Khaldun" target="_blank" rel="noopener">Ibn Khaldun</a>, <a href="https://www.britannica.com/biography/Giambattista-Vico" target="_blank" rel="noopener">Vico</a>, <a href="https://www.britannica.com/biography/Oswald-Spengler" target="_blank" rel="noopener">Spengler</a> e <a href="https://www.britannica.com/biography/Arnold-Joseph-Toynbee" target="_blank" rel="noopener">Toynbee</a>.</li>
+  <li>Leia também: <a href="/artigos/modernidade-matou-sagrado/">A modernidade matou o sagrado?</a> e <a href="/artigos/conforto-excessivo-enfraquece-civilizacoes/">O Conforto Excessivo Enfraquece Civilizações</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre teorias de decadência civilizacional em Ibn Khaldun, Vico, Spengler e Toynbee.",
+    subcategory: "Teoria da história",
+    dossier: "",
+    philosophers: ["Ibn Khaldun", "Giambattista Vico", "Oswald Spengler", "Arnold Toynbee"],
+    books: ["Muqaddimah", "A Ciência Nova", "O Declínio do Ocidente", "A Study of History"],
+    civilization: "Comparada",
+    period: "Longa duração histórica",
+    themes: ["civilização", "decadência", "coesão social", "ciclos históricos", "desafio e resposta"],
+    relatedArticles: ["conforto-excessivo-enfraquece-civilizacoes", "modernidade-matou-sagrado", "poetas-dramaturgos-educacao-grecia-antiga"],
+    editorialPriority: "P1",
+    civilizations: ["Ocidente", "Mundo islâmico", "Civilizações comparadas"],
+    historicalPeriods: ["Antiguidade", "Idade Média", "Modernidade", "Contemporaneidade"],
+    format: "Ensaio comparativo",
+    heroImage: "assets/article_cards/por-que-civilizacoes-entram-em-decadencia.webp",
+    updated: "2026-07-21"
+  },
+
+  {
+    id:       "sociedade-moderna-destruiu-o-silencio",
+    slug:     "sociedade-moderna-destruiu-o-silencio",
+    tag:      "FILOSOFIA DA CULTURA",
+    category: "Atualidade Filosófica",
+    title:    "A sociedade moderna destruiu o silêncio",
+    excerpt:  "O silêncio não desapareceu apenas das ruas. Ele foi colonizado por estímulos, produtividade e medo de permanecer consigo mesmo.",
+    date:     "21 de Julho de 2026",
+    dateISO:  "2026-07-21",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
+    cover:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
+    tags:     ["silêncio", "atenção", "Pascal", "Schopenhauer", "Heidegger", "Byung-Chul Han"],
+    featured: true,
+    metaTitle: "A sociedade moderna destruiu o silêncio",
+    metaDescription: "Ensaio sobre silêncio físico, silêncio interior, isolamento, silenciamento político, Pascal, Schopenhauer, Nietzsche, Heidegger e economia da atenção.",
+    keywords: ["silêncio", "sociedade moderna", "economia da atenção", "Pascal", "Schopenhauer", "Heidegger", "Byung-Chul Han"],
+    content: `
+<p><strong>A modernidade não destruiu apenas o silêncio exterior. Ela tornou difícil suportar o silêncio interior.</strong></p>
+
+<p>É preciso distinguir quatro coisas diferentes. Silêncio físico é ausência relativa de ruído. Silêncio interior é capacidade de permanecer com a própria atenção. Isolamento é ruptura de vínculos. Silenciamento político é impedimento de fala. Confundir esses sentidos empobrece o problema.</p>
+
+<p>Uma sociedade pode ser barulhenta e democrática. Pode ser silenciosa e opressiva. Pode estimular conversas e ainda impedir pensamento. O que caracteriza nosso tempo não é simplesmente haver sons demais, mas haver pouca disponibilidade para a pausa que permite compreender o que sentimos, desejamos e repetimos.</p>
+
+<h2>Pascal e a fuga de si</h2>
+
+<p>Pascal observou que grande parte da inquietação humana nasce da incapacidade de permanecer em repouso. O divertimento não é apenas lazer; é fuga. O ser humano se ocupa para não encontrar a própria finitude, a própria miséria, a própria pergunta sem resposta.</p>
+
+<p>A atualidade de Pascal é evidente. O entretenimento deixou de depender de festas, jogos ou salões. Tornou-se portátil, contínuo e personalizado. O vazio que antes aparecia numa sala silenciosa agora é preenchido antes mesmo de ser percebido.</p>
+
+<h2>Schopenhauer, Nietzsche e a interioridade</h2>
+
+<p>Schopenhauer via a vida humana atravessada pelo desejo incessante. Quando o desejo se satisfaz, surge tédio; quando não se satisfaz, sofrimento. O silêncio ameaça porque retira a pessoa da distração e a devolve ao movimento nu da vontade.</p>
+
+<p>Nietzsche, por outro lado, não tratou a solidão criadora como simples afastamento. A solidão pode ser condição de transfiguração, mas também pode ser abismo. O problema não é estar só; é não possuir força simbólica para transformar solidão em pensamento, criação ou verdade.</p>
+
+<h2>Heidegger e a dispersão impessoal</h2>
+
+<p>Heidegger descreveu a vida cotidiana como domínio do “a gente”: fala-se, pensa-se e deseja-se como se todos já soubessem o que deve ser pensado. A dispersão não precisa de muito barulho. Basta que a existência seja absorvida pelo ritmo impessoal do mundo.</p>
+
+<p>Nesse sentido, o silêncio interior é uma ruptura. Ele suspende a fala automática, a opinião pronta e a necessidade de reagir. Não garante autenticidade, mas abre uma possibilidade: a de ouvir algo que não venha apenas da corrente social.</p>
+
+<h2>Economia da atenção</h2>
+
+<p>Redes sociais e notificações não criaram do nada nossa fuga do silêncio. Elas industrializaram uma tendência antiga. Plataformas disputam segundos, recompensas, impulsos e reações. O intervalo tornou-se mercado.</p>
+
+<p>Byung-Chul Han ajuda a pensar essa saturação. A sociedade positiva elimina a demora, a negatividade e a distância. Tudo deve estar disponível, comunicável, compartilhável. O silêncio, porém, exige distância. Ele não performa bem.</p>
+
+<h2>Silêncio como resistência e privilégio</h2>
+
+<p>Recuperar o silêncio não significa exigir que todos vivam como monges. Também seria ingênuo esquecer que silêncio pode ser privilégio: quem trabalha em jornadas exaustivas, mora em ambientes precários ou vive sob violência nem sempre tem acesso real à contemplação.</p>
+
+<p>Mesmo assim, alguma forma de pausa continua sendo necessidade humana. Sem pausa, a palavra perde peso; a decisão moral vira reação; a tristeza vira conteúdo; a atenção vira mercadoria.</p>
+
+<h2>Conclusão</h2>
+
+<p>A sociedade moderna não destruiu todo silêncio. Ela destruiu a confiança nele. Aprendemos a desconfiar da pausa, do intervalo, da ausência de estímulo. Recuperá-lo não é nostalgia. É resistência contra a captura total da atenção.</p>
+
+<p>Talvez o silêncio não nos torne automaticamente melhores. Mas sem ele ficamos mais fáceis de conduzir, excitar, vender e convencer.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Blaise Pascal, <em>Pensamentos</em>, fragmentos sobre divertimento e inquietação.</li>
+  <li>Arthur Schopenhauer, <em>O Mundo como Vontade e Representação</em>.</li>
+  <li>Martin Heidegger, <em>Ser e Tempo</em>, análise da vida cotidiana e da impessoalidade.</li>
+  <li>Byung-Chul Han, <em>A Sociedade do Cansaço</em> e <em>A Expulsão do Outro</em>.</li>
+  <li>Leia também: <a href="/artigos/sociedade-moderna-destruiu-silencio/">A Sociedade Moderna Destruiu o Silêncio</a> e <a href="/artigos/tecnologia-mais-rapida-que-sabedoria/">A humanidade produz tecnologia mais rápido do que produz sabedoria</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre a destruição do silêncio, economia da atenção, vida interior e autores como Pascal, Schopenhauer, Nietzsche, Heidegger e Byung-Chul Han.",
+    subcategory: "Filosofia da cultura",
+    dossier: "",
+    philosophers: ["Blaise Pascal", "Arthur Schopenhauer", "Friedrich Nietzsche", "Martin Heidegger", "Byung-Chul Han"],
+    books: ["Pensamentos", "O Mundo como Vontade e Representação", "Ser e Tempo", "A Sociedade do Cansaço"],
+    civilization: "Contemporânea",
+    period: "Século XXI",
+    themes: ["silêncio", "atenção", "interioridade", "redes sociais", "modernidade"],
+    relatedArticles: ["sociedade-moderna-destruiu-silencio", "tecnologia-mais-rapida-que-sabedoria", "adorno-cultura-pensamento"],
+    editorialPriority: "P1",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Modernidade", "Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
+    updated: "2026-07-21"
+  },
+
+  {
+    id:       "sociedade-contemporanea-perdeu-o-rito",
+    slug:     "sociedade-contemporanea-perdeu-o-rito",
+    tag:      "ANTROPOLOGIA FILOSÓFICA",
+    category: "Antropologia",
+    title:    "A sociedade contemporânea perdeu o rito",
+    excerpt:  "Ritos não são enfeites arcaicos. Eles organizam passagem, pertencimento, memória e sentido comum quando não viram apenas espetáculo.",
+    date:     "21 de Julho de 2026",
+    dateISO:  "2026-07-21",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
+    cover:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
+    tags:     ["rito", "Durkheim", "Victor Turner", "Byung-Chul Han", "secularização"],
+    featured: true,
+    metaTitle: "A sociedade contemporânea perdeu o rito",
+    metaDescription: "Ensaio sobre ritos de passagem, repetição, comunidade, secularização, individualismo, Durkheim, Victor Turner e Byung-Chul Han.",
+    keywords: ["rito", "ritual", "Durkheim", "Victor Turner", "Byung-Chul Han", "antropologia filosófica", "secularização"],
+    content: `
+<p><strong>Uma sociedade sem ritos não fica simplesmente mais livre. Ela pode ficar mais desorientada.</strong></p>
+
+<p>Rito não é sinônimo de superstição. Também não é apenas cerimônia religiosa. Ritos são formas repetidas de dar corpo ao sentido: nascer, crescer, entrar numa comunidade, assumir responsabilidade, casar, despedir-se, morrer, celebrar, lamentar, recomeçar. Eles transformam acontecimentos biológicos ou sociais em experiências compartilhadas.</p>
+
+<p>A modernidade enfraqueceu muitos ritos tradicionais. Em parte, isso foi libertador. Ritos também podem humilhar, excluir, controlar e impor papéis rígidos. Mas a perda dos ritos deixou uma pergunta em aberto: o que organiza a passagem quando cada indivíduo precisa inventar sozinho o significado da própria vida?</p>
+
+<h2>Rito, hábito e espetáculo</h2>
+
+<p>Um hábito é repetição funcional: escovar os dentes, abrir o aplicativo, pegar o mesmo caminho. Um rito é repetição carregada de sentido. Ele não serve apenas para fazer algo; serve para reconhecer publicamente que algo importa.</p>
+
+<p>O espetáculo, por sua vez, pode imitar o rito sem produzir pertencimento. Cerimônias vazias, eventos corporativos, trends digitais e consumo de experiências podem oferecer aparência de intensidade, mas muitas vezes não criam memória comum. Passam rápido demais para formar mundo.</p>
+
+<h2>Durkheim e a comunidade</h2>
+
+<p>Émile Durkheim viu nos ritos uma força de coesão social. Ao reunir corpos, gestos, símbolos e tempos comuns, uma comunidade percebe a si mesma. O sagrado, em sua leitura sociológica, expressa a potência coletiva que ultrapassa o indivíduo isolado.</p>
+
+<p>Mesmo sociedades seculares precisam de formas de reconhecimento coletivo. Sem elas, a vida pública tende a oscilar entre burocracia e entretenimento. Fazemos protocolos, mas não necessariamente vivemos passagens.</p>
+
+<h2>Victor Turner e a passagem</h2>
+
+<p>Victor Turner aprofundou a análise dos ritos de passagem, especialmente a fase liminar: aquele estado intermediário em que a pessoa já deixou uma posição, mas ainda não entrou plenamente em outra. A liminaridade é perigosa e fértil. Ela suspende identidades antigas e prepara novas formas de pertencimento.</p>
+
+<p>O mundo contemporâneo multiplicou estados liminares sem oferecer ritos suficientes. Jovens entram na vida adulta sem marcos claros. Trabalhadores mudam de identidade profissional sem comunidade. Relações começam e terminam sem linguagem compartilhada. Vive-se muita transição com pouca elaboração simbólica.</p>
+
+<h2>Byung-Chul Han e o desaparecimento dos rituais</h2>
+
+<p>Byung-Chul Han argumenta que rituais estabilizam a vida ao criar formas repetidas de atenção, demora e reconhecimento. Na cultura da produção e da comunicação incessante, a repetição ritual é substituída por novidade, desempenho e consumo.</p>
+
+<p>O rito exige permanência. O feed exige atualização. O rito forma comunidade. A plataforma forma audiência. O rito vincula pessoas a um mundo comum. O consumo oferece experiências individuais rapidamente substituíveis.</p>
+
+<h2>Novos rituais digitais</h2>
+
+<p>Seria errado dizer que não há ritos hoje. Há rituais digitais: postar aniversário, registrar viagens, fazer check-in, consumir séries em lançamentos coletivos, acompanhar lives, repetir memes, medir passos, organizar rotinas de produtividade. Alguns criam pertencimento real. Outros apenas imitam comunidade.</p>
+
+<p>A pergunta não é se o rito voltou ou desapareceu, mas que tipo de rito estamos construindo. Ele aprofunda a vida ou apenas monetiza atenção? Marca passagens reais ou só produz conteúdo?</p>
+
+<h2>Conclusão</h2>
+
+<p>A sociedade contemporânea perdeu muitos ritos porque desconfiou de tradições, autoridades e formas herdadas. Essa crítica era necessária. Mas nenhum ser humano vive apenas de escolhas individuais abstratas. Precisamos de gestos que deem forma ao nascimento, ao luto, ao compromisso, à amizade e à passagem do tempo.</p>
+
+<p>Talvez a tarefa não seja restaurar ritos antigos como peças de museu, mas criar formas novas de repetição significativa. Sem rito, a vida continua acontecendo. O problema é que ela pode acontecer sem ser simbolicamente habitada.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Émile Durkheim, <em>As Formas Elementares da Vida Religiosa</em>.</li>
+  <li>Victor Turner, <em>The Ritual Process</em>.</li>
+  <li>Arnold van Gennep, <em>Os Ritos de Passagem</em>.</li>
+  <li>Byung-Chul Han, <em>O Desaparecimento dos Rituais</em>.</li>
+  <li>Leia também: <a href="/artigos/modernidade-matou-sagrado/">A modernidade matou o sagrado?</a> e <a href="/artigos/crise-contemporanea-nao-e-economica-e-espiritual/">A crise contemporânea não é econômica, é espiritual</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre a função filosófica e antropológica dos ritos, com Durkheim, Victor Turner, secularização e novos rituais digitais.",
+    subcategory: "Antropologia filosófica",
+    dossier: "",
+    philosophers: ["Émile Durkheim", "Victor Turner", "Arnold van Gennep", "Byung-Chul Han"],
+    books: ["As Formas Elementares da Vida Religiosa", "The Ritual Process", "Os Ritos de Passagem", "O Desaparecimento dos Rituais"],
+    civilization: "Contemporânea",
+    period: "Século XXI",
+    themes: ["rito", "comunidade", "passagem", "secularização", "pertencimento"],
+    relatedArticles: ["modernidade-matou-sagrado", "crise-contemporanea-nao-e-economica-e-espiritual", "sociedade-moderna-destruiu-silencio"],
+    editorialPriority: "P1",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Modernidade", "Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
+    updated: "2026-07-21"
+  },
+
+  {
+    id:       "felicidade-virou-obrigacao",
+    slug:     "felicidade-virou-obrigacao",
+    tag:      "ÉTICA",
+    category: "Filosofia",
+    title:    "A felicidade virou obrigação",
+    excerpt:  "Quando a felicidade se transforma em dever social, até o sofrimento passa a ser tratado como fracasso individual.",
+    date:     "21 de Julho de 2026",
+    dateISO:  "2026-07-21",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/felicidade-virou-obrigacao.webp",
+    cover:    "assets/article_cards/felicidade-virou-obrigacao.webp",
+    tags:     ["felicidade", "Aristóteles", "Epicuro", "utilitarismo", "positividade tóxica"],
+    featured: true,
+    metaTitle: "A felicidade virou obrigação",
+    metaDescription: "Ensaio sobre felicidade como imperativo moral, Aristóteles, Epicuro, utilitarismo, autoajuda, psicologia positiva e positividade tóxica.",
+    keywords: ["felicidade", "eudaimonia", "Epicuro", "utilitarismo", "psicologia positiva", "positividade tóxica"],
+    content: `
+<p><strong>Durante séculos, a filosofia perguntou o que é a felicidade. Nosso tempo acrescentou uma violência nova: a obrigação de parecer feliz.</strong></p>
+
+<p>Não há nada errado em desejar alegria, serenidade ou uma vida mais plena. O problema começa quando a felicidade deixa de ser horizonte ético e se torna exigência social permanente. Quem sofre precisa explicar. Quem está triste precisa melhorar. Quem hesita parece ingrato. Quem não performa entusiasmo corre o risco de ser visto como problema.</p>
+
+<p>A felicidade virou linguagem de mercado, métrica de desempenho e identidade pública. O antigo ideal de vida boa foi simplificado em produtividade emocional: sorria, supere, poste, agradeça, recomece, otimize-se.</p>
+
+<h2>Aristóteles e a vida boa</h2>
+
+<p>Para Aristóteles, a felicidade, ou <em>eudaimonia</em>, não era estado psicológico passageiro. Era florescimento de uma vida inteira segundo virtude, razão, amizade, prudência e participação na comunidade. Não bastava sentir prazer; era preciso viver bem em sentido profundo.</p>
+
+<p>Essa visão é mais exigente do que o discurso contemporâneo, mas também mais humana. A eudaimonia admite esforço, conflito, formação do caráter e dependência de condições externas. Ninguém floresce sozinho num vazio social.</p>
+
+<h2>Epicuro e a serenidade</h2>
+
+<p>Epicuro foi frequentemente caricaturado como filósofo do prazer fácil. Na verdade, sua ética buscava a tranquilidade da alma e a ausência de perturbação. Prazer não era excesso, mas libertação de medos desnecessários e desejos infinitos.</p>
+
+<p>Essa perspectiva critica diretamente a obrigação moderna de felicidade. Se desejos artificiais governam a vida, a pessoa jamais repousa. Está sempre a um produto, uma conquista ou uma aprovação de distância da promessa de estar bem.</p>
+
+<h2>Utilitarismo e cálculo da felicidade</h2>
+
+<p>O utilitarismo moderno, em Bentham e Mill, colocou a felicidade no centro da avaliação moral e política. A ideia de aumentar bem-estar e reduzir sofrimento possui força ética evidente. Políticas públicas devem se importar com consequências reais para a vida das pessoas.</p>
+
+<p>Mas há um risco: quando felicidade vira quantidade administrável, experiências humanas complexas podem ser reduzidas a cálculo. Nem toda vida boa cabe em satisfação imediata. Nem toda tristeza é erro. Nem todo sofrimento pode ser eliminado sem empobrecer a compreensão da existência.</p>
+
+<h2>Autoajuda, psicologia positiva e seus limites</h2>
+
+<p>A psicologia positiva contribuiu ao estudar gratidão, sentido, forças pessoais e bem-estar, corrigindo uma visão que olhava apenas para patologia. Seu limite aparece quando resultados científicos são transformados em moral simplificada: se você não está bem, é porque não pensou positivo, não meditou direito, não se esforçou o suficiente.</p>
+
+<p>A indústria da autoajuda frequentemente radicaliza esse erro. Problemas sociais, econômicos e psíquicos são traduzidos em falha individual. O sofrimento perde contexto. A pessoa sofre duas vezes: pelo problema e pela culpa de não conseguir parecer feliz.</p>
+
+<h2>Redes sociais e performance</h2>
+
+<p>Nas redes, a felicidade precisa ser visível. Viagem, corpo, relacionamento, carreira, consumo e espiritualidade aparecem como prova pública de uma vida funcionando. A comparação deixa de ser eventual e se torna ambiente.</p>
+
+<p>Daí nasce a positividade tóxica: a recusa de tristeza, luto, raiva legítima, ambivalência e cansaço. Tudo precisa virar lição, conteúdo ou superação. Mas há dores que não pedem legenda motivacional. Pedem tempo, escuta e silêncio.</p>
+
+<h2>O direito à tristeza</h2>
+
+<p>Defender o direito à tristeza não é cultuar sofrimento. É reconhecer que a vida humana é ambivalente. Amar envolve perda possível. Criar envolve fracasso. Pensar envolve dúvida. Envelhecer envolve renúncia. Nenhuma filosofia séria promete felicidade contínua sem custo.</p>
+
+<p>A obrigação de felicidade empobrece a alma porque expulsa experiências que também ensinam. Uma sociedade madura não exige que todos estejam bem o tempo inteiro. Ela oferece condições para que a dor seja acolhida, compreendida e, quando possível, transformada.</p>
+
+<h2>Conclusão</h2>
+
+<p>A felicidade talvez continue sendo uma das grandes perguntas da filosofia. Mas ela se corrompe quando vira dever performático. A vida boa não é sorriso obrigatório. É uma forma mais verdadeira de habitar alegria, limite, desejo, perda e sentido.</p>
+
+<p>Talvez o contrário da infelicidade não seja estar sempre feliz. Talvez seja não precisar mentir sobre a própria condição para continuar pertencendo ao mundo.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Aristóteles, <em>Ética a Nicômaco</em>, livros I e X.</li>
+  <li>Epicuro, <em>Carta a Meneceu</em>.</li>
+  <li>Jeremy Bentham, <em>An Introduction to the Principles of Morals and Legislation</em>; John Stuart Mill, <em>Utilitarianism</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, <a href="https://plato.stanford.edu/entries/aristotle-ethics/" target="_blank" rel="noopener">“Aristotle’s Ethics”</a>, <a href="https://plato.stanford.edu/entries/epicurus/" target="_blank" rel="noopener">“Epicurus”</a> e <a href="https://plato.stanford.edu/entries/utilitarianism-history/" target="_blank" rel="noopener">“The History of Utilitarianism”</a>.</li>
+  <li>Leia também: <a href="/artigos/vida-pendulo-schopenhauer-desejo-humano/">Schopenhauer: a vida como pêndulo</a> e <a href="/artigos/budismo-filosofia-impermanencia-nao-eu/">Budismo como filosofia</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre felicidade como obrigação social, eudaimonia, Epicuro, utilitarismo, psicologia positiva e positividade tóxica.",
+    subcategory: "Ética",
+    dossier: "",
+    philosophers: ["Aristóteles", "Epicuro", "Jeremy Bentham", "John Stuart Mill"],
+    books: ["Ética a Nicômaco", "Carta a Meneceu", "Utilitarianism"],
+    civilization: "Ocidente",
+    period: "Antiguidade e contemporaneidade",
+    themes: ["felicidade", "eudaimonia", "prazer", "autoajuda", "sofrimento"],
+    relatedArticles: ["vida-pendulo-schopenhauer-desejo-humano", "budismo-filosofia-impermanencia-nao-eu", "sociedade-moderna-destruiu-o-silencio"],
+    editorialPriority: "P1",
+    civilizations: ["Grécia Antiga", "Ocidente moderno", "Contemporaneidade"],
+    historicalPeriods: ["Antiguidade", "Modernidade", "Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/felicidade-virou-obrigacao.webp",
+    updated: "2026-07-21"
+  },
+
   {
     id:       "budismo-filosofia-impermanencia-nao-eu",
     slug:     "budismo-filosofia-impermanencia-nao-eu",
