@@ -4,6 +4,288 @@
 const POSTS = [
 
   {
+    id:       "propaganda-moldou-seculo-xx",
+    slug:     "propaganda-moldou-seculo-xx",
+    tag:      "POLÍTICA E SOCIEDADE",
+    category: "Política",
+    title:    "Como a propaganda moldou o século XX",
+    excerpt:  "A propaganda moderna não foi apenas mentira organizada. Ela transformou imprensa, rádio, cinema, publicidade e medo coletivo em técnicas de governo da opinião.",
+    date:     "24 de Julho de 2026",
+    dateISO:  "2026-07-24",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/propaganda-moldou-seculo-xx.jpg",
+    cover:    "assets/article_cards/propaganda-moldou-seculo-xx.jpg",
+    tags:     ["propaganda", "opinião pública", "século XX", "Walter Lippmann", "Edward Bernays", "Hannah Arendt"],
+    featured: true,
+    metaTitle: "Como a propaganda moldou o século XX | Proceder Filosófico",
+    metaDescription: "Ensaio sobre propaganda política, publicidade, rádio, cinema, televisão, opinião pública, totalitarismo e plataformas digitais.",
+    keywords: ["propaganda", "século XX", "opinião pública", "Walter Lippmann", "Edward Bernays", "Jacques Ellul", "Hannah Arendt"],
+    content: `
+<p><strong>O século XX não foi moldado apenas por tanques, fábricas e parlamentos. Foi moldado também por imagens, slogans, rádios, jornais, cartazes, filmes, pesquisas de opinião e técnicas de persuasão em escala industrial.</strong></p>
+
+<p>A propaganda moderna nasceu quando comunicação de massa, Estado burocrático, psicologia social e mercado encontraram uma mesma pergunta: como orientar a percepção de milhões de pessoas que jamais se encontrarão pessoalmente? A resposta não foi única. Em democracias, apareceu como relações públicas, publicidade e fabricação de consenso. Em regimes totalitários, tornou-se instrumento de mobilização, medo e mentira organizada.</p>
+
+<p>O problema filosófico não é simples. Toda vida pública depende de persuasão. Informar, convencer e defender uma causa fazem parte da política. A propaganda torna-se perigosa quando substitui julgamento por reflexo, linguagem por comando e realidade por ambiente emocional administrado.</p>
+
+<h2>Da informação à fabricação da opinião</h2>
+
+<p>Walter Lippmann percebeu cedo que sociedades complexas não são experimentadas diretamente pela maioria dos cidadãos. Vivemos por mapas mentais, imagens simplificadas e relatos intermediados. A opinião pública nasce, em grande parte, daquilo que uma população acredita saber sobre um mundo que não vê por completo.</p>
+
+<p>Essa constatação abre uma tensão democrática. Se o cidadão depende de mediações, quem organiza essas mediações? A imprensa pode esclarecer, mas também selecionar, enquadrar e dramatizar. O rádio pode aproximar, mas também uniformizar. O cinema pode formar imaginação histórica, mas também transformar política em espetáculo afetivo.</p>
+
+<p>Edward Bernays levou essa percepção para o campo das relações públicas. A persuasão deixou de ser apenas discurso explícito e passou a operar por associação simbólica: desejo, status, medo, pertencimento e aspiração. O consumidor e o eleitor começaram a ser pensados como públicos administráveis.</p>
+
+<h2>Guerras, massas e regimes totalitários</h2>
+
+<p>As guerras mundiais mostraram que propaganda não é ornamento da política. Ela prepara sacrifícios, identifica inimigos, simplifica conflitos e organiza emoções coletivas. Um povo em guerra precisa acreditar que sua dor possui sentido; a propaganda oferece esse sentido, muitas vezes apagando ambiguidades morais.</p>
+
+<p>Nos regimes totalitários, a propaganda assumiu função ainda mais radical. Hannah Arendt analisou como mentira sistemática, isolamento social e ideologia podem produzir um mundo paralelo, no qual fatos importam menos que coerência interna do mito político. A propaganda não precisa convencer todos racionalmente; precisa tornar difícil permanecer fora de sua atmosfera.</p>
+
+<p>Jacques Ellul ampliou o diagnóstico ao mostrar que a propaganda moderna não se limita a cartazes oficiais. Ela penetra hábitos, educação, entretenimento e linguagem cotidiana. Seu poder está em parecer ambiente, não mensagem isolada.</p>
+
+<h2>Publicidade e desejo</h2>
+
+<p>O século XX também transformou publicidade em filosofia prática do consumo. Produtos passaram a prometer identidade, juventude, liberdade, erotismo, status, segurança e pertencimento. O objeto vendido importava menos que a forma de vida sugerida por ele.</p>
+
+<p>Essa continuidade entre propaganda política e publicidade comercial não significa que comprar um produto seja igual a obedecer a um regime. Significa que ambas aprenderam a operar sobre a imaginação social. A pergunta deixou de ser apenas “isto é verdadeiro?” e passou a ser “que tipo de pessoa eu pareço ser ao aderir a isto?”.</p>
+
+<h2>Informar, persuadir, manipular</h2>
+
+<p>Informação busca tornar uma situação mais compreensível. Persuasão tenta convencer alguém apresentando razões, imagens ou valores. Manipulação age quando explora vulnerabilidades, oculta interesses decisivos, falsifica contexto ou impede que a pessoa julgue com liberdade suficiente.</p>
+
+<p>A fronteira nem sempre é limpa. Uma campanha de saúde pública usa técnicas persuasivas para proteger vidas. Uma campanha eleitoral pode usar dados verdadeiros para criar medo desproporcional. O critério filosófico está na relação com a autonomia: a comunicação amplia ou estreita a capacidade de julgar?</p>
+
+<h2>Das massas às plataformas</h2>
+
+<p>As plataformas digitais herdaram técnicas do século XX e acrescentaram algo novo: personalização algorítmica, velocidade, mensuração contínua e participação do próprio usuário na difusão da mensagem. A propaganda já não precisa falar igual para todos; pode testar versões, capturar atenção e aprender com cada reação.</p>
+
+<p>Isso não significa que todos sejam passivos. Usuários reinterpretam, resistem, ironizam e desmontam narrativas. Mas a assimetria permanece: poucos sistemas medem muitos comportamentos e transformam atenção em valor econômico e político.</p>
+
+<h2>Conclusão aberta</h2>
+
+<p>A propaganda moldou o século XX porque descobriu que governar sociedades modernas exige governar imagens do mundo. Ela não aboliu a razão, mas aprendeu a contorná-la por emoção, repetição, prestígio e medo.</p>
+
+<p>A tarefa filosófica hoje não é imaginar uma esfera pública sem persuasão. É defender condições para que a persuasão possa ser julgada: educação histórica, imprensa responsável, transparência institucional, memória crítica e cidadãos capazes de desconfiar inclusive das mensagens que confirmam seus desejos.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Walter Lippmann, <em>Public Opinion</em>.</li>
+  <li>Edward Bernays, <em>Propaganda</em>.</li>
+  <li>Jacques Ellul, <em>Propaganda: The Formation of Men’s Attitudes</em>.</li>
+  <li>Hannah Arendt, <em>As Origens do Totalitarismo</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, verbetes sobre propaganda, Hannah Arendt e teoria crítica.</li>
+  <li>Leia também: <a href="/artigos/hannah-arendt-banalidade-do-mal/">Hannah Arendt e a banalidade do mal</a>, <a href="/artigos/walter-benjamin-obra-de-arte-reprodutibilidade/">Walter Benjamin e a obra de arte na era da reprodutibilidade</a> e <a href="/artigos/arte-controle-humano/">Quando a arte parou de entender o ser humano</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre propaganda política, publicidade, opinião pública, regimes totalitários, meios de massa e plataformas digitais.",
+    subcategory: "opinião pública e manipulação",
+    dossier: null,
+    philosophers: ["Walter Lippmann", "Edward Bernays", "Jacques Ellul", "Hannah Arendt"],
+    books: ["Public Opinion", "Propaganda", "Propaganda: The Formation of Men’s Attitudes", "As Origens do Totalitarismo"],
+    civilization: "Ocidente contemporâneo",
+    period: "Século XX",
+    themes: ["propaganda", "opinião pública", "manipulação", "meios de massa", "totalitarismo"],
+    relatedArticles: ["hannah-arendt-banalidade-do-mal", "walter-benjamin-obra-de-arte-reprodutibilidade", "arte-controle-humano"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Século XX", "Contemporaneidade"],
+    format: "Ensaio filosófico e histórico",
+    heroImage: "assets/article_cards/propaganda-moldou-seculo-xx.jpg",
+    updated: "2026-07-24",
+    updatedISO: "2026-07-24"
+  },
+
+  {
+    id:       "internet-transformou-todos-em-espectadores",
+    slug:     "internet-transformou-todos-em-espectadores",
+    tag:      "FILOSOFIA DA TECNOLOGIA",
+    category: "Atualidade Filosófica",
+    title:    "A internet transformou todos em espectadores",
+    excerpt:  "A cultura digital promete participação permanente, mas muitas vezes converte presença, sofrimento e política em cenas observáveis.",
+    date:     "24 de Julho de 2026",
+    dateISO:  "2026-07-24",
+    readTime: "11 min",
+    thumb:    "assets/article_cards/internet-transformou-todos-em-espectadores.jpg",
+    cover:    "assets/article_cards/internet-transformou-todos-em-espectadores.jpg",
+    tags:     ["internet", "sociedade do espetáculo", "Guy Debord", "atenção", "vigilância"],
+    featured: true,
+    metaTitle: "A internet transformou todos em espectadores | Proceder Filosófico",
+    metaDescription: "Ensaio sobre Guy Debord, sociedade do espetáculo, economia da atenção, performance digital e limites da participação online.",
+    keywords: ["internet", "espectadores", "Guy Debord", "sociedade do espetáculo", "economia da atenção", "redes sociais"],
+    content: `
+<p><strong>A internet prometeu transformar todos em participantes. Em parte, cumpriu. Mas também produziu uma forma estranha de vida: participamos observando e observamos performando.</strong></p>
+
+<p>O usuário contemporâneo comenta, grava, compartilha, reage, avalia e publica. Parece ativo o tempo todo. No entanto, grande parte dessa atividade ocorre dentro de estruturas que já definiram ritmo, recompensa, visibilidade e linguagem. A participação digital frequentemente acontece como espetáculo de si e consumo do outro.</p>
+
+<p>Guy Debord escreveu sobre a sociedade do espetáculo antes das redes sociais. Seu ponto central era que a vida moderna tende a ser mediada por imagens e representações. O espetáculo não é apenas excesso de tela; é uma relação social organizada pela aparência.</p>
+
+<h2>Observar, participar, produzir</h2>
+
+<p>Na cultura digital, a separação entre espectador e produtor ficou instável. Quem assiste também grava. Quem consome também distribui. Quem sofre também pode virar conteúdo. Quem protesta também precisa disputar enquadramento visual.</p>
+
+<p>Isso não torna a internet irrelevante politicamente. Ela permitiu denúncias, mobilizações, acesso a conhecimento e redes de apoio que antes seriam difíceis. O problema é que a mesma infraestrutura que amplia voz também converte experiência em métrica: visualização, reação, retenção, comentário, compartilhamento.</p>
+
+<h2>A vida como performance</h2>
+
+<p>A performance digital não é simplesmente fingimento. Muitas vezes mostramos versões reais de nós mesmos, mas versões adaptadas ao olhar antecipado dos outros. A pessoa aprende a viver já imaginando a legenda, o enquadramento, a reação e a comparação.</p>
+
+<p>Essa antecipação altera a experiência. Uma viagem, uma refeição, uma indignação ou uma perda pode ser percebida já como material publicável. O acontecimento deixa de terminar em si; precisa provar que aconteceu diante de uma audiência.</p>
+
+<h2>Filmar antes de agir</h2>
+
+<p>Um dos sintomas mais desconfortáveis do presente é a tendência de registrar acontecimentos antes de intervir. Acidentes, agressões, humilhações e sofrimento público podem ser filmados como se a câmera fosse resposta suficiente.</p>
+
+<p>A crítica precisa ser justa. Registrar pode proteger vítimas, produzir prova e denunciar violência. Mas quando o registro substitui qualquer responsabilidade imediata, o outro vira cena. A dor passa a existir como conteúdo antes de existir como apelo ético.</p>
+
+<h2>Economia da atenção</h2>
+
+<p>A internet não transformou todos em espectadores por acidente. Plataformas competem por atenção porque atenção pode ser convertida em dado, publicidade e poder cultural. O espetáculo digital precisa de fluxo contínuo: novidade, conflito, emoção, identificação e escândalo.</p>
+
+<p>Byung-Chul Han ajuda a pensar esse cansaço sem reduzir tudo a manipulação externa. O sujeito atual também se expõe voluntariamente. Ele se vigia, se otimiza e se oferece ao olhar. A vigilância deixa de vir apenas de cima; torna-se horizontal, distribuída e desejada.</p>
+
+<h2>Todos são passivos?</h2>
+
+<p>A afirmação de que todos viraram espectadores precisa de limite. Há criação real, estudo sério, amizade, organização política, arte, cuidado e trabalho honesto na internet. Há comunidades que salvam pessoas do isolamento e arquivos que democratizam conhecimento.</p>
+
+<p>O risco está em confundir possibilidade de fala com autonomia plena. Falar dentro de uma máquina de visibilidade não é o mesmo que controlar as condições da conversa. Participar não basta se a forma da participação já transforma tudo em disputa por atenção.</p>
+
+<h2>Conclusão aberta</h2>
+
+<p>A internet não nos tornou apenas passivos. Tornou-nos participantes-espectadores: pessoas que agem olhando para si mesmas agindo. Esse deslocamento muda ética, política, intimidade e sofrimento.</p>
+
+<p>A pergunta filosófica decisiva talvez seja: ainda conseguimos fazer algo que não precise imediatamente aparecer? Se toda experiência exige testemunha pública, perdemos não só privacidade, mas profundidade.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Guy Debord, <em>A Sociedade do Espetáculo</em>.</li>
+  <li>Byung-Chul Han, <em>No Enxame</em> e <em>A Sociedade do Cansaço</em>.</li>
+  <li>Shoshana Zuboff, <em>A Era do Capitalismo de Vigilância</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, verbetes sobre tecnologia, teoria crítica e privacidade.</li>
+  <li>Leia também: <a href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">O algoritmo substituiu a verdade pela atenção</a>, <a href="/artigos/humanidade-trocou-contemplacao-por-distracao/">A humanidade trocou contemplação por distração</a> e <a href="/artigos/sociedade-moderna-destruiu-silencio/">A sociedade moderna destruiu o silêncio</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre sociedade do espetáculo, internet, performance digital, sofrimento como conteúdo, economia da atenção e vigilância horizontal.",
+    subcategory: "atenção e cultura digital",
+    dossier: null,
+    philosophers: ["Guy Debord", "Byung-Chul Han", "Shoshana Zuboff"],
+    books: ["A Sociedade do Espetáculo", "No Enxame", "A Era do Capitalismo de Vigilância"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["internet", "espetáculo", "atenção", "performance", "vigilância"],
+    relatedArticles: ["algoritmo-substituiu-verdade-pela-atencao", "humanidade-trocou-contemplacao-por-distracao", "sociedade-moderna-destruiu-silencio"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/internet-transformou-todos-em-espectadores.jpg",
+    updated: "2026-07-24",
+    updatedISO: "2026-07-24"
+  },
+
+  {
+    id:       "crise-da-masculinidade-moderna",
+    slug:     "crise-da-masculinidade-moderna",
+    tag:      "SOCIOLOGIA E ÉTICA",
+    category: "Sociologia",
+    title:    "Existe uma crise da masculinidade moderna?",
+    excerpt:  "A crise da masculinidade não se resolve com nostalgia da autoridade perdida nem com desprezo pelos homens. Ela exige pensar trabalho, afeto, poder e identidade.",
+    date:     "24 de Julho de 2026",
+    dateISO:  "2026-07-24",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/crise-da-masculinidade-moderna.jpg",
+    cover:    "assets/article_cards/crise-da-masculinidade-moderna.jpg",
+    tags:     ["masculinidade", "gênero", "Raewyn Connell", "bell hooks", "Simone de Beauvoir"],
+    featured: true,
+    metaTitle: "Existe uma crise da masculinidade moderna? | Proceder Filosófico",
+    metaDescription: "Ensaio sobre masculinidade moderna, gênero, trabalho, família, ressentimento digital, saúde mental e transformação dos papéis masculinos.",
+    keywords: ["crise da masculinidade", "masculinidade moderna", "gênero", "Raewyn Connell", "bell hooks", "Simone de Beauvoir"],
+    content: `
+<p><strong>Falar em crise da masculinidade moderna só faz sentido se a pergunta deixar de ser lamento nostálgico e se tornar investigação social.</strong></p>
+
+<p>Homens não vivem hoje a mesma posição simbólica que ocupavam em sociedades organizadas por autoridade patriarcal mais explícita. Trabalho, casamento, paternidade, sexualidade, educação e poder público mudaram. Essas mudanças trouxeram liberdades necessárias para mulheres e também exigiram que homens reconstruíssem identidades antes sustentadas por privilégios pouco questionados.</p>
+
+<p>O problema é que a perda de uma autoridade herdada pode ser vivida como humilhação pessoal. Onde a cultura não oferece linguagem madura para vulnerabilidade, muitos homens encontram ressentimento, isolamento ou comunidades digitais que prometem respostas fáceis.</p>
+
+<h2>O que entrou em crise?</h2>
+
+<p>Nem toda mudança nos papéis masculinos é crise. Algumas são correções históricas. A autoridade automática do homem sobre a família, o salário feminino tratado como secundário e a ideia de que cuidado emocional pertence apenas às mulheres não merecem restauração.</p>
+
+<p>A crise aparece quando velhos modelos perdem legitimidade, mas novos modelos ainda não formam orientação suficiente. Muitos homens sabem que não devem repetir padrões autoritários, mas não sabem como articular força, ternura, responsabilidade, desejo, limite e cuidado sem cair em caricatura.</p>
+
+<h2>Masculinidade hegemônica</h2>
+
+<p>Raewyn Connell formulou o conceito de masculinidade hegemônica para indicar que não existe apenas uma forma de ser homem. Há modelos masculinos dominantes que organizam hierarquias entre homens e entre homens e mulheres. Coragem, controle emocional, virilidade, autonomia e sucesso econômico podem virar critérios de reconhecimento.</p>
+
+<p>Esses critérios pressionam inclusive homens que aparentemente se beneficiam deles. Quem não corresponde ao ideal pode sentir vergonha. Quem corresponde precisa mantê-lo. A promessa de poder cobra silêncio afetivo, competição permanente e medo de parecer fraco.</p>
+
+<h2>Beauvoir, hooks e a construção do gênero</h2>
+
+<p>Simone de Beauvoir mostrou que papéis de gênero são historicamente produzidos. Sua análise da condição feminina também ajuda a perceber que o masculino não é natureza pura. Ele é formado por expectativas, instituições, hábitos e narrativas.</p>
+
+<p>bell hooks acrescenta uma dimensão decisiva: criticar o patriarcado não significa odiar homens. Significa reconhecer um sistema que também mutila a vida emocional masculina. Quando meninos aprendem que dor deve virar agressividade ou silêncio, a sociedade produz adultos incapazes de pedir ajuda sem vergonha.</p>
+
+<h2>Trabalho, autoridade e família</h2>
+
+<p>Durante muito tempo, o trabalho remunerado ofereceu aos homens uma identidade social relativamente clara: prover, mandar, proteger. A precarização do trabalho, a instabilidade econômica e a autonomia crescente das mulheres enfraqueceram esse roteiro.</p>
+
+<p>Isso pode abrir espaço para relações mais justas. Mas também pode gerar desorientação quando o homem aprendeu a medir valor pessoal apenas por domínio econômico e autoridade familiar. Sem outra gramática de valor, a igualdade pode ser interpretada como perda absoluta.</p>
+
+<h2>Ressentimento digital</h2>
+
+<p>Comunidades masculinas digitais crescem quando oferecem explicações simples para angústias reais. Solidão, rejeição amorosa, fracasso profissional e confusão identitária são convertidos em guerra contra mulheres, feminismo ou modernidade.</p>
+
+<p>O ressentimento é politicamente eficaz porque transforma dor em identidade. Em vez de perguntar “como posso amadurecer?”, a pessoa aprende a perguntar “quem roubou o lugar que era meu?”. A internet intensifica esse circuito ao recompensar indignação e pertencimento tribal.</p>
+
+<h2>Saúde mental e isolamento</h2>
+
+<p>Uma discussão honesta sobre masculinidade precisa levar sofrimento masculino a sério sem transformar sofrimento em autorização para dominar os outros. Homens têm dificuldades concretas com solidão, suicídio, abuso de substâncias, violência e resistência a buscar cuidado psicológico.</p>
+
+<p>A resposta não é reforçar o velho mandamento de dureza. Também não é tratar todos os homens como ameaça. A saída exige criar formas de amizade, paternidade, parceria e trabalho em que responsabilidade não dependa de dominação.</p>
+
+<h2>Contra explicações fáceis</h2>
+
+<p>Explicações biologizantes costumam transformar tendências médias em destino moral. Diagnósticos generalizantes fazem o contrário: tratam homens como bloco único. Ambas as rotas impedem pensamento.</p>
+
+<p>Há muitas masculinidades atravessadas por classe, raça, religião, idade, sexualidade, trabalho e cultura. A pergunta não é como recuperar “o homem de verdade”, mas quais formas de masculinidade permitem viver com coragem sem crueldade, força sem desprezo e liberdade sem abandono do outro.</p>
+
+<h2>Conclusão aberta</h2>
+
+<p>Existe uma crise da masculinidade moderna se entendermos crise como transição de sentido. Certos modelos perderam legitimidade. Outros ainda estão sendo formados. Essa passagem pode produzir ressentimento ou maturidade.</p>
+
+<p>A tarefa filosófica não é absolver nem condenar os homens em bloco. É perguntar que tipo de formação masculina seria compatível com igualdade, responsabilidade afetiva, saúde mental e vida comum.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Raewyn Connell, <em>Masculinities</em>.</li>
+  <li>Simone de Beauvoir, <em>O Segundo Sexo</em>.</li>
+  <li>bell hooks, <em>The Will to Change</em>.</li>
+  <li>Norbert Elias, <em>O Processo Civilizador</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, verbetes sobre feminismo, gênero e filosofia social.</li>
+  <li>Leia também: <a href="/artigos/simone-de-beauvoir-liberdade-situada/">Simone de Beauvoir e a liberdade situada</a>, <a href="/artigos/escala-6x1-trabalho-tempo-vida/">Escala 6x1: trabalho e tempo de vida</a> e <a href="/artigos/sartre-liberdade-condenacao/">Sartre e a condenação à liberdade</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre masculinidade moderna, papéis de gênero, trabalho, família, ressentimento digital, saúde mental e responsabilidade.",
+    subcategory: "gênero e identidade",
+    dossier: null,
+    philosophers: ["Raewyn Connell", "Simone de Beauvoir", "bell hooks", "Norbert Elias"],
+    books: ["Masculinities", "O Segundo Sexo", "The Will to Change", "O Processo Civilizador"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["masculinidade", "gênero", "trabalho", "família", "saúde mental"],
+    relatedArticles: ["simone-de-beauvoir-liberdade-situada", "escala-6x1-trabalho-tempo-vida", "sartre-liberdade-condenacao"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Contemporaneidade"],
+    format: "Ensaio filosófico e social",
+    heroImage: "assets/article_cards/crise-da-masculinidade-moderna.jpg",
+    updated: "2026-07-24",
+    updatedISO: "2026-07-24"
+  },
+
+  {
     id:       "excesso-de-conforto-civilizacoes-frageis",
     slug:     "excesso-de-conforto-civilizacoes-frageis",
     tag:      "FILOSOFIA DA CULTURA",
