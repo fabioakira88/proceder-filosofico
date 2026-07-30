@@ -13,12 +13,12 @@
   <meta property="og:title" content="O excesso de conforto produz civilizações frágeis?">
   <meta property="og:description" content="Ensaio sobre conforto, disciplina, resiliência, estoicismo, Nietzsche, Byung-Chul Han e o risco de romantizar sofrimento.">
   <meta property="og:url" content="https://procederfilosofico.com.br/artigos/excesso-de-conforto-civilizacoes-frageis/">
-  <meta property="og:image" content="https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp">
+  <meta property="og:image" content="https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="O excesso de conforto produz civilizações frágeis?">
   <meta name="twitter:description" content="Ensaio sobre conforto, disciplina, resiliência, estoicismo, Nietzsche, Byung-Chul Han e o risco de romantizar sofrimento.">
-  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp">
-  <script id="proceder-article-jsonld" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"O excesso de conforto produz civilizações frágeis?","description":"Ensaio sobre conforto, disciplina, resiliência, estoicismo, Nietzsche, Byung-Chul Han e o risco de romantizar sofrimento.","image":["https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp"],"datePublished":"2026-07-21","dateModified":"2026-07-21","articleSection":"Atualidade Filosófica","keywords":"excesso de conforto, civilizações frágeis, estoicismo, último homem, Byung-Chul Han, resiliência","mainEntityOfPage":{"@type":"WebPage","@id":"https://procederfilosofico.com.br/artigos/excesso-de-conforto-civilizacoes-frageis/"},"author":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"},"publisher":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
+  <meta name="twitter:image" content="https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg">
+  <script id="proceder-article-jsonld" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"O excesso de conforto produz civilizações frágeis?","description":"Ensaio sobre conforto, disciplina, resiliência, estoicismo, Nietzsche, Byung-Chul Han e o risco de romantizar sofrimento.","image":["https://procederfilosofico.com.br/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg"],"datePublished":"2026-07-21","dateModified":"2026-07-21","articleSection":"Atualidade Filosófica","keywords":"excesso de conforto, civilizações frágeis, estoicismo, último homem, Byung-Chul Han, resiliência","mainEntityOfPage":{"@type":"WebPage","@id":"https://procederfilosofico.com.br/artigos/excesso-de-conforto-civilizacoes-frageis/"},"author":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"},"publisher":{"@type":"Organization","name":"Proceder Filosófico","url":"https://procederfilosofico.com.br/"}}</script>
   <!-- PROCEDER:SEO_END -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,6 +61,8 @@
       margin: 0;
       max-width: 860px;
       letter-spacing: 0;
+      overflow-wrap: anywhere;
+      hyphens: auto;
     }
 
     main {
@@ -183,6 +185,8 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       min-height: calc(1.16rem * 1.35 * 3);
+      overflow-wrap: anywhere;
+      hyphens: auto;
     }
 
     .article-excerpt {
@@ -225,6 +229,7 @@
       width: min(860px, 100%);
       margin: 0 auto;
       padding: 0 0 78px;
+      min-width: 0;
     }
 
     .reader.open { display: block; }
@@ -253,9 +258,15 @@
     }
 
     .reader h1 {
+      display: block;
+      width: 100%;
       font-size: clamp(2rem, 5vw, 3.65rem);
       max-width: 100%;
       margin-bottom: 14px;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     .reader-date {
@@ -415,10 +426,16 @@
     }
 
     @media (max-width: 680px) {
-      main { padding: 76px 18px 58px; }
+      main { padding: 76px 18px 58px; overflow-x: hidden; }
+      .reader { width: 100%; max-width: calc(100vw - 72px); margin-left: 0; margin-right: auto; }
+      .reader-content,
+      .reader-content > *,
+      .reader-date,
+      .reader h1 { width: 100%; max-width: calc(100vw - 72px); }
       .articles-grid { grid-template-columns: 1fr; }
       .article-card { min-height: 0; }
       .article-image { height: 210px; }
+      .reader h1 { font-size: clamp(1.45rem, 7vw, 2rem); line-height: 1.12; }
       .article-title,
       .article-excerpt { min-height: 0; }
       .article-meta { align-items: flex-start; flex-direction: column; gap: 8px; }

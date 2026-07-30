@@ -63,6 +63,8 @@
       margin: 0;
       max-width: 860px;
       letter-spacing: 0;
+      overflow-wrap: anywhere;
+      hyphens: auto;
     }
 
     main {
@@ -207,6 +209,8 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       min-height: calc(1.16rem * 1.35 * 3);
+      overflow-wrap: anywhere;
+      hyphens: auto;
     }
 
     .article-excerpt {
@@ -249,6 +253,7 @@
       width: min(860px, 100%);
       margin: 0 auto;
       padding: 0 0 78px;
+      min-width: 0;
     }
 
     .reader.open { display: block; }
@@ -277,9 +282,15 @@
     }
 
     .reader h1 {
+      display: block;
+      width: 100%;
       font-size: clamp(2rem, 5vw, 3.65rem);
       max-width: 100%;
       margin-bottom: 14px;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     .reader-date {
@@ -439,10 +450,16 @@
     }
 
     @media (max-width: 680px) {
-      main { padding: 76px 18px 58px; }
+      main { padding: 76px 18px 58px; overflow-x: hidden; }
+      .reader { width: 100%; max-width: calc(100vw - 72px); margin-left: 0; margin-right: auto; }
+      .reader-content,
+      .reader-content > *,
+      .reader-date,
+      .reader h1 { width: 100%; max-width: calc(100vw - 72px); }
       .articles-grid { grid-template-columns: 1fr; }
       .article-card { min-height: 0; }
       .article-image { height: 210px; }
+      .reader h1 { font-size: clamp(1.45rem, 7vw, 2rem); line-height: 1.12; }
       .article-title,
       .article-excerpt { min-height: 0; }
       .article-meta { align-items: flex-start; flex-direction: column; gap: 8px; }
@@ -492,8 +509,80 @@
     </header>
     <div class="search-wrap"><input class="search" id="articleSearch" type="search" placeholder="Buscar por título, tema ou tag..." aria-label="Buscar artigos"></div>
     <section class="articles-grid" id="articlesGrid">
+      <a class="article-card" href="/artigos/plotino-experiencia-do-uno/" aria-label="Ler artigo: Plotino e a experiência do Uno: por que toda multiplicidade procura unidade">
+        <div class="article-image"><img src="/assets/article_cards/plotino-experiencia-do-uno.jpg" alt="Plotino e a experiência do Uno: por que toda multiplicidade procura unidade" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Plotino e a experiência do Uno: por que toda multiplicidade procura unidade</h2>
+          <p class="article-excerpt">Plotino pensou a realidade como uma passagem do Uno ao Intelecto, do Intelecto à Alma e da Alma ao mundo sensível. Sua filosofia não foge da multiplicidade, mas pergunta por que tudo o que é múltiplo parece buscar uma unidade mais alta.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/martha-nussbaum-emocoes-inteligencia/" aria-label="Ler artigo: Martha Nussbaum: por que as emoções também possuem inteligência">
+        <div class="article-image"><img src="/assets/article_cards/martha-nussbaum-emocoes-inteligencia.jpg" alt="Martha Nussbaum: por que as emoções também possuem inteligência" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Filosofia</div>
+          <h2 class="article-title">Martha Nussbaum: por que as emoções também possuem inteligência</h2>
+          <p class="article-excerpt">Para Martha Nussbaum, emoções não são apenas forças irracionais que atrapalham o pensamento. Elas envolvem avaliações sobre aquilo que julgamos importante, revelando vulnerabilidade, valor e dependência.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/gunther-anders-vergonha-maquinas/" aria-label="Ler artigo: Günther Anders e a vergonha diante das máquinas">
+        <div class="article-image"><img src="/assets/article_cards/gunther-anders-vergonha-maquinas.jpg" alt="Günther Anders e a vergonha diante das máquinas" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Atualidade Filosófica</div>
+          <h2 class="article-title">Günther Anders e a vergonha diante das máquinas</h2>
+          <p class="article-excerpt">Günther Anders chamou de vergonha prometeica o sentimento de inferioridade diante de produtos técnicos que parecem mais perfeitos, eficientes e calculáveis do que seus próprios criadores.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/watsuji-tetsuro-fudo-clima-espaco/" aria-label="Ler artigo: Watsuji Tetsurō: clima, espaço e formação da vida humana">
+        <div class="article-image"><img src="/assets/article_cards/watsuji-tetsuro-fudo-clima-espaco.jpg" alt="Watsuji Tetsurō: clima, espaço e formação da vida humana" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Antropologia</div>
+          <h2 class="article-title">Watsuji Tetsurō: clima, espaço e formação da vida humana</h2>
+          <p class="article-excerpt">Watsuji Tetsurō pensou o fūdo como meio humano vivido: clima, paisagem, hábitos, história e convivência. O ambiente não determina mecanicamente a cultura, mas participa da forma como existimos juntos.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/diogenes-laercio-memoria-filosofos/" aria-label="Ler artigo: Diógenes Laércio: o homem que preservou a memória dos filósofos">
+        <div class="article-image"><img src="/assets/article_cards/diogenes-laercio-memoria-filosofos.jpg" alt="Diógenes Laércio: o homem que preservou a memória dos filósofos" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">História da Civilização</div>
+          <h2 class="article-title">Diógenes Laércio: o homem que preservou a memória dos filósofos</h2>
+          <p class="article-excerpt">Diógenes Laércio não foi Diógenes de Sinope. Foi o autor antigo que reuniu vidas, doutrinas e anedotas de filósofos gregos, preservando relatos sem os quais parte decisiva da filosofia antiga teria desaparecido.</p>
+          <div class="article-meta">
+            <span class="article-date">29 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-card" href="/artigos/xenobots-anthrobots-organizacao-vida/" aria-label="Ler artigo: A morte é realmente o fim? O que xenobots e anthrobots revelam sobre a organização da vida">
+        <div class="article-image"><img src="/assets/article_cards/xenobots-anthrobots-organizacao-vida.jpg" alt="A morte é realmente o fim? O que xenobots e anthrobots revelam sobre a organização da vida" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-body">
+          <div class="article-tag">Ciência</div>
+          <h2 class="article-title">A morte é realmente o fim? O que xenobots e anthrobots revelam sobre a organização da vida</h2>
+          <p class="article-excerpt">Experimentos com xenobots e anthrobots mostram que algumas células podem sobreviver por algum tempo, reorganizar-se e assumir comportamentos coletivos em laboratório. Isso não é ressurreição, mas obriga a repensar a fronteira entre organismo, célula e forma viva.</p>
+          <div class="article-meta">
+            <span class="article-date">24 de Julho de 2026</span>
+            <span class="article-read">Ler artigo</span>
+          </div>
+        </div>
+      </a>
       <a class="article-card" href="/artigos/propaganda-moldou-seculo-xx/" aria-label="Ler artigo: Como a propaganda moldou o século XX">
-        <div class="article-image"><img src="/assets/article_cards/propaganda-moldou-seculo-xx.jpg" alt="Como a propaganda moldou o século XX" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/propaganda-moldou-seculo-xx.jpg" alt="Como a propaganda moldou o século XX" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Política</div>
           <h2 class="article-title">Como a propaganda moldou o século XX</h2>
@@ -505,7 +594,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/internet-transformou-todos-em-espectadores/" aria-label="Ler artigo: A internet transformou todos em espectadores">
-        <div class="article-image"><img src="/assets/article_cards/internet-transformou-todos-em-espectadores.jpg" alt="A internet transformou todos em espectadores" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/internet-transformou-todos-em-espectadores.jpg" alt="A internet transformou todos em espectadores" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Atualidade Filosófica</div>
           <h2 class="article-title">A internet transformou todos em espectadores</h2>
@@ -517,7 +606,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/crise-da-masculinidade-moderna/" aria-label="Ler artigo: Existe uma crise da masculinidade moderna?">
-        <div class="article-image"><img src="/assets/article_cards/crise-da-masculinidade-moderna.jpg" alt="Existe uma crise da masculinidade moderna?" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/crise-da-masculinidade-moderna.jpg" alt="Existe uma crise da masculinidade moderna?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Sociologia</div>
           <h2 class="article-title">Existe uma crise da masculinidade moderna?</h2>
@@ -529,7 +618,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/excesso-de-conforto-civilizacoes-frageis/" aria-label="Ler artigo: O excesso de conforto produz civilizações frágeis?">
-        <div class="article-image"><img src="/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp" alt="O excesso de conforto produz civilizações frágeis?" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg" alt="O excesso de conforto produz civilizações frágeis?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Atualidade Filosófica</div>
           <h2 class="article-title">O excesso de conforto produz civilizações frágeis?</h2>
@@ -541,7 +630,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/por-que-civilizacoes-entram-em-decadencia/" aria-label="Ler artigo: Por que as civilizações entram em decadência?">
-        <div class="article-image"><img src="/assets/article_cards/por-que-civilizacoes-entram-em-decadencia.webp" alt="Por que as civilizações entram em decadência?" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/por-que-civilizacoes-entram-em-decadencia.webp" alt="Por que as civilizações entram em decadência?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">História da Civilização</div>
           <h2 class="article-title">Por que as civilizações entram em decadência?</h2>
@@ -553,7 +642,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/sociedade-moderna-destruiu-o-silencio/" aria-label="Ler artigo: A sociedade moderna destruiu o silêncio">
-        <div class="article-image"><img src="/assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp" alt="A sociedade moderna destruiu o silêncio" loading="eager" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/sociedade-moderna-destruiu-o-silencio.jpg" alt="A sociedade moderna destruiu o silêncio" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Atualidade Filosófica</div>
           <h2 class="article-title">A sociedade moderna destruiu o silêncio</h2>
@@ -565,7 +654,7 @@
         </div>
       </a>
       <a class="article-card" href="/artigos/sociedade-contemporanea-perdeu-o-rito/" aria-label="Ler artigo: A sociedade contemporânea perdeu o rito">
-        <div class="article-image"><img src="/assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp" alt="A sociedade contemporânea perdeu o rito" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
+        <div class="article-image"><img src="/assets/article_cards/sociedade-contemporanea-perdeu-o-rito.jpg" alt="A sociedade contemporânea perdeu o rito" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/default-article.jpg';"></div>
         <div class="article-body">
           <div class="article-tag">Antropologia</div>
           <h2 class="article-title">A sociedade contemporânea perdeu o rito</h2>

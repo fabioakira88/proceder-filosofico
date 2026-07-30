@@ -4,6 +4,524 @@
 const POSTS = [
 
   {
+    id:       "plotino-experiencia-do-uno",
+    slug:     "plotino-experiencia-do-uno",
+    tag:      "NEOPLATONISMO",
+    category: "Filosofia",
+    title:    "Plotino e a experiência do Uno: por que toda multiplicidade procura unidade",
+    excerpt:  "Plotino pensou a realidade como uma passagem do Uno ao Intelecto, do Intelecto à Alma e da Alma ao mundo sensível. Sua filosofia não foge da multiplicidade, mas pergunta por que tudo o que é múltiplo parece buscar uma unidade mais alta.",
+    date:     "29 de Julho de 2026",
+    dateISO:  "2026-07-29",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/plotino-experiencia-do-uno.jpg",
+    cover:    "assets/article_cards/plotino-experiencia-do-uno.jpg",
+    tags:     ["Plotino", "neoplatonismo", "Uno", "Intelecto", "Alma", "metafísica"],
+    featured: true,
+    metaTitle: "Plotino e a experiência do Uno | Proceder Filosófico",
+    metaDescription: "Entenda o Uno em Plotino, a relação entre Intelecto, Alma e mundo sensível, e por que o neoplatonismo ainda fala à fragmentação contemporânea.",
+    keywords: ["Plotino", "Uno", "neoplatonismo", "Enéadas", "metafísica", "filosofia antiga"],
+    content: `
+<p><strong>Plotino não começa perguntando como organizar melhor a multiplicidade. Ele pergunta por que a multiplicidade existe e por que, mesmo dispersa, ela parece procurar unidade.</strong></p>
+
+<p>No século III, em um mundo romano atravessado por crises políticas, disputas religiosas e intensa circulação de escolas filosóficas, Plotino ofereceu uma das arquiteturas metafísicas mais influentes da Antiguidade tardia. Seu pensamento ficou conhecido como neoplatonismo, não porque repetisse Platão mecanicamente, mas porque levou ao extremo uma intuição platônica: o sensível não se explica apenas por si mesmo.</p>
+
+<p>As aulas e tratados de Plotino foram organizados por Porfírio nas <em>Enéadas</em>. Ali aparece a grande sequência conceitual de sua filosofia: o Uno, o Intelecto, a Alma e o mundo sensível. A ordem não deve ser lida como uma cadeia material, como se uma coisa fabricasse outra em uma oficina. Trata-se de uma hierarquia de dependência ontológica: quanto mais algo é uno, simples e inteligível, mais próximo está do fundamento.</p>
+
+<h2>O Uno além das definições</h2>
+
+<p>O Uno é o princípio supremo em Plotino. Mas chamá-lo de princípio já é quase dizer demais. Ele está além do ser, além da inteligência discursiva e além de qualquer definição comum. Não é um objeto entre objetos, nem uma divindade imaginada como pessoa que decide criar o mundo por vontade externa.</p>
+
+<p>Essa dificuldade não é acidente. Para Plotino, tudo o que podemos definir já possui alguma multiplicidade: partes, predicados, relações, limites. O Uno, ao contrário, é simplicidade absoluta. Se fosse composto, dependeria de algo mais fundamental que o compusesse. Por isso, o pensamento humano se aproxima dele mais por purificação e negação do que por descrição positiva.</p>
+
+<h2>Emanação não é fabricação</h2>
+
+<p>A palavra emanação costuma gerar confusão. Ela não significa que o Uno perde uma parte de si ao produzir o real. A imagem mais adequada é a de uma fonte que transborda sem se empobrecer, ou de uma luz que ilumina sem deixar de ser luz. Do Uno procede o Intelecto; do Intelecto, a Alma; da Alma, a ordem do mundo sensível.</p>
+
+<p>Essa passagem não deve ser confundida com criação religiosa no sentido estrito. Plotino não descreve um ato temporal em que o mundo começa depois de não existir. Ele descreve uma dependência: tudo aquilo que é múltiplo, pensável e vivo depende de uma unidade anterior que não pode ser reduzida às coisas que dela procedem.</p>
+
+<h2>Intelecto, Alma e mundo sensível</h2>
+
+<p>O Intelecto é o nível em que aparecem as formas inteligíveis, a pluralidade organizada do pensamento. Nele, a unidade já se desdobra em diferença, mas ainda como ordem inteligível. A Alma, por sua vez, faz a mediação entre o inteligível e o sensível, dando vida, movimento e estrutura ao mundo.</p>
+
+<p>O mundo sensível não é puro erro. Ele é menor, instável e fragmentado, mas conserva traços de ordem. A beleza de um corpo, a harmonia de uma obra, a regularidade da natureza e a capacidade humana de reconhecer proporção são sinais de que a multiplicidade não é caos absoluto. Ela participa, ainda que de modo diminuído, de uma ordem mais alta.</p>
+
+<h2>O retorno interior</h2>
+
+<p>A filosofia de Plotino não é apenas cosmologia. Ela é também itinerário espiritual e intelectual. Se tudo procede do Uno, a vida filosófica busca retornar interiormente ao fundamento. Esse retorno não é deslocamento físico, mas conversão da atenção: afastar-se da dispersão sensível, disciplinar a alma e contemplar aquilo que permanece.</p>
+
+<p>É aqui que Plotino se torna surpreendentemente contemporâneo. Vivemos cercados por estímulos, opiniões, tarefas e identidades fragmentadas. A experiência cotidiana nos reparte em múltiplas direções. Plotino não oferece uma técnica de produtividade, mas uma pergunta mais radical: o que em nós ainda deseja unidade?</p>
+
+<h2>Limites e atualidade</h2>
+
+<p>Seria equivocado transformar Plotino em terapeuta moderno ou em místico genérico. Sua filosofia nasce de debates antigos sobre Platão, Aristóteles, estoicismo e tradições religiosas do Mediterrâneo. Ela exige categorias próprias e não deve ser diluída em espiritualidade vaga.</p>
+
+<p>Ainda assim, sua força permanece. Plotino mostra que a multiplicidade não precisa ser negada para ser pensada. Ela precisa ser compreendida a partir de níveis de unidade, forma e participação. Em uma cultura que fragmenta atenção, desejo e identidade, essa pergunta antiga volta com vigor: sem alguma unidade interior, que tipo de vida ainda conseguimos sustentar?</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Stanford Encyclopedia of Philosophy, verbete <a href="https://plato.stanford.edu/entries/plotinus/" target="_blank" rel="noopener">Plotinus</a>.</li>
+  <li>Plotino, <em>Enéadas</em>, organização de Porfírio.</li>
+  <li>Porfírio, <em>Vida de Plotino</em>.</li>
+  <li>Leia também: <a href="/artigos/platao-mundo-das-ideias/">Platão e o mundo das ideias</a>, <a href="/artigos/o-que-e-a-metafisica/">O que é a metafísica?</a> e <a href="/artigos/sao-tomas-fe-razao-explicacao/">Tomás de Aquino: fé e razão</a>.</li>
+</ul>
+`,
+    description: "Introdução editorial ao pensamento de Plotino, ao Uno, à emanação, ao Intelecto, à Alma e à atualidade filosófica do neoplatonismo.",
+    subcategory: "neoplatonismo e metafísica",
+    dossier: null,
+    philosophers: ["Plotino", "Platão", "Porfírio"],
+    books: ["Enéadas", "Vida de Plotino"],
+    civilization: "Antiguidade tardia",
+    period: "Antiguidade",
+    themes: ["Uno", "multiplicidade", "emanação", "metafísica", "contemplação"],
+    relatedArticles: ["platao-mundo-das-ideias", "o-que-e-a-metafisica", "sao-tomas-fe-razao-explicacao"],
+    editorialPriority: "P0",
+    civilizations: ["Grécia antiga", "Roma antiga", "Antiguidade tardia"],
+    historicalPeriods: ["Antiguidade", "Antiguidade tardia"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/plotino-experiencia-do-uno.jpg",
+    updated: "2026-07-29",
+    updatedISO: "2026-07-29"
+  },
+
+  {
+    id:       "martha-nussbaum-emocoes-inteligencia",
+    slug:     "martha-nussbaum-emocoes-inteligencia",
+    tag:      "FILOSOFIA MORAL",
+    category: "Filosofia",
+    title:    "Martha Nussbaum: por que as emoções também possuem inteligência",
+    excerpt:  "Para Martha Nussbaum, emoções não são apenas forças irracionais que atrapalham o pensamento. Elas envolvem avaliações sobre aquilo que julgamos importante, revelando vulnerabilidade, valor e dependência.",
+    date:     "29 de Julho de 2026",
+    dateISO:  "2026-07-29",
+    readTime: "11 min",
+    thumb:    "assets/article_cards/martha-nussbaum-emocoes-inteligencia.jpg",
+    cover:    "assets/article_cards/martha-nussbaum-emocoes-inteligencia.jpg",
+    tags:     ["Martha Nussbaum", "emoções", "ética", "compaixão", "vulnerabilidade", "filosofia moral"],
+    featured: true,
+    metaTitle: "Martha Nussbaum e a inteligência das emoções | Proceder Filosófico",
+    metaDescription: "Entenda a teoria cognitiva das emoções em Martha Nussbaum e por que medo, luto, amor e compaixão envolvem juízos de valor.",
+    keywords: ["Martha Nussbaum", "emoções", "Upheavals of Thought", "ética", "compaixão", "filosofia moral"],
+    content: `
+<p><strong>As emoções não são simples interrupções da razão. Em Martha Nussbaum, elas são modos de avaliar o mundo, de reconhecer aquilo que importa e de admitir nossa vulnerabilidade diante do que não controlamos.</strong></p>
+
+<p>Essa tese altera uma oposição antiga. Durante muito tempo, a vida moral foi descrita como uma luta entre razão e paixão, como se pensar bem exigisse neutralizar afetos. Nussbaum não nega que emoções possam enganar, exagerar ou distorcer. Mas recusa tratá-las como ruídos cegos. Medo, luto, amor, vergonha, raiva e compaixão carregam uma interpretação da realidade.</p>
+
+<p>Em <em>Upheavals of Thought</em>, Nussbaum desenvolve uma teoria cognitiva das emoções. Isso não quer dizer que emoções sejam raciocínios frios ou frases mentais. Significa que elas possuem conteúdo avaliativo: apontam para algo que consideramos valioso para nossa vida, nossa dignidade ou nosso florescimento.</p>
+
+<h2>Emoção como julgamento de valor</h2>
+
+<p>Sentir medo diante de uma ameaça não é apenas tremer. É perceber algo como perigoso para aquilo que valorizamos. Sentir luto não é apenas sofrer uma perda biológica; é reconhecer que alguém ou algo ocupava lugar insubstituível em nossa vida. A emoção interpreta o mundo a partir de bens que nos importam.</p>
+
+<p>Por isso, emoções podem ser inteligentes. Elas revelam mapas de valor que muitas vezes a linguagem racional demora a formular. A pessoa que sofre por uma injustiça percebe, no próprio abalo, que há algo ali que não deveria acontecer. A compaixão diante da dor alheia reconhece que a vulnerabilidade do outro possui peso moral.</p>
+
+<h2>Vulnerabilidade e dependência</h2>
+
+<p>O pensamento de Nussbaum é profundamente antiheroico nesse ponto. Somos seres expostos. Dependemos de corpos, relações, instituições, cuidado, reconhecimento e acaso. As emoções mostram justamente essa dependência. Sofremos porque o que amamos não está inteiramente sob nosso domínio.</p>
+
+<p>Isso não torna a vida emocional inferior. Torna-a humana. Uma existência sem medo, luto ou compaixão poderia parecer invulnerável, mas talvez fosse moralmente empobrecida. Sentir é admitir que o mundo nos atinge porque algo nele importa.</p>
+
+<h2>Compaixão e vida pública</h2>
+
+<p>Nussbaum também leva as emoções para a política. A compaixão, quando bem educada, pode ampliar a percepção moral e impedir que sofrimento social seja tratado como estatística distante. Ela ajuda a imaginar a vida de quem está fora do nosso círculo imediato.</p>
+
+<p>Mas a autora não transforma emoção em soberana da política. Emoções públicas podem ser manipuladas, seletivas e injustas. Uma sociedade pode sentir piedade por vítimas próximas e indiferença por vítimas invisíveis. Pode transformar medo em ressentimento ou patriotismo em hostilidade.</p>
+
+<h2>Educar as emoções</h2>
+
+<p>Se emoções possuem inteligência, elas também exigem formação. Literatura, artes, debate público, educação histórica e instituições justas podem alargar a imaginação moral. O problema não é sentir, mas sentir de modo estreito, tribal, desinformado ou incapaz de reconhecer a dignidade de quem não se parece conosco.</p>
+
+<p>Essa perspectiva evita dois erros simétricos. O primeiro é desprezar emoções como irracionais. O segundo é canonizar qualquer sentimento como verdade automática. Uma emoção pode revelar valor, mas também pode nascer de crença falsa, preconceito ou medo cultivado artificialmente.</p>
+
+<h2>Por que isso importa agora</h2>
+
+<p>Vivemos em ambientes que exploram emoção em escala. Plataformas digitais, campanhas políticas e mercados de atenção sabem provocar indignação, medo, desejo e pertencimento. A resposta filosófica não pode ser fingir neutralidade total. Precisa perguntar que emoções estamos alimentando e que juízos de valor elas carregam.</p>
+
+<p>Nussbaum ajuda a recuperar uma ideia decisiva: razão e emoção não são inimigas naturais. A vida ética exige pensar o que sentimos e sentir com alguma inteligência aquilo que pensamos. Uma sociedade incapaz de educar suas emoções dificilmente saberá proteger a justiça quando ela exigir imaginação, cuidado e coragem.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Martha C. Nussbaum, <em>Upheavals of Thought: The Intelligence of Emotions</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, verbete <a href="https://plato.stanford.edu/entries/emotion/" target="_blank" rel="noopener">Emotion</a>.</li>
+  <li>University of Chicago, perfil acadêmico de <a href="https://philosophy.uchicago.edu/faculty/nussbaum" target="_blank" rel="noopener">Martha C. Nussbaum</a>.</li>
+  <li>Leia também: <a href="/artigos/aristoteles-eudaimonia-vida-boa/">Aristóteles e a eudaimonia</a>, <a href="/artigos/simone-de-beauvoir-liberdade-situada/">Simone de Beauvoir e a liberdade situada</a> e <a href="/artigos/hannah-arendt-banalidade-do-mal/">Hannah Arendt e a banalidade do mal</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre Martha Nussbaum, a teoria cognitiva das emoções, compaixão, vulnerabilidade e vida pública.",
+    subcategory: "ética das emoções",
+    dossier: null,
+    philosophers: ["Martha Nussbaum", "Aristóteles"],
+    books: ["Upheavals of Thought: The Intelligence of Emotions"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["emoções", "ética", "compaixão", "vulnerabilidade", "vida pública"],
+    relatedArticles: ["aristoteles-eudaimonia-vida-boa", "simone-de-beauvoir-liberdade-situada", "hannah-arendt-banalidade-do-mal"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/martha-nussbaum-emocoes-inteligencia.jpg",
+    updated: "2026-07-29",
+    updatedISO: "2026-07-29"
+  },
+
+  {
+    id:       "gunther-anders-vergonha-maquinas",
+    slug:     "gunther-anders-vergonha-maquinas",
+    tag:      "FILOSOFIA DA TECNOLOGIA",
+    category: "Atualidade Filosófica",
+    title:    "Günther Anders e a vergonha diante das máquinas",
+    excerpt:  "Günther Anders chamou de vergonha prometeica o sentimento de inferioridade diante de produtos técnicos que parecem mais perfeitos, eficientes e calculáveis do que seus próprios criadores.",
+    date:     "29 de Julho de 2026",
+    dateISO:  "2026-07-29",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/gunther-anders-vergonha-maquinas.jpg",
+    cover:    "assets/article_cards/gunther-anders-vergonha-maquinas.jpg",
+    tags:     ["Günther Anders", "vergonha prometeica", "técnica", "máquinas", "automação", "inteligência artificial"],
+    featured: true,
+    metaTitle: "Günther Anders e a vergonha diante das máquinas | Proceder Filosófico",
+    metaDescription: "Entenda a vergonha prometeica em Günther Anders, a defasagem entre capacidade técnica e imaginação moral, e sua atualidade diante da automação.",
+    keywords: ["Günther Anders", "vergonha prometeica", "tecnologia", "automação", "ética da técnica", "inteligência artificial"],
+    content: `
+<p><strong>Günther Anders percebeu um deslocamento decisivo da modernidade técnica: o ser humano começou a se sentir inferior aos próprios produtos.</strong></p>
+
+<p>Essa inferioridade não é apenas física. Uma máquina calcula sem cansaço, repete sem hesitação, executa sem drama e parece livre das falhas orgânicas que acompanham qualquer vida humana. Diante dela, o produtor pode sentir vergonha de ter nascido, e não sido fabricado; de ser contingente, frágil, lento e imprevisível.</p>
+
+<p>Anders chamou esse fenômeno de vergonha prometeica. O nome remete a Prometeu, figura associada ao dom técnico e ao fogo. Mas aqui há uma inversão amarga: o ser humano moderno já não se orgulha apenas de produzir instrumentos poderosos. Ele se mede por eles e descobre que não corresponde ao padrão de perfeição que sua própria técnica parece exigir.</p>
+
+<h2>Produtos mais perfeitos que produtores</h2>
+
+<p>A máquina industrial e, hoje, os sistemas digitais funcionam como espelhos cruéis. Eles não possuem biografia, hesitação moral, envelhecimento, cansaço afetivo ou vergonha. Sua eficiência parece denunciar a imperfeição humana. A pessoa passa a desejar adaptar-se ao objeto que criou.</p>
+
+<p>Essa adaptação aparece de muitas formas: aceitar ritmos de trabalho definidos por sistemas, reduzir linguagem a comandos, medir valor pessoal por produtividade, tratar atenção como dado operacional e imaginar que o corpo é apenas uma máquina mal otimizada.</p>
+
+<h2>A defasagem prometeica</h2>
+
+<p>Outro conceito central em Anders é a distância entre aquilo que somos capazes de produzir e aquilo que somos capazes de imaginar moralmente. A técnica moderna amplia o alcance de nossas ações, mas nossa imaginação ética nem sempre acompanha esse alcance.</p>
+
+<p>Na era nuclear, que marcou profundamente o pensamento de Anders, poucos podiam acionar forças capazes de destruir populações inteiras. O problema não era apenas o poder material, mas a incapacidade de sentir a dimensão real das consequências. Entre apertar um botão e imaginar vidas concretas destruídas, abre-se uma distância moral.</p>
+
+<h2>Automação e inteligência artificial</h2>
+
+<p>Aplicar Anders à inteligência artificial exige cuidado. Ele não escreveu sobre o ecossistema atual de modelos generativos, plataformas algorítmicas e automação digital como o conhecemos. Mas sua pergunta permanece forte: o que acontece quando sistemas produzidos por nós passam a definir o ritmo, a linguagem e os critérios pelos quais nos avaliamos?</p>
+
+<p>A vergonha diante das máquinas pode aparecer como fascínio obediente. Se o sistema calcula, ele parece saber. Se responde rapidamente, parece compreender. Se organiza dados em escala, parece julgar melhor. Aos poucos, a decisão humana pode parecer uma etapa atrasada do processo técnico.</p>
+
+<h2>Responsabilidade sem fantasia</h2>
+
+<p>Anders não autoriza uma rejeição simplista da tecnologia. O problema não é a existência de ferramentas. É a abdicação da responsabilidade diante delas. Quando uma sociedade trata sistemas técnicos como destino inevitável, ela transfere para objetos e processos a responsabilidade que deveria permanecer humana.</p>
+
+<p>Isso vale para fábricas, burocracias, armas, algoritmos e plataformas. Uma técnica pode ampliar possibilidades reais, mas também pode reorganizar a imaginação moral até que pareça absurdo perguntar se determinado avanço deveria existir, em que condições e sob que limites.</p>
+
+<h2>A vergonha que precisa virar pensamento</h2>
+
+<p>A vergonha prometeica não deve ser aceita como destino. Ela precisa ser transformada em reflexão. Se nos sentimos inferiores às máquinas, talvez seja porque adotamos critérios estreitos demais para medir a vida humana: velocidade, cálculo, repetição, eficiência e previsibilidade.</p>
+
+<p>O humano não é superior por ser ineficiente. Mas também não é inferior por não funcionar como produto técnico. Cuidar, julgar, hesitar, lembrar, arrepender-se e responder moralmente são capacidades que não cabem inteiramente na linguagem da performance. Anders continua atual porque nos obriga a perguntar se ainda governamos nossas máquinas ou se já começamos a pedir permissão a elas para sermos humanos.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Günther Anders, <em>The Obsolescence of Humankind</em>.</li>
+  <li>University of Minnesota Press, edição de <a href="https://www.upress.umn.edu/book-division/books/the-obsolescence-of-humankind-volume-1" target="_blank" rel="noopener"><em>The Obsolescence of Humankind, Volume 1</em></a>.</li>
+  <li>Christopher John Müller, <em>Prometheanism: Technology, Digital Culture and Human Obsolescence</em>.</li>
+  <li>Leia também: <a href="/artigos/tecnologia-mais-rapida-que-sabedoria/">A tecnologia ficou mais rápida que a sabedoria</a>, <a href="/artigos/transumanismo-limites-humanos-tecnica/">O transumanismo e os limites humanos</a> e <a href="/artigos/algoritmo-substituiu-verdade-pela-atencao/">O algoritmo substituiu a verdade pela atenção</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre Günther Anders, vergonha prometeica, automação, inteligência artificial e responsabilidade moral diante da técnica.",
+    subcategory: "ética da tecnologia",
+    dossier: null,
+    philosophers: ["Günther Anders"],
+    books: ["The Obsolescence of Humankind"],
+    civilization: "Ocidente contemporâneo",
+    period: "Século XX",
+    themes: ["tecnologia", "vergonha prometeica", "máquinas", "automação", "responsabilidade"],
+    relatedArticles: ["tecnologia-mais-rapida-que-sabedoria", "transumanismo-limites-humanos-tecnica", "algoritmo-substituiu-verdade-pela-atencao"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Século XX", "Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/gunther-anders-vergonha-maquinas.jpg",
+    updated: "2026-07-29",
+    updatedISO: "2026-07-29"
+  },
+
+  {
+    id:       "watsuji-tetsuro-fudo-clima-espaco",
+    slug:     "watsuji-tetsuro-fudo-clima-espaco",
+    tag:      "FILOSOFIA JAPONESA",
+    category: "Antropologia",
+    title:    "Watsuji Tetsurō: clima, espaço e formação da vida humana",
+    excerpt:  "Watsuji Tetsurō pensou o fūdo como meio humano vivido: clima, paisagem, hábitos, história e convivência. O ambiente não determina mecanicamente a cultura, mas participa da forma como existimos juntos.",
+    date:     "29 de Julho de 2026",
+    dateISO:  "2026-07-29",
+    readTime: "12 min",
+    thumb:    "assets/article_cards/watsuji-tetsuro-fudo-clima-espaco.jpg",
+    cover:    "assets/article_cards/watsuji-tetsuro-fudo-clima-espaco.jpg",
+    tags:     ["Watsuji Tetsurō", "fūdo", "filosofia japonesa", "clima", "espaço", "aidagara"],
+    featured: true,
+    metaTitle: "Watsuji Tetsurō: clima, espaço e vida humana | Proceder Filosófico",
+    metaDescription: "Introdução ao conceito de fūdo em Watsuji Tetsurō, a relação entre ambiente, cultura, subjetividade e os limites do determinismo climático.",
+    keywords: ["Watsuji Tetsurō", "fūdo", "clima e cultura", "filosofia japonesa", "aidagara", "antropologia filosófica"],
+    content: `
+<p><strong>Watsuji Tetsurō não tratou o clima como cenário neutro. Para ele, o ser humano existe em um meio vivido, formado por paisagem, estação, arquitetura, trabalho, hábito e relação social.</strong></p>
+
+<p>O conceito central dessa reflexão é <em>fūdo</em>, frequentemente traduzido como clima, meio ou ambiente cultural. A palavra não designa apenas temperatura, chuva ou relevo. Ela aponta para uma forma de habitar o mundo. O frio, a umidade, a montanha, o mar, o vento e a casa não são dados externos à vida humana; entram na maneira como corpos, costumes e comunidades se organizam.</p>
+
+<p>Watsuji foi uma das figuras importantes da filosofia japonesa moderna. Dialogou criticamente com pensamento europeu, especialmente com fenomenologia e hermenêutica, mas procurou pensar a existência humana a partir de uma sensibilidade própria ao espaço, à história e à vida coletiva.</p>
+
+<h2>Fūdo não é determinismo simples</h2>
+
+<p>O risco imediato é ler Watsuji como defensor de um determinismo climático: povos seriam o que são porque vivem em certo clima. Essa leitura empobrece o argumento. O ambiente influencia a vida humana, mas não como causa mecânica que produz automaticamente uma cultura.</p>
+
+<p>O fūdo é uma relação histórica. Um povo não apenas sofre a chuva; cria telhados, rotinas agrícolas, festas, vestimentas, metáforas e formas de espera. Não apenas enfrenta o frio; organiza casas, alimentos, solidariedades e ritmos de trabalho. O ambiente é recebido, interpretado e transformado.</p>
+
+<h2>Ambiente e existência humana</h2>
+
+<p>Ao pensar o espaço vivido, Watsuji amplia a pergunta filosófica sobre o sujeito. Não existimos como consciências isoladas que depois entram em um mundo externo. Já nascemos em uma textura de lugares, línguas, estações, relações e heranças.</p>
+
+<p>Isso se aproxima de outro conceito importante em Watsuji: <em>aidagara</em>, a existência entre pessoas. O humano é relacional. O eu não se entende completamente sem os vínculos que o atravessam. O ambiente físico e o ambiente social formam juntos a vida concreta.</p>
+
+<h2>Paisagem, corpo e cultura</h2>
+
+<p>Uma cidade costeira, uma aldeia de montanha e uma metrópole atravessada por calor intenso produzem experiências diferentes de distância, proteção, perigo e comunidade. Essas diferenças não anulam a liberdade humana, mas dão forma às possibilidades cotidianas.</p>
+
+<p>A filosofia de Watsuji permite perceber que a cultura não flutua acima do chão. Ela tem clima, caminho, cheiro, umidade, mesa, estação, rito e arquitetura. Pensar uma sociedade exige olhar também para seus modos materiais de habitar.</p>
+
+<h2>Críticas necessárias</h2>
+
+<p>Como todo pensamento forte, Watsuji precisa ser lido criticamente. A relação entre clima e cultura pode ser usada de modo perigoso quando se transforma em essência nacional ou explicação rígida de povos. A história humana é atravessada por migrações, tecnologia, comércio, violência, adaptação e escolha.</p>
+
+<p>Por isso, a atualidade de Watsuji não está em fixar identidades. Está em lembrar que nenhum universal humano existe fora de ambientes concretos. Liberdade, ética e comunidade sempre aparecem em lugares, corpos e condições específicas.</p>
+
+<h2>Por que Watsuji importa hoje</h2>
+
+<p>Em tempos de crise climática, urbanização intensa e vida digital, a pergunta de Watsuji ganha novo peso. Se ambientes moldam formas de vida, alterar radicalmente clima, cidade e paisagem altera também subjetividade, convivência e horizonte moral.</p>
+
+<p>Não basta perguntar como sobreviver tecnicamente a mudanças ambientais. É preciso perguntar que tipos de humanidade determinados ambientes tornam possível ou difícil. Watsuji nos ensina que pensar o humano é pensar o entrelaçamento de corpo, espaço, clima, história e vida comum.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Watsuji Tetsurō, <em>Fūdo: Climate and Culture</em>.</li>
+  <li>Stanford Encyclopedia of Philosophy, verbete <a href="https://plato.stanford.edu/entries/japanese-philosophy/" target="_blank" rel="noopener">Japanese Philosophy</a>.</li>
+  <li>University of Hawaiʻi Press, edição de <a href="https://uhpress.hawaii.edu/title/climate-and-culture-a-philosophical-study/" target="_blank" rel="noopener"><em>Climate and Culture: A Philosophical Study</em></a>.</li>
+  <li>Leia também: <a href="/artigos/budismo-filosofia-impermanencia-nao-eu/">Budismo como filosofia</a>, <a href="/artigos/sociedade-contemporanea-perdeu-o-rito/">A sociedade contemporânea perdeu o rito</a> e <a href="/artigos/confucio-virtude-pratica/">Confúcio: virtude prática</a>.</li>
+</ul>
+`,
+    description: "Introdução ao conceito de fūdo em Watsuji Tetsurō, com clima, paisagem, espaço vivido, aidagara e críticas ao determinismo climático.",
+    subcategory: "filosofia japonesa e ambiente",
+    dossier: null,
+    philosophers: ["Watsuji Tetsurō"],
+    books: ["Fūdo: Climate and Culture"],
+    civilization: "Japão moderno",
+    period: "Século XX",
+    themes: ["fūdo", "clima", "espaço", "cultura", "aidagara", "ambiente"],
+    relatedArticles: ["budismo-filosofia-impermanencia-nao-eu", "sociedade-contemporanea-perdeu-o-rito", "confucio-virtude-pratica"],
+    editorialPriority: "P0",
+    civilizations: ["Japão", "Ásia Oriental"],
+    historicalPeriods: ["Século XX", "Contemporaneidade"],
+    format: "Ensaio filosófico",
+    heroImage: "assets/article_cards/watsuji-tetsuro-fudo-clima-espaco.jpg",
+    updated: "2026-07-29",
+    updatedISO: "2026-07-29"
+  },
+
+  {
+    id:       "diogenes-laercio-memoria-filosofos",
+    slug:     "diogenes-laercio-memoria-filosofos",
+    tag:      "HISTÓRIA DA FILOSOFIA",
+    category: "História da Civilização",
+    title:    "Diógenes Laércio: o homem que preservou a memória dos filósofos",
+    excerpt:  "Diógenes Laércio não foi Diógenes de Sinope. Foi o autor antigo que reuniu vidas, doutrinas e anedotas de filósofos gregos, preservando relatos sem os quais parte decisiva da filosofia antiga teria desaparecido.",
+    date:     "29 de Julho de 2026",
+    dateISO:  "2026-07-29",
+    readTime: "11 min",
+    thumb:    "assets/article_cards/diogenes-laercio-memoria-filosofos.jpg",
+    cover:    "assets/article_cards/diogenes-laercio-memoria-filosofos.jpg",
+    tags:     ["Diógenes Laércio", "filosofia antiga", "história da filosofia", "biografia", "doxografia", "Grécia"],
+    featured: true,
+    metaTitle: "Diógenes Laércio e a memória dos filósofos | Proceder Filosófico",
+    metaDescription: "Entenda quem foi Diógenes Laércio, por que suas Vidas e doutrinas preservaram a filosofia antiga e por que sua obra exige leitura crítica.",
+    keywords: ["Diógenes Laércio", "Vidas dos filósofos", "filosofia antiga", "doxografia", "Epicuro", "Sócrates"],
+    content: `
+<p><strong>Diógenes Laércio é um dos nomes mais importantes e, ao mesmo tempo, mais enigmáticos da história da filosofia antiga. Sabemos pouco sobre sua vida, mas dependemos enormemente da obra que ele preservou.</strong></p>
+
+<p>Antes de tudo, é preciso evitar uma confusão comum. Diógenes Laércio não é Diógenes de Sinope, o filósofo cínico associado ao barril, à provocação pública e à vida radicalmente simples. Laércio é outro autor, provavelmente do século III, conhecido por escrever uma grande compilação sobre filósofos antigos.</p>
+
+<p>Sua obra costuma ser chamada de <em>Vidas e doutrinas dos filósofos ilustres</em>. Nela, biografia, doutrina, anedota, lista de obras, testamentos, cartas e classificações escolares aparecem misturados. O resultado é irregular, às vezes ingênuo, às vezes precioso. Mas sem Diógenes Laércio, muito do que sabemos sobre a filosofia grega seria mais pobre.</p>
+
+<h2>Um autor quase invisível</h2>
+
+<p>O paradoxo é forte: conhecemos muitos filósofos antigos graças a um escritor sobre o qual quase nada sabemos. Sua origem, formação e contexto intelectual permanecem discutidos. Ele aparece menos como personagem e mais como transmissor de memórias.</p>
+
+<p>Essa invisibilidade não diminui sua importância. Na Antiguidade, preservar filosofia não significava apenas copiar argumentos. Significava conservar nomes, linhagens, episódios, rivalidades, cartas, livros perdidos e modos de vida associados a cada escola.</p>
+
+<h2>Biografia, doutrina e anedota</h2>
+
+<p>A obra de Laércio não separa rigorosamente vida e pensamento. Um filósofo aparece por suas ideias, mas também por hábitos, gestos, frases, encontros e morte. Isso pode incomodar o leitor moderno, acostumado a separar biografia intelectual de curiosidade narrativa.</p>
+
+<p>Mas essa mistura revela algo antigo: filosofia era também forma de vida. Saber o que Epicuro ensinava, como os cínicos viviam, que tipo de disciplina os estoicos cultivavam ou como Sócrates era lembrado fazia parte da compreensão das escolas.</p>
+
+<h2>O problema da confiabilidade</h2>
+
+<p>Diógenes Laércio não deve ser lido como historiador moderno. Ele recolhe materiais de qualidade desigual, reproduz tradições contraditórias e preserva anedotas cuja historicidade nem sempre pode ser confirmada. Em alguns momentos, é fonte indispensável; em outros, exige grande cautela.</p>
+
+<p>Essa limitação não o torna inútil. Pelo contrário: torna sua leitura ainda mais interessante. Ele mostra como a filosofia antiga foi transmitida por camadas de memória, reputação, disputa escolar e desejo de exemplificar estilos de vida.</p>
+
+<h2>O que teria desaparecido</h2>
+
+<p>A importância de Laércio é evidente no caso de Epicuro. Cartas fundamentais da tradição epicurista chegaram até nós por meio de sua obra. Muitos fragmentos, listas e relatos sobre escolas antigas sobreviveram porque ele os reuniu.</p>
+
+<p>Isso nos lembra que a história da filosofia depende de mediações frágeis. Obras se perdem, bibliotecas queimam, manuscritos deixam de ser copiados, escolas desaparecem. Às vezes, uma tradição inteira sobrevive porque alguém decidiu compilar materiais que poderiam parecer secundários.</p>
+
+<h2>A memória como problema filosófico</h2>
+
+<p>Diógenes Laércio interessa não apenas pelo que conta, mas pelo que revela sobre a memória filosófica. Toda tradição precisa escolher o que preservar, como ordenar, que nomes destacar e que episódios transformar em exemplo.</p>
+
+<p>Quando lemos filosofia antiga, muitas vezes imaginamos acesso direto aos grandes autores. Mas esse acesso passa por copistas, comentadores, tradutores, compiladores e historiadores. Laércio é uma dessas passagens. Ele não é janela transparente, mas é uma janela sem a qual veríamos muito menos.</p>
+
+<h2>Por que ler Laércio hoje</h2>
+
+<p>Ler Diógenes Laércio hoje é aprender a amar a tradição sem ingenuidade. Suas páginas pedem gratidão e crítica ao mesmo tempo. Gratidão porque preservam vestígios preciosos; crítica porque nem toda memória é prova.</p>
+
+<p>Em uma cultura que consome ideias como frases soltas, Laércio recorda que pensamento tem história, corpo, transmissão e perda. A filosofia não chega até nós como monumento intacto. Chega como arquivo vivo, fragmentado e disputado. Preservar também é pensar.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Diógenes Laércio, <em>Lives of Eminent Philosophers</em>, edição Loeb Classical Library.</li>
+  <li>Loeb Classical Library, <a href="https://www.loebclassics.com/view/LCL184/1925/volume.xml" target="_blank" rel="noopener"><em>Lives of Eminent Philosophers</em>, volume I</a>.</li>
+  <li>Internet Encyclopedia of Philosophy, verbetes sobre filosofia antiga e escolas helenísticas.</li>
+  <li>Leia também: <a href="/artigos/socrates-metodo-maieutico/">Sócrates e o método maiêutico</a>, <a href="/artigos/platao-mundo-das-ideias/">Platão e o mundo das ideias</a> e <a href="/artigos/aristoteles-eudaimonia-vida-boa/">Aristóteles e a eudaimonia</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre Diógenes Laércio, a preservação da filosofia antiga, biografia, doxografia, anedotas e memória intelectual.",
+    subcategory: "memória da filosofia antiga",
+    dossier: null,
+    philosophers: ["Diógenes Laércio", "Sócrates", "Platão", "Aristóteles", "Epicuro"],
+    books: ["Vidas e doutrinas dos filósofos ilustres"],
+    civilization: "Grécia antiga",
+    period: "Antiguidade",
+    themes: ["memória", "filosofia antiga", "doxografia", "biografia", "tradição"],
+    relatedArticles: ["socrates-metodo-maieutico", "platao-mundo-das-ideias", "aristoteles-eudaimonia-vida-boa"],
+    editorialPriority: "P0",
+    civilizations: ["Grécia antiga", "Roma antiga"],
+    historicalPeriods: ["Antiguidade"],
+    format: "Ensaio histórico-filosófico",
+    heroImage: "assets/article_cards/diogenes-laercio-memoria-filosofos.jpg",
+    updated: "2026-07-29",
+    updatedISO: "2026-07-29"
+  },
+
+  {
+    id:       "xenobots-anthrobots-organizacao-vida",
+    slug:     "xenobots-anthrobots-organizacao-vida",
+    tag:      "FILOSOFIA DA CIÊNCIA",
+    category: "Ciência",
+    title:    "A morte é realmente o fim? O que xenobots e anthrobots revelam sobre a organização da vida",
+    excerpt:  "Experimentos com xenobots e anthrobots mostram que algumas células podem sobreviver por algum tempo, reorganizar-se e assumir comportamentos coletivos em laboratório. Isso não é ressurreição, mas obriga a repensar a fronteira entre organismo, célula e forma viva.",
+    date:     "24 de Julho de 2026",
+    dateISO:  "2026-07-24",
+    readTime: "13 min",
+    thumb:    "assets/article_cards/xenobots-anthrobots-organizacao-vida.jpg",
+    cover:    "assets/article_cards/xenobots-anthrobots-organizacao-vida.jpg",
+    tags:     ["xenobots", "anthrobots", "biologia", "morte", "Aristóteles", "medicina regenerativa"],
+    featured: true,
+    metaTitle: "Xenobots, anthrobots e a organização da vida | Proceder Filosófico",
+    metaDescription: "Entenda o que xenobots e anthrobots revelam sobre células, morte do organismo, auto-organização, reparo em laboratório e filosofia aristotélica da vida.",
+    keywords: ["xenobots", "anthrobots", "morte", "vida", "Aristóteles", "biologia", "medicina regenerativa"],
+    content: `
+<p><strong>A morte de um organismo não significa que todas as suas células deixem de existir no mesmo instante. Entre o fim da integração do corpo e a perda completa da viabilidade celular existe uma zona biologicamente ativa, delicada e limitada.</strong></p>
+
+<p>É nessa zona que pesquisas recentes sobre xenobots e anthrobots se tornam filosoficamente interessantes. Em condições controladas de laboratório, células retiradas de organismos vivos ou provenientes de tecido humano adulto podem se reorganizar em pequenos conjuntos móveis, capazes de interagir com o ambiente e, em alguns casos experimentais, participar de processos de reparo celular observados em placas de cultura.</p>
+
+<p>Isso não significa que a morte foi vencida, nem que um organismo voltou à vida. Significa algo mais rigoroso e mais estranho: a vida celular pode conservar capacidades temporárias depois que a organização maior do organismo já não existe. A fronteira entre vida e morte, quando vista no nível das células, é menos instantânea do que nossa linguagem cotidiana sugere.</p>
+
+<h2>A morte do organismo e a viabilidade das células</h2>
+
+<p>Quando dizemos que um organismo morreu, falamos da perda de uma coordenação global: circulação, respiração, metabolismo integrado, regulação nervosa e continuidade funcional do corpo como unidade. Essa morte do todo não coincide necessariamente com a morte imediata de cada parte.</p>
+
+<p>Células de pele, sangue, epitélio ou outros tecidos podem permanecer viáveis por certo tempo, dependendo de temperatura, oxigênio, nutrientes, dano acumulado e contexto experimental. Bancos de tecidos, transplantes e culturas celulares já dependem dessa distinção prática: partes biológicas podem conservar alguma atividade quando separadas do organismo original.</p>
+
+<p>A novidade filosófica não está apenas em reconhecer que células sobrevivem temporariamente. Está em observar que algumas delas, em ambiente apropriado, podem formar novas configurações coletivas. A pergunta muda de escala: o que chamamos de vida está na matéria isolada ou na forma como a matéria se organiza?</p>
+
+<h2>Xenobots: células animais em uma nova organização</h2>
+
+<p>Os xenobots ficaram conhecidos como pequenos organismos ou biobots construídos a partir de células de embriões da espécie <em>Xenopus laevis</em>, uma rã africana usada com frequência em biologia do desenvolvimento. Eles não são robôs metálicos. São estruturas vivas formadas por células que, fora do contexto original do embrião, assumem uma organização nova.</p>
+
+<p>O interesse científico está justamente nessa plasticidade. Células que normalmente participariam de um corpo animal passam a integrar um arranjo diferente, com movimento e comportamento coletivo. O fenômeno mostra que a informação biológica não está apenas em um plano externo imposto por engenheiros, mas também nas capacidades locais das próprias células.</p>
+
+<p>O nome pode confundir. Xenobots não são criaturas conscientes, animais completos ou seres com finalidade própria comparável à de um organismo natural. São sistemas biológicos experimentais, pequenos, limitados e dependentes das condições em que foram produzidos e mantidos.</p>
+
+<h2>Anthrobots: células humanas adultas que se auto-organizam</h2>
+
+<p>Os anthrobots ampliaram a discussão porque foram produzidos a partir de células somáticas humanas adultas, especialmente células epiteliais ciliadas do sistema respiratório. Em vez de serem esculpidos externamente como peças separadas, eles se auto-organizam em agregados multicelulares móveis.</p>
+
+<p>Os cílios dessas células, que em seu contexto original ajudam a mover muco e partículas nas vias aéreas, passam a contribuir para o deslocamento do pequeno conjunto. O mesmo material celular, em outra forma de organização, manifesta outro comportamento observável.</p>
+
+<p>Essa diferença é crucial. Não se trata de uma alma nova aparecendo no laboratório, nem de uma pessoa reduzida a célula. Trata-se de células humanas adultas que, retiradas de sua arquitetura original e cultivadas sob condições específicas, revelam uma capacidade de auto-organização maior do que se imaginava.</p>
+
+<h2>Movimento, cooperação e reparo em laboratório</h2>
+
+<p>Nos experimentos com anthrobots, alguns agrupamentos se moveram de modo coordenado. Outros formaram estruturas maiores, chamadas em certos contextos de superbots. Em ensaios laboratoriais, pesquisadores observaram que esses agrupamentos podiam estimular reparo em camadas celulares danificadas.</p>
+
+<p>Esse ponto precisa ser dito com cuidado. O reparo observado ocorreu em condições experimentais controladas, em laboratório. Ele não autoriza prometer cura clínica, regeneração de órgãos ou restauração de funções humanas complexas. Entre uma observação em placa de cultura e uma terapia segura existe uma distância enorme.</p>
+
+<p>Ainda assim, a implicação é forte. Se células adultas podem reorganizar sua ação coletiva de modo inesperado, a medicina regenerativa ganha novas perguntas: como orientar tecidos sem controlar cada célula individualmente? Como aproveitar capacidades de auto-organização sem produzir riscos biológicos? Como distinguir reparo útil de comportamento imprevisível?</p>
+
+<h2>Aristóteles: matéria e forma</h2>
+
+<p>É aqui que Aristóteles entra, não como prova científica, mas como parceiro conceitual. Para ele, um ser não é definido apenas pela matéria de que é feito. A forma, ou seja, o modo de organização que faz uma coisa ser aquilo que é, é decisiva para compreender a natureza de um vivente.</p>
+
+<p>As mesmas células podem participar de um tecido respiratório, de uma cultura celular ou de um pequeno agrupamento móvel. A matéria permanece biologicamente semelhante, mas a organização altera função, comportamento e sentido experimental. A pergunta aristotélica reaparece em linguagem contemporânea: o que faz de um conjunto de matéria algo vivo?</p>
+
+<p>Isso não significa que os experimentos confirmem Aristóteles. Ciência moderna e metafísica antiga operam com métodos diferentes. Mas a distinção entre matéria e forma ajuda a evitar uma leitura pobre do fenômeno. O vivo não é mero material biológico acumulado. Ele envolve relação, padrão, função e integração.</p>
+
+<h2>O que essa comparação não autoriza</h2>
+
+<p>Há uma tentação narrativa em chamar esses fenômenos de prova de que a morte acabou, ou de que a vida possui um terceiro estado plenamente estabelecido. Essa linguagem pode ser útil como interpretação conceitual, mas não deve ser tratada como fato científico consolidado.</p>
+
+<p>O que existe são evidências de viabilidade celular temporária, plasticidade, auto-organização e comportamento coletivo em sistemas experimentais. Isso é extraordinário por si só. Não precisa ser inflado em promessa metafísica, espiritual ou médica.</p>
+
+<p>Ressurreição é retorno de uma pessoa ou organismo à vida. Xenobots e anthrobots não são isso. Eles mostram reorganização de células e tecidos em outro nível, não a recuperação da unidade perdida de um organismo morto.</p>
+
+<h2>Por que isso importa</h2>
+
+<p>Para a biologia, esses estudos sugerem que células possuem repertórios de comportamento mais amplos do que aqueles visíveis no corpo normal. Para a medicina regenerativa, indicam caminhos de pesquisa sobre reparo, comunicação celular e controle de forma. Para a filosofia, recolocam uma pergunta antiga: onde termina a matéria e começa a organização que chamamos de vida?</p>
+
+<p>A resposta não virá de uma frase simples. Ela exigirá laboratório, prudência, ética e pensamento conceitual. Quanto mais a ciência ilumina os detalhes da vida, mais percebemos que nossas categorias comuns são úteis, mas incompletas.</p>
+
+<p>Talvez a maior lição dos xenobots e anthrobots não seja sobre vencer a morte. Seja sobre abandonar a ideia de que a vida pode ser entendida apenas como presença ou ausência. Entre o corpo inteiro e a célula isolada existe um campo de formas, relações e possibilidades que ainda estamos começando a enxergar.</p>
+
+<h2>Fontes e leitura complementar</h2>
+
+<ul>
+  <li>Gizem Gumuskaya et al., estudo sobre anthrobots em <em>Advanced Science</em>. DOI: <a href="https://doi.org/10.1002/advs.202303575" target="_blank" rel="noopener">10.1002/advs.202303575</a>.</li>
+  <li>Peter A. Noble et al., revisão conceitual sobre comportamento celular após a morte do organismo em <em>Advanced Science</em>. DOI: <a href="https://doi.org/10.1002/advs.202409330" target="_blank" rel="noopener">10.1002/advs.202409330</a>.</li>
+  <li>Aristóteles, <em>De Anima</em> e <em>Metafísica</em>, para a distinção clássica entre matéria, forma e vida.</li>
+  <li>Leia também: <a href="/artigos/aristoteles-eudaimonia-vida-boa/">Aristóteles e a eudaimonia</a>, <a href="/artigos/transumanismo-limites-humanos-tecnica/">O transumanismo e os limites do humano</a> e <a href="/artigos/o-que-e-a-metafisica/">O que é a metafísica?</a>.</li>
+</ul>
+`,
+    description: "Ensaio sobre xenobots, anthrobots, morte do organismo, viabilidade celular, auto-organização, Aristóteles e filosofia da vida.",
+    subcategory: "biologia filosófica e vida",
+    dossier: null,
+    philosophers: ["Aristóteles"],
+    books: ["De Anima", "Metafísica"],
+    civilization: "Ocidente contemporâneo",
+    period: "Contemporâneo",
+    themes: ["xenobots", "anthrobots", "vida", "morte", "auto-organização", "medicina regenerativa"],
+    relatedArticles: ["aristoteles-eudaimonia-vida-boa", "transumanismo-limites-humanos-tecnica", "o-que-e-a-metafisica"],
+    editorialPriority: "P0",
+    civilizations: ["Ocidente contemporâneo"],
+    historicalPeriods: ["Contemporaneidade"],
+    format: "Ensaio filosófico e científico",
+    heroImage: "assets/article_cards/xenobots-anthrobots-organizacao-vida.jpg",
+    updated: "2026-07-24",
+    updatedISO: "2026-07-24"
+  },
+
+  {
     id:       "propaganda-moldou-seculo-xx",
     slug:     "propaganda-moldou-seculo-xx",
     tag:      "POLÍTICA E SOCIEDADE",
@@ -295,8 +813,8 @@ const POSTS = [
     date:     "21 de Julho de 2026",
     dateISO:  "2026-07-21",
     readTime: "12 min",
-    thumb:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
-    cover:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
+    thumb:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg",
+    cover:    "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg",
     tags:     ["conforto", "civilização", "estoicismo", "Nietzsche", "Byung-Chul Han"],
     featured: true,
     metaTitle: "O excesso de conforto produz civilizações frágeis?",
@@ -362,7 +880,7 @@ const POSTS = [
     civilizations: ["Ocidente contemporâneo"],
     historicalPeriods: ["Contemporaneidade"],
     format: "Ensaio filosófico",
-    heroImage: "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.webp",
+    heroImage: "assets/article_cards/excesso-de-conforto-civilizacoes-frageis.jpg",
     updated: "2026-07-21"
   },
 
@@ -464,8 +982,8 @@ const POSTS = [
     date:     "21 de Julho de 2026",
     dateISO:  "2026-07-21",
     readTime: "12 min",
-    thumb:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
-    cover:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
+    thumb:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.jpg",
+    cover:    "assets/article_cards/sociedade-moderna-destruiu-o-silencio.jpg",
     tags:     ["silêncio", "atenção", "Pascal", "Schopenhauer", "Heidegger", "Byung-Chul Han"],
     featured: true,
     metaTitle: "A sociedade moderna destruiu o silêncio",
@@ -537,7 +1055,7 @@ const POSTS = [
     civilizations: ["Ocidente contemporâneo"],
     historicalPeriods: ["Modernidade", "Contemporaneidade"],
     format: "Ensaio filosófico",
-    heroImage: "assets/article_cards/sociedade-moderna-destruiu-o-silencio.webp",
+    heroImage: "assets/article_cards/sociedade-moderna-destruiu-o-silencio.jpg",
     updated: "2026-07-21"
   },
 
@@ -551,8 +1069,8 @@ const POSTS = [
     date:     "21 de Julho de 2026",
     dateISO:  "2026-07-21",
     readTime: "13 min",
-    thumb:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
-    cover:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
+    thumb:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.jpg",
+    cover:    "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.jpg",
     tags:     ["rito", "Durkheim", "Victor Turner", "Byung-Chul Han", "secularização"],
     featured: true,
     metaTitle: "A sociedade contemporânea perdeu o rito",
@@ -624,7 +1142,7 @@ const POSTS = [
     civilizations: ["Ocidente contemporâneo"],
     historicalPeriods: ["Modernidade", "Contemporaneidade"],
     format: "Ensaio filosófico",
-    heroImage: "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.webp",
+    heroImage: "assets/article_cards/sociedade-contemporanea-perdeu-o-rito.jpg",
     updated: "2026-07-21"
   },
 
