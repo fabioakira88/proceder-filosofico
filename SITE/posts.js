@@ -2,6 +2,263 @@
 // Adicione novos artigos neste array.
 
 const POSTS = [
+{
+  "id": "epicuro-medo-da-morte",
+  "slug": "epicuro-medo-da-morte",
+  "tag": "FILOSOFIA HELENÍSTICA",
+  "category": "Filosofia",
+  "subcategory": "filosofia antiga e ética",
+  "title": "Epicuro e o medo da morte: por que não devemos temer o que não podemos sentir",
+  "excerpt": "Epicuro transforma o medo da morte em problema lógico e terapêutico: quando a morte chega, já não há sujeito capaz de experimentá-la.",
+  "date": "11 de Agosto de 2026",
+  "dateISO": "2026-08-11",
+  "updated": "11 de Agosto de 2026",
+  "updatedISO": "2026-08-11",
+  "readTime": "11 min",
+  "thumb": "assets/article_cards/epicuro-medo-da-morte.jpg",
+  "cover": "assets/article_cards/epicuro-medo-da-morte.jpg",
+  "heroImage": "assets/article_cards/epicuro-medo-da-morte.jpg",
+  "tags": [
+    "Epicuro",
+    "medo da morte",
+    "Carta a Meneceu",
+    "filosofia helenística",
+    "ataraxia"
+  ],
+  "featured": false,
+  "metaTitle": "Epicuro e o medo da morte | Proceder Filosófico",
+  "metaDescription": "Entenda o argumento de Epicuro contra o medo da morte, a Carta a Meneceu, o papel da sensação e os limites dessa terapia filosófica.",
+  "keywords": [
+    "Epicuro",
+    "medo da morte",
+    "Carta a Meneceu",
+    "ataraxia",
+    "filosofia antiga"
+  ],
+  "period": "Antiguidade",
+  "civilization": "Grécia Helenística",
+  "civilizations": [
+    "Grécia Helenística"
+  ],
+  "historicalPeriods": [
+    "Antiguidade"
+  ],
+  "philosophers": [
+    "Epicuro"
+  ],
+  "books": [
+    "Carta a Meneceu"
+  ],
+  "themes": [
+    "morte",
+    "prazer",
+    "sensação",
+    "ataraxia",
+    "medo religioso"
+  ],
+  "dossier": null,
+  "relatedArticles": [
+    "epicuro-pouco-suficiencia-desejo",
+    "aristoteles-eudaimonia-vida-boa",
+    "estoicismo-virtude-destino-acao"
+  ],
+  "editorialPriority": "P0",
+  "format": "artigo",
+  "content": "<p><strong>Epicuro não trata a morte como assunto decorativo, mas como um dos medos que mais desorganizam a vida humana.</strong> Sua resposta é famosa porque parece simples demais: se todo bem e todo mal dependem da sensação, a morte, entendida como privação de sensação, não pode ser experimentada como sofrimento por quem morreu.</p>\n<p>O argumento aparece na <em>Carta a Meneceu</em>, texto breve no qual Epicuro apresenta a filosofia como medicina da alma. A função do raciocínio não é produzir frieza, nem negar o luto dos vivos, mas desmontar uma fantasia: a ideia de que alguém continuará presente para sofrer a própria ausência.</p>\n<h2>A Carta a Meneceu</h2>\n<p>Epicuro escreve num mundo helenístico atravessado por instabilidade política, cultos, promessas de punição futura e ansiedade diante do destino. Sua filosofia procura devolver ao indivíduo alguma medida de serenidade. Para isso, distingue desejos necessários, prazeres naturais e perturbações fabricadas por opiniões falsas.</p>\n<p>O medo da morte está entre essas perturbações. Não porque morrer seja socialmente irrelevante, nem porque a perda de alguém querido não doa, mas porque o terror de estar morto projeta consciência onde, para Epicuro, não haverá consciência.</p>\n<h2>O argumento da ausência de sensação</h2>\n<p>A tese epicurista depende de uma antropologia materialista: nós somos organismos sensíveis, e a experiência humana exige sensação. Se a morte é dissolução da capacidade de sentir, então ela não aparece como objeto vivido pelo morto. Enquanto existimos, a morte não chegou; quando ela chega, já não existimos como sujeito de experiência.</p>\n<p>Essa estrutura lógica não prova que morrer seja desejável. Ela tenta mostrar que o pavor de uma dor pós-morte, enquanto experiência pessoal, nasce de uma imagem incoerente. Epicuro quer retirar da morte o poder de governar cada dia como ameaça permanente.</p>\n<h2>Medo religioso e medo do nada</h2>\n<p>Parte do alvo de Epicuro é o medo religioso de punições divinas. Os deuses, em sua física, não administram castigos humanos. A serenidade exige abandonar narrativas que transformam o além em instrumento de terror.</p>\n<p>Mas há também um medo moderno, menos religioso: o medo do nada, da interrupção, do desaparecimento de projetos. Aqui o argumento epicurista continua provocador, mas precisa ser lido com cuidado. Ele não elimina a tristeza por finitude, nem responde a todas as perguntas sobre sentido; ele limita uma forma específica de medo, aquela que imagina a morte como sofrimento vivido pelo morto.</p>\n<h2>Limites e críticas contemporâneas</h2>\n<p>Críticos podem dizer que a morte é má não por ser sentida, mas por privar alguém de bens futuros. Essa objeção desloca o debate: mesmo que não haja dor depois da morte, pode haver perda de possibilidades. Epicuro responderia que sofrer antecipadamente por possibilidades indefinidas transforma a vida presente em refém de uma contabilidade sem fim.</p>\n<p>A força do argumento não está em obrigar todos a concordar, mas em disciplinar a imaginação. Ele pergunta: quanto do medo da morte nasce do fato biológico, e quanto nasce de imagens que acrescentamos ao fato?</p>\n<h2>O que permanece</h2>\n<p>Lido com rigor, Epicuro não oferece consolo barato. Ele propõe uma ascese intelectual: separar o que pode ser sentido do que é apenas fantasma mental. A morte continua séria para quem vive, para quem ama e para quem organiza uma existência finita. Mas talvez ela perca o direito de ocupar, antes da hora, todo o espaço da vida.</p>\n<h2>Referências</h2><ul><li><a href=\"https://classics.mit.edu/Epicurus/menoec.html\" target=\"_blank\" rel=\"noopener\">Epicuro, <em>Carta a Meneceu</em>, Internet Classics Archive/MIT</a></li><li><a href=\"https://plato.stanford.edu/entries/epicurus/\" target=\"_blank\" rel=\"noopener\">Stanford Encyclopedia of Philosophy: Epicurus</a></li><li><a href=\"https://iep.utm.edu/epicur/\" target=\"_blank\" rel=\"noopener\">Internet Encyclopedia of Philosophy: Epicurus</a></li></ul>"
+},
+{
+  "id": "seneca-brevidade-da-vida",
+  "slug": "seneca-brevidade-da-vida",
+  "tag": "ESTOICISMO",
+  "category": "Filosofia",
+  "subcategory": "estoicismo e vida prática",
+  "title": "Sêneca e a brevidade da vida: onde nosso tempo realmente desaparece",
+  "excerpt": "Em Sêneca, a vida parece curta quando se dispersa em ocupações não escolhidas, ambições alheias e adiamentos sucessivos.",
+  "date": "11 de Agosto de 2026",
+  "dateISO": "2026-08-11",
+  "updated": "11 de Agosto de 2026",
+  "updatedISO": "2026-08-11",
+  "readTime": "11 min",
+  "thumb": "assets/article_cards/seneca-brevidade-da-vida.jpg",
+  "cover": "assets/article_cards/seneca-brevidade-da-vida.jpg",
+  "heroImage": "assets/article_cards/seneca-brevidade-da-vida.jpg",
+  "tags": [
+    "Sêneca",
+    "brevidade da vida",
+    "estoicismo",
+    "tempo",
+    "vida prática"
+  ],
+  "featured": false,
+  "metaTitle": "Sêneca e a brevidade da vida | Proceder Filosófico",
+  "metaDescription": "Entenda a crítica de Sêneca ao desperdício do tempo em Da Brevidade da Vida e sua leitura estoica da atenção, ocupação e liberdade.",
+  "keywords": [
+    "Sêneca",
+    "Da Brevidade da Vida",
+    "estoicismo",
+    "tempo",
+    "ocupação"
+  ],
+  "period": "Antiguidade",
+  "civilization": "Roma Antiga",
+  "civilizations": [
+    "Roma Antiga"
+  ],
+  "historicalPeriods": [
+    "Antiguidade"
+  ],
+  "philosophers": [
+    "Sêneca"
+  ],
+  "books": [
+    "Da Brevidade da Vida"
+  ],
+  "themes": [
+    "tempo",
+    "estoicismo",
+    "ocupação",
+    "liberdade interior",
+    "vida prática"
+  ],
+  "dossier": null,
+  "relatedArticles": [
+    "marco-aurelio-imperador-filosofo-estoico",
+    "epicteto-liberdade-interior-controle",
+    "estoicismo-virtude-destino-acao"
+  ],
+  "editorialPriority": "P0",
+  "format": "artigo",
+  "content": "<p><strong>Sêneca não diz apenas que a vida é curta. Ele argumenta que grande parte dela é entregue a coisas que não foram realmente escolhidas.</strong> A brevidade, nesse sentido, não é só duração biológica: é a experiência de perceber tarde demais que o tempo foi ocupado por urgências, vaidades e expectativas de outros.</p>\n<p><em>Da Brevidade da Vida</em> é dirigido a Paulino e pertence ao conjunto de textos morais de Sêneca. O tom é severo, mas não simplesmente pessimista. Como bom estoico, Sêneca quer reconduzir a atenção ao que depende de nós: julgamento, uso do presente e orientação da vontade.</p>\n<h2>Vida curta ou vida desperdiçada?</h2>\n<p>A tese central é provocadora: não recebemos pouco tempo; perdemos muito. A afirmação não deve ser lida como acusação moral simplista contra qualquer pessoa exausta. Ela nasce de uma crítica antiga à dispersão voluntária da elite romana, ocupada com carreira, fama, heranças, clientes, jogos de prestígio e cálculo político.</p>\n<p>Em linguagem atual, poderíamos dizer que Sêneca analisa a diferença entre estar ocupado e viver deliberadamente. Essa aproximação é interpretativa: o texto antigo não fala de notificações digitais ou produtividade moderna, mas toca no mesmo nervo filosófico da atenção capturada.</p>\n<h2>O ocupado como estrangeiro de si</h2>\n<p>Para Sêneca, o homem permanentemente ocupado não possui a si mesmo. Ele corre, atende, promete, negocia e acumula, mas raramente examina o fim para o qual vive. Seu tempo é fragmentado antes de se tornar memória.</p>\n<p>A crítica estoica mira uma dependência: quando a alma mede sua vida por aplauso, cargo ou ansiedade externa, ela entrega seu centro a coisas instáveis. A vida interior fica sem governo.</p>\n<h2>Tempo como posse singular</h2>\n<p>Dinheiro pode ser recuperado, reputação pode oscilar, bens podem circular; o tempo, uma vez gasto, não volta. Por isso Sêneca trata o tempo como posse mais própria e paradoxalmente mais desperdiçada. Defendemos terras e moedas com energia, mas permitimos que dias inteiros sejam tomados por distrações com pouca resistência.</p>\n<p>Esse ponto não exige retirar-se do mundo. Sêneca foi político, conselheiro imperial e escritor público. A tensão entre doutrina e biografia é real e deve ser assumida. Sua filosofia não é pureza fora da história; é esforço de discernimento dentro de relações de poder.</p>\n<h2>O papel da filosofia</h2>\n<p>A filosofia, para Sêneca, amplia a vida porque coloca o indivíduo em contato com uma comunidade de pensamento que atravessa séculos. Ler, meditar e examinar não são luxos ornamentais: são modos de retirar a alma da reação imediata e devolvê-la a um horizonte mais amplo.</p>\n<p>O passado dos sábios não substitui a vida presente, mas oferece companhia intelectual. O tempo ganha densidade quando deixa de ser apenas sequência de demandas.</p>\n<h2>Uma leitura para hoje</h2>\n<p>Aplicar Sêneca ao presente exige prudência. Nem toda ocupação é vaidade; muita gente trabalha demais por necessidade material. A crítica fica injusta quando esquece desigualdade. Ainda assim, o texto permanece útil porque pergunta o que fazemos com a pequena margem de escolha que existe mesmo em vidas difíceis.</p>\n<p>Sêneca não promete alongar os anos. Ele pergunta se estamos presentes nos anos que temos. A brevidade da vida talvez seja menos um dado cronológico do que um chamado ao governo da atenção.</p>\n<h2>Referências</h2><ul><li><a href=\"https://en.wikisource.org/wiki/Of_the_shortness_of_life\" target=\"_blank\" rel=\"noopener\">Sêneca, <em>Da Brevidade da Vida</em>, Wikisource</a></li><li><a href=\"https://plato.stanford.edu/entries/stoicism/\" target=\"_blank\" rel=\"noopener\">Stanford Encyclopedia of Philosophy: Stoicism</a></li><li><a href=\"https://iep.utm.edu/seneca/\" target=\"_blank\" rel=\"noopener\">Internet Encyclopedia of Philosophy: Seneca</a></li></ul>"
+},
+{
+  "id": "pirro-suspensao-do-juizo",
+  "slug": "pirro-suspensao-do-juizo",
+  "tag": "CETICISMO",
+  "category": "Filosofia",
+  "subcategory": "ceticismo antigo",
+  "title": "Pirro e a suspensão do juízo: é possível viver sem certezas?",
+  "excerpt": "O ceticismo pirrônico não é preguiça intelectual: é uma disciplina que suspende assentimento diante de razões equivalentes e busca tranquilidade.",
+  "date": "11 de Agosto de 2026",
+  "dateISO": "2026-08-11",
+  "updated": "11 de Agosto de 2026",
+  "updatedISO": "2026-08-11",
+  "readTime": "10 min",
+  "thumb": "assets/article_cards/pirro-suspensao-do-juizo.jpg",
+  "cover": "assets/article_cards/pirro-suspensao-do-juizo.jpg",
+  "heroImage": "assets/article_cards/pirro-suspensao-do-juizo.jpg",
+  "tags": [
+    "Pirro",
+    "ceticismo",
+    "epoché",
+    "ataraxia",
+    "Sexto Empírico"
+  ],
+  "featured": false,
+  "metaTitle": "Pirro e a suspensão do juízo | Proceder Filosófico",
+  "metaDescription": "Entenda a suspensão do juízo no ceticismo pirrônico, a equipolência das razões, a ataraxia e a diferença entre ceticismo e relativismo.",
+  "keywords": [
+    "Pirro",
+    "suspensão do juízo",
+    "ceticismo pirrônico",
+    "epoché",
+    "ataraxia"
+  ],
+  "period": "Antiguidade",
+  "civilization": "Grécia Helenística",
+  "civilizations": [
+    "Grécia Helenística"
+  ],
+  "historicalPeriods": [
+    "Antiguidade"
+  ],
+  "philosophers": [
+    "Pirro",
+    "Sexto Empírico"
+  ],
+  "books": [
+    "Esboços Pirrônicos"
+  ],
+  "themes": [
+    "ceticismo",
+    "epoché",
+    "ataraxia",
+    "verdade",
+    "juízo"
+  ],
+  "dossier": null,
+  "relatedArticles": [
+    "hume-problema-da-causalidade",
+    "problema-dos-universais",
+    "kant-maioridade-intelectual"
+  ],
+  "editorialPriority": "P0",
+  "format": "artigo",
+  "content": "<p><strong>Pirro de Élis ficou associado a uma pergunta incômoda: como viver quando nossas razões parecem insuficientes para alcançar certeza definitiva?</strong> O ceticismo pirrônico, desenvolvido posteriormente por autores como Sexto Empírico, não é simples negação de tudo. É uma prática de investigação que evita transformar impressão, costume ou teoria em dogma apressado.</p>\n<p>A palavra decisiva é <em>epoché</em>, suspensão do juízo. Diante de argumentos de força equivalente, o cético não afirma nem nega de modo definitivo. Ele continua vivendo segundo aparências, hábitos, leis e necessidades, mas evita o assentimento dogmático sobre a natureza última das coisas.</p>\n<h2>Equipolência: razões em equilíbrio</h2>\n<p>O ponto de partida não é indiferença, mas conflito racional. Para muitas questões, encontramos argumentos opostos que parecem igualmente persuasivos. A equipolência das razões impede que uma tese vença de modo incontestável.</p>\n<p>Quando isso acontece, o pirrônico suspende o juízo. A suspensão não significa que nada importa; significa que o intelecto reconhece a insuficiência de sua prova para converter uma posição em verdade absoluta.</p>\n<h2>Ataraxia: tranquilidade como efeito</h2>\n<p>A tradição pirrônica associa a suspensão a uma forma de tranquilidade, a <em>ataraxia</em>. Quem abandona a obrigação de decidir metafisicamente tudo pode sofrer menos com disputas insolúveis. A serenidade aparece como efeito, não como truque psicológico imediato.</p>\n<p>É importante não romantizar: viver sem certezas últimas não elimina dor, responsabilidade ou escolha. O cético ainda come, fala, obedece a costumes locais, evita perigos e participa da vida. Ele apenas não converte essas práticas em doutrina absoluta sobre a realidade.</p>\n<h2>Ceticismo não é relativismo</h2>\n<p>Confundir pirronismo com relativismo é reduzir o problema. O relativista costuma afirmar que toda verdade depende de perspectiva. O pirrônico, de modo mais radical e cauteloso, suspende inclusive essa afirmação quando ela aparece como tese dogmática.</p>\n<p>Por isso o ceticismo antigo não se deixa transformar facilmente em slogan. Ele é menos uma crença sobre a inexistência da verdade e mais um exercício contra a precipitação do assentimento.</p>\n<h2>Como viver então?</h2>\n<p>A objeção clássica diz que ninguém vive suspendendo tudo. A resposta pirrônica distingue investigação filosófica e vida ordinária. Seguimos aparências: se algo parece quente, retiramos a mão; se a cidade tem uma lei, convivemos com seus efeitos; se sentimos fome, comemos.</p>\n<p>O cético não abandona o mundo sensível. Ele abandona a pretensão de demonstrar, além de toda disputa possível, o que as coisas são em si mesmas.</p>\n<h2>O valor filosófico da pausa</h2>\n<p>Em tempos de opinião rápida, Pirro incomoda porque transforma hesitação em disciplina. A suspensão do juízo não resolve todas as questões, mas ensina uma virtude rara: perceber quando a necessidade de concluir nasce mais da ansiedade do que da evidência.</p>\n<p>Talvez viver sem certezas absolutas não seja viver sem orientação. Pode ser viver com menos arrogância diante do que ainda não conseguimos demonstrar.</p>\n<h2>Referências</h2><ul><li><a href=\"https://plato.stanford.edu/entries/skepticism-ancient/\" target=\"_blank\" rel=\"noopener\">Stanford Encyclopedia of Philosophy: Ancient Skepticism</a></li><li><a href=\"https://iep.utm.edu/skepanci/\" target=\"_blank\" rel=\"noopener\">Internet Encyclopedia of Philosophy: Ancient Skepticism</a></li><li><a href=\"https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Sextus_Empiricus/Outlines_of_Pyrrhonism/home.html\" target=\"_blank\" rel=\"noopener\">Sexto Empírico, <em>Outlines of Pyrrhonism</em>, LacusCurtius</a></li></ul>"
+},
+{
+  "id": "spinoza-afetos-liberdade",
+  "slug": "spinoza-afetos-liberdade",
+  "tag": "FILOSOFIA MODERNA",
+  "category": "Filosofia",
+  "subcategory": "ética e filosofia moderna",
+  "title": "Spinoza e os afetos: por que compreender aumenta nossa liberdade",
+  "excerpt": "Em Spinoza, liberdade não é agir sem causas, mas compreender melhor as causas que nos atravessam e transformar paixões em ações.",
+  "date": "11 de Agosto de 2026",
+  "dateISO": "2026-08-11",
+  "updated": "11 de Agosto de 2026",
+  "updatedISO": "2026-08-11",
+  "readTime": "12 min",
+  "thumb": "assets/article_cards/spinoza-afetos-liberdade.jpg",
+  "cover": "assets/article_cards/spinoza-afetos-liberdade.jpg",
+  "heroImage": "assets/article_cards/spinoza-afetos-liberdade.jpg",
+  "tags": [
+    "Spinoza",
+    "afetos",
+    "conatus",
+    "Ética",
+    "liberdade"
+  ],
+  "featured": false,
+  "metaTitle": "Spinoza e os afetos: compreender aumenta a liberdade | Proceder Filosófico",
+  "metaDescription": "Guia sobre os afetos em Spinoza: conatus, paixões, ações, ideias adequadas e liberdade como compreensão das causas.",
+  "keywords": [
+    "Spinoza",
+    "afetos",
+    "conatus",
+    "ideias adequadas",
+    "liberdade"
+  ],
+  "period": "Modernidade",
+  "civilization": "Europa Moderna",
+  "civilizations": [
+    "Europa Moderna"
+  ],
+  "historicalPeriods": [
+    "Modernidade"
+  ],
+  "philosophers": [
+    "Baruch Spinoza"
+  ],
+  "books": [
+    "Ética"
+  ],
+  "themes": [
+    "afetos",
+    "conatus",
+    "liberdade",
+    "necessidade",
+    "ética"
+  ],
+  "dossier": null,
+  "relatedArticles": [
+    "conatus-espinosa-ontologia-esforco-existir",
+    "hume-problema-da-causalidade",
+    "aristoteles-eudaimonia-vida-boa"
+  ],
+  "editorialPriority": "P0",
+  "format": "artigo",
+  "content": "<p><strong>Spinoza não imagina a liberdade como independência absoluta diante das causas. Para ele, tornamo-nos mais livres quando compreendemos melhor a rede causal que forma nossos desejos, medos e ações.</strong></p>\n<p>Essa ideia atravessa a <em>Ética</em>, obra escrita em forma geométrica e publicada postumamente em 1677. A linguagem pode parecer fria, mas o assunto é intensamente humano: por que sentimos o que sentimos, por que reagimos como reagimos e como a compreensão pode mudar nossa potência de agir.</p>\n<h2>Conatus: perseverar no ser</h2>\n<p>O conceito de <em>conatus</em> indica o esforço pelo qual cada coisa persevera em seu ser. No ser humano, esse esforço aparece como desejo, não no sentido de capricho superficial, mas como estrutura fundamental da vida.</p>\n<p>Os afetos modificam nossa potência. Alguns aumentam nossa capacidade de existir e agir; outros a diminuem. Alegria e tristeza, nesse quadro, não são meros estados privados: são variações de potência.</p>\n<h2>Paixões e ações</h2>\n<p>Spinoza distingue afetos passivos e ativos. Somos passivos quando a causa principal do que acontece em nós está fora de nós e é compreendida inadequadamente. Somos ativos quando participamos mais adequadamente da causa de nossas ações.</p>\n<p>Isso não significa virar máquina racional sem emoção. Significa que compreender um afeto pode alterar sua posição na vida. Uma raiva confusa domina; uma raiva compreendida já não governa do mesmo modo.</p>\n<h2>Ideias adequadas</h2>\n<p>Ideia adequada não é opinião bonita sobre si mesmo. É uma compreensão mais clara das causas. Quando entendemos por que desejamos algo, por que tememos alguém, por que repetimos uma reação, deixamos de ser simplesmente conduzidos por imagens parciais.</p>\n<p>A liberdade spinozana nasce nesse aumento de inteligibilidade. Não escapamos da natureza; compreendemos melhor nossa participação nela. A necessidade deixa de ser apenas prisão quando se torna campo de conhecimento.</p>\n<h2>A crítica ao livre-arbítrio simples</h2>\n<p>Spinoza é famoso por criticar a crença de que somos livres apenas porque ignoramos as causas de nossas ações. Sentimos o desejo, mas desconhecemos seu encadeamento; então chamamos essa ignorância de liberdade.</p>\n<p>Essa crítica não elimina responsabilidade de modo simples. Ela desloca a discussão: em vez de perguntar se alguém paira fora das causas, pergunta como instituições, educação, conhecimento e vida comum podem aumentar a potência racional e afetiva das pessoas.</p>\n<h2>Compreender não é justificar tudo</h2>\n<p>Uma leitura apressada poderia dizer que, se tudo tem causa, tudo deve ser aceito. Isso não é consequência necessária de Spinoza. Compreender causas também permite agir sobre elas, organizar encontros melhores, reduzir paixões tristes e criar condições de vida mais potentes.</p>\n<p>A ética spinozana não é resignação imóvel. É uma ciência dos afetos voltada a transformar servidão em atividade possível.</p>\n<h2>Por que isso importa</h2>\n<p>Em uma cultura que opõe emoção e razão como inimigas, Spinoza oferece uma via mais fina: pensar os afetos para não ser simplesmente arrastado por eles. A liberdade cresce quando a vida afetiva deixa de ser obscura para si mesma.</p>\n<p>Não escolhemos existir sem causas. Podemos, porém, compreender melhor as causas que nos formam. Para Spinoza, essa compreensão é uma das formas mais exigentes de liberdade.</p>\n<h2>Referências</h2><ul><li><a href=\"https://www.gutenberg.org/ebooks/3800\" target=\"_blank\" rel=\"noopener\">Spinoza, <em>Ethics</em>, Project Gutenberg</a></li><li><a href=\"https://plato.stanford.edu/entries/spinoza/\" target=\"_blank\" rel=\"noopener\">Stanford Encyclopedia of Philosophy: Baruch Spinoza</a></li><li><a href=\"https://iep.utm.edu/spinoza/\" target=\"_blank\" rel=\"noopener\">Internet Encyclopedia of Philosophy: Benedict de Spinoza</a></li></ul>"
+},
 
   {
     "id": "maimonides-teologia-negativa",
